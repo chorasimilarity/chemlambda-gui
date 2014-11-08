@@ -1,0 +1,6 @@
+FI in 2 1
+FO 1 con 2
+FI con 22 11
+FOE 11 out 22
+MULOUT out bubu
+MULIN bubu in
