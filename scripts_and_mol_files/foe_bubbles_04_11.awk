@@ -1140,12 +1140,12 @@ END {
                                                                                                }
 
 
-##  NOT YET DONE FOR MULOUT AND L 
+##  NOT YET DONE FOR MULOUT AND L #######################################!!!!!!!!!!!!!!!################
 
 
 # the move LOC-PR for L
 
-                                                            if (n_out == "L" && ( n_in == "T" || n_in=="MULOUT")) {   
+                                                            if (n_out == "L" && ( n_in == "T" || n_in == "MULOUT" )) {   
 
                                                             ww=node_port_2[v];
 
@@ -1160,9 +1160,26 @@ END {
 
 # for LOC-PR-L the active edge is the port 1 of L
 
+                                                          if( n_in == "T") {
+
                                                             move_right[node_port_1[v]]=n_in " " node_port_1[v] "\n";   
  
-                                                            move_left[node_port_1[v]]=node[v] "\n" node[u] "\n" "T" " " ww; 
+                                                            move_left[node_port_1[v]]=node[v] "\n" node[u] "\n" "T" " " ww; } else { 
+                                                            
+                                                              ca=counter_new_nodes;
+                                                           
+                                                           caa=tutext ca;
+
+                                                           counter_new_nodes++;
+                                                                                                                       
+                                                            t_1="MULOUT" " " node_port_1[v] " " caa;
+                                                            
+                                                            t_2="L" " " caa " " node_port_2[v] " " node_port_2[u];
+
+                                                             move_right[node_port_1[v]]=t_1 "\n" t_2 "\n";   
+ 
+                                                            move_left[node_port_1[v]]=node[v] "\n" node[u];                                                             
+                                                            }
 
                                                             printf("LOC-PR" " " node[v] " " node[u]  " "  "T" " " ww " " "REPLACED BY" " " n_in " " node_port_1[v] "\n") > "temp_proposed_moves";
                      
@@ -1507,7 +1524,7 @@ END {
 ##########################################################################################################################################
 
 
-                                                                 if (arroin_type == "NOP2" || arroin_type == "MULIN" || arroin_type == "MULOUT" || arroin_type == "PROP" ) {
+                                                                 if (arroin_type == "NOP2" || arroin_type == "MULIN"  ||  arroin_type == "MULOUT"  || arroin_type == "PROP" ) {
 
                                                                                                inter_node_port_2[arroin]=z; 
 
@@ -1522,6 +1539,9 @@ END {
                                                                                                is_arrow[i]--;
 
                                                                                               } 
+
+
+        
 
 
 ##########################################################################################################################################
