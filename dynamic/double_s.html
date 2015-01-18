@@ -1,0 +1,4021 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chemlambda movies productions presents:</title>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <style>
+
+
+.link line {
+  stroke: #696969;
+}
+
+.link line.separator {
+  stroke: #95A5A6;
+  stroke-width: 2px;
+}
+
+.node circle {
+  stroke: #95A5A6;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+  pointer-events: none;
+}
+
+
+
+    </style>
+</head>
+<body style="background-color: #000;">
+
+<script>
+    var graph;
+    function myGraph() { 
+
+        // Add and remove elements on the graph object
+        this.addNode = function (id, atom, size, colour) {
+            nodes.push({"id": id, "atom": atom, "size": size, "colour": colour});
+            update();
+        };
+
+        this.removeNode = function (id) {
+            var i = 0;
+            var n = findNode(id);
+            while (i < links.length) {
+                if ((links[i]['source'] == n) || (links[i]['target'] == n)) {
+                    links.splice(i, 1);
+                }
+                else i++;
+            }
+            nodes.splice(findNodeIndex(id), 1);
+            update();
+        };
+
+        this.removeLink = function (source, target) {
+            for (var i = 0; i < links.length; i++) {
+                if (links[i].source.id == source && links[i].target.id == target) {
+                    links.splice(i, 1);
+                    break;
+                }
+            }
+            update();
+        };
+
+        this.removeallLinks = function () {
+            links.splice(0, links.length);
+            update();
+        };
+
+        this.removeAllNodes = function () {
+            nodes.splice(0, links.length);
+            update();
+        };
+
+        this.addLink = function (source, target, bond) {
+            links.push({"source": findNode(source), "target": findNode(target), "bond": bond});
+            update();
+        };
+
+        var findNode = function (id) {
+            for (var i in nodes) {
+                if (nodes[i]["id"] === id) return nodes[i];
+            }
+            ;
+        };
+
+        var findNodeIndex = function (id) {
+            for (var i = 0; i < nodes.length; i++) {
+                if (nodes[i].id == id) {
+                    return i;
+                }
+            }
+            ;
+        };
+
+        // set up the D3 visualisation in the specified element
+        var w = 960,
+                h = 600;
+
+//    var radius = d3.scale.sqrt()
+//    .range([0, 4]);
+
+        var vis = d3.select("body")
+                .append("svg:svg")
+                .attr("width", w)
+                .attr("height", h)
+                .attr("id", "svg")
+                .attr("pointer-events", "all")
+                .attr("viewBox", "0 0 " + w + " " + h)
+                .attr("perserveAspectRatio", "xMinYMid")
+                .append('svg:g');
+
+        var force = d3.layout.force();
+
+        var nodes = force.nodes(),
+                links = force.links();
+                
+                
+                
+        var update = function () {
+            var link = vis.selectAll("line")
+                    .data(links, function (d) {
+                        return d.source.id + "-" + d.target.id;
+                    });
+
+            link.enter().append("line")
+                    .attr("id", function (d) {
+                        return d.source.id + "-" + d.target.id;
+                    })
+                    .attr("stroke-width", function (d) {
+                        return (d.bond * 2 - 1) * 2 + "px";
+                    })
+                    .attr("stroke", "#696969");
+//
+             link.filter(function(d) { return d.bond > 1; }).append("line")
+//                   .attr("class", "separator");
+                    .attr("class", "link");
+//            link.append("title")
+//                   .text(function (d) {
+//                        return d.value;
+//                   });
+            link.exit().remove();
+                
+                
+             var node = vis.selectAll("g.node")
+                    .data(nodes, function (d) {
+                        return d.id;
+                    });
+
+            var nodeEnter = node.enter().append("g")
+                    .attr("class", "node")
+                    .call(force.drag);
+
+            nodeEnter.append("svg:circle")
+                    .attr("r", function(d) { return d.size*2;})
+                    .attr("id", function (d) {
+                        return "Node;" + d.id;
+                    })
+                    .attr("class", "nodeStrokeClass")
+                    .attr("fill", function(d) { return d.colour; });
+
+            node.exit().remove();
+
+            force.on("tick", function () {
+
+                node.attr("transform", function (d) {
+                    return "translate(" + d.x + "," + d.y + ")";
+                });
+
+                link.attr("x1", function (d) {
+                    return d.source.x;
+                })
+                        .attr("y1", function (d) {
+                            return d.source.y;
+                        })
+                        .attr("x2", function (d) {
+                            return d.target.x;
+                        })
+                        .attr("y2", function (d) {
+                            return d.target.y;
+                        });
+            });
+
+            // Restart the force layout.
+
+            force
+//                    .friction(.01)
+    .charge(-10)
+    .gravity(.05)
+                        .linkDistance( function(d) { return ((d.source.size + d.target.size + 3)/(20*d.bond)); } )
+                    .size([w, h])
+                    .start();
+        };
+
+
+        // Make it all go
+        update();
+    }
+
+
+
+    function drawGraph() {
+
+        graph = new myGraph("#svgdiv");
+ 
+ 
+ 
+graph.addNode( "9_1", "6",  1,  "#f6cf84"); 
+graph.addNode( "6_3", "1",  1,  "#6ecae5"); 
+graph.addNode( "4", "FO",  4,  "#ade747"); 
+graph.addNode( "1_2", "6",  1,  "#f6cf84"); 
+graph.addNode( "5", "L",  4,  "#be66dd"); 
+graph.addNode( "4_1", "4",  1,  "#f6cf84"); 
+graph.addNode( "1_3", "2",  1,  "#6ecae5"); 
+graph.addNode( "6", "L",  4,  "#be66dd"); 
+graph.addNode( "4_2", "4",  2,  "#6ecae5"); 
+graph.addNode( "7_1", "6",  1,  "#f6cf84"); 
+graph.addNode( "7", "L",  4,  "#be66dd"); 
+graph.addNode( "4_3", "3",  1,  "#6ecae5"); 
+graph.addNode( "7_2", "5",  2,  "#6ecae5"); 
+graph.addNode( "2_1", "5",  2,  "#f6cf84"); 
+graph.addNode( "9", "FROUT",  4,  "#6ecae5"); 
+graph.addNode( "7_3", "1",  1,  "#6ecae5"); 
+graph.addNode( "2_2", "6",  1,  "#f6cf84"); 
+graph.addNode( "10", "FROUT",  4,  "#6ecae5"); 
+graph.addNode( "5_1", "6",  1,  "#f6cf84"); 
+graph.addNode( "2_3", "2",  1,  "#6ecae5"); 
+graph.addNode( "10_1", "6",  1,  "#f6cf84"); 
+graph.addNode( "5_2", "5",  2,  "#6ecae5"); 
+graph.addNode( "0_1", "5",  2,  "#f6cf84"); 
+graph.addNode( "5_3", "1",  1,  "#6ecae5"); 
+graph.addNode( "0_2", "6",  1,  "#f6cf84"); 
+graph.addNode( "3_1", "4",  1,  "#f6cf84"); 
+graph.addNode( "0_3", "2",  1,  "#6ecae5"); 
+graph.addNode( "0", "A",  4,  "#ade747"); 
+graph.addNode( "3_2", "4",  2,  "#6ecae5"); 
+graph.addNode( "1", "A",  4,  "#ade747"); 
+graph.addNode( "6_1", "6",  1,  "#f6cf84"); 
+graph.addNode( "3_3", "3",  1,  "#6ecae5"); 
+graph.addNode( "2", "A",  4,  "#ade747"); 
+graph.addNode( "6_2", "5",  2,  "#6ecae5"); 
+graph.addNode( "3", "FO",  4,  "#ade747"); 
+graph.addNode( "1_1", "5",  2,  "#f6cf84"); 
+graph.addLink( "5", "5_1",  "2"); 
+graph.addLink( "5", "5_2",  "2"); 
+graph.addLink( "5", "5_3",  "2"); 
+graph.addLink( "4", "4_1",  "2"); 
+graph.addLink( "4", "4_2",  "2"); 
+graph.addLink( "4", "4_3",  "2"); 
+graph.addLink( "5_3", "4_1",  "1"); 
+graph.addLink( "6_3", "5_1",  "1"); 
+graph.addLink( "7_3", "6_1",  "1"); 
+graph.addLink( "3", "3_1",  "2"); 
+graph.addLink( "3", "3_2",  "2"); 
+graph.addLink( "3", "3_3",  "2"); 
+graph.addLink( "2", "2_1",  "2"); 
+graph.addLink( "2", "2_2",  "2"); 
+graph.addLink( "0_3", "7_1",  "1"); 
+graph.addLink( "2", "2_3",  "2"); 
+graph.addLink( "1_3", "0_1",  "1"); 
+graph.addLink( "2_3", "0_2",  "1"); 
+graph.addLink( "3_2", "1_2",  "1"); 
+graph.addLink( "5_2", "1_1",  "1"); 
+graph.addLink( "3_3", "2_2",  "1"); 
+graph.addLink( "6_2", "2_1",  "1"); 
+graph.addLink( "7_2", "3_1",  "1"); 
+graph.addLink( "4_2", "9_1",  "1"); 
+graph.addLink( "4_3", "10_1",  "1"); 
+graph.addLink( "1", "1_1",  "2"); 
+graph.addLink( "1", "1_2",  "2"); 
+graph.addLink( "1", "1_3",  "2"); 
+graph.addLink( "9", "9_1",  "2"); 
+graph.addLink( "0", "0_1",  "2"); 
+graph.addLink( "0", "0_2",  "2"); 
+graph.addLink( "0", "0_3",  "2"); 
+graph.addLink( "7", "7_1",  "2"); 
+graph.addLink( "7", "7_2",  "2"); 
+graph.addLink( "7", "7_3",  "2"); 
+graph.addLink( "10", "10_1",  "2"); 
+graph.addLink( "6", "6_1",  "2"); 
+graph.addLink( "6", "6_2",  "2"); 
+graph.addLink( "6", "6_3",  "2"); 
+keepNodesOnTop(); 
+ 
+         var step = -1; 
+ 
+         function nextval() { 
+ step++; 
+ return 2000 + (40*step);  } 
+ setTimeout(function() {  
+ 
+ graph.removeLink("4", "4_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("5", "5_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("5", "5_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("5", "5_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("5_3", "4_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("4", "4_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("4", "4_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("5_2", "1_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("4_2", "9_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("4_3", "10_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("6_3", "5_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "13_1", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "4" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "13_2", "5", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "4_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "5" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "13_3", "1", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "4_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "11_1", "3", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "4_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "11_2", "4", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "11_3", "4", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "14_1", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "14_2", "5", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "5_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "11", "FOE", "4", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "14_3", "1", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "5_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "12", "FI", "4", "#be66dd"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "12_1", "6", "2", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "5_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "12_2", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "13", "L", "4", "#be66dd"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "12_3", "2", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "14", "L", "4", "#be66dd"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("11", "11_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("11_3", "14_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("11", "11_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("12", "12_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("11", "11_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("12", "12_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("13", "13_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("12", "12_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("13", "13_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("14", "14_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("13", "13_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("14", "14_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("14", "14_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("13_2", "12_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("14_2", "12_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("11_2", "13_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("12_3", "1_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("13_3", "9_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("14_3", "10_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("6_3", "11_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("11", "11_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("11", "11_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("11", "11_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("6", "6_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("6", "6_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("6", "6_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("6_3", "11_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("11_3", "14_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("6_2", "2_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("7_3", "6_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("11_2", "13_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "15_1", "3", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "15_2", "4", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "15_3", "4", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "11_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "11_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "11_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "11" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "16_1", "6", "2", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "15", "FOE", "4", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "16_2", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "16", "FI", "4", "#be66dd"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "16_3", "2", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "17", "L", "4", "#be66dd"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "18", "L", "4", "#be66dd"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "6_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "6_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "6" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "6_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "17_1", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "17_2", "5", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "17_3", "1", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "18_1", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "18_2", "5", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "18_3", "1", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("17_2", "16_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("18_2", "16_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("17", "17_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("17", "17_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("18", "18_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("17", "17_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("18", "18_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("18", "18_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("15_2", "17_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("15", "15_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("15_3", "18_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("15", "15_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("16", "16_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("15", "15_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("16", "16_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("16", "16_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("18_3", "14_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("16_3", "2_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("7_3", "15_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("17_3", "13_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("7", "7_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("15", "15_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("7_3", "15_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("15", "15_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("7", "7_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("7", "7_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("15", "15_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("7_2", "3_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("15_2", "17_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("15_3", "18_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("0_3", "7_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "15_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "15_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "21_1", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "15_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "21_2", "5", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "21_3", "1", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "15" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "22_1", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "22_2", "5", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "22_3", "1", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "19", "FOE", "4", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "7" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "7_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "7_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "7_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "20", "FI", "4", "#be66dd"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "21", "L", "4", "#be66dd"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "22", "L", "4", "#be66dd"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "20_1", "6", "2", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "20_2", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "20_3", "2", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "19_1", "3", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "19_2", "4", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "19_3", "4", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("20", "20_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("20", "20_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("21", "21_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("20", "20_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("21", "21_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("19", "19_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("22", "22_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("21", "21_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("19", "19_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("22", "22_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("19", "19_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("21_2", "20_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("22", "22_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("22_2", "20_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("19_2", "21_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("19_3", "22_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("20_3", "3_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("21_3", "17_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("22_3", "18_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("0_3", "19_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("0", "0_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("0", "0_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("20_3", "3_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("20", "20_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("20", "20_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("20", "20_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("19", "19_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("19", "19_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("3", "3_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("19", "19_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("0_3", "19_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("3", "3_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("3", "3_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("0", "0_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("3_3", "2_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("21_2", "20_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("22_2", "20_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("1_3", "0_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("19_2", "21_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("2_3", "0_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("3_2", "1_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("19_3", "22_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "0_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "0_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "0_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "26_1", "5", "2", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "26_2", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "26_3", "2", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "30", "FI", "4", "#be66dd"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "19" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "27_1", "4", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "0" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "27_2", "4", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "27_3", "3", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "23_1", "3", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "23_2", "4", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "23_3", "4", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "28_1", "4", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "28_2", "4", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "28_3", "3", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "24_1", "3", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "24_2", "4", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "24_3", "4", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "30_1", "6", "2", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "30_2", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "30_3", "2", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "3_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "3_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "20" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "3_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "23", "FOE", "4", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "24", "FOE", "4", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "25", "A", "4", "#ade747"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "26", "A", "4", "#ade747"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "27", "FO", "4", "#ade747"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "29_1", "6", "2", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "28", "FO", "4", "#ade747"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "29_2", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "29", "FI", "4", "#be66dd"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "29_3", "2", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "20_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "20_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "20_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "19_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "19_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "25_1", "5", "2", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "19_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "25_2", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "25_3", "2", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("29", "29_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("28", "28_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("24", "24_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("23_2", "25_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("29", "29_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("24", "24_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("23_3", "26_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("29", "29_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("24_2", "25_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("24_3", "26_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("25", "25_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("25", "25_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("26", "26_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("25", "25_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("27_2", "29_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("26", "26_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("27", "27_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("27_3", "30_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("26", "26_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("30", "30_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("27", "27_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("28_2", "29_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("23", "23_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("30", "30_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("28", "28_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("27", "27_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("28_3", "30_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("23", "23_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("30", "30_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("28", "28_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("24", "24_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("23", "23_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("30_3", "2_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("21_2", "28_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("22_2", "27_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("1_3", "23_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("25_3", "21_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("2_3", "24_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("29_3", "1_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("26_3", "22_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("1", "1_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("1", "1_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("1", "1_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("23", "23_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("1_3", "23_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("23", "23_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("23", "23_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("23_2", "25_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("12_3", "1_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("23_3", "26_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("29_3", "1_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "32_1", "3", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "32_2", "4", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "32_3", "4", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "31", "FOE", "4", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "32", "FOE", "4", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "33", "A", "4", "#ade747"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "1_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "34", "A", "4", "#ade747"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "1_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "1_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "33_1", "5", "2", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "33_2", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "33_3", "2", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "23_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "23_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "23_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "34_1", "5", "2", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "34_2", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "34_3", "2", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "23" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "31_1", "3", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "31_2", "4", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "31_3", "4", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("31", "31_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("31_3", "34_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("32", "32_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("31", "31_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("32_2", "33_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("32", "32_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("32_3", "34_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("33", "33_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("32", "32_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("33", "33_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("33", "33_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("34", "34_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("34", "34_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("34", "34_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("31", "31_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("31_2", "33_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("33_3", "25_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("12_3", "31_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("34_3", "26_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("29_3", "32_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("31", "31_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("12_3", "31_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("24", "24_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("31", "31_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("24", "24_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("12", "12_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("12", "12_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("12", "12_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("2", "2_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("2", "2_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("2", "2_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("2_3", "24_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("31", "31_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("24", "24_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("31_3", "34_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("30_3", "2_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("24_2", "25_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("16_3", "2_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("24_3", "26_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("13_2", "12_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("14_2", "12_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("31_2", "33_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "36_1", "3", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "36_2", "4", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "36_3", "4", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "12" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "37_1", "5", "2", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "37_2", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "37_3", "2", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "31" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "35", "FOE", "4", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "36", "FOE", "4", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "37", "A", "4", "#ade747"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "38", "A", "4", "#ade747"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "39", "Arrow", "4", "#f0bf26"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "12_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "12_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "12_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "38_1", "5", "2", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "38_2", "6", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "38_3", "2", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "2_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "2_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "2_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "40_1", "1", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "40_2", "6", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "39_1", "1", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "24_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "39_2", "6", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "24_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "24_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "24" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "40", "Arrow", "4", "#f0bf26"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "35_1", "3", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "35_2", "4", "2", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "35_3", "4", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "31_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "31_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "31_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("36", "36_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("35", "35_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("36", "36_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("37", "37_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("36", "36_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("40", "40_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("37", "37_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("35_2", "37_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("40", "40_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("38", "38_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("37", "37_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("35_3", "38_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("38", "38_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("38", "38_3", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("36_2", "37_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("39", "39_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("36_3", "38_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("39", "39_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("35", "35_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("35", "35_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("39_2", "34_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("30_3", "36_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("37_3", "25_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("16_3", "35_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("38_3", "26_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("13_2", "40_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("14_2", "39_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("40_2", "33_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("40", "40_1"); 
+graph.removeLink("40", "40_2"); 
+graph.removeLink("39", "39_1"); 
+graph.removeLink("13_2", "40_1"); 
+graph.removeLink("39", "39_2"); 
+graph.removeLink("14_2", "39_1"); 
+graph.removeLink("39_2", "34_1"); 
+graph.removeLink("40_2", "33_1"); 
+graph.removeNode( "39" ); 
+graph.removeNode( "40_1" ); 
+graph.removeNode( "40_2" ); 
+graph.removeNode( "39_1" ); 
+graph.removeNode( "39_2" ); 
+graph.removeNode( "40" ); 
+graph.addLink("14_2", "34_1", "1"); 
+graph.addLink("13_2", "33_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("36", "36_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("29", "29_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("36", "36_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("30_3", "36_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("29", "29_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("32", "32_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("36", "36_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("29", "29_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("32", "32_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("32", "32_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("30", "30_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("30", "30_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("30", "30_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("29_3", "32_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("32_2", "33_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("32_3", "34_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("27_2", "29_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("36_2", "37_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("27_3", "30_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("36_3", "38_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("28_2", "29_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("28_3", "30_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "36_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "36_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "42_1", "1", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "36_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "42_2", "6", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "32_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "32_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "32_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "30" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "43_1", "1", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "43_2", "6", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "32" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "36" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "44_1", "1", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "44_2", "6", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "30_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "30_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "30_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "41", "Arrow", "4", "#f0bf26"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "29_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "42", "Arrow", "4", "#f0bf26"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "29_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "29" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "43", "Arrow", "4", "#f0bf26"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "29_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "44", "Arrow", "4", "#f0bf26"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "41_1", "1", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "41_2", "6", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("43", "43_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("43", "43_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("44", "44_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("44", "44_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("41", "41_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("41", "41_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("42", "42_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("42", "42_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("42_2", "33_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("41_2", "34_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("27_2", "41_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("44_2", "37_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("27_3", "43_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("43_2", "38_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("28_2", "42_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("28_3", "44_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("41", "41_1"); 
+graph.removeLink("41", "41_2"); 
+graph.removeLink("27_2", "41_1"); 
+graph.removeLink("28_2", "42_1"); 
+graph.removeLink("42", "42_1"); 
+graph.removeLink("42", "42_2"); 
+graph.removeLink("42_2", "33_2"); 
+graph.removeLink("41_2", "34_2"); 
+graph.removeNode( "42_1" ); 
+graph.removeNode( "42_2" ); 
+graph.removeNode( "41_1" ); 
+graph.removeNode( "41_2" ); 
+graph.removeNode( "41" ); 
+graph.removeNode( "42" ); 
+graph.addLink("28_2", "33_2", "1"); 
+graph.addLink("27_2", "34_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("43", "43_1"); 
+graph.removeLink("43", "43_2"); 
+graph.removeLink("44", "44_1"); 
+graph.removeLink("44", "44_2"); 
+graph.removeLink("27_3", "43_1"); 
+graph.removeLink("28_3", "44_1"); 
+graph.removeLink("44_2", "37_2"); 
+graph.removeLink("43_2", "38_2"); 
+graph.removeNode( "44" ); 
+graph.removeNode( "43_1" ); 
+graph.removeNode( "43_2" ); 
+graph.removeNode( "44_1" ); 
+graph.removeNode( "44_2" ); 
+graph.removeNode( "43" ); 
+graph.addLink("28_3", "37_2", "1"); 
+graph.addLink("27_3", "38_2", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("35", "35_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("16_3", "35_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("16", "16_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("16", "16_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("35", "35_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("16", "16_3"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("35", "35_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("17_2", "16_2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("18_2", "16_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("35_2", "37_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("35_3", "38_1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "16_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "16_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "16" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "16_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "35" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "45_1", "1", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "45_2", "6", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "35_1" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "35_2" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "45", "Arrow", "4", "#f0bf26"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeNode( "35_3" ); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "46", "Arrow", "4", "#f0bf26"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "46_1", "1", "1", "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addNode( "46_2", "6", "1", "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("45", "45_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("45", "45_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("46", "46_1", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("46", "46_2", "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("17_2", "46_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("18_2", "45_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("46_2", "37_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.addLink("45_2", "38_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+setTimeout(function() {  
+ 
+ graph.removeLink("17_2", "46_1"); 
+graph.removeLink("18_2", "45_1"); 
+graph.removeLink("45", "45_1"); 
+graph.removeLink("45", "45_2"); 
+graph.removeLink("46", "46_1"); 
+graph.removeLink("46", "46_2"); 
+graph.removeLink("46_2", "37_1"); 
+graph.removeLink("45_2", "38_1"); 
+graph.removeNode( "45" ); 
+graph.removeNode( "46" ); 
+graph.removeNode( "45_1" ); 
+graph.removeNode( "45_2" ); 
+graph.removeNode( "46_1" ); 
+graph.removeNode( "46_2" ); 
+graph.addLink("17_2", "37_1", "1"); 
+graph.addLink("18_2", "38_1", "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+ 
+  
+    }
+  
+    drawGraph();
+    // because of the way the network is created, nodes are created first, and links second,
+    // so the lines were on top of the nodes, this just reorders the DOM to put the svg:g on top
+    function keepNodesOnTop() {
+        $(".nodeStrokeClass").each(function( index ) {
+            var gnode = this.parentNode;
+            gnode.parentNode.appendChild(gnode);
+        });
+    }
+    function addNodes() {
+        d3.select("svg")
+                .remove();
+         drawGraph();
+    }
+
+
+</script>
+</body>
+</html>
