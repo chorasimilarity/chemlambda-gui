@@ -16,8 +16,16 @@ BEGIN {
 
 #     green_col="#8CC152";
 
-       green_col="#04B431";
+# true one       green_col="#04B431";
        
+#CRESCIMENTO      green_col="#2a6d00";
+
+      green_col="#ade747";
+
+#      green_col="#9fc952";
+
+# #fe8f0f #f7325e #7dc410 #fef8cf #0264ed #222
+
       
 #    red_col="#FF0000";
 
@@ -28,25 +36,46 @@ BEGIN {
 #     out_col="#4A89DC";
 
       
-     red_col="#FF0000";
+# true one     red_col="#FF0000";
 
-     in_col="#FFFF00";
+#CRESCIMENTO      red_col="#b80000";
+
+      red_col="#be66dd";
+
+#      red_col="#ed2525";
+
+# true one     in_col="#FFFF00";
      
+#CRESCIMENTO      in_col="#91009a";
+
+      in_col="#f6cf84";
+
+#      in_col="#fbfd37";
+
 #     foe_col="#AD0468"
 
-     out_col="#2E2EFE";
+#true one     out_col="#2E2EFE";
 
+#CRESCIMENTO      out_col="#150070";
+
+      out_col="#6ecae5";
+
+#      out_col="#a8e2f9";
 
      bond_int=2;
 
      bond_ext=1;
 
-     term_col="#000000";
-
-     arrow_col="#ffffff";
+     term_col="#222";
 
 
+#true one     arrow_col="#ffffff";
 
+#CRESCIMENTO     arrow_col="#f0a900";
+
+               arrow_col="#f0bf26";
+
+#               arrow_col="#fffab2";
 
        count_lines=0; 
 
@@ -878,7 +907,7 @@ for (j in all_edge_out){
 gugu=0;
 counter=0;
 
-while (counter<12000) {
+while (counter<2020) {
 
 # counter for the new nodes or links added or removed
 
@@ -3296,8 +3325,9 @@ sourcetype=all_node_atom[sourc];
 
      sourcesize=all_node_size[sour];
 
-     if (sourcesize=="left") {
+     if (sourcesize==left) {
 
+# printf ("sourcesize=" source size "should be the left");
 
       unuu=all_node_id[sourc] "_1";
       doii=all_node_id[sourc] "_3";
@@ -3400,7 +3430,7 @@ sourcetype=all_node_atom[sourc];
 
 }    else {
 
-
+# printf ("sourcesize=" source size "should be the right");
 
       unuu=all_node_id[sourc] "_1";
       doii=all_node_id[sourc] "_2";

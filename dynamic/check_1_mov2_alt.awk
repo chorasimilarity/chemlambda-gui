@@ -3230,7 +3230,7 @@ sourcetype=all_node_atom[sourc];
 
      sourcesize=all_node_size[sour];
 
-     if (sourcesize=="left") {
+     if (sourcesize==left) {
 
 
       unuu=all_node_id[sourc] "_1";
