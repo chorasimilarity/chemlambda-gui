@@ -907,7 +907,7 @@ for (j in all_edge_out){
 gugu=0;
 counter=0;
 
-while (counter<2020) {
+while (counter<2200) {
 
 # counter for the new nodes or links added or removed
 
@@ -938,13 +938,13 @@ coact=0;
 
 #   FOFOE, which appears as move 33. It then blocks the nodes which participate to this move. 
     
-    
+    parame=int(2 * rand());
     
     if ( parame==0) {
     
     for (ku in all_edge_source) { bon=all_edge_bond[ku];
     
-    parame=int(2 * rand());
+    
     
     if ( bon==bond_ext) {
     
