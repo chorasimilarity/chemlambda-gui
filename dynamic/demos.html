@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chemlambda movies productions presents:</title>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<style>
+
+#navigation {
+    padding:30px 0 36px 35px;
+    margin:35px 0 36px;
+    border-top:2px groove #808080;
+    border-bottom:2px groove #808080;
+    list-style-type:none;
+ }
+#navigation li {
+    display:inline;
+ }
+#navigation a {
+    margin-right:64px;
+    font-size:12px;
+    font-weight:bold;
+    color: #B0CF83;
+    text-decoration:none;
+    letter-spacing:-1px;
+
+ }
+
+
+#left,#right {  
+    float:left;
+    width:50%;
+ }
+
+#navigation h1 {
+    margin-bottom:36px;
+    font-size:36px;
+    font-weight:normal;
+ }
+</style>
+
+</head>
+<body style="background-color: rgb(0, 0, 0); color: #B0CF83; font-family: 'Helvetica Neue', Helvetica, sans-serif; "
+ alink="#f6cf84" link="#6ecae5" vlink="#f6cf84"  >
+
+<a href="https://github.com/chorasimilarity/chemlambda-gui/tree/master/dynamic"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+
+<ul id="navigation"  >
+ <li><h1>chemlambda demos</h1> </li> <li><h2><a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/moves.html"><span style="color: #6ecae5;">chemlambda rules</span></a></h2></li></ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > These demos use <a href="prelimi.html">chemlambda graph rewrites</a> and two methods of application of those, one deterministical, the other random.   </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >   <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/sparks.html">Sparks.</a> A 20 nodes creature which I qualified previously as a quine (see ,a href="http://chorasimilarity.wordpress.com/2014/09/01/quines-in-chemlambda/">definition of chemlambda quine</a>), struggles to survive in a random environment (random reduction method). In the random environment the molecule is no longer a quine (does no longer preserve its shape), but instead it becomes bigger or smaller. I hypothesize that quines are good models of living creatures. In the deterministical reduction method such a creature would live forever, because its inner metabolism is perfectly equilibrated (keeps its shape after a reduction step). In the random reduction method the quine has a life.</ul>
+    
+    <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/pred_2.html">The predecessor.</a> This is a molecule constructed from the lambda term of the predecessor function. It reduces to a number (as seen in chemlambda via the Church encoding). More interestingly, if you examine closer the reduction process (here the random reduction method), then you'l discover inside the molecule a smaller one which I called a "walker". It keeps its shape and "walks" on a trail of nodes. That led to the discovery of chemlambda quines. See the <a href="http://chorasimilarity.wordpress.com/2014/08/27/ouroboros-predecessor-iii-the-walking-machine/">series of posts about that, in my open notebook</a>.   </ul>
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/random_ackermann_2_2.html">Ackermann(2,2)</a> The Ackermann function is a <a href="http://en.wikipedia.org/wiki/Ackermann_function">famous computable but not primitive recursive function</a>. We know that chemlambda is Turing universal (proved first time <a href"http://arxiv.org/abs/1309.6914">here</a>, so it is nice to see it can compute the Ackermann function. I took as an example Ackermann(2,2) because numbers are represented via their Church encoding, therefore big numbers are really big graphs in any unary representation. it is fascinating to see how the Ackermann(2,2) is computed in chemlambda because it does so many things in parallel. Another interesting try would be Ackermann(3,2), see <a href="http://chorasimilarity.wordpress.com/2014/10/13/the-ackermann-function-in-the-chemlambda-gui/">this post from my open notebook about it</a>. By using the programs I have, the visualization (not the computation) is a bit punishing for the computer, because there are moments when hundreds of nodes and links appear and dissapear, but probably a better programmer could easily tweak the scripts to behave better. The take home message is this: you can compute without any evaluation, without any variable passing and without any overall control. This is in support for the hypothesis that chemlambda computes in the way living organism compute.  </ul>
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/yfrcombtreefo.html">YI multiplied.</a>.  This is a complex reduction in chemlambda. It is a proof of concept that chemlambda can easily treat in the same time self-multiplication and computation (reductions). In this example we start from the fact that one can write the Y combinator as an expression in the S,K,I, combinators: Y = S (K (S I I)) (S (S (K S) K) (K (S I I))). In a previous experiment, with the older scripts, see <a href="http://youtu.be/AjMWLPBkveI">this video</a>,  I transformed that expression into a molecule and then let it reduce by itself. It worked great. Now, in this example I use the said expression of Y and I apply it to the identity combinator, then I add a FO node on top which will effect the self-reproduction of the big expression. What will happen? So, we have a bunch of reductions (from the long expression to YI) in parallel with the self-reproduction of the whole thing. You shall see that everything works well, and that self-reproduction happens in parallel with reduction, even if all this is done in a model of computation which uses a random reduction strategy.   </ul>
+
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=5759559; 
+var sc_invisible=1; 
+var sc_security="b75cf132"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="web stats"
+href="http://www.statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/5759559/0/b75cf132/1/"
+alt="web stats" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+</body>
+</html>
+
+
