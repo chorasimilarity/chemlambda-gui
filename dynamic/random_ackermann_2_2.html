@@ -6,6 +6,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <style>
 
+<!-- based on http://bl.ocks.org/ericcoopey/6c602d7cb14b25c179a4 -->
 
 .link line {
   stroke: #696969;
@@ -21,24 +22,85 @@
   stroke-width: 1.5px;
 }
 
-.node text {
-  font: 10px sans-serif;
-  pointer-events: none;
+        .textClass {
+            stroke: #fff;
+            font-family:     'Helvetica Neue', Helvetica, sans-serif; 
+            font-weight: normal;
+            stroke-width: 1.;
+            font-size: 14px;
+        }
+
+.demo-info {
+	padding: 14px 26px;
+	font-size: 14px;
+	line-height: 100%;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	color: #fff;
+	
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background 0.1s ease-in-out;
+	-webkit-transition: background 0.1s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	-ms-transition: background 0.1s ease-in-out;
+	-o-transition: background 0.1s ease-in-out;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
-
-
+.demo-info:active {
+	padding-top: 15px;
+}
+.demo-info, .demo-info:hover, .demo-info:active {
+	outline: 0 none;
+	text-decoration: none;
+        color: #fff;
+}
+.demo-info-1 {
+	background-color: #222;
+	box-shadow: 0px 3px 0px 0px #000;
 
     </style>
 </head>
-<body style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);"
- alink="#ee0000" link="#000250" vlink="#551a8b">
+<body  style="background-color: rgb(0, 0, 0); color: #B0CF83; font-family: 'Helvetica Neue', Helvetica, sans-serif; "
+ alink="#f6cf84" link="#6ecae5" vlink="#f6cf84">
 
-<!-- <button onclick="addNodes()">Start!</button> -->
+<a href="https://github.com/chorasimilarity/chemlambda-gui/tree/master/dynamic"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >   <h2><a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/demos.html"><span style="color: #6ecae5;">chemlambda demos</span></a></ul>
+    
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >The Ackermann function is a <a href="http://en.wikipedia.org/wiki/Ackermann_function">famous computable but not primitive recursive function</a>. Random reduction algorithm for Ack(2,2). </ul>   
 
 
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
 
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >
+<p><a href="#" class="demo-info demo-info-1" onclick="appear(bibi)">start</a></p>
+
+
+<div id="bibi"> </div>
+
+ </ul>
 
 <script>
+function appear(gugus){
+   
+
+     
+        d3.select("svg")
+                .remove();
+
+
     var graph;
     function myGraph() { 
 
@@ -109,7 +171,7 @@
 //    var radius = d3.scale.sqrt()
 //    .range([0, 4]);
 
-        var vis = d3.select("body")
+        var vis = d3.select(gugus)
                 .append("svg:svg")
                 .attr("width", w)
                 .attr("height", h)
@@ -194,8 +256,8 @@
 
             force
 //                    .friction(.01)
-    .charge(-10)
-    .gravity(.05)
+    .charge(-8)
+    .gravity(.04)
                         .linkDistance( function(d) { return ((d.source.size + d.target.size + 3)/(20*d.bond)); } )
                     .size([w, h])
                     .start();
@@ -555,7 +617,7 @@ keepNodesOnTop();
  
          function nextval() { 
  step++; 
- return 2000 + (40*step);  } 
+ return 1000 + (30*step);  } 
  setTimeout(function() {  
  
  graph.removeLink("25", "25_3"); 
@@ -65434,7 +65496,25 @@ keepNodesOnTop();
          drawGraph();
     }
 
+}
 
 </script>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=5759559; 
+var sc_invisible=1; 
+var sc_security="b75cf132"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="web stats"
+href="http://www.statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/5759559/0/b75cf132/1/"
+alt="web stats" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
 </body>
 </html>
