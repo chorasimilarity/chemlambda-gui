@@ -244,18 +244,26 @@
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > One needs to add to chemlambda a reduction model (which says basically how to apply the moves and what to do if two or more moves attempt to modify the same node of the graph). Any reduction model will do, with the condition to be: 
-<li>- local (the algorithm for deciding which move to apply or which solves conflicts has to be formulated so that it works with an input consisting of a graph with at most N nodes and links, with N fixed a priori) </li>
-<li>- geometrical (the result of the algorithm is the same regardless of the internal numbering, ordering or naming of the variables from the input)</li>
-<li>- if it is distributed, then it has to be asynchronous (because of locality in time as well) and decentralized, in the sense that the "local" constraint applies also in space, so the algorithm running in one place has to be able to solve moves and conflicts on its piece of graph based on an a priori bounded number N of graph nodes, links and messages exchanged with other places. </li></ul>
+<li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > local (the algorithm for deciding which move to apply or which solves conflicts has to be formulated so that it works with an input consisting of a graph with at most N nodes and links, with N fixed a priori) </li>
+<li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > geometrical (the result of the algorithm is the same regardless of the internal numbering, ordering or naming of the variables from the input)</li>
+<li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > if it is distributed, then it has to be asynchronous (because of locality in time as well) and decentralized, in the sense that the "local" constraint applies also in space, so the algorithm running in one place has to be able to solve moves and conflicts on its piece of graph based on an a priori bounded number N of graph nodes, links and messages exchanged with other places. </li></ul>
 
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >In the demos there is used the most simple algorithm, called for this reason the "stupid" one, in order to show that even so the results are interesting. The stupid algorithm takes as input an initial graph, then the is a cycle where, at each step (deterministically or randomly):
-<li>- are identified the pieces of graph where moves apply</li>
-<li>- according to a priority of moves (i.e. in this case first identify the patterns for the move FO-FOE, then block the nodes which involve that move, then look further for the other moves DIST which involve free nodes, then block the nodes involved, then look for the BETA and FAN-IN moves, block the nodes, then look for PRUNING moves, block the nodes)</li>
-<li>- in the random case a coin is flipped for each proposed move and the move is applied or not, accordingly,</li>
-<li>- moves are applied</li>
-<li>- there is a COMB cycle, which search for the application of all COMB moves (which eliminate the Arrow elements) until there is no possibility of applying further COMB moves (which does not mean that all Arrow elements are eliminated)</li></ul>
+<li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > are identified the pieces of graph where moves apply</li>
+<li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > according to a priority of moves (i.e. in this case first identify the patterns for the move FO-FOE, then block the nodes which involve that move, then look further for the other moves DIST which involve free nodes, then block the nodes involved, then look for the BETA and FAN-IN moves, block the nodes, then look for PRUNING moves, block the nodes)</li>
+<li    padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > in the random case a coin is flipped for each proposed move and the move is applied or not, accordingly,</li>
+<li    padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > moves are applied</li>
+<li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;    > there is a COMB cycle, which search for the application of all COMB moves (which eliminate the Arrow elements) until there is no possibility of applying further COMB moves (which does not mean that all Arrow elements are eliminated)</li></ul>
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >The effect of this stupid algorithm is equivalent, in case we start from a graph which represents a lambda term, to a <span style="color: #6ecae5;">massively parallel reduction</span> of the term, but one not involving any variable passing, nor evaluation steps, which is already weird enough.</ul>
