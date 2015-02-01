@@ -52,7 +52,11 @@
  <li><h1>chemlambda graph rewrites</h1> </li> <li><a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/demos.html"><span style="color: #6ecae5;">demos</span></a></li><li><a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/vision.html"><span style="color: #6ecae5;">vision</span></a></li></ul>
 
 <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > These are the chemical reactions of the artificial chemistry chemlambda (see the <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/demos.html">demos</a>). These chemical reactions are technically called "graph rewrites", or "moves", or even "rules".  </ul>
+    margin:35px 0 36px;      > First are presented the chemical reactions of the artificial chemistry chemlambda (see the <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/demos.html">demos</a>). These chemical reactions are technically called "graph rewrites", or "moves", or even "rules".  </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Look further after the moves presentation to see the description of the algorithms used in the demos.  </ul>
+
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > The molecules of chemlambda are made by 7 elementary molecules which are called: A, L, FI, FO, FOE, T, Arrow. Every elementary  molecule is made by a main atom, represented as a big colored circle, and some smaller atoms, called ports.  A, L, FI, FO, FOE have 3 ports each, Arrow has two ports, and T has one port.   </ul>
@@ -223,6 +227,48 @@
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > A good source for understanding chemlambda is <a href="http://chorasimilarity.wordpress.com/chemical-concrete-machine/">this page from my open notebook</a>. There you will find, for example, the idea that the moves of chemlambda are akin chemical reactions which involve enzymes. Each move has an enzyme, but they are invisible in these demos. This is a subject which will be touched later, because it sits in between the WHAT and the HOW.  </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > About the algorithms used for this demo (i.e. about the HOW part, as presented until now.)</ul>
+    
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >Chemlambda is a graph-rewriting formalism with some of the moves (graph-rewrites) inspired from lambda calculus, like for example the BETA move, which is a variant of the Wadsworth-Lamping treatment of the beta move on syntactic trees of lambda terms. But there is a difference: in chemlambda there are no correct molecules (graphs). </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >Another resemblance is with the <a href="http://tuvalu.santafe.edu/~walter/AlChemy/Statement/organization.html">Alchemy of Fontana and Buss</a>. They also propose to look at lambda calculus as an artificial chemistry. The main difference is that while in  chemlambda application and abstraction are treated on the same par, as atoms in the molecule, in Alchemy application is seen as a chemical reaction and abstraction is seen as a reactive locus in a molecule. </a> </ul>
+    
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > One needs to add to chemlambda a reduction model (which says basically how to apply the moves and what to do if two or more moves attempt to modify the same node of the graph). Any reduction model will do, with the condition to be: 
+<li>- local (the algorithm for deciding which move to apply or which solves conflicts has to be formulated so that it works with an input consisting of a graph with at most N nodes and links, with N fixed a priori) </li>
+<li>- geometrical (the result of the algorithm is the same regardless of the internal numbering, ordering or naming of the variables from the input)</li>
+<li>- if it is distributed, then it has to be asynchronous (because of locality in time as well) and decentralized, in the sense that the "local" constraint applies also in space, so the algorithm running in one place has to be able to solve moves and conflicts on its piece of graph based on an a priori bounded number N of graph nodes, links and messages exchanged with other places. </li></ul>
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >In the demos there is used the most simple algorithm, called for this reason the "stupid" one, in order to show that even so the results are interesting. The stupid algorithm takes as input an initial graph, then the is a cycle where, at each step (deterministically or randomly):
+<li>- are identified the pieces of graph where moves apply</li>
+<li>- according to a priority of moves (i.e. in this case first identify the patterns for the move FO-FOE, then block the nodes which involve that move, then look further for the other moves DIST which involve free nodes, then block the nodes involved, then look for the BETA and FAN-IN moves, block the nodes, then look for PRUNING moves, block the nodes)</li>
+<li>- in the random case a coin is flipped for each proposed move and the move is applied or not, accordingly,</li>
+<li>- moves are applied</li>
+<li>- there is a COMB cycle, which search for the application of all COMB moves (which eliminate the Arrow elements) until there is no possibility of applying further COMB moves (which does not mean that all Arrow elements are eliminated)</li></ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >The effect of this stupid algorithm is equivalent, in case we start from a graph which represents a lambda term, to a massively parallel reduction of the term, but one not involving any variable passing, nor evaluation steps, which is already weird enough.</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >On top of this, if we restrict to graphs coming from lambda terms, one has to take care that: (a) there is no eta reduction, it's pure lambda beta, so "functional" is not appropriate to use because functions need eta reduction (b) even if the initial and final graphs (if there is a final graph) correspond to lambda terms, typically the intermediary ones do not, see for example <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/pred_2_bw.html">the bw version of the predecessor reduction</a>. That is because instead of passing variables and evaluations, chemlambda uses a different strategy which is akin to <a href="http://en.wikipedia.org/wiki/Signal_transduction">signal transduction</a> .</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >In the present embodiment there is no care to make the process to be conservative, but this is not a serious problem, because there are several ways of solving this.</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >Each move is seen as an interaction between a (part of a) molecule-graph with an invisible enzyme, one enzyme per move. One can make the enzymes visible, even use them as a resource, introduce moves between enzymes, this time conservative, or even transform the enzymes into chemlambda graphs as well, by a sort of bootstrapping. </ul>
+
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >   References:  </ul>
