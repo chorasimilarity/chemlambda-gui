@@ -6,6 +6,8 @@ BEGIN {
 # owner: chorasimilarity (Marius Buliga, http://chorasimilarity.wordpress.com/ )
 #
 
+      metabo=100;
+
       main_const=4;
 
       left=2;
@@ -125,7 +127,7 @@ BEGIN {
 
 END { 
 
-             srand();
+    srand();
 
        
 #
@@ -881,7 +883,7 @@ for (j in all_edge_out){
 
           }
 
-        dodo="keepNodesOnTop()\; \n \n         var step = -1\; \n \n         function nextval() \{ \n step++\; \n return 2000 + (40*step)\;  \} \n " ; 
+        dodo="keepNodesOnTop()\; \n \n         var step = -1\; \n \n         function nextval() \{ \n step++\; \n return 3000 + (20*step)\;  \} \n " ; 
 
       printf(dodo) >> "essy.txt";
 
@@ -908,7 +910,9 @@ for (j in all_edge_out){
 gugu=0;
 counter=0;
 
-while (counter<1500) {
+
+
+while (counter<80) {
 
 # counter for the new nodes or links added or removed
 
@@ -916,6 +920,7 @@ coact=0;
 
 # 
 
+ 
 
 ###############
 
@@ -3679,15 +3684,17 @@ for ( nodusi in proposed_node_candi ) {
 
 if (nodc in proposed_all_node_atom) {
 
+  varmetabo=((nodc-(nodc%metabo))/metabo)%2;
 
-                                  noda=proposed_all_node_atom[nodc];;
+  if (varmetabo==0) {nodcol=proposed_all_node_colour[nodc];} else {nodcol="#222";}
+
+                                  noda=proposed_all_node_atom[nodc];
                                   nodsi=proposed_all_node_size[nodc];
-                                  nodcol=proposed_all_node_colour[nodc];
                                   nodid=proposed_all_node_id[nodc];
    
    all_node_atom[nodc]=noda;
    all_node_size[nodc]=nodsi;
-   all_node_colour[nodc]-=nodcol;
+   all_node_colour[nodc]=nodcol;
    all_node_id[nodc]=nodid;
    
    if (nodc in proposed_all_edge_int) {
@@ -4004,14 +4011,17 @@ if (combcont=="0") {
 for (nodc in proposed_all_node_atom) {
 
 
-                                  noda=proposed_all_node_atom[nodc];;
+                                  noda=proposed_all_node_atom[nodc];
                                   nodsi=proposed_all_node_size[nodc];
-                                  nodcol=proposed_all_node_colour[nodc];
+  varmetabo=((nodc-(nodc%metabo))/metabo)%2;
+
+  if (varmetabo==0) {nodcol=proposed_all_node_colour[nodc];} else {nodcol="#222";}
+
                                   nodid=proposed_all_node_id[nodc];
    
    all_node_atom[nodc]=noda;
    all_node_size[nodc]=nodsi;
-   all_node_colour[nodc]-=nodcol;
+   all_node_colour[nodc]=nodcol;
    all_node_id[nodc]=nodid;
    
    if (nodc in proposed_all_edge_int) {
