@@ -6,7 +6,7 @@ BEGIN {
 # owner: chorasimilarity (Marius Buliga, http://chorasimilarity.wordpress.com/ )
 #
 
-      metabo=100;
+      metabo=150;
 
       main_const=4;
 
@@ -910,6 +910,8 @@ for (j in all_edge_out){
 gugu=0;
 counter=0;
 
+growfact=2;
+diefact=2;
 
 
 while (counter<80) {
@@ -920,6 +922,8 @@ coact=0;
 
 # 
 
+growcont=0;
+diecont=0;
  
 
 ###############
@@ -944,13 +948,13 @@ coact=0;
 
 #   FOFOE, which appears as move 33. It then blocks the nodes which participate to this move. 
     
-    parame=int(2 * rand());
+    parame=int(growfact * rand());
     
     if ( parame==0) {
     
     for (ku in all_edge_source) { bon=all_edge_bond[ku];
     
-    
+    growcont++;
     
     if ( bon==bond_ext) {
     
@@ -1352,10 +1356,11 @@ coact=0;
 
 #LFOE, LFO  
   
-   parame=int(2 * rand());
+   parame=int(growfact * rand());
     
     if ( parame==0) {
 
+  growcont++;
   
     if ( bubu=="13" || bubu=="14" ) { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
 
@@ -1719,17 +1724,18 @@ coact=0;
 
 #   printf("\n AFOE: sour= " sour " , targ= " targ " , sourcetype= " sourcetype " , bubu= " bubu " \n ") >> "essy.txt"; 
 
- parame=int(2 * rand());
+ parame=int(growfact * rand());
     
     if ( parame==0) {
 
+  growcont++;
 
    if (sourcetype=="A") {if ( bubu=="23" || bubu=="24" ) { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
 
        node_block[targe]++;
        node_block[sourc]++;
 
-
+  
 
        coact=1;
 
@@ -2096,10 +2102,11 @@ coact=0;
 
 # FIFO
 
- parame=int(2 * rand());
+ parame=int(growcont * rand());
     
     if ( parame==0) {
 
+  growfact++;
 
    if (sourcetype=="FI") {if ( bubu=="24") { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
 
@@ -2501,10 +2508,11 @@ coact=0;
 
 # FAN-IN
 
- parame=int(2 * rand());
+ parame=int(diefact * rand());
     
     if ( parame==0) {
 
+   diecont++;
 
    if (sourcetype=="FI") { if ( bubu=="23" ) { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
 
@@ -2697,10 +2705,11 @@ coact=0;
 
 # BETA
 
- parame=int(2 * rand());
+ parame=int(diefact * rand());
     
     if ( parame==0) {
 
+   diecont++;
 
   if ( bubu=="15" ) { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
 
@@ -2919,10 +2928,11 @@ coact=0;
 
 # L3T 
 
- parame=int(2 * rand());
+ parame=int(diefact * rand());
     
     if ( parame==0) {
 
+    diecont++;
 
     if (bubu=="12") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
     
@@ -3045,10 +3055,11 @@ coact=0;
 
 
   
- parame=int(2 * rand());
+ parame=int(diefact * rand());
     
     if ( parame==0) {
 
+   diecont++;
 
     if (bubu=="22") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
     
@@ -3168,11 +3179,11 @@ sourcetype=all_node_atom[sourc];
 
 # FO3T(32)
 
- parame=int(2 * rand());
+ parame=int(diefact * rand());
     
     if ( parame==0) {
 
-
+    diecont++;
 
     if (bubu=="32") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
     
@@ -3307,10 +3318,11 @@ sourcetype=all_node_atom[sourc];
 
 # FO2T, FOE2T, FOE3T(42)
 
- parame=int(2 * rand());
+ parame=int(diefact * rand());
     
     if ( parame==0) {
 
+    diecont++;
 
     if (bubu=="42") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
     
@@ -4143,8 +4155,30 @@ for (nodc in proposed_all_node_atom) {
 
 if (gugu==140) {counter=13000;}}
 
+ difcont=growcont-diecont;
+ 
+ totcont=growcont+diecont;
+ 
+ if (totcont==0) { zizuzizu=0;} else{ 
+ 
+ procont=difcont/totcont;
+ 
+ procont=procont;
+ 
+ growfact=growfact-procont;
+ 
+ diefact=diefact+procont;
+ 
+ 
+ 
+ }
 
-
+if (growfact>3.5) {growfact=2;}
+ if (diefact>3.5) {diefact=2;}
+ 
+if (growfact<1.5) {growfact=2;}
+ if (diefact<1.5) {diefact=2;}
+ 
 #counter++;
 
 #counter=200;
