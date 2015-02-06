@@ -30,8 +30,14 @@
 
     </style>
 </head>
-<body>
-<button onclick="addNodes()">Start!</button>
+<body style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);"
+ alink="#ee0000" link="#000250" vlink="#551a8b">
+
+<!-- <button onclick="addNodes()">Start!</button> -->
+
+
+
+
 <script>
     var graph;
     function myGraph() { 
@@ -98,7 +104,7 @@
 
         // set up the D3 visualisation in the specified element
         var w = 960,
-                h = 600;
+                h = 800;
 
 //    var radius = d3.scale.sqrt()
 //    .range([0, 4]);
@@ -155,7 +161,7 @@
                     .call(force.drag);
 
             nodeEnter.append("svg:circle")
-                    .attr("r", function(d) { return d.size*2;})
+                    .attr("r", function(d) { return d.size*2.5;})
                     .attr("id", function (d) {
                         return "Node;" + d.id;
                     })
@@ -188,9 +194,10 @@
 
             force
 //                    .friction(.01)
-    .charge(-10)
-    .gravity(.05)
-                        .linkDistance( function(d) { return ((d.source.size + d.target.size + 3)/(20*d.bond)); } )
+    .charge(-30)
+    .gravity(.08)
+    .linkStrength(8.8)
+                        .linkDistance( function(d) { return ((d.source.size + d.target.size + 3)/(40*d.bond)); } )
                     .size([w, h])
                     .start();
         };
