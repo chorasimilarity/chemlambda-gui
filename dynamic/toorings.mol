@@ -29,8 +29,8 @@ FOE l8 9 l9
 A 9 r9 r8
 FOE l9 10 l10
 A 10 r10 r9
-FOE l10 11 l11
-A 11 r11 r10x
+FOE l10 11 l11x
+A 11 r11 r10
 FOE l11 12 l12
 A 12 r12 r11
 FOE l12 13 l13
@@ -82,8 +82,8 @@ FOE l8x 9x l9x
 A 9x r9x r8x
 FOE l9x 10x l10x
 A 10x r10x r9x
-FOE l10x 11x l11x
-A 11x r11x r10
+FOE l10x 11x l11
+A 11x r11x r10x
 FOE l11x 12x l12x
 A 12x r12x r11x
 FOE l12x 13x l13x
