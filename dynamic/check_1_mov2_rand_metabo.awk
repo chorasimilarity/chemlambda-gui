@@ -6,8 +6,10 @@ BEGIN {
 # owner: chorasimilarity (Marius Buliga, http://chorasimilarity.wordpress.com/ )
 #
 
-      metabo=150;
+      metabo=15000;
 
+      cycounter=1000;
+    
       main_const=4;
 
       left=2;
@@ -22,7 +24,9 @@ BEGIN {
        
 #CRESCIMENTO      green_col="#2a6d00";
 
-      green_col="#ade747";
+     green_col="#ade747";
+
+
 
 #      green_col="#9fc952";
 
@@ -44,13 +48,17 @@ BEGIN {
 
       red_col="#be66dd";
 
+
+
 #      red_col="#ed2525";
 
 # true one     in_col="#FFFF00";
      
 #CRESCIMENTO      in_col="#91009a";
 
-      in_col="#f6cf84";
+     in_col="#f6cf84";
+
+
 
 #      in_col="#fbfd37";
 
@@ -60,7 +68,9 @@ BEGIN {
 
 #CRESCIMENTO      out_col="#150070";
 
-      out_col="#6ecae5";
+     out_col="#6ecae5";
+
+
 
 #      out_col="#a8e2f9";
 
@@ -75,7 +85,9 @@ BEGIN {
 
 #CRESCIMENTO     arrow_col="#f0a900";
 
-               arrow_col="#f0bf26";
+              arrow_col="#f0bf26";
+
+
 
 #               arrow_col="#fffab2";
 
@@ -127,9 +139,11 @@ BEGIN {
 
 END { 
 
-    srand();
+#    srand();
 
-       
+# Joshua Herman solution for srand
+
+   "od -tu4 -N4 -A n /dev/random" | getline srand(0+$0)      
 #
 #
 #
@@ -883,7 +897,7 @@ for (j in all_edge_out){
 
           }
 
-        dodo="keepNodesOnTop()\; \n \n         var step = -1\; \n \n         function nextval() \{ \n step++\; \n return 3000 + (20*step)\;  \} \n " ; 
+        dodo="keepNodesOnTop()\; \n \n         var step = -1\; \n \n         function nextval() \{ \n step++\; \n return 3000 + (5*step)\;  \} \n " ; 
 
       printf(dodo) >> "essy.txt";
 
@@ -914,7 +928,7 @@ growfact=2;
 diefact=2;
 
 
-while (counter<80) {
+while (counter<cycounter) {
 
 # counter for the new nodes or links added or removed
 
@@ -4185,7 +4199,6 @@ if (growfact<1.5) {growfact=2;}
 
 #end while
    }
-
 
 
 
