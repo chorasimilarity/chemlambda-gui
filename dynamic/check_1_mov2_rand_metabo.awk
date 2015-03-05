@@ -2,21 +2,79 @@ BEGIN {
 
 # forked from check_1_foe.awk version 22.09.2014
 #
-# this program reads a .mol file and produces the initial addNode, addLink chunk for the visualiser.  
-# owner: chorasimilarity (Marius Buliga, http://chorasimilarity.wordpress.com/ )
+# this program reads a .mol file and applies a random reduction algorithm
+# owner: chorasimilarity (Marius Buliga, http://chorasimilarity.wordpress.com/,  marius.buliga@imar.ro , marius.buliga@gmail.com)
 #
 
-      metabo=15000;
+####### waits between moves if 0 
+
+  wait_param=1;
+
+
+######## params for metabolism visualisation (turns on and off the colours of the new nodes)
+
+      shiftmetabo=10000;
+
+      metabo=20000;
+
+######### number of cycles
 
       cycounter=1000;
+      
+######## time between graph updates, in the visualisation html file
+
+     time_val=5;      
+      
+######## params for the weight of moves    (if you want to eliminate randomness then take everything = 0)
+
+    wei_L3T=1;
+    
+    wei_A3TFI3T=1;
+    
+    wei_FO3T=1;
+    
+    wei_FO2TFOET=1;
+
+    wei_FOFOE=1;
+    
+    wei_LFOELFO=1;
+    
+    wei_AFOAFOE=1;
+
+    wei_FIFO=1;
+
+    wei_FIFOE=1;
+
+    wei_AL=1;      
+    
+    
+    
+#######  diefactor, growthfactor.  The probability of the move is (not considering the order of moves)  1/(weight X growfact)  (or diefact). 
+
+
+    
+     growfact=2;
+     
+     mingrowfact=1;
+     
+     maxgrowfact=3.5;
+     
+     diefact=2;
+     
+     mindiefact=1;
+     
+     maxdiefact=3.5;
+
+#######  colours and radii
+
     
       main_const=4;
 
-      left=2;
+      left=4;
 
-      right=1;
+      right=3;
 
-      middle=1;
+      middle=3;
 
 #     green_col="#8CC152";
 
@@ -90,6 +148,9 @@ BEGIN {
 
 
 #               arrow_col="#fffab2";
+
+
+#######################
 
        count_lines=0; 
 
@@ -897,8 +958,12 @@ for (j in all_edge_out){
 
           }
 
-        dodo="keepNodesOnTop()\; \n \n         var step = -1\; \n \n         function nextval() \{ \n step++\; \n return 3000 + (5*step)\;  \} \n " ; 
+        dodo1="keepNodesOnTop()\; \n \n         var step = -1\; \n \n         function nextval() \{ \n step++\; \n return 3000 + (" ; 
+        
+         dodo2="*step)\;  \} \n " ; 
 
+       dodo=dodo1 time_val dodo2;
+  
       printf(dodo) >> "essy.txt";
 
 
@@ -957,12 +1022,680 @@ diecont=0;
 
 ###############
 
+#moves PRUN:  L3T (12), A3T, FI3T (22), FO3T (32), FO2T, FOE2T, FOE3T(42)
 
+    for (ku in all_edge_source) {bon=all_edge_bond[ku];
+    
+    if ( bon==bond_ext) { 
+      
+
+    
+    targ=all_edge_target[ku];
+    sour=all_edge_source[ku];
+
+     tarl=all_edge_int[targ];
+     sourl=all_edge_int[sour];
+    
+    targe=all_edge_source[tarl];
+    sourc=all_edge_source[sourl];
+    
+    bubu=all_node_atom[sour] all_node_atom[targ];
+
+# L3T 
+
+ parame=int(wei_L3T*diefact * rand());
+ 
+#   parame=0;
+    
+    if ( parame==0) {
+
+    diecont++;
+
+    if (bubu=="12") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
+    
+
+
+      junu=jmax+1;
+
+
+      jmax=jmax+1;
+
+
+
+
+       node_block[targe]++;
+       node_block[sourc]++;
+
+
+
+       coact=1;
+
+# identified nodes, with their ports, then defines the new edges, internal and external
+
+      unuu=all_node_id[sourc] "_1";
+      doii=all_node_id[sourc] "_2";
+
+
+ 
+      unu=all_edge_out[unuu];
+      doi=all_edge_out[doii];
+
+
+    
+
+# proposed for remove nodes and active external edge. 
+
+#                                proposed_remove_node[targe]++;
+#                                proposed_remove_node[targ]++;
+                                  proposed_remove_node[unuu]++;
+                                  proposed_remove_node[doii]++;
+
+ 
+                                  proposed_remove_node[sourc]++;
+                                  proposed_remove_node[sour]++;
+
+                                  proposed_update_edge[unu]++;
+                                  proposed_update_edge[doi]++;
+
+
+
+
+                                  proposed_remove_edge[ku]++;
+                                  
+                                  editar1=all_edge_int[targ];
+                                  editar2=all_edge_int[unuu];
+                                  editar3=all_edge_int[doii];
+                                  
+                                  edisou3=all_edge_int[sour];
+
+#                                  proposed_remove_edge[editar1]++;
+                                  proposed_remove_edge[editar2]++;
+                                  proposed_remove_edge[editar3]++;
+                                  
+                                  proposed_remove_edge[edisou3]++;
+                                  
+                                  
+#proposed for add nodes and moves
+
+
+
+
+#definition of FRIN node and edges, internal and external
+
+
+                                  proposed_all_node_atom[junu]="FRIN";
+                                  proposed_all_node_size[junu]=main_const;
+                                  proposed_all_node_colour[junu]=in_col;
+                                  proposed_all_node_id[junu]=junu;
+                                  
+                                  j1=junu "_1";
+                                  
+                                  je_1=junu "_e1";
+
+                                  
+
+
+                                  proposed_all_node_atom[j1]="5";
+                                  proposed_all_node_size[j1]=middle;
+                                  proposed_all_node_colour[j1]=out_col;
+                                  proposed_all_node_id[j1]=j1;
+                                  proposed_all_edge_int[j1]=je_1;
+                                  proposed_all_edge_out[j1]=doi;
+                                  proposed_all_edge_source[doi]=j1; 
+                                  
+   
+                                  
+                                  proposed_all_edge_target[unu]=targ;
+                                  proposed_all_edge_out[targ]=unu;                                   
+                                  
+                                  
+# definition of internal edges
+
+                                proposed_add_edge[je_1]++;
+
+                                  proposed_all_edge_source[je_1]=junu;  
+                                  proposed_all_edge_target[je_1]=j1; 
+                                  proposed_all_edge_bond[je_1]=bond_int;
+                                  
+                                    
+
+    
+    
+# end L3T
+    }}    
+    
+#end of random parame for L3T
+}    
+    
+# A3T (22) , FI3T (22)
+
+
+
+  
+ parame=int(wei_A3TFI3T*diefact * rand());
+    
+    if ( parame==0) {
+
+   diecont++;
+
+    if (bubu=="22") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
+    
+sourcetype=all_node_atom[sourc];
+
+      junu=jmax+1;
+
+
+      jmax=jmax+1;
+
+
+
+
+       node_block[targe]++;
+       node_block[sourc]++;
+
+
+
+       coact=1;
+
+# identified nodes, with their ports, then defines the new edges, internal and external
+
+      unuu=all_node_id[sourc] "_1";
+      doii=all_node_id[sourc] "_2";
+
+
+ 
+      unu=all_edge_out[unuu];
+      doi=all_edge_out[doii];
+
+
+    
+
+# proposed for remove nodes and active external edge. 
+
+#                                   proposed_remove_node[targe]++;
+#                                  proposed_remove_node[targ]++;
+                                  proposed_remove_node[unuu]++;
+                                  proposed_remove_node[doii]++;
+
+ 
+                                  proposed_remove_node[sourc]++;
+                                  proposed_remove_node[sour]++;
+
+                                  proposed_update_edge[unu]++;
+                                  proposed_update_edge[doi]++;
+
+
+
+
+                                  proposed_remove_edge[ku]++;
+                                  
+                                  editar1=all_edge_int[targ];
+                                  editar2=all_edge_int[unuu];
+                                  editar3=all_edge_int[doii];
+                                  
+                                  edisou3=all_edge_int[sour];
+
+#                                  proposed_remove_edge[editar1]++;
+                                  proposed_remove_edge[editar2]++;
+                                  proposed_remove_edge[editar3]++;
+                                  
+                                  proposed_remove_edge[edisou3]++;
+                                  
+                                  
+#proposed for add nodes and moves
+
+
+
+
+#definition of T node and edges, internal and external
+
+
+                                  proposed_all_node_atom[junu]="T";
+                                  proposed_all_node_size[junu]=main_const;
+                                  proposed_all_node_colour[junu]=term_col;
+                                  proposed_all_node_id[junu]=junu;
+                                  
+                                  j1=junu "_1";
+                                  
+                                  je_1=junu "_e1";
+
+                                  
+
+
+                                  proposed_all_node_atom[j1]="2";
+                                  proposed_all_node_size[j1]=middle;
+                                  proposed_all_node_colour[j1]=in_col;
+                                  proposed_all_node_id[j1]=j1;
+                                  proposed_all_edge_int[j1]=je_1;
+                                  proposed_all_edge_out[j1]=doi;
+                                  proposed_all_edge_target[doi]=j1; 
+                                  
+   
+                                  
+                                  proposed_all_edge_target[unu]=targ;
+                                  proposed_all_edge_out[targ]=unu;                                   
+                                  
+                                  
+# definition of internal edges
+
+                                  proposed_add_edge[je_1]++;
+
+                                  proposed_all_edge_source[je_1]=junu;  
+                                  proposed_all_edge_target[je_1]=j1; 
+                                  proposed_all_edge_bond[je_1]=bond_int;
+                                  
+                                    
+
+    
+    
+#end A3T (22) , FI3T (22)
+    }}    
+
+#end of random parame for A3T, FI3T
+}
+
+# FO3T(32)
+
+  parame=int(wei_FO3T*diefact * rand());
+
+#    parame=1;
+    
+    if ( parame==0) {
+
+    diecont++;
+
+    if (bubu=="32") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
+    
+
+
+ 
+
+
+
+       node_block[targe]++;
+       node_block[sourc]++;
+
+
+       coact=1;
+
+# identified nodes, with their ports, then defines the new edges, internal and external
+
+      unuu=all_node_id[sourc] "_1";
+      doii=all_node_id[sourc] "_2";
+
+
+ 
+      unu=all_edge_out[unuu];
+      doi=all_edge_out[doii];
+
+
+    
+
+# proposed for remove nodes and active external edge. 
+
+                                  proposed_remove_node[targe]++;
+                                  proposed_remove_node[targ]++;
+                                  proposed_remove_node[unuu]++;
+                                  proposed_remove_node[doii]++;
+
+ 
+                                  proposed_remove_node[sourc]++;
+                                  proposed_remove_node[sour]++;
+
+                                  proposed_update_edge[unu]++;
+                                  proposed_update_edge[doi]++;
+
+
+
+
+                                  proposed_remove_edge[ku]++;
+                                  
+                                  editar1=all_edge_int[targ];
+                                  editar2=all_edge_int[unuu];
+                                  editar3=all_edge_int[doii];
+                                  
+                                  edisou3=all_edge_int[sour];
+
+                                  proposed_remove_edge[editar1]++;
+                                  proposed_remove_edge[editar2]++;
+                                  proposed_remove_edge[editar3]++;
+                                  
+                                  proposed_remove_edge[edisou3]++;
+                                  
+                                  
+#proposed for add nodes and edges
+
+      junu=jmax+1;
+
+
+      jmax=jmax+1;
+
+#definition of Arrow node and edges, internal and external
+
+
+                                  proposed_all_node_atom[junu]="Arrow";
+                                  proposed_all_node_size[junu]=main_const;
+                                  proposed_all_node_colour[junu]=arrow_col;
+                                  proposed_all_node_id[junu]=junu;
+                                  
+                                  j1=junu "_1";
+                                  j2=junu "_2";
+                                  
+                                  je_1=junu "_e1";
+                                  je_2=junu "_e2";
+
+                                  
+
+
+                                  proposed_all_node_atom[j1]="1";
+                                  proposed_all_node_size[j1]=middle;
+                                  proposed_all_node_colour[j1]=in_col;
+                                  proposed_all_node_id[j1]=j1;
+                                  proposed_all_edge_int[j1]=je_1;
+                                  proposed_all_edge_out[j1]=unu;
+                                  proposed_all_edge_target[unu]=j1; 
+                                  
+                                  proposed_all_node_atom[j2]="6";
+                                  proposed_all_node_size[j2]=middle;
+                                  proposed_all_node_colour[j2]=out_col;
+                                  proposed_all_node_id[j2]=j2;
+                                  proposed_all_edge_int[j2]=je_2;
+                                  proposed_all_edge_out[j2]=doi;
+                                  proposed_all_edge_source[doi]=j2; 
+                                 
+   
+                                  
+# definition of internal edges
+
+                                proposed_add_edge[je_1]++;
+                                 proposed_add_edge[je_2]++;
+
+
+                                  proposed_all_edge_source[je_1]=junu;  
+                                  proposed_all_edge_target[je_1]=j1; 
+                                  proposed_all_edge_bond[je_1]=bond_int;
+                                  
+                                  proposed_all_edge_source[je_2]=junu;  
+                                  proposed_all_edge_target[je_2]=j2; 
+                                  proposed_all_edge_bond[je_2]=bond_int;
+
+
+
+                                  
+                                    
+
+    
+    
+#end FO3T(32)
+    }}    
+
+#end of random parame for FO3T
+}
+
+##++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+# FO2T, FOE2T, FOE3T(42)
+
+ parame=int(wei_FO2TFOET*diefact * rand());
+    
+#    parame=1;
+    
+#    if (sourc=="FOE") {parame=1;}
+    
+    if ( parame==0) {
+
+    diecont++;
+
+    if (bubu=="42") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
+    
+
+
+
+       node_block[targe]++;
+       node_block[sourc]++;
+
+     junu=jmax+1;
+
+      jmax++;
+
+       coact=1;
+
+# identified nodes, with their ports, then defines the new edges, internal and external
+
+
+     sourcesize=all_node_size[sour];
+
+     if (sourcesize==left) {
+
+# printf ("sourcesize=" source size "should be the left");
+
+      unuu=all_node_id[sourc] "_1";
+      doii=all_node_id[sourc] "_3";
+
+
+ 
+      unu=all_edge_out[unuu];
+      doi=all_edge_out[doii];
+
+    
+
+# proposed for remove nodes and active external edge. 
+
+                                  proposed_remove_node[targe]++;
+                                  proposed_remove_node[targ]++;
+                                  proposed_remove_node[unuu]++;
+                                  proposed_remove_node[doii]++;
+
+ 
+                                  proposed_remove_node[sourc]++;
+                                  proposed_remove_node[sour]++;
+
+                                  proposed_update_edge[unu]++;
+                                  proposed_update_edge[doi]++;
+
+
+
+
+                                  proposed_remove_edge[ku]++;
+                                  
+                                  editar1=all_edge_int[targ];
+                                  editar2=all_edge_int[unuu];
+                                  editar3=all_edge_int[doii];
+                                  
+                                  edisou3=all_edge_int[sour];
+
+                                  proposed_remove_edge[editar1]++;
+                                  proposed_remove_edge[editar2]++;
+                                  proposed_remove_edge[editar3]++;
+                                  
+                                  proposed_remove_edge[edisou3]++;
+                                  
+                                  
+#proposed for add nodes and edges
+
+#definition of Arrow node and edges, internal and external
+
+
+                                  proposed_all_node_atom[junu]="Arrow";
+                                  proposed_all_node_size[junu]=main_const;
+                                  proposed_all_node_colour[junu]=arrow_col;
+                                  proposed_all_node_id[junu]=junu;
+                                  
+                                  j1=junu "_1";
+                                  j2=junu "_2";
+                                  
+                                  je_1=junu "_e1";
+                                  je_2=junu "_e2";
+
+                                  
+
+
+                                  proposed_all_node_atom[j1]="1";
+                                  proposed_all_node_size[j1]=middle;
+                                  proposed_all_node_colour[j1]=in_col;
+                                  proposed_all_node_id[j1]=j1;
+                                  proposed_all_edge_int[j1]=je_1;
+                                  proposed_all_edge_out[j1]=unu;
+                                  proposed_all_edge_target[unu]=j1; 
+                                  
+                                  proposed_all_node_atom[j2]="6";
+                                  proposed_all_node_size[j2]=middle;
+                                  proposed_all_node_colour[j2]=out_col;
+                                  proposed_all_node_id[j2]=j2;
+                                  proposed_all_edge_int[j2]=je_2;
+                                  proposed_all_edge_out[j2]=doi;
+                                  proposed_all_edge_source[doi]=j2; 
+                                 
+   
+                                  
+# definition of internal edges
+
+                                proposed_add_edge[je_1]++;
+                                 proposed_add_edge[je_2]++;
+
+
+                                  proposed_all_edge_source[je_1]=junu;  
+                                  proposed_all_edge_target[je_1]=j1; 
+                                  proposed_all_edge_bond[je_1]=bond_int;
+                                  
+                                  proposed_all_edge_source[je_2]=junu;  
+                                  proposed_all_edge_target[je_2]=j2; 
+                                  proposed_all_edge_bond[je_2]=bond_int;
+
+
+
+ 
+
+
+
+}    else {
+
+# printf ("sourcesize=" source size "should be the right");
+
+      unuu=all_node_id[sourc] "_1";
+      doii=all_node_id[sourc] "_2";
+
+
+ 
+      unu=all_edge_out[unuu];
+      doi=all_edge_out[doii];
+
+
+    
+
+# proposed for remove nodes and active external edge. 
+
+                                  proposed_remove_node[targe]++;
+                                  proposed_remove_node[targ]++;
+                                  proposed_remove_node[unuu]++;
+                                  proposed_remove_node[doii]++;
+
+ 
+                                  proposed_remove_node[sourc]++;
+                                  proposed_remove_node[sour]++;
+
+                                  proposed_update_edge[unu]++;
+                                  proposed_update_edge[doi]++;
+
+
+
+
+                                  proposed_remove_edge[ku]++;
+                                  
+                                  editar1=all_edge_int[targ];
+                                  editar2=all_edge_int[unuu];
+                                  editar3=all_edge_int[doii];
+                                  
+                                  edisou3=all_edge_int[sour];
+
+                                  proposed_remove_edge[editar1]++;
+                                  proposed_remove_edge[editar2]++;
+                                  proposed_remove_edge[editar3]++;
+                                  
+                                  proposed_remove_edge[edisou3]++;
+                                  
+                                  
+#proposed for add nodes and edges
+#definition of Arrow node and edges, internal and external
+
+
+                                  proposed_all_node_atom[junu]="Arrow";
+                                  proposed_all_node_size[junu]=main_const;
+                                  proposed_all_node_colour[junu]=arrow_col;
+                                  proposed_all_node_id[junu]=junu;
+                                  
+                                  j1=junu "_1";
+                                  j2=junu "_2";
+                                  
+                                  je_1=junu "_e1";
+                                  je_2=junu "_e2";
+
+                                  
+
+
+                                  proposed_all_node_atom[j1]="1";
+                                  proposed_all_node_size[j1]=middle;
+                                  proposed_all_node_colour[j1]=in_col;
+                                  proposed_all_node_id[j1]=j1;
+                                  proposed_all_edge_int[j1]=je_1;
+                                  proposed_all_edge_out[j1]=unu;
+                                  proposed_all_edge_target[unu]=j1; 
+                                  
+                                  proposed_all_node_atom[j2]="6";
+                                  proposed_all_node_size[j2]=middle;
+                                  proposed_all_node_colour[j2]=out_col;
+                                  proposed_all_node_id[j2]=j2;
+                                  proposed_all_edge_int[j2]=je_2;
+                                  proposed_all_edge_out[j2]=doi;
+                                  proposed_all_edge_source[doi]=j2; 
+                                 
+   
+                                  
+# definition of internal edges
+
+                                proposed_add_edge[je_1]++;
+                                 proposed_add_edge[je_2]++;
+
+
+                                  proposed_all_edge_source[je_1]=junu;  
+                                  proposed_all_edge_target[je_1]=j1; 
+                                  proposed_all_edge_bond[je_1]=bond_int;
+                                  
+                                  proposed_all_edge_source[je_2]=junu;  
+                                  proposed_all_edge_target[je_2]=j2; 
+                                  proposed_all_edge_bond[je_2]=bond_int;
+
+
+
+ 
+}
+
+
+
+                                  
+
+                                  
+                                    
+
+    
+    
+#end  FO2T, FOE2T, FOE3T(42)
+    }}    
+
+#end of random parame for FO2T...
+}
+
+    
+
+#end PRUN    
+}
+}
 
 
 #   FOFOE, which appears as move 33. It then blocks the nodes which participate to this move. 
     
-    parame=int(growfact * rand());
+    parame=int(wei_FOFOE*growfact * rand());
     
     if ( parame==0) {
     
@@ -1370,7 +2103,7 @@ diecont=0;
 
 #LFOE, LFO  
   
-   parame=int(growfact * rand());
+   parame=int(wei_LFOELFO*growfact * rand());
     
     if ( parame==0) {
 
@@ -1738,7 +2471,7 @@ diecont=0;
 
 #   printf("\n AFOE: sour= " sour " , targ= " targ " , sourcetype= " sourcetype " , bubu= " bubu " \n ") >> "essy.txt"; 
 
- parame=int(growfact * rand());
+ parame=int(wei_AFOAFOE*growfact * rand());
     
     if ( parame==0) {
 
@@ -2116,7 +2849,7 @@ diecont=0;
 
 # FIFO
 
- parame=int(growcont * rand());
+ parame=int(wei_FIFO*growcont * rand());
     
     if ( parame==0) {
 
@@ -2522,7 +3255,7 @@ diecont=0;
 
 # FAN-IN
 
- parame=int(diefact * rand());
+ parame=int(wei_FIFOE*diefact * rand());
     
     if ( parame==0) {
 
@@ -2719,7 +3452,7 @@ diecont=0;
 
 # BETA
 
- parame=int(diefact * rand());
+ parame=int(wei_AL*diefact * rand());
     
     if ( parame==0) {
 
@@ -2921,667 +3654,7 @@ diecont=0;
 
 
 
-#moves PRUN:  L3T (12), A3T, FI3T (22), FO3T (32), FO2T, FOE2T, FOE3T(42)
 
-    for (ku in all_edge_source) {bon=all_edge_bond[ku];
-    
-    if ( bon==bond_ext) { 
-      
-
-    
-    targ=all_edge_target[ku];
-    sour=all_edge_source[ku];
-
-     tarl=all_edge_int[targ];
-     sourl=all_edge_int[sour];
-    
-    targe=all_edge_source[tarl];
-    sourc=all_edge_source[sourl];
-    
-    bubu=all_node_atom[sour] all_node_atom[targ];
-
-# L3T 
-
- parame=int(diefact * rand());
-    
-    if ( parame==0) {
-
-    diecont++;
-
-    if (bubu=="12") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
-    
-
-
-      junu=jmax+1;
-
-
-      jmax=jmax+1;
-
-
-
-
-       node_block[targe]++;
-       node_block[sourc]++;
-
-
-
-       coact=1;
-
-# identified nodes, with their ports, then defines the new edges, internal and external
-
-      unuu=all_node_id[sourc] "_1";
-      doii=all_node_id[sourc] "_2";
-
-
- 
-      unu=all_edge_out[unuu];
-      doi=all_edge_out[doii];
-
-
-    
-
-# proposed for remove nodes and active external edge. 
-
-#                                proposed_remove_node[targe]++;
-#                                proposed_remove_node[targ]++;
-                                  proposed_remove_node[unuu]++;
-                                  proposed_remove_node[doii]++;
-
- 
-                                  proposed_remove_node[sourc]++;
-                                  proposed_remove_node[sour]++;
-
-                                  proposed_update_edge[unu]++;
-                                  proposed_update_edge[doi]++;
-
-
-
-
-                                  proposed_remove_edge[ku]++;
-                                  
-                                  editar1=all_edge_int[targ];
-                                  editar2=all_edge_int[unuu];
-                                  editar3=all_edge_int[doii];
-                                  
-                                  edisou3=all_edge_int[sour];
-
-#                                  proposed_remove_edge[editar1]++;
-                                  proposed_remove_edge[editar2]++;
-                                  proposed_remove_edge[editar3]++;
-                                  
-                                  proposed_remove_edge[edisou3]++;
-                                  
-                                  
-#proposed for add nodes and moves
-
-
-
-
-#definition of FRIN node and edges, internal and external
-
-
-                                  proposed_all_node_atom[junu]="FRIN";
-                                  proposed_all_node_size[junu]=main_const;
-                                  proposed_all_node_colour[junu]=in_col;
-                                  proposed_all_node_id[junu]=junu;
-                                  
-                                  j1=junu "_1";
-                                  
-                                  je_1=junu "_e1";
-
-                                  
-
-
-                                  proposed_all_node_atom[j1]="5";
-                                  proposed_all_node_size[j1]=middle;
-                                  proposed_all_node_colour[j1]=out_col;
-                                  proposed_all_node_id[j1]=j1;
-                                  proposed_all_edge_int[j1]=je_1;
-                                  proposed_all_edge_out[j1]=doi;
-                                  proposed_all_edge_source[doi]=j1; 
-                                  
-   
-                                  
-                                  proposed_all_edge_target[unu]=targ;
-                                  proposed_all_edge_out[targ]=unu;                                   
-                                  
-                                  
-# definition of internal edges
-
-                                proposed_add_edge[je_1]++;
-
-                                  proposed_all_edge_source[je_1]=junu;  
-                                  proposed_all_edge_target[je_1]=j1; 
-                                  proposed_all_edge_bond[je_1]=bond_int;
-                                  
-                                    
-
-    
-    
-# end L3T
-    }}    
-    
-#end of random parame for L3T
-}    
-    
-# A3T (22) , FI3T (22)
-
-
-
-  
- parame=int(diefact * rand());
-    
-    if ( parame==0) {
-
-   diecont++;
-
-    if (bubu=="22") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
-    
-sourcetype=all_node_atom[sourc];
-
-      junu=jmax+1;
-
-
-      jmax=jmax+1;
-
-
-
-
-       node_block[targe]++;
-       node_block[sourc]++;
-
-
-
-       coact=1;
-
-# identified nodes, with their ports, then defines the new edges, internal and external
-
-      unuu=all_node_id[sourc] "_1";
-      doii=all_node_id[sourc] "_2";
-
-
- 
-      unu=all_edge_out[unuu];
-      doi=all_edge_out[doii];
-
-
-    
-
-# proposed for remove nodes and active external edge. 
-
-#                                   proposed_remove_node[targe]++;
-#                                  proposed_remove_node[targ]++;
-                                  proposed_remove_node[unuu]++;
-                                  proposed_remove_node[doii]++;
-
- 
-                                  proposed_remove_node[sourc]++;
-                                  proposed_remove_node[sour]++;
-
-                                  proposed_update_edge[unu]++;
-                                  proposed_update_edge[doi]++;
-
-
-
-
-                                  proposed_remove_edge[ku]++;
-                                  
-                                  editar1=all_edge_int[targ];
-                                  editar2=all_edge_int[unuu];
-                                  editar3=all_edge_int[doii];
-                                  
-                                  edisou3=all_edge_int[sour];
-
-#                                  proposed_remove_edge[editar1]++;
-                                  proposed_remove_edge[editar2]++;
-                                  proposed_remove_edge[editar3]++;
-                                  
-                                  proposed_remove_edge[edisou3]++;
-                                  
-                                  
-#proposed for add nodes and moves
-
-
-
-
-#definition of T node and edges, internal and external
-
-
-                                  proposed_all_node_atom[junu]="T";
-                                  proposed_all_node_size[junu]=main_const;
-                                  proposed_all_node_colour[junu]=term_col;
-                                  proposed_all_node_id[junu]=junu;
-                                  
-                                  j1=junu "_1";
-                                  
-                                  je_1=junu "_e1";
-
-                                  
-
-
-                                  proposed_all_node_atom[j1]="2";
-                                  proposed_all_node_size[j1]=middle;
-                                  proposed_all_node_colour[j1]=in_col;
-                                  proposed_all_node_id[j1]=j1;
-                                  proposed_all_edge_int[j1]=je_1;
-                                  proposed_all_edge_out[j1]=doi;
-                                  proposed_all_edge_target[doi]=j1; 
-                                  
-   
-                                  
-                                  proposed_all_edge_target[unu]=targ;
-                                  proposed_all_edge_out[targ]=unu;                                   
-                                  
-                                  
-# definition of internal edges
-
-                                  proposed_add_edge[je_1]++;
-
-                                  proposed_all_edge_source[je_1]=junu;  
-                                  proposed_all_edge_target[je_1]=j1; 
-                                  proposed_all_edge_bond[je_1]=bond_int;
-                                  
-                                    
-
-    
-    
-#end A3T (22) , FI3T (22)
-    }}    
-
-#end of random parame for A3T, FI3T
-}
-
-# FO3T(32)
-
- parame=int(diefact * rand());
-    
-    if ( parame==0) {
-
-    diecont++;
-
-    if (bubu=="32") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
-    
-
-
- 
-
-
-
-       node_block[targe]++;
-       node_block[sourc]++;
-
-
-       coact=1;
-
-# identified nodes, with their ports, then defines the new edges, internal and external
-
-      unuu=all_node_id[sourc] "_1";
-      doii=all_node_id[sourc] "_2";
-
-
- 
-      unu=all_edge_out[unuu];
-      doi=all_edge_out[doii];
-
-
-    
-
-# proposed for remove nodes and active external edge. 
-
-                                  proposed_remove_node[targe]++;
-                                  proposed_remove_node[targ]++;
-                                  proposed_remove_node[unuu]++;
-                                  proposed_remove_node[doii]++;
-
- 
-                                  proposed_remove_node[sourc]++;
-                                  proposed_remove_node[sour]++;
-
-                                  proposed_update_edge[unu]++;
-                                  proposed_update_edge[doi]++;
-
-
-
-
-                                  proposed_remove_edge[ku]++;
-                                  
-                                  editar1=all_edge_int[targ];
-                                  editar2=all_edge_int[unuu];
-                                  editar3=all_edge_int[doii];
-                                  
-                                  edisou3=all_edge_int[sour];
-
-                                  proposed_remove_edge[editar1]++;
-                                  proposed_remove_edge[editar2]++;
-                                  proposed_remove_edge[editar3]++;
-                                  
-                                  proposed_remove_edge[edisou3]++;
-                                  
-                                  
-#proposed for add nodes and edges
-
-      junu=jmax+1;
-
-
-      jmax=jmax+1;
-
-#definition of Arrow node and edges, internal and external
-
-
-                                  proposed_all_node_atom[junu]="Arrow";
-                                  proposed_all_node_size[junu]=main_const;
-                                  proposed_all_node_colour[junu]=arrow_col;
-                                  proposed_all_node_id[junu]=junu;
-                                  
-                                  j1=junu "_1";
-                                  j2=junu "_2";
-                                  
-                                  je_1=junu "_e1";
-                                  je_2=junu "_e2";
-
-                                  
-
-
-                                  proposed_all_node_atom[j1]="1";
-                                  proposed_all_node_size[j1]=middle;
-                                  proposed_all_node_colour[j1]=in_col;
-                                  proposed_all_node_id[j1]=j1;
-                                  proposed_all_edge_int[j1]=je_1;
-                                  proposed_all_edge_out[j1]=unu;
-                                  proposed_all_edge_target[unu]=j1; 
-                                  
-                                  proposed_all_node_atom[j2]="6";
-                                  proposed_all_node_size[j2]=middle;
-                                  proposed_all_node_colour[j2]=out_col;
-                                  proposed_all_node_id[j2]=j2;
-                                  proposed_all_edge_int[j2]=je_2;
-                                  proposed_all_edge_out[j2]=doi;
-                                  proposed_all_edge_source[doi]=j2; 
-                                 
-   
-                                  
-# definition of internal edges
-
-                                proposed_add_edge[je_1]++;
-                                 proposed_add_edge[je_2]++;
-
-
-                                  proposed_all_edge_source[je_1]=junu;  
-                                  proposed_all_edge_target[je_1]=j1; 
-                                  proposed_all_edge_bond[je_1]=bond_int;
-                                  
-                                  proposed_all_edge_source[je_2]=junu;  
-                                  proposed_all_edge_target[je_2]=j2; 
-                                  proposed_all_edge_bond[je_2]=bond_int;
-
-
-
-                                  
-                                    
-
-    
-    
-#end FO3T(32)
-    }}    
-
-#end of random parame for FO3T
-}
-
-##++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-# FO2T, FOE2T, FOE3T(42)
-
- parame=int(diefact * rand());
-    
-    if ( parame==0) {
-
-    diecont++;
-
-    if (bubu=="42") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
-    
-
-
-
-       node_block[targe]++;
-       node_block[sourc]++;
-
-     junu=jmax+1;
-
-      jmax++;
-
-       coact=1;
-
-# identified nodes, with their ports, then defines the new edges, internal and external
-
-
-     sourcesize=all_node_size[sour];
-
-     if (sourcesize==left) {
-
-# printf ("sourcesize=" source size "should be the left");
-
-      unuu=all_node_id[sourc] "_1";
-      doii=all_node_id[sourc] "_3";
-
-
- 
-      unu=all_edge_out[unuu];
-      doi=all_edge_out[doii];
-
-    
-
-# proposed for remove nodes and active external edge. 
-
-                                  proposed_remove_node[targe]++;
-                                  proposed_remove_node[targ]++;
-                                  proposed_remove_node[unuu]++;
-                                  proposed_remove_node[doii]++;
-
- 
-                                  proposed_remove_node[sourc]++;
-                                  proposed_remove_node[sour]++;
-
-                                  proposed_update_edge[unu]++;
-                                  proposed_update_edge[doi]++;
-
-
-
-
-                                  proposed_remove_edge[ku]++;
-                                  
-                                  editar1=all_edge_int[targ];
-                                  editar2=all_edge_int[unuu];
-                                  editar3=all_edge_int[doii];
-                                  
-                                  edisou3=all_edge_int[sour];
-
-                                  proposed_remove_edge[editar1]++;
-                                  proposed_remove_edge[editar2]++;
-                                  proposed_remove_edge[editar3]++;
-                                  
-                                  proposed_remove_edge[edisou3]++;
-                                  
-                                  
-#proposed for add nodes and edges
-
-#definition of Arrow node and edges, internal and external
-
-
-                                  proposed_all_node_atom[junu]="Arrow";
-                                  proposed_all_node_size[junu]=main_const;
-                                  proposed_all_node_colour[junu]=arrow_col;
-                                  proposed_all_node_id[junu]=junu;
-                                  
-                                  j1=junu "_1";
-                                  j2=junu "_2";
-                                  
-                                  je_1=junu "_e1";
-                                  je_2=junu "_e2";
-
-                                  
-
-
-                                  proposed_all_node_atom[j1]="1";
-                                  proposed_all_node_size[j1]=middle;
-                                  proposed_all_node_colour[j1]=in_col;
-                                  proposed_all_node_id[j1]=j1;
-                                  proposed_all_edge_int[j1]=je_1;
-                                  proposed_all_edge_out[j1]=unu;
-                                  proposed_all_edge_target[unu]=j1; 
-                                  
-                                  proposed_all_node_atom[j2]="6";
-                                  proposed_all_node_size[j2]=middle;
-                                  proposed_all_node_colour[j2]=out_col;
-                                  proposed_all_node_id[j2]=j2;
-                                  proposed_all_edge_int[j2]=je_2;
-                                  proposed_all_edge_out[j2]=doi;
-                                  proposed_all_edge_source[doi]=j2; 
-                                 
-   
-                                  
-# definition of internal edges
-
-                                proposed_add_edge[je_1]++;
-                                 proposed_add_edge[je_2]++;
-
-
-                                  proposed_all_edge_source[je_1]=junu;  
-                                  proposed_all_edge_target[je_1]=j1; 
-                                  proposed_all_edge_bond[je_1]=bond_int;
-                                  
-                                  proposed_all_edge_source[je_2]=junu;  
-                                  proposed_all_edge_target[je_2]=j2; 
-                                  proposed_all_edge_bond[je_2]=bond_int;
-
-
-
- 
-
-
-
-}    else {
-
-# printf ("sourcesize=" source size "should be the right");
-
-      unuu=all_node_id[sourc] "_1";
-      doii=all_node_id[sourc] "_2";
-
-
- 
-      unu=all_edge_out[unuu];
-      doi=all_edge_out[doii];
-
-
-    
-
-# proposed for remove nodes and active external edge. 
-
-                                  proposed_remove_node[targe]++;
-                                  proposed_remove_node[targ]++;
-                                  proposed_remove_node[unuu]++;
-                                  proposed_remove_node[doii]++;
-
- 
-                                  proposed_remove_node[sourc]++;
-                                  proposed_remove_node[sour]++;
-
-                                  proposed_update_edge[unu]++;
-                                  proposed_update_edge[doi]++;
-
-
-
-
-                                  proposed_remove_edge[ku]++;
-                                  
-                                  editar1=all_edge_int[targ];
-                                  editar2=all_edge_int[unuu];
-                                  editar3=all_edge_int[doii];
-                                  
-                                  edisou3=all_edge_int[sour];
-
-                                  proposed_remove_edge[editar1]++;
-                                  proposed_remove_edge[editar2]++;
-                                  proposed_remove_edge[editar3]++;
-                                  
-                                  proposed_remove_edge[edisou3]++;
-                                  
-                                  
-#proposed for add nodes and edges
-#definition of Arrow node and edges, internal and external
-
-
-                                  proposed_all_node_atom[junu]="Arrow";
-                                  proposed_all_node_size[junu]=main_const;
-                                  proposed_all_node_colour[junu]=arrow_col;
-                                  proposed_all_node_id[junu]=junu;
-                                  
-                                  j1=junu "_1";
-                                  j2=junu "_2";
-                                  
-                                  je_1=junu "_e1";
-                                  je_2=junu "_e2";
-
-                                  
-
-
-                                  proposed_all_node_atom[j1]="1";
-                                  proposed_all_node_size[j1]=middle;
-                                  proposed_all_node_colour[j1]=in_col;
-                                  proposed_all_node_id[j1]=j1;
-                                  proposed_all_edge_int[j1]=je_1;
-                                  proposed_all_edge_out[j1]=unu;
-                                  proposed_all_edge_target[unu]=j1; 
-                                  
-                                  proposed_all_node_atom[j2]="6";
-                                  proposed_all_node_size[j2]=middle;
-                                  proposed_all_node_colour[j2]=out_col;
-                                  proposed_all_node_id[j2]=j2;
-                                  proposed_all_edge_int[j2]=je_2;
-                                  proposed_all_edge_out[j2]=doi;
-                                  proposed_all_edge_source[doi]=j2; 
-                                 
-   
-                                  
-# definition of internal edges
-
-                                proposed_add_edge[je_1]++;
-                                 proposed_add_edge[je_2]++;
-
-
-                                  proposed_all_edge_source[je_1]=junu;  
-                                  proposed_all_edge_target[je_1]=j1; 
-                                  proposed_all_edge_bond[je_1]=bond_int;
-                                  
-                                  proposed_all_edge_source[je_2]=junu;  
-                                  proposed_all_edge_target[je_2]=j2; 
-                                  proposed_all_edge_bond[je_2]=bond_int;
-
-
-
- 
-}
-
-
-
-                                  
-
-                                  
-                                    
-
-    
-    
-#end  FO2T, FOE2T, FOE3T(42)
-    }}    
-
-#end of random parame for FO2T...
-}
-
-    
-
-#end PRUN    
-}
-}
 
 
 
@@ -3710,9 +3783,25 @@ for ( nodusi in proposed_node_candi ) {
 
 if (nodc in proposed_all_node_atom) {
 
-  varmetabo=((nodc-(nodc%metabo))/metabo)%2;
+nodcshift=nodc+shiftmetabo;
 
-  if (varmetabo==0) {nodcol=proposed_all_node_colour[nodc];} else {nodcol="#222";}
+  varmetabo=((nodcshift-(nodcshift%metabo))/metabo)%2;
+
+  if (varmetabo==0) {nodcol=proposed_all_node_colour[nodc];} else { nuda=proposed_all_node_atom[nodc]; 
+  
+  if (nuda=="1") {nodcol=green_col;} 
+  
+   if (nuda=="2") {nodcol=red_col;}
+   
+    if (nuda=="3") {nodcol=arrow_col;}
+    
+     if (nuda=="4") {nodcol=in_col;}
+     
+      if (nuda=="5") {nodcol=out_col;}    
+  
+      if (nuda=="6") {nodcol=term_col;} 
+  
+}
 
                                   noda=proposed_all_node_atom[nodc];
                                   nodsi=proposed_all_node_size[nodc];
@@ -3822,7 +3911,7 @@ if (nodc in proposed_all_node_atom) {
 
 #end update html
 
- for (nof in node_block) { delete node_block[nof];}
+ for (nof in node_block) { delete node_block[nof]; }
  
  for (nof in proposed_remove_node) { delete proposed_remove_node[nof];}
  
@@ -4041,7 +4130,20 @@ for (nodc in proposed_all_node_atom) {
                                   nodsi=proposed_all_node_size[nodc];
   varmetabo=((nodc-(nodc%metabo))/metabo)%2;
 
-  if (varmetabo==0) {nodcol=proposed_all_node_colour[nodc];} else {nodcol="#222";}
+  if (varmetabo==0) {nodcol=proposed_all_node_colour[nodc];} else {nuda=proposed_all_node_atom[nodc]; 
+  
+  if (nuda=="1") {nodcol=green_col;} 
+  
+   if (nuda=="2") {nodcol=red_col;}
+   
+    if (nuda=="3") {nodcol=arrow_col;}
+    
+     if (nuda=="4") {nodcol=in_col;}
+     
+      if (nuda=="5") {nodcol=out_col;}    
+  
+      if (nuda=="6") {nodcol=term_col;} 
+}
 
                                   nodid=proposed_all_node_id[nodc];
    
@@ -4167,7 +4269,7 @@ for (nodc in proposed_all_node_atom) {
 
 } else {   gugu++;  
 
-if (gugu==140) {counter=13000;}}
+if (gugu==1400) {counter=13000;}}
 
  difcont=growcont-diecont;
  
@@ -4177,7 +4279,7 @@ if (gugu==140) {counter=13000;}}
  
  procont=difcont/totcont;
  
- procont=procont;
+# procont=procont;
  
  growfact=growfact-procont;
  
@@ -4187,11 +4289,17 @@ if (gugu==140) {counter=13000;}}
  
  }
 
-if (growfact>3.5) {growfact=2;}
- if (diefact>3.5) {diefact=2;}
+if (growfact>maxgrowfact) {growfact=2;}
+ if (diefact>maxdiefact) {diefact=2;}
  
-if (growfact<1.5) {growfact=2;}
- if (diefact<1.5) {diefact=2;}
+if (growfact<mingrowfact) {growfact=2;}
+ if (diefact<mindiefact) {diefact=2;}
+ 
+ if (wait_param==0) {
+ 
+  printf("setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n setTimeout(function() \{  dadida=7\; \n \n  \} , nextval())\; \n \n ") >> "essy.txt";
+ 
+                                 }
  
 #counter++;
 
