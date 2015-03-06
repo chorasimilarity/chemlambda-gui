@@ -9,13 +9,14 @@ BEGIN {
 ####### waits between moves if 0 
 
   wait_param=1;
+  
 
 
 ######## params for metabolism visualisation (turns on and off the colours of the new nodes)
 
       shiftmetabo=10000;
 
-      metabo=20000;
+      metabo=10000;
 
 ######### number of cycles
 
@@ -68,13 +69,13 @@ BEGIN {
 #######  colours and radii
 
     
-      main_const=4;
+      main_const=5;
 
-      left=4;
+      left=5;
 
-      right=3;
+      right=4;
 
-      middle=3;
+      middle=4;
 
 #     green_col="#8CC152";
 
@@ -3787,19 +3788,21 @@ nodcshift=nodc+shiftmetabo;
 
   varmetabo=((nodcshift-(nodcshift%metabo))/metabo)%2;
 
-  if (varmetabo==0) {nodcol=proposed_all_node_colour[nodc];} else { nuda=proposed_all_node_atom[nodc]; 
+  if (varmetabo==0) {nodcol=proposed_all_node_colour[nodc];} else { nuda=proposed_all_node_atom[nodc]; nudaa=proposed_all_node_size[nodc];
   
   if (nuda=="1") {nodcol=green_col;} 
   
    if (nuda=="2") {nodcol=red_col;}
    
-    if (nuda=="3") {nodcol=arrow_col;}
+    if (nuda=="3") {nodcol=in_col;}
     
-     if (nuda=="4") {nodcol=in_col;}
+     if (nuda=="4") {nodcol=arrow_col;}
      
       if (nuda=="5") {nodcol=out_col;}    
   
-      if (nuda=="6") {nodcol=term_col;} 
+      if (nuda=="6") {nodcol="#0B9FE8";} 
+      
+      if (nudaa==main_const) {nodcol=proposed_all_node_colour[nodc];}
   
 }
 
@@ -4130,20 +4133,21 @@ for (nodc in proposed_all_node_atom) {
                                   nodsi=proposed_all_node_size[nodc];
   varmetabo=((nodc-(nodc%metabo))/metabo)%2;
 
-  if (varmetabo==0) {nodcol=proposed_all_node_colour[nodc];} else {nuda=proposed_all_node_atom[nodc]; 
+  if (varmetabo==0) {nodcol=proposed_all_node_colour[nodc];} else { nuda=proposed_all_node_atom[nodc]; nudaa=proposed_all_node_size[nodc];
   
   if (nuda=="1") {nodcol=green_col;} 
   
    if (nuda=="2") {nodcol=red_col;}
    
-    if (nuda=="3") {nodcol=arrow_col;}
+    if (nuda=="3") {nodcol=in_col;}
     
-     if (nuda=="4") {nodcol=in_col;}
+     if (nuda=="4") {nodcol=arrow_col;}
      
       if (nuda=="5") {nodcol=out_col;}    
   
-      if (nuda=="6") {nodcol=term_col;} 
-}
+      if (nuda=="6") {nodcol="#0B9FE8";} 
+      
+      if (nudaa==main_const) {nodcol=proposed_all_node_colour[nodc];}}
 
                                   nodid=proposed_all_node_id[nodc];
    
