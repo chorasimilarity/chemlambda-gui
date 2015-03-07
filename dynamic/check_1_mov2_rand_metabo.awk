@@ -6,13 +6,13 @@ BEGIN {
 # owner: chorasimilarity (Marius Buliga, http://chorasimilarity.wordpress.com/,  marius.buliga@imar.ro , marius.buliga@gmail.com)
 #
 
-####### waits between moves if 0 
+####### waits between cycles if 0  (if you want to have time to see clearly the modifications from a cycle to the next then choose wait_param=0)
 
   wait_param=1;
   
 
 
-######## params for metabolism visualisation (turns on and off the colours of the new nodes)
+######## params for metabolism visualisation (turns on and off the colours of the new nodes). If you want to inactivate metabo then choose metabo=10000 and shiftmetabo=0. If you want to have metabo activated all the time then choose metabo=10000 and shiftmetabo=10000. The parameter metabo gives the period, expressed as the number of nodes with modified color, the parameter shiftmetabo shifts the period from 0 to shiftmetabo modulo metabo, also expressed in number of nodes which appear. 
 
       shiftmetabo=10000;
 
@@ -22,11 +22,11 @@ BEGIN {
 
       cycounter=1000;
       
-######## time between graph updates, in the visualisation html file
+######## time between graph updates, in the visualisation html file. It appear that firefox can hardly support time_val<=25, but safari and chromium can deal with time_val=5. 
 
      time_val=5;      
       
-######## params for the weight of moves    (if you want to eliminate randomness then take everything = 0)
+######## params for the weight of moves    (if you want to eliminate randomness then take everything = 0, the usual choice is to take all=1)
 
     wei_L3T=1;
     
@@ -50,7 +50,7 @@ BEGIN {
     
     
     
-#######  diefactor, growthfactor.  The probability of the move is (not considering the order of moves)  1/(weight X growfact)  (or diefact). 
+#######  diefactor, growthfactor.  The probability of the move is (not considering the order of moves)  1/(weight X growfact)  (or diefact). mingrowfact and maxgrowfact (same for mindiefact etc) establish a window for growfact (diefact respectively). That is because at the end of each cycle the growfact and diefact are slightly modified, so that at the next factor to compensate for the excess of the moves which increase the no of nodes (growfact) or those who decrease the no of nodes (diefact)
 
 
     
@@ -66,22 +66,22 @@ BEGIN {
      
      maxdiefact=3.5;
 
-#######  colours and radii
+#######  colours and radii. Attention, never choose left=right, it messes with some moves definitions. If you want to give ports the same mportance as nodes then choose something like main_const=4 (for the main nodes)  left=4 (for left ports) and right=3, middle=3 (for the other ports)
 
     
-      main_const=5;
+      main_const=4;
 
-      left=5;
+      left=4;
 
-      right=4;
+      right=3;
 
-      middle=4;
+      middle=3;
 
 #     green_col="#8CC152";
 
 # true one       green_col="#04B431";
        
-#CRESCIMENTO      green_col="#2a6d00";
+#CRESCIMENTO      green_col="#8CC152";
 
      green_col="#ade747";
 
@@ -3800,7 +3800,7 @@ nodcshift=nodc+shiftmetabo;
      
       if (nuda=="5") {nodcol=out_col;}    
   
-      if (nuda=="6") {nodcol="#0B9FE8";} 
+      if (nuda=="6") {nodcol="#8CC152";} 
       
       if (nudaa==main_const) {nodcol=proposed_all_node_colour[nodc];}
   
@@ -4145,7 +4145,7 @@ for (nodc in proposed_all_node_atom) {
      
       if (nuda=="5") {nodcol=out_col;}    
   
-      if (nuda=="6") {nodcol="#0B9FE8";} 
+      if (nuda=="6") {nodcol="#8CC152";} 
       
       if (nudaa==main_const) {nodcol=proposed_all_node_colour[nodc];}}
 
