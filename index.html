@@ -70,9 +70,22 @@
     margin:35px 0 36px;      > Chemlambda is now at version 2.  It is different from chemlambda version 1 by the introduction of a new node, called FOE, and several new moves (graph rewrites). There is no article yet which presents this version, but there is something better: a program which implements it  [4].  With this program I produced a page of <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/demos.html"><span style="color: #6ecae5;">demos</span></a>.  The page of <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/moves.html"><span style="color: #6ecae5;">moves</span></a> shows the graph rewrites of chemlambda version 2 and contains supplementary details. </ul> 
     
  <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > &nbsp;  </ul>
+    margin:35px 0 36px;      > Clone the repository and run this script with the command: bash moving_random_metabo.sh . The sh script gives you the list of initial molecules (in the form file.mol) and waits for you to type the name of one of the mol files. Then it executes the main program and produces the file.html, which can be seen in the browser. Look at the header of file.html to comment (or uncomment) the pieces which call for query and d3 js scripts, depending wether you have them locally or not. Open with a text editor the main script  check_1_mov2_rand_metabo.awk and modify the parameters from the beginning (there are short explanations about their meaning.</ul>
     
- 
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Molecules, i.e. the chemlambda graphs, appear as .mol files, it is important to understand the notation. The program works with the mol files and produces a html file which contains the visualisation of the execution of the algorithm from the main script.</ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > The visualisation is not needed for the chemlambda formalism, but is useful for your understanding of what happens. Therefore chemlambda is not a visualiser for lambda calculus, but it can be used for this, in particular. </ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > The notation used in the mol files is easy: it is a list of nodes and their ports. Each node can be one of the following: L, A, FI, FO, FOE, Arrow, T, FRIN, FROUT. Each node has ports and edges of the graph-molecule represent connection between these ports. L, A, FI, FO, FOE have 3 ports, Arrow has 2 ports, T, FRIN, FROUT have one port each. If you have a graph made of these nodes then, in order to produce a mol file for it you just give names to the arrows (any string of characters, without space, different from the nodes names) and you use the name of the edge which connects two ports by writing it in the place of the ports, in the list of nodes. Thus, for example "A a b c [new line character] L c d a"  is a mol file which describes a 2 nodes molecule, with a A node and a L node, such that the first port of A is connected to the third port of L, by the edge named "a". The name of the edges is not important for the formalism (or algorithm), the only thing which matters is the occurrence of the same name in two different ports.  </ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Technically, this is a way to represent graphs made by trivalent nodes of type L, A, FI, FO, FOE, 2-valent nodes of type Arrow, and 1-valent nodes of type T, as well as edges which may have "free ends", i.e. connected to a 1-valent node FRIN (i.e. "free in") or to a 1-valent node FROUT (i.e. "free out").  The graphs have oriented edges and the nodes have ports which have type. In order to implement the edge orientation, some of the ports have type "in", some others are have type "out", moreover the trivalent nodes are "locally planar", i.e. their ports have a supplementary type "left", "right" or "middle"; thus a port may have the type "left.in", or "left.out", for example. Each of the nodes type have a rigid, given list of the type of their ports. For example "L a b c" from the mol file correspond to a node of type "L", with a port of type "middle.in" and value "a", a port of type "left.out" and value "b" and a port of type "right.out" and value "c". Therefore "L a b c" is not the same as "L a c b", at least if it is part of a bigger mol file, because "L a b c" says: connect my "middle.in" port to the edge named "a", my "left.out" port to the the edge named "b' and my "right.out" port to the edge named "c". </ul>
     
 
 <ul     padding:30px 0 36px 35px;
@@ -88,7 +101,7 @@
     margin:35px 0 36px;      >  [3]  <a href="http://mitpress.mit.edu/sites/default/files/titles/content/alife14/ch079.html">(MIT Press free download)</a>   <a href="http://arxiv.org/abs/1403.8046">(arxiv)</a> - Chemlambda, universality and self-multiplication.  8 pages, 21 colour figures. with <a href="http://homepages.math.uic.edu/~kauffman/">Louis H. Kauffman</a>, presented at <a href="http://blogs.cornell.edu/alife14nyc/">ALIFE 14</a>    </ul>
     
 <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > [4]  <a href="https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic">chemlambda repository</a>  The main script which implements chemlambda version 2 is check_1_mov2_rand_metabo.awk. Clone the repository and run this script with the command: bash moving_random_metabo.sh . </ul>   
+    margin:35px 0 36px;      > [4]  <a href="https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic">chemlambda repository</a>  The main script which implements chemlambda version 2 is check_1_mov2_rand_metabo.awk. </ul>   
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >  [5] <a href="http://arxiv.org/abs/1312.4333">(arxiv)</a> - GLC actors, artificial chemical connectomes, topological issues and knots. with <a href="http://homepages.math.uic.edu/~kauffman/">Louis H. Kauffman</a> </ul>
