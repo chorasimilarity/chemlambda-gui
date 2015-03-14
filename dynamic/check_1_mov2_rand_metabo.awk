@@ -1,14 +1,18 @@
 BEGIN { 
 
-# forked from check_1_foe.awk version 22.09.2014
+
+# name: ckeck_1_mov2_rand_metabo.awk , version 12.03.2015
 #
-# this program reads a .mol file and applies a random reduction algorithm
+# repo: https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic
+#
+# called by moving_random_metabo.sh, reads a .mol file and applies a random reduction algorithm
+#
 # owner: chorasimilarity (Marius Buliga, http://chorasimilarity.wordpress.com/,  marius.buliga@imar.ro , marius.buliga@gmail.com)
 #
 
-####### waits between cycles if 0  (if you want to have time to see clearly the modifications from a cycle to the next then choose wait_param=0)
+####### time realistic if 0  (i.e. waits if no move in a cycle if wait_param=0)
 
-  wait_param=1;
+  wait_param=0;
   
 
 
@@ -20,7 +24,7 @@ BEGIN {
 
 ######### number of cycles
 
-      cycounter=1000;
+      cycounter=2000;
       
 ######## time between graph updates, in the visualisation html file. It appear that firefox can hardly support time_val<=25, but safari and chromium can deal with time_val=5. 
 
@@ -36,15 +40,15 @@ BEGIN {
     
     wei_FO2TFOET=1;
 
-    wei_FOFOE=1;
+    wei_FOFOE=4;
     
-    wei_LFOELFO=1;
+    wei_LFOELFO=4;
     
-    wei_AFOAFOE=1;
+    wei_AFOAFOE=4;
 
-    wei_FIFO=1;
+    wei_FIFO=4;
 
-    wei_FIFOE=1;
+    wei_FIFOE=2;
 
     wei_AL=1;      
     
@@ -69,13 +73,13 @@ BEGIN {
 #######  colours and radii. Attention, never choose left=right, it messes with some moves definitions. If you want to give ports the same mportance as nodes then choose something like main_const=4 (for the main nodes)  left=4 (for left ports) and right=3, middle=3 (for the other ports)
 
     
-      main_const=4;
+      main_const=6;
 
       left=4;
 
-      right=3;
+      right=2;
 
-      middle=3;
+      middle=2;
 
 #     green_col="#8CC152";
 
@@ -4273,7 +4277,7 @@ for (nodc in proposed_all_node_atom) {
 
 } else {   gugu++;  
 
-if (gugu==1400) {counter=13000;}}
+if (gugu==800) {counter=cycounter;}}
 
  difcont=growcont-diecont;
  
