@@ -136,6 +136,7 @@
                     });
 
             link.enter().append("line")
+//                                        .style("stroke-opacity",0.4).style("fill-opacity",0.4)
                     .attr("id", function (d) {
                         return d.source.id + "-" + d.target.id;
                     })
@@ -164,12 +165,15 @@
                     .call(force.drag);
 
             nodeEnter.append("svg:circle")
+//                                            .style("stroke-opacity",0.4).style("fill-opacity",0.8)
                     .attr("r", function(d) { return d.size*2;})
                     .attr("id", function (d) {
                         return "Node;" + d.id;
                     })
                     .attr("class", "nodeStrokeClass")
                     .attr("fill", function(d) { return d.colour; });
+
+
 
             node.exit().remove();
 
