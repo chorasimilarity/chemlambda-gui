@@ -89,44 +89,10 @@
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp;  </ul>
 
-<ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > The mol file notation: it is a list of nodes and their ports. Each node can be one of the following: L, A, FI, FO, FOE, Arrow, T, FRIN, FROUT. Each node has ports and edges of the graph-molecule represent connection between these ports. L, A, FI, FO, FOE have 3 ports, Arrow has 2 ports, T, FRIN, FROUT have one port each. If you have a graph made of these nodes then, in order to produce a mol file for it you just give names to the arrows (any string of characters, without space, different from the nodes names) and you use the name of the edge which connects two ports by writing it in the place of the ports, in the list of nodes. Thus, for example "A a b c [new line character] L c d a"  is a mol file which describes a 2 nodes molecule, with a A node and a L node, such that the first port of A is connected to the third port of L, by the edge named "a". The name of the edges is not important for the formalism (or algorithm), the only thing which matters is the occurrence of the same name in two different ports.  </ul>
-    
-<ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > Technically, this is a way to represent graphs made by trivalent nodes of type L, A, FI, FO, FOE, 2-valent nodes of type Arrow, and 1-valent nodes of type T, as well as edges which may have "free ends", i.e. connected to a 1-valent node FRIN (i.e. "free in") or to a 1-valent node FROUT (i.e. "free out").  The graphs have oriented edges and the nodes have ports which have type. In order to implement the edge orientation, some of the ports have type "in", some others are have type "out", moreover the trivalent nodes are "locally planar", i.e. their ports have a supplementary type "left", "right" or "middle"; thus a port may have the type "left.in", or "left.out", for example. Each of the nodes type have a rigid, given list of the type of their ports. For example "L a b c" from the mol file correspond to a node of type "L", with a port of type "middle.in" and value "a", a port of type "left.out" and value "b" and a port of type "right.out" and value "c". Therefore "L a b c" is not the same as "L a c b", at least if it is part of a bigger mol file, because "L a b c" says: connect my "middle.in" port to the edge named "a", my "left.out" port to the the edge named "b' and my "right.out" port to the edge named "c". </ul>
-    
-<ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > The nodes and their ports are represented by circles in the  visualisations, following the convention: main node is a big circle (of radius main_const in the awk script), the ports of type left are medium size circles (of radius left in the awk script), ports of type right or middle are small circles (of radii right and middle in the awk script). The node is connected with the ports via thick edges and the ports are connected to other ports via thin edges. </ul>
-    
-<ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > Here is the list of nodes with the types of their ports, and the way they are written in the mol file.  The colours are as in the visualisations convention. 
-    <li   padding:30px 0 36px 35px;
-    margin:35px 0 36px;   >  <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> left.out</span> <span style="color: #6ecae5;"> right.out</span> , is inspired from the lambda abstraction. </li>
-     <li   padding:30px 0 36px 35px;
-    margin:35px 0 36px;   >  <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> left.in</span> <span style="color: #f6cf84;"> right.in</span>  <span style="color: #6ecae5;"> middle.out</span> , is inspired from application operation.</li>
-      <li   padding:30px 0 36px 35px;
-    margin:35px 0 36px;   >  <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> left.in</span> <span style="color: #f6cf84;"> right.in</span>  <span style="color: #6ecae5;"> middle.out</span> , has no correspondent in lambda calculus, name means "fan-in".</li>
-         <li   padding:30px 0 36px 35px;
-     margin:35px 0 36px;   >  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> left.out</span> <span style="color: #6ecae5;"> right.out</span> , has no correspondent in lambda calculus, name means "fan-out". </li>
-              <li   padding:30px 0 36px 35px;
-     margin:35px 0 36px;   >  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> left.out</span> <span style="color: #6ecae5;"> right.out</span> , has no correspondent in lambda calculus, name means "extra fan-out". </li>
-     <li   padding:30px 0 36px 35px;
-     margin:35px 0 36px;   >  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> middle.out</span> , has no correspondent in lambda calculus, is a simple solution for application of some of the moves. Is inspired from Louis Kauffman proposal to use commutative polynomials for the graphical elements (where the variables of the polynomials play the roles of the ports). Louis used on July 3rd 2014  the Mathematica symbolic reduction  for polynomial commutative algebra in order to reduce the fixed point combinator in graphic lambda calculus, thus making the first visualisation. </li>
-    <li   padding:30px 0 36px 35px;
-     margin:35px 0 36px;   >  <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> middle.in</span> , called "termination" node, is used  in relation to lambda calculus in place of variables x appearing in terms Lx.A, where A does not contain x. </li>
-      <li   padding:30px 0 36px 35px;
-     margin:35px 0 36px;   >  <span style="color: #f6cf84;"> FRIN </span>  <span style="color: #6ecae5;"> middle.out</span> , is a  "free in" node, used  for edges with a free source. (Thus, if your mol file has a port variable "a" which appears only once, in a port of type out, then the main script adds "FRIN a" to the mol file.) </li> 
-         <li   padding:30px 0 36px 35px;
-     margin:35px 0 36px;   >  <span style="color: #6ecae5;"> FROUT </span>  <span style="color: #f6cf84;"> middle.in</span> , is a  "free out" node, used  for edges with a free target. (Thus, if your mol file has a port variable "a" which appears only once, in a port of type in, then the main script adds "FROUT a" to the mol file.) </li> 
-     
-    
-     </ul>
-     
-     <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      >   A mol file represents a molecule if and only if any port variable appears at most twice! Otherwise the mol file is called a mess. </ul>
+
     
       <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      >   See the <a href="http://chorasimilarity.wordpress.com/2015/03/15/the-moves-of-chemlambda-v2-in-mol-format/">moves of chemlambda v2 in mol format</a> at my open notebook and a visualisation of those at the <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/moves.html"><span style="color: #6ecae5;">moves</span></a> page. </ul>
+    margin:35px 0 36px;      >   See the detailed explanations of the mol format and visualisation conventions at the <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/moves.html"><span style="color: #6ecae5;">moves</span></a> page. </ul>
     
 
 <ul     padding:30px 0 36px 35px;
