@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>M. Buliga, Molecular computers</title>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+#navigation {
+    padding:30px 0 36px 35px;
+    margin:35px 0 36px;
+    border-top:2px groove #808080;
+    border-bottom:2px groove #808080;
+    list-style-type:none;
+ }
+#navigation li {
+    display:inline;
+ }
+#navigation a {
+    margin-right:64px;
+    font-size:12px;
+    font-weight:bold;
+    color: #B0CF83;
+    text-decoration:none;
+    letter-spacing:-1px;
+
+ }
+
+
+#left,#right {  
+    float:left;
+    width:50%;
+ }
+
+#navigation h1 {
+    margin-bottom:36px;
+    font-size:36px;
+    font-weight:normal;
+ }
+</style>
+
+</head>
+<body style="background-color: rgb(0, 0, 0); color: #B0CF83; font-family: 'Helvetica Neue', Helvetica, sans-serif; "
+ alink="#f6cf84" link="#6ecae5" vlink="#f6cf84"  >
+
+
+
+
+<ul id="navigation"  >
+ <li><h1>Molecular computers</h1> Marius.Buliga@gmail.com &nbsp; &nbsp;  </li> <li><a href="http://chorasimilarity.github.io/chemlambda-gui/index.html"><span style="color: #6ecae5;">chemlambda project</span></a></li></ul>
+
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  <h3>"Define a molecular computer as one molecule which transforms, by random chemical reactions mediated by a collection of enzymes, into a predictable other molecule, such that the output molecule can be conceived as the result of a computation encoded in the initial molecule. "</h3>   <a href="http://dx.doi.org/10.5281/zenodo.16018"><img src="https://zenodo.org/badge/doi/10.5281/zenodo.16018.svg" alt="10.5281/zenodo.16018"></a> &nbsp; &nbsp; M. Buliga, Build a molecular computer. Journal of Brief Ideas, 2015 </ul>
+    
+    
+    <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+    
+    
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Individual molecules  encode data and programs in the chemical composition. Computations are not encoded in the numbers of species in a soup (multi set) of more or less arbitrarily chosen molecules.This is different than models of computation like the Chemical abstract machine, or those based on Chemical reaction networks.  
+ </ul>   
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > A molecular computer is therefore a model of computation based on individual molecules in a random environment. The model should satisfy the following requirements: (a) to be Turing universal (thus in principle to allow to compute anything), (b) based on a minimal set of chemical reactions which happen randomly.  </ul>   
+    
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+    
+    
+    <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > <h3>I believe we can build molecular computers. This page is a call for making them.</h3> </ul>
+    
+    
+    
+    <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+    
+    
+    <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > The argumentation of this possibility goes like this:  </ul>
+    
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >     <li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   >  <h3>step 1: virtual molecular computers are possible.</h3> Based on a made up, very simple artificial chemistry called <a href="http://chorasimilarity.github.io/chemlambda-gui/index.html">chemlambda</a>, this  is proved theoretically [1], [2], [3]. It is shown that chemlambda is Turing universal, that we can use chemlambda molecules to encode lambda calculus terms (but there exist many other molecules which do not encode lambda terms), that the reduction rules of the pure, untyped, lambda beta calculus can be realized by the chemlambda graph rewrites (but the graph rewrites apply as well to molecules which don't represent lambda terms and they work in a more general sense than only as representations of untyped lambda beta reduction rules). </ul>
+    
+    
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >     Chemlambda works with molecules which are graphs made by elementary constituents ("atoms") and links ("bonds") which enter in chemical reactions modeled as local graph rewrites and interpreted as chemical reactions of the molecule with a set of invisible "enzymes", one enzyme per type of graph rewrite. Moreover, chemlambda does not use variables and does rely on evaluations of terms. Instead of passing variables and evaluations, chemlambda uses a different strategy which is akin to <a href="http://en.wikipedia.org/wiki/Signal_transduction">signal transduction</a></li>.  </ul>
+    
+    <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >     To obtain a full model of computation one needs an algorithm concerning the application of graph rewrites. The algorithm is random and uses the fact that the graph rewrites are local (i.e. they involve only patterns with a small number of atoms and bonds, without any concern about the global structure of the graph-molecule). </ul>
+    
+    <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >     There is a <a href="https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic">github repository</a> where this model is implemented and various  <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/demos.html"><span style="color: #6ecae5;">demos</span></a> are available, which show some features of the model: 
+    <ul><li>demos about classical examples of computation  like the one about the <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/random_ackermann_2_2.html">Ackermann function</a>,  or the <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/lisfact_2_mod.html">factorial</a></li> 
+    <li> demos about <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/A_L_eggshell.html">self-reproduction and more generally artificial life forms</a></li> 
+    <li>the building of <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/newfact_zero.html">amazing structures</a> at a molecular level.  </li></ul></ul>
+    
+     <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > (How to use the repository). Clone the repository and run this script with the command: bash moving_random_metabo.sh . The sh script gives you the list of initial molecules (in the form file.mol) and waits for you to type the name of one of the mol files. Then it executes the main program and produces the file.html, which can be seen in the browser. Look at the header of file.html to comment (or uncomment) the pieces which call for jquery and d3 js scripts, depending wether you have them locally or not. Open with a text editor the main script  check_1_mov2_rand_metabo.awk and modify the parameters from the beginning (there are short explanations about their meaning).</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >     
+         <li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   >  <h3>step 2: from virtual chemical reactions to real ones.</h3> The patterns which appear in the graph rewrites are so simple that it is highly possible that there exist real correspondents of "atoms", "bonds" and "enzymes", perhaps as simple real chemical molecules, which enter in  real chemical reactions which mimic the graph rewrites of chemlambda.  The problem is to identify those patterns in reality, by a combination of database searches and experiments which make this project ideal for an open source bio-hacking project, for example. </li>
+    
+    </ul>   
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      ><h3>Chemlambda</h3> is a graph-rewriting formalism with some of the moves (graph-rewrites) inspired from lambda calculus, like for example the BETA move, which is a variant of the Wadsworth-Lamping treatment of the beta move on syntactic trees of lambda terms. But there is a difference: in chemlambda there are no correct molecules (graphs). </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >Another resemblance is with the <a href="http://tuvalu.santafe.edu/~walter/AlChemy/Statement/organization.html">Alchemy of Fontana and Buss</a>. They also propose to look at lambda calculus as an artificial chemistry. The main difference is that while in  chemlambda application and abstraction are treated on the same par, as atoms in the molecule, in Alchemy application is seen as a chemical reaction and abstraction is seen as a reactive locus in a molecule. </a> </ul>
+
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > <h3>Chemlambda molecules</h3>The molecules of chemlambda are graphs made by 9  elemntary constituents, called A, L, FI, FO, FOE, T, Arrow, FRIN, FROUT. Every elementary  constituent is made by a main atom, represented in the demos as a big colored circle, and some smaller atoms, called ports.  A, L, FI, FO, FOE have 3 ports each, Arrow has two ports, and T, FRIN and FROUT have one port each. They are linked by bonds, which are of two kind: inner, between a main atom and its ports, and outer, between ports.  Each port has a pair of types, one from the family (left, right, middle) and the other one from the family (in,out). The outer bonds are permitted only between a pair of ports, one with type in, the other with type out. </ul>
+
+
+  <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >   We use the "mol" notation for a chemlambda molecule. The programs from the github repository work with files with the extension .mol as inputs. Thus a molecule is represented by a .mol file. The visualisations  represent a molecule as made by coloured circles of various radii (there is a radius "main_const" for the main atoms and the types of ports  "left", "right" and "middle" are represented by radii of circles with the same names. 
+ The colour of the main atoms comes  from the type of the atom (A,L, FI, ...) and the colour of the ports encode the type "in" or "out". </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  Therefore there is a one-to-one correspondence between the mol notation and what you see. Everything in the visualizations  is coded by color, radius of the circle and, for links, there are inner (thicker) and outer links. 
+    The colours are:  "<span style="color: #f6cf84;"> in_col</span>", "<span style="color: #6ecae5;"> out_col</span>", "<span style="color: #be66dd;"> red_col</span>" (yes, I know), "<span style="color: #ade747;"> green_col</span>",  "<span style="color: #f0bf26;"> arrow_col</span>" and "<span style="color: #222;"> term_col</span>".  The colour palette does not really matter, of course, for the chemistry (see <a href="http://imar.ro/~mbuliga/chemlambda_story.html">this older introduction about the molecules</a> with a different palette).   </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Here is the list of nodes with the types of their ports, and the way they are written in the mol file.  The colours are as in the visualisations convention. The mol file notation does not need colours, these are only for visualization purposes.
+    <li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   >  <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> left.out</span> <span style="color: #6ecae5;"> right.out</span> , is inspired from the lambda abstraction. </li>
+     <li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   >  <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> left.in</span> <span style="color: #f6cf84;"> right.in</span>  <span style="color: #6ecae5;"> middle.out</span> , is inspired from application operation.</li>
+      <li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   >  <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> left.in</span> <span style="color: #f6cf84;"> right.in</span>  <span style="color: #6ecae5;"> middle.out</span> , has no correspondent in lambda calculus, name means "fan-in".</li>
+         <li   padding:30px 0 36px 35px;
+     margin:35px 0 36px;   >  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> left.out</span> <span style="color: #6ecae5;"> right.out</span> , has no correspondent in lambda calculus, name means "fan-out". </li>
+              <li   padding:30px 0 36px 35px;
+     margin:35px 0 36px;   >  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> left.out</span> <span style="color: #6ecae5;"> right.out</span> , has no correspondent in lambda calculus, name means "extra fan-out". </li>
+     <li   padding:30px 0 36px 35px;
+     margin:35px 0 36px;   >  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> middle.out</span> , has no correspondent in lambda calculus, is a simple solution for application of some of the moves. Is inspired from Louis Kauffman proposal to use commutative polynomials for the graphical elements (where the variables of the polynomials play the roles of the ports). Louis used on July 3rd 2014  the Mathematica symbolic reduction  for polynomial commutative algebra in order to reduce the fixed point combinator in graphic lambda calculus, thus making the first visualisation. </li>
+    <li   padding:30px 0 36px 35px;
+     margin:35px 0 36px;   >  <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> middle.in</span> , called "termination" node, is used  in relation to lambda calculus in place of variables x appearing in terms Lx.A, where A does not contain x. </li>
+      <li   padding:30px 0 36px 35px;
+     margin:35px 0 36px;   >  <span style="color: #f6cf84;"> FRIN </span>  <span style="color: #6ecae5;"> middle.out</span> , is a  "free in" node, used  for edges with a free source. (Thus, if your mol file has a port variable "a" which appears only once, in a port of type out, then the main script adds "FRIN a" to the mol file.) </li> 
+         <li   padding:30px 0 36px 35px;
+     margin:35px 0 36px;   >  <span style="color: #6ecae5;"> FROUT </span>  <span style="color: #f6cf84;"> middle.in</span> , is a  "free out" node, used  for edges with a free target. (Thus, if your mol file has a port variable "a" which appears only once, in a port of type in, then the main script adds "FROUT a" to the mol file.) </li> 
+     
+    
+     </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Remark that the colours and the relative size of the circles are enough to encode all the information. For example the colours of nodes and ports allows to discern which is <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> and which is <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 2 </span>  <span style="color: #6ecae5;"> 3 </span>.  </ul>
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > <h3>Chemlambda graph rewrites</h3> A shorter name is "moves".  They should be seen as chemical reactions involving a small part of the molecule and an invisible enzyme, one enzyme type per move. </ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > In the following you see the moves written in the mol convention, and also a visualization of the moves. For each move you can CLICK on the move name to see what is happening. You can move by click and drag the atoms. </ul>
+
+    <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+ 
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > <h3> BETA and FAN-IN family </h3></ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  
+    
+ <div id="left">
+ <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> c </span> , <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> 2</span>
+</div>   
+
+ <div id="right">
+ <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> c </span> , <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> 2</span>
+</div>   
+
+     </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+<div id="left">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_beta.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+<p>  </p>
+
+<div id="right">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fanin.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+</ul>
+
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;       > <h3>DIST family</h3> </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  
+    
+ <div id="left">
+ <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> c </span> ,  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 3 </span> <span style="color: #6ecae5;"> 4 </span> - - > <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> i </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> k </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> l </span> <span style="color: #6ecae5;"> j </span> <span style="color: #6ecae5;"> 4 </span> , <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l </span>
+</div>   
+
+ <div id="right">
+<span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> c </span> , <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> j </span> , <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> i </span> <span style="color: #f6cf84;"> k </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> l </span>  <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l</span></div>   
+
+     </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+
+<div id="left">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fofoe.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+<p>  </p>
+
+<div id="right">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fifo.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  
+    
+ <div id="left">
+  <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> c </span> ,  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 3 </span> <span style="color: #6ecae5;"> 4 </span> - - > <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> i </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> k </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> l </span> <span style="color: #6ecae5;"> j </span> <span style="color: #6ecae5;"> 4 </span> , <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l </span>
+</div>   
+
+ <div id="right">
+ <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> c </span> ,  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 3 </span> <span style="color: #6ecae5;"> 4 </span> - - > <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> i </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> k </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> l </span> <span style="color: #6ecae5;"> j </span> <span style="color: #6ecae5;"> 4 </span> , <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l </span></div>   
+
+     </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+
+<div id="left">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_lfoe.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+<p>  </p>
+
+<div id="right">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_lfo.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  
+    
+ <div id="left">
+ <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> c </span> , <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> j </span> , <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> i </span> <span style="color: #f6cf84;"> k </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> l </span>  <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l</span>
+</div>   
+
+ <div id="right">
+<span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> c </span> , <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> j </span> , <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> i </span> <span style="color: #f6cf84;"> k </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> l </span>  <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l</span></div>   
+
+     </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+
+<div id="left">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_afoe.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+<p>  </p>
+
+<div id="right">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_afo.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+</ul>
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;       > <h3>PRUNING family </h3></ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  
+    
+    
+ <div id="left">
+ <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 2 </span>  <span style="color: #6ecae5;"> 3 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 3 </span> - - >  <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 1 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 2 </span>  &nbsp; (same for <span style="color: #be66dd;"> FI </span> instead of <span style="color: #ade747;"> A </span>)
+</div>   
+
+ <div id="right">
+<span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 3 </span> - - >  <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 1 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> c </span> , <span style="color: #f6cf84;"> FRIN </span>  <span style="color: #6ecae5;"> c</span></div>   
+
+     </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+
+
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+
+<div id="left">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_atfit.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+<p>  </p>
+
+<div id="right">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_lt.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  
+    
+    
+    
+ <div id="left">
+ <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 2 </span> - - > <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;">3</span>  &nbsp; (same for <span style="color: #f6cf84;"> FOE </span> instead of <span style="color: #ade747;"> FO </span>)
+</div>   
+
+ <div id="right">
+<span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 3 </span> - - > <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;">2</span>  &nbsp; (same for <span style="color: #f6cf84;"> FOE </span> instead of <span style="color: #ade747;"> FO </span>)</div>   
+
+     </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+
+<div id="left">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fo2tfoe2t.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+<p>  </p>
+
+<div id="right">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fo3tfoe3t.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;       > <h3>COMB move and COMB cycle.</h3> The cycle is a rapid application of COMB moves, whenever there are Arrow elements with the "in" port connected to a port which does not belong to another Arrow. Exemplified here with a BETA move followed by a COMB cycle which eliminates all the Arrow elements, excepting the one which has its in port connected to its out port (so connected to another Arrow port).</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  
+    
+    
+    
+ <div id="left">
+ any node M   <span style="color: #6ecae5;"> 1 </span> , <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;">2</span> - - >  M   <span style="color: #6ecae5;"> 2 </span>
+</div>   
+
+
+
+     </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+
+<div id="left">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_arrow.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+<p>  </p>
+
+<div id="right">
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_arrow_cycle.html"  width="600" height="600"   frameborder="0" ></iframe>
+</div>
+
+</ul>
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > <h3> The reduction algorithm</h3></ul>
+    
+    
+    
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > One needs to add to chemlambda a reduction model (which says basically how to apply the moves and what to do if two or more moves attempt to modify the same node of the graph). Any reduction model will do, with the condition to be: 
+<li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > local (the algorithm for deciding which move to apply or which solves conflicts has to be formulated so that it works with an input consisting of a graph with at most N nodes and links, with N fixed a priori) </li>
+<li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > geometrical (the result of the algorithm is the same regardless of the internal numbering, ordering or naming of the variables from the input)</li>
+<li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > if it is distributed, then it has to be asynchronous (because of locality in time as well) and decentralized, in the sense that the "local" constraint applies also in space, so the algorithm running in one place has to be able to solve moves and conflicts on its piece of graph based on an a priori bounded number N of graph nodes, links and messages exchanged with other places. </li></ul>
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >In the demos there is used the most simple algorithm, called for this reason the "stupid" one, in order to show that even so the results are interesting. This algorithm may turn out to be less stupid than I thought, in particular because it may lead to molecular computers [7]. </ul>
+    
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >The algorithm takes as input an initial graph, then there is a cycle where, at each step (deterministically or randomly):
+<li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > are identified the pieces of graph where moves apply</li>
+<li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > according to a priority of moves (i.e. in this case first identify the patterns for the move FO-FOE, then block the nodes which involve that move, then look further for the other moves DIST which involve free nodes, then block the nodes involved, then look for the BETA and FAN-IN moves, block the nodes, then look for PRUNING moves, block the nodes)</li>
+<li    padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > in the random case each move has an asociated random coin flip, with an weight. the coin is flipped for each proposed move and the move is applied or not, accordingly,</li>
+<li    padding:30px 0 36px 35px;
+    margin:35px 0 36px;   > moves are applied</li>
+<li   padding:30px 0 36px 35px;
+    margin:35px 0 36px;    > at the end of the step there is a COMB cycle, which search for the application of all COMB moves (which eliminate the Arrow elements) until there is no possibility of applying further COMB moves (which does not mean that all Arrow elements are eliminated)</li></ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >The effect of this  algorithm is equivalent, in case we start from a graph which represents a lambda term, to a massively parallel reduction of the term, but one not involving any variable passing, nor evaluation steps.</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >On top of this, if we restrict to graphs coming from lambda terms, one has to take care that: (a) there is no eta reduction, it's pure lambda beta, so "functional" is not appropriate to use because functions need eta reduction (b) even if the initial and final graphs (if there is a final graph) correspond to lambda terms, typically the intermediary ones do not, see for example <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/pred_2_bw.html">the bw version of the predecessor reduction</a>.</ul>
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >Each move is seen as an interaction between a (part of a) molecule-graph with an invisible enzyme, one enzyme per move. One can make the enzymes visible, even use them as a resource, introduce moves between enzymes, making the whole model conservative, or even transform the enzymes into chemlambda graphs as well, by a sort of bootstrapping. </ul>
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >   References:  </ul>
+    
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  [1]  <a href="http://www.complex-systems.com/abstracts/v22_i04_a01.html">(journal)</a> <a href="http://arxiv.org/abs/1305.5786">(arxiv)</a> - Graphic lambda calculus. Complex Systems 22, 4 (2013), 311-360 </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [2]  <a href="http://dx.doi.org/10.6084/m9.figshare.830457">(doi)</a>  <a href="http://arxiv.org/abs/1309.6914">(arxiv)</a> - Chemical concrete machine.  </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  [3]  <a href="http://mitpress.mit.edu/sites/default/files/titles/content/alife14/ch079.html">(MIT Press free download)</a>   <a href="http://arxiv.org/abs/1403.8046">(arxiv)</a> - Chemlambda, universality and self-multiplication.  8 pages, 21 colour figures. with <a href="http://homepages.math.uic.edu/~kauffman/">Louis H. Kauffman</a>, presented at <a href="http://blogs.cornell.edu/alife14nyc/">ALIFE 14</a>    </ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [4]  <a href="https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic">chemlambda repository</a>  The main script which implements chemlambda version 2 is check_1_mov2_rand_metabo.awk. </ul>   
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  [5] <a href="http://arxiv.org/abs/1312.4333">(arxiv)</a> - GLC actors, artificial chemical connectomes, topological issues and knots. with <a href="http://homepages.math.uic.edu/~kauffman/">Louis H. Kauffman</a> </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [6]   <a href="http://dx.doi.org/10.6084/m9.figshare.1032660">(doi)</a> <a href="http://arxiv.org/abs/1405.6095">(arxiv)</a>   Zipper logic. 16 pages, 24 colour figures. Supplementary material at <a href="http://chorasimilarity.wordpress.com/tag/zipper-logic/">this link</a> from my open notebook.    </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [7]   <a href="http://beta.briefideas.org/ideas/ae644667a7badd7899570fb530016c7b">(doi)</a>    Build a molecular computer. Journal of Brief Ideas, 2015.    </ul>
+
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=5759559; 
+var sc_invisible=1; 
+var sc_security="b75cf132"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="web stats"
+href="http://www.statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/5759559/0/b75cf132/1/"
+alt="web stats" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+</body>
+</html>
+
+
