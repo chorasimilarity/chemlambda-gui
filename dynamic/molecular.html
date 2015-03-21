@@ -52,17 +52,6 @@
 <ul id="navigation"  >
  <li><h1>Molecular computers</h1> Marius.Buliga@gmail.com &nbsp; &nbsp;  </li> <li><a href="http://chorasimilarity.github.io/chemlambda-gui/index.html"><span style="color: #6ecae5;">chemlambda project</span></a></li></ul>
 
- <ul  padding:30px 0 36px 35px;
-    margin:35px 0 36px;>
-
-
-<div id="left">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_ackermann_2_2.html"  width="500" height="400"   frameborder="0" ></iframe>
-</div>
-
-<p>  </p>
-
-</ul>
 
 
 <ul     padding:30px 0 36px 35px;
@@ -72,28 +61,39 @@
     <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
     
-    
- <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > Individual molecules  encode data and programs in the chemical composition. Computations are not encoded in the numbers of species in a soup (multi set) of more or less arbitrarily chosen molecules.This is different than models of computation like the Chemical abstract machine, or those based on Chemical reaction networks.  
- </ul>   
-    
-<ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > A molecular computer is therefore a model of computation based on individual molecules in a random environment. The model should satisfy the following requirements: (a) to be Turing universal (thus in principle to allow to compute anything), (b) based on a minimal set of chemical reactions which happen randomly.  </ul>   
-    
-  <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > &nbsp; </ul>
-    
-    
-    <ul     padding:30px 0 36px 35px;
+ <ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+
+
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_ackermann_2_2.html"  width="360" height="380"   frameborder="0" ></iframe>
+
+
+</ul>
+
+   <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > (Computation of the Ackermann(2,2)=7   with chemlambda. See further details about how is made. You can move the atoms by click and drag.)  </ul>
 
 
    <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
     
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Individual molecules  encode data and programs in the chemical composition. Computations are not encoded in the numbers of species in a soup (multi set) of more or less arbitrarily chosen molecules.This is different than models of computation like the Chemical abstract machine, or those based on Chemical reaction networks.  
+ </ul>   
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > In brief, molecular computer is  a model of computation based on individual molecules in a random environment. The model proposed here satisfies the following requirements: (a) is Turing universal (thus in principle to allow to compute anything), (b) based on a minimal set of chemical reactions which happen randomly.  </ul>   
+    
+  <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+    
+    
+   
+    
     
     <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > <h3>I believe we can build molecular computers. This page is a call for making them.</h3> </ul>
+    margin:35px 0 36px;      > <h3>I believe we can build molecular computers. This page is a call for making them real, either by discovering them in living organisms, or by learning how to build them from scratch.  </h3> </ul>
     
     
     
@@ -118,41 +118,42 @@
    <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
 
-    
-   
- <ul  padding:30px 0 36px 35px;
-    margin:35px 0 36px;>
-
-
-<div id="left">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/sheet_copy.html"  width="500" height="400"   frameborder="0" ></iframe>
-</div>
-
-<p>  </p>
-
-</ul>
 
 
 
-     <ul     padding:30px 0 36px 35px;
+   <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >     There is a <a href="https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic">github repository</a> where this model is implemented and various  <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/demos.html"><span style="color: #6ecae5;">demos</span></a> are available, which show some features of the model: 
     <ul><li>classical examples of computation  like the  the <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/random_ackermann_2_2.html">Ackermann function</a>,  or the <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/lisfact_2_mod.html">factorial</a></li> 
     <li> demos about <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/A_L_eggshell.html">self-reproduction and more generally artificial life forms</a></li> 
     <li>the building of <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/newfact_zero.html">amazing structures</a> at a molecular level.  </li></ul></ul>
   
-
-  
   <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > (How to use the repository). Clone the repository and run this script with the command: bash moving_random_metabo.sh . The sh script gives you the list of initial molecules (in the form file.mol) and waits for you to type the name of one of the mol files. Then it executes the main program and produces the file.html, which can be seen in the browser. Look at the header of file.html to comment (or uncomment) the pieces which call for jquery and d3 js scripts, depending wether you have them locally or not. Open with a text editor the main script  check_1_mov2_rand_metabo.awk and modify the parameters from the beginning (there are short explanations about their meaning).</ul>
 
-
-   <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > As an example, this animation is obtained by running bash moving_random_metabo.sh, with the choice sheet_copy.mol.  It is an example of a computation which is not about lambda calculus, but nevertheless it leads to a structure which is programmed in the initial simpler one. </ul>
-
- <ul     padding:30px 0 36px 35px;
+<ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
 
- <ul     padding:30px 0 36px 35px;
+
+   
+ <ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/sheet_copy.html"  width="360" height="380"   frameborder="0" ></iframe>
+
+
+</ul>
+
+
+
+  
+  
+
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > As an example, this animation is obtained by running bash moving_random_metabo.sh, with the choice sheet_copy.mol.  It is an example of a computation which is not about lambda calculus, but nevertheless it leads to a structure which is programmed in the initial simpler one. You can move the atoms by click and drag.</ul>
+
+  <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
 
 
@@ -218,7 +219,7 @@
     margin:35px 0 36px;      > <h3>Chemlambda graph rewrites</h3> A shorter name is "moves".  They should be seen as chemical reactions involving a small part of the molecule and an invisible enzyme, one enzyme type per move. </ul>
     
 <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > In the following you see the moves written in the mol convention, and also a visualization of the moves. For each move you can CLICK on the move name to see what is happening. </ul>
+    margin:35px 0 36px;      > In the following you see the moves written in the mol convention, and also a visualization of the moves. For each move you can CLICK on the move name to see what is happening. You can move the atoms by click and drag. </ul>
 
     <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
@@ -232,15 +233,16 @@
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >  
     
- <div id="left">
+ 
  <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> c </span> , <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> 2</span>
-</div>   
+  </ul>
 
- <div id="right">
- <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> c </span> , <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> 2</span>
-</div>   
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
 
-     </ul>
+
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_beta.html"  width="360" height="380"   frameborder="0" ></iframe>
+ </ul>
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
@@ -248,18 +250,21 @@
 <ul  padding:30px 0 36px 35px;
     margin:35px 0 36px;>
 
-<div id="left">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_beta.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
 
-<p>  </p>
+ <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> c </span> , <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> 2</span>
+     </ul>
 
-<div id="right">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fanin.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
 
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fanin.html"  width="360" height="380"   frameborder="0" ></iframe>
 </ul>
 
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
 
 
 <ul     padding:30px 0 36px 35px;
@@ -271,14 +276,18 @@
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >  
     
- <div id="left">
+ 
  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> c </span> ,  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 3 </span> <span style="color: #6ecae5;"> 4 </span> - - > <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> i </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> k </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> l </span> <span style="color: #6ecae5;"> j </span> <span style="color: #6ecae5;"> 4 </span> , <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l </span>
-</div>   
+</ul>
 
- <div id="right">
-<span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> c </span> , <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> j </span> , <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> i </span> <span style="color: #f6cf84;"> k </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> l </span>  <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l</span></div>   
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  
 
-     </ul>
+
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fofoe.html"  width="360" height="380"   frameborder="0" ></iframe>
+
+
+ </ul>
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
@@ -288,29 +297,35 @@
     margin:35px 0 36px;>
 
 
-<div id="left">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fofoe.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
+<span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> c </span> , <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> j </span> , <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> i </span> <span style="color: #f6cf84;"> k </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> l </span>  <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l</span><  
 
-<p>  </p>
+     </ul>
 
-<div id="right">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fifo.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
+
+
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fifo.html"  width="360" height="380"   frameborder="0" ></iframe>
 
 </ul>
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >  
     
- <div id="left">
+
   <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> c </span> ,  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 3 </span> <span style="color: #6ecae5;"> 4 </span> - - > <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> i </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> k </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> l </span> <span style="color: #6ecae5;"> j </span> <span style="color: #6ecae5;"> 4 </span> , <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l </span>
-</div>   
+    </ul>
 
- <div id="right">
- <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> c </span> ,  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 3 </span> <span style="color: #6ecae5;"> 4 </span> - - > <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> i </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> k </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> l </span> <span style="color: #6ecae5;"> j </span> <span style="color: #6ecae5;"> 4 </span> , <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l </span></div>   
 
-     </ul>
+
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_lfoe.html"  width="360" height="380"   frameborder="0" ></iframe>
+</ul>
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
@@ -320,50 +335,58 @@
     margin:35px 0 36px;>
 
 
-<div id="left">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_lfoe.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
+ 
+ <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> c </span> ,  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 3 </span> <span style="color: #6ecae5;"> 4 </span> - - > <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> i </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> k </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> l </span> <span style="color: #6ecae5;"> j </span> <span style="color: #6ecae5;"> 4 </span> , <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l </span>  
 
-<p>  </p>
+     </ul>
 
-<div id="right">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_lfo.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
+
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+
+
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_lfo.html"  width="360" height="380"   frameborder="0" ></iframe>
 
 </ul>
 
 <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      >  
-    
- <div id="left">
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
  <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> c </span> , <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> j </span> , <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> i </span> <span style="color: #f6cf84;"> k </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> l </span>  <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l</span>
-</div>   
+</ul>
 
- <div id="right">
-<span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> c </span> , <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> j </span> , <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> i </span> <span style="color: #f6cf84;"> k </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> l </span>  <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l</span></div>   
 
-     </ul>
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_afoe.html"  width="360" height="380"   frameborder="0" ></iframe>
+</ul>
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
 
 
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+
+<span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 4 </span>  <span style="color: #6ecae5;"> c </span> , <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> c </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> - - >  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> i </span> <span style="color: #6ecae5;"> j </span> , <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> i </span> <span style="color: #f6cf84;"> k </span>  <span style="color: #6ecae5;"> 2 </span> , <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> j </span> <span style="color: #f6cf84;"> l </span>  <span style="color: #6ecae5;"> 3 </span> ,  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> 4 </span> <span style="color: #6ecae5;"> k </span> <span style="color: #6ecae5;"> l</span>
+
+     </ul>
 
 <ul  padding:30px 0 36px 35px;
     margin:35px 0 36px;>
 
-
-<div id="left">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_afoe.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
-
-<p>  </p>
-
-<div id="right">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_afo.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
-
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_afo.html"  width="360" height="380"   frameborder="0" ></iframe>
 </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
 
 
 <ul     padding:30px 0 36px 35px;
@@ -375,73 +398,69 @@
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >  
     
-    
- <div id="left">
+   
  <span style="color: #ade747;"> A </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 2 </span>  <span style="color: #6ecae5;"> 3 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 3 </span> - - >  <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 1 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 2 </span>  &nbsp; (same for <span style="color: #be66dd;"> FI </span> instead of <span style="color: #ade747;"> A </span>)
-</div>   
-
- <div id="right">
-<span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 3 </span> - - >  <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 1 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> c </span> , <span style="color: #f6cf84;"> FRIN </span>  <span style="color: #6ecae5;"> c</span></div>   
-
-     </ul>
-
-<ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > &nbsp; </ul>
-
+</ul>
 
 
 
 <ul  padding:30px 0 36px 35px;
     margin:35px 0 36px;>
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_atfit.html"  width="360" height="380"   frameborder="0" ></iframe>  
+</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  
+
+<span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 3 </span> - - >  <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 1 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> c </span> , <span style="color: #f6cf84;"> FRIN </span>  <span style="color: #6ecae5;"> c</span>
+     </ul>
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
 
 
-<div id="left">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_atfit.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
-
-<p>  </p>
-
-<div id="right">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_lt.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_lt.html"  width="360" height="380"   frameborder="0" ></iframe>
 
 </ul>
 
 <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >  
     
-    
-    
- <div id="left">
  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 2 </span> - - > <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;">3</span>  &nbsp; (same for <span style="color: #f6cf84;"> FOE </span> instead of <span style="color: #ade747;"> FO </span>)
-</div>   
+</ul>
 
- <div id="right">
-<span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 3 </span> - - > <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;">2</span>  &nbsp; (same for <span style="color: #f6cf84;"> FOE </span> instead of <span style="color: #ade747;"> FO </span>)</div>   
 
-     </ul>
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fo2tfoe2t.html"  width="360" height="380"   frameborder="0" ></iframe>
+</ul>
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
 
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  
+<span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> , <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> 3 </span> - - > <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;">2</span>  &nbsp; (same for <span style="color: #f6cf84;"> FOE </span> instead of <span style="color: #ade747;"> FO </span>)
+     </ul>
+
+
 <ul  padding:30px 0 36px 35px;
     margin:35px 0 36px;>
 
-
-<div id="left">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fo2tfoe2t.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
-
-<p>  </p>
-
-<div id="right">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fo3tfoe3t.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
-
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_fo3tfoe3t.html"  width="360" height="380"   frameborder="0" ></iframe>
 </ul>
 
 <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;       > <h3>COMB move and COMB cycle.</h3> The cycle is a rapid application of COMB moves, whenever there are Arrow elements with the "in" port connected to a port which does not belong to another Arrow. Exemplified here with a BETA move followed by a COMB cycle which eliminates all the Arrow elements, excepting the one which has its in port connected to its out port (so connected to another Arrow port).</ul>
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  <h3>COMB move and COMB cycle.</h3> The cycle is a rapid application of COMB moves, whenever there are Arrow elements with the "in" port connected to a port which does not belong to another Arrow.</ul>
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
@@ -449,34 +468,28 @@
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >  
-    
-    
-    
- <div id="left">
  any node M   <span style="color: #6ecae5;"> 1 </span> , <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;">2</span> - - >  M   <span style="color: #6ecae5;"> 2 </span>
-</div>   
-
 
 
      </ul>
+
+<ul  padding:30px 0 36px 35px;
+    margin:35px 0 36px;>
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_arrow.html"  width="360" height="380"   frameborder="0" ></iframe>
+</ul>
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
 
 
 <ul  padding:30px 0 36px 35px;
-    margin:35px 0 36px;>
+    margin:35px 0 36px;> Exemplified here with a BETA move followed by a COMB cycle which eliminates all the Arrow elements, excepting the one which has its in port connected to its out port (so connected to another Arrow port).</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >
 
 
-<div id="left">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_arrow.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
-
-<p>  </p>
-
-<div id="right">
-<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_arrow_cycle.html"  width="600" height="600"   frameborder="0" ></iframe>
-</div>
+<iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/expo_arrow_cycle.html"  width="360" height="380"   frameborder="0" ></iframe>
 
 </ul>
 
