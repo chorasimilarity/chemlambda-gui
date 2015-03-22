@@ -21,7 +21,7 @@
  }
 #navigation a {
     margin-right:64px;
-    font-size:12px;
+    font-size:14px;
     font-weight:bold;
     color: #B0CF83;
     text-decoration:none;
@@ -46,11 +46,15 @@
 <body style="background-color: rgb(0, 0, 0); color: #B0CF83; font-family: 'Helvetica Neue', Helvetica, sans-serif; "
  alink="#f6cf84" link="#6ecae5" vlink="#f6cf84"  >
 
-
+<ul   padding:30px 0 36px 35px;
+    margin:35px 0 36px; >
+ This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</ul>
 
 
 <ul id="navigation"  >
- <li><h1>Molecular computers</h1> Marius.Buliga@gmail.com &nbsp; &nbsp;  </li> <li><a href="http://chorasimilarity.github.io/chemlambda-gui/index.html"><span style="color: #6ecae5;">chemlambda project</span></a></li></ul>
+ <li><h1>Molecular computers</h1> Marius.Buliga@gmail.com  </li> <li>&nbsp; &nbsp;  <a href="https://github.com/chorasimilarity/chemlambda-gui/commits/gh-pages/dynamic/molecular.html"><span style="color: #6ecae5;">versions history</span></a>  </li></ul>
+ 
+ 
 
 
 
@@ -160,7 +164,7 @@
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >     
          <li   padding:30px 0 36px 35px;
-    margin:35px 0 36px;   >  <h3>step 2: from virtual chemical reactions to real ones.</h3> The patterns which appear in the graph rewrites are so simple that it is highly possible that there exist real correspondents of "atoms", "bonds" and "enzymes", perhaps as simple real chemical molecules, which enter in  real chemical reactions which mimic the graph rewrites of chemlambda.  The problem is to identify those patterns in reality, by a combination of database searches and experiments which make this project ideal for an open source bio-hacking project, for example. </li>
+    margin:35px 0 36px;   >  <h3>step 2: from virtual chemical reactions to real ones.</h3> The patterns which appear in the chemlambda graph rewrites are so simple that it is highly possible that there exist real correspondents of "atoms", "ports", "bonds" and "enzymes", perhaps as simple real chemical molecules, which enter in  real chemical reactions which mimic the graph rewrites of chemlambda.  The problem is to identify those patterns in reality, by a combination of database searches and experiments which make this project ideal for an open source bio-hacking project, for example. </li>
     
     </ul>   
 
@@ -204,9 +208,9 @@
     <li   padding:30px 0 36px 35px;
      margin:35px 0 36px;   >  <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> middle.in</span> , called "termination" node, is used  in relation to lambda calculus in place of variables x appearing in terms Lx.A, where A does not contain x. </li>
       <li   padding:30px 0 36px 35px;
-     margin:35px 0 36px;   >  <span style="color: #f6cf84;"> FRIN </span>  <span style="color: #6ecae5;"> middle.out</span> , is a  "free in" node, used  for edges with a free source. (Thus, if your mol file has a port variable "a" which appears only once, in a port of type out, then the main script adds "FRIN a" to the mol file.) </li> 
+     margin:35px 0 36px;   >  <span style="color: #f6cf84;"> FRIN </span>  <span style="color: #6ecae5;"> middle.out</span> , is a  "free in" node, used  for edges with a free source. (Thus, if your mol file has a port variable "a" which appears only once, in a port of type in, then the main script adds "FRIN a" to the mol file.) </li> 
          <li   padding:30px 0 36px 35px;
-     margin:35px 0 36px;   >  <span style="color: #6ecae5;"> FROUT </span>  <span style="color: #f6cf84;"> middle.in</span> , is a  "free out" node, used  for edges with a free target. (Thus, if your mol file has a port variable "a" which appears only once, in a port of type in, then the main script adds "FROUT a" to the mol file.) </li> 
+     margin:35px 0 36px;   >  <span style="color: #6ecae5;"> FROUT </span>  <span style="color: #f6cf84;"> middle.in</span> , is a  "free out" node, used  for edges with a free target. (Thus, if your mol file has a port variable "a" which appears only once, in a port of type out, then the main script adds "FROUT a" to the mol file.) </li> 
      
     
      </ul>
