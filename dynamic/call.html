@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>M. Buliga, A project in chemical computing</title>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+#navigation {
+    padding:30px 0 36px 35px;
+    margin:35px 0 36px;
+    border-top:2px groove #808080;
+    border-bottom:2px groove #808080;
+    list-style-type:none;
+ }
+#navigation li {
+    display:inline;
+ }
+#navigation a {
+    margin-right:64px;
+    font-size:14px;
+    font-weight:bold;
+    color: #B0CF83;
+    text-decoration:none;
+    letter-spacing:-1px;
+
+ }
+
+
+#left,#right {  
+    float:left;
+    width:50%;
+ }
+
+#navigation h1 {
+    margin-bottom:36px;
+    font-size:36px;
+    font-weight:normal;
+ }
+</style>
+
+</head>
+<body style="background-color: rgb(0, 0, 0); color: #B0CF83; font-family: 'Helvetica Neue', Helvetica, sans-serif; "
+ alink="#f6cf84" link="#6ecae5" vlink="#f6cf84"  >
+
+<ul   padding:30px 0 36px 35px;
+    margin:35px 0 36px; >
+Author: <a href="https://github.com/chorasimilarity"><span style="color: #6ecae5;">Marius Buliga</span></a>. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. </ul>
+
+
+
+
+<ul id="navigation"  >
+ <li><h1>A project in chemical computing</h1> (Marius.Buliga@gmail.com , Marius.Buliga@imar.ro) &nbsp; &nbsp; &nbsp; &nbsp;</li> <li><a href="http://chorasimilarity.github.io/chemlambda-gui/index.html"><span style="color: #6ecae5;">chemlambda index</span></a></li></ul>
+ 
+ 
+
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  <a href="http://chorasimilarity.github.io/chemlambda-gui/index.html">Chemlambda</a>  is
+a model of computation based on individual molecules, which compute alone,
+by themselves (in a certain well defined sense). </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Everything is formulated from the point of view of ONE molecule which
+interacts randomly with a family of (invisible) enzymes. </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > There is a rigorous model associated and, even better, a <a href="http://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic">github repository</a> which contains programs which implement it. The programs serve to validate
+the model by an independent check. </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > So what? </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Bad detail: chemlambda is not a real chemistry, it's artificial. </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Good detail: it is Turing universal in a very powerful sense. It does not
+rely on boolean gates kind of computation, but on the other pillar of
+computation which led to functional programming: lambda calculus. (In fact chemlambda goes much further than being a chemical version of functional programming.)</ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > So instead of molecular assemblies which mimic a silicon computer hardware,
+chemlambda can do sophisticated programming stuff with chemical reactions.
+(The idea that lambda calculus is a sort of chemistry appeared in the
+ALCHEMY (i.e. algorithmic chemistry) <a href="http://tuvalu.santafe.edu/~walter/AlChemy/Statement/organization.html">proposal by Fontana and Buss</a>.
+Chemlambda is far more concrete and simple than Alchemy, principially
+different, but it nevertheless owes to Alchemy the idea that lambda
+calculus can be done chemically.) </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > From here,  the following reasoning. </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > 
+<li>(a) Suppose we can make this chemistry real, as explained in the
+article <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/molecular.html">Molecular computers</a>. This looks reasonable, based on the extreme simplicity of chemlambda
+reactions.</li> </ul>
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > <li>(b) Then is is possible to take further Craig Venter's Digital Biological
+Converters (which already exist) idea and enhance it to the point of being
+able to "print" autonomous computing molecules. Which can do anything
+(amenable to a computation, so literary anything). Anything in the sense
+that they can do it alone, once printed. </li></ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > The first step of such an ambitious project is a very modest one: identify
+the ingredients in real chemistry. </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > The second step would be to recreate with real chemistry some of the
+examples which have been already shown as working, such as <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/lisfact_2_mod.html">the factorial demo</a>, or the Ackermann function examples from the demos page, see as well a <a href="http://youtu.be/MzmLN89duns">(video)</a>. </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Already this second step would be a huge advance over the actual state of
+the art in molecular computing. Indeed, compare a handful of boolean gates
+with a functional programming like computation. </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > If it is, for example, a big deal to build with DNA some simple assemblies
+of boolean gates, then surely it is a bigger deal to be able to compute the
+Ackermann function (which is not primitive recursive, like the factorial)
+as the result of a random chemical process acting on individual molecules. </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  What is missing is an expert search in existing databases, combined with
+the realisation of possibly simple proofs of principles chemical
+experiments based on the existing simple and rigorous formalism. </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Once these two steps are realised, then the proof of principle part ends
+and more practical directions open. </ul>
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Nobody wants to compute factorials with chemistry, silicon computers are
+much better for this task. Instead, chemical tiny computers as described
+here are good for something else. </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >If you examine what happens in this chemical computation, then you realise 
+that it is in fact a means towards self-building of chemical or geometrical
+structure at the molecular level. The chemlambda computations are not done
+by numbers, or bits, but by structure processing. Or this structure
+processing is the real goal! </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >Universal structure processing! </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >In the <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/vision.html">chemlambda vision page</a> this
+is taken even further, towards the interaction with the future Internet of
+Things.  </ul>
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >   References:  </ul>
+    
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  [1]  <a href="http://www.complex-systems.com/abstracts/v22_i04_a01.html">(journal)</a> <a href="http://arxiv.org/abs/1305.5786">(arxiv)</a> - M. Buliga, Graphic lambda calculus. Complex Systems 22, 4 (2013), 311-360 </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [2]  <a href="http://dx.doi.org/10.6084/m9.figshare.830457">(doi)</a>  <a href="http://arxiv.org/abs/1309.6914">(arxiv)</a> - M. Buliga, Chemical concrete machine (2013).  </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  [3]  <a href="http://mitpress.mit.edu/sites/default/files/titles/content/alife14/ch079.html">(MIT Press free download)</a>   <a href="http://arxiv.org/abs/1403.8046">(arxiv)</a> - M. Buliga, L.H. Kauffman, Chemlambda, universality and self-multiplication (2014). presented by <a href="http://homepages.math.uic.edu/~kauffman/">Louis H. Kauffman</a> at <a href="http://blogs.cornell.edu/alife14nyc/">ALIFE 14</a>.   </ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [4]  M. Buliga, <a href="https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic">chemlambda repository</a>  The main script which implements chemlambda version 2 is check_1_mov2_rand_metabo.awk. </ul>   
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  [5] <a href="http://arxiv.org/abs/1312.4333">(arxiv)</a> - M. Buliga, L.H. Kauffman, GLC actors, artificial chemical connectomes, topological issues and knots (2013). </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [6]   <a href="http://dx.doi.org/10.6084/m9.figshare.1032660">(doi)</a> <a href="http://arxiv.org/abs/1405.6095">(arxiv)</a>  M. Buliga,  Zipper logic (2014).  </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [7]   <a href="http://beta.briefideas.org/ideas/ae644667a7badd7899570fb530016c7b">(doi)</a>  M. Buliga,  Build a molecular computer. Journal of Brief Ideas, (2015).    </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [8]   <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/molecular.html">(html)</a> M. Buliga, Molecular computers, (2015).    </ul>
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >This version: April 2nd, 2015</ul>
+
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=5759559; 
+var sc_invisible=1; 
+var sc_security="b75cf132"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="web stats"
+href="http://www.statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/5759559/0/b75cf132/1/"
+alt="web stats" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+</body>
+</html>
+
+
