@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chemlambda movies productions presents:</title>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+
+<!-- based on http://bl.ocks.org/ericcoopey/6c602d7cb14b25c179a4 -->
+
+.link line {
+  stroke: #696969;
+}
+
+.link line.separator {
+  stroke: #95A5A6;
+  stroke-width: 2px;
+}
+
+.node circle {
+  stroke: #95A5A6;
+  stroke-width: 1.5px;
+}
+
+        .textClass {
+            stroke: #fff;
+            font-family:     'Helvetica Neue', Helvetica, sans-serif; 
+            font-weight: normal;
+            stroke-width: 1.;
+            font-size: 14px;
+        }
+
+.demo-info {
+	padding: 14px 26px;
+	font-size: 14px;
+	line-height: 100%;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	color: #fff;
+	
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background 0.1s ease-in-out;
+	-webkit-transition: background 0.1s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	-ms-transition: background 0.1s ease-in-out;
+	-o-transition: background 0.1s ease-in-out;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+.demo-info:active {
+	padding-top: 15px;
+}
+.demo-info, .demo-info:hover, .demo-info:active {
+	outline: 0 none;
+	text-decoration: none;
+        color: #fff;
+}
+.demo-info-1 {
+	background-color: #222;
+	box-shadow: 0px 3px 0px 0px #000;
+
+    </style>
+</head>
+<body  style="background-color: rgb(0, 0, 0); color: #B0CF83; font-family: 'Helvetica Neue', Helvetica, sans-serif; "
+ alink="#f6cf84" link="#6ecae5" vlink="#f6cf84">
+
+<a href="https://github.com/chorasimilarity/chemlambda-gui/tree/master/dynamic"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >   <h2><a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/demos.html"><span style="color: #6ecae5;">chemlambda demos</span></a></ul>
+
+
+  <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  This is about the Yv combinator. </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  I took the notes <a href="https://www.cs.utah.edu/~mflatt/past-courses/cs7520/public_html/s06/notes.pdf">Programming languages and lambda calculi (Utah CS7520 Version)</a> by Matthias Felleisen and Matthew Flatt  and used section 5.3, p. 43-44, theorem 5.1. </ul>
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  The file yv.mol represents Yv K, where K=Lg.Lx.M(g,x). In the mol file M(g,x)=gx, so M is a node A, but it can be any A-FO graph instead (i.e. it satisfies the property that when connected to a FO node it reduces eventually as an A node, described in [1] as a "distributor" of the type A). </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  The file kyvk.mol represents K(Y_v K). </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  The algorithm has been run in the deterministic regime (i.e. all wei_*=0; ). </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  It proves visually  the theorem 5.1 by showing that both graphs (yv.mol and kyvk.mol) reduce to the same graph. </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  The reduction of yv.mol is this. You may click and drag the nodes. </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  <iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/yv.html"  width="450" height="450"   frameborder="0" ></iframe> </ul>
+    
+    <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  The reduction of kyvk.mol is this. Click and drag the nodes to move the end graph so that it is visibly the same as the privies one. </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  <iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/kyvk.html"  width="450" height="450"   frameborder="0" ></iframe> </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  The interpretation is that if we assume that M behaves like an A distributor graph and if we suppose that if the reduction of M is "canned" in one step as a  DIST-A move, then Y_v K and K(Y_v K) reduce both to the same graph, so they are equivalent in the sense that if the reduction of any of these graphs is "canned" (as a single reduction step), then it results in the same graph. </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  yv.mol:
+
+A yv a1 out , 
+
+L a2 ag a1 , 
+L al ax a2 , 
+
+A ag ax al , 
+
+L 1 f yv , 
+L 2 x 1 , 
+A 3 4 2 , 
+FO f f1 f2 , 
+
+L 5 g1 3 , 
+A f1 6 5 , 
+L 7 x1 6 , 
+A 8 x1 7 , 
+A 9 10 8 , 
+FO g1 9 10 , 
+
+A 11 x 4 , 
+
+L 12 g2 11 , 
+A f2 13 12 , 
+L 14 x2 13 , 
+A 15 x2 14 , 
+A 16 17 15 , 
+FO g2 16 17 </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp;  </ul>
+
+
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  kyvk.mol
+
+A yv a12 outi , 
+A a11 outi out , 
+FO a1 a11 a12 , 
+
+L a2 ag a1 , 
+L al ax a2 , 
+
+A ag ax al , 
+
+L 1 f yv , 
+L 2 x 1 , 
+A 3 4 2 , 
+FO f f1 f2 , 
+
+L 5 g1 3 , 
+A f1 6 5 , 
+L 7 x1 6 , 
+A 8 x1 7 , 
+A 9 10 8 , 
+FO g1 9 10 , 
+
+A 11 x 4 , 
+
+L 12 g2 11 , 
+A f2 13 12 , 
+L 14 x2 13 , 
+A 15 x2 14 , 
+A 16 17 15 , 
+FO g2 16 17
+</ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  [1]  <a href="http://mitpress.mit.edu/sites/default/files/titles/content/alife14/ch079.html">(MIT Press free download)</a>   <a href="http://arxiv.org/abs/1403.8046">(arxiv)</a> - M. Buliga, L.H. Kauffman, Chemlambda, universality and self-multiplication (2014). presented by <a href="http://homepages.math.uic.edu/~kauffman/">Louis H. Kauffman</a> at <a href="http://blogs.cornell.edu/alife14nyc/">ALIFE 14</a>.   </ul>
+
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=5759559; 
+var sc_invisible=1; 
+var sc_security="b75cf132"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="web stats"
+href="http://www.statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/5759559/0/b75cf132/1/"
+alt="web stats" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+</body>
+</html>
+
