@@ -1,7 +1,7 @@
 BEGIN { 
 
 
-# name: ckeck_1_mov2_rand_metabo.awk , version 12.03.2015
+# name: ckeck_1_mov2_rand_metabo.awk , version 12.04.2015
 #
 # repo: https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic
 #
@@ -12,23 +12,23 @@ BEGIN {
 
 ####### time realistic if 0  (i.e. waits if no move in a cycle if wait_param=0)
 
-  wait_param=0;
+  wait_param=1;
   
 
 
 ######## params for metabolism visualisation (turns on and off the colours of the new nodes). If you want to inactivate metabo then choose metabo=10000 and shiftmetabo=0. If you want to have metabo activated all the time then choose metabo=10000 and shiftmetabo=10000. The parameter metabo gives the period, expressed as the number of nodes with modified color, the parameter shiftmetabo shifts the period from 0 to shiftmetabo modulo metabo, also expressed in number of nodes which appear. 
 
-      shiftmetabo=10000;
+      shiftmetabo=0;
 
       metabo=10000;
 
 ######### number of cycles
 
-      cycounter=2000;
+      cycounter=1000;
       
 ######## time between graph updates, in the visualisation html file. It appear that firefox can hardly support time_val<=25, but safari and chromium can deal with time_val=5. 
 
-     time_val=5;      
+     time_val=15;      
       
 ######## params for the weight of moves    (if you want to eliminate randomness then take everything = 0, the usual choice is to take all=1)
 
@@ -40,15 +40,15 @@ BEGIN {
     
     wei_FO2TFOET=1;
 
-    wei_FOFOE=4;
+    wei_FOFOE=1;
     
-    wei_LFOELFO=4;
+    wei_LFOELFO=1;
     
-    wei_AFOAFOE=4;
+    wei_AFOAFOE=1;
 
-    wei_FIFO=4;
+    wei_FIFO=1;
 
-    wei_FIFOE=2;
+    wei_FIFOE=1;
 
     wei_AL=1;      
     
@@ -73,13 +73,13 @@ BEGIN {
 #######  colours and radii. Attention, never choose left=right, it messes with some moves definitions. If you want to give ports the same mportance as nodes then choose something like main_const=4 (for the main nodes)  left=4 (for left ports) and right=3, middle=3 (for the other ports)
 
     
-      main_const=6;
+      main_const=3;
 
-      left=4;
+      left=2;
 
-      right=2;
+      right=1;
 
-      middle=2;
+      middle=1;
 
 #     green_col="#8CC152";
 
@@ -1700,11 +1700,13 @@ sourcetype=all_node_atom[sourc];
 
 #   FOFOE, which appears as move 33. It then blocks the nodes which participate to this move. 
     
-    parame=int(wei_FOFOE*growfact * rand());
-    
-    if ( parame==0) {
+ 
     
     for (ku in all_edge_source) { bon=all_edge_bond[ku];
+    
+       parame=int(wei_FOFOE*growfact * rand());
+    
+    if ( parame==0) {
     
     growcont++;
     
@@ -2082,10 +2084,10 @@ sourcetype=all_node_atom[sourc];
     
     }
     
-    #end of FOFOE
+    #end of random parame for FOFOE
     }
 
-#end random parame for FOFOE 
+#end FOFOE 
 }
 
 # the other moves DIST: 23 and all_node_atom[sourc]=="A" , 13 LFO and LFOE, 24 AFO, FIFO (has FO instead of FOE)
@@ -4272,12 +4274,14 @@ for (nodc in proposed_all_node_atom) {
 }
 
 
+ 
+
 
 #end COMB cycle     
 
 } else {   gugu++;  
 
-if (gugu==800) {counter=cycounter;}}
+if (gugu==1000) {counter=cycounter;}}
 
  difcont=growcont-diecont;
  
