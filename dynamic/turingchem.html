@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>M. Buliga, Turing machines, chemlambda style</title>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+#navigation {
+    padding:30px 0 36px 35px;
+    margin:35px 0 36px;
+    border-top:2px groove #808080;
+    border-bottom:2px groove #808080;
+    list-style-type:none;
+ }
+#navigation li {
+    display:inline;
+ }
+#navigation a {
+    margin-right:64px;
+    font-size:14px;
+    font-weight:bold;
+    color: #B0CF83;
+    text-decoration:none;
+    letter-spacing:-1px;
+
+ }
+
+
+#left,#right {  
+    float:left;
+    width:50%;
+ }
+
+#navigation h1 {
+    margin-bottom:36px;
+    font-size:36px;
+    font-weight:normal;
+ }
+</style>
+
+</head>
+<body style="background-color: rgb(0, 0, 0); color: #B0CF83; font-family: 'Helvetica Neue', Helvetica, sans-serif; "
+ alink="#f6cf84" link="#6ecae5" vlink="#f6cf84"  >
+
+<ul   padding:30px 0 36px 35px;
+    margin:35px 0 36px; >
+Author: <a href="https://github.com/chorasimilarity"><span style="color: #6ecae5;">Marius Buliga</span></a>. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. </ul>
+
+
+
+
+<ul id="navigation"  >
+ <li><h1>Turing machines, chemlambda style</h1> (Marius.Buliga@gmail.com , Marius.Buliga@imar.ro) &nbsp; &nbsp; &nbsp; &nbsp;</li> <li><a href="http://chorasimilarity.github.io/chemlambda-gui/index.html"><span style="color: #6ecae5;">chemlambda index</span></a></li></ul>
+ 
+ 
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > The two pillars of computation are: <li><span style="color: #f0bf26;"><a href="http://en.wikipedia.org/wiki/Turing_machine">the Turing Machine</a> (Alan Turing 1936) </span></li> <li><span style="color: #f0bf26;"><a href="http://en.wikipedia.org/wiki/Lambda_calculus">untyped lambda calculus</a> (Alonzo Church 1936)</span></li></ul>
+
+  <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+  <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > At first sight they look very different. Therefore, if we want to compare them, we have to reformulate them in ways which are similar. Rewrite systems are appropriate here.</ul>
+  
+   <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+  
+    <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > The Turing Machine (TM) is a model of computation which is well-known as being a formalisation of what a computer is. It is a machine which has some internal states (from a set S), has a head which read/writes symbols (from a set A) on a tape. The tape is seen as an infinite word made of letters from A. The set A has a special letter (call it "b" from blank) and the infinite words which describe tapes have to be such that all but a finite number of letters of that word are different from "b". Imagine an infinite, in both directions, tape which has written  symbols on it, such that "b" represents an empty space. The tape has only a finite part of it filled with letters from A, others than the blank letter. </ul>
+    
+  <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  The action of the machine depends on the internal state and on the symbol read by the head. It is therefore  a function of  the internal state of the machine (element of S), the letter from the tape which is read (element of A), and outputs a letter from the alphabet A (which is written in the case where previously was the letter which has been read,   changes its internal state,  and the head moves one step  along the tape, to the left (L) or right (R), or does not move at all (N).  </ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  The TM can be seen as a rewrite system. </ul>
+    
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+  <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > For example, one could see a TM as follows. (Pedantically this is seen as a multi-headed TM without internal states; the only interest in this distinction is that it raises the question if there is really any meaning into discerning internal states from the tape symbols.)  We start from a set (or type) of internal states S. Such states are denoted by A, B, C (thus exhibiting their type by the type of the font used). There are 3 special symbols: &lt; is the symbol of the beginning of a list (i.e. word), &gt; is the symbol of the end of a list (word) and M is the special symbol for the head move (or of the type associated to head moves). There is an alphabet A of external states (i.e. tape symbols), with b (the blank) being in A. </ul>
+    
+     <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > A tape is then a finite word (list)  of one of the forms &lt; w A w' &gt; ,  &lt; w M A w' &gt; , &lt; w A M w' &gt;, where A is an internal state and w and w' are finite words written with the alphabet A, which can be empty words as well.</ul>
+    
+        <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > A rewrite replaces a left pattern (LT) by a right pattern (RT), and there are denoted as LT - - > RT . Here LT and RT are sub-words of the tape word. It supposed that all rewrites are context independent, i.e.  LT is replaced by RT regardless of the place where LT appears in the tape word. The rewrite is called "local" if the lengths (i.e. number of letters) of LT and RT are bounded a priori.</ul>
+    
+        <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > A TM is given as a list of Turing instructions, which have the form (current internal state, tape letter read, new internal state, tape letter write, move of the tape). In terms as explained here, all this can be expressed via local rewrites.
+    <li> Rewrites which introduce blanks at the extremities of the written tape: <ul>
+    <li> &lt; A &nbsp; - - > &nbsp; &lt; b A </li>
+    <li> A &gt; &nbsp; - - > &nbsp; A b &gt; </li></ul></li>
+    <li>Rewrites which describe how the head moves:
+    <ul><li>A M a &nbsp; - - > &nbsp; a A</li>
+    <li> a M A &nbsp; - - > &nbsp; A a </li></ul></li>
+    <li>Turing instructions rewrites: 
+    <ul><li> a A c &nbsp; - - > &nbsp; d B M c  &nbsp; , for the Turing instruction (A, a, B, d, R)</li>
+    <li> a A c &nbsp; - - > &nbsp; d M B c  &nbsp; , for the Turing instruction (A, a, B, d, L)</li>
+    <li> a A c &nbsp; - - > &nbsp; d B  c  &nbsp; , for the Turing instruction (A, a, B, d, N)</li></ul></li></ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Together with the algorithm "at each step apply all the rewrites which are possible, else stop" we obtain the deterministic TM model of computation. For any initial tape word, the algorithm explains what the TM does to that tape. Other algorithms are of course possible. Before mentioning some very simple variants of the basic algorithm, let's see when it works.</ul>
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > If we start from a tape word as defined here, there is never a conflict of rewrites. This means that there is never the case that two LT from two different rewrites overlap. It might be the case though, if we formulate some rewrites a bit differently. For example, suppose that the Turing rewrites are modified to: 
+    <ul><li> a A  &nbsp; - - > &nbsp; d B M   &nbsp; , for the Turing instruction (A, a, B, d, R)</li>
+    <li> a A  &nbsp; - - > &nbsp; d M B   &nbsp; , for the Turing instruction (A, a, B, d, L)</li></ul>
+     </ul>
+     
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Therefore, the LT of the Turing rewrites is no longer of the form "a A c", but of the form "a A". Then it may enter in conflict with the other rewrites, like in the cases: 
+    <li> a A M c  where two overlapping rewrites are possible <ul>
+    <li>Turing rewrite: a A M c   &nbsp; - - > &nbsp; d M B M c  &nbsp which will later produce two possibilities for the head moves rewrites, due to the string M B M </li> 
+    <li> head moves rewrite:  a A M c   &nbsp; - - > &nbsp; a c A &nbsp which then produces a LT for a Turing rewrite for c A, instead of the previous Turing rewrite for a A </li>
+    </ul></li> 
+    <li> a A &gt;  where one may apply a Turing rewrite on a A, or a blank rewrite on A &gt;</li></ul>    
+    
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > The list is non exhaustive. Let's turn back to the initial formulation to the Turing rewrites and instead let's change the definition of a tape word. For example, suppose we allow multiple TM heads on the same tape, more precisely suppose that we accept  initial tape words of the form &lt; w1 A w2 B w3 C ... wN &gt;. Then we shall surely encounter conflicts between head moves rewrites for patterns as a A M B c.   </ul>  
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > The most simple solution for solving these conflicts is to introduce a priority of rewrites. For example we may impose that blank rewrites take precedence over head moves rewrites, which take precedence over Turing rewrites. More such structure can be imposed (like some head moves rewrites  have precedence  over others). Even new rewrites may be introduced, for example rewrites which allow multiple TMs on the same tape to switch place. </ul> 
+    
+    
+  <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+    
+    
+    
+      <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Let's see an example: the 2-symbols, 3-states <a href="https://en.wikipedia.org/wiki/Busy_beaver">busy beaver machine</a>.  Following the conventions from this work, the tape letters (i.e. the alphabet A) are "b" and "1", the internal states are A, B, C, HALT. (The state HALT may get special treatment, but this is not mandatory). The rewrites are:
+    <li> Rewrites which introduce blanks at the extremities of the written tape: <ul>
+    <li> &lt; X &nbsp; - - > &nbsp; &lt; b X &nbsp; for every internal state X</li>
+    <li> A &gt; &nbsp; - - > &nbsp; A b &gt; &nbsp; for every internal state X</li></ul></li>
+    <li>Rewrites which describe how the head moves:
+    <ul><li>X M a &nbsp; - - > &nbsp; a X &nbsp; ,  for every internal state X and every tape letter a</li>
+    <li> a M X &nbsp; - - > &nbsp; X a &nbsp; ,  for every internal state X and every tape letter a</li></ul></li>
+    <li>Turing instructions rewrites: 
+    <ul><li> b A c &nbsp; - - > &nbsp; 1 B M c  &nbsp; , for every tape letter c </li>
+    <li> b B c &nbsp; - - > &nbsp; b C M c  &nbsp; , for every tape letter c </li>
+    <li> b C c &nbsp; - - > &nbsp; 1 M C c  &nbsp; , for every tape letter c </li>
+    <li> 1 A c &nbsp; - - > &nbsp; 1 HALT M c  &nbsp; , for every tape letter c </li>
+     <li> 1 B c &nbsp; - - > &nbsp; 1 B M c  &nbsp; , for every tape letter c </li>
+      <li> 1 C c &nbsp; - - > &nbsp; 1 M A c  &nbsp; , for every tape letter c </li>
+  </ul></li></ul>
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > We can enhance this by adding the priority of rewrites, for example in the previous list, any rewrite has priority over the rewrites written below it. In this way we may relax the definition of the initial tape word and allow for multiple heads on the same tape. Or for multiple tapes. </ul>
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Suppose we put the machine to work with an infinite tape with all symbols being blanks. This corresponds to the tape word &lt; A &gt;. Further are the steps of the computation: 
+    <ul>
+    <li>&lt; A &gt;  &nbsp; - - > &nbsp;  &lt; b  A &gt;  </li>
+    <li>  &lt;b  A &gt; &nbsp; - - > &nbsp; &lt; b  A b &gt; </li>
+    <li>  &lt; b  A b &gt; &nbsp; - - > &nbsp; &lt; 1 B M b &gt; </li>
+    <li>  &lt; 1 B M b &gt; &nbsp; - - > &nbsp; &lt; 1 b B &gt; </li>
+    <li>  &lt; 1 b B &gt; &nbsp; - - > &nbsp; &lt; 1 b B b &gt; </li>
+    <li> &lt; 1 b B b &gt; &nbsp; - - > &nbsp; &lt; 1 b C M b &gt; </li>
+    <li> &lt; 1 b C M b &gt; &nbsp; - - > &nbsp;  &lt; 1 b b C &gt; </li>
+    <li> &lt; 1 b b C &gt;  &nbsp; - - > &nbsp; &lt; 1 b b C b &gt;  </li>
+    <li> &lt; 1 b b C b &gt; &nbsp; - - > &nbsp; &lt; 1 b 1 M C b &gt; </li>
+    <li>  &lt; 1 b 1 M C b &gt; &nbsp; - - > &nbsp; &lt; 1 b C  1 b &gt; </li>
+    <li> &lt; 1 b C  1 b &gt; &nbsp; - - > &nbsp; &lt; 1 1  M C  1 b &gt; </li>
+    <li> &lt; 1  1 M C  1 b &gt; &nbsp; - - > &nbsp; &lt; 1 C 1  1 b &gt; </li>
+    <li> &lt; 1 C 1  1 b &gt; &nbsp; - - > &nbsp; &lt; 1 M A 1  1 b &gt; </li>
+    <li> &lt; 1 M A 1  1 b &gt;   &nbsp; - - > &nbsp; &lt;  A  1  1  1 b &gt;  </li>
+    <li> &lt;  A  1  1  1 b &gt;   &nbsp; - - > &nbsp;   &lt; b  A  1  1  1 b &gt; </li>
+    <li>    &lt; b  A  1  1  1 b &gt;     &nbsp; - - > &nbsp; &lt; 1 B M  1  1  1 b &gt; </li>
+    <li> &lt;1  B M  1  1  1 b &gt;   &nbsp; - - > &nbsp; &lt; 1 1  B  1  1 b &gt; </li>
+    <li> &lt; 1 1  B  1  1 b &gt;  &nbsp; - - > &nbsp; &lt; 1 1  B  M 1  1 b &gt; </li>
+    <li>  &lt; 1 1  B  M 1  1 b &gt;  &nbsp; - - > &nbsp; &lt; 1 1  1 B  1 b &gt; </li>
+    <li>  &lt; 1 1  1 B  1 b &gt;  &nbsp; - - > &nbsp;  &lt; 1 1  1 B  M 1 b &gt; </li>
+    <li>  &lt; 1 1  1 B  M 1 b &gt;  &nbsp; - - > &nbsp;  &lt; 1 1  1  1 B  b &gt; </li>
+    <li>   &lt; 1 1  1  1 B  b &gt;   &nbsp; - - > &nbsp;  &lt; 1 1  1  1 B  M b &gt; </li>
+    <li>  &lt; 1 1  1  1 B  M b &gt;    &nbsp; - - > &nbsp;   &lt; 1 1  1  1 b B  &gt;  </li> 
+    <li>   &lt; 1 1  1  1 b B  &gt;  &nbsp; - - > &nbsp;  &lt; 1 1  1  1 b B b &gt;  </li>
+    <li>   &lt; 1 1  1  1 b B b &gt;   &nbsp; - - > &nbsp;  &lt; 1 1  1  1 b C M b &gt; </li>
+    <li>   &lt; 1 1  1  1 b C M b &gt;  &nbsp; - - > &nbsp;   &lt; 1 1  1  1 b b C &gt; </li>
+    <li>     &lt; 1 1  1  1 b b C &gt; &nbsp; - - > &nbsp;   &lt; 1 1  1  1 b b C b &gt; </li>
+    <li> &lt; 1 1  1  1 b b C b &gt;  &nbsp; - - > &nbsp;  &lt; 1 1  1  1 b 1 M C b &gt; </li>
+    <li>  &lt; 1 1  1  1 b 1 M C b &gt; &nbsp; - - > &nbsp; &lt; 1 1  1  1 b C 1 b &gt;  </li>
+    <li>  &lt; 1 1  1  1 b C 1 b &gt;   &nbsp; - - > &nbsp;   &lt; 1 1  1  1 1 M C 1 b &gt; </li>
+    <li>   &lt; 1 1  1  1 1 M C 1 b &gt; &nbsp; - - > &nbsp;   &lt; 1 1  1  1 C 1 1 b &gt; </li>
+    <li> &lt; 1 1  1  1 C 1 1 b &gt; &nbsp; - - > &nbsp; &lt; 1 1  1  1 M A 1 1 b &gt; </li>
+    <li> &lt; 1 1  1  1 M A 1 1 b &gt;   &nbsp; - - > &nbsp;  &lt; 1 1  1  A 1 1 1 b &gt;  </li>
+    <li>  &lt; 1 1  1  A 1 1 1 b &gt;   &nbsp; - - > &nbsp;  &lt; 1 1  1  HALT M 1 1 1 b &gt;  </li> 
+    <li> &lt; 1 1  1  HALT M 1 1 1 b &gt;  &nbsp; - - > &nbsp;  &lt; 1 1  1  1 HALT 1 1 b &gt; </li>
+    </ul> </ul>
+
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > At this stage there are no possible rewrites. Otherwise said, the computation stops because there are no more rewrites to apply. </ul>
+    
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Remark also that the priority of rewrites imposes  a sequential path of the rewrites applications. The algorithm does not explicitly ask for such a sequential evolution. This is both a good feature of the choice of the tape word (with only one internal state symbol) and a bad feature, in the eventuality we modify the deterministic algorithm into a random one (like in chemlambda, where we use also the random algorithm where the rewrites are applied or not as a function of the result of a coin flip). Indeed,  one internal state symbol (one head on the tape) imposes a sequential deterministic evolution, but it is not resilient to randomness.  </ul>
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > More possibilities appear if we see the tape words as graphs. In this case we pass from rewrites to graph rewrites.  </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+    
+    <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > The previous busy beaver computation appears like this. </ul>
+    
+    
+    <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > <iframe src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/busya.html"  width="450" height="450"   frameborder="0" ></iframe> </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > I used the same kind of notation as in <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/moves.html">chemlambda: the mol format</a>. It goes like this, explained for the busy beaver TM example. We have 9 symbols, which can be seen as nodes in a graph: 
+    <li> &lt; which is a node with one "out" port. Use the notation <span style="color: #f6cf84;"> FRIN </span>  <span style="color: #6ecae5;"> out</span></li>. "FRIN" means "free in", is borrowed from chemlambda.
+    <li> &gt; which is a node with one "in" port. Use the notation <span style="color: #6ecae5;"> FROUT </span>  <span style="color: #f6cf84;"> in</span></li>. "FROUT" means "free out", is borrowed from chemlambda.
+    <li> b, 1, A, B, C, HALT, M which are nodes with one "in" and  one"out" port. Use a notation [<span style="color: #f0bf26;">Name of node</span>]  <span style="color: #f6cf84;"> in</span> <span style="color: #6ecae5;"> out</span></li></ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > The rules for forming a graph from a tape word are the following: 
+    <li>represent each symbol from the tape word as a node with ports</li>
+    <li>treat the ports as nodes in a graph as well; connect the main node which represent a symbol with its ports by a bond (link) which is tagged as "internal"</li>
+    <li> connect by a link which is tagged as "external" the  "out" port of a symbol with the "in" port of the symbol which follows (from left to right) on the tape.</li> </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >Now we can write a tape word as a mol file. Tag the ports with arbitrary names, such that two ports have the same name if and only if there is an external link which connects them. Then the mol notation for the tape word is a list of main nodes and the names of their ports.</ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >Thus for example the tape word &lt; A &gt; appears as the list: FRIN 1 , A 1 2 , FROUT 2. The names used for the ports are in this example 1 and 2, but any name would be as good.  The names of the ports are variables which appear twice in any mol file. They will not flow around in the graph, so there is no other management of these variables than making sure that at the start of the computation each of those appear twice in the mol file.  </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >   Remark that the LT and the RT of any rewrite are transformed into pieces of graphs which have loose ends (these are the external links which connect a port from the LT or RT pattern with the rest of the graph).  In the mol notation they are nothing but lists of nodes with named ports. The rewrite becomes a graph rewrite, which consists into cutting of a small graph (the LT in graphical form), tagging of the loose ends of the LT pattern with the name of the respective ports and replacing it  by another small graph (the RT in graphical form),  by using the tags of the loose ends of the LT pattern in order to connect the RT pattern correctly.   </ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >   For example the first blank rewrite  &lt; X &nbsp; - - > &nbsp; &lt; b X &nbsp;  transforms into 
+    FRIN 1 , X 1 2 &nbsp; - - > &nbsp; FRIN 1 , b 1 w ,  X w 2 &nbsp; , where w is any fresh port name. The difference between a rewrite and a graph rewrite is that the LT and the RT patterns are not formed by successive elements in a list. If we think about the mol notation for  a tape word, then to each symbol from the tape there is a corresponding line in the mol file which represents that symbol. But the order of the lines in the mol file is arbitrary, so the LT pattern for the graph rewrite (from this example) is a set (not  a list) of lines from the mol file. The information about the graph is in the repetition of the ports names.</ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > (TO BE CONTINUED...)</ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>        
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >   References concerning the chemlambda project:  </ul>
+    
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  [1]  <a href="http://www.complex-systems.com/abstracts/v22_i04_a01.html">(journal)</a> <a href="http://arxiv.org/abs/1305.5786">(arxiv)</a> - M. Buliga, Graphic lambda calculus. Complex Systems 22, 4 (2013), 311-360 </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [2]  <a href="http://dx.doi.org/10.6084/m9.figshare.830457">(doi)</a>  <a href="http://arxiv.org/abs/1309.6914">(arxiv)</a> - M. Buliga, Chemical concrete machine (2013).  </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  [3]  <a href="http://mitpress.mit.edu/sites/default/files/titles/content/alife14/ch079.html">(MIT Press free download)</a>   <a href="http://arxiv.org/abs/1403.8046">(arxiv)</a> - M. Buliga, L.H. Kauffman, Chemlambda, universality and self-multiplication (2014). presented by <a href="http://homepages.math.uic.edu/~kauffman/">Louis H. Kauffman</a> at <a href="http://blogs.cornell.edu/alife14nyc/">ALIFE 14</a>.   </ul>
+    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [4]  M. Buliga, <a href="https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic">chemlambda repository</a>  The main script which implements chemlambda version 2 is check_1_mov2_rand_metabo.awk. </ul>   
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  [5] <a href="http://arxiv.org/abs/1312.4333">(arxiv)</a> - M. Buliga, L.H. Kauffman, GLC actors, artificial chemical connectomes, topological issues and knots (2013). </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [6]   <a href="http://dx.doi.org/10.6084/m9.figshare.1032660">(doi)</a> <a href="http://arxiv.org/abs/1405.6095">(arxiv)</a>  M. Buliga,  Zipper logic (2014).  </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [7]   <a href="http://beta.briefideas.org/ideas/ae644667a7badd7899570fb530016c7b">(doi)</a>  M. Buliga,  Build a molecular computer. Journal of Brief Ideas, (2015).    </ul>
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > [8]   <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/molecular.html">(html)</a> M. Buliga, Molecular computers, (2015).    </ul>
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > &nbsp; </ul>
+  
+
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >This version: April 16, 2015</ul>
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      >  Note: I am always glad to be corrected and to learn more, therefore I welcome any informed critic which could enhance this work. The best would be to make such critics in a public way, which  moreover can be validated by any external third party, simply from the information you provide in the critic or comment or review, and from the information provided here.  </ul>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=5759559; 
+var sc_invisible=1; 
+var sc_security="b75cf132"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="web stats"
+href="http://www.statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/5759559/0/b75cf132/1/"
+alt="web stats" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+</body>
+</html>
+
+ 
+
