@@ -1,6 +1,6 @@
 BEGIN { 
 
-# this variant: 17.04.2015
+# this variant 18.04.2015
 #
 # forked from ckeck_1_mov2_rand_metabo.awk , on 11.04.2015
 #
@@ -25,7 +25,7 @@ BEGIN {
 
 ######### number of cycles
 
-      cycounter=10;
+      cycounter=50;
       
 ######## time between graph updates, in the visualisation html file. It appear that firefox can hardly support time_val<=25, but safari and chromium can deal with time_val=5. 
 
@@ -2180,7 +2180,7 @@ parame=int(wei_head*diefact * rand());
     
      if ( targe in node_block || sourc in node_block || othletm in node_block) {zuzuzu=0;} else {
     
-     if ( othleta=="h" || othleta=="t" ) { 
+     if ( othleta=="h" || othleta=="t"  || othleta=="m" ) { 
 
             doii=all_node_id[othletm] "_2"; 
             doij=all_node_id[othletm] "_e2"; 
