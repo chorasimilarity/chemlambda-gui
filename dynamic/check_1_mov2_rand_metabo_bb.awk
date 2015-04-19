@@ -1,6 +1,6 @@
 BEGIN { 
 
-# this variant 18.04.2015
+# this variant 19.04.2015
 #
 # forked from ckeck_1_mov2_rand_metabo.awk , on 11.04.2015
 #
@@ -13,7 +13,7 @@ BEGIN {
 
 ####### time realistic if 0  (i.e. waits if no move in a cycle if wait_param=0)
 
-  wait_param=0;
+  wait_param=1;
   
 
 
@@ -25,7 +25,7 @@ BEGIN {
 
 ######### number of cycles
 
-      cycounter=50;
+      cycounter=40;
       
 ######## time between graph updates, in the visualisation html file. It appear that firefox can hardly support time_val<=25, but safari and chromium can deal with time_val=5. 
 
@@ -42,25 +42,25 @@ BEGIN {
     
     wei_FO2TFOET=1;
 
-    wei_FOFOE=0;
+    wei_FOFOE=1;
     
-    wei_LFOELFO=0;
+    wei_LFOELFO=1;
     
-    wei_AFOAFOE=0;
+    wei_AFOAFOE=1;
     
-     wei_PROP=0;
+     wei_PROP=1;
 
-    wei_FIFO=0;
+    wei_FIFO=1;
 
-    wei_FIFOE=0;
+    wei_FIFOE=1;
 
-    wei_AL=0;      
+    wei_AL=1;      
     
-     wei_blank=0;
+     wei_blank=1;
     
     wei_head=0;
     
-    wei_turing=0;
+    wei_turing=1;
 
 
 
@@ -1355,7 +1355,7 @@ for (j in all_edge_out){
       printf(vuvu) >> "essy.txt";
 
 
-
+ 
                                }
 
      for(e in all_edge_source ) {
@@ -1374,6 +1374,64 @@ for (j in all_edge_out){
        dodo=dodo1 time_val dodo2;
   
       printf(dodo) >> "essy.txt";
+
+### writes the mol file with added number of node and the new port variables
+
+ for (uzi in all_node_atom) {
+ 
+   uzia=all_node_atom[uzi];
+ 
+ if ( uzia=="A" || uzia=="FI" || uzia=="L" || uzia=="FO" || uzia=="FOE" ) {
+ 
+        uzid=all_node_id[uzi];
+        
+        j1=uzi "_1";
+        j2=uzi "_2";
+        j3=uzi "_3";
+        
+        j1o=all_edge_out[j1];
+        j2o=all_edge_out[j2];
+        j3o=all_edge_out[j3];
+        
+
+
+     }
+
+
+ if ( uzia=="BA" || uzia=="BB" || uzia=="BC" || uzia=="BM" || uzia=="BHALT" || uzia=="Arrow" || uzia=="B0" || uzia=="B1" ) {
+ 
+        uzid=all_node_id[uzi];
+        
+        j1=uzi "_1";
+        j2=uzi "_2";
+        
+        j1o=all_edge_out[j1];
+        j2o=all_edge_out[j2];
+        
+
+
+       }
+ 
+  if ( uzia=="FRIN" || uzia=="FROUT" || uzia=="T" ) {
+ 
+        uzid=all_node_id[uzi];
+        
+        j1=uzi "_1";
+        
+        j1o=all_edge_out[j1];
+
+        
+ 
+
+       }
+
+ 
+ }
+ 
+   
+
+###
+
 
 
 # defines the matrix of moves
@@ -1406,6 +1464,8 @@ while (counter<cycounter) {
 
 # counter for the new nodes or links added or removed
 
+
+
 coact=0;
 
 # 
@@ -1428,13 +1488,11 @@ diecont=0;
 ## 9. reset all the temporary arrays
 
 
-###############################################################################
-##                                                                                                                                                      ##
-##                                                                HERE I AM                                                                    ##
-##                                                                                                                                                      ##
-###############################################################################
+
 
 # PROP
+
+
 
   for (ku in all_edge_source) {bon=all_edge_bond[ku];
     
@@ -1457,6 +1515,10 @@ diecont=0;
     
     soura=all_node_atom[sour];
     targea=all_node_atom[targe];
+    
+    
+      
+
     
     if ( soura=="p" && ( targea=="FO" || targea=="FOE" ) ) {
     
@@ -1514,6 +1576,8 @@ diecont=0;
 
                                   proposed_remove_node[sour]++;
 
+
+
                                   proposed_update_edge[unu]++;
                                   proposed_update_edge[doi]++;
                                   proposed_update_edge[trei]++;
@@ -1531,6 +1595,17 @@ diecont=0;
                                   proposed_remove_edge[tarl]++;
                                   proposed_remove_edge[doij]++;
                                   proposed_remove_edge[treij]++;
+    
+  
+
+
+
+
+
+
+
+
+
                                   
 #proposed for add nodes and moves
 
@@ -1561,7 +1636,7 @@ diecont=0;
                                   je_3=junu "_e3";
 
 
-
+   
 
                                   proposed_all_node_atom[j1]="3";
                                   proposed_all_node_size[j1]=middle;
@@ -1586,6 +1661,10 @@ diecont=0;
                                   proposed_all_edge_int[j3]=je_3;
                                   proposed_all_edge_out[j3]=interb;
                                   proposed_all_edge_source[interb]=j3;        
+                                  
+                                  
+                                  
+                        
                                   
 # definition of internal edges
 
@@ -1674,7 +1753,7 @@ diecont=0;
                                   j2=jtrei "_2";
                                   
                                   
-                                  je_1=trei "_e1";
+                                  je_1=jtrei "_e1";
                                   je_2=jtrei "_e2";
                                   
 
@@ -1715,8 +1794,7 @@ diecont=0;
                                   proposed_all_edge_bond[je_2]=bond_int;
                                                                     
 
-    
-}    
+ }    
     
     
     }
@@ -1732,14 +1810,13 @@ diecont=0;
 
 # end PROP
 
-###############################################################################
-##                                                                                                                                                      ##
-##                                                                HERE I AM                                                                    ##
-##                                                                                                                                                      ##
-###############################################################################
+          
+ 
 
 
 #move BLANKLEFT
+
+
 
   for (ku in all_edge_source) {bon=all_edge_bond[ku];
     
@@ -1800,6 +1877,8 @@ parame=int(wei_blank*diefact * rand());
 
        node_block[targe]++;
        node_block[sourc]++;
+
+
 
 
 # signals a move exists
@@ -1920,7 +1999,8 @@ parame=int(wei_blank*diefact * rand());
                                  proposed_all_edge_bond[je_1]=bond_int;
                                   
   
-     
+ 
+        
     }
     }
 
@@ -1929,16 +2009,25 @@ parame=int(wei_blank*diefact * rand());
 }
 }
 
+          
+       
 
 ###############
 
 
 #move BLANKRIGHT
 
+
+
   for (ku in all_edge_source) {bon=all_edge_bond[ku];
     
     if ( bon==bond_ext) { 
       
+parame=int(wei_blank*diefact * rand());
+ 
+#   parame=0;
+    
+    if ( parame==0) { 
 
     
     targ=all_edge_target[ku];
@@ -1951,16 +2040,16 @@ parame=int(wei_blank*diefact * rand());
     sourc=all_edge_source[sourl];
     
 
-parame=int(wei_blank*diefact * rand());
- 
-#   parame=0;
-    
-    if ( parame==0) { 
 
     diecont++;
     
+     
+     
+    
+  
+    
     kiki=all_node_atom[sourc];
-    koko=all_node_atom[targe];
+    koko=all_node_atom[targe]; 
     
     if (( kiki=="BA" || kiki=="BB" || kiki=="BC" || kiki=="BHALT" ) && koko=="FROUT") { 
     
@@ -1994,6 +2083,8 @@ parame=int(wei_blank*diefact * rand());
 
        node_block[targe]++;
        node_block[sourc]++;
+
+
 
 
 # signals a move exists
@@ -2113,7 +2204,6 @@ parame=int(wei_blank*diefact * rand());
                                  proposed_all_edge_target[je_1]=j1; 
                                  proposed_all_edge_bond[je_1]=bond_int;
                                   
-  
      
     }
     }
@@ -2123,11 +2213,16 @@ parame=int(wei_blank*diefact * rand());
 }
 }
 
+          
+        
+ 
 
 ###############
 
 
 #move HEADRIGHT
+
+
 
   for (ku in all_edge_source) {bon=all_edge_bond[ku];
     
@@ -2173,9 +2268,7 @@ parame=int(wei_head*diefact * rand());
            othlete=all_edge_int[othlet];
            othletm=all_edge_source[othlete];
            
-           
-           
-           
+   
           
     
      if ( targe in node_block || sourc in node_block || othletm in node_block) {zuzuzu=0;} else {
@@ -2201,6 +2294,9 @@ parame=int(wei_head*diefact * rand());
                                  
                                  proposed_remove_edge[othlete]++; 
                                  proposed_remove_edge[doij]++;                                                                    
+
+
+
                                  
 #proposed for remove node
 
@@ -2231,6 +2327,8 @@ parame=int(wei_head*diefact * rand());
        node_block[targe]++;
        node_block[sourc]++;
        node_block[othletm]++;
+       
+
 
 # signals a move exists
 
@@ -2274,6 +2372,8 @@ parame=int(wei_head*diefact * rand());
                                   
                                   je_1=junu "_e1";
                                   je_2=junu "_e2";
+
+
 
 
                                   proposed_all_node_atom[j1]=all_node_atom[othlet];
@@ -2326,6 +2426,8 @@ parame=int(wei_head*diefact * rand());
                                   je_2=jdoi "_e2";
 
 
+
+
                                   proposed_all_node_atom[j1]=all_node_atom[unuu];
                                   proposed_all_node_size[j1]=all_node_size[unuu];
                                   proposed_all_node_colour[j1]=all_node_colour[unuu];
@@ -2357,7 +2459,7 @@ parame=int(wei_head*diefact * rand());
                                   proposed_all_edge_target[je_2]=j2; 
                                   proposed_all_edge_bond[je_2]=bond_int;
 
-
+ 
     
     }
     }
@@ -2368,11 +2470,11 @@ parame=int(wei_head*diefact * rand());
 }
 }
 
-########################################################################################################################
-###############
 
 
 #move HEADLEFT
+
+
 
   for (ku in all_edge_source) {bon=all_edge_bond[ku];
     
@@ -2432,7 +2534,6 @@ parame=int(wei_head*diefact * rand());
            unu=all_edge_out[unuu];
            
            
-###############################################################################################################           
 
 
 # proposed for remove  edge
@@ -2449,6 +2550,9 @@ parame=int(wei_head*diefact * rand());
                                  
                                  proposed_remove_edge[othlete]++; 
                                  proposed_remove_edge[doij]++;                                                                    
+
+
+
                                  
 #proposed for remove node
 
@@ -2468,6 +2572,7 @@ parame=int(wei_head*diefact * rand());
 
 
 
+
 #proposed for update edge
 
                                   proposed_update_edge[unu]++;
@@ -2479,6 +2584,8 @@ parame=int(wei_head*diefact * rand());
        node_block[targe]++;
        node_block[sourc]++;
        node_block[othletm]++;
+
+
 
 # signals a move exists
 
@@ -2522,6 +2629,8 @@ parame=int(wei_head*diefact * rand());
                                   
                                   je_1=junu "_e1";
                                   je_2=junu "_e2";
+
+
 
 
                                   proposed_all_node_atom[j1]=all_node_atom[targ];
@@ -2574,6 +2683,8 @@ parame=int(wei_head*diefact * rand());
                                   je_2=jdoi "_e2";
 
 
+
+
                                   proposed_all_node_atom[j1]=all_node_atom[unuu];
                                   proposed_all_node_size[j1]=all_node_size[unuu];
                                   proposed_all_node_colour[j1]=all_node_colour[unuu];
@@ -2606,8 +2717,8 @@ parame=int(wei_head*diefact * rand());
                                   proposed_all_edge_bond[je_2]=bond_int;
 
 
-    
   
+
     
     }
     }
@@ -2623,6 +2734,8 @@ parame=int(wei_head*diefact * rand());
 
 
 #moves TURING (Busy beaver with two tape symbols and 3 states and a HALT)
+
+
 
   for (ku in all_edge_source) {bon=all_edge_bond[ku];
     
@@ -2697,6 +2810,7 @@ parame=int(wei_turing*diefact * rand());
                                                                   
                                  proposed_remove_edge[sourl]++; 
                                  proposed_remove_edge[doij]++;  
+
                                  
 #proposed for remove node
 
@@ -2708,6 +2822,9 @@ parame=int(wei_turing*diefact * rand());
                                   proposed_remove_node[targe]++;
                                   proposed_remove_node[doii]++;
                                   
+
+
+
 
 #proposed for update edge
 
@@ -2871,6 +2988,7 @@ parame=int(wei_turing*diefact * rand());
                                   je_2=jtrei "_e2";
 
 
+
                                   proposed_all_node_atom[j1]="m";
                                   proposed_all_node_size[j1]=middle;
                                   proposed_all_node_colour[j1]=in_col;
@@ -2902,8 +3020,6 @@ parame=int(wei_turing*diefact * rand());
                                   proposed_all_edge_target[je_2]=j2; 
                                   proposed_all_edge_bond[je_2]=bond_int;
                                   
-
-
 
 
 
@@ -2954,6 +3070,9 @@ parame=int(wei_turing*diefact * rand());
        node_block[targe]++;
        node_block[sourc]++;
                  node_block[othletm]++;
+
+
+
 
 # signals a move exists
 
@@ -3135,7 +3254,9 @@ parame=int(wei_turing*diefact * rand());
                                   proposed_all_edge_source[je_2]=jtrei;  
                                   proposed_all_edge_target[je_2]=j2; 
                                   proposed_all_edge_bond[je_2]=bond_int;
-                                  
+                
+                
+                  
 
 
    }
@@ -3406,6 +3527,10 @@ parame=int(wei_turing*diefact * rand());
        node_block[sourc]++;
                  node_block[othletm]++;
                  
+                 
+
+
+                 
 # signals a move exists
 
        coact=1;    
@@ -3592,6 +3717,7 @@ parame=int(wei_turing*diefact * rand());
 
 
 
+    
 
 
 
@@ -3639,6 +3765,8 @@ parame=int(wei_turing*diefact * rand());
        node_block[targe]++;
        node_block[sourc]++;
                  node_block[othletm]++;
+
+
 
 
 # signals a move exists
@@ -3863,6 +3991,8 @@ parame=int(wei_turing*diefact * rand());
        node_block[targe]++;
        node_block[sourc]++;
                  node_block[othletm]++;
+
+
 
 # signals a move exists
 
@@ -6871,15 +7001,7 @@ nodcshift=nodc+shiftmetabo;
    all_node_colour[nodc]=nodcol;
    all_node_id[nodc]=nodid;
    
-   if (nodc in proposed_all_edge_int) {
-   
-    all_edge_int[nodc]=proposed_all_edge_int[nodc];
-     all_edge_out[nodc]=proposed_all_edge_out[nodc];
-      
-
-   
-   }
-
+ 
 
  printf("setTimeout(function() \{  \n \n ") >> "essy.txt";
 
@@ -6893,6 +7015,15 @@ nodcshift=nodc+shiftmetabo;
 
 
 }
+
+  for (nodc in proposed_all_edge_int) {
+   
+    all_edge_int[nodc]=proposed_all_edge_int[nodc];
+     all_edge_out[nodc]=proposed_all_edge_out[nodc];
+      
+
+   
+   }
 
  
  for (link in proposed_add_edge) {
@@ -7001,7 +7132,7 @@ nodcshift=nodc+shiftmetabo;
 
  for (nof in proposed_all_edge_source) { delete proposed_all_edge_source[nof];}
 
-   for (nof in proposed_remove_node_candi) { delete proposed_remove_node_candi[nof];}
+   for (nof in proposed_node_candi) { delete proposed_node_candi[nof];}
 
      counter++;
      
@@ -7373,6 +7504,17 @@ if (growfact<mingrowfact) {growfact=2;}
 #counter=200;
 
 #end while
+
+  for (r in all_node_atom ) {
+
+  
+    vkvk= all_node_id[r] "\", \"" all_node_atom[r] "\",  " r ",  \"" all_node_colour[r] "\"); \n" ; 
+
+printf(vkvk) >> "debug.txt" ;
+
+                               }
+
+
    }
 
 
