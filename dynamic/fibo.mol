@@ -1,0 +1,84 @@
+A 1 2c1c1 1out
+A 2 3c1c1 2out
+
+
+L 12c1c1 22c1c1 2c1c1
+L 42c1c1 32c1c1 12c1c1
+A 22c1c1 32c1c1 42c1c1
+
+L 13c1c1 23c1c1 3c1c1
+L 43c1c1 33c1c1 13c1c1
+A 23c1c1 33c1c1 43c1c1
+
+
+L 2num 1num num
+L 3num xnum 2num
+FO 1num m1num l1pnum
+A m1num r1pnum 3num
+
+FO l1pnum m1pnum l1num
+A m1pnum r1num r1pnum
+
+
+FO l1num m2num l2num
+A m2num r2num r1num
+A l2num xnum r2num
+
+
+FOE num numu numd
+A numu 5 1
+A numd 6 2
+
+L 7 u 5
+L 8 v 6
+
+FO v 9 7
+
+A u succ 10
+A 10 9 8
+
+
+
+
+A 2out succ2 coco2
+A coco2 c02 outfin2
+
+A 1out succ1 coco1
+A coco1 c01 outfin1
+
+
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+
+
+L 1succ1 nsucc1 succ1
+L 2succ1 ssucc1 1succ1
+L 3succ1 zsucc1 2succ1
+A 4succ1 6succ1 3succ1
+FO ssucc1 4succ1 5succ1
+A 7succ1 zsucc1 6succ1
+A nsucc1 5succ1 7succ1
+
+L 1succ2 nsucc2 succ2
+L 2succ2 ssucc2 1succ2
+L 3succ2 zsucc2 2succ2
+A 4succ2 6succ2 3succ2
+FO ssucc2 4succ2 5succ2
+A 7succ2 zsucc2 6succ2
+A nsucc2 5succ2 7succ2
+
+
+
+L 1c01 2c01 c01
+L 3c01 3c01 1c01
+T 2c01
+
+L 1c02 2c02 c02
+L 3c02 3c02 1c02
+T 2c02
