@@ -25,11 +25,11 @@ BEGIN {
 
 ######### number of cycles
 
-      cycounter=40;
+      cycounter=260;
       
 ######## time between graph updates, in the visualisation html file. It appear that firefox can hardly support time_val<=25, but safari and chromium can deal with time_val=5. 
 
-     time_val=25;      
+     time_val=15;      
       
 ######## params for the weight of moves    (if you want to eliminate randomness then take everything = 0, the usual choice is to take all=1)
 
@@ -7012,11 +7012,7 @@ nodcshift=nodc+shiftmetabo;
 
 }
 
-
-
-}
-
-  for (nodc in proposed_all_edge_int) {
+  if (nodc in proposed_all_edge_int) {
    
     all_edge_int[nodc]=proposed_all_edge_int[nodc];
      all_edge_out[nodc]=proposed_all_edge_out[nodc];
@@ -7024,6 +7020,10 @@ nodcshift=nodc+shiftmetabo;
 
    
    }
+
+
+}
+
 
  
  for (link in proposed_add_edge) {
@@ -7467,7 +7467,7 @@ for (nodc in proposed_all_node_atom) {
 
 } else {   gugu++;  
 
-if (gugu==800) {counter=cycounter;}}
+if (gugu==cycounter) {counter=cycounter;}}
 
  difcont=growcont-diecont;
  
