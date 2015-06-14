@@ -1,0 +1,75 @@
+FOE 8 18 9
+FOE 10 20 11
+FOE 24 1 15
+FOE 26 30 17
+A 30 16 27
+A 17 7 8
+FI 28 42 26
+FI 33 32 38
+FI 38 39 24
+FI 19 31 28
+FI 21 35 34
+FI 34 37 33
+L 27 42 39
+L 18 31 32
+L 9 19 10
+L 11 21 2
+
+Arrow 1al 35
+Arrow 1 35al
+
+Arrow 20al 37
+Arrow 20 37al
+
+
+FOE 6al 16al 7al
+FOE 8al 18al 9al
+FOE 10al 20al 11al
+FOE 24al 1al 15al
+FOE 26al 30al 17al
+A 15al 2al 6al
+A 30al 16al 27al
+A 17al 7al 8al
+FI 28al 42al 26al
+FI 33al 32al 38al
+FI 38al 39al 24al
+FI 19al 31al 28al
+FI 21al 35al 34al
+FI 34al 37al 33al
+L 27al 42al 39al
+L 18al 31al 32al
+L 9al 19al 10al
+L 11al 21al 2al
+
+FOE 2afoe p q
+FOE 15afoe t z
+A t p 16
+A z q 7
+
+FOE 2 pp qq
+FOE 15 tt zz
+A tt pp 16afoe
+A zz qq 7afoe
+
+
+
+
+FOE 8afoe 18afoe 9afoe
+FOE 10afoe 20afoe 11afoe
+FOE 24afoe 1afoe 15afoe
+FOE 26afoe 30afoe 17afoe
+A 30afoe 16afoe 27afoe
+A 17afoe 7afoe 8afoe
+A 36afoe 1afoe 37afoe
+FI 28afoe 42afoe 26afoe
+FI 33afoe 32afoe 38afoe
+FI 38afoe 39afoe 24afoe
+FI 19afoe 31afoe 28afoe
+FI 21afoe 35afoe 34afoe
+FI 34afoe 37afoe 33afoe
+L 27afoe 42afoe 39afoe
+L 18afoe 31afoe 32afoe
+L 9afoe 19afoe 10afoe
+L 20afoe 35afoe 36afoe
+L 11afoe 21afoe 2afoe
+
