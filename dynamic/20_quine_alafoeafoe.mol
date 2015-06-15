@@ -1,0 +1,133 @@
+FOE 24 1 15
+FOE 26 30 17
+A 30 16 27
+FI 28 42 26
+FI 33 32 38
+FI 38 39 24
+FI 19 31 28
+FI 21 35 34
+FI 34 37 33
+L 27 42 39
+L 18 31 32
+L 11 21 2
+
+Arrow 1al 35
+Arrow 1 35al
+
+Arrow 20al 37
+Arrow 20 37al
+
+
+FOE 6al 16al 7al
+FOE 8al 18al 9al
+FOE 10al 20al 11al
+FOE 24al 1al 15al
+FOE 26al 30al 17al
+A 15al 2al 6al
+A 30al 16al 27al
+A 17al 7al 8al
+FI 28al 42al 26al
+FI 33al 32al 38al
+FI 38al 39al 24al
+FI 19al 31al 28al
+FI 21al 35al 34al
+FI 34al 37al 33al
+L 27al 42al 39al
+L 18al 31al 32al
+L 9al 19al 10al
+L 11al 21al 2al
+
+FOE 2afoe p q
+FOE 15afoe t z
+A t p 16
+A z q 7
+
+FOE 2 pp qq
+FOE 15 tt zz
+A tt pp 16afoe
+A zz qq 7afoe
+
+
+
+
+FOE 8afoe 18afoe 9afoe
+FOE 10afoe 20afoe 11afoe
+FOE 24afoe 1afoe 15afoe
+FOE 26afoe 30afoe 17afoe
+A 30afoe 16afoe 27afoe
+A 17afoe 7afoe 8afoe
+A 36afoe 1afoe 37afoe
+FI 28afoe 42afoe 26afoe
+FI 33afoe 32afoe 38afoe
+FI 38afoe 39afoe 24afoe
+FI 19afoe 31afoe 28afoe
+FI 21afoe 35afoe 34afoe
+FI 34afoe 37afoe 33afoe
+L 27afoe 42afoe 39afoe
+L 18afoe 31afoe 32afoe
+L 9afoe 19afoe 10afoe
+L 20afoe 35afoe 36afoe
+L 11afoe 21afoe 2afoe
+
+
+FOE 7afoe2 p2 q2
+FOE 17afoe2 t2 z2
+A t2 p2 18
+A z2 q2 9
+
+FOE 7 pp2 qq2
+FOE 17 tt2 zz2
+A tt2 pp2 18afoe2
+A zz2 qq2 9afoe2
+
+FOE 6afoe2 16afoe2 7afoe2
+A 15afoe2 2afoe2 6afoe2
+L 20afoe2 35afoe2 36afoe2
+A 36afoe2 1afoe2 37afoe2
+FI 28afoe2 42afoe2 26afoe2
+FOE 26afoe2 30afoe2 17afoe2
+FI 38afoe2 39afoe2 24afoe2
+FOE 24afoe2 1afoe2 15afoe2
+L 9afoe2 19afoe2 10afoe2
+FOE 10afoe2 20afoe2 11afoe2
+A 30afoe2 16afoe2 27afoe2
+FI 33afoe2 32afoe2 38afoe2
+FI 19afoe2 31afoe2 28afoe2
+FI 21afoe2 35afoe2 34afoe2
+FI 34afoe2 37afoe2 33afoe2
+L 27afoe2 42afoe2 39afoe2
+L 18afoe2 31afoe2 32afoe2
+L 11afoe2 21afoe2 2afoe2
+
+
+FOE 9lfoe ql pl
+FI tl zl 19
+L pl tl 11lfoe
+L ql zl 20
+
+FOE 9 qql ppl
+FI ttl zzl 19lfoe
+L ppl ttl 11
+L qql zzl 20lfoe
+
+
+
+FOE 6lfoe 16lfoe 7lfoe
+A 15lfoe 2lfoe 6lfoe
+L 20lfoe 35lfoe 36lfoe
+A 36lfoe 1lfoe 37lfoe
+FOE 8lfoe 18lfoe 9lfoe
+A 17lfoe 7lfoe 8lfoe
+FI 28lfoe 42lfoe 26lfoe
+FOE 26lfoe 30lfoe 17lfoe
+FI 38lfoe 39lfoe 24lfoe
+FOE 24lfoe 1lfoe 15lfoe
+A 30lfoe 16lfoe 27lfoe
+FI 33lfoe 32lfoe 38lfoe
+FI 19lfoe 31lfoe 28lfoe
+FI 21lfoe 35lfoe 34lfoe
+FI 34lfoe 37lfoe 33lfoe
+L 27lfoe 42lfoe 39lfoe
+L 18lfoe 31lfoe 32lfoe
+L 11lfoe 21lfoe 2lfoe
+
