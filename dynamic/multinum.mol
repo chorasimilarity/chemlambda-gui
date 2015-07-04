@@ -1,0 +1,18 @@
+FO a b 2num
+L b u a
+FOE 2num n1num l1num
+A n1num a1num 3num
+
+
+FOE l1num n4num l55num
+A n4num a11num a1num
+
+
+FOE l55num n44num l5num
+A n44num a4num a11num
+
+A l5num 4num a4num
+
+FOE 3num 3numa 3numb
+FI 4numa 4numb 4num
+FOE u ua ub
