@@ -136,15 +136,15 @@
                     });
 
             link.enter().append("line")
-//                                        .style("stroke-opacity",0.4).style("fill-opacity",0.4)
+                                       .style("stroke-opacity",0.4).style("fill-opacity",0.4)
                     .attr("id", function (d) {
                         return d.source.id + "-" + d.target.id;
                     })
                     .attr("stroke-width", function (d) {
                         return (d.bond * 2 - 1) * 2 + "px";
                     })
-                    .attr("stroke", "#ADD8E6");
-//
+                    .attr("stroke", "#FFFFFF");
+// #ADD8E6
              link.filter(function(d) { return d.bond > 1; }).append("line")
 //                   .attr("class", "separator");
                     .attr("class", "link");
@@ -165,7 +165,7 @@
                     .call(force.drag);
 
             nodeEnter.append("svg:circle")
-//                                            .style("stroke-opacity",0.4).style("fill-opacity",0.8)
+                                           .style("stroke-opacity",0.4).style("fill-opacity",0.8)
                     .attr("r", function(d) { return d.size*2;})
                     .attr("id", function (d) {
                         return "Node;" + d.id;
@@ -173,10 +173,18 @@
                     .attr("class", "nodeStrokeClass")
                     .attr("fill", function(d) { return d.colour; })
                    .transition()
-                    .delay(25000)
+                    .delay(700000)
                     .attr("r", 2);
 
+//   node.append("text")
+//      .attr("dy", ".35em")
+//      .attr("dx", function(d) { return (0 - ((12/4) * (d.size + 0.5 )* (d.size + 0.5)) );})
+// //      .attr("text-anchor", "middle") 
+//      .text(function(d) { return d.atom; });
 
+node.on("dblclick", function(d) { d.fixed = false; });
+
+node.on("mousedown", function(d) { d.fixed = true; });
 
             node.exit().remove();
 
@@ -204,8 +212,8 @@
 
             force
 //                    .friction(.01)
-    .charge(-50)
-    .gravity(.88)
+    .charge(-20)
+    .gravity(.38)
     .linkStrength(8.8)
                         .linkDistance( function(d) { return ((d.source.size + d.target.size + 3)/(40*d.bond)); } )
                     .size([w, h])
