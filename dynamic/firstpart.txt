@@ -106,8 +106,8 @@
         };
 
         // set up the D3 visualisation in the specified element
-        var w = 960,
-                h = 800;
+        var w = 400,
+                h = 400;
 
 //    var radius = d3.scale.sqrt()
 //    .range([0, 4]);
@@ -171,7 +171,10 @@
                         return "Node;" + d.id;
                     })
                     .attr("class", "nodeStrokeClass")
-                    .attr("fill", function(d) { return d.colour; });
+                    .attr("fill", function(d) { return d.colour; })
+                    .transition()
+                    .delay(3000)
+                    .attr("r", 2);
 
 
 
@@ -201,9 +204,9 @@
 
             force
 //                    .friction(.01)
-    .charge(-30)
-    .gravity(.48)
-    .linkStrength(8.8)
+    .charge(-60)
+    .gravity(.38)
+    .linkStrength(1.8)
                         .linkDistance( function(d) { return ((d.source.size + d.target.size + 3)/(40*d.bond)); } )
                     .size([w, h])
                     .start();
