@@ -172,9 +172,9 @@
                     })
                     .attr("class", "nodeStrokeClass")
                     .attr("fill", function(d) { return d.colour; })
-                   .transition()
-                    .delay(700000)
-                    .attr("r", 2);
+//                   .transition()
+//                    .delay(700000)
+//                    .attr("r", 2);
 
 //   node.append("text")
 //      .attr("dy", ".35em")
