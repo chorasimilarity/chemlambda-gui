@@ -1,0 +1,334 @@
+FOE 2 12 3a
+A 12 22a 1
+
+
+FOE 3a na1i 3o1
+A na1o 22a1 22a
+
+FOE 3o1 na2i 3o2
+A na2o 22a2 22a1
+
+FOE 3o2 na3i 3o3
+A na3o 22a3 22a2
+
+FOE 3o3 na4i 3o4
+A na4o 22a4 22a3
+
+FOE 3o4 na5i 3o5
+A na5o 22a5 22a4
+
+FOE 3o5 na6i 3o6
+A na6o 22a6 22a5
+
+FOE 3o6 na7i 3o7
+A na7o 22a7 22a6
+
+FOE 3o7 na8i 3o8
+A na8o 22a8 22a7
+
+FOE 3o8 na9i 3o9
+A na9o 22a9 22a8
+
+FOE 3o9 na10i 3o10
+A na10o 22a10 22a9
+
+FOE 3o10 na11i 3o11
+A na11o 22a11 22a10
+
+FOE 3o11 na12i 3o12
+A na12o 22a12 22a11
+
+FOE 3o12 na13i 3o13
+A na13o 22a13 22a12
+
+FOE 3o13 na14i 3o14
+A na14o 22a14 22a13
+
+FOE 3o14 na15i 3o15
+A na15o 22a15 22a14
+
+FOE 3o15 na16i 3o16
+A na16o 22a16 22a15
+
+FOE 3o16 na17i 3o17
+A na17o 22a17 22a16
+
+FOE 3o17 na18i 3o18
+A na18o 22a18 22a17
+
+FOE 3o18 na19i 3o19
+A na19o 22a19 22a18
+
+FOE 3o19 na20i 3o20
+A na20o 22a20 22a19
+
+FOE 3o20 na21i 3o21
+A na21o 22a21 22a20
+
+FOE 3o21 na22i 3o22
+A na22o 22a22 22a21
+
+FOE 3o22 na23i 3o23
+A na23o 22a23 22a22
+
+FOE 3o23 na24i 3o24
+A na24o 22a24 22a23
+
+FOE 3o24 na25i 3o25
+A na25o 22a25 22a24
+
+FOE 3o25 na26i 3o26
+A na26o 22a26 22a25
+
+FOE 3o26 na27i 3o27
+A na27o 22a27 22a26
+
+FOE 3o27 na28i 3o28
+A na28o 22a28 22a27
+
+FOE 3o28 na29i 3o29
+A na29o 22a29 22a28
+
+FOE 3o29 na30i 3o30
+A na30o 22a30 22a29
+
+FOE 3o30 na31 3o31
+A na31 22a31 22a30
+
+FOE 3o31 na32 3out
+A na32 22in 22a31
+
+Arrow 22out z22
+Arrow z1 22in
+
+Arrow z3 3in
+Arrow 3out z2
+
+FOE 3in 13 4
+FOE 4 14 5
+FOE 6 16 7
+FOE 8 18 9
+FOE 10 20 11
+FOE 24 29 15
+FOE 26 30 17
+
+
+A 23 13 22out
+A 41 25 40
+A 15 5 6
+A 29 14 25
+A 30 16 27
+A 17 7 8
+A 36 1 37
+
+FI 28 42 26
+FI 33 32 38
+FI 38 39 24
+FI 19 31 28
+FI 21 35 34
+FI 34 37 33
+
+L 40 41 23
+L 27 42 39
+L 18 31 32
+L 9 19 10
+L 20 35 36
+L 11 21 2
+
+
+FI a1 na1i mix1
+FOE mix1 a9 na1o
+
+FI a2 na2i mix2
+FOE mix2 a11 na2o
+
+FI a3 na3i mix3
+FOE mix3 a27 na3o
+
+FI a4 na4i mix4
+FOE mix4 a28 na4o
+
+FI a5 na5i mix5
+FOE mix5 a29 na5o
+
+FI a6 na6i mix6
+FOE mix6 a30 na6o
+
+FI a7 na7i mix7
+FOE mix7 a13 na7o
+
+FI a8 na8i mix8
+FOE mix8 a6 na8o
+
+FI a9 na9i mix9
+FOE mix9 a8 na9o
+
+FI a10 na10i mix10
+FOE mix10 a10 na10o
+
+FI a11 na11i mix11
+FOE mix11 a1 na11o
+
+FI a12 na12i mix12
+FOE mix12 a26 na12o
+
+FI a13 na13i mix13
+FOE mix13 a2 na13o
+
+FI a14 na14i mix14
+FOE mix14 a25 na14o
+
+FI a15 na15i mix15
+FOE mix15 a5 na15o
+
+FI a16 na16i mix16
+FOE mix16 a18 na16o
+
+FI a17 na17i mix17
+FOE mix17 a4 na17o
+
+FI a18 na18i mix18
+FOE mix18 a14 na18o
+
+FI a19 na19i mix19
+FOE mix19 a24 na19o
+
+FI a20 na20i mix20
+FOE mix20 a16 na20o
+
+FI a21 na21i mix21
+FOE mix21 a15 na21o
+
+FI a22 na22i mix22
+FOE mix22 a19 na22o
+
+FI a23 na23i mix23
+FOE mix23 a21 na23o
+
+FI a24 na24i mix24
+FOE mix24 a17 na24o
+
+FI a25 na25i mix25
+FOE mix25 a20 na25o
+
+FI a26 na26i mix26
+FOE mix26 a3 na26o
+
+FI a27 na27i mix27
+FOE mix27 a23 na27o
+
+FI a28 na28i mix28
+FOE mix28 a12 na28o
+
+FI a29 na29i mix29
+FOE mix29 a22 na29o
+
+FI a30 na30i mix30
+FOE mix30 a7 na30o
+
+
+
+
+
+FOE z2 z12 z3a
+A z12 z22a z1
+
+
+FOE z3a zna1 z3o1
+A zna1 z22a1 z22a
+
+FOE z3o1 zna2 z3o2
+A zna2 z22a2 z22a1
+
+FOE z3o2 zna3 z3o3
+A zna3 z22a3 z22a2
+
+FOE z3o3 zna4 z3o4
+A zna4 z22a4 z22a3
+
+FOE z3o4 zna5 z3o5
+A zna5 z22a5 z22a4
+
+FOE z3o5 zna6 z3o6
+A zna6 z22a6 z22a5
+
+FOE z3o6 zna7 z3o7
+A zna7 z22a7 z22a6
+
+FOE z3o7 zna8 z3o8
+A zna8 z22a8 z22a7
+
+FOE z3o8 zna9 z3o9
+A zna9 z22a9 z22a8
+
+FOE z3o9 zna10 z3o10
+A zna10 z22a10 z22a9
+
+FOE z3o10 zna11 z3o11
+A zna11 z22a11 z22a10
+
+FOE z3o11 zna12 z3o12
+A zna12 z22a12 z22a11
+
+FOE z3o12 zna13 z3o13
+A zna13 z22a13 z22a12
+
+FOE z3o13 zna14 z3o14
+A zna14 z22a14 z22a13
+
+FOE z3o14 zna15 z3o15
+A zna15 z22a15 z22a14
+
+FOE z3o15 zna16 z3o16
+A zna16 z22a16 z22a15
+
+FOE z3o16 zna17 z3o17
+A zna17 z22a17 z22a16
+
+FOE z3o17 zna18 z3o18
+A zna18 z22a18 z22a17
+
+FOE z3o18 zna19 z3o19
+A zna19 z22a19 z22a18
+
+FOE z3o19 zna20 z3o20
+A zna20 z22a20 z22a19
+
+FOE z3o20 zna21 z3o21
+A zna21 z22a21 z22a20
+
+FOE z3o21 zna22 z3o22
+A zna22 z22a22 z22a21
+
+FOE z3o22 zna23 z3o23
+A zna23 z22a23 z22a22
+
+FOE z3o23 zna24 z3o24
+A zna24 z22a24 z22a23
+
+FOE z3o24 zna25 z3o25
+A zna25 z22a25 z22a24
+
+FOE z3o25 zna26 z3o26
+A zna26 z22a26 z22a25
+
+FOE z3o26 zna27 z3o27
+A zna27 z22a27 z22a26
+
+FOE z3o27 zna28 z3o28
+A zna28 z22a28 z22a27
+
+FOE z3o28 zna29 z3o29
+A zna29 z22a29 z22a28
+
+FOE z3o29 zna30 z3o30
+A zna30 z22a30 z22a29
+
+FOE z3o30 zna31 z3o31
+A zna31 z22a31 z22a30
+
+FOE z3o31 zna32 z3
+A zna32 z22 z22a31
+
+
+
