@@ -25,7 +25,7 @@ BEGIN {
 
 ######### number of cycles
 
-      cycounter=3000;
+      cycounter=5000;
       
 ######## time between graph updates, in the visualisation html file. It appear that firefox can hardly support time_val<=25, but safari and chromium can deal with time_val=5. 
 
@@ -33,30 +33,28 @@ BEGIN {
       
 ######## params for the weight of moves    (if you want to eliminate randomness then take everything = 0, the usual choice is to take all=1)
 
+  wei_L3T=0; 
+    
+    wei_A3TFI3T=0;
+    
+    wei_FO3T=0;
  
-    wei_L3T=3;
     
-    wei_A3TFI3T=3;
-    
-    wei_FO3T=3;
- 
-#FOET inhibited by hand 
-    
-    wei_FO2TFOET=3;
+    wei_FO2TFOET=0;
 
-    wei_FOFOE=2;
+    wei_FOFOE=1;
     
-    wei_LFOELFO=2;
+    wei_LFOELFO=1;
     
-    wei_AFOAFOE=2;
+    wei_AFOAFOE=1;
     
      wei_PROP=1;
 
     wei_FIFO=1;
 
-    wei_FIFOE=0.5;
+    wei_FIFOE=1;
 
-    wei_AL=0.5;      
+    wei_AL=1;      
     
      wei_blank=1;
     
@@ -65,11 +63,10 @@ BEGIN {
     wei_turing=1;
 
 
-# rise parameter rises up to the sky the improbability of a move in a cycle
+# rise parameter rises up to the sky the improbability of a move in a cycle 
 
 
-    rise=200;
-    
+    rise=8;
     
     
 #######  diefactor, growthfactor.  The probability of the move is (not considering the order of moves)  1/(weight X growfact)  (or diefact). mingrowfact and maxgrowfact (same for mindiefact etc) establish a window for growfact (diefact respectively). That is because at the end of each cycle the growfact and diefact are slightly modified, so that at the next factor to compensate for the excess of the moves which increase the no of nodes (growfact) or those who decrease the no of nodes (diefact)
@@ -1480,11 +1477,17 @@ while (counter<cycounter) {
 
 coact=0;
 
+cocoact=1; 
 # 
+
 
 growcont=0;
 diecont=0;
  
+
+#### which enzymes are around
+
+
 
 ###############
 
@@ -1510,7 +1513,7 @@ diecont=0;
     
     if ( bon==bond_ext) { 
 
-  parame=int((wei_PROP*growfact * rand())+int(coact*rise*rand()));
+  parame=int((wei_PROP*growfact * rand())+int(cocoact*rise*rand()));
     
     if ( parame==0) {
 
@@ -1541,7 +1544,7 @@ diecont=0;
 
   
 
-       coact=1;
+        coact=1;  cocoact=cocoact*rise;       
 
 
 # identified nodes, with their ports, then defines the new edges, internal and external
@@ -1846,7 +1849,7 @@ diecont=0;
     sourc=all_edge_source[sourl];
     
 
-parame=int((wei_blank*diefact * rand())+int(coact*rise*rand()));
+parame=int((wei_blank*diefact * rand())+int(cocoact*rise*rand()));
  
 #   parame=0;
     
@@ -1895,7 +1898,7 @@ parame=int((wei_blank*diefact * rand())+int(coact*rise*rand()));
 
 # signals a move exists
 
-       coact=1;    
+        coact=1;  cocoact=cocoact*rise;           
 
 
 # counters for new edges and nodes
@@ -2035,7 +2038,7 @@ parame=int((wei_blank*diefact * rand())+int(coact*rise*rand()));
     
     if ( bon==bond_ext) { 
       
-parame=int((wei_blank*diefact * rand())+int(coact*rise*rand()));
+parame=int((wei_blank*diefact * rand())+int(cocoact*rise*rand()));
  
 #   parame=0;
     
@@ -2101,7 +2104,7 @@ parame=int((wei_blank*diefact * rand())+int(coact*rise*rand()));
 
 # signals a move exists
 
-       coact=1;    
+        coact=1;  cocoact=cocoact*rise;           
 
 
 # counters for new edges and nodes
@@ -2252,7 +2255,7 @@ parame=int((wei_blank*diefact * rand())+int(coact*rise*rand()));
     sourc=all_edge_source[sourl];
     
 
-parame=int((wei_head*diefact * rand())+int(coact*rise*rand()));
+parame=int((wei_head*diefact * rand())+int(cocoact*rise*rand()));
  
 #   parame=0;
     
@@ -2344,7 +2347,7 @@ parame=int((wei_head*diefact * rand())+int(coact*rise*rand()));
 
 # signals a move exists
 
-       coact=1;    
+        coact=1;  cocoact=cocoact*rise;           
 
 
 # counters for new edges and nodes
@@ -2504,7 +2507,7 @@ parame=int((wei_head*diefact * rand())+int(coact*rise*rand()));
     sourc=all_edge_source[sourl];
     
 
-parame=int((wei_head*diefact * rand())+int(coact*rise*rand()));
+parame=int((wei_head*diefact * rand())+int(cocoact*rise*rand()));
  
 #   parame=0;
     
@@ -2601,7 +2604,7 @@ parame=int((wei_head*diefact * rand())+int(coact*rise*rand()));
 
 # signals a move exists
 
-       coact=1;    
+        coact=1;  cocoact=cocoact*rise;           
 
 
 # counters for new edges and nodes
@@ -2765,7 +2768,7 @@ parame=int((wei_head*diefact * rand())+int(coact*rise*rand()));
     sourc=all_edge_source[sourl];
     
 
-parame=int((wei_turing*diefact * rand())+int(coact*rise*rand()));
+parame=int((wei_turing*diefact * rand())+int(cocoact*rise*rand()));
  
 #   parame=0;
     
@@ -2852,7 +2855,7 @@ parame=int((wei_turing*diefact * rand())+int(coact*rise*rand()));
 
 # signals a move exists
 
-       coact=1;    
+        coact=1;  cocoact=cocoact*rise;           
 
 
 # counters for new edges and nodes
@@ -3088,7 +3091,7 @@ parame=int((wei_turing*diefact * rand())+int(coact*rise*rand()));
 
 # signals a move exists
 
-       coact=1;    
+        coact=1;  cocoact=cocoact*rise;           
 
 
 # counters for new edges and nodes
@@ -3313,7 +3316,7 @@ parame=int((wei_turing*diefact * rand())+int(coact*rise*rand()));
 
 # signals a move exists
 
-       coact=1;    
+        coact=1;  cocoact=cocoact*rise;           
 
 
 # counters for new edges and nodes
@@ -3545,7 +3548,7 @@ parame=int((wei_turing*diefact * rand())+int(coact*rise*rand()));
                  
 # signals a move exists
 
-       coact=1;    
+        coact=1;  cocoact=cocoact*rise;           
 
 
 # counters for new edges and nodes
@@ -3783,7 +3786,7 @@ parame=int((wei_turing*diefact * rand())+int(coact*rise*rand()));
 
 # signals a move exists
 
-       coact=1;    
+        coact=1;  cocoact=cocoact*rise;           
 
 
 # counters for new edges and nodes
@@ -4008,7 +4011,7 @@ parame=int((wei_turing*diefact * rand())+int(coact*rise*rand()));
 
 # signals a move exists
 
-       coact=1;    
+        coact=1;  cocoact=cocoact*rise;           
 
 
 # counters for new edges and nodes
@@ -4235,7 +4238,7 @@ parame=int((wei_turing*diefact * rand())+int(coact*rise*rand()));
 
 # L3T 
 
- parame=int((wei_L3T*diefact * rand())+int(coact*rise*rand()));
+ parame=int((wei_L3T*diefact * rand())+int(cocoact*rise*rand()));
  
 #   parame=0;
     
@@ -4260,7 +4263,7 @@ parame=int((wei_turing*diefact * rand())+int(coact*rise*rand()));
 
 
 
-       coact=1;
+        coact=1;  cocoact=cocoact*rise;       
 
 # identified nodes, with their ports, then defines the new edges, internal and external
 
@@ -4364,7 +4367,7 @@ parame=int((wei_turing*diefact * rand())+int(coact*rise*rand()));
 
 
   
- parame=int((wei_A3TFI3T*diefact * rand())+int(coact*rise*rand()));
+ parame=int((wei_A3TFI3T*diefact * rand())+int(cocoact*rise*rand()));
     
     if ( parame==0) {
 
@@ -4387,7 +4390,7 @@ sourcetype=all_node_atom[sourc];
 
 
 
-       coact=1;
+        coact=1;  cocoact=cocoact*rise;       
 
 # identified nodes, with their ports, then defines the new edges, internal and external
 
@@ -4488,7 +4491,7 @@ sourcetype=all_node_atom[sourc];
 
 # FO3T(32)
 
-  parame=int((wei_FO3T*diefact * rand())+int(coact*rise*rand()));
+  parame=int((wei_FO3T*diefact * rand())+int(cocoact*rise*rand()));
 
 #    parame=1;
     
@@ -4508,7 +4511,7 @@ sourcetype=all_node_atom[sourc];
        node_block[sourc]++;
 
 
-       coact=1;
+        coact=1;  cocoact=cocoact*rise;       
 
 # identified nodes, with their ports, then defines the new edges, internal and external
 
@@ -4629,7 +4632,7 @@ sourcetype=all_node_atom[sourc];
 
 # FO2T, FOE2T, FOE3T(42)
 
- parame=int((wei_FO2TFOET*diefact * rand())+int(coact*rise*rand()));
+ parame=int((wei_FO2TFOET*diefact * rand())+int(cocoact*rise*rand()));
     
 #    parame=1;
 
@@ -4653,7 +4656,7 @@ sourcetype=all_node_atom[sourc];
 
       jmax++;
 
-       coact=1;
+        coact=1;  cocoact=cocoact*rise;       
 
 # identified nodes, with their ports, then defines the new edges, internal and external
 
@@ -4893,7 +4896,7 @@ sourcetype=all_node_atom[sourc];
     
     for (ku in all_edge_source) { bon=all_edge_bond[ku];
     
-        parame=int((wei_FOFOE*growfact * rand())+int(coact*rise*rand()));
+        parame=int((wei_FOFOE*growfact * rand())+int(cocoact*rise*rand()));
     
     if ( parame==0) {
     
@@ -4917,7 +4920,7 @@ sourcetype=all_node_atom[sourc];
        node_block[targe]++;
        node_block[sourc]++;
 
-       coact=1;
+        coact=1;  cocoact=cocoact*rise;       
 
 # identified nodes, with their ports, then defines the new edges, internal and external
 
@@ -5299,7 +5302,7 @@ sourcetype=all_node_atom[sourc];
 
 #LFOE, LFO  
   
-   parame=int((wei_LFOELFO*growfact * rand())+int(coact*rise*rand()));
+   parame=int((wei_LFOELFO*growfact * rand())+int(cocoact*rise*rand()));
     
     if ( parame==0) {
 
@@ -5311,7 +5314,7 @@ sourcetype=all_node_atom[sourc];
        node_block[sourc]++;
 
 
-       coact=1;
+        coact=1;  cocoact=cocoact*rise;       
 
 # identified nodes, with their ports, then defines the new edges, internal and external
 
@@ -5667,7 +5670,7 @@ sourcetype=all_node_atom[sourc];
 
 #   printf("\n AFOE: sour= " sour " , targ= " targ " , sourcetype= " sourcetype " , bubu= " bubu " \n ") >> "essy.txt"; 
 
- parame=int((wei_AFOAFOE*growfact * rand())+int(coact*rise*rand()));
+ parame=int((wei_AFOAFOE*growfact * rand())+int(cocoact*rise*rand()));
     
     if ( parame==0) {
 
@@ -5680,7 +5683,7 @@ sourcetype=all_node_atom[sourc];
 
   
 
-       coact=1;
+        coact=1;  cocoact=cocoact*rise;       
 
 # identified nodes, with their ports, then defines the new edges, internal and external
 
@@ -6048,7 +6051,7 @@ sourcetype=all_node_atom[sourc];
 
 # FIFO
 
- parame=int((wei_FIFO*growcont * rand())+int(coact*rise*rand()));
+ parame=int((wei_FIFO*growcont * rand())+int(cocoact*rise*rand()));
     
     if ( parame==0) {
 
@@ -6060,7 +6063,7 @@ sourcetype=all_node_atom[sourc];
        node_block[sourc]++;
 
 
-       coact=1;
+        coact=1;  cocoact=cocoact*rise;       
 
 # identified nodes, with their ports, then defines the new edges, internal and external
 
@@ -6454,7 +6457,7 @@ sourcetype=all_node_atom[sourc];
 
 # FAN-IN
 
- parame=int((wei_FIFOE*diefact * rand())+int(coact*rise*rand()));
+ parame=int((wei_FIFOE*diefact * rand())+int(cocoact*rise*rand()));
     
     if ( parame==0) {
 
@@ -6467,7 +6470,7 @@ sourcetype=all_node_atom[sourc];
 
 
 
-       coact=1;
+        coact=1;  cocoact=cocoact*rise;       
 
 # identified nodes, with their ports, then defines the new edges, internal and external
 
@@ -6651,7 +6654,7 @@ sourcetype=all_node_atom[sourc];
 
 # BETA
 
- parame=int((wei_AL*diefact * rand())+int(coact*rise*rand()));
+ parame=int((wei_AL*diefact * rand())+int(cocoact*rise*rand()));
     
     if ( parame==0) {
 
@@ -6663,7 +6666,7 @@ sourcetype=all_node_atom[sourc];
        node_block[sourc]++;
 
 
-       coact=1;
+        coact=1;  cocoact=cocoact*rise;       
 
 # identified nodes, with their ports, then defines the new edges, internal and external
 
