@@ -25,11 +25,11 @@ BEGIN {
 
 ######### number of cycles
 
-      cycounter=5000;
+      cycounter=500;
       
 ######## time between graph updates, in the visualisation html file. It appear that firefox can hardly support time_val<=25, but safari and chromium can deal with time_val=5. 
 
-     time_val=2;      
+     time_val=10;      
       
 ######## params for the weight of moves    (if you want to eliminate randomness then take everything = 0, the usual choice is to take all=1)
 
@@ -88,7 +88,7 @@ BEGIN {
 #######  colours and radii. Attention, never choose left=right, it messes with some moves definitions. If you want to give ports the same mportance as nodes then choose something like main_const=4 (for the main nodes)  left=4 (for left ports) and right=3, middle=3 (for the other ports)
 
     
-      main_const=4;
+      main_const=3;
 
       left=2;
 
@@ -1357,11 +1357,29 @@ for (j in all_edge_out){
 
     printf(" \n") > "essy.txt" ;
 
+        dodo1="keepNodesOnTop()\; \n \n         var step = -1\; \n \n         function nextval() \{ \n step++\; \n return 3000 + (" ; 
+        
+         dodo2="*(step+(Math.random()*0.5)))\;  \} \n " ; 
+
+       dodo=dodo1 time_val dodo2;
+  
+      printf(dodo) >> "essy.txt";
+
+
     for (r in all_node_atom ) {
+
+
 
      vuvu="graph.addNode( \"" all_node_id[r] "\", \"" all_node_atom[r] "\",  " all_node_size[r] ",  \"" all_node_colour[r] "\"); \n" ; 
 
-      printf(vuvu) >> "essy.txt";
+  printf("setTimeout(function() \{  \n \n ") >> "essy.txt";
+ 
+    printf(vuvu) >> "essy.txt";
+
+ printf("keepNodesOnTop()\; \n \n \}, nextval())\; \n \n") >> "essy.txt";
+
+
+
 
 
  
@@ -1371,18 +1389,18 @@ for (j in all_edge_out){
 
          vivi="graph.addLink( \"" all_edge_source[e] "\", \"" all_edge_target[e] "\",  \"" all_edge_bond[e] "\"); \n" ; 
 
+  printf("setTimeout(function() \{  \n \n ") >> "essy.txt";
+ 
       printf(vivi) >> "essy.txt";
+      
+ printf("keepNodesOnTop()\; \n \n \}, nextval())\; \n \n") >> "essy.txt";
+
+
+
 
 
           }
 
-        dodo1="keepNodesOnTop()\; \n \n         var step = -1\; \n \n         function nextval() \{ \n step++\; \n return 3000 + (" ; 
-        
-         dodo2="*(step+(Math.random()*0.5)))\;  \} \n " ; 
-
-       dodo=dodo1 time_val dodo2;
-  
-      printf(dodo) >> "essy.txt";
 
 ### writes the mol file with added number of node and the new port variables
 
