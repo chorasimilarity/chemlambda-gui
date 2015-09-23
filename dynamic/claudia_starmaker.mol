@@ -1,0 +1,72 @@
+FI dcba3 dcba1 dcba15
+FOE dcba15 dcba4 dcb2
+L dcba4 dcba1 dcba5
+L dcba2 dcba3 dcba12
+FOE dcba5 dcba6 dcba8
+FOE dcba12 dcba7 dcba9
+A dcba6 dcba7 dcba14
+A dcba8 dcba9 dcba11
+FO dcba10 dcba17 dcba20
+FO dcba16 dcba19 dcba18
+FI dcba17 dcba19 dcba16
+FI dcba20 dcba18 dcba13
+A dcba13 dcba11 dcba10
+
+
+FI dcb3 dcb1 dcb15
+FOE dcb15 dcb4 dc2
+L dcb4 dcb1 dcb5
+L dcb2 dcb3 dcb12
+FOE dcb5 dcb6 dcb8
+FOE dcb12 dcb7 dcb9
+A dcb6 dcb7 dcb14
+A dcb8 dcb9 dcb11
+FO dcb10 dcb17 dcb20
+FO dcb16 dcb19 dcb18
+FI dcb17 dcb19 dcb16
+FI dcb20 dcb18 dcb13
+A dcb13 dcb11 dcb10
+
+FI dc3 dc1 dc15
+FOE dc15 dc4 d2
+L dc4 dc1 dc5
+L dc2 dc3 dc12
+FOE dc5 dc6 dc8
+FOE dc12 dc7 dc9
+A dc6 dc7 dc14
+A dc8 dc9 dc11
+FO dc10 dc17 dc20
+FO dc16 dc19 dc18
+FI dc17 dc19 dc16
+FI dc20 dc18 dc13
+A dc13 dc11 dc10
+
+
+FI d3 d1 d15
+FOE d15 d4 2
+L d4 d1 d5
+L d2 d3 d12
+FOE d5 d6 d8
+FOE d12 d7 d9
+A d6 d7 d14
+A d8 d9 d11
+FO d10 d17 d20
+FO d16 d19 d18
+FI d17 d19 d16
+FI d20 d18 d13
+A d13 d11 d10
+
+
+FI 3 1 15
+FOE 15 4 dcba2
+L 4 1 5
+L 2 3 12
+FOE 5 6 8
+FOE 12 7 9
+A 6 7 14
+A 8 9 11
+FO 10 17 20
+FO 16 19 18
+FI 17 19 16
+FI 20 18 13
+A 13 11 10
