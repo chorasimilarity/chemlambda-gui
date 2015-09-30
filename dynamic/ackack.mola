@@ -1,0 +1,67 @@
+FOE o o1 o2 1
+
+
+A 1 cb o 1
+A 2 ca 1 1
+L 3 a 2 1
+L 4 b 3 1
+A 5 b 4 1
+A 6 sp1 5 1
+A a f 6 1
+L 1s1 ns1 sp1 1
+L 2s1 ss1 1s1 1
+L 3s1 zs1 2s1 1
+A 4s1 5s1 3s1 1
+A 6s1 zs1 5s1 1
+A ns1 7s1 6s1 1
+FO ss1 4s1 7s1 1
+L 1f Af f 1
+L 2f bf 1f 1
+A 3f cone 2f 1
+A 4f Af 3f 1
+A sp2 bf 4f 1
+L 1s2 ns2 sp2 1
+L 2s2 ss2 1s2 1
+L 3s2 zs2 2s2 1
+A 4s2 5s2 3s2 1
+A 6s2 zs2 5s2 1
+A ns2 7s2 6s2 1
+FO ss2 4s2 7s2 1
+L 1cone fcone cone 1
+L 2cone xcone 1cone 1
+A fcone xcone 2cone 1
+
+FI ca2 ca1 ca 1
+FI cb2 cb1 cb 1
+
+L 1ca1 fca1 ca1 2
+L 2ca1 xca1 1ca1 2
+A 3ca1 5ca1 2ca1 2
+FO fca1 3ca1 4ca1 2
+A 6ca1 8ca1 5ca1 2
+FO 4ca1 6ca1 7ca1 2
+A 7ca1 xca1 8ca1 2
+
+
+L 1cb1 fcb1 cb1 2
+L 2cb1 xcb1 1cb1 2
+A fcb1 xcb1 2cb1 2
+
+L 1ca2 fca2 ca2 3
+L 2ca2 xca2 1ca2 3
+A 3ca2 4ca2 2ca2 3
+A 5ca2 xca2 4ca2 3
+FO fca2 3ca2 5ca2 3
+
+
+L 1cb2 fcb2 cb2 3
+L 2cb2 xcb2 1cb2 3
+A 3cb2 5cb2 2cb2 3
+FO fcb2 3cb2 4cb2 3
+A 6cb2 8cb2 5cb2 3
+FO 4cb2 6cb2 7cb2 3
+A 7cb2 xcb2 8cb2 3
+
+FROUT o2 3
+
+FROUT o1 2
