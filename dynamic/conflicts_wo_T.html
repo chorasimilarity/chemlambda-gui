@@ -142,7 +142,7 @@
                     })
                     .attr("stroke", "#ffffff")
                       .transition()
-                     .delay(12000)
+                     .delay(120)
                     .style("stroke-opacity",0.9);
 // #ADD8E6
              link.filter(function(d) { return d.bond > 1; }).append("line")
@@ -173,7 +173,7 @@
                     .attr("class", "nodeStrokeClass")
                     .attr("fill", function(d) { return d.colour; })
                     .transition()
-                    .delay(8000)
+                    .delay(80)
                     .style("fill-opacity",0.7);
 
 //   node.append("text")
@@ -244,7 +244,7 @@ keepNodesOnTop();
  
          function nextval() { 
  step++; 
- return 3000 + (2*(step+(Math.random()*0.5)));  } 
+ return 3000 + (50*(step+(Math.random()*0.5)));  } 
 
 
  setTimeout(function() {  
