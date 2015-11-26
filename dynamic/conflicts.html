@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chemlambda movies productions presents:</title>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    
+    <style>
+
+
+.link line {
+  stroke: #696969;
+}
+
+.link line.separator {
+  stroke: #95A5A6;
+  stroke-width: 2px;
+}
+
+.node circle {
+  stroke: #95A5A6;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+  pointer-events: none;
+}
+
+
+
+   </style>
+</head>
+<body style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);"
+ alink="#ee0000" link="#000250" vlink="#551a8b">
+
+<!-- <button onclick="addNodes()">Start!</button> -->
+
+
+
+
+<script>
+    var graph;
+    function myGraph() { 
+
+        // Add and remove elements on the graph object
+        this.addNode = function (id, atom, size, colour) {
+            nodes.push({"id": id, "atom": atom, "size": size, "colour": colour});
+            update();
+        };
+
+        this.removeNode = function (id) {
+            var i = 0;
+            var n = findNode(id);
+            while (i < links.length) {
+                if ((links[i]['source'] == n) || (links[i]['target'] == n)) {
+                    links.splice(i, 1);
+                }
+                else i++;
+            }
+            nodes.splice(findNodeIndex(id), 1);
+            update();
+        };
+
+        this.removeLink = function (source, target) {
+            for (var i = 0; i < links.length; i++) {
+                if (links[i].source.id == source && links[i].target.id == target) {
+                    links.splice(i, 1);
+                    break;
+                }
+            }
+            update();
+        };
+
+        this.removeallLinks = function () {
+            links.splice(0, links.length);
+            update();
+        };
+
+        this.removeAllNodes = function () {
+            nodes.splice(0, links.length);
+            update();
+        };
+
+        this.addLink = function (source, target, bond) {
+            links.push({"source": findNode(source), "target": findNode(target), "bond": bond});
+            update();
+        };
+
+        var findNode = function (id) {
+            for (var i in nodes) {
+                if (nodes[i]["id"] === id) return nodes[i];
+            }
+            ;
+        };
+
+        var findNodeIndex = function (id) {
+            for (var i = 0; i < nodes.length; i++) {
+                if (nodes[i].id == id) {
+                    return i;
+                }
+            }
+            ;
+        };
+
+        // set up the D3 visualisation in the specified element
+        var w = 800,
+                h = 800;
+
+//    var radius = d3.scale.sqrt()
+//    .range([0, 4]);
+
+        var vis = d3.select("body")
+                .append("svg:svg")
+                .attr("width", w)
+                .attr("height", h)
+                .attr("id", "svg")
+                .attr("pointer-events", "all")
+                .attr("viewBox", "0 0 " + w + " " + h)
+                .attr("perserveAspectRatio", "xMinYMid")
+                .append('svg:g');
+
+        var force = d3.layout.force();
+
+        var nodes = force.nodes(),
+                links = force.links();
+                
+                
+          var update = function () {
+            var link = vis.selectAll("line")
+                    .data(links, function (d) {
+                        return d.source.id + "-" + d.target.id;
+                    });
+
+            link.enter().append("line")
+                                       .style("stroke-opacity",0.001).style("fill-opacity",0.4)
+                    .attr("id", function (d) {
+                        return d.source.id + "-" + d.target.id;
+                    })
+                    .attr("stroke-width", function (d) {
+                        return (d.bond * 2 - 1) * 2 + "px";
+                    })
+                    .attr("stroke", "#ffffff")
+                      .transition()
+                     .delay(12000)
+                    .style("stroke-opacity",0.9);
+// #ADD8E6
+             link.filter(function(d) { return d.bond > 1; }).append("line")
+//                   .attr("class", "separator");
+                    .attr("class", "link");
+//            link.append("title")
+//                   .text(function (d) {
+//                        return d.value;
+//                   });
+            link.exit().remove();
+                
+                
+             var node = vis.selectAll("g.node")
+                    .data(nodes, function (d) {
+                        return d.id;
+                    });
+
+            var nodeEnter = node.enter().append("g")
+                    .attr("class", "node")
+                    .call(force.drag);
+
+            nodeEnter.append("svg:circle")
+                                           .style("stroke-opacity",0.0004).style("fill-opacity",0.0007)
+                    .attr("r", function(d) { return d.size*4;})
+                    .attr("id", function (d) {
+                        return "Node;" + d.id;
+                    })
+                    .attr("class", "nodeStrokeClass")
+                    .attr("fill", function(d) { return d.colour; })
+                    .transition()
+                    .delay(8000)
+                    .style("fill-opacity",0.7);
+
+//   node.append("text")
+//      .attr("dy", ".35em")
+//      .attr("dx", function(d) { return (0 - ((12/4) * (d.size + 0.5 )* (d.size + 0.5)) );})
+// //      .attr("text-anchor", "middle") 
+//      .text(function(d) { return d.atom; });
+
+node.on("dblclick", function(d) { d.fixed = false; });
+
+node.on("mousedown", function(d) { d.fixed = true; });
+
+            node.exit().remove();
+
+            force.on("tick", function () {
+
+                node.attr("transform", function (d) {
+                    return "translate(" + d.x + "," + d.y + ")";
+                });
+
+                link.attr("x1", function (d) {
+                    return d.source.x;
+                })
+                        .attr("y1", function (d) {
+                            return d.source.y;
+                        })
+                        .attr("x2", function (d) {
+                            return d.target.x;
+                        })
+                        .attr("y2", function (d) {
+                            return d.target.y;
+                        });
+            });
+
+            // Restart the force layout.
+
+            force
+//                    .friction(.01)
+    .charge(-2000)
+    .gravity(.08)
+    .linkStrength(2.8)
+                        .linkDistance( function(d) { return ((d.source.size + d.target.size + 3)/(40*d.bond)); } )
+//                    .friction(.20)
+//    .charge(-70)
+//    .gravity(.18)
+ //   .linkStrength(2.8)
+//                        .linkDistance( function(d) { return ((d.source.size + d.target.size + 3)/(10*d.bond)); } )
+
+                    .size([w, h])
+                    .start();
+        };
+
+
+        // Make it all go
+        update();
+    }
+
+
+    function drawGraph() {
+
+        graph = new myGraph("#svgdiv");
+ 
+ 
+ 
+keepNodesOnTop(); 
+ 
+         var step = -1; 
+ 
+         function nextval() { 
+ step++; 
+ return 3000 + (2*(step+(Math.random()*0.5)));  } 
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "A", "A",  4,  "#8cc152"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "A_1", "left_in",  2,  "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "A_2", "right_in",  1,  "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "A_3", "middle_out",  1,  "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+
+
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "L", "L",  4,  "#b80000"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "L_1", "middle_in",  1,  "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "L_2", "left_out",  2,  "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "L_3", "right_out",  1,  "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "FI", "FI",  4,  "#b80000"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "FI_1", "left_in",  2,  "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "FI_2", "right_in",  1,  "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "FI_3", "middle_out",  1,  "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "FO", "FO",  4,  "#8cc152"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "FO_1", "middle_in",  1,  "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "FO_2", "left_out",  2,  "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "FO_3", "right_out",  1,  "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "FOE", "FOE",  4,  "#f0bf26"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "FOE_1", "middle_in",  1,  "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "FOE_2", "left_out",  2,  "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "FOE_3", "right_out",  1,  "#6ecae5"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "T", "T",  4,  "#b80000"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+ setTimeout(function() {  
+ 
+ graph.addNode( "T_1", "middle_in",  1,  "#f6cf84"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "A", "A_1",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "A", "A_2",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "A", "A_3",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "L", "L_1",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "L", "L_2",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "L", "L_3",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FI", "FI_1",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FI", "FI_2",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FI", "FI_3",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FO", "FO_1",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FO", "FO_2",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FO", "FO_3",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FOE", "FOE_1",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FOE", "FOE_2",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FOE", "FOE_3",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "T", "T_1",  "2"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "L_3", "A_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FI_3", "FOE_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "A_3", "FO_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "A_3", "FOE_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FI_3", "FO_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "L_3", "FO_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "L_3", "FOE_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FO_3", "FOE_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "A_3", "T_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FI_3", "T_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FO_2", "T_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FO_3", "T_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "L_3", "T_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FOE_2", "T_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+setTimeout(function() {  
+ 
+ graph.addLink( "FOE_3", "T_1",  "1"); 
+keepNodesOnTop(); 
+ 
+ }, nextval()); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+    }
+  
+    drawGraph();
+    // because of the way the network is created, nodes are created first, and links second,
+    // so the lines were on top of the nodes, this just reorders the DOM to put the svg:g on top
+    function keepNodesOnTop() {
+        $(".nodeStrokeClass").each(function( index ) {
+            var gnode = this.parentNode;
+            gnode.parentNode.appendChild(gnode);
+        });
+    }
+    function addNodes() {
+        d3.select("svg")
+                .remove();
+         drawGraph();
+    }
+
+
+</script>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=5759559; 
+var sc_invisible=1; 
+var sc_security="b75cf132"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="web stats"
+href="http://www.statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/5759559/0/b75cf132/1/"
+alt="web stats" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>
