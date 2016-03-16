@@ -1,6 +1,6 @@
 BEGIN { 
 
-# this variant 29.11.2015
+# this variant 28.02.2016
 #
 # forked 28.11.2015 from quiner_experia.awk variant  27.08.2015
 #
@@ -27,38 +27,38 @@ BEGIN {
 
       cycounter=10000;
       
-######## time between graph updates, in the visualisation html file. It appear that firefox can hardly support time_val<=25, but safari and chromium can deal with time_val=5. 
+######## time between graph updates, in the visualisation html file. It appear that firefox can hardly support time_val<=25, but safari and chromium can deal with time_val=4 and less. 
 
      time_val=4;      
       
 ######## params for the weight of moves    (if you want to eliminate randomness then take everything = 0, the usual choice is to take all=1)
 
-    wei_L3T=100000; 
+    wei_L3T=20000; 
     
 # A3T inhibited
 
-    wei_A3TFI3T=10;
+    wei_A3TFI3T=100000000;
     
-    wei_FO3T=1000000;
+    wei_FO3T=100000000;
  
     
  # FOET inhibited   
     
-    wei_FO2TFOET=3;
+    wei_FO2TFOET=120;
 
-    wei_FOFOE=3;
+    wei_FOFOE=120;
     
-    wei_LFOELFO=3;
+    wei_LFOELFO=120;
     
-    wei_AFOAFOE=3;
+    wei_AFOAFOE=120;
     
-     wei_PROP=3;
+     wei_PROP=120;
 
-    wei_FIFO=3;
+    wei_FIFO=120;
 
-    wei_FIFOE=3;
+    wei_FIFOE=120;
 
-    wei_AL=3;      
+    wei_AL=120;      
     
     wei_FIFRIN=10000000;
     
@@ -86,9 +86,11 @@ BEGIN {
      
      maxdiefact=3.5;
 
-#######  colours and radii. Attention, never choose left=right, it messes with some moves definitions. If you want to give ports the same mportance as nodes then choose something like main_const=4 (for the main nodes)  left=4 (for left ports) and right=3, middle=3 (for the other ports)
+#######  colours, bond thickness and radii. Attention, never choose left=right for radii, it messes with some moves definitions. If you want to give ports the same importance as nodes then choose something like main_const=4 (for the main nodes)  left=4 (for left ports) and right=3, middle=3 (for the other ports)
 
-    
+##radii 
+
+   
       main_const=3;
 
       left=2;
@@ -97,21 +99,61 @@ BEGIN {
 
       middle=1;
 
+## thickness of bonds
+
+     bond_int=2;
+
+     bond_ext=1;
+
+## various variants of colours
+
 #     green_col="#8CC152";
+
+#      green_col="#9fc952";
 
 # true one       green_col="#04B431";
        
-#CRESCIMENTO     
-
-#  green_col="#8CC152";
-
-    green_col="#00cc33";
+#CRESCIMENTO       green_col="#8CC152";
 
 #1aaaa chosen     green_col="#ade747";
 
+# orig    green_col="#00cc33";
+
+# orig   red_col="#b80000";
+
+# orig   in_col="#f0a900";
+
+# orig   out_col="#00ccff";
 
 
-#      green_col="#9fc952";
+
+
+
+      green_col="#789505";
+
+      red_col="#da1608";
+
+      in_col="#dda103";
+
+      out_col="#05a5e1";
+
+
+
+#####################
+
+      green_col="#787878";
+
+      red_col="#dadada";
+
+      in_col="#a1a1a1";
+
+      out_col="#050505";
+
+
+
+
+
+#####################
 
 # #fe8f0f #f7325e #7dc410 #fef8cf #0264ed #222
 
@@ -129,7 +171,7 @@ BEGIN {
 
 #CRESCIMENTO   
 
-   red_col="#b80000";
+
 
 #1aaaa chosen       red_col="#be66dd";
 
@@ -141,7 +183,6 @@ BEGIN {
      
 #CRESCIMENTO    
 
-  in_col="#f0a900";
 
 #1aaaa chosen      in_col="#f6cf84";
 
@@ -157,7 +198,7 @@ BEGIN {
 
 #   out_col="#91009a";
   
-  out_col="#00ccff";
+
 
 #1aaaa chosen      out_col="#6ecae5";
 
@@ -165,9 +206,7 @@ BEGIN {
 
 #      out_col="#a8e2f9";
 
-     bond_int=2;
 
-     bond_ext=1;
 
      term_col="#222";
 
@@ -203,17 +242,6 @@ BEGIN {
 {
 
 
-#
-#   node  has as argument the node number and as value the node record, as read from the input .mol file
-#
-
-
-#
-# a .mol file is simply a list of nodes and their ports. Each node is on a line, for example T[a] is written "T a" , Arrow[a,b] is written "Arrow a b" and FO[a,b,c] is written "FO a b c"
-#
-#
-
-
 
 # ignores the lines with less than 2 fields  (no loop element)
 
@@ -227,7 +255,6 @@ BEGIN {
 
 
 #
-# node_type has as argument the node number and as value the node type.
 
        if ( NF == 3 ) {  node_type[NR]=$1;  node[NR]=$0;
        
@@ -246,12 +273,12 @@ END {
 
 #    srand();
 
-# Joshua Herman solution for srand
 
    "od -tu4 -N4 -A n /dev/random" | getline srand(0+$0)      
-#
-#
-#
+
+
+
+
 
 j=0;
 
@@ -1191,7 +1218,7 @@ for ( i in node) {
 
 
 
-# add FRIN and FROUT nodes, if they are needed, and the bond property
+# add FRIN and FROUT nodes, if they are needed
 
  
 
@@ -1500,11 +1527,23 @@ for (ko in shif) {       kot=shif[ko];
     
      etarge=all_edge_source[etarl];
      esourc=all_edge_source[esourl];
+     
+     etargee=all_node_id[etarge] "_1";
+     
+     esourcat=all_node_atom[esourc];
+     
+     if (esourcat=="A" || esourcat=="L" || esourcat=="FI" || esourcat=="FO") { esourcee=all_node_id[esourc] "_3"; 
+     
+     if (esourcee==esour) {
+     
+    if (etargee==etarg) {
   
     if (etarge in node_block || esourc in node_block) { dididi=0;} else {
       node_block[etarge]++; node_block[esourc]++;  shuf[cou]=kot; cou++;
     }
-    
+    }
+    }
+    }
     }
 
  
@@ -6228,7 +6267,7 @@ sourcetype=all_node_atom[sourc];
 
 # FIFO
 
- parame=int(wei_FIFO*growcont * rand());
+ parame=int(wei_FIFO*growfact * rand());
     
     if ( parame==0) {
 

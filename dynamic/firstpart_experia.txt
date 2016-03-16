@@ -175,7 +175,7 @@
                     .attr("class", "nodeStrokeClass")
                     .attr("fill", function(d) { return d.colour; })
                     .transition()
-                    .delay(8000)
+                    .delay(800)
                     .style("fill-opacity",0.7);
 
 //   node.append("text")
@@ -214,8 +214,8 @@ node.on("mousedown", function(d) { d.fixed = true; });
 
             force
 //                    .friction(.01)
-    .charge(-20)
-    .gravity(.08)
+    .charge(-0.5)
+    .gravity(.008)
     .linkStrength(6.8)
                         .linkDistance( function(d) { return ((d.source.size + d.target.size + 3)/(40*d.bond)); } )
 //                    .friction(.20)
