@@ -1,0 +1,32 @@
+A p1 p1b p1a
+FOE p1a p1out p1b
+
+A p2 p2b p2a
+FOE p2a p2out p2b
+
+A p3 p3b p3a
+FOE p3a p3out p3b
+
+A p4 p4b p4a
+FOE p4a p4out p4b
+
+A p5 p5b p5a
+FOE p5a p5out p5b
+
+A p6 p6b p6a
+FOE p6a p6out p6b
+
+A p7 p7b p7a
+FOE p7a p7out p7b
+
+A p8 p8b p8a
+FOE p8a p8out p8b
+
+L a8 a1 p1
+L a1 a2 p2
+L a2 a3 p3
+L a3 a4 p4
+L a4 a5 p5
+L a5 a6 p6
+L a6 a7 p7
+L a7 a8 p8

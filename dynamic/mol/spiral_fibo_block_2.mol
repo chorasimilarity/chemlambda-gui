@@ -1,0 +1,182 @@
+L 7 u 5
+L 8 v 6
+
+FO v 9 7
+
+A 9 succ 10
+A 10 u 8
+
+
+A jj0eu jj0a2 jj0a1
+A jj0a1 jj0n jj0wu
+A jj0a7 jj0a6 jj0ed
+L jj0a8 jj0a7 jj0s
+A jj0a5 jj0wd jj0a6
+
+L jj0a9 jj0a9 jj0a8
+
+L jj0a4 jj0a3 jj0a2
+L jj0a3 jj0a5 jj0a4
+
+
+
+
+
+A jj1eu jj1a2 jj1a1
+A jj1a1 jj1n jj0eu
+A jj1a7 jj1a6 jj1ed
+L jj1a8 jj1a7 jj1s
+A jj1a5 jj0ed jj1a6
+
+L jj1a9 jj1a9 jj1a8
+
+L jj1a4 jj1a3 jj1a2
+L jj1a3 jj1a5 jj1a4
+
+
+
+
+
+A jj2eu jj2a2 jj2a1
+A jj2a1 jj2n jj1eu
+A jj2a7 jj2a6 jj2ed
+L jj2a8 jj2a7 jj2s
+A jj2a5 jj1ed jj2a6
+
+L jj2a9 jj2a9 jj2a8
+
+L jj2a4 jj2a3 jj2a2
+L jj2a3 jj2a5 jj2a4
+
+
+
+
+
+A jj3eu jj3a2 jj3a1
+A jj3a1 jj3n jj2eu
+A jj3a7 jj3a6 jj3ed
+L jj3a8 jj3a7 jj3s
+A jj3a5 jj2ed jj3a6
+
+L jj3a9 jj3a9 jj3a8
+
+L jj3a4 jj3a3 jj3a2
+L jj3a3 jj3a5 jj3a4
+
+
+
+
+A jj4eu jj4a2 jj4a1
+A jj4a1 jj4n jj3eu
+A jj4a7 jj4a6 jj4ed
+L jj4a8 jj4a7 jj4s
+A jj4a5 jj3ed jj4a6
+
+L jj4a9 jj4a9 jj4a8
+
+L jj4a4 jj4a3 jj4a2
+L jj4a3 jj4a5 jj4a4
+
+
+
+
+
+A jj5eu jj5a2 jj5a1
+A jj5a1 jj5n jj4eu
+A jj5a7 jj5a6 jj5ed
+L jj5a8 jj5a7 jj5s
+A jj5a5 jj4ed jj5a6
+
+L jj5a9 jj5a9 jj5a8
+
+L jj5a4 jj5a3 jj5a2
+L jj5a3 jj5a5 jj5a4
+
+
+
+
+
+A jjar1 jjar0 jj5eu
+A jjar2 jj5s jjar1
+A jjar3 jj4s jjar2
+A jjar4 jj3s jjar3
+A jjar5 jj2s jjar4
+A jjar6 jj1s jjar5
+A jjar7 jj0s jjar6
+A jjar8 jj5ed jjar7
+
+
+L jj0wu jjar0 jjbr1
+L jjbr1 jj5n jjbr2
+L jjbr2 jj4n jjbr3
+L jjbr3 jj3n jjbr4
+L jjbr4 jj2n jjbr5
+L jjbr5 jj1n jjbr6
+L jjbr6 jj0n jjbr7
+L jjbr7 jj0wd jjbr8
+L jjbr8 jjar8 succ
+
+
+FO 5 5a 5m1
+FO 5m1 5b 5m2
+FO 5m2 5c 5d
+
+A 5a coco1a 1out
+A 5b coco2a coco1a
+A 5c coco3a coco2a
+A 5d c1 coco3a
+
+
+
+FO 6 6a 6m1
+FO 6m1 6b 6m2
+FO 6m2 6c 6d
+
+A 6a coco1b 2out
+A 6b coco2b coco1b
+A 6c coco3b coco2b
+A 6d c2 coco3b
+
+
+
+
+
+L jjjjp0wu jjjjpar0 jjjjpbr1
+L jjjjpbr1 jjjjp5n jjjjpbr2
+L jjjjpbr2 jjjjp4n jjjjpbr3
+L jjjjpbr3 jjjjp3n jjjjpbr4
+L jjjjpbr4 jjjjp2n jjjjpbr5
+L jjjjpbr5 jjjjp1n jjjjpbr6
+L jjjjpbr6 jjjjp0n jjjjpbr7
+L jjjjpbr7 jjjjp0wd c1
+
+A jjjjp5n jjjjpar1 jjjjp5eu
+A jjjjp4n jjjjpar2 jjjjpar1
+A jjjjp3n jjjjpar3 jjjjpar2
+A jjjjp2n jjjjpar4 jjjjpar3
+A jjjjp1n jjjjpar5 jjjjpar4
+A jjjjp0n jjjjpar6 jjjjpar5
+A jjjjp0wd jjjjpar0 jjjjpar6
+
+
+
+
+L jjp0wu jjpar0 jjpbr1
+L jjpbr1 jjp5n jjpbr2
+L jjpbr2 jjp4n jjpbr3
+L jjpbr3 jjp3n jjpbr4
+L jjpbr4 jjp2n jjpbr5
+L jjpbr5 jjp1n jjpbr6
+L jjpbr6 jjp0n jjpbr7
+L jjpbr7 jjp0wd c2
+
+A jjp5n jjpar1 jjp5eu
+A jjp4n jjpar2 jjpar1
+A jjp3n jjpar3 jjpar2
+A jjp2n jjpar4 jjpar3
+A jjp1n jjpar5 jjpar4
+A jjp0n jjpar6 jjpar5
+A jjp0wd jjpar0 jjpar6
+
+
+

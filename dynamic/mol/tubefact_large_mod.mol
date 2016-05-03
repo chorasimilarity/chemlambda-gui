@@ -1,0 +1,83 @@
+L 0p lp outsuc
+L 1s lfs 0p
+L 0s 1in 1s
+L 0i 0in 0s
+
+A 1i 0out 0i
+A 0f 1out 1i
+A lp lfs 0f
+
+
+
+FO 1in a b
+A a succ 1out
+A tms b c
+A c 0in 0out
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+
+
+L 1tms mtms tms
+L 2tms ntms 1tms
+L 3tms ftms 2tms
+A mtms 4tms 3tms
+A ntms ftms 4tms
+
+
+
+
+A inter outunu out
+A num outsuc inter
+
+
+L p1s plfs outunu
+L p0s p1in p1s
+L p0i p0in p0s
+A plfs p1in p1i
+A p1i p0in p0i
+
+
+A out 1numb numbers
+A numbers 1nums 2numb
+A 2numb 2nums outfinal
+
+L ounum2 outer9 1numb
+L ounum3 outer8 ounum2
+L ounum4 outer7 ounum3
+
+L 11nums f1nums 1nums
+L 21nums x1nums 11nums
+A f1nums x1nums 21nums
+
+
+L 12nums f2nums 2nums
+L 22nums x2nums 12nums
+A f2nums x2nums 22nums
+
+
+L 1num fnum num
+L 2num xnum 1num
+
+FO fnum m1num le1num
+A m1num ri1num 2num
+
+FO le1num m2num le2num
+A m2num ri2num ri1num
+
+
+
+FO le2num m3num le4num
+A m3num ri4num ri2num
+
+
+FO le4num m5num m6num
+A m5num ri5num ri4num
+
+A m6num xnum ri5num
+

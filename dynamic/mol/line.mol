@@ -1,0 +1,24 @@
+FOE 0 1 1r
+FOE 1r 2 2r
+FOE 2r 3 3r
+FOE 3r 4 4r
+FOE 4r 5 5r
+FOE 5r 6 6r
+FOE 6r 7 7r
+FOE 7r 8 8r
+FOE 8r 9 9r
+FOE 9r 10 10r
+FOE 10r 11 11r
+FOE 11r 12 12r
+FOE 12r 13 13r
+FOE 13r 14 14r
+FOE 14r 15 15r
+
+FO w 0 u
+FOE u 0p w
+
+FO 0p 1p 1pr
+FO 1pr 2p 2pr
+FO 2pr 3p 3pr
+FO 3pr 4p 4pr
+FO 4pr 5p 5pr

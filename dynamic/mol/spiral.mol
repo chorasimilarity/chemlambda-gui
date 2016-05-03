@@ -1,0 +1,1866 @@
+FOE 0wfoe 0mi 0mif
+FOE 0mif 0sfoe 0efoe
+
+A 0wa 0mi 0mii
+A 0mii 0na 0ea
+
+
+
+
+L 1kin 1k1 1k3
+FOE 1k1 1sfoe 1k2
+L 1k2 1ekfoe 1k4
+
+FOE 1k4 1k5 1k9
+A 1k5 1k10 1kfootx
+
+
+FOE 1k3 1k6 1k11
+A 1k6 1k12 1k10
+
+FOE 1k9 1k7 1k9d
+A 1k7 1k15 1k12
+FOE 1k11 1k8 1k11d
+A 1k8 1k12d 1k15
+
+
+FOE 1k9d 1k7d 1k14d
+A 1k7d 1k15d 1k12d
+FOE 1k11d 1k8d 1k13d
+A 1k8d 1k16d 1k15d
+
+
+A 1k13d 1k19 1k17
+A 1k14d 1k17 1k18
+FOE 1k18 1k16d 1k19
+
+FOE 0efoe 1kmi 1kin
+A 0ea 1kmi 1kmii
+A 1kmii 1na 1eka
+
+
+
+
+
+FOE 1ekfoe 2mi 2mif
+FOE 2mif 2sfoe 2efoe
+
+A 1eka 2mi 2mii
+A 2mii 2na 2ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 2efoe 3mi 3mif
+FOE 3mif 3sfoe 3efoe
+
+A 2ea 3mi 3mii
+A 3mii 3na 3ea
+
+
+
+
+L 4kin 4k1 4k3
+FOE 4k1 4sfoe 4k2
+L 4k2 4ekfoe 4k4
+
+FOE 4k4 4k5 4k9
+A 4k5 4k10 4kfootx
+
+
+FOE 4k3 4k6 4k11
+A 4k6 4k12 4k10
+
+FOE 4k9 4k7 4k9d
+A 4k7 4k15 4k12
+FOE 4k11 4k8 4k11d
+A 4k8 4k12d 4k15
+
+
+FOE 4k9d 4k7d 4k14d
+A 4k7d 4k15d 4k12d
+FOE 4k11d 4k8d 4k13d
+A 4k8d 4k16d 4k15d
+
+
+A 4k13d 4k19 4k17
+A 4k14d 4k17 4k18
+FOE 4k18 4k16d 4k19
+
+FOE 3efoe 4kmi 4kin
+A 3ea 4kmi 4kmii
+A 4kmii 4na 4eka
+
+
+
+
+
+FOE 4ekfoe 5mi 5mif
+FOE 5mif 5sfoe 5efoe
+
+A 4eka 5mi 5mii
+A 5mii 5na 5ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 5efoe 6mi 6mif
+FOE 6mif 6sfoe 6efoe
+
+A 5ea 6mi 6mii
+A 6mii 6na 6ea
+
+
+
+
+L 7kin 7k1 7k3
+FOE 7k1 7sfoe 7k2
+L 7k2 7ekfoe 7k4
+
+FOE 7k4 7k5 7k9
+A 7k5 7k10 7kfootx
+
+
+FOE 7k3 7k6 7k11
+A 7k6 7k12 7k10
+
+FOE 7k9 7k7 7k9d
+A 7k7 7k15 7k12
+FOE 7k11 7k8 7k11d
+A 7k8 7k12d 7k15
+
+
+FOE 7k9d 7k7d 7k14d
+A 7k7d 7k15d 7k12d
+FOE 7k11d 7k8d 7k13d
+A 7k8d 7k16d 7k15d
+
+
+A 7k13d 7k19 7k17
+A 7k14d 7k17 7k18
+FOE 7k18 7k16d 7k19
+
+FOE 6efoe 7kmi 7kin
+A 6ea 7kmi 7kmii
+A 7kmii 7na 7eka
+
+
+
+
+
+FOE 7ekfoe 8mi 8mif
+FOE 8mif 8sfoe 8efoe
+
+A 7eka 8mi 8mii
+A 8mii 8na 8ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 10wfoe 10mi 10mif
+FOE 10mif 10sfoe 10efoe
+
+A 10wa 10mi 10mii
+A 10mii 10na 10ea
+
+
+
+
+L 11kin 11k1 11k3
+FOE 11k1 11sfoe 11k2
+L 11k2 11ekfoe 11k4
+
+FOE 11k4 11k5 11k9
+A 11k5 11k10 11kfootx
+
+
+FOE 11k3 11k6 11k11
+A 11k6 11k12 11k10
+
+FOE 11k9 11k7 11k9d
+A 11k7 11k15 11k12
+FOE 11k11 11k8 11k11d
+A 11k8 11k12d 11k15
+
+
+FOE 11k9d 11k7d 11k14d
+A 11k7d 11k15d 11k12d
+FOE 11k11d 11k8d 11k13d
+A 11k8d 11k16d 11k15d
+
+
+A 11k13d 11k19 11k17
+A 11k14d 11k17 11k18
+FOE 11k18 11k16d 11k19
+
+FOE 10efoe 11kmi 11kin
+A 10ea 11kmi 11kmii
+A 11kmii 11na 11eka
+
+
+
+
+
+FOE 11ekfoe 12mi 12mif
+FOE 12mif 12sfoe 12efoe
+
+A 11eka 12mi 12mii
+A 12mii 12na 12ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 12efoe 13mi 13mif
+FOE 13mif 13sfoe 13efoe
+
+A 12ea 13mi 13mii
+A 13mii 13na 13ea
+
+
+
+
+L 14kin 14k1 14k3
+FOE 14k1 14sfoe 14k2
+L 14k2 14ekfoe 14k4
+
+FOE 14k4 14k5 14k9
+A 14k5 14k10 14kfootx
+
+
+FOE 14k3 14k6 14k11
+A 14k6 14k12 14k10
+
+FOE 14k9 14k7 14k9d
+A 14k7 14k15 14k12
+FOE 14k11 14k8 14k11d
+A 14k8 14k12d 14k15
+
+
+FOE 14k9d 14k7d 14k14d
+A 14k7d 14k15d 14k12d
+FOE 14k11d 14k8d 14k13d
+A 14k8d 14k16d 14k15d
+
+
+A 14k13d 14k19 14k17
+A 14k14d 14k17 14k18
+FOE 14k18 14k16d 14k19
+
+FOE 13efoe 14kmi 14kin
+A 13ea 14kmi 14kmii
+A 14kmii 14na 14eka
+
+
+
+
+
+FOE 14ekfoe 15mi 15mif
+FOE 15mif 15sfoe 15efoe
+
+A 14eka 15mi 15mii
+A 15mii 15na 15ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 15efoe 16mi 16mif
+FOE 16mif 16sfoe 16efoe
+
+A 15ea 16mi 16mii
+A 16mii 16na 16ea
+
+
+
+
+L 17kin 17k1 17k3
+FOE 17k1 17sfoe 17k2
+L 17k2 17ekfoe 17k4
+
+FOE 17k4 17k5 17k9
+A 17k5 17k10 17kfootx
+
+
+FOE 17k3 17k6 17k11
+A 17k6 17k12 17k10
+
+FOE 17k9 17k7 17k9d
+A 17k7 17k15 17k12
+FOE 17k11 17k8 17k11d
+A 17k8 17k12d 17k15
+
+
+FOE 17k9d 17k7d 17k14d
+A 17k7d 17k15d 17k12d
+FOE 17k11d 17k8d 17k13d
+A 17k8d 17k16d 17k15d
+
+
+A 17k13d 17k19 17k17
+A 17k14d 17k17 17k18
+FOE 17k18 17k16d 17k19
+
+FOE 16efoe 17kmi 17kin
+A 16ea 17kmi 17kmii
+A 17kmii 17na 17eka
+
+
+
+
+
+FOE 17ekfoe 18mi 18mif
+FOE 18mif 18sfoe 18efoe
+
+A 17eka 18mi 18mii
+A 18mii 18na 18ea
+
+
+
+FOE 20wfoe 20mi 20mif
+FOE 20mif 20sfoe 20efoe
+
+A 20wa 20mi 20mii
+A 20mii 20na 20ea
+
+
+
+
+L 21kin 21k1 21k3
+FOE 21k1 21sfoe 21k2
+L 21k2 21ekfoe 21k4
+
+FOE 21k4 21k5 21k9
+A 21k5 21k10 21kfootx
+
+
+FOE 21k3 21k6 21k11
+A 21k6 21k12 21k10
+
+FOE 21k9 21k7 21k9d
+A 21k7 21k15 21k12
+FOE 21k11 21k8 21k11d
+A 21k8 21k12d 21k15
+
+
+FOE 21k9d 21k7d 21k14d
+A 21k7d 21k15d 21k12d
+FOE 21k11d 21k8d 21k13d
+A 21k8d 21k16d 21k15d
+
+
+A 21k13d 21k19 21k17
+A 21k14d 21k17 21k18
+FOE 21k18 21k16d 21k19
+
+FOE 20efoe 21kmi 21kin
+A 20ea 21kmi 21kmii
+A 21kmii 21na 21eka
+
+
+
+
+
+FOE 21ekfoe 22mi 22mif
+FOE 22mif 22sfoe 22efoe
+
+A 21eka 22mi 22mii
+A 22mii 22na 22ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 22efoe 23mi 23mif
+FOE 23mif 23sfoe 23efoe
+
+A 22ea 23mi 23mii
+A 23mii 23na 23ea
+
+
+
+
+L 24kin 24k1 24k3
+FOE 24k1 24sfoe 24k2
+L 24k2 24ekfoe 24k4
+
+FOE 24k4 24k5 24k9
+A 24k5 24k10 24kfootx
+
+
+FOE 24k3 24k6 24k11
+A 24k6 24k12 24k10
+
+FOE 24k9 24k7 24k9d
+A 24k7 24k15 24k12
+FOE 24k11 24k8 24k11d
+A 24k8 24k12d 24k15
+
+
+FOE 24k9d 24k7d 24k14d
+A 24k7d 24k15d 24k12d
+FOE 24k11d 24k8d 24k13d
+A 24k8d 24k16d 24k15d
+
+
+A 24k13d 24k19 24k17
+A 24k14d 24k17 24k18
+FOE 24k18 24k16d 24k19
+
+FOE 23efoe 24kmi 24kin
+A 23ea 24kmi 24kmii
+A 24kmii 24na 24eka
+
+
+
+
+
+FOE 24ekfoe 25mi 25mif
+FOE 25mif 25sfoe 25efoe
+
+A 24eka 25mi 25mii
+A 25mii 25na 25ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 25efoe 26mi 26mif
+FOE 26mif 26sfoe 26efoe
+
+A 25ea 26mi 26mii
+A 26mii 26na 26ea
+
+
+
+
+L 27kin 27k1 27k3
+FOE 27k1 27sfoe 27k2
+L 27k2 27ekfoe 27k4
+
+FOE 27k4 27k5 27k9
+A 27k5 27k10 27kfootx
+
+
+FOE 27k3 27k6 27k11
+A 27k6 27k12 27k10
+
+FOE 27k9 27k7 27k9d
+A 27k7 27k15 27k12
+FOE 27k11 27k8 27k11d
+A 27k8 27k12d 27k15
+
+
+FOE 27k9d 27k7d 27k14d
+A 27k7d 27k15d 27k12d
+FOE 27k11d 27k8d 27k13d
+A 27k8d 27k16d 27k15d
+
+
+A 27k13d 27k19 27k17
+A 27k14d 27k17 27k18
+FOE 27k18 27k16d 27k19
+
+FOE 26efoe 27kmi 27kin
+A 26ea 27kmi 27kmii
+A 27kmii 27na 27eka
+
+
+
+
+
+FOE 27ekfoe 28mi 28mif
+FOE 28mif 28sfoe 28efoe
+
+A 27eka 28mi 28mii
+A 28mii 28na 28ea
+
+
+FOE 30wfoe 30mi 30mif
+FOE 30mif 30sfoe 30efoe
+
+A 30wa 30mi 30mii
+A 30mii 30na 30ea
+
+
+
+
+L 31kin 31k1 31k3
+FOE 31k1 31sfoe 31k2
+L 31k2 31ekfoe 31k4
+
+FOE 31k4 31k5 31k9
+A 31k5 31k10 31kfootx
+
+
+FOE 31k3 31k6 31k11
+A 31k6 31k12 31k10
+
+FOE 31k9 31k7 31k9d
+A 31k7 31k15 31k12
+FOE 31k11 31k8 31k11d
+A 31k8 31k12d 31k15
+
+
+FOE 31k9d 31k7d 31k14d
+A 31k7d 31k15d 31k12d
+FOE 31k11d 31k8d 31k13d
+A 31k8d 31k16d 31k15d
+
+
+A 31k13d 31k19 31k17
+A 31k14d 31k17 31k18
+FOE 31k18 31k16d 31k19
+
+FOE 30efoe 31kmi 31kin
+A 30ea 31kmi 31kmii
+A 31kmii 31na 31eka
+
+
+
+
+
+FOE 31ekfoe 32mi 32mif
+FOE 32mif 32sfoe 32efoe
+
+A 31eka 32mi 32mii
+A 32mii 32na 32ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 32efoe 33mi 33mif
+FOE 33mif 33sfoe 33efoe
+
+A 32ea 33mi 33mii
+A 33mii 33na 33ea
+
+
+
+
+L 34kin 34k1 34k3
+FOE 34k1 34sfoe 34k2
+L 34k2 34ekfoe 34k4
+
+FOE 34k4 34k5 34k9
+A 34k5 34k10 34kfootx
+
+
+FOE 34k3 34k6 34k11
+A 34k6 34k12 34k10
+
+FOE 34k9 34k7 34k9d
+A 34k7 34k15 34k12
+FOE 34k11 34k8 34k11d
+A 34k8 34k12d 34k15
+
+
+FOE 34k9d 34k7d 34k14d
+A 34k7d 34k15d 34k12d
+FOE 34k11d 34k8d 34k13d
+A 34k8d 34k16d 34k15d
+
+
+A 34k13d 34k19 34k17
+A 34k14d 34k17 34k18
+FOE 34k18 34k16d 34k19
+
+FOE 33efoe 34kmi 34kin
+A 33ea 34kmi 34kmii
+A 34kmii 34na 34eka
+
+
+
+
+
+FOE 34ekfoe 35mi 35mif
+FOE 35mif 35sfoe 35efoe
+
+A 34eka 35mi 35mii
+A 35mii 35na 35ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 35efoe 36mi 36mif
+FOE 36mif 36sfoe 36efoe
+
+A 35ea 36mi 36mii
+A 36mii 36na 36ea
+
+
+
+
+L 37kin 37k1 37k3
+FOE 37k1 37sfoe 37k2
+L 37k2 37ekfoe 37k4
+
+FOE 37k4 37k5 37k9
+A 37k5 37k10 37kfootx
+
+
+FOE 37k3 37k6 37k11
+A 37k6 37k12 37k10
+
+FOE 37k9 37k7 37k9d
+A 37k7 37k15 37k12
+FOE 37k11 37k8 37k11d
+A 37k8 37k12d 37k15
+
+
+FOE 37k9d 37k7d 37k14d
+A 37k7d 37k15d 37k12d
+FOE 37k11d 37k8d 37k13d
+A 37k8d 37k16d 37k15d
+
+
+A 37k13d 37k19 37k17
+A 37k14d 37k17 37k18
+FOE 37k18 37k16d 37k19
+
+FOE 36efoe 37kmi 37kin
+A 36ea 37kmi 37kmii
+A 37kmii 37na 37eka
+
+
+
+
+
+FOE 37ekfoe 38mi 38mif
+FOE 38mif 38sfoe 38efoe
+
+A 37eka 38mi 38mii
+A 38mii 38na 38ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 40wfoe 40mi 40mif
+FOE 40mif 40sfoe 40efoe
+
+A 40wa 40mi 40mii
+A 40mii 40na 40ea
+
+
+
+
+L 41kin 41k1 41k3
+FOE 41k1 41sfoe 41k2
+L 41k2 41ekfoe 41k4
+
+FOE 41k4 41k5 41k9
+A 41k5 41k10 41kfootx
+
+
+FOE 41k3 41k6 41k11
+A 41k6 41k12 41k10
+
+FOE 41k9 41k7 41k9d
+A 41k7 41k15 41k12
+FOE 41k11 41k8 41k11d
+A 41k8 41k12d 41k15
+
+
+FOE 41k9d 41k7d 41k14d
+A 41k7d 41k15d 41k12d
+FOE 41k11d 41k8d 41k13d
+A 41k8d 41k16d 41k15d
+
+
+A 41k13d 41k19 41k17
+A 41k14d 41k17 41k18
+FOE 41k18 41k16d 41k19
+
+FOE 40efoe 41kmi 41kin
+A 40ea 41kmi 41kmii
+A 41kmii 41na 41eka
+
+
+
+
+
+FOE 41ekfoe 42mi 42mif
+FOE 42mif 42sfoe 42efoe
+
+A 41eka 42mi 42mii
+A 42mii 42na 42ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 42efoe 43mi 43mif
+FOE 43mif 43sfoe 43efoe
+
+A 42ea 43mi 43mii
+A 43mii 43na 43ea
+
+
+
+
+L 44kin 44k1 44k3
+FOE 44k1 44sfoe 44k2
+L 44k2 44ekfoe 44k4
+
+FOE 44k4 44k5 44k9
+A 44k5 44k10 44kfootx
+
+
+FOE 44k3 44k6 44k11
+A 44k6 44k12 44k10
+
+FOE 44k9 44k7 44k9d
+A 44k7 44k15 44k12
+FOE 44k11 44k8 44k11d
+A 44k8 44k12d 44k15
+
+
+FOE 44k9d 44k7d 44k14d
+A 44k7d 44k15d 44k12d
+FOE 44k11d 44k8d 44k13d
+A 44k8d 44k16d 44k15d
+
+
+A 44k13d 44k19 44k17
+A 44k14d 44k17 44k18
+FOE 44k18 44k16d 44k19
+
+FOE 43efoe 44kmi 44kin
+A 43ea 44kmi 44kmii
+A 44kmii 44na 44eka
+
+
+
+
+
+FOE 44ekfoe 45mi 45mif
+FOE 45mif 45sfoe 45efoe
+
+A 44eka 45mi 45mii
+A 45mii 45na 45ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 45efoe 46mi 46mif
+FOE 46mif 46sfoe 46efoe
+
+A 45ea 46mi 46mii
+A 46mii 46na 46ea
+
+
+
+
+L 47kin 47k1 47k3
+FOE 47k1 47sfoe 47k2
+L 47k2 47ekfoe 47k4
+
+FOE 47k4 47k5 47k9
+A 47k5 47k10 47kfootx
+
+
+FOE 47k3 47k6 47k11
+A 47k6 47k12 47k10
+
+FOE 47k9 47k7 47k9d
+A 47k7 47k15 47k12
+FOE 47k11 47k8 47k11d
+A 47k8 47k12d 47k15
+
+
+FOE 47k9d 47k7d 47k14d
+A 47k7d 47k15d 47k12d
+FOE 47k11d 47k8d 47k13d
+A 47k8d 47k16d 47k15d
+
+
+A 47k13d 47k19 47k17
+A 47k14d 47k17 47k18
+FOE 47k18 47k16d 47k19
+
+FOE 46efoe 47kmi 47kin
+A 46ea 47kmi 47kmii
+A 47kmii 47na 47eka
+
+
+
+
+
+FOE 47ekfoe 48mi 48mif
+FOE 48mif 48sfoe 48efoe
+
+A 47eka 48mi 48mii
+A 48mii 48na 48ea
+
+
+
+
+
+FOE 50wfoe 50mi 50mif
+FOE 50mif 50sfoe 50efoe
+
+A 50wa 50mi 50mii
+A 50mii 50na 50ea
+
+
+
+
+L 51kin 51k1 51k3
+FOE 51k1 51sfoe 51k2
+L 51k2 51ekfoe 51k4
+
+FOE 51k4 51k5 51k9
+A 51k5 51k10 51kfootx
+
+
+FOE 51k3 51k6 51k11
+A 51k6 51k12 51k10
+
+FOE 51k9 51k7 51k9d
+A 51k7 51k15 51k12
+FOE 51k11 51k8 51k11d
+A 51k8 51k12d 51k15
+
+
+FOE 51k9d 51k7d 51k14d
+A 51k7d 51k15d 51k12d
+FOE 51k11d 51k8d 51k13d
+A 51k8d 51k16d 51k15d
+
+
+A 51k13d 51k19 51k17
+A 51k14d 51k17 51k18
+FOE 51k18 51k16d 51k19
+
+FOE 50efoe 51kmi 51kin
+A 50ea 51kmi 51kmii
+A 51kmii 51na 51eka
+
+
+
+
+
+FOE 51ekfoe 52mi 52mif
+FOE 52mif 52sfoe 52efoe
+
+A 51eka 52mi 52mii
+A 52mii 52na 52ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 52efoe 53mi 53mif
+FOE 53mif 53sfoe 53efoe
+
+A 52ea 53mi 53mii
+A 53mii 53na 53ea
+
+
+
+
+L 54kin 54k1 54k3
+FOE 54k1 54sfoe 54k2
+L 54k2 54ekfoe 54k4
+
+FOE 54k4 54k5 54k9
+A 54k5 54k10 54kfootx
+
+
+FOE 54k3 54k6 54k11
+A 54k6 54k12 54k10
+
+FOE 54k9 54k7 54k9d
+A 54k7 54k15 54k12
+FOE 54k11 54k8 54k11d
+A 54k8 54k12d 54k15
+
+
+FOE 54k9d 54k7d 54k14d
+A 54k7d 54k15d 54k12d
+FOE 54k11d 54k8d 54k13d
+A 54k8d 54k16d 54k15d
+
+
+A 54k13d 54k19 54k17
+A 54k14d 54k17 54k18
+FOE 54k18 54k16d 54k19
+
+FOE 53efoe 54kmi 54kin
+A 53ea 54kmi 54kmii
+A 54kmii 54na 54eka
+
+
+
+
+
+FOE 54ekfoe 55mi 55mif
+FOE 55mif 55sfoe 55efoe
+
+A 54eka 55mi 55mii
+A 55mii 55na 55ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 55efoe 56mi 56mif
+FOE 56mif 56sfoe 56efoe
+
+A 55ea 56mi 56mii
+A 56mii 56na 56ea
+
+
+
+
+L 57kin 57k1 57k3
+FOE 57k1 57sfoe 57k2
+L 57k2 57ekfoe 57k4
+
+FOE 57k4 57k5 57k9
+A 57k5 57k10 57kfootx
+
+
+FOE 57k3 57k6 57k11
+A 57k6 57k12 57k10
+
+FOE 57k9 57k7 57k9d
+A 57k7 57k15 57k12
+FOE 57k11 57k8 57k11d
+A 57k8 57k12d 57k15
+
+
+FOE 57k9d 57k7d 57k14d
+A 57k7d 57k15d 57k12d
+FOE 57k11d 57k8d 57k13d
+A 57k8d 57k16d 57k15d
+
+
+A 57k13d 57k19 57k17
+A 57k14d 57k17 57k18
+FOE 57k18 57k16d 57k19
+
+FOE 56efoe 57kmi 57kin
+A 56ea 57kmi 57kmii
+A 57kmii 57na 57eka
+
+
+
+
+
+FOE 57ekfoe 58mi 58mif
+FOE 58mif 58sfoe 58efoe
+
+A 57eka 58mi 58mii
+A 58mii 58na 58ea
+
+
+FOE 60wfoe 60mi 60mif
+FOE 60mif 60sfoe 60efoe
+
+A 60wa 60mi 60mii
+A 60mii 60na 60ea
+
+
+
+
+L 61kin 61k1 61k3
+FOE 61k1 61sfoe 61k2
+L 61k2 61ekfoe 61k4
+
+FOE 61k4 61k5 61k9
+A 61k5 61k10 61kfootx
+
+
+FOE 61k3 61k6 61k11
+A 61k6 61k12 61k10
+
+FOE 61k9 61k7 61k9d
+A 61k7 61k15 61k12
+FOE 61k11 61k8 61k11d
+A 61k8 61k12d 61k15
+
+
+FOE 61k9d 61k7d 61k14d
+A 61k7d 61k15d 61k12d
+FOE 61k11d 61k8d 61k13d
+A 61k8d 61k16d 61k15d
+
+
+A 61k13d 61k19 61k17
+A 61k14d 61k17 61k18
+FOE 61k18 61k16d 61k19
+
+FOE 60efoe 61kmi 61kin
+A 60ea 61kmi 61kmii
+A 61kmii 61na 61eka
+
+
+
+
+
+FOE 61ekfoe 62mi 62mif
+FOE 62mif 62sfoe 62efoe
+
+A 61eka 62mi 62mii
+A 62mii 62na 62ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 62efoe 63mi 63mif
+FOE 63mif 63sfoe 63efoe
+
+A 62ea 63mi 63mii
+A 63mii 63na 63ea
+
+
+
+
+L 64kin 64k1 64k3
+FOE 64k1 64sfoe 64k2
+L 64k2 64ekfoe 64k4
+
+FOE 64k4 64k5 64k9
+A 64k5 64k10 64kfootx
+
+
+FOE 64k3 64k6 64k11
+A 64k6 64k12 64k10
+
+FOE 64k9 64k7 64k9d
+A 64k7 64k15 64k12
+FOE 64k11 64k8 64k11d
+A 64k8 64k12d 64k15
+
+
+FOE 64k9d 64k7d 64k14d
+A 64k7d 64k15d 64k12d
+FOE 64k11d 64k8d 64k13d
+A 64k8d 64k16d 64k15d
+
+
+A 64k13d 64k19 64k17
+A 64k14d 64k17 64k18
+FOE 64k18 64k16d 64k19
+
+FOE 63efoe 64kmi 64kin
+A 63ea 64kmi 64kmii
+A 64kmii 64na 64eka
+
+
+
+
+
+FOE 64ekfoe 65mi 65mif
+FOE 65mif 65sfoe 65efoe
+
+A 64eka 65mi 65mii
+A 65mii 65na 65ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 65efoe 66mi 66mif
+FOE 66mif 66sfoe 66efoe
+
+A 65ea 66mi 66mii
+A 66mii 66na 66ea
+
+
+
+
+L 67kin 67k1 67k3
+FOE 67k1 67sfoe 67k2
+L 67k2 67ekfoe 67k4
+
+FOE 67k4 67k5 67k9
+A 67k5 67k10 67kfootx
+
+
+FOE 67k3 67k6 67k11
+A 67k6 67k12 67k10
+
+FOE 67k9 67k7 67k9d
+A 67k7 67k15 67k12
+FOE 67k11 67k8 67k11d
+A 67k8 67k12d 67k15
+
+
+FOE 67k9d 67k7d 67k14d
+A 67k7d 67k15d 67k12d
+FOE 67k11d 67k8d 67k13d
+A 67k8d 67k16d 67k15d
+
+
+A 67k13d 67k19 67k17
+A 67k14d 67k17 67k18
+FOE 67k18 67k16d 67k19
+
+FOE 66efoe 67kmi 67kin
+A 66ea 67kmi 67kmii
+A 67kmii 67na 67eka
+
+
+
+
+
+FOE 67ekfoe 68mi 68mif
+FOE 68mif 68sfoe 68efoe
+
+A 67eka 68mi 68mii
+A 68mii 68na 68ea
+
+
+
+
+
+
+FOE 70wfoe 70mi 70mif
+FOE 70mif 70sfoe 70efoe
+
+A 70wa 70mi 70mii
+A 70mii 70na 70ea
+
+
+
+
+L 71kin 71k1 71k3
+FOE 71k1 71sfoe 71k2
+L 71k2 71ekfoe 71k4
+
+FOE 71k4 71k5 71k9
+A 71k5 71k10 71kfootx
+
+
+FOE 71k3 71k6 71k11
+A 71k6 71k12 71k10
+
+FOE 71k9 71k7 71k9d
+A 71k7 71k15 71k12
+FOE 71k11 71k8 71k11d
+A 71k8 71k12d 71k15
+
+
+FOE 71k9d 71k7d 71k14d
+A 71k7d 71k15d 71k12d
+FOE 71k11d 71k8d 71k13d
+A 71k8d 71k16d 71k15d
+
+
+A 71k13d 71k19 71k17
+A 71k14d 71k17 71k18
+FOE 71k18 71k16d 71k19
+
+FOE 70efoe 71kmi 71kin
+A 70ea 71kmi 71kmii
+A 71kmii 71na 71eka
+
+
+
+
+
+FOE 71ekfoe 72mi 72mif
+FOE 72mif 72sfoe 72efoe
+
+A 71eka 72mi 72mii
+A 72mii 72na 72ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 72efoe 73mi 73mif
+FOE 73mif 73sfoe 73efoe
+
+A 72ea 73mi 73mii
+A 73mii 73na 73ea
+
+
+
+
+L 74kin 74k1 74k3
+FOE 74k1 74sfoe 74k2
+L 74k2 74ekfoe 74k4
+
+FOE 74k4 74k5 74k9
+A 74k5 74k10 74kfootx
+
+
+FOE 74k3 74k6 74k11
+A 74k6 74k12 74k10
+
+FOE 74k9 74k7 74k9d
+A 74k7 74k15 74k12
+FOE 74k11 74k8 74k11d
+A 74k8 74k12d 74k15
+
+
+FOE 74k9d 74k7d 74k14d
+A 74k7d 74k15d 74k12d
+FOE 74k11d 74k8d 74k13d
+A 74k8d 74k16d 74k15d
+
+
+A 74k13d 74k19 74k17
+A 74k14d 74k17 74k18
+FOE 74k18 74k16d 74k19
+
+FOE 73efoe 74kmi 74kin
+A 73ea 74kmi 74kmii
+A 74kmii 74na 74eka
+
+
+
+
+
+FOE 74ekfoe 75mi 75mif
+FOE 75mif 75sfoe 75efoe
+
+A 74eka 75mi 75mii
+A 75mii 75na 75ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 75efoe 76mi 76mif
+FOE 76mif 76sfoe 76efoe
+
+A 75ea 76mi 76mii
+A 76mii 76na 76ea
+
+
+
+
+L 77kin 77k1 77k3
+FOE 77k1 77sfoe 77k2
+L 77k2 77ekfoe 77k4
+
+FOE 77k4 77k5 77k9
+A 77k5 77k10 77kfootx
+
+
+FOE 77k3 77k6 77k11
+A 77k6 77k12 77k10
+
+FOE 77k9 77k7 77k9d
+A 77k7 77k15 77k12
+FOE 77k11 77k8 77k11d
+A 77k8 77k12d 77k15
+
+
+FOE 77k9d 77k7d 77k14d
+A 77k7d 77k15d 77k12d
+FOE 77k11d 77k8d 77k13d
+A 77k8d 77k16d 77k15d
+
+
+A 77k13d 77k19 77k17
+A 77k14d 77k17 77k18
+FOE 77k18 77k16d 77k19
+
+FOE 76efoe 77kmi 77kin
+A 76ea 77kmi 77kmii
+A 77kmii 77na 77eka
+
+
+
+
+
+FOE 77ekfoe 78mi 78mif
+FOE 78mif 78sfoe 78efoe
+
+A 77eka 78mi 78mii
+A 78mii 78na 78ea
+
+
+
+
+
+
+
+
+FOE 80wfoe 80mi 80mif
+FOE 80mif 80sfoe 80efoe
+
+A 80wa 80mi 80mii
+A 80mii 80na 80ea
+
+
+
+
+L 81kin 81k1 81k3
+FOE 81k1 81sfoe 81k2
+L 81k2 81ekfoe 81k4
+
+FOE 81k4 81k5 81k9
+A 81k5 81k10 81kfootx
+
+
+FOE 81k3 81k6 81k11
+A 81k6 81k12 81k10
+
+FOE 81k9 81k7 81k9d
+A 81k7 81k15 81k12
+FOE 81k11 81k8 81k11d
+A 81k8 81k12d 81k15
+
+
+FOE 81k9d 81k7d 81k14d
+A 81k7d 81k15d 81k12d
+FOE 81k11d 81k8d 81k13d
+A 81k8d 81k16d 81k15d
+
+
+A 81k13d 81k19 81k17
+A 81k14d 81k17 81k18
+FOE 81k18 81k16d 81k19
+
+FOE 80efoe 81kmi 81kin
+A 80ea 81kmi 81kmii
+A 81kmii 81na 81eka
+
+
+
+
+
+FOE 81ekfoe 82mi 82mif
+FOE 82mif 82sfoe 82efoe
+
+A 81eka 82mi 82mii
+A 82mii 82na 82ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 82efoe 83mi 83mif
+FOE 83mif 83sfoe 83efoe
+
+A 82ea 83mi 83mii
+A 83mii 83na 83ea
+
+
+
+
+L 84kin 84k1 84k3
+FOE 84k1 84sfoe 84k2
+L 84k2 84ekfoe 84k4
+
+FOE 84k4 84k5 84k9
+A 84k5 84k10 84kfootx
+
+
+FOE 84k3 84k6 84k11
+A 84k6 84k12 84k10
+
+FOE 84k9 84k7 84k9d
+A 84k7 84k15 84k12
+FOE 84k11 84k8 84k11d
+A 84k8 84k12d 84k15
+
+
+FOE 84k9d 84k7d 84k14d
+A 84k7d 84k15d 84k12d
+FOE 84k11d 84k8d 84k13d
+A 84k8d 84k16d 84k15d
+
+
+A 84k13d 84k19 84k17
+A 84k14d 84k17 84k18
+FOE 84k18 84k16d 84k19
+
+FOE 83efoe 84kmi 84kin
+A 83ea 84kmi 84kmii
+A 84kmii 84na 84eka
+
+
+
+
+
+FOE 84ekfoe 85mi 85mif
+FOE 85mif 85sfoe 85efoe
+
+A 84eka 85mi 85mii
+A 85mii 85na 85ea
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 85efoe 86mi 86mif
+FOE 86mif 86sfoe 86efoe
+
+A 85ea 86mi 86mii
+A 86mii 86na 86ea
+
+
+
+
+L 87kin 87k1 87k3
+FOE 87k1 87sfoe 87k2
+L 87k2 87ekfoe 87k4
+
+FOE 87k4 87k5 87k9
+A 87k5 87k10 87kfootx
+
+
+FOE 87k3 87k6 87k11
+A 87k6 87k12 87k10
+
+FOE 87k9 87k7 87k9d
+A 87k7 87k15 87k12
+FOE 87k11 87k8 87k11d
+A 87k8 87k12d 87k15
+
+
+FOE 87k9d 87k7d 87k14d
+A 87k7d 87k15d 87k12d
+FOE 87k11d 87k8d 87k13d
+A 87k8d 87k16d 87k15d
+
+
+A 87k13d 87k19 87k17
+A 87k14d 87k17 87k18
+FOE 87k18 87k16d 87k19
+
+FOE 86efoe 87kmi 87kin
+A 86ea 87kmi 87kmii
+A 87kmii 87na 87eka
+
+
+
+
+
+FOE 87ekfoe 88mi 88mif
+FOE 88mif 88sfoe 88efoe
+
+A 87eka 88mi 88mii
+A 88mii 88na 88ea
+
+
+
+
+
+
+Arrow 10sfoe 0na
+Arrow 11sfoe 1na
+Arrow 12sfoe 2na
+Arrow 13sfoe 3na
+Arrow 14sfoe 4na
+Arrow 15sfoe 5na
+Arrow 16sfoe 6na
+Arrow 17sfoe 7na
+Arrow 18sfoe 8na
+
+
+
+
+Arrow 20sfoe 10na
+Arrow 21sfoe 11na
+Arrow 22sfoe 12na
+Arrow 23sfoe 13na
+Arrow 24sfoe 14na
+Arrow 25sfoe 15na
+Arrow 26sfoe 16na
+Arrow 27sfoe 17na
+Arrow 28sfoe 18na
+
+
+
+
+Arrow 30sfoe 20na
+Arrow 31sfoe 21na
+Arrow 32sfoe 22na
+Arrow 33sfoe 23na
+Arrow 34sfoe 24na
+Arrow 35sfoe 25na
+Arrow 36sfoe 26na
+Arrow 37sfoe 27na
+Arrow 38sfoe 28na
+
+
+
+Arrow 40sfoe 30na
+Arrow 41sfoe 31na
+Arrow 42sfoe 32na
+Arrow 43sfoe 33na
+Arrow 44sfoe 34na
+Arrow 45sfoe 35na
+Arrow 46sfoe 36na
+Arrow 47sfoe 37na
+Arrow 48sfoe 38na
+
+
+
+Arrow 50sfoe 40na
+Arrow 51sfoe 41na
+Arrow 52sfoe 42na
+Arrow 53sfoe 43na
+Arrow 54sfoe 44na
+Arrow 55sfoe 45na
+Arrow 56sfoe 46na
+Arrow 57sfoe 47na
+Arrow 58sfoe 48na
+
+
+
+
+Arrow 60sfoe 50na
+Arrow 61sfoe 51na
+Arrow 62sfoe 52na
+Arrow 63sfoe 53na
+Arrow 64sfoe 54na
+Arrow 65sfoe 55na
+Arrow 66sfoe 56na
+Arrow 67sfoe 57na
+Arrow 68sfoe 58na
+
+
+
+Arrow 70sfoe 60na
+Arrow 71sfoe 61na
+Arrow 72sfoe 62na
+Arrow 73sfoe 63na
+Arrow 74sfoe 64na
+Arrow 75sfoe 65na
+Arrow 76sfoe 66na
+Arrow 77sfoe 67na
+Arrow 78sfoe 68na
+
+
+
+
+
+Arrow 80sfoe 70na
+Arrow 81sfoe 71na
+Arrow 82sfoe 72na
+Arrow 83sfoe 73na
+Arrow 84sfoe 74na
+Arrow 85sfoe 75na
+Arrow 86sfoe 76na
+Arrow 87sfoe 77na
+Arrow 88sfoe 78na
+
+
+
+Arrow 8ea 10wa
+Arrow 8efoe 10wfoe
+
+Arrow 18ea 20wa
+Arrow 18efoe 20wfoe
+
+Arrow 28ea 30wa
+Arrow 28efoe 30wfoe
+
+Arrow 38ea 40wa
+Arrow 38efoe 40wfoe
+
+Arrow 48ea 50wa
+Arrow 48efoe 50wfoe
+
+Arrow 58ea 60wa
+Arrow 58efoe 60wfoe
+
+Arrow 68ea 70wa
+Arrow 68efoe 70wfoe
+
+Arrow 78ea 80wa
+Arrow 78efoe 80wfoe
+
+
+
+

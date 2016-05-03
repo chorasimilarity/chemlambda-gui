@@ -1,0 +1,132 @@
+FO 2 12 3a
+A 12 22a 1
+
+
+FO 3a na1 3o1
+A na1 22a1 22a
+
+FO 3o1 na2 3o2
+A na2 22a2 22a1
+
+FO 3o2 na3 3o3
+A na3 22a3 22a2
+
+FO 3o3 na4 3o4
+A na4 22a4 22a3
+
+FO 3o4 na5 3o5
+A na5 22a5 22a4
+
+FO 3o5 na6 3o6
+A na6 22a6 22a5
+
+FO 3o6 na7 3o7
+A na7 22a7 22a6
+
+FO 3o7 na8 3o8
+A na8 22a8 22a7
+
+FO 3o8 na9 3o9
+A na9 22a9 22a8
+
+FO 3o9 na10 3o10
+A na10 22a10 22a9
+
+FO 3o10 na11 3o11
+A na11 22a11 22a10
+
+FO 3o11 na12 3o12
+A na12 22a12 22a11
+
+FO 3o12 na13 3o13
+A na13 22a13 22a12
+
+FO 3o13 na14 3o14
+A na14 22a14 22a13
+
+
+
+
+
+FO 3o14 na15 3o15b
+A na15 22a15b 22a14
+
+
+
+
+
+FOE 3o15b z1 z2
+FI z2 z1 3o15a
+
+FOE 22a15a z3 z4
+FI z4 z3 22a15b
+
+
+
+
+
+
+
+
+
+FO 3o15a na16 3o16
+A na16 22a16 22a15a
+
+
+
+
+
+
+
+
+FO 3o16 na17 3o17
+A na17 22a17 22a16
+
+FO 3o17 na18 3o18
+A na18 22a18 22a17
+
+FO 3o18 na19 3o19
+A na19 22a19 22a18
+
+FO 3o19 na20 3o20
+A na20 22a20 22a19
+
+FO 3o20 na21 3o21
+A na21 22a21 22a20
+
+FO 3o21 na22 3o22
+A na22 22a22 22a21
+
+FO 3o22 na23 3o23
+A na23 22a23 22a22
+
+FO 3o23 na24 3o24
+A na24 22a24 22a23
+
+FO 3o24 na25 3o25
+A na25 22a25 22a24
+
+FO 3o25 na26 3o26
+A na26 22a26 22a25
+
+FO 3o26 na27 3o27
+A na27 22a27 22a26
+
+FO 3o27 na28 3o28
+A na28 22a28 22a27
+
+FO 3o28 na29 3o29
+A na29 22a29 22a28
+
+FO 3o29 na30 3o30
+A na30 22a30 22a29
+
+FO 3o30 na31 3o31
+A na31 22a31 22a30
+
+FO 3o31 na32 3
+A na32 22 22a31
+
+Arrow 3 2
+Arrow 1 22
+

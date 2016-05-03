@@ -1,0 +1,41 @@
+A 1 cb sp22
+A 2 ca 1
+L 3 a 2
+L 4 b 3
+A 5 b 4
+A 6 sp1 5
+A a f 6
+
+L 1f Af f
+L 2f bf 1f
+A 3f cone 2f
+A 4f Af 3f
+A sp2 bf 4f
+
+L 1ca fca ca
+L 2ca xca 1ca
+A 3ca 5ca 2ca
+FO fca 3ca 4cas
+A 6ca 8cas 5ca
+
+FO 4cas fufu 4ca
+A fufu 8ca 8cas
+
+FO 4ca 6ca 7ca
+A 7ca xca 8ca
+
+FO sp22 sp2 cone
+
+
+FOE qw1 qw2 sp1
+A qw3 qw2 qw1
+A qwla qwra qw3
+FI qwinl1 qwla1 qwla
+FI qwinl2 qwla2 qwla1
+FI qwinl3 qwla3 qwla2
+L qwz qwz qwla3
+FI qwinr1 qwra1 qwra
+FI qwinr2 qwra2 qwra1
+FI qwinr3 qwra3 qwra2
+FI qwin qwb qwa
+L qwa qwb qwra3

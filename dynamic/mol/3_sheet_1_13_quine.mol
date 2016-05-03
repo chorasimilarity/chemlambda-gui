@@ -1,0 +1,126 @@
+A dcbfoal1 dcbfoar1 dcbao1
+A dcbfoal2 dcbfoar2 dcbao2
+A dcbfoal3 dcbfoar3 dcbao3
+
+FO dcbfoin1 dcbfoal2 dcbfoar1
+FO dcbfoin2 dcbfoal3 dcbfoar2
+FO dcbfoin3 dcbfoal1 d20
+
+FI dcbfoal1x dcbfoar1x 15
+FI dcbfoal2x dcbfoar2x dcbao2x
+FI dcbfoal3x dcbfoar3x dcbao3x
+
+FO dcbao1 dcbfoal2x dcbfoar1x
+FO dcbao2 dcbfoal3x dcbfoar2x
+FO dcbao3 dcbfoal1x dcbfoar3x
+
+A dcbfoal1xx dcbfoar1xx dcbao1xx
+A dcbfoal2xx dcbfoar2xx dcbao2xx
+A dcbfoal3xx dcbfoar3xx dcbao3xx
+
+FOE dcbao1x dcbfoal2xx dcfoar1xx
+FOE dcbao2x dcbfoal3xx dcbfoar2xx
+FOE dcbao3x dcbfoal1xx dcbfoar3xx
+
+
+FI 3 1 dcbao1x
+FOE 15 4 dc2
+L 4 1 5
+L 2 3 12
+FOE 5 6 8
+FOE 12 7 9
+A 6 7 14
+A 8 9 11
+FO 10 17 dcfoar3
+FO 16 19 18
+FI 17 19 16
+FI 20 18 13
+A 13 11 10
+
+
+
+
+
+A dcfoal1 dcfoar1 dcao1
+A dcfoal2 dcfoar2 dcao2
+A dcfoal3 dcfoar3 dcao3
+
+FO dcfoin1 dcfoal2 dcfoar1
+FO dcfoin2 dcfoal3 dcfoar2
+FO dcfoin3 dcfoal1 20
+
+FI dcfoal1x dcfoar1x dc15
+FI dcfoal2x dcfoar2x dcao2x
+FI dcfoal3x dcfoar3x dcao3x
+
+FO dcao1 dcfoal2x dcfoar1x
+FO dcao2 dcfoal3x dcfoar2x
+FO dcao3 dcfoal1x dcfoar3x
+
+A dcfoal1xx dcfoar1xx dcao1xx
+A dcfoal2xx dcfoar2xx dcao2xx
+A dcfoal3xx dcfoar3xx dcao3xx
+
+FOE dcao1x dcfoal2xx dfoar1xx
+FOE dcao2x dcfoal3xx dcfoar2xx
+FOE dcao3x dcfoal1xx dcfoar3xx
+
+
+
+FI dc3 dc1 dcao1x
+FOE dc15 dc4 d2
+L dc4 dc1 dc5
+L dc2 dc3 dc12
+FOE dc5 dc6 dc8
+FOE dc12 dc7 dc9
+A dc6 dc7 dc14
+A dc8 dc9 dc11
+FO dc10 dc17 dfoar3
+FO dc16 dc19 dc18
+FI dc17 dc19 dc16
+FI dc20 dc18 dc13
+A dc13 dc11 dc10
+
+
+
+
+A dfoal1 dfoar1 dao1
+A dfoal2 dfoar2 dao2
+A dfoal3 dfoar3 dao3
+
+FO dfoin1 dfoal2 dfoar1
+FO dfoin2 dfoal3 dfoar2
+FO dfoin3 dfoal1 dc20
+
+FI dfoal1x dfoar1x d15
+FI dfoal2x dfoar2x dao2x
+FI dfoal3x dfoar3x dao3x
+
+FO dao1 dfoal2x dfoar1x
+FO dao2 dfoal3x dfoar2x
+FO dao3 dfoal1x dfoar3x
+
+A dfoal1xx dfoar1xx dao1xx
+A dfoal2xx dfoar2xx dao2xx
+A dfoal3xx dfoar3xx dao3xx
+
+FOE dao1x dfoal2xx dcbfoar1xx
+FOE dao2x dfoal3xx dfoar2xx
+FOE dao3x dfoal1xx dfoar3xx
+
+
+FI d3 d1 dao1x
+FOE d15 d4 2
+L d4 d1 d5
+L d2 d3 d12
+FOE d5 d6 d8
+FOE d12 d7 d9
+A d6 d7 d14
+A d8 d9 d11
+FO d10 d17 dcbfoar3
+FO d16 d19 d18
+FI d17 d19 d16
+FI d20 d18 d13
+A d13 d11 d10
+
+

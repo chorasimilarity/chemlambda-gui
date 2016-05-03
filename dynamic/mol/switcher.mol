@@ -1,0 +1,5 @@
+FI a1 31 b1
+L b1 a1 c1
+FO c1 d1 21
+FO d1 e1 f1
+A e1 f1 11

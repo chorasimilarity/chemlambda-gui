@@ -1,0 +1,1246 @@
+A inter outunu out
+
+A num outsuc inter
+
+
+L 1num fnum num
+L 2num xnum 1num
+
+FO fnum m1num le1num
+A m1num ri1num 2num
+
+FO le1num m2num le2num
+A m2num ri2num ri1num
+
+FO le2num m3num le3num
+A m3num ri3num ri2num
+
+FO le3num m4num le4num
+A m4num ri4num ri3num
+
+FO le4num m5num m6num
+A m5num ri5num ri4num
+
+A m6num xnum ri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+A 0eu 0a2 0a1
+A 0a1 0n 0wu
+A 0a7 0a6 0ed
+L 0a8 0a7 0s
+A 0a5 0wd 0a6
+
+A x1inter x1outunu 0a8
+
+A x1num x1outsuc x1inter
+
+
+L x11num x1fnum x1num
+L x12num x1xnum x11num
+
+FO x1fnum x1m1num x1le1num
+A x1m1num x1ri1num x12num
+
+FO x1le1num x1m2num x1le2num
+A x1m2num x1ri2num x1ri1num
+
+FO x1le2num x1m3num x1le3num
+A x1m3num x1ri3num x1ri2num
+
+FO x1le3num x1m4num x1le4num
+A x1m4num x1ri4num x1ri3num
+
+FO x1le4num x1m5num x1m6num
+A x1m5num x1ri5num x1ri4num
+
+A x1m6num x1xnum x1ri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+A x10eu x10a2 x10a1
+A x10a1 x10n x10wu
+A x10a7 x10a6 x10ed
+L x10a8 x10a7 x10s
+A x10a5 x10wd x10a6
+
+L x10a9 x10a9 x10a8
+
+L x10a4 x10a3 x10a2
+L x10a3 x10a5 x10a4
+
+
+
+
+
+A x11eu x11a2 x11a1
+A x11a1 x11n x10eu
+A x11a7 x11a6 x11ed
+L x11a8 x11a7 x11s
+A x11a5 x10ed x11a6
+
+L x11a9 x11a9 x11a8
+
+L x11a4 x11a3 x11a2
+L x11a3 x11a5 x11a4
+
+
+
+
+
+A x12eu x12a2 x12a1
+A x12a1 x12n x11eu
+A x12a7 x12a6 x12ed
+L x12a8 x12a7 x12s
+A x12a5 x11ed x12a6
+
+L x12a9 x12a9 x12a8
+
+L x12a4 x12a3 x12a2
+L x12a3 x12a5 x12a4
+
+
+
+
+
+A x13eu x13a2 x13a1
+A x13a1 x13n x12eu
+A x13a7 x13a6 x13ed
+L x13a8 x13a7 x13s
+A x13a5 x12ed x13a6
+
+L x13a9 x13a9 x13a8
+
+L x13a4 x13a3 x13a2
+L x13a3 x13a5 x13a4
+
+
+
+
+A x14eu x14a2 x14a1
+A x14a1 x14n x13eu
+A x14a7 x14a6 x14ed
+L x14a8 x14a7 x14s
+A x14a5 x13ed x14a6
+
+L x14a9 x14a9 x14a8
+
+L x14a4 x14a3 x14a2
+L x14a3 x14a5 x14a4
+
+
+
+
+
+A x15eu x15a2 x15a1
+A x15a1 x15n x14eu
+A x15a7 x15a6 x15ed
+L x15a8 x15a7 x15s
+A x15a5 x14ed x15a6
+
+L x15a9 x15a9 x15a8
+
+L x15a4 x15a3 x15a2
+L x15a3 x15a5 x15a4
+
+
+
+
+
+A x1ar1 x1ar0 x15eu
+A x1ar2 x15s x1ar1
+A x1ar3 x14s x1ar2
+A x1ar4 x13s x1ar3
+A x1ar5 x12s x1ar4
+A x1ar6 x11s x1ar5
+A x1ar7 x10s x1ar6
+A x1ar8 x15ed x1ar7
+
+
+L x10wu x1ar0 x1br1
+L x1br1 x15n x1br2
+L x1br2 x14n x1br3
+L x1br3 x13n x1br4
+L x1br4 x12n x1br5
+L x1br5 x11n x1br6
+L x1br6 x10n x1br7
+L x1br7 x10wd x1br8
+L x1br8 x1ar8 x1outsuc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L x1p0wu x1par0 x1pbr1
+L x1pbr1 x1p5n x1pbr2
+L x1pbr2 x1p4n x1pbr3
+L x1pbr3 x1p3n x1pbr4
+L x1pbr4 x1p2n x1pbr5
+L x1pbr5 x1p1n x1pbr6
+L x1pbr6 x1p0n x1pbr7
+L x1pbr7 x1p0wd x1outunu
+
+A x1p5n x1par1 x1p5eu
+A x1p4n x1par2 x1par1
+A x1p3n x1par3 x1par2
+A x1p2n x1par4 x1par3
+A x1p1n x1par5 x1par4
+A x1p0n x1par6 x1par5
+A x1p0wd x1par0 x1par6
+
+
+
+L 0a4 0a3 0a2
+L 0a3 0a5 0a4
+
+
+
+
+
+A 1eu 1a2 1a1
+A 1a1 1n 0eu
+A 1a7 1a6 1ed
+L 1a8 1a7 1s
+A 1a5 0ed 1a6
+
+A x2inter x2outunu 1a8
+
+A x2num x2outsuc x2inter
+
+
+L x21num x2fnum x2num
+L x22num x2xnum x21num
+
+FO x2fnum x2m1num x2le1num
+A x2m1num x2ri1num x22num
+
+FO x2le1num x2m2num x2le2num
+A x2m2num x2ri2num x2ri1num
+
+FO x2le2num x2m3num x2le3num
+A x2m3num x2ri3num x2ri2num
+
+FO x2le3num x2m4num x2le4num
+A x2m4num x2ri4num x2ri3num
+
+FO x2le4num x2m5num x2m6num
+A x2m5num x2ri5num x2ri4num
+
+A x2m6num x2xnum x2ri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+A x20eu x20a2 x20a1
+A x20a1 x20n x20wu
+A x20a7 x20a6 x20ed
+L x20a8 x20a7 x20s
+A x20a5 x20wd x20a6
+
+L x20a9 x20a9 x20a8
+
+L x20a4 x20a3 x20a2
+L x20a3 x20a5 x20a4
+
+
+
+
+
+A x21eu x21a2 x21a1
+A x21a1 x21n x20eu
+A x21a7 x21a6 x21ed
+L x21a8 x21a7 x21s
+A x21a5 x20ed x21a6
+
+L x21a9 x21a9 x21a8
+
+L x21a4 x21a3 x21a2
+L x21a3 x21a5 x21a4
+
+
+
+
+
+A x22eu x22a2 x22a1
+A x22a1 x22n x21eu
+A x22a7 x22a6 x22ed
+L x22a8 x22a7 x22s
+A x22a5 x21ed x22a6
+
+L x22a9 x22a9 x22a8
+
+L x22a4 x22a3 x22a2
+L x22a3 x22a5 x22a4
+
+
+
+
+
+A x23eu x23a2 x23a1
+A x23a1 x23n x22eu
+A x23a7 x23a6 x23ed
+L x23a8 x23a7 x23s
+A x23a5 x22ed x23a6
+
+L x23a9 x23a9 x23a8
+
+L x23a4 x23a3 x23a2
+L x23a3 x23a5 x23a4
+
+
+
+
+A x24eu x24a2 x24a1
+A x24a1 x24n x23eu
+A x24a7 x24a6 x24ed
+L x24a8 x24a7 x24s
+A x24a5 x23ed x24a6
+
+L x24a9 x24a9 x24a8
+
+L x24a4 x24a3 x24a2
+L x24a3 x24a5 x24a4
+
+
+
+
+
+A x25eu x25a2 x25a1
+A x25a1 x25n x24eu
+A x25a7 x25a6 x25ed
+L x25a8 x25a7 x25s
+A x25a5 x24ed x25a6
+
+L x25a9 x25a9 x25a8
+
+L x25a4 x25a3 x25a2
+L x25a3 x25a5 x25a4
+
+
+
+
+
+A x2ar1 x2ar0 x25eu
+A x2ar2 x25s x2ar1
+A x2ar3 x24s x2ar2
+A x2ar4 x23s x2ar3
+A x2ar5 x22s x2ar4
+A x2ar6 x21s x2ar5
+A x2ar7 x20s x2ar6
+A x2ar8 x25ed x2ar7
+
+
+L x20wu x2ar0 x2br1
+L x2br1 x25n x2br2
+L x2br2 x24n x2br3
+L x2br3 x23n x2br4
+L x2br4 x22n x2br5
+L x2br5 x21n x2br6
+L x2br6 x20n x2br7
+L x2br7 x20wd x2br8
+L x2br8 x2ar8 x2outsuc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L x2p0wu x2par0 x2pbr1
+L x2pbr1 x2p5n x2pbr2
+L x2pbr2 x2p4n x2pbr3
+L x2pbr3 x2p3n x2pbr4
+L x2pbr4 x2p2n x2pbr5
+L x2pbr5 x2p1n x2pbr6
+L x2pbr6 x2p0n x2pbr7
+L x2pbr7 x2p0wd x2outunu
+
+A x2p5n x2par1 x2p5eu
+A x2p4n x2par2 x2par1
+A x2p3n x2par3 x2par2
+A x2p2n x2par4 x2par3
+A x2p1n x2par5 x2par4
+A x2p0n x2par6 x2par5
+A x2p0wd x2par0 x2par6
+
+
+
+L 1a4 1a3 1a2
+L 1a3 1a5 1a4
+
+
+
+
+
+A 2eu 2a2 2a1
+A 2a1 2n 1eu
+A 2a7 2a6 2ed
+L 2a8 2a7 2s
+A 2a5 1ed 2a6
+
+A x3inter x3outunu 2a8
+
+A x3num x3outsuc x3inter
+
+
+L x31num x3fnum x3num
+L x32num x3xnum x31num
+
+FO x3fnum x3m1num x3le1num
+A x3m1num x3ri1num x32num
+
+FO x3le1num x3m2num x3le2num
+A x3m2num x3ri2num x3ri1num
+
+FO x3le2num x3m3num x3le3num
+A x3m3num x3ri3num x3ri2num
+
+FO x3le3num x3m4num x3le4num
+A x3m4num x3ri4num x3ri3num
+
+FO x3le4num x3m5num x3m6num
+A x3m5num x3ri5num x3ri4num
+
+A x3m6num x3xnum x3ri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+A x30eu x30a2 x30a1
+A x30a1 x30n x30wu
+A x30a7 x30a6 x30ed
+L x30a8 x30a7 x30s
+A x30a5 x30wd x30a6
+
+L x30a9 x30a9 x30a8
+
+L x30a4 x30a3 x30a2
+L x30a3 x30a5 x30a4
+
+
+
+
+
+A x31eu x31a2 x31a1
+A x31a1 x31n x30eu
+A x31a7 x31a6 x31ed
+L x31a8 x31a7 x31s
+A x31a5 x30ed x31a6
+
+L x31a9 x31a9 x31a8
+
+L x31a4 x31a3 x31a2
+L x31a3 x31a5 x31a4
+
+
+
+
+
+A x32eu x32a2 x32a1
+A x32a1 x32n x31eu
+A x32a7 x32a6 x32ed
+L x32a8 x32a7 x32s
+A x32a5 x31ed x32a6
+
+L x32a9 x32a9 x32a8
+
+L x32a4 x32a3 x32a2
+L x32a3 x32a5 x32a4
+
+
+
+
+
+A x33eu x33a2 x33a1
+A x33a1 x33n x32eu
+A x33a7 x33a6 x33ed
+L x33a8 x33a7 x33s
+A x33a5 x32ed x33a6
+
+L x33a9 x33a9 x33a8
+
+L x33a4 x33a3 x33a2
+L x33a3 x33a5 x33a4
+
+
+
+
+A x34eu x34a2 x34a1
+A x34a1 x34n x33eu
+A x34a7 x34a6 x34ed
+L x34a8 x34a7 x34s
+A x34a5 x33ed x34a6
+
+L x34a9 x34a9 x34a8
+
+L x34a4 x34a3 x34a2
+L x34a3 x34a5 x34a4
+
+
+
+
+
+A x35eu x35a2 x35a1
+A x35a1 x35n x34eu
+A x35a7 x35a6 x35ed
+L x35a8 x35a7 x35s
+A x35a5 x34ed x35a6
+
+L x35a9 x35a9 x35a8
+
+L x35a4 x35a3 x35a2
+L x35a3 x35a5 x35a4
+
+
+
+
+
+A x3ar1 x3ar0 x35eu
+A x3ar2 x35s x3ar1
+A x3ar3 x34s x3ar2
+A x3ar4 x33s x3ar3
+A x3ar5 x32s x3ar4
+A x3ar6 x31s x3ar5
+A x3ar7 x30s x3ar6
+A x3ar8 x35ed x3ar7
+
+
+L x30wu x3ar0 x3br1
+L x3br1 x35n x3br2
+L x3br2 x34n x3br3
+L x3br3 x33n x3br4
+L x3br4 x32n x3br5
+L x3br5 x31n x3br6
+L x3br6 x30n x3br7
+L x3br7 x30wd x3br8
+L x3br8 x3ar8 x3outsuc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L x3p0wu x3par0 x3pbr1
+L x3pbr1 x3p5n x3pbr2
+L x3pbr2 x3p4n x3pbr3
+L x3pbr3 x3p3n x3pbr4
+L x3pbr4 x3p2n x3pbr5
+L x3pbr5 x3p1n x3pbr6
+L x3pbr6 x3p0n x3pbr7
+L x3pbr7 x3p0wd x3outunu
+
+A x3p5n x3par1 x3p5eu
+A x3p4n x3par2 x3par1
+A x3p3n x3par3 x3par2
+A x3p2n x3par4 x3par3
+A x3p1n x3par5 x3par4
+A x3p0n x3par6 x3par5
+A x3p0wd x3par0 x3par6
+
+
+
+L 2a4 2a3 2a2
+L 2a3 2a5 2a4
+
+
+
+
+
+A 3eu 3a2 3a1
+A 3a1 3n 2eu
+A 3a7 3a6 3ed
+L 3a8 3a7 3s
+A 3a5 2ed 3a6
+
+A x4inter x4outunu 3a8
+
+A x4num x4outsuc x4inter
+
+
+L x41num x4fnum x4num
+L x42num x4xnum x41num
+
+FO x4fnum x4m1num x4le1num
+A x4m1num x4ri1num x42num
+
+FO x4le1num x4m2num x4le2num
+A x4m2num x4ri2num x4ri1num
+
+FO x4le2num x4m3num x4le3num
+A x4m3num x4ri3num x4ri2num
+
+FO x4le3num x4m4num x4le4num
+A x4m4num x4ri4num x4ri3num
+
+FO x4le4num x4m5num x4m6num
+A x4m5num x4ri5num x4ri4num
+
+A x4m6num x4xnum x4ri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+A x40eu x40a2 x40a1
+A x40a1 x40n x40wu
+A x40a7 x40a6 x40ed
+L x40a8 x40a7 x40s
+A x40a5 x40wd x40a6
+
+L x40a9 x40a9 x40a8
+
+L x40a4 x40a3 x40a2
+L x40a3 x40a5 x40a4
+
+
+
+
+
+A x41eu x41a2 x41a1
+A x41a1 x41n x40eu
+A x41a7 x41a6 x41ed
+L x41a8 x41a7 x41s
+A x41a5 x40ed x41a6
+
+L x41a9 x41a9 x41a8
+
+L x41a4 x41a3 x41a2
+L x41a3 x41a5 x41a4
+
+
+
+
+
+A x42eu x42a2 x42a1
+A x42a1 x42n x41eu
+A x42a7 x42a6 x42ed
+L x42a8 x42a7 x42s
+A x42a5 x41ed x42a6
+
+L x42a9 x42a9 x42a8
+
+L x42a4 x42a3 x42a2
+L x42a3 x42a5 x42a4
+
+
+
+
+
+A x43eu x43a2 x43a1
+A x43a1 x43n x42eu
+A x43a7 x43a6 x43ed
+L x43a8 x43a7 x43s
+A x43a5 x42ed x43a6
+
+L x43a9 x43a9 x43a8
+
+L x43a4 x43a3 x43a2
+L x43a3 x43a5 x43a4
+
+
+
+
+A x44eu x44a2 x44a1
+A x44a1 x44n x43eu
+A x44a7 x44a6 x44ed
+L x44a8 x44a7 x44s
+A x44a5 x43ed x44a6
+
+L x44a9 x44a9 x44a8
+
+L x44a4 x44a3 x44a2
+L x44a3 x44a5 x44a4
+
+
+
+
+
+A x45eu x45a2 x45a1
+A x45a1 x45n x44eu
+A x45a7 x45a6 x45ed
+L x45a8 x45a7 x45s
+A x45a5 x44ed x45a6
+
+L x45a9 x45a9 x45a8
+
+L x45a4 x45a3 x45a2
+L x45a3 x45a5 x45a4
+
+
+
+
+
+A x4ar1 x4ar0 x45eu
+A x4ar2 x45s x4ar1
+A x4ar3 x44s x4ar2
+A x4ar4 x43s x4ar3
+A x4ar5 x42s x4ar4
+A x4ar6 x41s x4ar5
+A x4ar7 x40s x4ar6
+A x4ar8 x45ed x4ar7
+
+
+L x40wu x4ar0 x4br1
+L x4br1 x45n x4br2
+L x4br2 x44n x4br3
+L x4br3 x43n x4br4
+L x4br4 x42n x4br5
+L x4br5 x41n x4br6
+L x4br6 x40n x4br7
+L x4br7 x40wd x4br8
+L x4br8 x4ar8 x4outsuc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L x4p0wu x4par0 x4pbr1
+L x4pbr1 x4p5n x4pbr2
+L x4pbr2 x4p4n x4pbr3
+L x4pbr3 x4p3n x4pbr4
+L x4pbr4 x4p2n x4pbr5
+L x4pbr5 x4p1n x4pbr6
+L x4pbr6 x4p0n x4pbr7
+L x4pbr7 x4p0wd x4outunu
+
+A x4p5n x4par1 x4p5eu
+A x4p4n x4par2 x4par1
+A x4p3n x4par3 x4par2
+A x4p2n x4par4 x4par3
+A x4p1n x4par5 x4par4
+A x4p0n x4par6 x4par5
+A x4p0wd x4par0 x4par6
+
+
+
+L 3a4 3a3 3a2
+L 3a3 3a5 3a4
+
+
+
+
+A 4eu 4a2 4a1
+A 4a1 4n 3eu
+A 4a7 4a6 4ed
+L 4a8 4a7 4s
+A 4a5 3ed 4a6
+
+A x5inter x5outunu 4a8
+
+A x5num x5outsuc x5inter
+
+
+L x51num x5fnum x5num
+L x52num x5xnum x51num
+
+FO x5fnum x5m1num x5le1num
+A x5m1num x5ri1num x52num
+
+FO x5le1num x5m2num x5le2num
+A x5m2num x5ri2num x5ri1num
+
+FO x5le2num x5m3num x5le3num
+A x5m3num x5ri3num x5ri2num
+
+FO x5le3num x5m4num x5le4num
+A x5m4num x5ri4num x5ri3num
+
+FO x5le4num x5m5num x5m6num
+A x5m5num x5ri5num x5ri4num
+
+A x5m6num x5xnum x5ri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+A x50eu x50a2 x50a1
+A x50a1 x50n x50wu
+A x50a7 x50a6 x50ed
+L x50a8 x50a7 x50s
+A x50a5 x50wd x50a6
+
+L x50a9 x50a9 x50a8
+
+L x50a4 x50a3 x50a2
+L x50a3 x50a5 x50a4
+
+
+
+
+
+A x51eu x51a2 x51a1
+A x51a1 x51n x50eu
+A x51a7 x51a6 x51ed
+L x51a8 x51a7 x51s
+A x51a5 x50ed x51a6
+
+L x51a9 x51a9 x51a8
+
+L x51a4 x51a3 x51a2
+L x51a3 x51a5 x51a4
+
+
+
+
+
+A x52eu x52a2 x52a1
+A x52a1 x52n x51eu
+A x52a7 x52a6 x52ed
+L x52a8 x52a7 x52s
+A x52a5 x51ed x52a6
+
+L x52a9 x52a9 x52a8
+
+L x52a4 x52a3 x52a2
+L x52a3 x52a5 x52a4
+
+
+
+
+
+A x53eu x53a2 x53a1
+A x53a1 x53n x52eu
+A x53a7 x53a6 x53ed
+L x53a8 x53a7 x53s
+A x53a5 x52ed x53a6
+
+L x53a9 x53a9 x53a8
+
+L x53a4 x53a3 x53a2
+L x53a3 x53a5 x53a4
+
+
+
+
+A x54eu x54a2 x54a1
+A x54a1 x54n x53eu
+A x54a7 x54a6 x54ed
+L x54a8 x54a7 x54s
+A x54a5 x53ed x54a6
+
+L x54a9 x54a9 x54a8
+
+L x54a4 x54a3 x54a2
+L x54a3 x54a5 x54a4
+
+
+
+
+
+A x55eu x55a2 x55a1
+A x55a1 x55n x54eu
+A x55a7 x55a6 x55ed
+L x55a8 x55a7 x55s
+A x55a5 x54ed x55a6
+
+L x55a9 x55a9 x55a8
+
+L x55a4 x55a3 x55a2
+L x55a3 x55a5 x55a4
+
+
+
+
+
+A x5ar1 x5ar0 x55eu
+A x5ar2 x55s x5ar1
+A x5ar3 x54s x5ar2
+A x5ar4 x53s x5ar3
+A x5ar5 x52s x5ar4
+A x5ar6 x51s x5ar5
+A x5ar7 x50s x5ar6
+A x5ar8 x55ed x5ar7
+
+
+L x50wu x5ar0 x5br1
+L x5br1 x55n x5br2
+L x5br2 x54n x5br3
+L x5br3 x53n x5br4
+L x5br4 x52n x5br5
+L x5br5 x51n x5br6
+L x5br6 x50n x5br7
+L x5br7 x50wd x5br8
+L x5br8 x5ar8 x5outsuc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L x5p0wu x5par0 x5pbr1
+L x5pbr1 x5p5n x5pbr2
+L x5pbr2 x5p4n x5pbr3
+L x5pbr3 x5p3n x5pbr4
+L x5pbr4 x5p2n x5pbr5
+L x5pbr5 x5p1n x5pbr6
+L x5pbr6 x5p0n x5pbr7
+L x5pbr7 x5p0wd x5outunu
+
+A x5p5n x5par1 x5p5eu
+A x5p4n x5par2 x5par1
+A x5p3n x5par3 x5par2
+A x5p2n x5par4 x5par3
+A x5p1n x5par5 x5par4
+A x5p0n x5par6 x5par5
+A x5p0wd x5par0 x5par6
+
+
+
+L 4a4 4a3 4a2
+L 4a3 4a5 4a4
+
+
+
+
+
+A 5eu 5a2 5a1
+A 5a1 5n 4eu
+A 5a7 5a6 5ed
+L 5a8 5a7 5s
+A 5a5 4ed 5a6
+
+A x6inter x6outunu 5a8
+
+A x6num x6outsuc x6inter
+
+
+L x61num x6fnum x6num
+L x62num x6xnum x61num
+
+FO x6fnum x6m1num x6le1num
+A x6m1num x6ri1num x62num
+
+FO x6le1num x6m2num x6le2num
+A x6m2num x6ri2num x6ri1num
+
+FO x6le2num x6m3num x6le3num
+A x6m3num x6ri3num x6ri2num
+
+FO x6le3num x6m4num x6le4num
+A x6m4num x6ri4num x6ri3num
+
+FO x6le4num x6m5num x6m6num
+A x6m5num x6ri5num x6ri4num
+
+A x6m6num x6xnum x6ri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+A x60eu x60a2 x60a1
+A x60a1 x60n x60wu
+A x60a7 x60a6 x60ed
+L x60a8 x60a7 x60s
+A x60a5 x60wd x60a6
+
+L x60a9 x60a9 x60a8
+
+L x60a4 x60a3 x60a2
+L x60a3 x60a5 x60a4
+
+
+
+
+
+A x61eu x61a2 x61a1
+A x61a1 x61n x60eu
+A x61a7 x61a6 x61ed
+L x61a8 x61a7 x61s
+A x61a5 x60ed x61a6
+
+L x61a9 x61a9 x61a8
+
+L x61a4 x61a3 x61a2
+L x61a3 x61a5 x61a4
+
+
+
+
+
+A x62eu x62a2 x62a1
+A x62a1 x62n x61eu
+A x62a7 x62a6 x62ed
+L x62a8 x62a7 x62s
+A x62a5 x61ed x62a6
+
+L x62a9 x62a9 x62a8
+
+L x62a4 x62a3 x62a2
+L x62a3 x62a5 x62a4
+
+
+
+
+
+A x63eu x63a2 x63a1
+A x63a1 x63n x62eu
+A x63a7 x63a6 x63ed
+L x63a8 x63a7 x63s
+A x63a5 x62ed x63a6
+
+L x63a9 x63a9 x63a8
+
+L x63a4 x63a3 x63a2
+L x63a3 x63a5 x63a4
+
+
+
+
+A x64eu x64a2 x64a1
+A x64a1 x64n x63eu
+A x64a7 x64a6 x64ed
+L x64a8 x64a7 x64s
+A x64a5 x63ed x64a6
+
+L x64a9 x64a9 x64a8
+
+L x64a4 x64a3 x64a2
+L x64a3 x64a5 x64a4
+
+
+
+
+
+A x65eu x65a2 x65a1
+A x65a1 x65n x64eu
+A x65a7 x65a6 x65ed
+L x65a8 x65a7 x65s
+A x65a5 x64ed x65a6
+
+L x65a9 x65a9 x65a8
+
+L x65a4 x65a3 x65a2
+L x65a3 x65a5 x65a4
+
+
+
+
+
+A x6ar1 x6ar0 x65eu
+A x6ar2 x65s x6ar1
+A x6ar3 x64s x6ar2
+A x6ar4 x63s x6ar3
+A x6ar5 x62s x6ar4
+A x6ar6 x61s x6ar5
+A x6ar7 x60s x6ar6
+A x6ar8 x65ed x6ar7
+
+
+L x60wu x6ar0 x6br1
+L x6br1 x65n x6br2
+L x6br2 x64n x6br3
+L x6br3 x63n x6br4
+L x6br4 x62n x6br5
+L x6br5 x61n x6br6
+L x6br6 x60n x6br7
+L x6br7 x60wd x6br8
+L x6br8 x6ar8 x6outsuc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L x6p0wu x6par0 x6pbr1
+L x6pbr1 x6p5n x6pbr2
+L x6pbr2 x6p4n x6pbr3
+L x6pbr3 x6p3n x6pbr4
+L x6pbr4 x6p2n x6pbr5
+L x6pbr5 x6p1n x6pbr6
+L x6pbr6 x6p0n x6pbr7
+L x6pbr7 x6p0wd x6outunu
+
+A x6p5n x6par1 x6p5eu
+A x6p4n x6par2 x6par1
+A x6p3n x6par3 x6par2
+A x6p2n x6par4 x6par3
+A x6p1n x6par5 x6par4
+A x6p0n x6par6 x6par5
+A x6p0wd x6par0 x6par6
+
+
+
+L 5a4 5a3 5a2
+L 5a3 5a5 5a4
+
+
+
+
+
+A ar1 ar0 5eu
+A ar2 5s ar1
+A ar3 4s ar2
+A ar4 3s ar3
+A ar5 2s ar4
+A ar6 1s ar5
+A ar7 0s ar6
+A ar8 5ed ar7
+
+
+L 0wu ar0 br1
+L br1 5n br2
+L br2 4n br3
+L br3 3n br4
+L br4 2n br5
+L br5 1n br6
+L br6 0n br7
+L br7 0wd br8
+L br8 ar8 outsuc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L p0wu par0 pbr1
+L pbr1 p5n pbr2
+L pbr2 p4n pbr3
+L pbr3 p3n pbr4
+L pbr4 p2n pbr5
+L pbr5 p1n pbr6
+L pbr6 p0n pbr7
+L pbr7 p0wd outunu
+
+A p5n par1 p5eu
+A p4n par2 par1
+A p3n par3 par2
+A p2n par4 par3
+A p1n par5 par4
+A p0n par6 par5
+A p0wd par0 par6
+

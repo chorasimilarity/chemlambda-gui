@@ -1,0 +1,53 @@
+A num succ inter
+
+L out in succ
+
+
+FO 2in m22 m2
+FO m2 m21 m20
+
+FO 1in m12 m1
+FO m1 m11 m10
+
+FO 0in m02 m0
+FO m0 m01 m00
+
+A m22 m12 q2
+A q2 m02 2out
+
+A m21 m11 q1
+A q1 m01 1out
+
+A m20 m10 q0
+A q0 m00 0out
+
+L 0iin 0in 1iin
+L 1iin 1in 2iin
+L 2iin 2in out
+
+A in 2out 1inn
+A 1inn 1out 0inn
+A 0inn 0out 0iin
+
+
+
+L 2num 1num num
+L 3num xnum 2num
+FO 1num m1num l1pnum
+A m1num r1pnum 3num
+
+FO l1pnum m1pnum l1ppnum
+A m1pnum r1ppnum r1pnum
+
+FO l1ppnum m1ppnum l1pppnum
+A m1ppnum r1pppnum r1ppnum
+
+FO l1pppnum m1pppnum l1num
+A m1pppnum r1num r1pppnum
+
+
+FO l1num m2num l2num
+A m2num r2num r1num
+A l2num xnum r2num
+
+

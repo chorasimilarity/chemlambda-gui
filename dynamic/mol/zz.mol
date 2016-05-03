@@ -1,0 +1,14 @@
+L 1 y 0
+A 2 y 1
+A 3 4 2
+FO 5 3 4
+L 6 x 5
+A f 7 6
+L 8 y1 7
+A 9 y1 8
+A 10 11 9
+FO x 10 11
+
+A 0 r f
+
+L q q r

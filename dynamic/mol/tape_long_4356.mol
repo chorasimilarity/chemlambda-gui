@@ -1,0 +1,66 @@
+FOE 13 6 5
+FOE 14 4 3
+
+A 23 12 13
+FO 12p b13 b12
+A b13 b12 12
+L 24 12p 14
+A 33 22 23
+L 34 22 24
+A 43 32 33
+FO 32p b33 b32
+A b33 b32 32
+L 44 32p 34
+A 1 42 43
+L 2 42 44
+
+A 23o 12o 1
+FO 12po b13o b12o
+A b13o b12o 12o
+L 24o 12po 2
+A 33o 22o 23o
+L 34o 22o 24o
+A 43o 32o 33o
+FO 32po b33o b32o
+A b33o b32o 32o
+L 44o 32po 34o
+A zz13 42o 43o
+L zz14 42o 44o
+
+
+A zz23 zz12 zz13
+FO zz12p zzb13 zzb12
+A zzb13 zzb12 zz12
+L zz24 zz12p zz14
+A zz33 zz22 zz23
+L zz34 zz22 zz24
+A zz43 zz32 zz33
+FO zz32p zzb33 zzb32
+A zzb33 zzb32 zz32
+L zz44 zz32p zz34
+A zz1 zz42 zz43
+L zz2 zz42 zz44
+
+A zz23o zz12o zz1
+FO zz12po zzb13o zzb12o
+A zzb13o zzb12o zz12o
+L zz24o zz12po zz2
+A zz33o zz22o zz23o
+L zz34o zz22o zz24o
+A zz43o zz32o zz33o
+FO zz32po zzb33o zzb32o
+A zzb33o zzb32o zz32o
+L zz44o zz32po zz34o
+A 1o zz42o zz43o
+L 2o zz42o zz44o
+
+
+Arrow 4 1a
+Arrow 3 2a
+
+Arrow 5 1b
+Arrow 6 2b
+
+
+FI 1a 1b 1o
+FI 2a 2b 2o

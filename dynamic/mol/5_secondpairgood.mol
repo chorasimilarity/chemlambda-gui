@@ -1,0 +1,87 @@
+L cbdcatwo1 cbdcatwox cbdcatwo
+L cbdcatwo2 cbdcatwoy cbdcatwo1
+FO cbdcatwox cbdcatwox1 cbtwox2
+A cbdcatwox1 cbdcatwo3 cbdcatwo2
+A cbdcatwox2 cbdcatwoy cbdcatwo3
+
+L cbdcathree1 cbdcathreex cbdcathree
+L cbdcathree2 cbdcathreey cbdcathree1
+FO cbdcathreex cbdcathreex1 cbdcathreetrans
+FO cbdcathreetrans cbdcathreex2 cbdcathreex3
+A cbdcathreex1 cbdcathree3 cbdcathree2
+A cbdcathreex2 cbdcathree4 cbdcathree3
+A cbdcathreex3 cbdcathreey cbdcathree4
+
+A cbdcapairin cbdcatwo cbpair1
+A cbdcapair1 cbdcathree cbdcapairout
+L cbdcapairout cbdcapairin cbdcapair
+A cbdcapair cbdcasecond cbdcaout
+L cbdcasecond1 cbdcaout1 cbdcasecond
+L cbdcasecond2 cbdcaoout cbdcasecond1
+
+
+
+L cbtwo1 cbtwox cbtwo
+L cbtwo2 cbtwoy cbtwo1
+FO cbtwox cbtwox1 ctwox2
+A cbtwox1 cbtwo3 cbtwo2
+A cbtwox2 cbtwoy cbtwo3
+
+L cbthree1 cbthreex cbthree
+L cbthree2 cbthreey cbthree1
+FO cbthreex cbthreex1 cbthreetrans
+FO cbthreetrans cbthreex2 cbthreex3
+A cbthreex1 cbthree3 cbthree2
+A cbthreex2 cbthree4 cbthree3
+A cbthreex3 cbthreey cbthree4
+
+A cbpairin cbtwo cpair1
+A cbpair1 cbthree cbpairout
+L cbpairout cbpairin cbpair
+A cbpair cbsecond cbout
+L cbsecond1 cbout1 cbsecond
+L cbsecond2 cboout cbsecond1
+
+
+
+L ctwo1 ctwox ctwo
+L ctwo2 ctwoy ctwo1
+FO ctwox ctwox1 twox2
+A ctwox1 ctwo3 ctwo2
+A ctwox2 ctwoy ctwo3
+
+L cthree1 cthreex cthree
+L cthree2 cthreey cthree1
+FO cthreex cthreex1 cthreetrans
+FO cthreetrans cthreex2 cthreex3
+A cthreex1 cthree3 cthree2
+A cthreex2 cthree4 cthree3
+A cthreex3 cthreey cthree4
+
+A cpairin ctwo pair1
+A cpair1 cthree cpairout
+L cpairout cpairin cpair
+A cpair csecond cout
+L csecond1 cout1 csecond
+L csecond2 coout csecond1
+
+L two1 twox two
+L two2 twoy two1
+FO twox twox1 cbdcatwox2
+A twox1 two3 two2
+A twox2 twoy two3
+
+L three1 threex three
+L three2 threey three1
+FO threex threex1 threetrans
+FO threetrans threex2 threex3
+A threex1 three3 three2
+A threex2 three4 three3
+A threex3 threey three4
+
+A pairin two cbdcapair1
+A pair1 three pairout
+L pairout pairin pair
+A pair second out
+L second1 out1 second
+L second2 oout second1

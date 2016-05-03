@@ -1,0 +1,418 @@
+L awin aw1 aw3
+FOE aw1 awfooty aw2
+L aw2 awout aw4
+
+FOE aw4 aw5 aw9
+A aw5 aw10 awfootx
+
+
+FOE aw3 aw6 aw11
+A aw6 aw12 aw10
+
+FOE aw9 aw7 aw9d
+A aw7 aw15 aw12
+FOE aw11 aw8 aw11d
+A aw8 aw12d aw15
+
+
+
+FOE aw9d aw7d aw9dd
+A aw7d aw15d aw12d
+FOE aw11d aw8d aw11dd
+A aw8d aw12dd aw15d
+
+FOE aw9dd aw7dd aw14d
+A aw7dd aw15dd aw12dd
+FOE aw11dd aw8dd aw13d
+A aw8dd aw16d aw15dd
+
+
+
+
+A aw13d aw19 aw17
+A aw14d aw17 aw18
+FOE aw18 aw16d aw19
+
+
+FOE a1 a2 a3
+FOE a3 a4 a5
+
+Arrow a5 awin
+Arrow awout a6
+
+FOE a6 a7 a8
+FOE a8 a9 a10
+FOE a10 a11 a12o
+FOE a12i a13 a14
+
+Arrow a12o awwwin
+Arrow awwwout a12i
+
+FOE a14 a15 a16
+FOE a16 a161 a162
+FOE a162 a163 a164o
+FOE a164i a165 a166
+
+Arrow a164o awwwwin
+Arrow awwwwout a164i
+
+FOE a166 a17 a181
+FOE a181 a182 a18
+
+Arrow a18 awwin
+Arrow awwout a1
+
+
+FI awfooty awfootx awfoot
+
+
+
+L awwin aww1 aww3
+FOE aww1 awwfooty aww2
+L aww2 awwout aww4
+
+FOE aww4 aww5 aww9
+A aww5 aww10 awwfootx
+
+
+FOE aww3 aww6 aww11
+A aww6 aww12 aww10
+
+FOE aww9 aww7 aww9d
+A aww7 aww15 aww12
+FOE aww11 aww8 aww11d
+A aww8 aww12d aww15
+
+
+
+FOE aww9d aww7d aww9dd
+A aww7d aww15d aww12d
+FOE aww11d aww8d aww11dd
+A aww8d aww12dd aww15d
+
+FOE aww9dd aww7dd aww14d
+A aww7dd aww15dd aww12dd
+FOE aww11dd aww8dd aww13d
+A aww8dd aww16d aww15dd
+
+
+
+
+A aww13d aww19 aww17
+A aww14d aww17 aww18
+FOE aww18 aww16d aww19
+
+FI awwfooty awwfootx awwfoot
+
+
+
+
+
+
+
+
+L awwwin awww1 awww3
+FOE awww1 awwwfooty awww2
+L awww2 awwwout awww4
+
+FOE awww4 awww5 awww9
+A awww5 awww10 awwwfootx
+
+
+FOE awww3 awww6 awww11
+A awww6 awww12 awww10
+
+FOE awww9 awww7 awww9d
+A awww7 awww15 awww12
+FOE awww11 awww8 awww11d
+A awww8 awww12d awww15
+
+
+
+FOE awww9d awww7d awww9dd
+A awww7d awww15d awww12d
+FOE awww11d awww8d awww11dd
+A awww8d awww12dd awww15d
+
+FOE awww9dd awww7dd awww14d
+A awww7dd awww15dd awww12dd
+FOE awww11dd awww8dd awww13d
+A awww8dd awww16d awww15dd
+
+
+
+
+A awww13d awww19 awww17
+A awww14d awww17 awww18
+FOE awww18 awww16d awww19
+
+
+FI awwwfooty awwwfootx awwwfoot
+
+
+
+L awwwwin awwww1 awwww3
+FOE awwww1 awwwwfooty awwww2
+L awwww2 awwwwout awwww4
+
+FOE awwww4 awwww5 awwww9
+A awwww5 awwww10 awwwwfootx
+
+
+FOE awwww3 awwww6 awwww11
+A awwww6 awwww12 awwww10
+
+FOE awwww9 awwww7 awwww9d
+A awwww7 awwww15 awwww12
+FOE awwww11 awwww8 awwww11d
+A awwww8 awwww12d awwww15
+
+
+
+FOE awwww9d awwww7d awwww9dd
+A awwww7d awwww15d awwww12d
+FOE awwww11d awwww8d awwww11dd
+A awwww8d awwww12dd awwww15d
+
+FOE awwww9dd awwww7dd awwww14d
+A awwww7dd awwww15dd awwww12dd
+FOE awwww11dd awwww8dd awwww13d
+A awwww8dd awwww16d awwww15dd
+
+
+
+
+A awwww13d awwww19 awwww17
+A awwww14d awwww17 awwww18
+FOE awwww18 awwww16d awwww19
+
+
+FI awwwwfooty awwwwfootx awwwwfoot
+
+
+L win w1 w3
+FOE w1 wfooty w2
+L w2 wout w4
+
+FOE w4 w5 w9
+A w5 w10 wfootx
+
+
+FOE w3 w6 w11
+A w6 w12 w10
+
+FOE w9 w7 w9d
+A w7 w15 w12
+FOE w11 w8 w11d
+A w8 w12d w15
+
+
+
+FOE w9d w7d w9dd
+A w7d w15d w12d
+FOE w11d w8d w11dd
+A w8d w12dd w15d
+
+FOE w9dd w7dd w14d
+A w7dd w15dd w12dd
+FOE w11dd w8dd w13d
+A w8dd w16d w15dd
+
+
+
+
+A w13d w19 w17
+A w14d w17 w18
+FOE w18 w16d w19
+
+
+FOE 1 2 3
+
+FI a2 2 aa2
+
+FOE 3 4 5
+
+Arrow 5 win
+Arrow wout 6
+
+FOE 6 7 8
+
+FI a7 7 aa7
+
+FOE 8 9 10
+
+FI a9 9 aa9
+
+FOE 10 11 12o
+FOE 12i 13 14
+
+Arrow 12o wwwin
+Arrow wwwout 12i
+
+FOE 14 15 16
+
+FI a15 15 aa15
+
+FOE 16 161 162
+
+FI a161 161 aa161
+
+FOE 162 163 164o
+FOE 164i 165 166
+
+Arrow 164o wwwwin
+Arrow wwwwout 164i
+
+FOE 166 17 181
+
+FI a17 17 aa17
+
+FOE 181 182 18
+
+Arrow 18 wwin
+Arrow wwout 1
+
+
+FI wfooty wfootx wfoot
+
+FI wfoot wwfoot wfoo
+
+FI wwwfoot wwwwfoot wwfoo
+
+FI wfoo wwfoo wfo
+
+
+FI awfoot awwfoot awfoo
+
+FI awwwfoot awwwwfoot awwfoo
+
+FI awfoo awwfoo awfo
+
+FI wfo awfo awfifi
+
+
+L wwin ww1 ww3
+FOE ww1 wwfooty ww2
+L ww2 wwout ww4
+
+FOE ww4 ww5 ww9
+A ww5 ww10 wwfootx
+
+
+FOE ww3 ww6 ww11
+A ww6 ww12 ww10
+
+FOE ww9 ww7 ww9d
+A ww7 ww15 ww12
+FOE ww11 ww8 ww11d
+A ww8 ww12d ww15
+
+
+
+FOE ww9d ww7d ww9dd
+A ww7d ww15d ww12d
+FOE ww11d ww8d ww11dd
+A ww8d ww12dd ww15d
+
+FOE ww9dd ww7dd ww14d
+A ww7dd ww15dd ww12dd
+FOE ww11dd ww8dd ww13d
+A ww8dd ww16d ww15dd
+
+
+
+
+A ww13d ww19 ww17
+A ww14d ww17 ww18
+FOE ww18 ww16d ww19
+
+FI wwfooty wwfootx wwfoot
+
+
+
+
+
+
+
+
+L wwwin www1 www3
+FOE www1 wwwfooty www2
+L www2 wwwout www4
+
+FOE www4 www5 www9
+A www5 www10 wwwfootx
+
+
+FOE www3 www6 www11
+A www6 www12 www10
+
+FOE www9 www7 www9d
+A www7 www15 www12
+FOE www11 www8 www11d
+A www8 www12d www15
+
+
+
+FOE www9d www7d www9dd
+A www7d www15d www12d
+FOE www11d www8d www11dd
+A www8d www12dd www15d
+
+FOE www9dd www7dd www14d
+A www7dd www15dd www12dd
+FOE www11dd www8dd www13d
+A www8dd www16d www15dd
+
+
+
+
+A www13d www19 www17
+A www14d www17 www18
+FOE www18 www16d www19
+
+
+FI wwwfooty wwwfootx wwwfoot
+
+
+
+L wwwwin wwww1 wwww3
+FOE wwww1 wwwwfooty wwww2
+L wwww2 wwwwout wwww4
+
+FOE wwww4 wwww5 wwww9
+A wwww5 wwww10 wwwwfootx
+
+
+FOE wwww3 wwww6 wwww11
+A wwww6 wwww12 wwww10
+
+FOE wwww9 wwww7 wwww9d
+A wwww7 wwww15 wwww12
+FOE wwww11 wwww8 wwww11d
+A wwww8 wwww12d wwww15
+
+
+
+FOE wwww9d wwww7d wwww9dd
+A wwww7d wwww15d wwww12d
+FOE wwww11d wwww8d wwww11dd
+A wwww8d wwww12dd wwww15d
+
+FOE wwww9dd wwww7dd wwww14d
+A wwww7dd wwww15dd wwww12dd
+FOE wwww11dd wwww8dd wwww13d
+A wwww8dd wwww16d wwww15dd
+
+
+
+
+A wwww13d wwww19 wwww17
+A wwww14d wwww17 wwww18
+FOE wwww18 wwww16d wwww19
+
+
+FI wwwwfooty wwwwfootx wwwwfoot
+
+
+
+

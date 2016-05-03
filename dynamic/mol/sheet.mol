@@ -1,0 +1,24 @@
+A foal1 foar1 ao1
+A foal2 foar2 ao2
+A foal3 foar3 ao3
+
+FO foin1 foal2 foar1
+FO foin2 foal3 foar2
+FO foin3 foal1 foar3
+
+FI foal1x foar1x ao1x
+FI foal2x foar2x ao2x
+FI foal3x foar3x ao3x
+
+FO ao1 foal2x foar1x
+FO ao2 foal3x foar2x
+FO ao3 foal1x foar3x
+
+A foal1xx foar1xx ao1xx
+A foal2xx foar2xx ao2xx
+A foal3xx foar3xx ao3xx
+
+FOE ao1x foal2xx foar1xx
+FOE ao2x foal3xx foar2xx
+FOE ao3x foal1xx foar3xx
+

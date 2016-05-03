@@ -1,0 +1,182 @@
+L 0p lp outsuc
+L 1s lfs 0p
+L 0s 1in 1s
+L 0i 0in 0s
+
+A 1i 0out 0i
+A 0f 1out 1i
+A lp lfs 0f
+
+
+
+FO 1in a b
+A succ a 1out
+A tms b c
+A c 0in 0out
+
+A z0eu z0a2 z0a1
+A z0a1 z0n z0wu
+A z0a7 z0a6 z0ed
+L z0a8 z0a7 z0s
+A z0a5 z0wd z0a6
+
+L z0a9 z0a9 z0a8
+
+L z0a4 z0a3 z0a2
+L z0a3 z0a5 z0a4
+
+
+
+
+
+A z1eu z1a2 z1a1
+A z1a1 z1n z0eu
+A z1a7 z1a6 z1ed
+L z1a8 z1a7 z1s
+A z1a5 z0ed z1a6
+
+L z1a9 z1a9 z1a8
+
+L z1a4 z1a3 z1a2
+L z1a3 z1a5 z1a4
+
+
+
+
+
+A z2eu z2a2 z2a1
+A z2a1 z2n z1eu
+A z2a7 z2a6 z2ed
+L z2a8 z2a7 z2s
+A z2a5 z1ed z2a6
+
+L z2a9 z2a9 z2a8
+
+L z2a4 z2a3 z2a2
+L z2a3 z2a5 z2a4
+
+
+
+
+
+A z3eu z3a2 z3a1
+A z3a1 z3n z2eu
+A z3a7 z3a6 z3ed
+L z3a8 z3a7 z3s
+A z3a5 z2ed z3a6
+
+L z3a9 z3a9 z3a8
+
+L z3a4 z3a3 z3a2
+L z3a3 z3a5 z3a4
+
+
+
+
+A z4eu z4a2 z4a1
+A z4a1 z4n z3eu
+A z4a7 z4a6 z4ed
+L z4a8 z4a7 z4s
+A z4a5 z3ed z4a6
+
+L z4a9 z4a9 z4a8
+
+L z4a4 z4a3 z4a2
+L z4a3 z4a5 z4a4
+
+
+
+
+
+A z5eu z5a2 z5a1
+A z5a1 z5n z4eu
+A z5a7 z5a6 z5ed
+L z5a8 z5a7 z5s
+A z5a5 z4ed z5a6
+
+L z5a9 z5a9 z5a8
+
+L z5a4 z5a3 z5a2
+L z5a3 z5a5 z5a4
+
+
+
+
+
+A zar1 zar0 z5eu
+A zar2 z5s zar1
+A zar3 z4s zar2
+A zar4 z3s zar3
+A zar5 z2s zar4
+A zar6 z1s zar5
+A zar7 z0s zar6
+A zar8 z5ed zar7
+
+
+L z0wu zar0 zbr1
+L zbr1 z5n zbr2
+L zbr2 z4n zbr3
+L zbr3 z3n zbr4
+L zbr4 z2n zbr5
+L zbr5 z1n zbr6
+L zbr6 z0n zbr7
+L zbr7 z0wd zbr8
+L zbr8 zar8 succ
+
+
+
+
+
+L 1tms mtms tms
+L 2tms ntms 1tms
+L 3tms ftms 2tms
+A mtms 4tms 3tms
+A ntms ftms 4tms
+
+
+
+A inter outunu out
+A num outsuc inter
+
+
+L p1s plfs outunu
+L p0s p1in p1s
+L p0i p0in p0s
+A plfs p1in p1i
+A p1i p0in p0i
+
+
+A out 1numb numbers
+A numbers 1nums 2numb
+A 2numb 2nums outfinal
+
+
+
+L 11nums f1nums 1nums
+L 21nums x1nums 11nums
+A f1nums x1nums 21nums
+
+
+L 12nums f2nums 2nums
+L 22nums x2nums 12nums
+A f2nums x2nums 22nums
+
+
+L 1num fnum num
+L 2num xnum 1num
+
+FO fnum m1num le1num
+A m1num ri1num 2num
+
+FO le1num m2num le2num
+A m2num ri2num ri1num
+
+FO le2num m3num le4num
+A m3num ri4num ri2num
+
+
+FO le4num m5num m6num
+A m5num ri5num ri4num
+
+A m6num xnum ri5num
+

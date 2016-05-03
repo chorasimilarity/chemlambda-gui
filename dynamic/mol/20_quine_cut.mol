@@ -1,0 +1,55 @@
+A 15 2 6a
+L 11 21 2
+FI 21 35 34a
+L 20 35 36a
+FOE 10 20 11a 
+
+L 9 19a 10a
+FOE 8 18 9
+L 18 31a 32a
+FI 19 31 28
+FI 28 42 26a
+L 27 42 39a
+A 30 16 27
+FOE 6 16 7
+A 17 7 8a
+FOE 26 30a 17
+
+FOE 24 1 15a
+A 36 1 37
+FI 34 37 33
+FI 33 32 38
+FI 38 39 24a
+
+
+
+
+A mid 11a mid1
+A mid1 10a mid2
+A mid2 19a mid3
+A mid3 31a mid4
+A mid4 6a mid5
+A mid5 8a mid6
+A mid6 26a mid7
+A mid7 30a mid8
+A mid8 15a mid9
+A mid9 36a mid10
+A mid10 34a mid11
+A mid11 32a mid12
+A mid12 39a mid13
+A mid13 24a mid14
+
+L umid1 11 mid
+L umid2 10 umid1
+L umid3 19 umid2
+L umid4 31 umid3
+L umid5 6 umid4
+L umid6 8 umid5
+L umid7 26 umid6
+L umid8 30 umid7
+L umid9 15 umid8
+L umid10 36 umid9
+L umid11 34 umid10
+L umid12 32 umid11
+L umid13 39 umid12
+L mid14 24 umid13

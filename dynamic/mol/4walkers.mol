@@ -1,0 +1,84 @@
+FOE n1 m1 n2
+FOE n2 m2 n3
+FOE n3 m3 n4
+FOE n4 m4 n5
+FOE n5 m5 n6
+FOE n6 m6 n7
+FOE n7 m7 n8
+FOE n8 m8 n9
+FOE n9 m9 n10
+
+FOE n10 m10 n11
+FOE n11 m11 n12
+FOE n12 m12 n13
+FOE n13 m13 n14
+FOE n14 m14 n15
+FOE n15 m15 n16
+FOE n16 m16 n17
+FOE n17 m17 n18
+FOE n18 m18 n19
+FOE n19 m19 n20
+
+FOE n20 m20 n21
+FOE n21 m21 n22
+FOE n22 m22 n23
+FOE n23 m23 n24
+FOE n24 m24 n25
+FOE n25 m25 n26
+FOE n26 m26 n27
+FOE n27 m27 n28
+FOE n28 m28 n29
+FOE n29 m29 n30
+FOE n30 m30 n31
+
+A m1 r1 r13
+A m2 r2 r14
+A m3 r3 r15
+A m4 r4 r16
+A m5 r5 r17
+A m6 r6 r18
+A m7 r7 r19
+A m8 r8 r20
+A m9 r9 r11
+A m10 r10 r12
+
+A m11 r11 r23
+A m12 r12 r24
+A m13 r13 r25
+A m14 r14 r26
+A m15 r15 r27
+A m16 r16 r28
+A m17 r17 r29
+A m18 r18 r30
+A m19 r19 r21
+A m20 r20 r22
+
+
+A m21 r21 r3
+A m22 r22 r4
+A m23 r23 r5
+A m24 r24 r6
+A m25 r25 r7
+A m26 r26 r8
+A m27 r27 r9
+A m28 r28 r10
+A m29 r29 r1
+A m30 r30 r2
+
+
+
+A g1 n31 h1
+L h1 g1 d1
+
+
+A g2 d1 h2
+L h2 g2 d2
+
+
+
+A g3 d2 h3
+L h3 g3 d3
+
+A g4 d3 h4
+L h4 g4 n1
+

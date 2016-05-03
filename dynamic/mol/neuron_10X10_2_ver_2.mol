@@ -1,0 +1,284 @@
+L v0p vlp voutsuc
+L v1s vlfs v0p
+L v0sfin v9in v1s
+
+L v0sin vw8in v0sw1
+L v0sw1 vw7in v0sw2
+L v0sw2 vw6in v0sw3
+L v0sw3 vw5in v0sw4
+L v0sw4 vw4in v0sw5
+L v0sw5 vw3in v0sw6
+L v0sw6 vw2in v0sw7
+L v0sw7 vw1in v0sfin
+
+L v0i v0in v0sin
+
+A v1ifin v0out v0i
+
+A vwiout1 vw1out v1ifin
+A vwiout2 vw2out vwiout1
+A vwiout3 vw3out vwiout2
+A vwiout4 vw4out vwiout3
+A vwiout5 vw5out vwiout4
+A vwiout6 vw6out vwiout5
+A vwiout7 vw7out vwiout6
+A v1iin vw8out vwiout7
+A v0f v9out v1iin
+A vlp vlfs v0f
+
+
+Arrow vw7in vw8out
+Arrow vw8in v9out
+
+
+
+FO v9in va v0out
+A v0in vsucc1 vc
+A vc va vw1out
+
+
+FO vw1in vaq2 vw2out
+A vw2in vsucc2 vcq2
+A vcq2 vaq2 vw3out
+
+FO vw3in vaq3 vw4out
+A vw4in vsucc3 vcq3
+A vcq3 vaq3 vw5out
+
+FO vw5in vaq4 vw6out
+A vw6in vsucc4 vcq4
+A vcq4 vaq4 vw7out
+
+
+FO vsucc vsucc1 vsuccq1
+FO vsuccq1 vsucc2 vsuccq2
+FO vsuccq2 vsucc3 vsucc4
+
+
+
+
+
+A vinter voutunu succ
+A vnum voutsuc vinter
+
+
+L vp1s vplfs voutunu
+L vp0sfin vp9in vp1s
+L vp8sf vp8in vp0sfin
+L vp7sf vp7in vp8sf
+L vp6sf vp6in vp7sf
+L vp5sf vp5in vp6sf
+L vp4sf vp4in vp5sf
+L vp3sf vp3in vp4sf
+L vp2sf vp2in vp3sf
+L vp0s vp1in vp2sf
+L vp0i vp0in vp0s
+A vplfs vp9in vp1iin
+A vp1iin vp8in vp2iin
+A vp2iin vp7in vp3iin
+A vp3iin vp6in vp4iin
+A vp4iin vp5in vp5iin
+A vp5iin vp4in vp6iin
+A vp6iin vp3in vp7iin
+A vp7iin vp2in vp8iin
+A vp8iin vp1in vp1i
+A vp1i vp0in vp0i
+
+
+A vout v1numb vnumbers
+A vnumbers outer1 v2numb
+A v2numb outer2 v3numb
+A v3numb outer3 v4numb
+A v4numb outer4 v5numb
+A v5numb outer5 v6numb
+A v6numb outer6 v7numb
+A v7numb outer7 v8numb
+A v8numb outer8 v9numb
+A v9numb outer9 v10numb
+A v10numb outer10 voutfinals
+
+
+
+L vounum2 vouter9 v1numb
+L vounum3 vouter8 vounum2
+L vounum4 vouter7 vounum3
+L vounum5 vouter6 vounum4
+L vounum6 vouter5 vounum5
+L vounum7 vouter4 vounum6
+L vounum8 vouter3 vounum7
+L vounum9 vouter2 vounum8
+L vounum10 vouter1 vounum9
+L vounum11 vouter0 vounum10
+
+
+
+
+
+
+
+L v1num vfnum vnum
+L v2num vxnum v1num
+
+FO vfnum vm1num vle4num
+A vm1num vri4num v2num
+
+
+FO vle4num vm5num vm6num
+A vm5num vri5num vri4num
+
+A vm6num vxnum vri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L 0p lp outsuc
+L 1s lfs 0p
+L 0sfin 9in 1s
+
+L 0sin w8in 0sw1
+L 0sw1 w7in 0sw2
+L 0sw2 w6in 0sw3
+L 0sw3 w5in 0sw4
+L 0sw4 w4in 0sw5
+L 0sw5 w3in 0sw6
+L 0sw6 w2in 0sw7
+L 0sw7 w1in 0sfin
+
+L 0i 0in 0sin
+
+A 1ifin 0out 0i
+
+A wiout1 w1out 1ifin
+A wiout2 w2out wiout1
+A wiout3 w3out wiout2
+A wiout4 w4out wiout3
+A wiout5 w5out wiout4
+A wiout6 w6out wiout5
+A wiout7 w7out wiout6
+A 1iin w8out wiout7
+A 0f 9out 1iin
+A lp lfs 0f
+
+
+Arrow w7in w8out
+Arrow w8in 9out
+
+
+
+FO 9in a 0out
+A 0in succ1 c
+A c a w1out
+
+
+FO w1in aq2 w2out
+A w2in succ2 cq2
+A cq2 aq2 w3out
+
+FO w3in aq3 w4out
+A w4in succ3 cq3
+A cq3 aq3 w5out
+
+FO w5in aq4 w6out
+A w6in succ4 cq4
+A cq4 aq4 w7out
+
+
+FO succ succ1 succq1
+FO succq1 succ2 succq2
+FO succq2 succ3 succ4
+
+
+
+
+
+
+A inter outunu vsucc
+A num outsuc inter
+
+
+L p1s plfs outunu
+L p0sfin p9in p1s
+L p8sf p8in p0sfin
+L p7sf p7in p8sf
+L p6sf p6in p7sf
+L p5sf p5in p6sf
+L p4sf p4in p5sf
+L p3sf p3in p4sf
+L p2sf p2in p3sf
+L p0s p1in p2sf
+L p0i p0in p0s
+A plfs p9in p1iin
+A p1iin p8in p2iin
+A p2iin p7in p3iin
+A p3iin p6in p4iin
+A p4iin p5in p5iin
+A p5iin p4in p6iin
+A p6iin p3in p7iin
+A p7iin p2in p8iin
+A p8iin p1in p1i
+A p1i p0in p0i
+
+
+A out 1numb numbers
+A numbers 1nums 2numb
+A 2numb 2nums 3numb
+A 3numb 3nums 4numb
+A 4numb 4nums 5numb
+A 5numb 5nums 6numb
+A 6numb vouter6 7numb
+A 7numb vouter7 8numb
+A 8numb vouter8 9numb
+A 9numb vouter9 10numb
+A 10numb vouter10 outfinals
+
+
+
+L ounum2 outer9 1numb
+L ounum3 outer8 ounum2
+L ounum4 outer7 ounum3
+L ounum5 outer6 ounum4
+L ounum6 outer5 ounum5
+L ounum7 outer4 ounum6
+L ounum8 outer3 ounum7
+L ounum9 outer2 ounum8
+L ounum10 outer1 ounum9
+L ounum11 outer0 ounum10
+
+
+
+
+FO 1numes 1nums 2nus
+FO 2nus 2nums 3nus
+FO 3nus 3nums 4nus
+FO 4nus 4nums 5nums
+
+
+L 11numes f1numes 1numes
+L 21numes x1numes 11numes
+A f1numes x1numes 21numes
+
+
+L 1num fnum num
+L 2num xnum 1num
+
+FO fnum m1num le4num
+A m1num ri4num 2num
+
+
+FO le4num m5num m6num
+A m5num ri5num ri4num
+
+A m6num xnum ri5num
+

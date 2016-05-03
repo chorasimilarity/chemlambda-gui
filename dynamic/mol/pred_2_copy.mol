@@ -1,0 +1,36 @@
+L 3 2 1
+
+L 6 6 5
+L 4 3 7
+L 7 8 9
+A 10 8 11
+A 12 11 13
+L 13 12 14
+L 14 10 a43
+A a42 5 4
+A a03 1 a02
+FO a13b a11 a003
+FO a003 outi a03
+A a11 a02 a12b
+
+
+FO a43 a41 a13
+A a41 a12 a42
+FO a13 u1 u2l
+A u1 u2r a12
+FO u2l u2 u3l
+FO u3l u3 u4l
+FO u4l u4 u5l
+FO u5l u5 u6l
+FO u6l u6 u7l
+FO u7l u7 u8l
+FO u8l u8 u9l
+FO u9l u9 a13b
+A u2 u3r u2r
+A u3 u4r u3r
+A u4 u5r u4r
+A u5 u6r u5r
+A u6 u7r u6r
+A u7 u8r u7r
+A u8 u9r u8r
+A u9 a12b u9r

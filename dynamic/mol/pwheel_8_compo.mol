@@ -1,0 +1,50 @@
+L com41 z1 com11
+A p1 ap21 com41
+A q1 z1 ap21
+FOE p10 p1 q1
+
+L com42 z2 com12
+A p2 ap22 com42
+A q2 z2 ap22
+FOE p20 p2 q2
+
+L com43 z3 com13
+A p3 ap23 com43
+A q3 z3 ap23
+FOE p30 p3 q3
+
+
+L com44 z4 com14
+A p4 ap24 com44
+A q4 z4 ap24
+FOE p40 p4 q4
+
+L com45 z5 com15
+A p5 ap25 com45
+A q5 z5 ap25
+FOE p50 p5 q5
+
+L com46 z6 com16
+A p6 ap26 com46
+A q6 z6 ap26
+FOE p60 p6 q6
+
+L com47 z7 com17
+A p7 ap27 com47
+A q7 z7 ap27
+FOE p70 p7 q7
+
+L com48 z8 com18
+A p8 ap28 com48
+A q8 z8 ap28
+FOE p80 p8 q8
+
+
+L a8 a1 p10
+L a1 a2 p20
+L a2 a3 p30
+L a3 a4 p40
+L a4 a5 p50
+L a5 a6 p60
+L a6 a7 p70
+L a7 a8 p80

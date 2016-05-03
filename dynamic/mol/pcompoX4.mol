@@ -1,0 +1,215 @@
+L ya8 yxa1 yp1
+L yxa1 yxa2 yxp2
+L yxa2 yxa3 yxp3
+L yxa3 yxa4 yxp4
+L yxa4 yxa5 yxp5
+L yxa5 yxa6 yxp6
+L yxa6 yxa7 yxp7
+L yxa7 yxa8 yxp8
+
+
+L yb8 yxb5 yq1
+L yxb1 yxb2 yxq2
+L yxb2 yxb3 yxq3
+L yxb3 yxb4 yxq4
+L yxb4 yxb1 yxq5
+L yxb5 yxb6 yxq6
+L yxb6 yxb7 yxq7
+L yxb7 yxb8 yxq8
+
+L yxcom41 yxz1 yxcom11
+A yxp1 yxap21 yxcom41
+A yxq1 yxz1 yxap21
+
+L yxcom42 yxz2 yxcom12
+A yxp2 yxap22 yxcom42
+A yxq2 yxz2 yxap22
+
+L yxcom43 yxz3 yxcom13
+A yxp3 yxap23 yxcom43
+A yxq3 yxz3 yxap23
+
+L yxcom44 yxz4 yxcom14
+A yxp4 yxap24 yxcom44
+A yxq4 yxz4 yxap24
+
+L yxcom45 yxz5 yxcom15
+A yxp5 yxap25 yxcom45
+A yxq5 yxz5 yxap25
+
+L yxcom46 yxz6 yxcom16
+A yxp6 yxap26 yxcom46
+A yxq6 yxz6 yxap26
+
+L yxcom47 yxz7 yxcom17
+A yxp7 yxap27 yxcom47
+A yxq7 yxz7 yxap27
+
+L yxcom48 yxz8 yxcom18
+A yxp8 yxap28 yxcom48
+A yxq8 yxz8 yxap28
+
+
+
+
+
+
+L xa8 ya1 xp1
+L ya1 ya2 yp2
+L ya2 ya3 yp3
+L ya3 ya4 yp4
+L ya4 ya5 yp5
+L ya5 ya6 yp6
+L ya6 ya7 yp7
+L ya7 ya8 yp8
+
+
+L xb8 yb5 xq1
+L yb1 yb2 yq2
+L yb2 yb3 yq3
+L yb3 yb4 yq4
+L yb4 yb1 yq5
+L yb5 yb6 yq6
+L yb6 yb7 yq7
+L yb7 yb8 yq8
+
+L ycom41 yz1 ycom11
+A yp1 yap21 ycom41
+A yq1 yz1 yap21
+
+L ycom42 yz2 ycom12
+A yp2 yap22 ycom42
+A yq2 yz2 yap22
+
+L ycom43 yz3 ycom13
+A yp3 yap23 ycom43
+A yq3 yz3 yap23
+
+L ycom44 yz4 ycom14
+A yp4 yap24 ycom44
+A yq4 yz4 yap24
+
+L ycom45 yz5 ycom15
+A yp5 yap25 ycom45
+A yq5 yz5 yap25
+
+L ycom46 yz6 ycom16
+A yp6 yap26 ycom46
+A yq6 yz6 yap26
+
+L ycom47 yz7 ycom17
+A yp7 yap27 ycom47
+A yq7 yz7 yap27
+
+L ycom48 yz8 ycom18
+A yp8 yap28 ycom48
+A yq8 yz8 yap28
+
+
+
+L a8 xa1 p1
+L xa1 xa2 xp2
+L xa2 xa3 xp3
+L xa3 xa4 xp4
+L xa4 xa5 xp5
+L xa5 xa6 xp6
+L xa6 xa7 xp7
+L xa7 xa8 xp8
+
+
+L b8 xb5 q1
+L xb1 xb2 xq2
+L xb2 xb3 xq3
+L xb3 xb4 xq4
+L xb4 xb1 xq5
+L xb5 xb6 xq6
+L xb6 xb7 xq7
+L xb7 xb8 xq8
+
+L xcom41 xz1 xcom11
+A xp1 xap21 xcom41
+A xq1 xz1 xap21
+
+L xcom42 xz2 xcom12
+A xp2 xap22 xcom42
+A xq2 xz2 xap22
+
+L xcom43 xz3 xcom13
+A xp3 xap23 xcom43
+A xq3 xz3 xap23
+
+L xcom44 xz4 xcom14
+A xp4 xap24 xcom44
+A xq4 xz4 xap24
+
+L xcom45 xz5 xcom15
+A xp5 xap25 xcom45
+A xq5 xz5 xap25
+
+L xcom46 xz6 xcom16
+A xp6 xap26 xcom46
+A xq6 xz6 xap26
+
+L xcom47 xz7 xcom17
+A xp7 xap27 xcom47
+A xq7 xz7 xap27
+
+L xcom48 xz8 xcom18
+A xp8 xap28 xcom48
+A xq8 xz8 xap28
+
+
+
+
+
+
+L yxa8 a1 yxp1
+L a1 a2 p2
+L a2 a3 p3
+L a3 a4 p4
+L a4 a5 p5
+L a5 a6 p6
+L a6 a7 p7
+L a7 a8 p8
+
+
+L yxb8 b5 yxq1
+L b1 b2 q2
+L b2 b3 q3
+L b3 b4 q4
+L b4 b1 q5
+L b5 b6 q6
+L b6 b7 q7
+L b7 b8 q8
+
+L com41 z1 com11
+A p1 ap21 com41
+A q1 z1 ap21
+
+L com42 z2 com12
+A p2 ap22 com42
+A q2 z2 ap22
+
+L com43 z3 com13
+A p3 ap23 com43
+A q3 z3 ap23
+
+L com44 z4 com14
+A p4 ap24 com44
+A q4 z4 ap24
+
+L com45 z5 com15
+A p5 ap25 com45
+A q5 z5 ap25
+
+L com46 z6 com16
+A p6 ap26 com46
+A q6 z6 ap26
+
+L com47 z7 com17
+A p7 ap27 com47
+A q7 z7 ap27
+
+L com48 z8 com18
+A p8 ap28 com48
+A q8 z8 ap28

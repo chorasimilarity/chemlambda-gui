@@ -1,0 +1,23 @@
+L 1 x out
+L 2 y 1
+A y l 3
+A 3 r 2
+FOE out out1 out2
+FOE out2 l r
+A out1 u 4
+A 4 v out3
+
+L 1lef xlef u
+L 2lef ylef 1lef
+A xlef u1 2lef
+
+T ylef
+
+L 1lef1 xlef1 v
+L 2lef1 ylef1 1lef1
+A xlef1 v1 2lef1
+
+T ylef1
+
+L uu uu u1
+L vv vv v1

@@ -1,0 +1,13 @@
+A succ vbn out
+L 1succ nsucc succ
+L 2succ fsucc 1succ
+L 3succ xsucc 2succ
+FOE fsucc f1succ f2succ
+A f1succ 4succ 3succ
+A 5succ xsucc 4succ
+A nsucc f2succ 5succ
+L 1vbn fvbn vbn
+L 2vbn xvbn 1vbn
+A fvbn 3vbn 4vbn
+FOE 4vbn 2vbn 3vbn
+T xvbn

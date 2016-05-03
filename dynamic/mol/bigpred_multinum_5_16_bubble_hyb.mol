@@ -1,0 +1,288 @@
+FO bbba1 bbba2 bbba3
+L bbbhwa4 bbba5 bbba7
+FO bbba6 bbba8 bbba9
+FOE bbbhwa10 bbba11 bbba12
+FI bbba7 bbba20 bbba10
+FI bbbhwa2 bbba8 bbba6
+FOE bbba17 bbba13 bbba14
+FI bbba33 bbba9 bbba16
+A bbba11 bbba13 bbba21
+A bbba12 bbba14 bbba4
+FI bbba19 bbba16 bbba20
+FI bbba5 bbba22 bbba17
+FOE bbba21 bbba18 bbba23
+FI bbba15 bbba24 bbba22
+L bbba18 bbba24 bbba1
+L bbba23 bbba15 bbba19
+FI bbba3 bbb2 bbb1
+FO bbb1 bbb2 bbba33
+FO bbba1x bbba2x bbba3x
+L bbba4x bbba5x bbba7x
+FO bbba6x bbba8x bbba9x
+FOE bbba10x bbba11x bbba12x
+FI bbba7x bbba20x bbba10x
+FI bbba2x bbba8x bbba6x
+FOE bbba17x bbba13x bbba14x
+FI bbba33x bbba9x bbba16x
+A bbba11x bbba13x bbba21x
+A bbba12x bbba14x bbba4x
+FI bbba19x bbba16x bbba20x
+FI bbba5x bbba22x bbba17x
+FOE bbba21x bbba18x bbba23x
+FI bbbka15x bbba24x bbba22x
+L bbba18x bbba24x bbba1x
+L bbbka23x bbba15x bbba19x
+FI bbba3x bbb2x bbb1x
+FO bbbk1x bbb2x bbba33x
+
+
+FO bbbwa1 bbbwa2 bbbka3
+L bbbwa4 bbbwa5 bbbwa7
+FO bbbwa6 bbbwa8 bbbka9
+FOE bbbwa10 bbbwa11 bbbwa12
+FI bbbwa7 bbbwa20 bbbka10
+FI bbbwa2 bbbwa8 bbbwa6
+FOE bbbwa17 bbbwa13 bbbka14
+FI bbbwa33 bbbwa9 bbbwa16
+A bbbwa11 bbbwa13 bbbka21
+A bbbwa12 bbbwa14 bbbwa4
+FI bbbwa19 bbbwa16 bbbka20
+FI bbbwa5 bbbwa22 bbbwa17
+FOE bbbwa21 bbbwa18 bbbka23
+FI bbbwa15 bbbwa24 bbbwa22
+L bbbwa18 bbbwa24 bbbka1
+L bbbwa23 bbbwa15 bbbwa19
+FI bbbwa3 bbbw2 bbbk1
+FO bbbw1 bbbw2 bbbwa33
+FO bbbwa1x bbbwa2x bbbka3x
+L bbbwa4x bbbwa5x bbbwa7x
+FO bbbwa6x bbbwa8x bbbka9x
+FOE bbbwa10x bbbwa11x bbbwa12x
+FI bbbwa7x bbbwa20x bbbka10x
+FI bbbwa2x bbbwa8x bbbwa6x
+FOE bbbwa17x bbbwa13x bbbka14x
+FI bbbwa33x bbbwa9x bbbwa16x
+A bbbwa11x bbbwa13x bbbka21x
+A bbbwa12x bbbwa14x bbbwa4x
+FI bbbwa19x bbbwa16x bbbka20x
+FI bbbwa5x bbbwa22x bbbwa17x
+FOE bbbwa21x bbbwa18x bbbka23x
+FI bbbwa15x bbbwa24x bbbwa22x
+L bbbwa18x bbbwa24x bbbka1x
+L bbbwa23x bbbwa15x bbbwa19x
+FI bbbwa3x bbbw2x bbbk1x
+FO bbbw1x bbbw2x bbbwa33x
+
+FO bbbka1 bbbka2 bbbwa3
+L bbbka4 bbbka5 bbbka7
+FO bbbka6 bbbka8 bbbwa9
+FOE bbbka10 bbbka11 bbbka12
+FI bbbka7 bbbka20 bbbwa10
+FI bbbka2 bbbka8 bbbka6
+FOE bbbka17 bbbka13 bbbwa14
+FI bbbka33 bbbka9 bbbka16
+A bbbka11 bbbka13 bbbwa21
+A bbbka12 bbbka14 bbbka4
+FI bbbka19 bbbka16 bbbwa20
+FI bbbka5 bbbka22 bbbka17
+FOE bbbka21 bbbka18 bbbwa23
+FI bbbka15 bbbka24 bbbka22
+L bbbka18 bbbka24 bbbwa1
+L bbbka23 bbbka15 bbbka19
+FI bbbka3 bbbk2 bbbw1
+FO bbbk1 bbbk2 bbbka33
+FO bbbka1x bbbka2x bbbwa3x
+L bbbka4x bbbka5x bbbka7x
+FO bbbka6x bbbka8x bbbwa9x
+FOE bbbka10x bbbka11x bbbka12x
+FI bbbka7x bbbka20x bbbwa10x
+FI bbbka2x bbbka8x bbbka6x
+FOE bbbka17x bbbka13x bbbwa14x
+FI bbbka33x bbbka9x bbbka16x
+A bbbka11x bbbka13x bbbwa21x
+A bbbka12x bbbka14x bbbka4x
+FI bbbka19x bbbka16x bbbwa20x
+FI bbbka5x bbbka22x bbbka17x
+FOE bbbka21x bbbka18x bbbwa23x
+FI bbba15x bbbka24x bbbka22x
+L bbbka18x bbbka24x bbbwa1x
+L bbba23x bbbka15x bbbka19x
+FI bbbka3x bbbk2x bbbw1x
+FO bbb1x bbbk2x bbbka33x
+
+
+
+
+
+
+
+
+
+FO bbbhwa1 bbbhwa2 bbbhka3
+L bbba4 bbbhwa5 bbbhwa7
+FO bbbhwa6 bbbhwa8 bbbhka9
+FOE bbba10 bbbhwa11 bbbhwa12
+FI bbbhwa7 bbbhwa20 bbbhka10
+FI bbba2 bbbhwa8 bbbhwa6
+FOE bbbhwa17 bbbhwa13 bbbhka14
+FI bbbhwa33 bbbhwa9 bbbhwa16
+A bbbhwa11 bbbhwa13 bbbhka21
+A bbbhwa12 bbbhwa14 bbbhwa4
+FI bbbhwa19 bbbhwa16 bbbhka20
+FI bbbhwa5 bbbhwa22 bbbhwa17
+FOE bbbhwa21 bbbhwa18 bbbhka23
+FI bbbhwa15 bbbhwa24 bbbhwa22
+L bbbhwa18 bbbhwa24 bbbhka1
+L bbbhwa23 bbbhwa15 bbbhwa19
+FI bbbhwa3 bbbhw2 bbbhk1
+FO bbbhw1 bbbhw2 bbbhwa33
+FO bbbhwa1x bbbhwa2x bbbhka3x
+L bbbhwa4x bbbhwa5x bbbhwa7x
+FO bbbhwa6x bbbhwa8x bbbhka9x
+FOE bbbhwa10x bbbhwa11x bbbhwa12x
+FI bbbhwa7x bbbhwa20x bbbhka10x
+FI bbbhwa2x bbbhwa8x bbbhwa6x
+FOE bbbhwa17x bbbhwa13x bbbhka14x
+FI bbbhwa33x bbbhwa9x bbbhwa16x
+A bbbhwa11x bbbhwa13x bbbhka21x
+A bbbhwa12x bbbhwa14x bbbhwa4x
+FI bbbhwa19x bbbhwa16x bbbhka20x
+FI bbbhwa5x bbbhwa22x bbbhwa17x
+FOE bbbhwa21x bbbhwa18x bbbhka23x
+FI bbbhwa15x bbbhwa24x bbbhwa22x
+L bbbhwa18x bbbhwa24x bbbhka1x
+L bbbhwa23x bbbhwa15x bbbhwa19x
+FI bbbhwa3x bbbhw2x bbbhk1x
+FO bbbhw1x bbbhw2x bbbhwa33x
+
+FO bbbhka1 bbbhka2 bbbhwa3
+L bbbhka4 bbbhka5 bbbhka7
+FO bbbhka6 bbbhka8 bbbhwa9
+FOE bbbhka10 bbbhka11 bbbhka12
+FI bbbhka7 bbbhka20 bbbhwa10
+FI bbbhka2 bbbhka8 bbbhka6
+FOE bbbhka17 bbbhka13 bbbhwa14
+FI bbbhka33 bbbhka9 bbbhka16
+A bbbhka11 bbbhka13 bbbhwa21
+A bbbhka12 bbbhka14 bbbhka4
+FI bbbhka19 bbbhka16 bbbhwa20
+FI bbbhka5 bbbhka22 bbbhka17
+FOE bbbhka21 bbbhka18 bbbhwa23
+FI bbbhka15 bbbhka24 bbbhka22
+L bbbhka18 bbbhka24 bbbhwa1
+L bbbhka23 bbbhka15 bbbhka19
+FI bbbhka3 bbbhk2 bbbhw1
+FO bbbhk1 bbbhk2 bbbhka33
+FO bbbhka1x bbbhka2x bbbhwa3x
+L bbbhka4x bbbhka5x bbbhka7x
+FO bbbhka6x bbbhka8x bbbhwa9x
+FOE bbbhka10x bbbhka11x bbbhka12x
+FI bbbhka7x bbbhka20x bbbhwa10x
+FI bbbhka2x bbbhka8x bbbhka6x
+FOE bbbhka17x bbbhka13x bbbhwa14x
+FI bbbhka33x bbbhka9x bbbhka16x
+A bbbhka11x bbbhka13x bbbhwa21x
+A bbbhka12x bbbhka14x bbbhka4x
+FI bbbhka19x bbbhka16x bbbhwa20x
+FI bbbhka5x bbbhka22x bbbhka17x
+FOE bbbhka21x bbbhka18x bbbhwa23x
+FI bbbhka15x bbbhka24x bbbhka22x
+L bbbhka18x bbbhka24x bbbhwa1x
+L bbbhka23x bbbhka15x bbbhka19x
+FI bbbhka3x bbbhk2x bbbhw1x
+FO bbbhk1x bbbhk2x bbbhka33x
+
+
+FOE 2 12 3a
+A 12 22a 1
+
+
+FOE 3a na1 3o1
+A na1 22a1 22a
+
+FOE 3o1 na2 3o2
+A na2 22a2 22a1
+
+FOE 3o2 na3 3o3
+A na3 22a3 22a2
+
+FOE 3o3 na4 l5hnum
+A na4 a4bnum 22a3
+
+
+FOE l5bnum na30 3o30
+A na30 22a30 a4hnum
+
+FOE 3o30 na31 3o31
+A na31 22a31 22a30
+
+FOE 3o31 na32 3
+A na32 22 22a31
+
+
+
+FOE 3 13 4
+FOE 4 14 5
+FOE 6 16 7
+FOE 8 18 9
+FOE 10 20 11
+FOE 24 29 15
+FOE 26 30 17
+
+
+A 23 13 22
+A 41 25 40
+A 15 5 6
+A 29 14 25
+A 30 16 27
+A 17 7 8
+A 36 1 37
+
+FI 28 42 26
+FI 33 32 38
+FI 38 39 24
+FI 19 31 28
+FI 21 35 34
+FI 34 37 33
+
+L 40 41 23
+L 27 42 39
+L 18 31 32
+L 9 19 10
+L 20 35 36
+L 11 21 2
+
+
+
+
+
+
+
+
+
+FO a b 2num
+L b u a
+FOE 2num n1num l1num
+A n1num a1num 3num
+
+
+FOE l1num n4num l55num
+A n4num a11num a1num
+
+FOE l55num n44anum l5anum
+A n44anum a4lnum a11num
+
+
+
+
+FOE l5anum n44bnum l5bnum
+A n44bnum a4hnum a4lnum
+
+FOE l5hnum n44inum l5num
+A n44inum a4anum a4bnum
+
+A l5num 4num a4anum
+
+FOE 3num 3numa 3numb
+FI 4numa 4numb 4num
+FOE u ua ub

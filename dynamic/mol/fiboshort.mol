@@ -1,0 +1,109 @@
+L s1 sa sout
+A sa sbe s3
+A s3 sce s4
+A s4 sde s1
+
+
+L s1de sbde sde
+L sbde scde s1de
+T scde
+
+L s1ce sbce sce
+A sbce s4ce s1ce
+A s5ce s6ce s4ce
+
+L s15ce sc5ce s5ce
+L s25ce sd5ce s15ce
+A sc5ce sd5ce s25ce
+
+L s16ce sc6ce s6ce
+L sd6ce sd6ce s16ce
+T sc6ce
+
+
+L s1be sbbe sbe
+A sbbe s2be s1be
+
+L s12be sc2be s2be
+L s22be sd2be s12be
+L s32be se2be s22be
+
+A se2be s42be s52be
+A s52be sc2be1 s32be
+
+FO sc2be sc2be1 c2be2
+
+L s142be sf42be s42be
+L s242be sg42be s142be
+
+FO sf42be sf42be1 sf42be2
+
+A sc2be2 sf42be1 s342be
+A s342be s442be s242be
+
+A sd2be sf42be2 s1442be
+A s1442be sg442be s442be
+
+A sout snum souta
+
+L s2num s1num snum
+L s3num sxnum s2num
+FO s1num sm1num sl1pnum
+A sm1num sr1pnum s3num
+
+FO sl1pnum sm1pnum sl1num
+A sm1pnum sr1num sr1pnum
+
+
+FO sl1num sm2num sl2num
+A sm2num sr2num sr1num
+A sl2num sxnum sr2num
+
+
+L 1 a out
+A a be 3
+A 3 ce 4
+A 4 de 1
+
+
+L 1de bde de
+L bde cde 1de
+T cde
+
+L 1ce bce ce
+A bce 4ce 1ce
+A 5ce 6ce 4ce
+
+L 15ce c5ce 5ce
+L 25ce d5ce 15ce
+A c5ce d5ce 25ce
+
+L 16ce c6ce 6ce
+L d6ce d6ce 16ce
+T c6ce
+
+
+L 1be bbe be
+A bbe 2be 1be
+
+L 12be c2be 2be
+L 22be d2be 12be
+L 32be e2be 22be
+
+A e2be 42be 52be
+A 52be c2be1 32be
+
+FO c2be c2be1 sc2be2
+
+L 142be f42be 42be
+L 242be g42be 142be
+
+FO f42be f42be1 f42be2
+
+A c2be2 f42be1 342be
+A 342be 442be 242be
+
+A d2be f42be2 1442be
+A 1442be g442be 442be
+
+A out souta outa

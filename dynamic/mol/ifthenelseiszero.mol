@@ -1,0 +1,23 @@
+A 2 1 out
+L 3 n 2
+A oite 4 3
+A oiso n 4
+L 1ite pite oite
+L 2ite aite 1ite
+L 3ite bite 2ite
+A 4ite bite 3ite
+A pite aite 4ite
+L 1unu funu 1
+L 2unu xunu 1unu
+A funu xunu 2unu
+L 1iso niso oiso
+A 2iso 3iso 1iso
+A niso 4iso 2iso
+L 6iso 5iso 4iso
+T 5iso
+L 1fiso xfiso 6iso
+L yfiso yfiso 1fiso
+T xfiso
+L 1tiso xtiso 3iso
+L xtiso ytiso 1tiso
+T ytiso

@@ -1,0 +1,22 @@
+FOE 1 11 10
+FOE 9 17 16a
+FOE 7 15 14
+A 8 6 5
+A 16 14 6
+A 17 15 7
+FI 12 13 1a
+L 10 12 8
+L 11 13 9
+
+FOE 1a 11a 10a
+FOE 9a 17a 16
+FOE 7a 15a 14a
+A 8a 6a 5a
+A 16a 14a 6a
+A 17a 15a 7a
+FI 12a 13a 1
+L 10a 12a 8a
+L 11a 13a 9a
+
+A 5 o5a o5
+A 5a o5 o5a

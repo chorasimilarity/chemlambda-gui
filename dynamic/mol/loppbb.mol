@@ -1,0 +1,74 @@
+A anum a1 a1p
+L aoub ainb a1
+BM ainb b3i
+
+B0 a3 coub
+A a1p a2 a3
+BA a2i a2
+B0 a3i a2i
+
+L a1num afnum anum
+L a2num axnum a1num
+
+FO afnum am1num al2num
+A am1num ar1num a2num
+
+
+
+FO al2num am3num al3num
+A am3num ar3num ar1num
+
+A al3num axnum ar3num
+
+
+
+
+A bnum b1 b1p
+L boub binb b1
+BM binb c3i
+
+B0 b3 aoub
+A b1p b2 b3
+BA b2i b2
+B0 b3i b2i
+
+L b1num bfnum bnum
+L b2num bxnum b1num
+
+FO bfnum bm1num bl2num
+A bm1num br1num b2num
+
+
+
+FO bl2num bm3num bl3num
+A bm3num br3num br1num
+
+A bl3num bxnum br3num
+
+
+
+
+A cnum c1 c1p
+L coub cinb c1
+BM cinb a3i
+
+B0 c3 boub
+A c1p c2 c3
+BA c2i c2
+B0 c3i c2i
+
+L c1num cfnum cnum
+L c2num cxnum c1num
+
+FO cfnum cm1num cl2num
+A cm1num cr1num c2num
+
+
+
+FO cl2num cm3num cl3num
+A cm3num cr3num cr1num
+
+A cl3num cxnum cr3num
+
+
+

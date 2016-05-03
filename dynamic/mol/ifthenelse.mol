@@ -1,0 +1,25 @@
+A 4 z o
+A x y 4
+A u o out
+L d1 d2 u
+A d2 d3 d4
+FOE d4 d1 d3
+L 1t xt z
+L xt yt 1t
+T yt
+L 1t1 xt1 x1
+L xt1 yt1 1t1
+T yt1
+L 1f1 xf1 y1
+L yf1 yf1 1f1
+T xf1
+L 1t2 xt2 x2
+L xt2 yt2 1t2
+T yt2
+L 1t3 xt3 y2
+L xt3 yt3 1t3
+T yt3
+FI x1 y1 x
+FI x2 y2 y
+FO out aout bout
+FI 

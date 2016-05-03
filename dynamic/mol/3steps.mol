@@ -1,0 +1,18 @@
+A 3 2 out
+A 4 1 3
+L 5 6 4
+L 14 7 5
+FO 6 10 12
+A 10 8 14
+FO 12 11 13
+A 11 9 8
+A 13 7 9
+
+L oub inb 1
+BM inb oub
+
+
+B0 d0 d1
+B0 d1 d2
+B0 d2 d3
+BA d3 2

@@ -1,0 +1,4 @@
+FI a1 c1 b1
+FO b1 c1 d1
+FOE b2 a1 c2
+FO c2 a2 b2

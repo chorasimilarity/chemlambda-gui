@@ -1,0 +1,98 @@
+A expmod num1 inter1
+A inter1 num2 inter2
+A inter2 num3 out
+
+
+L 1ex a expmod
+L 2ex b 1ex
+L 3ex c 2ex
+FO c c0 cfo
+FO cfo c1 c2
+A 4ex C 3ex
+A 5ex B 4ex
+A c0 A 5ex
+
+L 1A dA A
+L 2A eA 1A
+A dA 3A 2A
+L 4A fA 3A
+A f2A 5A 4A
+A eA 6A 5A
+FO fA f1A f2A
+L 7A gA 6A
+FO gA g1A g2A
+L 8A hA 7A
+A g2A 9A 8A
+A 10A hA 9A
+A f1A g1A 10A
+
+
+L 1B dB B
+A dB 2B 1B
+L 3B freeB 2B
+L idB idB 3B
+
+T freeB
+
+L 1C dC C
+A 2C F 1C
+A 3C E 2C
+A b a 3C
+
+T dC
+
+A 1E 2E E
+L 4E e2E 2E
+L 6E f2E 4E
+A f2E e2E 6E
+A 3E idE 1E
+L id1E id1E idE
+A c2 5E 3E
+L 7E eE 5E
+L 9E fE 7E
+L 11E gE 9E
+A eE 13E 11E
+L 15E hE 13E
+A 17E gE 15E
+A fE hE 17E
+
+A 1F id1F F
+A 2F id2F 1F
+L id1lF id1lF id1F
+L id2lF id2lF id2F
+A c1 3F 2F
+L 4F eF 3F
+L eF freeF 4F
+
+T freeF
+
+L 1num1 anum1 num1
+L 2num1 bnum1 1num1
+FO anum1 m1num1 l1num1
+FO l1num1 m2num1 l2num1
+FO l2num1 m3num1 m4num1
+A m4num1 bnum1 r1num1
+A m3num1 r1num1 r2num1
+A m2num1 r2num1 r3num1
+A m1num1 r3num1 2num1
+
+
+L 1num2 anum2 num2
+L 2num2 bnum2 1num2
+FO anum2 m1num2 l1num2
+FO l1num2 m2num2 l2num2
+FO l2num2 m3num2 m4num2
+A m4num2 bnum2 r1num2
+A m3num2 r1num2 r2num2
+A m2num2 r2num2 r3num2
+A m1num2 r3num2 2num2
+
+
+
+L 1num3 anum3 num3
+L 2num3 bnum3 1num3
+FO anum3 m1num3 l1num3
+FO l1num3 m2num3 m3num3
+A m3num3 bnum3 r1num3
+A m2num3 r1num3 r2num3
+A m1num3 r2num3 2num3

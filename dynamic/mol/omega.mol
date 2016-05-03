@@ -1,0 +1,18 @@
+FO a4 a8 9 
+FO a6 a10 11 
+A a2 a3 a1 
+A a8 a9 a5 
+A a10 a11 a7 
+L a5 a4 a2 
+L a7 a6 a3
+
+FO 4 8 a9 
+FO 6 10 a11 
+A 2 3 1 
+A 8 9 5 
+A 10 11 7 
+L 5 4 2 
+L 7 6 3
+
+A 1 i1 ai1
+A a1 ai1 i1

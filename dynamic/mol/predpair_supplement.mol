@@ -1,0 +1,16 @@
+FO l2num m3num l3num
+FO l3num m4num l4num
+FO l4num m5num l5num
+FO l5num m6num l6num
+FO l6num m7num l7num
+FO l7num m8num l8num
+FO l8num m9num l9num
+
+
+A m3num r3num r2num
+A m4num r4num r3num
+A m5num r5num r4num
+A m6num r6num r5num
+A m7num r7num r6num
+A m8num r8num r7num
+A m9num r9num r8num

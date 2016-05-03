@@ -1,0 +1,254 @@
+L abcdwin abcdw1 abcdw3
+FOE abcdw1 abcdwfooty abcdw2
+L abcdw2 abcdwout abcdw4
+
+FOE abcdw4 abcdw5 abcdw9
+A abcdw5 abcdw10 abcdwfootx
+
+
+FOE abcdw3 abcdw6 abcdw11
+A abcdw6 abcdw12 abcdw10
+
+FOE abcdw9 abcdw7 abcdw9d
+A abcdw7 abcdw15 abcdw12
+FOE abcdw11 abcdw8 abcdw11d
+A abcdw8 abcdw12d abcdw15
+
+
+FOE abcdw9d abcdw7d abcdw14d
+A abcdw7d abcdw15d abcdw12d
+FOE abcdw11d abcdw8d abcdw13d
+A abcdw8d abcdw16d abcdw15d
+
+
+A abcdw13d abcdw19 abcdw17
+A abcdw14d abcdw17 abcdw18
+FOE abcdw18 abcdw16d abcdw19
+
+
+FOE abcd1 abcd2 abcd3
+FOE abcd3 abcd4 abcd5
+
+Arrow abcd5 abcdwin
+Arrow abcdwout abcd6
+
+FOE abcd6 abcd7 abcd8
+FOE abcd8 abcd9 abcd10
+FOE abcd10 abcd11 abcd12
+FOE abcd12 abcd13 abcd14
+FOE abcd14 abcd15 abcd16
+FOE abcd16 abcd17 abcd18
+FOE abcd18 abcd19 abcd20
+FOE abcd20 abcd21 abcd22
+FOE abcd22 abcd23 abcd24
+FOE abcd24 abcd25 abcd26
+FOE abcd26 abcd27 abcd28
+FOE abcd28 abcd29 abcd30
+FOE abcd30 abcd31 abcd32
+
+
+FI a32 abcdwfootx abcdwfoot
+
+FI xabcd5 abcdwfooty abcd
+
+
+FOE xabcd1 xabcd11 xabcd10
+FOE xabcd9 xabcd17 xabcd16
+FOE xabcd7 xabcd15 xabcd14
+A xabcd8 xabcd6 xabcd5
+A xabcd16 xabcd14 xabcd6
+A xabcd17 xabcd15 xabcd7
+FI xabcd12 xabcd13 xabcd1
+L xabcd10 xabcd12 xabcd8
+L xabcd11 xabcd13 xabcd9
+
+L abcwin abcw1 abcw3
+FOE abcw1 abcwfooty abcw2
+L abcw2 abcwout abcw4
+
+FOE abcw4 abcw5 abcw9
+A abcw5 abcw10 abcwfootx
+
+
+FOE abcw3 abcw6 abcw11
+A abcw6 abcw12 abcw10
+
+FOE abcw9 abcw7 abcw9d
+A abcw7 abcw15 abcw12
+FOE abcw11 abcw8 abcw11d
+A abcw8 abcw12d abcw15
+
+
+FOE abcw9d abcw7d abcw14d
+A abcw7d abcw15d abcw12d
+FOE abcw11d abcw8d abcw13d
+A abcw8d abcw16d abcw15d
+
+
+A abcw13d abcw19 abcw17
+A abcw14d abcw17 abcw18
+FOE abcw18 abcw16d abcw19
+
+
+FOE abc1 abc2 abc3
+FOE abc3 abc4 abc5
+
+Arrow abc5 abcwin
+Arrow abcwout abc6
+
+FOE abc6 abc7 abc8
+FOE abc8 abc9 abc10
+FOE abc10 abc11 abc12
+FOE abc12 abc13 abc14
+FOE abc14 abc15 abc16
+FOE abc16 abc17 abc18
+FOE abc18 abc19 abc20
+FOE abc20 abc21 abc22
+FOE abc22 abc23 abc24
+FOE abc24 abc25 abc26
+FOE abc26 abc27 abc28
+FOE abc28 abc29 abc30
+FOE abc30 abc31 abc32
+
+
+FI abcd32 abcwfootx abcwfoot
+
+FI xabc5 abcwfooty abc
+
+FOE xabc1 xabc11 xabc10
+FOE xabc9 xabc17 xabc16
+FOE xabc7 xabc15 xabc14
+A xabc8 xabc6 xabc5
+A xabc16 xabc14 xabc6
+A xabc17 xabc15 xabc7
+FI xabc12 xabc13 xabc1
+L xabc10 xabc12 xabc8
+L xabc11 xabc13 xabc9
+
+
+L abwin abw1 abw3
+FOE abw1 abwfooty abw2
+L abw2 abwout abw4
+
+FOE abw4 abw5 abw9
+A abw5 abw10 abwfootx
+
+
+FOE abw3 abw6 abw11
+A abw6 abw12 abw10
+
+FOE abw9 abw7 abw9d
+A abw7 abw15 abw12
+FOE abw11 abw8 abw11d
+A abw8 abw12d abw15
+
+
+FOE abw9d abw7d abw14d
+A abw7d abw15d abw12d
+FOE abw11d abw8d abw13d
+A abw8d abw16d abw15d
+
+
+A abw13d abw19 abw17
+A abw14d abw17 abw18
+FOE abw18 abw16d abw19
+
+
+FOE ab1 ab2 ab3
+FOE ab3 ab4 ab5
+
+Arrow ab5 abwin
+Arrow abwout ab6
+
+FOE ab6 ab7 ab8
+FOE ab8 ab9 ab10
+FOE ab10 ab11 ab12
+FOE ab12 ab13 ab14
+FOE ab14 ab15 ab16
+FOE ab16 ab17 ab18
+FOE ab18 ab19 ab20
+FOE ab20 ab21 ab22
+FOE ab22 ab23 ab24
+FOE ab24 ab25 ab26
+FOE ab26 ab27 ab28
+FOE ab28 ab29 ab30
+FOE ab30 ab31 ab32
+
+
+FI abc32 abwfootx abwfoot
+
+FI xab5 abwfooty ab
+
+FOE xab1 xab11 xab10
+FOE xab9 xab17 xab16
+FOE xab7 xab15 xab14
+A xab8 xab6 xab5
+A xab16 xab14 xab6
+A xab17 xab15 xab7
+FI xab12 xab13 xab1
+L xab10 xab12 xab8
+L xab11 xab13 xab9
+
+L awin aw1 aw3
+FOE aw1 awfooty aw2
+L aw2 awout aw4
+
+FOE aw4 aw5 aw9
+A aw5 aw10 awfootx
+
+
+FOE aw3 aw6 aw11
+A aw6 aw12 aw10
+
+FOE aw9 aw7 aw9d
+A aw7 aw15 aw12
+FOE aw11 aw8 aw11d
+A aw8 aw12d aw15
+
+
+FOE aw9d aw7d aw14d
+A aw7d aw15d aw12d
+FOE aw11d aw8d aw13d
+A aw8d aw16d aw15d
+
+
+A aw13d aw19 aw17
+A aw14d aw17 aw18
+FOE aw18 aw16d aw19
+
+
+FOE a1 a2 a3
+FOE a3 a4 a5
+
+Arrow a5 awin
+Arrow awout a6
+
+FOE a6 a7 a8
+FOE a8 a9 a10
+FOE a10 a11 a12
+FOE a12 a13 a14
+FOE a14 a15 a16
+FOE a16 a17 a18
+FOE a18 a19 a20
+FOE a20 a21 a22
+FOE a22 a23 a24
+FOE a24 a25 a26
+FOE a26 a27 a28
+FOE a28 a29 a30
+FOE a30 a31 a32
+
+
+FI ab32 awfootx awfoot
+
+FI xa5 awfooty a
+
+FOE xa1 xa11 xa10
+FOE xa9 xa17 xa16
+FOE xa7 xa15 xa14
+A xa8 xa6 xa5
+A xa16 xa14 xa6
+A xa17 xa15 xa7
+FI xa12 xa13 xa1
+L xa10 xa12 xa8
+L xa11 xa13 xa9
+

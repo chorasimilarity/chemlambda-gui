@@ -1,0 +1,127 @@
+FOE 8x 8xa 8xb
+FI 8xb 8xa 0x
+
+FOE 8y 8ya 8yb
+FI 8yb 8ya 0y
+
+
+
+A 7x 12 8x
+
+FO 12p b13 b12
+A b13 b12 12
+
+
+L 7y 12p 2y
+
+
+
+
+
+
+A 6x 22 7x
+
+
+L 6y 22 1y
+
+
+
+
+
+
+
+A 5x 32 6x
+
+FO 32p b33 b32
+A b33 b32 32
+
+L 5y 32p 8y
+
+
+
+
+
+
+
+A 4x 42 5x
+
+L 4y 42 7y
+
+
+
+
+
+
+
+A 3x 12o 4x
+
+FO 12po b13o b12o
+A b13o b12o 12o
+
+L 3y 12po 6y
+
+
+
+
+
+
+A 2x 22o 3x
+
+L 2y 22o 5y
+
+
+
+
+
+
+
+
+A 1x 32o 2x
+
+FO 32po b33o b32o
+A b33o b32o 32o
+
+L 1y 32po 4y
+
+
+
+
+
+
+
+
+A 0x 42o 1x
+
+
+
+L 0y 42o 3y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

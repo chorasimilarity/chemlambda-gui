@@ -1,0 +1,83 @@
+A v1 vcb vsp22o
+A v2 vca v1
+L v3 va v2
+L v4 vb v3
+A v5 vb v4
+A v6 vsp1 v5
+A va vf v6
+
+L v1f vAf vf
+L v2f vbf v1f
+A v3f vcone v2f
+A v4f vAf v3f
+A vsp2 vbf v4f
+
+L v1ca vfca vca
+L v2ca vxca v1ca
+A v3ca v5ca v2ca
+FO vfca v3ca v4cas
+A v6ca v8cas v5ca
+
+FO v4cas vfufu v4ca
+A vfufu v8ca v8cas
+
+FO v4ca v6ca v7ca
+A v7ca vxca v8ca
+
+
+FOE vsp22o vsp22o1 vsp22o2
+FI vsp22o2 vsp22o1 vsp22i
+
+FO vsp22i vsp2 vcone
+
+
+L win w1 w3
+FOE w1 wfooty w2
+L w2 wout w4
+
+FOE w4 w5 w9
+A w5 w10 vsp1
+
+
+FOE w3 w6 w11
+A w6 w12 w10
+
+FOE w9 w7 w9d
+A w7 w15 w12
+FOE w11 w8 w11d
+A w8 w12d w15
+
+
+FOE w9d w7d w14d
+A w7d w15d w12d
+FOE w11d w8d w13d
+A w8d w16d w15d
+
+
+A w13d w19 w17
+A w14d w17 w18
+FOE w18 w16d w19
+
+
+FOE 1 2 3
+FOE 3 4 5
+
+Arrow 5 win
+Arrow wout 6
+
+FOE 6 7 8
+FOE 8 9 10
+FOE 10 11 12
+FOE 12 13 14
+FOE 14 15 16
+FOE 16 17 18
+FOE 18 19 20
+FOE 20 21 22
+FOE 22 23 24
+FOE 24 25 26
+FOE 26 27 28
+FOE 28 29 30
+FOE 30 31 32
+
+
+FI wfooty wfootx wfoot

@@ -1,0 +1,162 @@
+L w1num1 wfnum1 wnum1
+L w2num1 wxnum1 w1num1
+
+FO wfnum1 wm1num1 l2numn1
+A wm1num1 wr1numn1 w2num1
+
+FO wl2numn1 wm1numm1 wl2num1
+A wm1numm1 wr1num1 wr1numn1
+
+FO wl2num1 wm3num1 wl3num1
+A wm3num1 wr3num1 wr1num1
+
+A wl3num1 wxnum1 wr3num1
+
+
+
+
+L w1num2 wfnum2 wnum2
+L w2num2 wxnum2 w1num2
+
+FO wfnum2 wm1num2 l2num2
+A wm1num2 wr1num2 w2num2
+
+
+
+FO wl2num2 wm3num2 wl3num2
+A wm3num2 wr3num2 wr1num2
+
+A wl3num2 wxnum2 wr3num2
+
+
+
+
+L w1num3 wfnum3 wnum3
+L w2num3 wxnum3 w1num3
+
+
+
+
+FO wfnum3 wm3num3 l3num3
+A wm3num3 wr3num3 w2num3
+
+A wl3num3 wxnum3 wr3num3
+
+
+L w1num4 wfnum4 wnum4
+L w2num4 wxnum4 w1num4
+
+
+A wfnum4 wxnum4 w2num4
+
+
+
+
+
+
+
+
+
+L wa4 wa1 wp1
+L wa1 wa2 wp2
+L wa2 wa3 wp3
+L wa3 wa4 p4
+
+
+A wnum1 wp1 w1out
+A wnum2 wp2 w2out
+A wnum3 wp3 w3out
+A wnum4 wp4 w4out
+
+
+
+
+A w1out w1outa w1outa
+A w2out w2outa w2outa
+A w3out w3outa w3outa
+A w4out w4outa w4outa
+
+
+
+
+
+
+
+
+L 1num1 fnum1 num1
+L 2num1 xnum1 1num1
+
+FO fnum1 m1num1 wl2numn1
+A m1num1 r1numn1 2num1
+
+FO l2numn1 m1numm1 l2num1
+A m1numm1 r1num1 r1numn1
+
+FO l2num1 m3num1 l3num1
+A m3num1 r3num1 r1num1
+
+A l3num1 xnum1 r3num1
+
+
+
+
+L 1num2 fnum2 num2
+L 2num2 xnum2 1num2
+
+FO fnum2 m1num2 wl2num2
+A m1num2 r1num2 2num2
+
+
+
+FO l2num2 m3num2 l3num2
+A m3num2 r3num2 r1num2
+
+A l3num2 xnum2 r3num2
+
+
+
+
+L 1num3 fnum3 num3
+L 2num3 xnum3 1num3
+
+
+
+
+FO fnum3 m3num3 wl3num3
+A m3num3 r3num3 2num3
+
+A l3num3 xnum3 r3num3
+
+
+L 1num4 fnum4 num4
+L 2num4 xnum4 1num4
+
+
+A fnum4 xnum4 2num4
+
+
+
+
+
+
+
+
+
+L a4 a1 p1
+L a1 a2 p2
+L a2 a3 p3
+L a3 a4 wp4
+
+
+A num1 p1 1out
+A num2 p2 2out
+A num3 p3 3out
+A num4 p4 4out
+
+
+
+
+A 1out 1outa 1outa
+A 2out 2outa 2outa
+A 3out 3outa 3outa
+A 4out 4outa 4outa

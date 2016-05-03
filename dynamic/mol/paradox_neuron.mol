@@ -1,0 +1,89 @@
+A 1 outa out
+A 1a sp2 outa
+
+L 2 3 1
+A 4 7 2
+A 6 5 4
+FO 8 6 7
+
+FO 3 9 10
+A 9 10 8
+
+L 2a 3a 1a
+A 4a 7a 2a
+A 6a 5a 4a
+FO 8a 6a 7a
+
+FO 3a 9a 10a
+A 9a 10a 8a
+
+
+
+
+
+
+
+
+L v0p vlp sp2
+L v1s vlfs v0p
+L v0sfin v9in v1s
+
+L v0sin vw8in v0sw1
+L v0sw1 vw7in v0sw2
+L v0sw2 vw6in v0sw3
+L v0sw3 vw5in v0sw4
+L v0sw4 vw4in v0sw5
+L v0sw5 vw3in v0sw6
+L v0sw6 vw2in v0sw7
+L v0sw7 vw1in v0sfin
+
+L v0i v0in v0sin
+
+A v1ifin v0out v0i
+
+A vwiout1 vw1out v1ifin
+A vwiout2 vw2out vwiout1
+A vwiout3 vw3out vwiout2
+A vwiout4 vw4out vwiout3
+A vwiout5 vw5out vwiout4
+A vwiout6 vw6out vwiout5
+A vwiout7 vw7out vwiout6
+A v1iin vw8out vwiout7
+A v0f v9out v1iin
+A vlp vlfs v0f
+
+
+Arrow vw7in vw8out
+Arrow vw8in v9out
+
+
+
+FO v9in va v0out
+A v0in vsucc1 vc
+A vc va vw1out
+
+
+FO vw1in vaq2 vw2out
+A vw2in vsucc2 vcq2
+A vcq2 vaq2 vw3out
+
+FO vw3in vaq3 vw4out
+A vw4in vsucc3 vcq3
+A vcq3 vaq3 vw5out
+
+FO vw5in vaq4 vw6out
+A vw6in vsucc4 vcq4
+A vcq4 vaq4 vw7out
+
+
+FO vsucc vsucc1 vsuccq1
+FO vsuccq1 vsucc2 vsuccq2
+FO vsuccq2 vsucc3 vsucc4
+
+L v1succ vnsucc vsucc
+L v2succ vssucc v1succ
+L v3succ vzsucc v2succ
+A v4succ v6succ v3succ
+FO vssucc v4succ v5succ
+A v7succ vzsucc v6succ
+A vnsucc v5succ v7succ

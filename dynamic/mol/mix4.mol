@@ -1,0 +1,405 @@
+FOE trewq6 trewq16 trewq7
+FOE trewq8 trewq18 trewq9
+FOE trewq10 trewq20 trewq11
+FOE trewq24 trewq1 trewq15
+FOE trewq26 trewq30 trewq17
+A trewq15 trewq2 trewq6
+A trewq30 trewq16 trewq27
+A trewq17 trewq7 trewq8
+FI trewq28 trewq42 trewq26
+FI trewq33 trewq32 trewq38
+FI trewq38 trewq39 trewq24
+FI trewq19 trewq31 trewq28
+FI trewq21 trewq35 trewq34
+FI trewq34 trewq37 trewq33
+L trewq27 trewq42 trewq39
+L trewq18 trewq31 trewq32
+L trewq9 trewq19 trewq10
+L trewq11 trewq21 trewq2
+
+
+FOE trewq6p trewq16p trewq7p
+FOE trewq8p trewq18p trewq9p
+FOE trewq10p trewq20p trewq11p
+FOE trewq24p trewq1p trewq15p
+FOE trewq26p trewq30p trewq17p
+A trewq15p trewq2p trewq6p
+A trewq30p trewq16p trewq27p
+A trewq17p trewq7p trewq8p
+FI trewq28p trewq42p trewq26p
+FI trewq33p trewq32p trewq38p
+FI trewq38p trewq39p trewq24p
+FI trewq19p trewq31p trewq28p
+FI trewq21p trewq35p trewq34p
+FI trewq34p trewq37p trewq33p
+L trewq27p trewq42p trewq39p
+L trewq18p trewq31p trewq32p
+L trewq9p trewq19p trewq10p
+L trewq11p trewq21p trewq2p
+
+
+
+Arrow trewqYa trewq37p
+Arrow trewq20p trewqFa
+Arrow trewqXa trewq35p
+Arrow trewq1p trewqFb
+
+Arrow trewq20 trewqYi
+Arrow trewq1 trewqXi
+Arrow trewqTi trewq35
+Arrow trewqFi trewq37
+
+
+
+
+A trewq1h trewqYi trewqTi
+A trewq2h trewqXi trewq1h
+L trewq8h trewqYh trewq2h
+L trewqFh trewqXh trewq8h
+
+
+A trewq1g trewqYh trewqFi
+A trewq2g trewqXh trewq1g
+L trewq8g trewqYg trewq2g
+L trewqFg trewqXg trewq8g
+
+
+A trewq1f trewqYg trewqFh
+A trewq2f trewqXg trewq1f
+L trewq8f trewqYf trewq2f
+L trewqFf trewqXf trewq8f
+
+
+A trewq1e trewqYf trewqFg
+A trewq2e trewqXf trewq1e
+L trewq8e trewqYe trewq2e
+L trewqFe trewqXe trewq8e
+
+
+A trewq1d trewqYe trewqFf
+A trewq2d trewqXe trewq1d
+L trewq8d trewqYd trewq2d
+L trewqFd trewqXd trewq8d
+
+
+A trewq1c trewqYd trewqFe
+A trewq2c trewqXd trewq1c
+L trewq8c trewqYc trewq2c
+L trewqFc trewqXc trewq8c
+
+
+A trewq1b trewqYc trewqFd
+A trewq2b trewqXc trewq1b
+L trewq8b trewqYb trewq2b
+L trewqFb trewqXb trewq8b
+
+
+A trewq1a trewqYb trewqFc
+A trewq2a trewqXb trewq1a
+L trewq8a trewqYa trewq2a
+L trewqFa trewqXa trewq8a
+
+
+
+A trew12 trew222 trew111
+L trew111 trew222 trewcon
+FI trew1111 trewcon trew2222
+FO trew2222 trew14 trew1111
+L trew5 trew1 trew2
+FI trew1 trew7 trew6
+A trew2 trew3 trew4
+FI trew4 trew6 trew9
+L trew8 trew7 trew10
+FOE trew9 trew5 trew8
+FOE trew10 trew12 trew11
+A trew11 trew14 trew3
+
+
+
+
+
+
+A tre1 tre2 trecono
+FO treini tre1 tre2
+FI tre11 tre22 treino
+L treconi tre11 tre22
+
+
+
+FOE trecono trecona treconb
+FI treconb trecona treconi
+
+FOE treino treina treinb
+FI treinb treina treini
+
+
+
+
+FI trdcba3 trdcba1 trdcba15
+FOE trdcba15 trdcba4 trdcb2
+L trdcba4 trdcba1 trdcba5
+L trdcba2 trdcba3 trdcba12
+FOE trdcba5 trdcba6 trdcba8
+FOE trdcba12 trdcba7 trdcba9
+A trdcba6 trdcba7 trdcba14
+A trdcba8 trdcba9 trdcba11
+FO trdcba10 trdcba17 trdcba20
+FO trdcba16 trdcba19 trdcba18
+FI trdcba17 trdcba19 trdcba16
+FI trdcba20 trdcba18 trdcba13
+A trdcba13 trdcba11 trdcba10
+
+
+FI trdcb3 trdcb1 trdcb15
+FOE trdcb15 trdcb4 trdc2
+L trdcb4 trdcb1 trdcb5
+L trdcb2 trdcb3 trdcb12
+FOE trdcb5 trdcb6 trdcb8
+FOE trdcb12 trdcb7 trdcb9
+A trdcb6 trdcb7 trdcb14
+A trdcb8 trdcb9 trdcb11
+FO trdcb10 trdcb17 trdcb20
+FO trdcb16 trdcb19 trdcb18
+FI trdcb17 trdcb19 trdcb16
+FI trdcb20 trdcb18 trdcb13
+A trdcb13 trdcb11 trdcb10
+
+FI trdc3 trdc1 trdc15
+FOE trdc15 trdc4 trd2
+L trdc4 trdc1 trdc5
+L trdc2 trdc3 trdc12
+FOE trdc5 trdc6 trdc8
+FOE trdc12 trdc7 trdc9
+A trdc6 trdc7 trdc14
+A trdc8 trdc9 trdc11
+FO trdc10 trdc17 trdc20
+FO trdc16 trdc19 trdc18
+FI trdc17 trdc19 trdc16
+FI trdc20 trdc18 trdc13
+A trdc13 trdc11 trdc10
+
+
+FI trd3 trd1 trd15
+FOE trd15 trd4 tr2
+L trd4 trd1 trd5
+L trd2 trd3 trd12
+FOE trd5 trd6 trd8
+FOE trd12 trd7 trd9
+A trd6 trd7 trd14
+A trd8 trd9 trd11
+FO trd10 trd17 trd20
+FO trd16 trd19 trd18
+FI trd17 trd19 trd16
+FI trd20 trd18 trd13
+A trd13 trd11 trd10
+
+
+FI tr3 tr1 tr15
+FOE tr15 tr4 trdcba2
+L tr4 tr1 tr5
+L tr2 tr3 tr12
+FOE tr5 tr6 tr8
+FOE tr12 tr7 tr9
+A tr6 tr7 tr14
+A tr8 tr9 tr11
+FO tr10 tr17 tr20
+FO tr16 tr19 tr18
+FI tr17 tr19 tr16
+FI tr20 tr18 tr13
+A tr13 tr11 tr10
+
+
+
+
+
+FOE t6a t16 t7bc
+FOE t8 t18 t9b
+FOE t10a t20 t11b
+FOE t24 t1 t15b
+FOE t26a t30 t17b
+A t15 t2 t6b
+A t30a t16 t27b
+A t17 t7 t8b
+A t36a t1 t37b
+FI t28 t42 t26b
+FI t33a t32 t38b
+FI t38 t39 t24b
+FI t19a t31 t28b
+FI t21 t35 t34b
+FI t34a t37 t33b
+L t27 t42 t39b
+L t18a t31 t32b
+L t9 t19 t10b
+L t20a t35 t36b
+L t11 t21 t2b
+
+FOE t6 t16a t7abc
+FOE t8a t18a t9ab
+FOE t10 t20a t11ab
+FOE t24a t1a t15ab
+FOE t26 t30a t17ab
+A t15a t2a t6ab
+A t30 t16a t27ab
+A t17a t7a t8ab
+A t36 t1a t37ab
+FI t28a t42a t26ab
+FI t33 t32a t38ab
+FI t38a t39a t24ab
+FI t19 t31a t28ab
+FI t21a t35a t34ab
+FI t34 t37a t33ab
+L t27a t42a t39ab
+L t18 t31a t32ab
+L t9a t19a t10ab
+L t20 t35a t36ab
+L t11a t21a t2ab
+
+FOE t6ab t16b t7c
+FOE t8b t18b t9
+FOE t10ab t20b t11
+FOE t24b t1b t15
+FOE t26ab t30b t17
+A t15b t2b t6
+A t30ab t16b t27
+A t17b t7b t8
+A t36ab t1b t37
+FI t28b t42b t26
+FI t33ab t32b t38
+FI t38b t39b t24
+FI t19ab t31b t28
+FI t21b t35b t34
+FI t34ab t37b t33
+L t27b t42b t39
+L t18ab t31b t32
+L t9b t19b t10
+L t20ab t35b t36
+L t11b t21b t2
+
+FOE t6b t16ab t7ac
+FOE t8ab t18ab t9a
+FOE t10b t20ab t11a
+FOE t24ab t1ab t15a
+FOE t26b t30ab t17a
+A t15ab t2ab t6a
+A t30b t16ab t27a
+A t17ab t7ab t8a
+A t36b t1ab t37a
+FI t28ab t42ab t26a
+FI t33b t32ab t38a
+FI t38ab t39ab t24a
+FI t19b t31ab t28a
+FI t21ab t35ab t34a
+FI t34b t37ab t33a
+L t27ab t42ab t39a
+L t18b t31ab t32a
+L t9ab t19ab t10a
+L t20b t35ab t36a
+L t11ab t21ab t2a
+
+
+
+
+
+
+
+FOE t6ac t16c t7b
+FOE t8c t18c t9bc
+FOE t10ac t20c t11bc
+FOE t24c t1c t15bc
+FOE t26ac t30c t17bc
+A t15c t2c t6bc
+A t30ac t16c t27bc
+A t17c t7c t8bc
+A t36ac t1c t37bc
+FI t28c t42c t26bc
+FI t33ac t32c t38bc
+FI t38c t39c t24bc
+FI t19ac t31c t28bc
+FI t21c t35c t34bc
+FI t34ac t37c t33bc
+L t27c t42c t39bc
+L t18ac t31c t32bc
+L t9c t19c t10bc
+L t20ac t35c t36bc
+L t11c t21c t2bc
+
+FOE t6c t16ac t7ab
+FOE t8ac t18ac t9abc
+FOE t10c t20ac t11abc
+FOE t24ac t1ac t15abc
+FOE t26c t30ac t17abc
+A t15ac t2ac t6abc
+A t30c t16ac t27abc
+A t17ac t7ac t8abc
+A t36c t1ac t37abc
+FI t28ac t42ac t26abc
+FI t33c t32ac t38abc
+FI t38ac t39ac t24abc
+FI t19c t31ac t28abc
+FI t21ac t35ac t34abc
+FI t34c t37ac t33abc
+L t27ac t42ac t39abc
+L t18c t31ac t32abc
+L t9ac t19ac t10abc
+L t20c t35ac t36abc
+L t11ac t21ac t2abc
+
+FOE t6abc t16bc t7
+FOE t8bc t18bc t9c
+FOE t10abc t20bc t11c
+FOE t24bc t1bc t15c
+FOE t26abc t30bc t17c
+A t15bc t2bc t6c
+A t30abc t16bc t27c
+A t17bc t7bc t8c
+A t36abc t1bc t37c
+FI t28bc t42bc t26c
+FI t33abc t32bc t38c
+FI t38bc t39bc t24c
+FI t19abc t31bc t28c
+FI t21bc t35bc t34c
+FI t34abc t37bc t33c
+L t27bc t42bc t39c
+L t18abc t31bc t32c
+L t9bc t19bc t10c
+L t20abc t35bc t36c
+L t11bc t21bc t2c
+
+FOE t6bc t16abc t7a
+FOE t8abc t18abc t9ac
+FOE t10bc t20abc t11ac
+FOE t24abc t1abc t15ac
+FOE t26bc t30abc t17ac
+A t15abc t2abc t6ac
+A t30bc t16abc t27ac
+A t17abc t7abc t8ac
+A t36bc t1abc t37ac
+FI t28abc t42abc t26ac
+FI t33bc t32abc t38ac
+FI t38abc t39abc t24ac
+FI t19bc t31abc t28ac
+FI t21abc t35abc t34ac
+FI t34bc t37abc t33ac
+L t27abc t42abc t39ac
+L t18bc t31abc t32ac
+L t9abc t19abc t10ac
+L t20bc t35abc t36ac
+L t11abc t21abc t2ac
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

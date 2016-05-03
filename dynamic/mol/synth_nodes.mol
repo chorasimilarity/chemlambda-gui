@@ -1,0 +1,29 @@
+FOE in1 out1 out2
+A in2 in3 out3
+
+FOE in4 out4 out5
+A in5 in6 out6
+
+FOE in7 out7 out8
+A in8 in9 out9
+
+FOE in10 out10 out11
+A in11 in12 out12
+
+FOE in13 out13 out14
+FI in14 in15 out15
+
+L in16 out16 out17
+FI in17 in18 out18
+
+L in19 out19 out20
+FI in20 in21 out21
+
+L in22 out22 out23
+FI in23 in24 out24
+
+L in25 out25 out26
+FI in26 in27 out27
+
+L in28 out28 out29
+FI in29 in30 out30

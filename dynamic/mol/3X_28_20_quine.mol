@@ -1,0 +1,161 @@
+FOE ba2 ba12 ba3
+FOE ba3 ba13 ba4
+FOE 4 ba14 ba5
+FOE ba6 ba16 ba7
+FOE ba8 ba18 ba9
+FOE ba10 ba20 ba11
+FOE ba24 ba29 ba15
+FOE ba26 ba30 ba17
+A ba12 ba22 ba1
+A ba23 ba13 ba22
+A ba41 ba25 ba40
+A ba15 ba5 ba6
+A ba29 ba14 ba25
+A ba30 ba16 ba27
+A ba17 ba7 ba8
+A ba36 ba1 ba37
+FI ba28 ba42 ba26
+FI ba33 ba32 ba38
+FI ba38 ba39 ba24
+FI ba19 ba31 ba28
+FI ba21 ba35 ba34
+FI ba34 ba37 ba33
+L ba40 ba41 ba23
+L ba27 ba42 ba39
+L ba18 ba31 ba32
+L ba9 ba19 ba10
+L ba20 ba35 ba36
+L ba11 ba21 ba2
+
+
+FOE ba6x ba16x ba7x
+FOE ba8x ba18x ba9x
+FOE ba10x ba20x ba11x
+FOE ba24x ba1x ba15x
+FOE ba26x ba30x ba17x
+A ba15x ba2x ba6x
+A ba30x ba16x ba27x
+A ba17x ba7x ba8x
+A ba36x ba1x ba37x
+FI ba28x ba42x ba26x
+FI ba33x ba32x ba38x
+FI ba38x ba39x ba24x
+FI ba19x ba31x ba28x
+FI ba21x ba35x ba34x
+FI ba34x ba37x ba33x
+L ba27x ba42x ba39x
+L ba18x ba31x ba32x
+L ba9x ba19x ba10x
+L ba20x ba35x ba36x
+L ba11x ba21x ba2x
+
+
+
+
+
+FOE 2 b12 b3
+FOE b3 b13 b4
+FOE b4 b14 b5
+FOE b6 b16 b7
+FOE b8 b18 b9
+FOE b10 b20 b11
+FOE b24 b29 b15
+FOE b26 b30 b17
+A b12 b22 b1
+A b23 b13 b22
+A b41 b25 b40
+A b15 b5 b6
+A b29 b14 b25
+A b30 b16 b27
+A b17 b7 b8
+A b36 b1 b37
+FI b28 b42 b26
+FI b33 b32 b38
+FI b38 b39 b24
+FI b19 b31 b28
+FI b21 b35 b34
+FI b34 b37 b33
+L b40 b41 b23
+L b27 b42 b39
+L b18 b31 b32
+L b9 b19 b10
+L b20 b35 b36
+L b11 b21 b2
+
+
+FOE b6x b16x b7x
+FOE b8x b18x b9x
+FOE b10x b20x b11x
+FOE b24x b1x b15x
+FOE b26x b30x b17x
+A b15x b2x b6x
+A b30x b16x b27x
+A b17x b7x b8x
+A b36x b1x b37x
+FI b28x b42x b26x
+FI b33x b32x b38x
+FI b38x b39x b24x
+FI b19x b31x b28x
+FI b21x b35x b34x
+FI b34x b37x b33x
+L b27x b42x b39x
+L b18x b31x b32x
+L b9x b19x b10x
+L b20x b35x b36x
+L b11x b21x b2x
+
+
+
+
+
+
+FOE b2 12 3
+FOE 3 13 4
+FOE ba4 14 5
+FOE 6 16 7
+FOE 8 18 9
+FOE 10 20 11
+FOE 24 29 15
+FOE 26 30 17
+A 12 22 1
+A 23 13 22
+A 41 25 40
+A 15 5 6
+A 29 14 25
+A 30 16 27
+A 17 7 8
+A 36 1 37
+FI 28 42 26
+FI 33 32 38
+FI 38 39 24
+FI 19 31 28
+FI 21 35 34
+FI 34 37 33
+L 40 41 23
+L 27 42 39
+L 18 31 32
+L 9 19 10
+L 20 35 36
+L 11 21 2
+
+
+FOE 6x 16x 7x
+FOE 8x 18x 9x
+FOE 10x 20x 11x
+FOE 24x 1x 15x
+FOE 26x 30x 17x
+A 15x 2x 6x
+A 30x 16x 27x
+A 17x 7x 8x
+A 36x 1x 37x
+FI 28x 42x 26x
+FI 33x 32x 38x
+FI 38x 39x 24x
+FI 19x 31x 28x
+FI 21x 35x 34x
+FI 34x 37x 33x
+L 27x 42x 39x
+L 18x 31x 32x
+L 9x 19x 10x
+L 20x 35x 36x
+L 11x 21x 2x

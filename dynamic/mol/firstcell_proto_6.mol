@@ -1,0 +1,85 @@
+L 14c1c1 24c1c1 c0
+L 44c1c1 34c1c1 14c1c1
+A 24c1c1 34c1c1 44c1c1
+
+L 2num 1num v
+L 3num xnum 2num
+FO 1num m1num l1pnum
+A m1num r1pnum 3num
+
+FO l1pnum m1pnum l1ppnum
+A m1pnum r1ppnum r1pnum
+
+FO l1ppnum m1ppnum l1num
+A m1ppnum r1num r1ppnum
+
+FO l1num m2num l2num
+A m2num r2num r1num
+A l2num xnum r2num
+
+L 2num1 1num1 u
+L 3num1 xnum1 2num1
+FO 1num1 m1num1 l1pnum1
+A m1num1 r1pnum1 3num1
+
+FO l1pnum1 m1pnum1 l1ppnum1
+A m1pnum1 r1ppnum1 r1pnum1
+
+FO l1ppnum1 m1ppnum1 l1num1
+A m1ppnum1 r1num1 r1ppnum1
+
+FO l1num1 m2num1 l2num1
+A m2num1 r2num1 r1num1
+A l2num1 xnum1 r2num1
+
+
+
+A 1tms c0 sp1
+A v 2tms 1tms
+A plus u 2tms
+L 3tms 4tms plus
+L 5tms 6tms 3tms
+A 7tms 4tms 5tms
+A 6tms succ 7tms
+
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+
+
+
+A 1 cb sp22
+A 2 ca 1
+L 3 a 2
+L 4 b 3
+A 5 b 4
+A 6 sp1 5
+A a f 6
+
+L 1f Af f
+L 2f bf 1f
+A 3f cone 2f
+A 4f Af 3f
+A sp2 bf 4f
+
+L 1ca fca ca
+L 2ca xca 1ca
+A 3ca 5ca 2ca
+FO fca 3ca 4cas
+A 6ca 8cas 5ca
+
+FO 4cas fufu 4ca
+A fufu 8ca 8cas
+
+FO 4ca 6ca 7ca
+A 7ca xca 8ca
+
+FO sp22 sp2 cone
+
+
+

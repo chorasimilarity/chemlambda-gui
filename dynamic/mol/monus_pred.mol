@@ -1,0 +1,31 @@
+A numa pred coco
+A coco numb out
+
+L 1numa fnuma numa
+L 2numa xnuma 1numa
+
+A l2numa xnuma r2numa
+
+FO fnuma m1numa l1numa
+A m1numa r1numa 2numa
+
+FO l1numa m2numa l2numa
+A m2numa r2numa r1numa
+
+
+
+
+
+L 1pred npred pred
+L 2pred fpred 1pred
+L 3pred xpred 2pred
+A 6pred 4pred 3pred
+L 5pred 5pred 4pred
+A 7pred 8pred 6pred
+L xpred 9pred 8pred
+T 9pred
+A npred 10pred 7pred
+L 11pred gpred 10pred
+L 12pred hpred 11pred
+A hpred 13pred 12pred
+A gpred fpred 13pred

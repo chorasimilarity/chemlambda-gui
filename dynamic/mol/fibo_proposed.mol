@@ -1,0 +1,47 @@
+L ip5 ap5 p5
+A ap5 p6 i1p5
+L ip6 bp6 p6
+A bp6 p7 ip6
+L ip7 cp7 p7
+L i1p7 dp7 ip7
+L i2p7 ep7 i1p7
+A ep7 p8 i4p7
+L ip8 fp8 p8
+L i1p8 gp8 ip8
+FO cp7 c1p7 c2p7
+FO fp8 f1p7 f2p7
+A c1p7 f1p7 p9
+A dp7 f2p7 i5p7
+A i5p7 gp8 p10
+A p9 p10 i1p8
+A i4p7 c2p7 i2p7
+A i1p5 p3 i2p5
+L ip3 bp3 p3
+A bp3 p2 i1p3
+A i1p3 p1 ip3
+L ip2 cp2 p2
+L i1p2 dp2 ip2
+A cp2 dp2 i1p2
+L ip1 cp1 p1
+L dp1 dp1 ip1
+T cp1
+A i2p5 p4 ip5
+L ip4 bp4 p4
+L bp4 cp4 ip4
+T cp4
+
+
+A p5 num out
+
+L 2num 1num num
+L 3num xnum 2num
+FO 1num m1num l1pnum
+A m1num r1pnum 3num
+
+FO l1pnum m1pnum l1num
+A m1pnum r1num r1pnum
+
+
+FO l1num m2num l2num
+A m2num r2num r1num
+A l2num xnum r2num

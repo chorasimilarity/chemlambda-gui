@@ -1,0 +1,145 @@
+A huh1 huh2c1c1 huh1out
+A huh2 huh3c1c1 huh2out
+
+
+L huh12c1c1 huh22c1c1 huh2c1c1
+L huh42c1c1 huh32c1c1 huh12c1c1
+A huh22c1c1 huh32c1c1 huh42c1c1
+
+L huh13c1c1 huh23c1c1 huh3c1c1
+L huh43c1c1 huh33c1c1 huh13c1c1
+A huh23c1c1 huh33c1c1 huh43c1c1
+
+
+
+FOE huh3 huh1 huh2
+A huhnum huh4 huh3
+
+L huh2num huh1num huhnum
+L huh3num huhxnum huh2num
+FO huh1num huhm1num huhl1pnum
+A huhm1num huhr1pnum huh3num
+
+FO huhl1pnum huhm1pnum huhl1ppnum
+A huhm1pnum huhr1ppnum huhr1pnum
+
+FO huhl1ppnum huhm1ppnum huhl1num
+A huhm1ppnum huhr1num huhr1ppnum
+
+
+FO huhl1num huhm2num huhl2num
+A huhm2num huhr2num huhr1num
+A huhl2num huhxnum huhr2num
+
+FI huh6 huh5 huh4
+L huhtms huhv huh6
+L huhsp huh8 huh5
+FO huh8 huhin1 u
+
+L huh1sp huh2sp huhsp
+L huh4sp huh3sp huh1sp
+FO huh2sp huh5sp huh6sp
+A huh5sp huh7sp huh4sp
+A huh8sp huh3sp huh7sp
+A huhin1 huh6sp huh8sp
+
+
+L huh1times huhmtimes huhtimes
+L huh2times huhntimes huh1times
+L huh3times huhftimes huh2times
+A huhmtimes huh4times huh3times
+A huhntimes huhftimes huh4times
+
+
+A huhtimes huhu huhutms
+A huhutms huhv huhtms
+
+A huh2out huhsucc huhcoco
+A huhcoco huhc0 huhoutfin
+
+
+
+L huh1succ huhnsucc huhsucc
+L huh2succ huhssucc huh1succ
+L huh3succ huhzsucc huh2succ
+A huh4succ huh6succ huh3succ
+FO huhssucc huh4succ huh5succ
+A huh7succ huhzsucc huh6succ
+A huhnsucc huh5succ huh7succ
+
+L huh1c0 huh2c0 huhc0
+L huh3c0 huh3c0 huh1c0
+T huh2c0
+
+
+
+
+A 1 2c1c1 1out
+A 2 3c1c1 2out
+
+
+L 12c1c1 22c1c1 2c1c1
+L 42c1c1 32c1c1 12c1c1
+A 22c1c1 32c1c1 42c1c1
+
+L 13c1c1 23c1c1 3c1c1
+L 43c1c1 33c1c1 13c1c1
+A 23c1c1 33c1c1 43c1c1
+
+
+
+FOE 3 1 2
+A num 4 3
+
+L 2num 1num num
+L 3num xnum 2num
+FO 1num m1num l1pnum
+A m1num r1pnum 3num
+
+FO l1pnum m1pnum l1num
+A m1pnum r1num r1pnum
+
+FO l1num m2num l2num
+A m2num r2num r1num
+A l2num xnum r2num
+
+FI 6 5 4
+L tms v 6
+L sp 8 5
+FO 8 in1 huhu
+
+L 1sp 2sp sp
+L 4sp 3sp 1sp
+FO 2sp 5sp 6sp
+A 5sp 7sp 4sp
+A 8sp 3sp 7sp
+A in1 6sp 8sp
+
+
+L 1times mtimes times
+L 2times ntimes 1times
+L 3times ftimes 2times
+A mtimes 4times 3times
+A ntimes ftimes 4times
+
+
+A times u utms
+A utms v tms
+
+A 2out succ coco
+A coco c0 outfin
+
+
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+
+L 1c0 2c0 c0
+L 3c0 3c0 1c0
+T 2c0
+

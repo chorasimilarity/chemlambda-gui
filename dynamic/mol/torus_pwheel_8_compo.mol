@@ -1,0 +1,288 @@
+FOE 1a2 1aNLp 1a3
+A 1a3 1a6 1aNR
+FOE 1bNL 1aW 1a2
+A 8aW 1bNR 1a6
+
+FOE 1b2 1bNL 1b3
+A 1b3 1b6 1bNR
+FOE 1cNLp 1bW 1b2
+A 8bW 1cNR 1b6
+
+A 1cNL 1m 1l
+L 1l 1m 1cNLp
+
+FOE 1c2 1cNL 1c3
+A 1c3 1c6 1cNR
+FOE 1dNL 1cW 1c2
+A 8cW 1dNR 1c6
+
+FOE 1d2 1dNL 1d3
+A 1d3 1d6 1dNR
+FOE 1aNL 1dW 1d2
+A 8dW 1aNR 1d6
+
+
+
+
+
+
+
+FOE 2a2 2aNLp 2a3
+A 2a3 2a6 2aNR
+FOE 2bNL 2aW 2a2
+A 1aW 2bNR 2a6
+
+FOE 2b2 2bNL 2b3
+A 2b3 2b6 2bNR
+FOE 2cNLp 2bW 2b2
+A 1bW 2cNR 2b6
+
+A 2cNL 2m 2l
+L 2l 2m 2cNLp
+
+FOE 2c2 2cNL 2c3
+A 2c3 2c6 2cNR
+FOE 2dNL 2cW 2c2
+A 1cW 2dNR 2c6
+
+FOE 2d2 2dNL 2d3
+A 2d3 2d6 2dNR
+FOE 2aNL 2dW 2d2
+A 1dW 2aNR 2d6
+
+
+
+
+
+
+
+FOE 3a2 3aNLp 3a3
+A 3a3 3a6 3aNR
+FOE 3bNL 3aW 3a2
+A 2aW 3bNR 3a6
+
+FOE 3b2 3bNL 3b3
+A 3b3 3b6 3bNR
+FOE 3cNLp 3bW 3b2
+A 2bW 3cNR 3b6
+
+A 3cNL 3m 3l
+L 3l 3m 3cNLp
+
+FOE 3c2 3cNL 3c3
+A 3c3 3c6 3cNR
+FOE 3dNL 3cW 3c2
+A 2cW 3dNR 3c6
+
+FOE 3d2 3dNL 3d3
+A 3d3 3d6 3dNR
+FOE 3aNL 3dW 3d2
+A 2dW 3aNR 3d6
+
+
+
+
+
+
+FOE 4a2 4aNLp 4a3
+A 4a3 4a6 4aNR
+FOE 4bNL 4aW 4a2
+A 3aW 4bNR 4a6
+
+FOE 4b2 4bNL 4b3
+A 4b3 4b6 4bNR
+FOE 4cNLp 4bW 4b2
+A 3bW 4cNR 4b6
+
+A 4cNL 4m 4l
+L 4l 4m 4cNLp
+
+FOE 4c2 4cNL 4c3
+A 4c3 4c6 4cNR
+FOE 4dNL 4cW 4c2
+A 3cW 4dNR 4c6
+
+FOE 4d2 4dNL 4d3
+A 4d3 4d6 4dNR
+FOE 4aNL 4dW 4d2
+A 3dW 4aNR 4d6
+
+
+
+
+
+FOE 5a2 5aNLp 5a3
+A 5a3 5a6 5aNR
+FOE 5bNL 5aW 5a2
+A 4aW 5bNR 5a6
+
+FOE 5b2 5bNL 5b3
+A 5b3 5b6 5bNR
+FOE 5cNLp 5bW 5b2
+A 4bW 5cNR 5b6
+
+A 5cNL 5m 5l
+L 5l 5m 5cNLp
+
+FOE 5c2 5cNL 5c3
+A 5c3 5c6 5cNR
+FOE 5dNL 5cW 5c2
+A 4cW 5dNR 5c6
+
+FOE 5d2 5dNL 5d3
+A 5d3 5d6 5dNR
+FOE 5aNL 5dW 5d2
+A 4dW 5aNR 5d6
+
+
+
+
+
+FOE 6a2 6aNLp 6a3
+A 6a3 6a6 6aNR
+FOE 6bNL 6aW 6a2
+A 5aW 6bNR 6a6
+
+FOE 6b2 6bNL 6b3
+A 6b3 6b6 6bNR
+FOE 6cNLp 6bW 6b2
+A 5bW 6cNR 6b6
+
+A 6cNL 6m 6l
+L 6l 6m 6cNLp
+
+FOE 6c2 6cNL 6c3
+A 6c3 6c6 6cNR
+FOE 6dNL 6cW 6c2
+A 5cW 6dNR 6c6
+
+FOE 6d2 6dNL 6d3
+A 6d3 6d6 6dNR
+FOE 6aNL 6dW 6d2
+A 5dW 6aNR 6d6
+
+
+
+
+
+
+FOE 7a2 7aNLp 7a3
+A 7a3 7a6 7aNR
+FOE 7bNL 7aW 7a2
+A 6aW 7bNR 7a6
+
+FOE 7b2 7bNL 7b3
+A 7b3 7b6 7bNR
+FOE 7cNLp 7bW 7b2
+A 6bW 7cNR 7b6
+
+A 7cNL 7m 7l
+L 7l 7m 7cNLp
+
+FOE 7c2 7cNL 7c3
+A 7c3 7c6 7cNR
+FOE 7dNL 7cW 7c2
+A 6cW 7dNR 7c6
+
+FOE 7d2 7dNL 7d3
+A 7d3 7d6 7dNR
+FOE 7aNL 7dW 7d2
+A 6dW 7aNR 7d6
+
+
+
+
+
+
+FOE 8a2 8aNLp 8a3
+A 8a3 8a6 8aNR
+FOE 8bNL 8aW 8a2
+A 7aW 8bNR 8a6
+
+FOE 8b2 8bNL 8b3
+A 8b3 8b6 8bNR
+FOE 8cNLp 8bW 8b2
+A 7bW 8cNR 8b6
+
+A 8cNL 8m 8l
+L 8l 8m 8cNLp
+
+FOE 8c2 8cNL 8c3
+A 8c3 8c6 8cNR
+FOE 8dNL 8cW 8c2
+A 7cW 8dNR 8c6
+
+FOE 8d2 8dNL 8d3
+A 8d3 8d6 8dNR
+FOE 8aNL 8dW 8d2
+A 7dW 8aNR 8d6
+
+
+
+
+A com11 1aNLp 1aNL
+ 
+L com41 z1 com11
+A p1 ap21 com41
+A q1 z1 ap21
+FOE p10 p1 q1
+
+A com12 2aNLp 2aNL
+
+L com42 z2 com12
+A p2 ap22 com42
+A q2 z2 ap22
+FOE p20 p2 q2
+
+A com13 3aNLp 3aNL
+
+L com43 z3 com13
+A p3 ap23 com43
+A q3 z3 ap23
+FOE p30 p3 q3
+
+A com14 4aNLp 4aNL
+
+L com44 z4 com14
+A p4 ap24 com44
+A q4 z4 ap24
+FOE p40 p4 q4
+
+A com15 5aNLp 5aNL
+
+L com45 z5 com15
+A p5 ap25 com45
+A q5 z5 ap25
+FOE p50 p5 q5
+
+A com16 6aNLp 6aNL
+
+L com46 z6 com16
+A p6 ap26 com46
+A q6 z6 ap26
+FOE p60 p6 q6
+
+A com17 7aNLp 7aNL
+
+L com47 z7 com17
+A p7 ap27 com47
+A q7 z7 ap27
+FOE p70 p7 q7
+
+A com18 8aNLp 8aNL
+
+L com48 z8 com18
+A p8 ap28 com48
+A q8 z8 ap28
+FOE p80 p8 q8
+
+
+L a8 a1 p10
+L a1 a2 p20
+L a2 a3 p30
+L a3 a4 p40
+L a4 a5 p50
+L a5 a6 p60
+L a6 a7 p70
+L a7 a8 p80
+

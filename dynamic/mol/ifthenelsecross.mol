@@ -1,0 +1,22 @@
+A 1 y out
+A 2 x 1
+A 3 c 2
+A 4 b 3
+A 5 a 4
+L 6 p 5
+L 7 q 6
+L 8 r 7
+A 9 r 8
+A p q 9
+
+L ia ya a
+L ta xa ia
+FRIN fa
+
+L ib yb b
+L tb xb ib
+FRIN fb
+
+L ic yc c
+L tc xc ic
+FRIN fc

@@ -1,0 +1,904 @@
+L yrv0p yrvlp yrvoutsuc
+L yrv1s yrvlfs yrv0p
+L yrv0sfin yrv9in yrv1s
+
+L yrv0sin yrvw8in yrv0sw1
+L yrv0sw1 yrvw7in yrv0sw2
+L yrv0sw2 yrvw6in yrv0sw3
+L yrv0sw3 yrvw5in yrv0sw4
+L yrv0sw4 yrvw4in yrv0sw5
+L yrv0sw5 yrvw3in yrv0sw6
+L yrv0sw6 yrvw2in yrv0sw7
+L yrv0sw7 yrvw1in yrv0sfin
+
+L yrv0i yrv0in yrv0sin
+
+A yrv1ifin yrv0out yrv0i
+
+A yrvwiout1 yrvw1out yrv1ifin
+A yrvwiout2 yrvw2out yrvwiout1
+A yrvwiout3 yrvw3out yrvwiout2
+A yrvwiout4 yrvw4out yrvwiout3
+A yrvwiout5 yrvw5out yrvwiout4
+A yrvwiout6 yrvw6out yrvwiout5
+A yrvwiout7 yrvw7out yrvwiout6
+A yrv1iin yrvw8out yrvwiout7
+A yrv0f yrv9out yrv1iin
+A yrvlp yrvlfs yrv0f
+
+
+Arrow yrvw7in yrvw8out
+Arrow yrvw8in yrv9out
+
+
+
+FO yrv9in yrva yrv0out
+A yrv0in yrvsucc1 yrvc
+A yrvc yrva yrvw1out
+
+
+FO yrvw1in yrvaq2 yrvw2out
+A yrvw2in yrvsucc2 yrvcq2
+A yrvcq2 yrvaq2 yrvw3out
+
+FO yrvw3in yrvaq3 yrvw4out
+A yrvw4in yrvsucc3 yrvcq3
+A yrvcq3 yrvaq3 yrvw5out
+
+FO yrvw5in yrvaq4 yrvw6out
+A yrvw6in yrvsucc4 yrvcq4
+A yrvcq4 yrvaq4 yrvw7out
+
+
+FO yrvsucc yrvsucc1 yrvsuccq1
+FO yrvsuccq1 yrvsucc2 yrvsuccq2
+FO yrvsuccq2 yrvsucc3 yrvsucc4
+
+L yrv1succ yrvnsucc yrvsucc
+L yrv2succ yrvssucc yrv1succ
+L yrv3succ yrvzsucc yrv2succ
+A yrv4succ yrv6succ yrv3succ
+FO yrvssucc yrv4succ yrv5succ
+A yrv7succ yrvzsucc yrv6succ
+A yrvnsucc yrv5succ yrv7succ
+
+
+
+
+A yrvinter yrvoutunu yrvout
+A yrvnum yrvoutsuc yrvinter
+
+
+L yrvp1s yrvplfs yrvoutunu
+L yrvp0sfin yrvp9in yrvp1s
+L yrvp8sf yrvp8in yrvp0sfin
+L yrvp7sf yrvp7in yrvp8sf
+L yrvp6sf yrvp6in yrvp7sf
+L yrvp5sf yrvp5in yrvp6sf
+L yrvp4sf yrvp4in yrvp5sf
+L yrvp3sf yrvp3in yrvp4sf
+L yrvp2sf yrvp2in yrvp3sf
+L yrvp0s yrvp1in yrvp2sf
+L yrvp0i yrvp0in yrvp0s
+A yrvplfs yrvp9in yrvp1iin
+A yrvp1iin yrvp8in yrvp2iin
+A yrvp2iin yrvp7in yrvp3iin
+A yrvp3iin yrvp6in yrvp4iin
+A yrvp4iin yrvp5in yrvp5iin
+A yrvp5iin yrvp4in yrvp6iin
+A yrvp6iin yrvp3in yrvp7iin
+A yrvp7iin yrvp2in yrvp8iin
+A yrvp8iin yrvp1in yrvp1i
+A yrvp1i yrvp0in yrvp0i
+
+
+A yrvout yrv1numb yrvnumbers
+A yrvnumbers yrouter1 yrv2numb
+A yrv2numb yrouter2 yrv3numb
+A yrv3numb yrouter3 yrv4numb
+A yrv4numb yrouter4 yrv5numb
+A yrv5numb yrouter5 yrv6numb
+A yrv6numb yrouter6 yrv7numb
+A yrv7numb yrouter7 yrv8numb
+A yrv8numb yrouter8 yrv9numb
+A yrv9numb yrouter9 yrv10numb
+A yrv10numb yrouter10 yrvoutfinals
+
+
+
+L yrvounum2 yrvouter9 yrv1numb
+L yrvounum3 yrvouter8 yrvounum2
+L yrvounum4 yrvouter7 yrvounum3
+L yrvounum5 yrvouter6 yrvounum4
+L yrvounum6 yrvouter5 yrvounum5
+L yrvounum7 yrvouter4 yrvounum6
+L yrvounum8 yrvouter3 yrvounum7
+L yrvounum9 yrvouter2 yrvounum8
+L yrvounum10 yrvouter1 yrvounum9
+L yrvounum11 yrvouter0 yrvounum10
+
+
+
+
+
+
+
+L yrv1num yrvfnum yrvnum
+L yrv2num yrvxnum yrv1num
+
+FO yrvfnum yrvm1num yrvle4num
+A yrvm1num yrvri4num yrv2num
+
+
+FO yrvle4num yrvm5num yrvm6num
+A yrvm5num yrvri5num yrvri4num
+
+A yrvm6num yrvxnum yrvri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L yr0p yrlp yroutsuc
+L yr1s yrlfs yr0p
+L yr0sfin yr9in yr1s
+
+L yr0sin yrw8in yr0sw1
+L yr0sw1 yrw7in yr0sw2
+L yr0sw2 yrw6in yr0sw3
+L yr0sw3 yrw5in yr0sw4
+L yr0sw4 yrw4in yr0sw5
+L yr0sw5 yrw3in yr0sw6
+L yr0sw6 yrw2in yr0sw7
+L yr0sw7 yrw1in yr0sfin
+
+L yr0i yr0in yr0sin
+
+A yr1ifin yr0out yr0i
+
+A yrwiout1 yrw1out yr1ifin
+A yrwiout2 yrw2out yrwiout1
+A yrwiout3 yrw3out yrwiout2
+A yrwiout4 yrw4out yrwiout3
+A yrwiout5 yrw5out yrwiout4
+A yrwiout6 yrw6out yrwiout5
+A yrwiout7 yrw7out yrwiout6
+A yr1iin yrw8out yrwiout7
+A yr0f yr9out yr1iin
+A yrlp yrlfs yr0f
+
+
+Arrow yrw7in yrw8out
+Arrow yrw8in yr9out
+
+
+
+FO yr9in yra yr0out
+A yr0in yrsucc1 yrc
+A yrc yra yrw1out
+
+
+FO yrw1in yraq2 yrw2out
+A yrw2in yrsucc2 yrcq2
+A yrcq2 yraq2 yrw3out
+
+FO yrw3in yraq3 yrw4out
+A yrw4in yrsucc3 yrcq3
+A yrcq3 yraq3 yrw5out
+
+FO yrw5in yraq4 yrw6out
+A yrw6in yrsucc4 yrcq4
+A yrcq4 yraq4 yrw7out
+
+
+FO yrsucc yrsucc1 yrsuccq1
+FO yrsuccq1 yrsucc2 yrsuccq2
+FO yrsuccq2 yrsucc3 yrsucc4
+
+L yr1succ yrnsucc yrsucc
+L yr2succ yrssucc yr1succ
+L yr3succ yrzsucc yr2succ
+A yr4succ yr6succ yr3succ
+FO yrssucc yr4succ yr5succ
+A yr7succ yrzsucc yr6succ
+A yrnsucc yr5succ yr7succ
+
+
+
+
+A yrinter yroutunu yrout
+A yrnum yroutsuc yrinter
+
+
+L yrp1s yrplfs yroutunu
+L yrp0sfin yrp9in yrp1s
+L yrp8sf yrp8in yrp0sfin
+L yrp7sf yrp7in yrp8sf
+L yrp6sf yrp6in yrp7sf
+L yrp5sf yrp5in yrp6sf
+L yrp4sf yrp4in yrp5sf
+L yrp3sf yrp3in yrp4sf
+L yrp2sf yrp2in yrp3sf
+L yrp0s yrp1in yrp2sf
+L yrp0i yrp0in yrp0s
+A yrplfs yrp9in yrp1iin
+A yrp1iin yrp8in yrp2iin
+A yrp2iin yrp7in yrp3iin
+A yrp3iin yrp6in yrp4iin
+A yrp4iin yrp5in yrp5iin
+A yrp5iin yrp4in yrp6iin
+A yrp6iin yrp3in yrp7iin
+A yrp7iin yrp2in yrp8iin
+A yrp8iin yrp1in yrp1i
+A yrp1i yrp0in yrp0i
+
+
+A yrout yr1numb yrnumbers
+A yrnumbers yr1nums yr2numb
+A yr2numb yr2nums yr3numb
+A yr3numb yr3nums yr4numb
+A yr4numb yr4nums yr5numb
+A yr5numb yr5nums yr6numb
+A yr6numb yrvouter6 yr7numb
+A yr7numb yrvouter7 yr8numb
+A yr8numb yrvouter8 yr9numb
+A yr9numb yrvouter9 yr10numb
+A yr10numb yrvouter10 yroutfinals
+
+
+
+L yrounum2 yrouter9 yr1numb
+L yrounum3 yrouter8 yrounum2
+L yrounum4 yrouter7 yrounum3
+L yrounum5 yrouter6 yrounum4
+L yrounum6 yrouter5 yrounum5
+L yrounum7 yrouter4 yrounum6
+L yrounum8 yrouter3 yrounum7
+L yrounum9 yrouter2 yrounum8
+L yrounum10 yrouter1 yrounum9
+L yrounum11 yrouter0 yrounum10
+
+
+
+
+FO yr1numes yr1nums yr2nus
+FO yr2nus yr2nums yr3nus
+FO yr3nus yr3nums yr4nus
+FO yr4nus yr4nums yr5nums
+
+
+L yr11numes yrf1numes yr1numes
+L yr21numes yrx1numes yr11numes
+A yrf1numes yrx1numes yr21numes
+
+
+L yr1num yrfnum yrnum
+L yr2num yrxnum yr1num
+
+FO yrfnum yrm1num yrle4num
+A yrm1num yrri4num yr2num
+
+
+FO yrle4num yrm5num yrm6num
+A yrm5num yrri5num yrri4num
+
+A yrm6num yrxnum yrri5num
+
+
+
+
+L yv0p yvlp yvoutsuc
+L yv1s yvlfs yv0p
+L yv0sfin yv9in yv1s
+
+L yv0sin yvw8in yv0sw1
+L yv0sw1 yvw7in yv0sw2
+L yv0sw2 yvw6in yv0sw3
+L yv0sw3 yvw5in yv0sw4
+L yv0sw4 yvw4in yv0sw5
+L yv0sw5 yvw3in yv0sw6
+L yv0sw6 yvw2in yv0sw7
+L yv0sw7 yvw1in yv0sfin
+
+L yv0i yv0in yv0sin
+
+A yv1ifin yv0out yv0i
+
+A yvwiout1 yvw1out yv1ifin
+A yvwiout2 yvw2out yvwiout1
+A yvwiout3 yvw3out yvwiout2
+A yvwiout4 yvw4out yvwiout3
+A yvwiout5 yvw5out yvwiout4
+A yvwiout6 yvw6out yvwiout5
+A yvwiout7 yvw7out yvwiout6
+A yv1iin yvw8out yvwiout7
+A yv0f yv9out yv1iin
+A yvlp yvlfs yv0f
+
+
+Arrow yvw7in yvw8out
+Arrow yvw8in yv9out
+
+
+
+FO yv9in yva yv0out
+A yv0in yvsucc1 yvc
+A yvc yva yvw1out
+
+
+FO yvw1in yvaq2 yvw2out
+A yvw2in yvsucc2 yvcq2
+A yvcq2 yvaq2 yvw3out
+
+FO yvw3in yvaq3 yvw4out
+A yvw4in yvsucc3 yvcq3
+A yvcq3 yvaq3 yvw5out
+
+FO yvw5in yvaq4 yvw6out
+A yvw6in yvsucc4 yvcq4
+A yvcq4 yvaq4 yvw7out
+
+
+FO yvsucc yvsucc1 yvsuccq1
+FO yvsuccq1 yvsucc2 yvsuccq2
+FO yvsuccq2 yvsucc3 yvsucc4
+
+L yv1succ yvnsucc yvsucc
+L yv2succ yvssucc yv1succ
+L yv3succ yvzsucc yv2succ
+A yv4succ yv6succ yv3succ
+FO yvssucc yv4succ yv5succ
+A yv7succ yvzsucc yv6succ
+A yvnsucc yv5succ yv7succ
+
+
+
+
+A yvinter yvoutunu yvout
+A yvnum yvoutsuc yvinter
+
+
+L yvp1s yvplfs yvoutunu
+L yvp0sfin yvp9in yvp1s
+L yvp8sf yvp8in yvp0sfin
+L yvp7sf yvp7in yvp8sf
+L yvp6sf yvp6in yvp7sf
+L yvp5sf yvp5in yvp6sf
+L yvp4sf yvp4in yvp5sf
+L yvp3sf yvp3in yvp4sf
+L yvp2sf yvp2in yvp3sf
+L yvp0s yvp1in yvp2sf
+L yvp0i yvp0in yvp0s
+A yvplfs yvp9in yvp1iin
+A yvp1iin yvp8in yvp2iin
+A yvp2iin yvp7in yvp3iin
+A yvp3iin yvp6in yvp4iin
+A yvp4iin yvp5in yvp5iin
+A yvp5iin yvp4in yvp6iin
+A yvp6iin yvp3in yvp7iin
+A yvp7iin yvp2in yvp8iin
+A yvp8iin yvp1in yvp1i
+A yvp1i yvp0in yvp0i
+
+
+A yvout yv1numb yvnumbers
+A yvnumbers youter1 yv2numb
+A yv2numb youter2 yv3numb
+A yv3numb youter3 yv4numb
+A yv4numb youter4 yv5numb
+A yv5numb youter5 yv6numb
+A yv6numb youter6 yv7numb
+A yv7numb youter7 yv8numb
+A yv8numb youter8 yv9numb
+A yv9numb youter9 yv10numb
+A yv10numb youter10 yvoutfinals
+
+
+
+L yvounum2 vouter9 yv1numb
+L yvounum3 vouter8 yvounum2
+L yvounum4 vouter7 yvounum3
+L yvounum5 yvouter6 yvounum4
+L yvounum6 yvouter5 yvounum5
+L yvounum7 yvouter4 yvounum6
+L yvounum8 yvouter3 yvounum7
+L yvounum9 yvouter2 yvounum8
+L yvounum10 yvouter1 yvounum9
+L yvounum11 yvouter0 yvounum10
+
+
+
+
+
+
+
+L yv1num yvfnum yvnum
+L yv2num yvxnum yv1num
+
+FO yvfnum yvm1num yvle4num
+A yvm1num yvri4num yv2num
+
+
+FO yvle4num yvm5num yvm6num
+A yvm5num yvri5num yvri4num
+
+A yvm6num yvxnum yvri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L y0p ylp youtsuc
+L y1s ylfs y0p
+L y0sfin y9in y1s
+
+L y0sin yw8in y0sw1
+L y0sw1 yw7in y0sw2
+L y0sw2 yw6in y0sw3
+L y0sw3 yw5in y0sw4
+L y0sw4 yw4in y0sw5
+L y0sw5 yw3in y0sw6
+L y0sw6 yw2in y0sw7
+L y0sw7 yw1in y0sfin
+
+L y0i y0in y0sin
+
+A y1ifin y0out y0i
+
+A ywiout1 yw1out y1ifin
+A ywiout2 yw2out ywiout1
+A ywiout3 yw3out ywiout2
+A ywiout4 yw4out ywiout3
+A ywiout5 yw5out ywiout4
+A ywiout6 yw6out ywiout5
+A ywiout7 yw7out ywiout6
+A y1iin yw8out ywiout7
+A y0f y9out y1iin
+A ylp ylfs y0f
+
+
+Arrow yw7in yw8out
+Arrow yw8in y9out
+
+
+
+FO y9in ya y0out
+A y0in ysucc1 yc
+A yc ya yw1out
+
+
+FO yw1in yaq2 yw2out
+A yw2in ysucc2 ycq2
+A ycq2 yaq2 yw3out
+
+FO yw3in yaq3 yw4out
+A yw4in ysucc3 ycq3
+A ycq3 yaq3 yw5out
+
+FO yw5in yaq4 yw6out
+A yw6in ysucc4 ycq4
+A ycq4 yaq4 yw7out
+
+
+FO ysucc ysucc1 ysuccq1
+FO ysuccq1 ysucc2 ysuccq2
+FO ysuccq2 ysucc3 ysucc4
+
+L y1succ ynsucc ysucc
+L y2succ yssucc y1succ
+L y3succ yzsucc y2succ
+A y4succ y6succ y3succ
+FO yssucc y4succ y5succ
+A y7succ yzsucc y6succ
+A ynsucc y5succ y7succ
+
+
+
+
+A yinter youtunu yout
+A ynum youtsuc yinter
+
+
+L yp1s yplfs youtunu
+L yp0sfin yp9in yp1s
+L yp8sf yp8in yp0sfin
+L yp7sf yp7in yp8sf
+L yp6sf yp6in yp7sf
+L yp5sf yp5in yp6sf
+L yp4sf yp4in yp5sf
+L yp3sf yp3in yp4sf
+L yp2sf yp2in yp3sf
+L yp0s yp1in yp2sf
+L yp0i yp0in yp0s
+A yplfs yp9in yp1iin
+A yp1iin yp8in yp2iin
+A yp2iin yp7in yp3iin
+A yp3iin yp6in yp4iin
+A yp4iin yp5in yp5iin
+A yp5iin yp4in yp6iin
+A yp6iin yp3in yp7iin
+A yp7iin yp2in yp8iin
+A yp8iin yp1in yp1i
+A yp1i yp0in yp0i
+
+
+A yout y1numb ynumbers
+A ynumbers y1nums y2numb
+A y2numb y2nums y3numb
+A y3numb y3nums y4numb
+A y4numb y4nums y5numb
+A y5numb y5nums y6numb
+A y6numb yvouter6 y7numb
+A y7numb yvouter7 y8numb
+A y8numb yvouter8 y9numb
+A y9numb yvouter9 y10numb
+A y10numb yvouter10 youtfinals
+
+
+
+L younum2 youter9 y1numb
+L younum3 youter8 younum2
+L younum4 youter7 younum3
+L younum5 youter6 younum4
+L younum6 youter5 younum5
+L younum7 youter4 younum6
+L younum8 youter3 younum7
+L younum9 youter2 younum8
+L younum10 youter1 younum9
+L younum11 youter0 younum10
+
+
+
+
+FO y1numes y1nums y2nus
+FO y2nus y2nums y3nus
+FO y3nus y3nums y4nus
+FO y4nus y4nums y5nums
+
+
+L y11numes yf1numes y1numes
+L y21numes yx1numes y11numes
+A yf1numes yx1numes y21numes
+
+
+L y1num yfnum ynum
+L y2num yxnum y1num
+
+FO yfnum ym1num yle4num
+A ym1num yri4num y2num
+
+
+FO yle4num ym5num ym6num
+A ym5num yri5num yri4num
+
+A ym6num yxnum yri5num
+
+
+
+
+
+
+
+
+
+
+
+L v0p vlp voutsuc
+L v1s vlfs v0p
+L v0sfin v9in v1s
+
+L v0sin vw8in v0sw1
+L v0sw1 vw7in v0sw2
+L v0sw2 vw6in v0sw3
+L v0sw3 vw5in v0sw4
+L v0sw4 vw4in v0sw5
+L v0sw5 vw3in v0sw6
+L v0sw6 vw2in v0sw7
+L v0sw7 vw1in v0sfin
+
+L v0i v0in v0sin
+
+A v1ifin v0out v0i
+
+A vwiout1 vw1out v1ifin
+A vwiout2 vw2out vwiout1
+A vwiout3 vw3out vwiout2
+A vwiout4 vw4out vwiout3
+A vwiout5 vw5out vwiout4
+A vwiout6 vw6out vwiout5
+A vwiout7 vw7out vwiout6
+A v1iin vw8out vwiout7
+A v0f v9out v1iin
+A vlp vlfs v0f
+
+
+Arrow vw7in vw8out
+Arrow vw8in v9out
+
+
+
+FO v9in va v0out
+A v0in vsucc1 vc
+A vc va vw1out
+
+
+FO vw1in vaq2 vw2out
+A vw2in vsucc2 vcq2
+A vcq2 vaq2 vw3out
+
+FO vw3in vaq3 vw4out
+A vw4in vsucc3 vcq3
+A vcq3 vaq3 vw5out
+
+FO vw5in vaq4 vw6out
+A vw6in vsucc4 vcq4
+A vcq4 vaq4 vw7out
+
+
+FO vsucc vsucc1 vsuccq1
+FO vsuccq1 vsucc2 vsuccq2
+FO vsuccq2 vsucc3 vsucc4
+
+L v1succ vnsucc vsucc
+L v2succ vssucc v1succ
+L v3succ vzsucc v2succ
+A v4succ v6succ v3succ
+FO vssucc v4succ v5succ
+A v7succ vzsucc v6succ
+A vnsucc v5succ v7succ
+
+
+
+
+A vinter voutunu vout
+A vnum voutsuc vinter
+
+
+L vp1s vplfs voutunu
+L vp0sfin vp9in vp1s
+L vp8sf vp8in vp0sfin
+L vp7sf vp7in vp8sf
+L vp6sf vp6in vp7sf
+L vp5sf vp5in vp6sf
+L vp4sf vp4in vp5sf
+L vp3sf vp3in vp4sf
+L vp2sf vp2in vp3sf
+L vp0s vp1in vp2sf
+L vp0i vp0in vp0s
+A vplfs vp9in vp1iin
+A vp1iin vp8in vp2iin
+A vp2iin vp7in vp3iin
+A vp3iin vp6in vp4iin
+A vp4iin vp5in vp5iin
+A vp5iin vp4in vp6iin
+A vp6iin vp3in vp7iin
+A vp7iin vp2in vp8iin
+A vp8iin vp1in vp1i
+A vp1i vp0in vp0i
+
+
+A vout v1numb vnumbers
+A vnumbers outer1 v2numb
+A v2numb outer2 v3numb
+A v3numb outer3 v4numb
+A v4numb outer4 v5numb
+A v5numb outer5 v6numb
+A v6numb outer6 v7numb
+A v7numb outer7 v8numb
+A v8numb outer8 v9numb
+A v9numb outer9 v10numb
+A v10numb outer10 voutfinals
+
+
+
+L vounum2 yvouter9 v1numb
+L vounum3 yvouter8 vounum2
+L vounum4 yvouter7 vounum3
+L vounum5 vouter6 vounum4
+L vounum6 vouter5 vounum5
+L vounum7 vouter4 vounum6
+L vounum8 vouter3 vounum7
+L vounum9 vouter2 vounum8
+L vounum10 vouter1 vounum9
+L vounum11 vouter0 vounum10
+
+
+
+
+
+
+
+L v1num vfnum vnum
+L v2num vxnum v1num
+
+FO vfnum vm1num vle4num
+A vm1num vri4num v2num
+
+
+FO vle4num vm5num vm6num
+A vm5num vri5num vri4num
+
+A vm6num vxnum vri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L 0p lp outsuc
+L 1s lfs 0p
+L 0sfin 9in 1s
+
+L 0sin w8in 0sw1
+L 0sw1 w7in 0sw2
+L 0sw2 w6in 0sw3
+L 0sw3 w5in 0sw4
+L 0sw4 w4in 0sw5
+L 0sw5 w3in 0sw6
+L 0sw6 w2in 0sw7
+L 0sw7 w1in 0sfin
+
+L 0i 0in 0sin
+
+A 1ifin 0out 0i
+
+A wiout1 w1out 1ifin
+A wiout2 w2out wiout1
+A wiout3 w3out wiout2
+A wiout4 w4out wiout3
+A wiout5 w5out wiout4
+A wiout6 w6out wiout5
+A wiout7 w7out wiout6
+A 1iin w8out wiout7
+A 0f 9out 1iin
+A lp lfs 0f
+
+
+Arrow w7in w8out
+Arrow w8in 9out
+
+
+
+FO 9in a 0out
+A 0in succ1 c
+A c a w1out
+
+
+FO w1in aq2 w2out
+A w2in succ2 cq2
+A cq2 aq2 w3out
+
+FO w3in aq3 w4out
+A w4in succ3 cq3
+A cq3 aq3 w5out
+
+FO w5in aq4 w6out
+A w6in succ4 cq4
+A cq4 aq4 w7out
+
+
+FO succ succ1 succq1
+FO succq1 succ2 succq2
+FO succq2 succ3 succ4
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+
+
+
+
+A inter outunu out
+A num outsuc inter
+
+
+L p1s plfs outunu
+L p0sfin p9in p1s
+L p8sf p8in p0sfin
+L p7sf p7in p8sf
+L p6sf p6in p7sf
+L p5sf p5in p6sf
+L p4sf p4in p5sf
+L p3sf p3in p4sf
+L p2sf p2in p3sf
+L p0s p1in p2sf
+L p0i p0in p0s
+A plfs p9in p1iin
+A p1iin p8in p2iin
+A p2iin p7in p3iin
+A p3iin p6in p4iin
+A p4iin p5in p5iin
+A p5iin p4in p6iin
+A p6iin p3in p7iin
+A p7iin p2in p8iin
+A p8iin p1in p1i
+A p1i p0in p0i
+
+
+A out 1numb numbers
+A numbers 1nums 2numb
+A 2numb 2nums 3numb
+A 3numb 3nums 4numb
+A 4numb 4nums 5numb
+A 5numb 5nums 6numb
+A 6numb vouter6 7numb
+A 7numb vouter7 8numb
+A 8numb vouter8 9numb
+A 9numb vouter9 10numb
+A 10numb vouter10 outfinals
+
+
+
+L ounum2 outer9 1numb
+L ounum3 outer8 ounum2
+L ounum4 outer7 ounum3
+L ounum5 outer6 ounum4
+L ounum6 outer5 ounum5
+L ounum7 outer4 ounum6
+L ounum8 outer3 ounum7
+L ounum9 outer2 ounum8
+L ounum10 outer1 ounum9
+L ounum11 outer0 ounum10
+
+
+
+
+FO 1numes 1nums 2nus
+FO 2nus 2nums 3nus
+FO 3nus 3nums 4nus
+FO 4nus 4nums 5nums
+
+
+L 11numes f1numes 1numes
+L 21numes x1numes 11numes
+A f1numes x1numes 21numes
+
+
+L 1num fnum num
+L 2num xnum 1num
+
+FO fnum m1num le4num
+A m1num ri4num 2num
+
+
+FO le4num m5num m6num
+A m5num ri5num ri4num
+
+A m6num xnum ri5num
+

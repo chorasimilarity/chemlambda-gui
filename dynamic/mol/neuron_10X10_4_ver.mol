@@ -1,0 +1,632 @@
+L gv0p gvlp gvoutsuc
+L gv1s gvlfs gv0p
+L gv0sfin gv9in gv1s
+
+L gv0sin gvw8in gv0sw1
+L gv0sw1 gvw7in gv0sw2
+L gv0sw2 gvw6in gv0sw3
+L gv0sw3 gvw5in gv0sw4
+L gv0sw4 gvw4in gv0sw5
+L gv0sw5 gvw3in gv0sw6
+L gv0sw6 gvw2in gv0sw7
+L gv0sw7 gvw1in gv0sfin
+
+L gv0i gv0in gv0sin
+
+A gv1ifin gv0out gv0i
+
+A gvwiout1 gvw1out gv1ifin
+A gvwiout2 gvw2out gvwiout1
+A gvwiout3 gvw3out gvwiout2
+A gvwiout4 gvw4out gvwiout3
+A gvwiout5 gvw5out gvwiout4
+A gvwiout6 gvw6out gvwiout5
+A gvwiout7 gvw7out gvwiout6
+A gv1iin gvw8out gvwiout7
+A gv0f gv9out gv1iin
+A gvlp gvlfs gv0f
+
+
+Arrow gvw7in gvw8out
+Arrow gvw8in gv9out
+
+
+
+FO gv9in gva gv0out
+A gv0in gvsucc1 gvc
+A gvc gva gvw1out
+
+
+FO gvw1in gvaq2 gvw2out
+A gvw2in gvsucc2 gvcq2
+A gvcq2 gvaq2 gvw3out
+
+FO gvw3in gvaq3 gvw4out
+A gvw4in gvsucc3 gvcq3
+A gvcq3 gvaq3 gvw5out
+
+FO gvw5in gvaq4 gvw6out
+A gvw6in gvsucc4 gvcq4
+A gvcq4 gvaq4 gvw7out
+
+
+FO gvsucc gvsucc1 gvsuccq1
+FO gvsuccq1 gvsucc2 gvsuccq2
+FO gvsuccq2 gvsucc3 gvsucc4
+
+L gv1succ gvnsucc gvsucc
+L gv2succ gvssucc gv1succ
+L gv3succ gvzsucc gv2succ
+A gv4succ gv6succ gv3succ
+FO gvssucc gv4succ gv5succ
+A gv7succ gvzsucc gv6succ
+A gvnsucc gv5succ gv7succ
+
+
+
+
+A gvinter gvoutunu gvout
+A gvnum gvoutsuc gvinter
+
+
+L gvp1s gvplfs gvoutunu
+L gvp0sfin gvp9in gvp1s
+L gvp8sf gvp8in gvp0sfin
+L gvp7sf gvp7in gvp8sf
+L gvp6sf gvp6in gvp7sf
+L gvp5sf gvp5in gvp6sf
+L gvp4sf gvp4in gvp5sf
+L gvp3sf gvp3in gvp4sf
+L gvp2sf gvp2in gvp3sf
+L gvp0s gvp1in gvp2sf
+L gvp0i gvp0in gvp0s
+A gvplfs gvp9in gvp1iin
+A gvp1iin gvp8in gvp2iin
+A gvp2iin gvp7in gvp3iin
+A gvp3iin gvp6in gvp4iin
+A gvp4iin gvp5in gvp5iin
+A gvp5iin gvp4in gvp6iin
+A gvp6iin gvp3in gvp7iin
+A gvp7iin gvp2in gvp8iin
+A gvp8iin gvp1in gvp1i
+A gvp1i gvp0in gvp0i
+
+
+A gvout gv1numb gvnumbers
+A gvnumbers gouter1 gv2numb
+A gv2numb gouter2 gv3numb
+A gv3numb gouter3 gv4numb
+A gv4numb gouter4 gv5numb
+A gv5numb gouter5 gv6numb
+A gv6numb gouter6 gv7numb
+A gv7numb gouter7 gv8numb
+A gv8numb gouter8 gv9numb
+A gv9numb gouter9 gv10numb
+A gv10numb gouter10 gvoutfinals
+
+
+
+L gvounum2 gvouter9 gv1numb
+L gvounum3 gvouter8 gvounum2
+L gvounum4 gvouter7 gvounum3
+L gvounum5 gvouter6 gvounum4
+L gvounum6 gvouter5 gvounum5
+L gvounum7 gvouter4 gvounum6
+L gvounum8 gvouter3 gvounum7
+L gvounum9 gvouter2 gvounum8
+L gvounum10 gvouter1 gvounum9
+L gvounum11 gvouter0 gvounum10
+
+
+
+
+
+
+
+L gv1num gvfnum gvnum
+L gv2num gvxnum gv1num
+
+FO gvfnum gvm1num gvle1num
+A gvm1num gvri1num gv2num
+
+FO gvle1num gvm2num gvle2num
+A gvm2num gvri2num gvri1num
+
+FO gvle2num gvm3num gvle4num
+A gvm3num gvri4num gvri2num
+
+
+FO gvle4num gvm5num gvm6num
+A gvm5num gvri5num gvri4num
+
+A gvm6num gvxnum gvri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L g0p glp goutsuc
+L g1s glfs g0p
+L g0sfin g9in g1s
+
+L g0sin gw8in g0sw1
+L g0sw1 gw7in g0sw2
+L g0sw2 gw6in g0sw3
+L g0sw3 gw5in g0sw4
+L g0sw4 gw4in g0sw5
+L g0sw5 gw3in g0sw6
+L g0sw6 gw2in g0sw7
+L g0sw7 gw1in g0sfin
+
+L g0i g0in g0sin
+
+A g1ifin g0out g0i
+
+A gwiout1 gw1out g1ifin
+A gwiout2 gw2out gwiout1
+A gwiout3 gw3out gwiout2
+A gwiout4 gw4out gwiout3
+A gwiout5 gw5out gwiout4
+A gwiout6 gw6out gwiout5
+A gwiout7 gw7out gwiout6
+A g1iin gw8out gwiout7
+A g0f g9out g1iin
+A glp glfs g0f
+
+
+Arrow gw7in gw8out
+Arrow gw8in g9out
+
+
+
+FO g9in ga g0out
+A g0in gsucc1 gc
+A gc ga gw1out
+
+
+FO gw1in gaq2 gw2out
+A gw2in gsucc2 gcq2
+A gcq2 gaq2 gw3out
+
+FO gw3in gaq3 gw4out
+A gw4in gsucc3 gcq3
+A gcq3 gaq3 gw5out
+
+FO gw5in gaq4 gw6out
+A gw6in gsucc4 gcq4
+A gcq4 gaq4 gw7out
+
+
+FO gsucc gsucc1 gsuccq1
+FO gsuccq1 gsucc2 gsuccq2
+FO gsuccq2 gsucc3 gsucc4
+
+L g1succ gnsucc gsucc
+L g2succ gssucc g1succ
+L g3succ gzsucc g2succ
+A g4succ g6succ g3succ
+FO gssucc g4succ g5succ
+A g7succ gzsucc g6succ
+A gnsucc g5succ g7succ
+
+
+
+
+A ginter goutunu gout
+A gnum goutsuc ginter
+
+
+L gp1s gplfs goutunu
+L gp0sfin gp9in gp1s
+L gp8sf gp8in gp0sfin
+L gp7sf gp7in gp8sf
+L gp6sf gp6in gp7sf
+L gp5sf gp5in gp6sf
+L gp4sf gp4in gp5sf
+L gp3sf gp3in gp4sf
+L gp2sf gp2in gp3sf
+L gp0s gp1in gp2sf
+L gp0i gp0in gp0s
+A gplfs gp9in gp1iin
+A gp1iin gp8in gp2iin
+A gp2iin gp7in gp3iin
+A gp3iin gp6in gp4iin
+A gp4iin gp5in gp5iin
+A gp5iin gp4in gp6iin
+A gp6iin gp3in gp7iin
+A gp7iin gp2in gp8iin
+A gp8iin gp1in gp1i
+A gp1i gp0in gp0i
+
+
+A gout g1numb gnumbers
+A gnumbers g1nums g2numb
+A g2numb g2nums g3numb
+A g3numb g3nums g4numb
+A g4numb g4nums g5numb
+A g5numb g5nums g6numb
+A g6numb gvouter6 g7numb
+A g7numb gvouter7 g8numb
+A g8numb gvouter8 g9numb
+A g9numb gvouter9 g10numb
+A g10numb gvouter10 goutfinals
+
+
+
+L gounum2 outer9 g1numb
+L gounum3 gouter8 gounum2
+L gounum4 outer7 gounum3
+L gounum5 gouter6 gounum4
+L gounum6 outer5 gounum5
+L gounum7 gouter4 gounum6
+L gounum8 outer3 gounum7
+L gounum9 gouter2 gounum8
+L gounum10 gouter1 gounum9
+L gounum11 gouter0 gounum10
+
+
+
+
+FO g1numes g1nums g2nus
+FO g2nus g2nums g3nus
+FO g3nus g3nums g4nus
+FO g4nus g4nums g5nums
+
+
+L g11numes gf1numes g1numes
+L g21numes gx1numes g11numes
+A gf1numes gx1numes g21numes
+
+
+L g1num gfnum gnum
+L g2num gxnum g1num
+
+FO gfnum gm1num gle1num
+A gm1num gri1num g2num
+
+FO gle1num gm2num gle2num
+A gm2num gri2num gri1num
+
+FO gle2num gm3num gle4num
+A gm3num gri4num gri2num
+
+
+FO gle4num gm5num gm6num
+A gm5num gri5num gri4num
+
+A gm6num gxnum gri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L v0p vlp voutsuc
+L v1s vlfs v0p
+L v0sfin v9in v1s
+
+L v0sin vw8in v0sw1
+L v0sw1 vw7in v0sw2
+L v0sw2 vw6in v0sw3
+L v0sw3 vw5in v0sw4
+L v0sw4 vw4in v0sw5
+L v0sw5 vw3in v0sw6
+L v0sw6 vw2in v0sw7
+L v0sw7 vw1in v0sfin
+
+L v0i v0in v0sin
+
+A v1ifin v0out v0i
+
+A vwiout1 vw1out v1ifin
+A vwiout2 vw2out vwiout1
+A vwiout3 vw3out vwiout2
+A vwiout4 vw4out vwiout3
+A vwiout5 vw5out vwiout4
+A vwiout6 vw6out vwiout5
+A vwiout7 vw7out vwiout6
+A v1iin vw8out vwiout7
+A v0f v9out v1iin
+A vlp vlfs v0f
+
+
+Arrow vw7in vw8out
+Arrow vw8in v9out
+
+
+
+FO v9in va v0out
+A v0in vsucc1 vc
+A vc va vw1out
+
+
+FO vw1in vaq2 vw2out
+A vw2in vsucc2 vcq2
+A vcq2 vaq2 vw3out
+
+FO vw3in vaq3 vw4out
+A vw4in vsucc3 vcq3
+A vcq3 vaq3 vw5out
+
+FO vw5in vaq4 vw6out
+A vw6in vsucc4 vcq4
+A vcq4 vaq4 vw7out
+
+
+FO vsucc vsucc1 vsuccq1
+FO vsuccq1 vsucc2 vsuccq2
+FO vsuccq2 vsucc3 vsucc4
+
+L v1succ vnsucc vsucc
+L v2succ vssucc v1succ
+L v3succ vzsucc v2succ
+A v4succ v6succ v3succ
+FO vssucc v4succ v5succ
+A v7succ vzsucc v6succ
+A vnsucc v5succ v7succ
+
+
+
+
+A vinter voutunu vout
+A vnum voutsuc vinter
+
+
+L vp1s vplfs voutunu
+L vp0sfin vp9in vp1s
+L vp8sf vp8in vp0sfin
+L vp7sf vp7in vp8sf
+L vp6sf vp6in vp7sf
+L vp5sf vp5in vp6sf
+L vp4sf vp4in vp5sf
+L vp3sf vp3in vp4sf
+L vp2sf vp2in vp3sf
+L vp0s vp1in vp2sf
+L vp0i vp0in vp0s
+A vplfs vp9in vp1iin
+A vp1iin vp8in vp2iin
+A vp2iin vp7in vp3iin
+A vp3iin vp6in vp4iin
+A vp4iin vp5in vp5iin
+A vp5iin vp4in vp6iin
+A vp6iin vp3in vp7iin
+A vp7iin vp2in vp8iin
+A vp8iin vp1in vp1i
+A vp1i vp0in vp0i
+
+
+A vout v1numb vnumbers
+A vnumbers outer1 v2numb
+A v2numb outer2 v3numb
+A v3numb outer3 v4numb
+A v4numb outer4 v5numb
+A v5numb outer5 v6numb
+A v6numb outer6 v7numb
+A v7numb outer7 v8numb
+A v8numb outer8 v9numb
+A v9numb outer9 v10numb
+A v10numb outer10 voutfinals
+
+
+
+L vounum2 vouter9 v1numb
+L vounum3 vouter8 vounum2
+L vounum4 vouter7 vounum3
+L vounum5 vouter6 vounum4
+L vounum6 vouter5 vounum5
+L vounum7 vouter4 vounum6
+L vounum8 vouter3 vounum7
+L vounum9 vouter2 vounum8
+L vounum10 vouter1 vounum9
+L vounum11 vouter0 vounum10
+
+
+
+
+
+
+
+L v1num vfnum vnum
+L v2num vxnum v1num
+
+FO vfnum vm1num vle1num
+A vm1num vri1num v2num
+
+FO vle1num vm2num vle2num
+A vm2num vri2num vri1num
+
+FO vle2num vm3num vle4num
+A vm3num vri4num vri2num
+
+
+FO vle4num vm5num vm6num
+A vm5num vri5num vri4num
+
+A vm6num vxnum vri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L 0p lp outsuc
+L 1s lfs 0p
+L 0sfin 9in 1s
+
+L 0sin w8in 0sw1
+L 0sw1 w7in 0sw2
+L 0sw2 w6in 0sw3
+L 0sw3 w5in 0sw4
+L 0sw4 w4in 0sw5
+L 0sw5 w3in 0sw6
+L 0sw6 w2in 0sw7
+L 0sw7 w1in 0sfin
+
+L 0i 0in 0sin
+
+A 1ifin 0out 0i
+
+A wiout1 w1out 1ifin
+A wiout2 w2out wiout1
+A wiout3 w3out wiout2
+A wiout4 w4out wiout3
+A wiout5 w5out wiout4
+A wiout6 w6out wiout5
+A wiout7 w7out wiout6
+A 1iin w8out wiout7
+A 0f 9out 1iin
+A lp lfs 0f
+
+
+Arrow w7in w8out
+Arrow w8in 9out
+
+
+
+FO 9in a 0out
+A 0in succ1 c
+A c a w1out
+
+
+FO w1in aq2 w2out
+A w2in succ2 cq2
+A cq2 aq2 w3out
+
+FO w3in aq3 w4out
+A w4in succ3 cq3
+A cq3 aq3 w5out
+
+FO w5in aq4 w6out
+A w6in succ4 cq4
+A cq4 aq4 w7out
+
+
+FO succ succ1 succq1
+FO succq1 succ2 succq2
+FO succq2 succ3 succ4
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+
+
+
+
+A inter outunu out
+A num outsuc inter
+
+
+L p1s plfs outunu
+L p0sfin p9in p1s
+L p8sf p8in p0sfin
+L p7sf p7in p8sf
+L p6sf p6in p7sf
+L p5sf p5in p6sf
+L p4sf p4in p5sf
+L p3sf p3in p4sf
+L p2sf p2in p3sf
+L p0s p1in p2sf
+L p0i p0in p0s
+A plfs p9in p1iin
+A p1iin p8in p2iin
+A p2iin p7in p3iin
+A p3iin p6in p4iin
+A p4iin p5in p5iin
+A p5iin p4in p6iin
+A p6iin p3in p7iin
+A p7iin p2in p8iin
+A p8iin p1in p1i
+A p1i p0in p0i
+
+
+A out 1numb numbers
+A numbers 1nums 2numb
+A 2numb 2nums 3numb
+A 3numb 3nums 4numb
+A 4numb 4nums 5numb
+A 5numb 5nums 6numb
+A 6numb vouter6 7numb
+A 7numb vouter7 8numb
+A 8numb vouter8 9numb
+A 9numb vouter9 10numb
+A 10numb vouter10 outfinals
+
+
+
+L ounum2 gouter9 1numb
+L ounum3 outer8 ounum2
+L ounum4 gouter7 ounum3
+L ounum5 outer6 ounum4
+L ounum6 gouter5 ounum5
+L ounum7 outer4 ounum6
+L ounum8 gouter3 ounum7
+L ounum9 outer2 ounum8
+L ounum10 outer1 ounum9
+L ounum11 outer0 ounum10
+
+
+
+
+FO 1numes 1nums 2nus
+FO 2nus 2nums 3nus
+FO 3nus 3nums 4nus
+FO 4nus 4nums 5nums
+
+
+L 11numes f1numes 1numes
+L 21numes x1numes 11numes
+A f1numes x1numes 21numes
+
+
+L 1num fnum num
+L 2num xnum 1num
+
+FO fnum m1num le1num
+A m1num ri1num 2num
+
+FO le1num m2num le2num
+A m2num ri2num ri1num
+
+FO le2num m3num le4num
+A m3num ri4num ri2num
+
+
+FO le4num m5num m6num
+A m5num ri5num ri4num
+
+A m6num xnum ri5num
+
+

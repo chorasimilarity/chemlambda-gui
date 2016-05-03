@@ -1,0 +1,269 @@
+
+FOE r6oo rp6o1 rp6o2
+FOE rp5oo rp5o1 rp5o2
+
+FOE rp4oo rp4o1 rp4o2
+FOE rp3oo rp3o1 rp3o2
+
+FOE rp13 rp6oo rp5oo
+FOE rp14 rp4oo rp3oo
+
+A rp23 rp12 rp13
+FO rp12p rpb13 rpb12
+A rpb13 rpb12 rp12
+L rp24 rp12p rp14
+A rp33 rp22 rp23
+L rp34 rp22 rp24
+A rp43 rp32 rp33
+FO rp32p rpb33 rpb32
+A rpb33 rpb32 rp32
+L rp44 rp32p rp34
+A rp1 rp42 rp43
+L rp2 rp42 rp44
+
+A rp23o rp12o rp1
+FO rp12po rpb13o rpb12o
+A rpb13o rpb12o rp12o
+L rp24o rp12po rp2
+A rp33o rp22o rp23o
+L rp34o rp22o rp24o
+A rp43o rp32o rp33o
+FO rp32po rpb33o rpb32o
+A rpb33o rpb32o rp32o
+L rp44o rp32po rp34o
+A rpzz13 rp42o rp43o
+L rpzz14 rp42o rp44o
+
+
+A rpzz23 rpzz12 rpzz13
+FO rpzz12p rpzzb13 rpzzb12
+A rpzzb13 rpzzb12 rpzz12
+L rpzz24 rpzz12p rpzz14
+A rpzz33 rpzz22 rpzz23
+L rpzz34 rpzz22 rpzz24
+A rpzz43 rpzz32 rpzz33
+FO rpzz32p rpzzb33 rpzzb32
+A rpzzb33 rpzzb32 rpzz32
+L rpzz44 rpzz32p rpzz34
+A rpzz1 rpzz42 rpzz43
+L rpzz2 rpzz42 rpzz44
+
+A rpzz23o rpzz12o rpzz1
+FO rpzz12po rpzzb13o rpzzb12o
+A rpzzb13o rpzzb12o rpzz12o
+L rpzz24o rpzz12po rpzz2
+A rpzz33o rpzz22o rpzz23o
+L rpzz34o rpzz22o rpzz24o
+A rpzz43o rpzz32o rpzz33o
+FO rpzz32po rpzzb33o rpzzb32o
+A rpzzb33o rpzzb32o rpzz32o
+L rpzz44o rpzz32po rpzz34o
+A rp1o rpzz42o rpzz43o
+L rp2o rpzz42o rpzz44o
+
+
+Arrow rp5o1 rp1ao2
+Arrow rp3o2 rp2ao1
+
+Arrow rp6o1 rp1bo2
+Arrow rp4o2 rp2bo1
+
+
+Arrow rp5o2 rp1ao1
+Arrow rp3o1 rp2ao2
+
+Arrow rp6o2 rp1bo1
+Arrow rp4o1 rp2bo2
+
+
+FI rp1aoo rp1boo rp1o
+FI rp2aoo rp2boo rp2o
+
+FI rp1ao1 rp1ao2 rp1aoo
+FI rp1bo1 rp1bo2 rp1boo
+
+FI rp2ao1 rp2ao2 rp2aoo
+FI rp2bo1 rp2bo2 rp2boo
+
+
+
+FOE rp6oo r6o1 r6o2
+FOE r5oo r5o1 r5o2
+
+FOE r4oo r4o1 r4o2
+FOE r3oo r3o1 r3o2
+
+FOE r13 r6oo r5oo
+FOE r14 r4oo r3oo
+
+A r23 r12 r13
+FO r12p rb13 rb12
+A rb13 rb12 r12
+L r24 r12p r14
+A r33 r22 r23
+L r34 r22 r24
+A r43 r32 r33
+FO r32p rb33 rb32
+A rb33 rb32 r32
+L r44 r32p r34
+A r1 r42 r43
+L r2 r42 r44
+
+A r23o r12o r1
+FO r12po rb13o rb12o
+A rb13o rb12o r12o
+L r24o r12po r2
+A r33o r22o r23o
+L r34o r22o r24o
+A r43o r32o r33o
+FO r32po rb33o rb32o
+A rb33o rb32o r32o
+L r44o r32po r34o
+A rzz13 r42o r43o
+L rzz14 r42o r44o
+
+
+A rzz23 rzz12 rzz13
+FO rzz12p rzzb13 rzzb12
+A rzzb13 rzzb12 rzz12
+L rzz24 rzz12p rzz14
+A rzz33 rzz22 rzz23
+L rzz34 rzz22 rzz24
+A rzz43 rzz32 rzz33
+FO rzz32p rzzb33 rzzb32
+A rzzb33 rzzb32 rzz32
+L rzz44 rzz32p rzz34
+A rzz1 rzz42 rzz43
+L rzz2 rzz42 rzz44
+
+A rzz23o rzz12o rzz1
+FO rzz12po rzzb13o rzzb12o
+A rzzb13o rzzb12o rzz12o
+L rzz24o rzz12po rzz2
+A rzz33o rzz22o rzz23o
+L rzz34o rzz22o rzz24o
+A rzz43o rzz32o rzz33o
+FO rzz32po rzzb33o rzzb32o
+A rzzb33o rzzb32o rzz32o
+L rzz44o rzz32po rzz34o
+A r1o rzz42o rzz43o
+L r2o rzz42o rzz44o
+
+
+Arrow r6o1 r1ao2
+Arrow r5o2 r2ao1
+
+Arrow r4o1 r1bo2
+Arrow r3o2 r2bo1
+
+
+Arrow r6o2 r1ao1
+Arrow r4o2 r2ao2
+
+Arrow r3o1 r1bo1
+Arrow r5o1 r2bo2
+
+
+FI r1aoo r1boo r1o
+FI r2aoo r2boo r2o
+
+FI r1ao1 r1ao2 r1aoo
+FI r1bo1 r1bo2 r1boo
+
+FI r2ao1 r2ao2 r2aoo
+FI r2bo1 r2bo2 r2boo
+
+
+
+
+
+
+
+FOE rp6oo 6o1 5o2
+FOE 5oo 5o1 3o2
+
+FOE 4oo 4o1 4o2
+FOE 3oo 3o1 6o2
+
+FOE 13 6oo 5oo
+FOE 14 4oo 3oo
+
+A 23 12 13
+FO 12p b13 b12
+A b13 b12 12
+L 24 12p 14
+A 33 22 23
+L 34 22 24
+A 43 32 33
+FO 32p b33 b32
+A b33 b32 32
+L 44 32p 34
+A 1 42 43
+L 2 42 44
+
+A 23o 12o 1
+FO 12po b13o b12o
+A b13o b12o 12o
+L 24o 12po 2
+A 33o 22o 23o
+L 34o 22o 24o
+A 43o 32o 33o
+FO 32po b33o b32o
+A b33o b32o 32o
+L 44o 32po 34o
+A zz13 42o 43o
+L zz14 42o 44o
+
+
+A zz23 zz12 zz13
+FO zz12p zzb13 zzb12
+A zzb13 zzb12 zz12
+L zz24 zz12p zz14
+A zz33 zz22 zz23
+L zz34 zz22 zz24
+A zz43 zz32 zz33
+FO zz32p zzb33 zzb32
+A zzb33 zzb32 zz32
+L zz44 zz32p zz34
+A zz1 zz42 zz43
+L zz2 zz42 zz44
+
+A zz23o zz12o zz1
+FO zz12po zzb13o zzb12o
+A zzb13o zzb12o zz12o
+L zz24o zz12po zz2
+A zz33o zz22o zz23o
+L zz34o zz22o zz24o
+A zz43o zz32o zz33o
+FO zz32po zzb33o zzb32o
+A zzb33o zzb32o zz32o
+L zz44o zz32po zz34o
+A 1o zz42o zz43o
+L 2o zz42o zz44o
+
+
+Arrow 6o1 1ao2
+Arrow 5o2 2ao1
+
+Arrow 4o1 1bo2
+Arrow 3o2 2bo1
+
+
+Arrow 6o2 1ao1
+Arrow 4o2 2ao2
+
+Arrow 3o1 1bo1
+Arrow 5o1 2bo2
+
+
+FI 1aoo 1boo 1o
+FI 2aoo 2boo 2o
+
+FI 1ao1 1ao2 1aoo
+FI 1bo1 1bo2 1boo
+
+FI 2ao1 2ao2 2aoo
+FI 2bo1 2bo2 2boo
+
+
+

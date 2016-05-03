@@ -1,0 +1,356 @@
+FOE z6a z16 7bc
+FOE z8 z18 z9b
+FOE z10a z20 z11b
+FOE z24 z1 z15b
+FOE z26a z30 z17b
+A z15 z2 6b
+A z30a z16 z27b
+A z17 z7 z8b
+A z36a z1 z37b
+FI z28 z42 z26b
+FI z33a z32 z38b
+FI z38 z39 z24b
+FI z19a z31 z28b
+FI z21 z35 z34b
+FI z34a z37 z33b
+L z27 z42 z39b
+L z18a z31 z32b
+L z9 z19 z10b
+L z20a z35 z36b
+L z11 z21 z2b
+
+FOE z6 z16a 7abc
+FOE z8a z18a z9ab
+FOE z10 z20a z11ab
+FOE z24a z1a z15ab
+FOE z26 z30a z17ab
+A z15a z2a 6ab
+A z30 z16a z27ab
+A z17a z7a z8ab
+A z36 z1a z37ab
+FI z28a z42a z26ab
+FI z33 z32a z38ab
+FI z38a z39a z24ab
+FI z19 z31a z28ab
+FI z21a z35a z34ab
+FI z34 z37a z33ab
+L z27a z42a z39ab
+L z18 z31a z32ab
+L z9a z19a z10ab
+L z20 z35a z36ab
+L z11a z21a z2ab
+
+FOE z6ab z16b 7c
+FOE z8b z18b z9
+FOE z10ab z20b z11
+FOE z24b z1b z15
+FOE z26ab z30b z17
+A z15b z2b 6
+A z30ab z16b z27
+A z17b z7b z8
+A z36ab z1b z37
+FI z28b z42b z26
+FI z33ab z32b z38
+FI z38b z39b z24
+FI z19ab z31b z28
+FI z21b z35b z34
+FI z34ab z37b z33
+L z27b z42b z39
+L z18ab z31b z32
+L z9b z19b z10
+L z20ab z35b z36
+L z11b z21b z2
+
+FOE z6b z16ab 7ac
+FOE z8ab z18ab z9a
+FOE z10b z20ab z11a
+FOE z24ab z1ab z15a
+FOE z26b z30ab z17a
+A z15ab z2ab 6a
+A z30b z16ab z27a
+A z17ab z7ab z8a
+A z36b z1ab z37a
+FI z28ab z42ab z26a
+FI z33b z32ab z38a
+FI z38ab z39ab z24a
+FI z19b z31ab z28a
+FI z21ab z35ab z34a
+FI z34b z37ab z33a
+L z27ab z42ab z39a
+L z18b z31ab z32a
+L z9ab z19ab z10a
+L z20b z35ab z36a
+L z11ab z21ab z2a
+
+
+
+
+
+
+
+FOE z6ac z16c 7b
+FOE z8c z18c z9bc
+FOE z10ac z20c z11bc
+FOE z24c z1c z15bc
+FOE z26ac z30c z17bc
+A z15c z2c 6bc
+A z30ac z16c z27bc
+A z17c z7c z8bc
+A z36ac z1c z37bc
+FI z28c z42c z26bc
+FI z33ac z32c z38bc
+FI z38c z39c z24bc
+FI z19ac z31c z28bc
+FI z21c z35c z34bc
+FI z34ac z37c z33bc
+L z27c z42c z39bc
+L z18ac z31c z32bc
+L z9c z19c z10bc
+L z20ac z35c z36bc
+L z11c z21c z2bc
+
+FOE z6c z16ac 7ab
+FOE z8ac z18ac z9abc
+FOE z10c z20ac z11abc
+FOE z24ac z1ac z15abc
+FOE z26c z30ac z17abc
+A z15ac z2ac 6abc
+A z30c z16ac z27abc
+A z17ac z7ac z8abc
+A z36c z1ac z37abc
+FI z28ac z42ac z26abc
+FI z33c z32ac z38abc
+FI z38ac z39ac z24abc
+FI z19c z31ac z28abc
+FI z21ac z35ac z34abc
+FI z34c z37ac z33abc
+L z27ac z42ac z39abc
+L z18c z31ac z32abc
+L z9ac z19ac z10abc
+L z20c z35ac z36abc
+L z11ac z21ac z2abc
+
+FOE z6abc z16bc 7
+FOE z8bc z18bc z9c
+FOE z10abc z20bc z11c
+FOE z24bc z1bc z15c
+FOE z26abc z30bc z17c
+A z15bc z2bc 6c
+A z30abc z16bc z27c
+A z17bc z7bc z8c
+A z36abc z1bc z37c
+FI z28bc z42bc z26c
+FI z33abc z32bc z38c
+FI z38bc z39bc z24c
+FI z19abc z31bc z28c
+FI z21bc z35bc z34c
+FI z34abc z37bc z33c
+L z27bc z42bc z39c
+L z18abc z31bc z32c
+L z9bc z19bc z10c
+L z20abc z35bc z36c
+L z11bc z21bc z2c
+
+FOE z6bc z16abc 7a
+FOE z8abc z18abc z9ac
+FOE z10bc z20abc z11ac
+FOE z24abc z1abc z15ac
+FOE z26bc z30abc z17ac
+A z15abc z2abc 6ac
+A z30bc z16abc z27ac
+A z17abc z7abc z8ac
+A z36bc z1abc z37ac
+FI z28abc z42abc z26ac
+FI z33bc z32abc z38ac
+FI z38abc z39abc z24ac
+FI z19bc z31abc z28ac
+FI z21abc z35abc z34ac
+FI z34bc z37abc z33ac
+L z27abc z42abc z39ac
+L z18bc z31abc z32ac
+L z9abc z19abc z10ac
+L z20bc z35abc z36ac
+L z11abc z21abc z2ac
+
+
+
+
+
+
+
+
+
+
+FOE 6a 16 z7bc
+FOE 8 18 9b
+FOE 10a 20 11b
+FOE 24 1 15b
+FOE 26a 30 17b
+A 15 2 z6b
+A 30a 16 27b
+A 17 7 8b
+A 36a 1 37b
+FI 28 42 26b
+FI 33a 32 38b
+FI 38 39 24b
+FI 19a 31 28b
+FI 21 35 34b
+FI 34a 37 33b
+L 27 42 39b
+L 18a 31 32b
+L 9 19 10b
+L 20a 35 36b
+L 11 21 2b
+
+FOE 6 16a z7abc
+FOE 8a 18a 9ab
+FOE 10 20a 11ab
+FOE 24a 1a 15ab
+FOE 26 30a 17ab
+A 15a 2a z6ab
+A 30 16a 27ab
+A 17a 7a 8ab
+A 36 1a 37ab
+FI 28a 42a 26ab
+FI 33 32a 38ab
+FI 38a 39a 24ab
+FI 19 31a 28ab
+FI 21a 35a 34ab
+FI 34 37a 33ab
+L 27a 42a 39ab
+L 18 31a 32ab
+L 9a 19a 10ab
+L 20 35a 36ab
+L 11a 21a 2ab
+
+FOE 6ab 16b z7c
+FOE 8b 18b 9
+FOE 10ab 20b 11
+FOE 24b 1b 15
+FOE 26ab 30b 17
+A 15b 2b z6
+A 30ab 16b 27
+A 17b 7b 8
+A 36ab 1b 37
+FI 28b 42b 26
+FI 33ab 32b 38
+FI 38b 39b 24
+FI 19ab 31b 28
+FI 21b 35b 34
+FI 34ab 37b 33
+L 27b 42b 39
+L 18ab 31b 32
+L 9b 19b 10
+L 20ab 35b 36
+L 11b 21b 2
+
+FOE 6b 16ab z7ac
+FOE 8ab 18ab 9a
+FOE 10b 20ab 11a
+FOE 24ab 1ab 15a
+FOE 26b 30ab 17a
+A 15ab 2ab z6a
+A 30b 16ab 27a
+A 17ab 7ab 8a
+A 36b 1ab 37a
+FI 28ab 42ab 26a
+FI 33b 32ab 38a
+FI 38ab 39ab 24a
+FI 19b 31ab 28a
+FI 21ab 35ab 34a
+FI 34b 37ab 33a
+L 27ab 42ab 39a
+L 18b 31ab 32a
+L 9ab 19ab 10a
+L 20b 35ab 36a
+L 11ab 21ab 2a
+
+
+
+
+
+
+
+FOE 6ac 16c z7b
+FOE 8c 18c 9bc
+FOE 10ac 20c 11bc
+FOE 24c 1c 15bc
+FOE 26ac 30c 17bc
+A 15c 2c z6bc
+A 30ac 16c 27bc
+A 17c 7c 8bc
+A 36ac 1c 37bc
+FI 28c 42c 26bc
+FI 33ac 32c 38bc
+FI 38c 39c 24bc
+FI 19ac 31c 28bc
+FI 21c 35c 34bc
+FI 34ac 37c 33bc
+L 27c 42c 39bc
+L 18ac 31c 32bc
+L 9c 19c 10bc
+L 20ac 35c 36bc
+L 11c 21c 2bc
+
+FOE 6c 16ac z7ab
+FOE 8ac 18ac 9abc
+FOE 10c 20ac 11abc
+FOE 24ac 1ac 15abc
+FOE 26c 30ac 17abc
+A 15ac 2ac z6abc
+A 30c 16ac 27abc
+A 17ac 7ac 8abc
+A 36c 1ac 37abc
+FI 28ac 42ac 26abc
+FI 33c 32ac 38abc
+FI 38ac 39ac 24abc
+FI 19c 31ac 28abc
+FI 21ac 35ac 34abc
+FI 34c 37ac 33abc
+L 27ac 42ac 39abc
+L 18c 31ac 32abc
+L 9ac 19ac 10abc
+L 20c 35ac 36abc
+L 11ac 21ac 2abc
+
+FOE 6abc 16bc z7
+FOE 8bc 18bc 9c
+FOE 10abc 20bc 11c
+FOE 24bc 1bc 15c
+FOE 26abc 30bc 17c
+A 15bc 2bc z6c
+A 30abc 16bc 27c
+A 17bc 7bc 8c
+A 36abc 1bc 37c
+FI 28bc 42bc 26c
+FI 33abc 32bc 38c
+FI 38bc 39bc 24c
+FI 19abc 31bc 28c
+FI 21bc 35bc 34c
+FI 34abc 37bc 33c
+L 27bc 42bc 39c
+L 18abc 31bc 32c
+L 9bc 19bc 10c
+L 20abc 35bc 36c
+L 11bc 21bc 2c
+
+FOE 6bc 16abc z7a
+FOE 8abc 18abc 9ac
+FOE 10bc 20abc 11ac
+FOE 24abc 1abc 15ac
+FOE 26bc 30abc 17ac
+A 15abc 2abc z6ac
+A 30bc 16abc 27ac
+A 17abc 7abc 8ac
+A 36bc 1abc 37ac
+FI 28abc 42abc 26ac
+FI 33bc 32abc 38ac
+FI 38abc 39abc 24ac
+FI 19bc 31abc 28ac
+FI 21abc 35abc 34ac
+FI 34bc 37abc 33ac
+L 27abc 42abc 39ac
+L 18bc 31abc 32ac
+L 9abc 19abc 10ac
+L 20bc 35abc 36ac
+L 11abc 21abc 2ac

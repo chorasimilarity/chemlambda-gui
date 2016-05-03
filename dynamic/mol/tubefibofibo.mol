@@ -1,0 +1,92 @@
+L w0p wlp woutsuc
+L w1s wlfs w0p
+L w0s w1in w1s
+L w0i w0in w0s
+
+A w1i w0out w0i
+A w0f w1out w1i
+A wlp wlfs w0f
+
+
+FO w1in wa w0out
+A w0in wsucc wc
+A wc wa w1out
+
+
+
+
+
+
+A winter woutunu wout
+A wnum woutsuc winter
+
+
+L wp1s wplfs woutunu
+L wp0s wp1in wp1s
+L wp0i wp0in wp0s
+A wplfs wp1in wp1i
+A wp1i wp0in wp0i
+
+
+A wout w1numb wnumbers
+A wnumbers w1nums w2numb
+A w2numb w2nums woutfinal
+
+
+
+L w11nums wf1nums w1nums
+L w21nums wx1nums w11nums
+A wf1nums wx1nums w21nums
+
+
+L w12nums wf2nums w2nums
+L w22nums wx2nums w12nums
+A wf2nums wx2nums w22nums
+
+
+L w1num wfnum wnum
+L w2num wxnum w1num
+
+FO wfnum wm1num wle1num
+A wm1num wri1num w2num
+
+FO wle1num wm2num wle2num
+A wm2num wri2num wri1num
+
+FO wle2num wm3num wle4num
+A wm3num wri4num wri2num
+
+
+FO wle4num wm5num wm6num
+A wm5num wri5num wri4num
+
+A wm6num wxnum wri5num
+
+
+
+
+L 0p lp wsucc
+L 1s lfs 0p
+L 0s 1in 1s
+L 0i 0in 0s
+
+A 1i 0out 0i
+A 0f 1out 1i
+A lp lfs 0f
+
+
+FO 1in a 0out
+A 0in succ c
+A c a 1out
+
+
+
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+

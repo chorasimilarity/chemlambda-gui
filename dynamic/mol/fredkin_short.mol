@@ -1,0 +1,17 @@
+L true1 true2 trueT
+L true2 trueF true1
+
+
+L false1 falseF falseT
+L false2 false2 false1
+
+L afalse1 afalseF afalseT
+L afalse2 afalse2 afalse1
+
+
+
+FOE afalseF a5 a6
+FOE afalseT a1 a2
+A a2 falseT a3
+A a3 trueT a4
+

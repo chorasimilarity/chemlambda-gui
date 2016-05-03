@@ -1,0 +1,397 @@
+A 0wu 0a2 0a1
+A 0a1 0n 1wu
+A 0a7 0a6 1wd
+L 0a8 0a7 0s
+A 0a5 0wd 0a6
+
+L 0a9 0a9 0a8
+L 0a4 0a3 0a2
+L 0a3 0a5 0a4
+
+
+A 1wu 1a2 1a1
+A 1a1 1n 2wu
+A 1a7 1a6 2wd
+L 1a8 1a7 1s
+A 1a5 1wd 1a6
+
+L 1a9 1a9 1a8
+L 1a4 1a3 1a2
+L 1a3 1a5 1a4
+
+
+A 2wu 2a2 2a1
+A 2a1 2n 3wu
+A 2a7 2a6 3wd
+L 2a8 2a7 2s
+A 2a5 2wd 2a6
+
+L 2a9 2a9 2a8
+L 2a4 2a3 2a2
+L 2a3 2a5 2a4
+
+
+A 3wu 3a2 3a1
+A 3a1 3n 4wu
+A 3a7 3a6 4wd
+L 3a8 3a7 3s
+A 3a5 3wd 3a6
+
+L 3a9 3a9 3a8
+L 3a4 3a3 3a2
+L 3a3 3a5 3a4
+
+
+A 4wu 4a2 4a1
+A 4a1 4n 5wu
+A 4a7 4a6 5wd
+L 4a8 4a7 4s
+A 4a5 4wd 4a6
+
+L 4a9 4a9 4a8
+L 4a4 4a3 4a2
+L 4a3 4a5 4a4
+
+
+A 5wu 5a2 5a1
+A 5a1 5n 10wu
+A 5a7 5a6 10wd
+L 5a8 5a7 5s
+A 5a5 5wd 5a6
+
+L 5a9 5a9 5a8
+L 5a4 5a3 5a2
+L 5a3 5a5 5a4
+
+
+
+
+
+
+
+
+
+
+A 10wu 10a2 10a1
+A 10a1 10n 11wu
+A 10a7 10a6 11wd
+L 10a8 10a7 0n
+A 10a5 10wd 10a6
+
+L 10a9 10a9 10a8
+L 10a4 10a3 10a2
+L 10a3 10a5 10a4
+
+
+A 11wu 11a2 11a1
+A 11a1 11n 12wu
+A 11a7 11a6 12wd
+L 11a8 11a7 1n
+A 11a5 11wd 11a6
+
+L 11a9 11a9 11a8
+L 11a4 11a3 11a2
+L 11a3 11a5 11a4
+
+
+A 12wu 12a2 12a1
+A 12a1 12n 13wu
+A 12a7 12a6 13wd
+L 12a8 12a7 2n
+A 12a5 12wd 12a6
+
+L 12a9 12a9 12a8
+L 12a4 12a3 12a2
+L 12a3 12a5 12a4
+
+
+A 13wu 13a2 13a1
+A 13a1 13n 14wu
+A 13a7 13a6 14wd
+L 13a8 13a7 3n
+A 13a5 13wd 13a6
+
+L 13a9 13a9 13a8
+L 13a4 13a3 13a2
+L 13a3 13a5 13a4
+
+
+A 14wu 14a2 14a1
+A 14a1 14n 15wu
+A 14a7 14a6 15wd
+L 14a8 14a7 4n
+A 14a5 14wd 14a6
+
+L 14a9 14a9 14a8
+L 14a4 14a3 14a2
+L 14a3 14a5 14a4
+
+
+A 15wu 15a2 15a1
+A 15a1 15n 20wu
+A 15a7 15a6 20wd
+L 15a8 15a7 5n
+A 15a5 15wd 15a6
+
+L 15a9 15a9 15a8
+L 15a4 15a3 15a2
+L 15a3 15a5 15a4
+
+
+
+
+
+
+
+
+
+
+
+
+
+A 20wu 20a2 20a1
+A 20a1 20n 21wu
+A 20a7 20a6 21wd
+L 20a8 20a7 10n
+A 20a5 20wd 20a6
+
+L 20a9 20a9 20a8
+L 20a4 20a3 20a2
+L 20a3 20a5 20a4
+
+
+A 21wu 21a2 21a1
+A 21a1 21n 22wu
+A 21a7 21a6 22wd
+L 21a8 21a7 11n
+A 21a5 21wd 21a6
+
+L 21a9 21a9 21a8
+L 21a4 21a3 21a2
+L 21a3 21a5 21a4
+
+
+A 22wu 22a2 22a1
+A 22a1 22n 23wu
+A 22a7 22a6 23wd
+L 22a8 22a7 12n
+A 22a5 22wd 22a6
+
+L 22a9 22a9 22a8
+L 22a4 22a3 22a2
+L 22a3 22a5 22a4
+
+
+A 23wu 23a2 23a1
+A 23a1 23n 24wu
+A 23a7 23a6 24wd
+L 23a8 23a7 13n
+A 23a5 23wd 23a6
+
+L 23a9 23a9 23a8
+L 23a4 23a3 23a2
+L 23a3 23a5 23a4
+
+
+A 24wu 24a2 24a1
+A 24a1 24n 25wu
+A 24a7 24a6 25wd
+L 24a8 24a7 14n
+A 24a5 24wd 24a6
+
+L 24a9 24a9 24a8
+L 24a4 24a3 24a2
+L 24a3 24a5 24a4
+
+
+A 25wu 25a2 25a1
+A 25a1 25n 30wu
+A 25a7 25a6 30wd
+L 25a8 25a7 15n
+A 25a5 25wd 25a6
+
+L 25a9 25a9 25a8
+L 25a4 25a3 25a2
+L 25a3 25a5 25a4
+
+
+
+
+
+
+
+
+
+
+A 30wu 30a2 30a1
+A 30a1 30n 31wu
+A 30a7 30a6 31wd
+L 30a8 30a7 20n
+A 30a5 30wd 30a6
+
+L 30a9 30a9 30a8
+L 30a4 30a3 30a2
+L 30a3 30a5 30a4
+
+
+A 31wu 31a2 31a1
+A 31a1 31n 32wu
+A 31a7 31a6 32wd
+L 31a8 31a7 21n
+A 31a5 31wd 31a6
+
+L 31a9 31a9 31a8
+L 31a4 31a3 31a2
+L 31a3 31a5 31a4
+
+
+A 32wu 32a2 32a1
+A 32a1 32n 33wu
+A 32a7 32a6 33wd
+L 32a8 32a7 22n
+A 32a5 32wd 32a6
+
+L 32a9 32a9 32a8
+L 32a4 32a3 32a2
+L 32a3 32a5 32a4
+
+
+A 33wu 33a2 33a1
+A 33a1 33n 34wu
+A 33a7 33a6 34wd
+L 33a8 33a7 23n
+A 33a5 33wd 33a6
+
+L 33a9 33a9 33a8
+L 33a4 33a3 33a2
+L 33a3 33a5 33a4
+
+
+A 34wu 34a2 34a1
+A 34a1 34n 35wu
+A 34a7 34a6 35wd
+L 34a8 34a7 24n
+A 34a5 34wd 34a6
+
+L 34a9 34a9 34a8
+L 34a4 34a3 34a2
+L 34a3 34a5 34a4
+
+
+A 35wu 35a2 35a1
+A 35a1 35n 40wu
+A 35a7 35a6 40wd
+L 35a8 35a7 25n
+A 35a5 35wd 35a6
+
+L 35a9 35a9 35a8
+L 35a4 35a3 35a2
+L 35a3 35a5 35a4
+
+
+
+
+
+
+
+
+
+
+A 40wu 40a2 40a1
+A 40a1 40n 41wu
+A 40a7 40a6 41wd
+L 40a8 40a7 30n
+A 40a5 40wd 40a6
+
+L 40a9 40a9 40a8
+L 40a4 40a3 40a2
+L 40a3 40a5 40a4
+
+
+A 41wu 41a2 41a1
+A 41a1 41n 42wu
+A 41a7 41a6 42wd
+L 41a8 41a7 31n
+A 41a5 41wd 41a6
+
+L 41a9 41a9 41a8
+L 41a4 41a3 41a2
+L 41a3 41a5 41a4
+
+
+A 42wu 42a2 42a1
+A 42a1 42n 43wu
+A 42a7 42a6 43wd
+L 42a8 42a7 32n
+A 42a5 42wd 42a6
+
+L 42a9 42a9 42a8
+L 42a4 42a3 42a2
+L 42a3 42a5 42a4
+
+
+A 43wu 43a2 43a1
+A 43a1 43n 44wu
+A 43a7 43a6 44wd
+L 43a8 43a7 33n
+A 43a5 43wd 43a6
+
+L 43a9 43a9 43a8
+L 43a4 43a3 43a2
+L 43a3 43a5 43a4
+
+
+A 44wu 44a2 44a1
+A 44a1 44n 45wu
+A 44a7 44a6 45wd
+L 44a8 44a7 34n
+A 44a5 44wd 44a6
+
+L 44a9 44a9 44a8
+L 44a4 44a3 44a2
+L 44a3 44a5 44a4
+
+
+A 45wu 45a2 45a1
+A 45a1 45n 45eu
+A 45a7 45a6 45ed
+L 45a8 45a7 35n
+A 45a5 45wd 45a6
+
+L 45a9 45a9 45a8
+L 45a4 45a3 45a2
+L 45a3 45a5 45a4
+
+
+
+
+FOE 45eu 45eu1 45eu2
+FOE 45ed 45ed1 45ed2
+
+
+FI 0wu1 0wu2 0wu
+FI 0wd1 0wd2 0wd
+
+
+FI 40n1 40n2 40n
+FI 41n1 41n2 41n
+FI 42n1 42n2 42n
+FI 43n1 43n2 43n
+FI 44n1 44n2 44n
+FI 45n1 45n2 45n
+
+FOE 0s 40n2 40n1
+FOE 1s 41n2 41n1
+FOE 2s 42n2 42n1
+FOE 3s 43n2 43n1
+FOE 4s 44n2 44n1
+FOE 5s 45n2 45n1
+
+
+
+
+
+
+
+
+

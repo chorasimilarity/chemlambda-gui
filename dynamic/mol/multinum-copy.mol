@@ -1,0 +1,82 @@
+FO a b 2num
+L b u a
+FOE 2num n1num l1num
+A n1num a1num 3num
+
+
+
+
+
+
+
+FOE l1num n41num l2num
+A n41num a115num a1num
+
+
+FOE l2num n42num l3num
+A n42num a114num a115num
+
+FOE l3num n43num l4num
+A n43num a113num a114num
+
+
+FOE l4num n44num l5num
+A n44num a112num a113num
+
+FOE l5num n45num l6num
+A n45num a111num a112num
+
+
+FOE l6num n46num l7num
+A n46num a110num a111num
+
+FOE l7num n47num l8num
+A n47num a109num a110num
+
+
+FOE l8num n48num l9num
+A n48num a108num a109num
+
+FOE l9num n49num l10num
+A n49num a107num a108num
+
+
+FOE l10num n410num l11num
+A n410num a106num a107num
+
+FOE l11num n411num l12num
+A n411num a105num a106num
+
+
+FOE l12num n412num l13num
+A n412num a104num a105num
+
+FOE l13num n413num l14num
+A n413num a103num a104num
+
+
+FOE l14num n414num l15num
+A n414num a102num a103num
+
+FOE l15num n415num l16num
+A n415num a101num a102num
+
+
+FOE l16num n416num l55num
+A n416num a11num a101num
+
+
+
+
+
+
+
+
+FOE l55num n44num l5num
+A n44num a4num a11num
+
+A l5num 4num a4num
+
+FOE 3num 3numa 3numb
+FI 4numa 4numb 4num
+FOE u ua ub

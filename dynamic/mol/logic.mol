@@ -1,0 +1,14 @@
+L 1and pand and
+L 2and qand 1and
+FO pand pand1 pand2
+A 3and pand1 2and
+A pand2 qand 3and
+L 1true xtrue true
+L xtrue ytrue 1true
+T ytrue
+L 1false xfalse false
+L yfalse yfalse 1false
+T xfalse
+A and false1 1
+A 1 false2 out
+FO false false1 false2

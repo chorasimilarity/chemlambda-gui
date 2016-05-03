@@ -1,0 +1,71 @@
+FOE 6 16 7
+FOE 8 18 9
+FOE 10 20 11
+FOE 24 1 15
+FOE 26 30 17
+A 15 2 6
+A 30 16 27
+A 17 7 8
+A 36i 1 37
+FI 28 42 26
+FI 33 32 38
+FI 38 39 24
+FI 19 31 28
+FI 21 35 34
+FI 34 37 33
+L 27 42 39
+L 18 31 32
+L 9 19 10
+L 20 35 36o
+L 11 21 2
+
+
+FOE 6u 16u 7u
+FOE 8u 18u 9u
+FOE 10u 20u 11u
+FOE 24u 1u 15u
+FOE 26u 30u 17u
+A 15u 2u 6u
+A 30u 16u 27u
+A 17u 7u 8u
+A 36iu 1u 37u
+FI 28u 42u 26u
+FI 33u 32u 38u
+FI 38u 39u 24u
+FI 19u 31u 28u
+FI 21u 35u 34u
+FI 34u 37u 33u
+L 27u 42u 39u
+L 18u 31u 32u
+L 9u 19u 10u
+L 20u 35u 36ou
+L 11u 21u 2u
+
+
+Arrow out 36i
+Arrow 36o y
+
+Arrow fisz 36iu
+Arrow 36ou x
+
+L 1isz nisz isz
+A 2isz x 1isz
+A nisz 3isz 2isz
+L 4isz 5isz 3isz
+
+FOE 5isz fisz aisz
+FI aisz y 4isz
+
+
+A isz doi out
+
+
+L 1doi fdoi doi
+L 2doi xdoi 1doi
+
+FO fdoi f1doi f2doi
+FO f2doi f3doi z
+A f1doi 3doi 2doi
+A f3doi xdoi 3doi
+
+A z u u

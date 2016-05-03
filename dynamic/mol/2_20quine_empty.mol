@@ -1,0 +1,100 @@
+FOE 6 16 7
+FOE 8 18 9
+FOE 10 20 11
+FOE 24 1 15
+FOE 26 30 17
+A 15 2 6
+A 30 16 27
+A 17 7 8
+FI 28 42 26
+FI 33 32 38
+FI 38 39 24
+FI 19 31 28
+FI 21 35 34
+FI 34 37 33
+L 27 42 39
+L 18 31 32
+L 9 19 10
+L 11 21 2
+
+
+FOE 6p 16p 7p
+FOE 8p 18p 9p
+FOE 10p 20p 11p
+FOE 24p 1p 15p
+FOE 26p 30p 17p
+A 15p 2p 6p
+A 30p 16p 27p
+A 17p 7p 8p
+FI 28p 42p 26p
+FI 33p 32p 38p
+FI 38p 39p 24p
+FI 19p 31p 28p
+FI 21p 35p 34p
+FI 34p 37p 33p
+L 27p 42p 39p
+L 18p 31p 32p
+L 9p 19p 10p
+L 11p 21p 2p
+
+
+
+Arrow Ya 37p
+Arrow 20p Fa
+Arrow Xa 35p
+Arrow 1p Fb
+
+Arrow 20 Yi
+Arrow 1 Xi
+Arrow Ti 35
+Arrow Fi 37
+
+
+
+
+A 1h Yi Ti
+A 2h Xi 1h
+L 8h Yh 2h
+L Fh Xh 8h
+
+
+A 1g Yh Fi
+A 2g Xh 1g
+L 8g Yg 2g
+L Fg Xg 8g
+
+
+A 1f Yg Fh
+A 2f Xg 1f
+L 8f Yf 2f
+L Ff Xf 8f
+
+
+A 1e Yf Fg
+A 2e Xf 1e
+L 8e Ye 2e
+L Fe Xe 8e
+
+
+A 1d Ye Ff
+A 2d Xe 1d
+L 8d Yd 2d
+L Fd Xd 8d
+
+
+A 1c Yd Fe
+A 2c Xd 1c
+L 8c Yc 2c
+L Fc Xc 8c
+
+
+A 1b Yc Fd
+A 2b Xc 1b
+L 8b Yb 2b
+L Fb Xb 8b
+
+
+A 1a Yb Fc
+A 2a Xb 1a
+L 8a Ya 2a
+L Fa Xa 8a

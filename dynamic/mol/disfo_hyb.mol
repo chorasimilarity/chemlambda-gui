@@ -1,0 +1,20 @@
+FI a1 a8 9
+FO a9 a2 a3
+A a2 a3 10
+FOE a10 a4 a5
+FI a4 a5 11
+FO a11 a6 a7
+A a6 a7 12
+FOE a12 a1 a8
+
+
+FI 1 8 a9
+FO 9 2 3
+A 2 3 a10
+FOE 10 4 5
+FI 4 5 a11
+FO 11 6 7
+A 6 7 a12
+FOE 12 1 8
+
+

@@ -1,0 +1,891 @@
+FOE 2 12 3a
+A 12 22a 1
+
+
+FOE 3a na1i 3o1
+A na1o 22a1 22a
+
+FOE 3o1 na2i 3o2
+A na2o 22a2 22a1
+
+FOE 3o2 na3i 3o3
+A na3o 22a3 22a2
+
+FOE 3o3 na4i 3o4
+A na4o 22a4 22a3
+
+FOE 3o4 na5i 3o5
+A na5o 22a5 22a4
+
+FOE 3o5 na6i 3o6
+A na6o 22a6 22a5
+
+FOE 3o6 na7i 3o7
+A na7o 22a7 22a6
+
+FOE 3o7 na8i 3o8i
+A na8o 22a8 22a7
+
+
+
+
+
+
+
+
+
+
+
+
+
+L sawin saw1 saw3
+FOE saw1 sawfooty saw2
+L saw2 sawout saw4
+
+FOE saw4 saw5 saw9
+A saw5 saw10 sawfootx
+
+
+FOE saw3 saw6 saw11
+A saw6 saw12 saw10
+
+FOE saw9 saw7 saw9d
+A saw7 saw15 saw12
+FOE saw11 saw8 saw11d
+A saw8 saw12d saw15
+
+
+
+FOE saw9d saw7d saw9dd
+A saw7d saw15d saw12d
+FOE saw11d saw8d saw11dd
+A saw8d saw12dd saw15d
+
+FOE saw9dd saw7dd saw14d
+A saw7dd saw15dd saw12dd
+FOE saw11dd saw8dd saw13d
+A saw8dd saw16d saw15dd
+
+
+
+
+A saw13d saw19 saw17
+A saw14d saw17 saw18
+FOE saw18 saw16d saw19
+
+
+FOE 3o8i sa2 sa3
+FOE sa3 sa4 sa5
+
+Arrow sa5 sawin
+Arrow sawout sa6
+
+FOE sa6 sa7 sa8
+FOE sa8 sa9 sa10
+FOE sa10 sa11 sa12o
+FOE sa12i sa13 sa14
+
+Arrow sa12o sawwwin
+Arrow sawwwout sa12i
+
+FOE sa14 sa15 sa16
+FOE sa16 sa161 sa162
+FOE sa162 sa163 sa164o
+FOE sa164i sa165 sa166
+
+Arrow sa164o sawwwwin
+Arrow sawwwwout sa164i
+
+FOE sa166 sa17 sa181
+FOE sa181 sa182 sa18
+
+Arrow sa18 sawwin
+Arrow sawwout 3o8o
+
+
+FI sawfooty sawfootx sawfoot
+
+
+
+L sawwin saww1 saww3
+FOE saww1 sawwfooty saww2
+L saww2 sawwout saww4
+
+FOE saww4 saww5 saww9
+A saww5 saww10 sawwfootx
+
+
+FOE saww3 saww6 saww11
+A saww6 saww12 saww10
+
+FOE saww9 saww7 saww9d
+A saww7 saww15 saww12
+FOE saww11 saww8 saww11d
+A saww8 saww12d saww15
+
+
+
+FOE saww9d saww7d saww9dd
+A saww7d saww15d saww12d
+FOE saww11d saww8d saww11dd
+A saww8d saww12dd saww15d
+
+FOE saww9dd saww7dd saww14d
+A saww7dd saww15dd saww12dd
+FOE saww11dd saww8dd saww13d
+A saww8dd saww16d saww15dd
+
+
+
+
+A saww13d saww19 saww17
+A saww14d saww17 saww18
+FOE saww18 saww16d saww19
+
+FI sawwfooty sawwfootx sawwfoot
+
+
+
+
+
+
+
+
+L sawwwin sawww1 sawww3
+FOE sawww1 sawwwfooty sawww2
+L sawww2 sawwwout sawww4
+
+FOE sawww4 sawww5 sawww9
+A sawww5 sawww10 sawwwfootx
+
+
+FOE sawww3 sawww6 sawww11
+A sawww6 sawww12 sawww10
+
+FOE sawww9 sawww7 sawww9d
+A sawww7 sawww15 sawww12
+FOE sawww11 sawww8 sawww11d
+A sawww8 sawww12d sawww15
+
+
+
+FOE sawww9d sawww7d sawww9dd
+A sawww7d sawww15d sawww12d
+FOE sawww11d sawww8d sawww11dd
+A sawww8d sawww12dd sawww15d
+
+FOE sawww9dd sawww7dd sawww14d
+A sawww7dd sawww15dd sawww12dd
+FOE sawww11dd sawww8dd sawww13d
+A sawww8dd sawww16d sawww15dd
+
+
+
+
+A sawww13d sawww19 sawww17
+A sawww14d sawww17 sawww18
+FOE sawww18 sawww16d sawww19
+
+
+FI sawwwfooty sawwwfootx sawwwfoot
+
+
+
+L sawwwwin sawwww1 sawwww3
+FOE sawwww1 sawwwwfooty sawwww2
+L sawwww2 sawwwwout sawwww4
+
+FOE sawwww4 sawwww5 sawwww9
+A sawwww5 sawwww10 sawwwwfootx
+
+
+FOE sawwww3 sawwww6 sawwww11
+A sawwww6 sawwww12 sawwww10
+
+FOE sawwww9 sawwww7 sawwww9d
+A sawwww7 sawwww15 sawwww12
+FOE sawwww11 sawwww8 sawwww11d
+A sawwww8 sawwww12d sawwww15
+
+
+
+FOE sawwww9d sawwww7d sawwww9dd
+A sawwww7d sawwww15d sawwww12d
+FOE sawwww11d sawwww8d sawwww11dd
+A sawwww8d sawwww12dd sawwww15d
+
+FOE sawwww9dd sawwww7dd sawwww14d
+A sawwww7dd sawwww15dd sawwww12dd
+FOE sawwww11dd sawwww8dd sawwww13d
+A sawwww8dd sawwww16d sawwww15dd
+
+
+
+
+A sawwww13d sawwww19 sawwww17
+A sawwww14d sawwww17 sawwww18
+FOE sawwww18 sawwww16d sawwww19
+
+
+FI sawwwwfooty sawwwwfootx sawwwwfoot
+
+
+L swin sw1 sw3
+FOE sw1 swfooty sw2
+L sw2 swout sw4
+
+FOE sw4 sw5 sw9
+A sw5 sw10 swfootx
+
+
+FOE sw3 sw6 sw11
+A sw6 sw12 sw10
+
+FOE sw9 sw7 sw9d
+A sw7 sw15 sw12
+FOE sw11 sw8 sw11d
+A sw8 sw12d sw15
+
+
+
+FOE sw9d sw7d sw9dd
+A sw7d sw15d sw12d
+FOE sw11d sw8d sw11dd
+A sw8d sw12dd sw15d
+
+FOE sw9dd sw7dd sw14d
+A sw7dd sw15dd sw12dd
+FOE sw11dd sw8dd sw13d
+A sw8dd sw16d sw15dd
+
+
+
+
+A sw13d sw19 sw17
+A sw14d sw17 sw18
+FOE sw18 sw16d sw19
+
+
+FOE s1 s2 s3
+
+FI sa2 s2 saa2
+
+FOE s3 s4 s5
+
+Arrow s5 swin
+Arrow swout s6
+
+FOE s6 s7 s8
+
+FI sa7 s7 saa7
+
+FOE s8 s9 s10
+
+FI sa9 s9 saa9
+
+FOE s10 s11 s12o
+FOE s12i s13 s14
+
+Arrow s12o swwwin
+Arrow swwwout s12i
+
+FOE s14 s15 s16
+
+FI sa15 s15 saa15
+
+FOE s16 s161 s162
+
+FI sa161 s161 saa161
+
+FOE s162 s163 s164o
+FOE s164i s165 s166
+
+Arrow s164o swwwwin
+Arrow swwwwout s164i
+
+FOE s166 s17 s181
+
+FI sa17 s17 saa17
+
+FOE s181 s182 s18
+
+Arrow s18 swwin
+Arrow swwout s1
+
+
+FI swfooty swfootx swfoot
+
+FI swfoot swwfoot swfoo
+
+FI swwwfoot swwwwfoot swwfoo
+
+FI swfoo swwfoo swfo
+
+
+FI sawfoot sawwfoot sawfoo
+
+FI sawwwfoot sawwwwfoot sawwfoo
+
+FI sawfoo sawwfoo sawfo
+
+FI swfo sawfo sawfifi
+
+
+L swwin sww1 sww3
+FOE sww1 swwfooty sww2
+L sww2 swwout sww4
+
+FOE sww4 sww5 sww9
+A sww5 sww10 swwfootx
+
+
+FOE sww3 sww6 sww11
+A sww6 sww12 sww10
+
+FOE sww9 sww7 sww9d
+A sww7 sww15 sww12
+FOE sww11 sww8 sww11d
+A sww8 sww12d sww15
+
+
+
+FOE sww9d sww7d sww9dd
+A sww7d sww15d sww12d
+FOE sww11d sww8d sww11dd
+A sww8d sww12dd sww15d
+
+FOE sww9dd sww7dd sww14d
+A sww7dd sww15dd sww12dd
+FOE sww11dd sww8dd sww13d
+A sww8dd sww16d sww15dd
+
+
+
+
+A sww13d sww19 sww17
+A sww14d sww17 sww18
+FOE sww18 sww16d sww19
+
+FI swwfooty swwfootx swwfoot
+
+
+
+
+
+
+
+
+L swwwin swww1 swww3
+FOE swww1 swwwfooty swww2
+L swww2 swwwout swww4
+
+FOE swww4 swww5 swww9
+A swww5 swww10 swwwfootx
+
+
+FOE swww3 swww6 swww11
+A swww6 swww12 swww10
+
+FOE swww9 swww7 swww9d
+A swww7 swww15 swww12
+FOE swww11 swww8 swww11d
+A swww8 swww12d swww15
+
+
+
+FOE swww9d swww7d swww9dd
+A swww7d swww15d swww12d
+FOE swww11d swww8d swww11dd
+A swww8d swww12dd swww15d
+
+FOE swww9dd swww7dd swww14d
+A swww7dd swww15dd swww12dd
+FOE swww11dd swww8dd swww13d
+A swww8dd swww16d swww15dd
+
+
+
+
+A swww13d swww19 swww17
+A swww14d swww17 swww18
+FOE swww18 swww16d swww19
+
+
+FI swwwfooty swwwfootx swwwfoot
+
+
+
+L swwwwin swwww1 swwww3
+FOE swwww1 swwwwfooty swwww2
+L swwww2 swwwwout swwww4
+
+FOE swwww4 swwww5 swwww9
+A swwww5 swwww10 swwwwfootx
+
+
+FOE swwww3 swwww6 swwww11
+A swwww6 swwww12 swwww10
+
+FOE swwww9 swwww7 swwww9d
+A swwww7 swwww15 swwww12
+FOE swwww11 swwww8 swwww11d
+A swwww8 swwww12d swwww15
+
+
+
+FOE swwww9d swwww7d swwww9dd
+A swwww7d swwww15d swwww12d
+FOE swwww11d swwww8d swwww11dd
+A swwww8d swwww12dd swwww15d
+
+FOE swwww9dd swwww7dd swwww14d
+A swwww7dd swwww15dd swwww12dd
+FOE swwww11dd swwww8dd swwww13d
+A swwww8dd swwww16d swwww15dd
+
+
+
+
+A swwww13d swwww19 swwww17
+A swwww14d swwww17 swwww18
+FOE swwww18 swwww16d swwww19
+
+
+FI swwwwfooty swwwwfootx swwwwfoot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE 3o8o na9i 3o9
+A na9o 22a9 22a8
+
+FOE 3o9 na10i 3o10
+A na10o 22a10 22a9
+
+FOE 3o10 na11i 3o11
+A na11o 22a11 22a10
+
+FOE 3o11 na12i 3o12
+A na12o 22a12 22a11
+
+FOE 3o12 na13i 3o13
+A na13o 22a13 22a12
+
+FOE 3o13 na14i 3o14
+A na14o 22a14 22a13
+
+FOE 3o14 na15i 3o15
+A na15o 22a15 22a14
+
+FOE 3o15 na16i 3o16
+A na16o 22a16 22a15
+
+FOE 3o16 na17i 3o17
+A na17o 22a17 22a16
+
+FOE 3o17 na18i 3o18
+A na18o 22a18 22a17
+
+FOE 3o18 na19i 3o19
+A na19o 22a19 22a18
+
+FOE 3o19 na20i 3o20
+A na20o 22a20 22a19
+
+FOE 3o20 na21i 3o21
+A na21o 22a21 22a20
+
+FOE 3o21 na22i 3o22
+A na22o 22a22 22a21
+
+FOE 3o22 na23i 3o23
+A na23o 22a23 22a22
+
+FOE 3o23 na24i 3o24
+A na24o 22a24 22a23
+
+FOE 3o24 na25i 3o25
+A na25o 22a25 22a24
+
+FOE 3o25 na26i 3o26
+A na26o 22a26 22a25
+
+FOE 3o26 na27i 3o27
+A na27o 22a27 22a26
+
+FOE 3o27 na28i 3o28
+A na28o 22a28 22a27
+
+FOE 3o28 na29i 3o29
+A na29o 22a29 22a28
+
+FOE 3o29 na30i 3o30
+A na30o 22a30 22a29
+
+FOE 3o30 na31 3o31
+A na31 22a31 22a30
+
+FOE 3o31 na32 3out
+A na32 22in 22a31
+
+Arrow 22out z22
+Arrow z1 22in
+
+Arrow z3 3in
+Arrow 3out z2
+
+FOE 3in 13 4
+FOE 4 14 5
+FOE 6 16 7
+FOE 8 18 9
+FOE 10 20 11
+FOE 24 29 15
+FOE 26 30 17
+
+
+A 23 13 22out
+A 41 25 40
+A 15 5 6
+A 29 14 25
+A 30 16 27
+A 17 7 8
+A 36 1 37
+
+FI 28 42 26
+FI 33 32 38
+FI 38 39 24
+FI 19 31 28
+FI 21 35 34
+FI 34 37 33
+
+L 40 41 23
+L 27 42 39
+L 18 31 32
+L 9 19 10
+L 20 35 36
+L 11 21 2
+
+
+FI a1 na1i mix1
+FOE mix1 a8 na1o
+
+FI a2 na2i mix2
+FOE mix2 a15 na2o
+
+FI a3 na3i mix3
+FOE mix3 a22 na3o
+
+FI a4 na4i mix4
+FOE mix4 a29 na4o
+
+FI a5 na5i mix5
+FOE mix5 a6 na5o
+
+FI a6 na6i mix6
+FOE mix6 a13 na6o
+
+FI a7 na7i mix7
+FOE mix7 a20 na7o
+
+FI a8 na8i mix8
+FOE mix8 a27 na8o
+
+FI a9 na9i mix9
+FOE mix9 a4 na9o
+
+FI a10 na10i mix10
+FOE mix10 a11 na10o
+
+FI a11 na11i mix11
+FOE mix11 a18 na11o
+
+FI a12 na12i mix12
+FOE mix12 a25 na12o
+
+FI a13 na13i mix13
+FOE mix13 a2 na13o
+
+FI a14 na14i mix14
+FOE mix14 a9 na14o
+
+FI a15 na15i mix15
+FOE mix15 a16 na15o
+
+FI a16 na16i mix16
+FOE mix16 a23 na16o
+
+FI a17 na17i mix17
+FOE mix17 a30 na17o
+
+FI a18 na18i mix18
+FOE mix18 a7 na18o
+
+FI a19 na19i mix19
+FOE mix19 a14 na19o
+
+FI a20 na20i mix20
+FOE mix20 a21 na20o
+
+FI a21 na21i mix21
+FOE mix21 a28 na21o
+
+FI a22 na22i mix22
+FOE mix22 a5 na22o
+
+FI a23 na23i mix23
+FOE mix23 a12 na23o
+
+FI a24 na24i mix24
+FOE mix24 a19 na24o
+
+FI a25 na25i mix25
+FOE mix25 a26 na25o
+
+FI a26 na26i mix26
+FOE mix26 a3 na26o
+
+FI a27 na27i mix27
+FOE mix27 a10 na27o
+
+FI a28 na28i mix28
+FOE mix28 a17 na28o
+
+FI a29 na29i mix29
+FOE mix29 a24 na29o
+
+FI a30 na30i mix30
+FOE mix30 a1 na30o
+
+
+
+
+FI za1 zna1i zmix1
+FOE zmix1 za8 zna1o
+
+FI za2 zna2i zmix2
+FOE zmix2 za15 zna2o
+
+FI za3 zna3i zmix3
+FOE zmix3 za22 zna3o
+
+FI za4 zna4i zmix4
+FOE zmix4 za29 zna4o
+
+FI za5 zna5i zmix5
+FOE zmix5 za6 zna5o
+
+FI za6 zna6i zmix6
+FOE zmix6 za13 zna6o
+
+FI za7 zna7i zmix7
+FOE zmix7 za20 zna7o
+
+FI za8 zna8i zmix8
+FOE zmix8 za27 zna8o
+
+FI za9 zna9i zmix9
+FOE zmix9 za4 zna9o
+
+FI za10 zna10i zmix10
+FOE zmix10 za11 zna10o
+
+FI za11 zna11i zmix11
+FOE zmix11 za18 zna11o
+
+FI za12 zna12i zmix12
+FOE zmix12 za25 zna12o
+
+FI za13 zna13i zmix13
+FOE zmix13 za2 zna13o
+
+FI za14 zna14i zmix14
+FOE zmix14 za9 zna14o
+
+FI za15 zna15i zmix15
+FOE zmix15 za16 zna15o
+
+FI za16 zna16i zmix16
+FOE zmix16 za23 zna16o
+
+FI za17 zna17i zmix17
+FOE zmix17 za30 zna17o
+
+FI za18 zna18i zmix18
+FOE zmix18 za7 zna18o
+
+FI za19 zna19i zmix19
+FOE zmix19 za14 zna19o
+
+FI za20 zna20i zmix20
+FOE zmix20 za21 zna20o
+
+FI za21 zna21i zmix21
+FOE zmix21 za28 zna21o
+
+FI za22 zna22i zmix22
+FOE zmix22 za5 zna22o
+
+FI za23 zna23i zmix23
+FOE zmix23 za12 zna23o
+
+FI za24 zna24i zmix24
+FOE zmix24 za19 zna24o
+
+FI za25 zna25i zmix25
+FOE zmix25 za26 zna25o
+
+FI za26 zna26i zmix26
+FOE zmix26 za3 zna26o
+
+FI za27 zna27i zmix27
+FOE zmix27 za10 zna27o
+
+FI za28 zna28i zmix28
+FOE zmix28 za17 zna28o
+
+FI za29 zna29i zmix29
+FOE zmix29 za24 zna29o
+
+FI za30 zna30i zmix30
+FOE zmix30 za1 zna30o
+
+
+
+FOE z2 z12 z3a
+A z12 z22a z1
+
+
+FOE z3a zna1i z3o1
+A zna1o z22a1 z22a
+
+FOE z3o1 zna2i z3o2
+A zna2o z22a2 z22a1
+
+FOE z3o2 zna3i z3o3
+A zna3o z22a3 z22a2
+
+FOE z3o3 zna4i z3o4
+A zna4o z22a4 z22a3
+
+FOE z3o4 zna5i z3o5
+A zna5o z22a5 z22a4
+
+FOE z3o5 zna6i z3o6
+A zna6o z22a6 z22a5
+
+FOE z3o6 zna7i z3o7
+A zna7o z22a7 z22a6
+
+FOE z3o7 zna8i z3o8
+A zna8o z22a8 z22a7
+
+FOE z3o8 zna9i z3o9
+A zna9o z22a9 z22a8
+
+FOE z3o9 zna10i z3o10
+A zna10o z22a10 z22a9
+
+FOE z3o10 zna11i z3o11
+A zna11o z22a11 z22a10
+
+FOE z3o11 zna12i z3o12
+A zna12o z22a12 z22a11
+
+FOE z3o12 zna13i z3o13
+A zna13o z22a13 z22a12
+
+FOE z3o13 zna14i z3o14
+A zna14o z22a14 z22a13
+
+FOE z3o14 zna15i z3o15
+A zna15o z22a15 z22a14
+
+FOE z3o15 zna16i z3o16
+A zna16o z22a16 z22a15
+
+FOE z3o16 zna17i z3o17
+A zna17o z22a17 z22a16
+
+FOE z3o17 zna18i z3o18
+A zna18o z22a18 z22a17
+
+FOE z3o18 zna19i z3o19
+A zna19o z22a19 z22a18
+
+FOE z3o19 zna20i z3o20
+A zna20o z22a20 z22a19
+
+FOE z3o20 zna21i z3o21
+A zna21o z22a21 z22a20
+
+FOE z3o21 zna22i z3o22
+A zna22o z22a22 z22a21
+
+FOE z3o22 zna23i z3o23
+A zna23o z22a23 z22a22
+
+FOE z3o23 zna24i z3o24
+A zna24o z22a24 z22a23
+
+FOE z3o24 zna25i z3o25
+A zna25o z22a25 z22a24
+
+FOE z3o25 zna26i z3o26
+A zna26o z22a26 z22a25
+
+FOE z3o26 zna27i z3o27
+A zna27o z22a27 z22a26
+
+FOE z3o27 zna28i z3o28
+A zna28o z22a28 z22a27
+
+FOE z3o28 zna29i z3o29
+A zna29o z22a29 z22a28
+
+FOE z3o29 zna30i z3o30
+A zna30o z22a30 z22a29
+
+FOE z3o30 zna31 z3o31
+A zna31 z22a31 z22a30
+
+FOE z3o31 zna32 z3out
+A zna32 z22in z22a31

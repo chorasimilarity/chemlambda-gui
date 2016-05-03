@@ -1,0 +1,162 @@
+FO 2na1 2na2 2na3
+L 2na4 4na5 2na7
+FO 2na6 2na8 2na9
+FOE 2na10 2na11 2na12
+FI 2na7 2na20 2na10
+FI 2na2 2na8 2na6
+FOE 2na17 2na13 2na14
+FI 2na33 2na9 2na16
+A 2na11 2na13 2na21
+A 2na12 2na14 2na4
+FI 2na19 2na16 2na20
+FI 2na5 2na22 2na17
+FOE 2na21 2na18 2na23
+FI 2na15 2na24 2na22
+L 2na18 3na24 2na1
+L 2na23 1na15 2na19
+FI 2na3 2n2 2n1
+FO 2n1 2n2 2na33
+
+
+FO 3na1 3na2 3na3
+L 3na4 5na5 3na7
+FO 3na6 3na8 3na9
+FOE 3na10 3na11 3na12
+FI 3na7 3na20 3na10
+FI 3na2 3na8 3na6
+FOE 3na17 3na13 3na14
+FI 3na33 3na9 3na16
+A 3na11 3na13 3na21
+A 3na12 3na14 3na4
+FI 3na19 3na16 3na20
+FI 3na5 3na22 3na17
+FOE 3na21 3na18 3na23
+FI 3na15 3na24 3na22
+L 3na18 2na24 3na1
+L 3na23 4na15 3na19
+FI 3na3 3n2 3n1
+FO 3n1 3n2 3na33
+
+
+FO 4na1 4na2 4na3
+L 4na4 6na5 4na7
+FO 4na6 4na8 4na9
+FOE 4na10 4na11 4na12
+FI 4na7 4na20 4na10
+FI 4na2 4na8 4na6
+FOE 4na17 4na13 4na14
+FI 4na33 4na9 4na16
+A 4na11 4na13 4na21
+A 4na12 4na14 4na4
+FI 4na19 4na16 4na20
+FI 4na5 4na22 4na17
+FOE 4na21 4na18 4na23
+FI 4na15 4na24 4na22
+L 4na18 5na24 4na1
+L 4na23 3na15 4na19
+FI 4na3 4n2 4n1
+FO 4n1 4n2 4na33
+
+
+
+FO 5na1 5na2 5na3
+L 5na4 7na5 5na7
+FO 5na6 5na8 5na9
+FOE 5na10 5na11 5na12
+FI 5na7 5na20 5na10
+FI 5na2 5na8 5na6
+FOE 5na17 5na13 5na14
+FI 5na33 5na9 5na16
+A 5na11 5na13 5na21
+A 5na12 5na14 5na4
+FI 5na19 5na16 5na20
+FI 5na5 5na22 5na17
+FOE 5na21 5na18 5na23
+FI 5na15 5na24 5na22
+L 5na18 4na24 5na1
+L 5na23 6na15 5na19
+FI 5na3 5n2 5n1
+FO 5n1 5n2 5na33
+
+
+
+FO 6na1 6na2 6na3
+L 6na4 8na5 6na7
+FO 6na6 6na8 6na9
+FOE 6na10 6na11 6na12
+FI 6na7 6na20 6na10
+FI 6na2 6na8 6na6
+FOE 6na17 6na13 6na14
+FI 6na33 6na9 6na16
+A 6na11 6na13 6na21
+A 6na12 6na14 6na4
+FI 6na19 6na16 6na20
+FI 6na5 6na22 6na17
+FOE 6na21 6na18 6na23
+FI 6na15 6na24 6na22
+L 6na18 7na24 6na1
+L 6na23 5na15 6na19
+FI 6na3 6n2 6n1
+FO 6n1 6n2 6na33
+
+
+
+FO 7na1 7na2 7na3
+L 7na4 1na5 7na7
+FO 7na6 7na8 7na9
+FOE 7na10 7na11 7na12
+FI 7na7 7na20 7na10
+FI 7na2 7na8 7na6
+FOE 7na17 7na13 7na14
+FI 7na33 7na9 7na16
+A 7na11 7na13 7na21
+A 7na12 7na14 7na4
+FI 7na19 7na16 7na20
+FI 7na5 7na22 7na17
+FOE 7na21 7na18 7na23
+FI 7na15 7na24 7na22
+L 7na18 6na24 7na1
+L 7na23 8na15 7na19
+FI 7na3 7n2 7n1
+FO 7n1 7n2 7na33
+
+
+FO 8na1 8na2 8na3
+L 8na4 2na5 8na7
+FO 8na6 8na8 8na9
+FOE 8na10 8na11 8na12
+FI 8na7 8na20 8na10
+FI 8na2 8na8 8na6
+FOE 8na17 8na13 8na14
+FI 8na33 8na9 8na16
+A 8na11 8na13 8na21
+A 8na12 8na14 8na4
+FI 8na19 8na16 8na20
+FI 8na5 8na22 8na17
+FOE 8na21 8na18 8na23
+FI 8na15 8na24 8na22
+L 8na18 1na24 8na1
+L 8na23 7na15 8na19
+FI 8na3 8n2 8n1
+FO 8n1 8n2 8na33
+
+
+FO 1na1 1na2 1na3
+L 1na4 3na5 1na7
+FO 1na6 1na8 1na9
+FOE 1na10 1na11 1na12
+FI 1na7 1na20 1na10
+FI 1na2 1na8 1na6
+FOE 1na17 1na13 1na14
+FI 1na33 1na9 1na16
+A 1na11 1na13 1na21
+A 1na12 1na14 1na4
+FI 1na19 1na16 1na20
+FI 1na5 1na22 1na17
+FOE 1na21 1na18 1na23
+FI 1na15 1na24 1na22
+L 1na18 8na24 1na1
+L 1na23 2na15 1na19
+FI 1na3 1n2 1n1
+FO 1n1 1n2 1na33
+

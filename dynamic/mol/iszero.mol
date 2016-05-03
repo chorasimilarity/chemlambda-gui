@@ -1,0 +1,17 @@
+L 1isz nisz isz
+A 2isz true 1isz
+A nisz 3isz 2isz
+L false xisz 3isz
+T xisz
+L 1true xtrue true
+L xtrue ytrue 1true
+T ytrue
+L 1false xfalse false
+L yfalse yfalse 1false
+T xfalse
+A isz doi out
+L 1doi fdoi doi
+L 2doi xdoi 1doi
+FO fdoi f1doi f2doi
+A f1doi 3doi 2doi
+A f2doi xdoi 3doi

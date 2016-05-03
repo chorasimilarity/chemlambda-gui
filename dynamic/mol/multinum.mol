@@ -1,0 +1,89 @@
+FO a b 2num
+L b u a
+FOE 2num n1num l1num
+A n1num a1num 3num
+
+
+FOE l1num n4num l55num
+A n4num a11num a1num
+
+FOE l55num n44anum l5anum
+A n44anum a4lnum a11num
+
+
+
+
+FOE l5anum n44bnum l5bnum
+A n44bnum a4hnum a4lnum
+
+FOE l5bnum n44cnum l5cnum
+A n44cnum a4gnum a4hnum
+
+FOE l5cnum n44dnum xxl5dnum
+A n44dnum a4fnum a4gnum
+
+FOE l5dnum n44enum l5enum
+A n44enum a4enum a4fnum
+
+FOE l5enum n44fnum l5fnum
+A n44fnum a4dnum a4enum
+
+FOE l5fnum n44gnum l5gnum
+A n44gnum a4cnum a4dnum
+
+FOE l5gnum n44hnum l5hnum
+A n44hnum a4bnum a4cnum
+
+FOE l5hnum n44inum l5num
+A n44inum a4anum a4bnum
+
+A l5num 4num a4anum
+
+FOE 3num 3numa 3numb
+FI 4numa 4numb 4num
+FOE u ua ub
+
+FO xxa xxb xx2num
+L xxb xxu xxa
+FOE xx2num xxn1num xxl1num
+A xxn1num xxa1num xx3num
+
+
+FOE xxl1num xxn4num xxl55num
+A xxn4num xxa11num xxa1num
+
+FOE xxl55num xxn44anum xxl5anum
+A xxn44anum xxa4lnum xxa11num
+
+
+
+
+FOE xxl5anum xxn44bnum xxl5bnum
+A xxn44bnum xxa4hnum xxa4lnum
+
+FOE xxl5bnum xxn44cnum xxl5cnum
+A xxn44cnum xxa4gnum xxa4hnum
+
+FOE xxl5cnum xxn44dnum l5dnum
+A xxn44dnum xxa4fnum xxa4gnum
+
+FOE xxl5dnum xxn44enum xxl5enum
+A xxn44enum xxa4enum xxa4fnum
+
+FOE xxl5enum xxn44fnum xxl5fnum
+A xxn44fnum xxa4dnum xxa4enum
+
+FOE xxl5fnum xxn44gnum xxl5gnum
+A xxn44gnum xxa4cnum xxa4dnum
+
+FOE xxl5gnum xxn44hnum xxl5hnum
+A xxn44hnum xxa4bnum xxa4cnum
+
+FOE xxl5hnum xxn44inum xxl5num
+A xxn44inum xxa4anum xxa4bnum
+
+A xxl5num xx4num xxa4anum
+
+FOE xx3num xx3numa xx3numb
+FI xx4numa xx4numb xx4num
+FOE xxu xxua xxub

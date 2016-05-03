@@ -1,0 +1,55 @@
+A pred patru out
+L 1patru 2patru patru
+L 3patru 4patru 1patru
+A 6patru 5patru 3patru
+FO 2patru 6patru 7patru
+A 8patru 10patru 5patru
+FO 7patru 8patru 9patru
+A 11patru 12patru 10patru
+FO 9patru 11patru 13patru
+A 13patru 4patru 12patru
+L 1 n pred
+A 2 zero1 1
+A 3 4 2
+A n bigexp 3
+L zero2 5 4
+T 5
+FO zero zero1 zero2
+L 1zero 2zero zero
+L 3zero 3zero 1zero
+T 2zero
+L 1true 2true true
+L 2true 3true 1true
+T 3true
+L 1false 2false false
+L 3false 3false 1false
+T 2false
+L 1unu funu unu
+L 2unu xunu 1unu
+A funu xunu 2unu
+FO unu unu1 unu2
+L 1plus mplus plus
+L 2plus nplus 1plus
+L 3plus fplus 2plus
+L 4plus xplus 3plus
+A 5plus 6plus 4plus
+A mplus 7plus 5plus
+FO fplus 8plus 7plus
+A xplus 9plus 6plus
+A nplus 8plus 9plus
+L 1isz nisz isz
+A 2isz true 1isz
+A nisz 3isz 2isz
+L false 6isz 3isz
+T 6isz
+L 1bigexp gbigexp bigexp
+FO gbigexp g1bigexp g2bigexp
+L 2bigexp kbigexp 1bigexp
+FO kbigexp k1bigexp k2bigexp
+A 3bigexp 4bigexp 2bigexp
+A 5bigexp k1bigexp 3bigexp
+A isz 6bigexp 5bigexp
+A g1bigexp unu1 6bigexp
+A 7bigexp unu2 4bigexp
+A plus 8bigexp 7bigexp
+A g2bigexp k2bigexp 8bigexp

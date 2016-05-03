@@ -1,0 +1,38 @@
+L unu l0 number
+L r0 uu unu
+FOE l0 1 l1
+A 1 r1 r0
+FOE l1 2 l2
+A 2 r2 r1
+FOE l2 3 l3
+A 3 r3 r2
+FOE l3 4 l4
+A 4 r4 r3
+FOE l4 5 l5
+A 5 r5 r4
+FOE l5 6 l6
+A 6 r6 r5
+FOE l6 7 l7
+A 7 r7 r6
+FOE l7 8 l8
+A 8 r8 r7
+FOE l8 9 l9
+A 9 r9 r8
+A l9 uu r9
+
+
+A number succ coco
+A coco c0 out
+
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+
+L 1c0 2c0 c0
+L 3c0 3c0 1c0
+T 2c0

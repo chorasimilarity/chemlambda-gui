@@ -1,0 +1,44 @@
+FO ain 5sp 6sp
+A 5sp 7sp o2
+A 8sp 2c1c1 7sp
+A zu 6sp 8sp
+
+L 12c1c1 22c1c1 2c1c1
+L 42c1c1 32c1c1 12c1c1
+A 22c1c1 32c1c1 42c1c1
+
+FOE 19qui 119qui 2c1c1
+FOE 99qui 179qui 169qui
+FOE 79qui 159qui 149qui
+A 89qui 69qui 59qui
+A 169qui 149qui 69qui
+A 179qui 159qui 79qui
+FI 129qui 139qui 19qui
+L 109qui 129qui 89qui
+L 119qui 139qui 99qui
+
+L o2 zu o3
+L o3 ain o4
+A num o4 o5
+A o5 succ o6
+A o6 2out 2out
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+
+
+
+
+L 2num 1num num
+L 3num xnum 2num
+
+FO 1num l1num l2num
+A m1num r1num 3num
+FO l1num m1num m2num
+A m2num r2num r1num
+A l2num xnum r2num

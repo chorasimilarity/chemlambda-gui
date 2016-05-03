@@ -1,0 +1,245 @@
+FI zyxin zyx2 zyx1
+FO zyx1 zyx2 zyxcon
+A zyxcon zyx22 z6
+FI zyx11 zyx23 zyx13
+FO zyx13 zyx23 zy2
+L zyx111 zyx22 zyxin
+
+
+
+A zy1 zy2 zycon
+FO zyin zy1 zyx111
+FI zy11 zy22 zyin
+L zycon zy11 zy22
+
+
+
+
+FOE z6 z16 z7
+FOE z8 z18 z9
+FOE z10 z20 z11
+FOE z24 z1 z15
+FOE z26 z30 z17
+A z15 z2 zyx11
+A z30 z16 z27
+A z17 z7 z8
+FI z28 z42 z26
+FI z33 z32 z38
+FI z38 z39 z24
+FI z19 z31 z28
+FI z21 z35 z34
+FI z34 z37 z33
+L z27 z42 z39
+L z18 z31 z32
+L z9 z19 z10
+L z11 z21 z2
+
+
+FOE z6p z16p z7p
+FOE z8p z18p z9p
+FOE z10p z20p z11p
+FOE z24p z1p z15p
+FOE z26p z30p z17p
+A z15p z2p z6p
+A z30p z16p z27p
+A z17p z7p z8p
+FI z28p z42p z26p
+FI z33p z32p z38p
+FI z38p z39p z24p
+FI z19p z31p z28p
+FI z21p z35p z34p
+FI z34p z37p z33p
+L z27p z42p z39p
+L z18p z31p z32p
+L z9p z19p z10p
+L z11p z21p z2p
+
+
+
+Arrow zYa z37p
+Arrow z20p zFa
+Arrow zXa z35p
+Arrow z1p zFb
+
+Arrow z20 zYi
+Arrow z1 zXi
+Arrow zTi z35
+Arrow zFi z37
+
+
+
+
+A z1h zYi zTi
+A z2h zXi z1h
+L z8h zYh z2h
+L zFh zXh z8h
+
+
+A z1g zYh zFi
+A z2g zXh z1g
+L z8g zYg z2g
+L zFg zXg z8g
+
+
+A z1f zYg zFh
+A z2f zXg z1f
+L z8f zYf z2f
+L zFf zXf z8f
+
+
+A z1e zYf zFg
+A z2e zXf z1e
+L z8e zYe z2e
+L zFe zXe z8e
+
+
+A z1d zYe zFf
+A z2d zXe z1d
+L z8d zYd z2d
+L zFd zXd z8d
+
+
+A z1c zYd zFe
+A z2c zXd z1c
+L z8c zYc z2c
+L zFc zXc z8c
+
+
+A z1b zYc zFd
+A z2b zXc z1b
+L z8b zYb z2b
+L zFb zXb z8b
+
+
+A z1a zYb zFc
+A z2a zXb dcbao1xx
+L z8a zYa z2a
+L zFa zXa z8a
+
+A dcbfoal1 dcbfoar1 dcbao1
+A dcbfoal2 dcbfoar2 dcbao2
+A dcbfoal3 dcbfoar3 dcbao3
+
+FO dcbfoin1 dcbfoal2 dcbfoar1
+FO dcbfoin2 dcbfoal3 dcbfoar2
+FO dcbfoin3 dcbfoal1 d20
+
+FI dcbfoal1x dcbfoar1x 15
+FI dcbfoal2x dcbfoar2x dcbao2x
+FI dcbfoal3x dcbfoar3x dcbao3x
+
+FO dcbao1 dcbfoal2x dcbfoar1x
+FO dcbao2 dcbfoal3x dcbfoar2x
+FO dcbao3 dcbfoal1x dcbfoar3x
+
+A dcbfoal1xx dcbfoar1xx z1a
+A dcbfoal2xx dcbfoar2xx dcbao2xx
+A dcbfoal3xx dcbfoar3xx dcbao3xx
+
+FOE dcbao1x dcbfoal2xx dcfoar1xx
+FOE dcbao2x dcbfoal3xx dcbfoar2xx
+FOE dcbao3x dcbfoal1xx dcbfoar3xx
+
+
+FI 3 1 dcbao1x
+FOE 15 4 dc2
+L 4 1 5
+L 2 3 12
+FOE 5 6 8
+FOE 12 7 9
+A 6 7 14
+A 8 9 11
+FO 10 17 dcfoar3
+FO 16 19 18
+FI 17 19 16
+FI 20 18 13
+A 13 11 10
+
+
+
+
+
+A dcfoal1 dcfoar1 dcao1
+A dcfoal2 dcfoar2 dcao2
+A dcfoal3 dcfoar3 dcao3
+
+FO dcfoin1 dcfoal2 dcfoar1
+FO dcfoin2 dcfoal3 dcfoar2
+FO dcfoin3 dcfoal1 20
+
+FI dcfoal1x dcfoar1x dc15
+FI dcfoal2x dcfoar2x dcao2x
+FI dcfoal3x dcfoar3x dcao3x
+
+FO dcao1 dcfoal2x dcfoar1x
+FO dcao2 dcfoal3x dcfoar2x
+FO dcao3 dcfoal1x dcfoar3x
+
+A dcfoal1xx dcfoar1xx dcao1xx
+A dcfoal2xx dcfoar2xx dcao2xx
+A dcfoal3xx dcfoar3xx dcao3xx
+
+FOE dcao1x dcfoal2xx dfoar1xx
+FOE dcao2x dcfoal3xx dcfoar2xx
+FOE dcao3x dcfoal1xx dcfoar3xx
+
+
+
+FI dc3 dc1 dcao1x
+FOE dc15 dc4 d2
+L dc4 dc1 dc5
+L dc2 dc3 dc12
+FOE dc5 dc6 dc8
+FOE dc12 dc7 dc9
+A dc6 dc7 dc14
+A dc8 dc9 dc11
+FO dc10 dc17 dfoar3
+FO dc16 dc19 dc18
+FI dc17 dc19 dc16
+FI dc20 dc18 dc13
+A dc13 dc11 dc10
+
+
+
+
+A dfoal1 dfoar1 dao1
+A dfoal2 dfoar2 dao2
+A dfoal3 dfoar3 dao3
+
+FO dfoin1 dfoal2 dfoar1
+FO dfoin2 dfoal3 dfoar2
+FO dfoin3 dfoal1 dc20
+
+FI dfoal1x dfoar1x d15
+FI dfoal2x dfoar2x dao2x
+FI dfoal3x dfoar3x dao3x
+
+FO dao1 dfoal2x dfoar1x
+FO dao2 dfoal3x dfoar2x
+FO dao3 dfoal1x dfoar3x
+
+A dfoal1xx dfoar1xx dao1xx
+A dfoal2xx dfoar2xx dao2xx
+A dfoal3xx dfoar3xx dao3xx
+
+FOE dao1x dfoal2xx dcbfoar1xx
+FOE dao2x dfoal3xx dfoar2xx
+FOE dao3x dfoal1xx dfoar3xx
+
+
+FI d3 d1 dao1x
+FOE d15 d4 2
+L d4 d1 d5
+L d2 d3 d12
+FOE d5 d6 d8
+FOE d12 d7 d9
+A d6 d7 d14
+A d8 d9 d11
+FO d10 d17 dcbfoar3
+FO d16 d19 d18
+FI d17 d19 d16
+FI d20 d18 d13
+A d13 d11 d10
+
+
+

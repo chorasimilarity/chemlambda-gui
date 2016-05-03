@@ -1,0 +1,56 @@
+L 5i 1o 2o
+FI 1i 7i 6o
+A 2i 3i 4o
+FI 4i 6i 9o
+L 8i 7o 10o
+FOE 9i 5o 8o
+FOE 10i 12o 11o
+A 12i 15i 13o
+FOE 13i 15o 14o
+A 11i 14i 3o
+
+
+FOE 1o 1oa 1ob
+FI 1ob 1oa 1i
+
+FOE 2o 2oa 2ob
+FI 2ob 2oa 2i
+
+FOE 3o 3oa 3ob
+FI 3ob 3oa 3i
+
+FOE 4o 4oa 4ob
+FI 4ob 4oa 4i
+
+FOE 5o 5oa 5ob
+FI 5ob 5oa 5i
+
+FOE 6o 6oa 6ob
+FI 6ob 6oa 6i
+
+FOE 7o 7oa 7ob
+FI 7ob 7oa 7i
+
+FOE 8o 8oa 8ob
+FI 8ob 8oa 8i
+
+FOE 9o 9oa 9ob
+FI 9ob 9oa 9i
+
+FOE 10o 10oa 10ob
+FI 10ob 10oa 10i
+
+FOE 11o 11oa 11ob
+FI 11ob 11oa 11i
+
+FOE 12o 12oa 12ob
+FI 12ob 12oa 12i
+
+FOE 13o 13oa 13ob
+FI 13ob 13oa 13i
+
+FOE 14o 14oa 14ob
+FI 14ob 14oa 14i
+
+FOE 15o 15oa 15ob
+FI 15ob 15oa 15i

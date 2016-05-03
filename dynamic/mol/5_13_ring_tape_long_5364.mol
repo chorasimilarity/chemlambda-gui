@@ -1,0 +1,141 @@
+FI xdcba3 xdcba1 xdcba15
+FOE xdcba15 xdcba4 xdcb2
+L xdcba4 xdcba1 xdcba5
+L xdcba2 xdcba3 xdcba12
+FOE xdcba5 xdcba6 xdcba8
+FOE xdcba12 xdcba7 xdcba9
+A xdcba6 xdcba7 xdcba14
+A xdcba8 xdcba9 xdcba11
+FO xdcba10 xdcba17 xdcba20
+FO xdcba16 xdcba19 xdcba18
+FI xdcba17 xdcba19 xdcba16
+FI xdcba20 xdcba18 xdcba13
+A xdcba13 xdcba11 xdcba10
+
+
+FI xdcb3 xdcb1 xdcb15
+FOE xdcb15 xdcb4 xdc2
+L xdcb4 xdcb1 xdcb5
+L xdcb2 xdcb3 xdcb12
+FOE xdcb5 xdcb6 xdcb8
+FOE xdcb12 xdcb7 xdcb9
+A xdcb6 xdcb7 xdcb14
+A xdcb8 xdcb9 xdcb11
+FO xdcb10 xdcb17 xdcb20
+FO xdcb16 xdcb19 xdcb18
+FI xdcb17 xdcb19 xdcb16
+FI xdcb20 xdcb18 xdcb13
+A xdcb13 xdcb11 xdcb10
+
+FI xdc3 xdc1 xdc15
+FOE xdc15 xdc4 xd2
+L xdc4 xdc1 xdc5
+L xdc2 xdc3 xdc12
+FOE xdc5 xdc6 xdc8
+FOE xdc12 xdc7 xdc9
+A xdc6 xdc7 xdc14
+A xdc8 xdc9 xdc11
+FO xdc10 xdc17 xdc20
+FO xdc16 xdc19 xdc18
+FI xdc17 xdc19 xdc16
+FI xdc20 xdc18 xdc13
+A xdc13 xdc11 xdc10
+
+
+FI xd3 xd1 xd15
+FOE xd15 xd4 x2
+L xd4 xd1 xd5
+L xd2 xd3 xd12
+FOE xd5 xd6 xd8
+FOE xd12 xd7 xd9
+A xd6 xd7 xd14
+A xd8 xd9 xd11
+FO xd10 xd17 xd20
+FO xd16 xd19 xd18
+FI xd17 xd19 xd16
+FI xd20 xd18 xd13
+A xd13 xd11 xd10
+
+
+FI x3 x1 x15
+FOE x15 x4 xdcba2
+L x4 x1 x5
+L x2 x3 x12
+FOE x5 x6 x8
+FOE x12 x7 x9
+A x6 x7 x14
+A x8 x9 x11
+FO x10 x17 x20
+FO x16 x19 x18
+FI x17 x19 x16
+FI x20 x18 x13
+A x13 x11 13
+
+
+
+FOE 13 6 5
+FOE 14 4 3
+
+A 23 12 x10
+FO 12p b13 b12
+A b13 b12 12
+L 24 12p 14
+A 33 22 23
+L 34 22 24
+A 43 32 33
+FO 32p b33 b32
+A b33 b32 32
+L 44 32p 34
+A 1 42 43
+L 2 42 44
+
+A 23o 12o 1
+FO 12po b13o b12o
+A b13o b12o 12o
+L 24o 12po 2
+A 33o 22o 23o
+L 34o 22o 24o
+A 43o 32o 33o
+FO 32po b33o b32o
+A b33o b32o 32o
+L 44o 32po 34o
+A zz13 42o 43o
+L zz14 42o 44o
+
+
+A zz23 zz12 zz13
+FO zz12p zzb13 zzb12
+A zzb13 zzb12 zz12
+L zz24 zz12p zz14
+A zz33 zz22 zz23
+L zz34 zz22 zz24
+A zz43 zz32 zz33
+FO zz32p zzb33 zzb32
+A zzb33 zzb32 zz32
+L zz44 zz32p zz34
+A zz1 zz42 zz43
+L zz2 zz42 zz44
+
+A zz23o zz12o zz1
+FO zz12po zzb13o zzb12o
+A zzb13o zzb12o zz12o
+L zz24o zz12po zz2
+A zz33o zz22o zz23o
+L zz34o zz22o zz24o
+A zz43o zz32o zz33o
+FO zz32po zzb33o zzb32o
+A zzb33o zzb32o zz32o
+L zz44o zz32po zz34o
+A 1o zz42o zz43o
+L 2o zz42o zz44o
+
+
+Arrow 5 1a
+Arrow 3 2a
+
+Arrow 6 1b
+Arrow 4 2b
+
+
+FI 1a 1b 1o
+FI 2a 2b 2o

@@ -1,0 +1,23 @@
+
+
+L 7 5 3
+L 8 6 4
+FO 5 9 7
+A 9 6 8
+
+FI 3 4 gugu
+
+FOE gugu m1num l1pnum
+A m1num r1pnum 1num
+
+FOE l1pnum m1pnum l1ppnum
+A m1pnum r1ppnum r1pnum
+
+FOE l1ppnum m1ppnum l1num
+A m1ppnum r1num r1ppnum
+
+FOE l1num m2num l2num
+A m2num r2num r1num
+FOE l2num m3num l3num
+A m3num r3num r2num
+

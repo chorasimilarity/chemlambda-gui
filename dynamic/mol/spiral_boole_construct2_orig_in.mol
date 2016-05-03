@@ -1,0 +1,159 @@
+A inter outunu out
+
+A num outsuc inter
+
+
+L 1num fnum num
+L 2num xnum 1num
+
+FO fnum m1num le1num
+A m1num ri1num 2num
+
+FO le1num m2num le2num
+A m2num ri2num ri1num
+
+FO le2num m3num le3num
+A m3num ri3num ri2num
+
+FO le3num m4num le4num
+A m4num ri4num ri3num
+
+FO le4num m5num m6num
+A m5num ri5num ri4num
+
+A m6num xnum ri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+A 0eu 0a2 0a1
+A 0a1 0n 0wu
+A 0a7 0a6 0ed
+L 0a8 0a7 0s
+A 0a5 0wd 0a6
+
+L 0a9 0a9 0a8
+
+L 0a4 0a3 0a2
+L 0a3 0a5 0a4
+
+
+
+
+
+A 1eu 1a2 1a1
+A 1a1 1n 0eu
+A 1a7 1a6 1ed
+L 1a8 1a7 1s
+A 1a5 0ed 1a6
+
+L out outunu 1a8
+
+L 1a4 1a3 1a2
+L 1a3 1a5 1a4
+
+
+
+
+
+A 2eu 2a2 2a1
+A 2a1 2n 1eu
+A 2a7 2a6 2ed
+L 2a8 2a7 2s
+A 2a5 1ed 2a6
+
+L 2a9 2a9 2a8
+
+L 2a4 2a3 2a2
+L 2a3 2a5 2a4
+
+
+
+
+
+A 3eu 3a2 3a1
+A 3a1 3n 2eu
+A 3a7 3a6 3ed
+L 3a8 3a7 3s
+A 3a5 2ed 3a6
+
+L 3a9 3a9 3a8
+
+L 3a4 3a3 3a2
+L 3a3 3a5 3a4
+
+
+
+
+A 4eu 4a2 4a1
+A 4a1 4n 3eu
+A 4a7 4a6 4ed
+L 4a8 4a7 4s
+A 4a5 3ed 4a6
+
+L 4a9 4a9 4a8
+
+L 4a4 4a3 4a2
+L 4a3 4a5 4a4
+
+
+
+
+
+A 5eu 5a2 5a1
+A 5a1 5n 4eu
+A 5a7 5a6 5ed
+L 5a8 5a7 5s
+A 5a5 4ed 5a6
+
+L 5a9 5a9 5a8
+
+L 5a4 5a3 5a2
+L 5a3 5a5 5a4
+
+
+
+
+
+A ar1 ar0 5eu
+A ar2 5s ar1
+A ar3 4s ar2
+A ar4 3s ar3
+A ar5 2s ar4
+A ar6 1s ar5
+A ar7 0s ar6
+A ar8 5ed ar7
+
+
+L 0wu ar0 br1
+L br1 5n br2
+L br2 4n br3
+L br3 3n br4
+L br4 2n br5
+L br5 1n br6
+L br6 0n br7
+L br7 0wd br8
+L br8 ar8 outsuc
+
+
+
+
+
+
+
+
+
+
+
+
+
+

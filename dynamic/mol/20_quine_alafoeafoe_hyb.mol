@@ -1,0 +1,408 @@
+FOE 24 1 15
+FOE 26 30 17
+A 30 16 27
+FI 28 42 26
+FI 33 32 38
+FI 38 39 24
+FI 19 31 28
+FI 21 35 34
+FI 34 37 33
+L 27 42 39
+L 18 31 32
+L 11 21 2
+
+Arrow 1al 35
+Arrow 1 35al
+
+Arrow 20al 37
+Arrow 20 37al
+
+
+FOE 6al 16al 7al
+FOE 8al 18al 9al
+FOE 10al 20al 11al
+FOE 24al 1al 15al
+FOE 26al 30al 17al
+A 15al 2al 6al
+A 30al 16al 27al
+A 17al 7al 8al
+FI 28al 42al 26al
+FI 33al 32al 38al
+FI 38al 39al 24al
+FI 19al 31al 28al
+FI 21al 35al 34al
+FI 34al 37al 33al
+L 27al 42al 39al
+L 18al 31al 32al
+L 9al 19al 10al
+L 11al 21al 2al
+
+FOE 2afoe p q
+FOE 15afoe t z
+A t p 16
+A z q 7
+
+FOE 2 pp qq
+FOE 15 tt zz
+A tt pp 16afoe
+A zz qq 7afoe
+
+
+
+
+FOE 8afoe 18afoe 9afoe
+FOE 10afoe 20afoe 11afoe
+FOE 24afoe 1afoe 15afoe
+FOE 26afoe 30afoe 17afoe
+A 30afoe 16afoe 27afoe
+A 17afoe 7afoe zaz8afoe
+A 36afoe 1afoe 37afoe
+FI 28afoe 42afoe 26afoe
+FI 33afoe 32afoe 38afoe
+FI 38afoe 39afoe 24afoe
+FI 19afoe 31afoe 28afoe
+FI 21afoe 35afoe 34afoe
+FI 34afoe 37afoe 33afoe
+L 27afoe 42afoe 39afoe
+L 18afoe 31afoe 32afoe
+L 9afoe 19afoe 10afoe
+L 20afoe 35afoe 36afoe
+L 11afoe 21afoe 2afoe
+
+
+FOE 7afoe2 p2 q2
+FOE 17afoe2 t2 z2
+A t2 p2 18
+A z2 q2 9
+
+FOE 7 pp2 qq2
+FOE 17 tt2 zz2
+A tt2 pp2 18afoe2
+A zz2 qq2 9afoe2
+
+FOE 6afoe2 16afoe2 7afoe2
+A 15afoe2 2afoe2 6afoe2
+L 20afoe2 35afoe2 36afoe2
+A 36afoe2 1afoe2 37afoe2
+FI 28afoe2 42afoe2 26afoe2
+FOE 26afoe2 30afoe2 17afoe2
+FI 38afoe2 39afoe2 24afoe2
+FOE 24afoe2 1afoe2 15afoe2
+L 9afoe2 19afoe2 10afoe2
+FOE 10afoe2 20afoe2 11afoe2
+A 30afoe2 16afoe2 27afoe2
+FI 33afoe2 32afoe2 38afoe2
+FI 19afoe2 31afoe2 28afoe2
+FI 21afoe2 35afoe2 34afoe2
+FI 34afoe2 37afoe2 33afoe2
+L 27afoe2 42afoe2 39afoe2
+L 18afoe2 31afoe2 32afoe2
+L 11afoe2 21afoe2 2afoe2
+
+
+FOE 9lfoe ql pl
+FI tl zl 19
+L pl tl 11lfoe
+L ql zl 20
+
+FOE 9 qql ppl
+FI ttl zzl 19lfoe
+L ppl ttl 11
+L qql zzl 20lfoe
+
+
+
+FOE 6lfoe 16lfoe 7lfoe
+A 15lfoe 2lfoe 6lfoe
+L 20lfoe 35lfoe 36lfoe
+A 36lfoe 1lfoe 37lfoe
+FOE 8lfoe 18lfoe 9lfoe
+A 17lfoe 7lfoe 8lfoe
+FI 28lfoe 42lfoe 26lfoe
+FOE 26lfoe 30lfoe 17lfoe
+FI 38lfoe 39lfoe 24lfoe
+FOE 24lfoe 1lfoe 15lfoe
+A 30lfoe 16lfoe 27lfoe
+FI 33lfoe 32lfoe 38lfoe
+FI 19lfoe 31lfoe 28lfoe
+FI 21lfoe 35lfoe 34lfoe
+FI 34lfoe 37lfoe 33lfoe
+L 27lfoe 42lfoe 39lfoe
+L 18lfoe 31lfoe 32lfoe
+L 11lfoe 21lfoe 2lfoe
+
+
+
+
+
+FOE zaz24 zaz1 zaz15
+FOE zaz26 zaz30 zaz17
+A zaz30 zaz16 zaz27
+FI zaz28 zaz42 zbz26
+FI zaz33 zaz32 zaz38
+FI zaz38 zaz39 zaz24
+FI zaz19 zaz31 zaz28
+FI zaz21 zaz35 zaz34
+FI zaz34 zaz37 zaz33
+L zaz27 zaz42 zaz39
+L zaz18 zaz31 zaz32
+L zaz11 zaz21 zaz2
+
+Arrow zaz1al zaz35
+Arrow zaz1 zaz35al
+
+Arrow zaz20al zaz37
+Arrow zaz20 zaz37al
+
+
+FOE zaz6al zaz16al zaz7al
+FOE zaz8al zaz18al zaz9al
+FOE zaz10al zaz20al zaz11al
+FOE zaz24al zaz1al zaz15al
+FOE zaz26al zaz30al zaz17al
+A zaz15al zaz2al zaz6al
+A zaz30al zaz16al zaz27al
+A zaz17al zaz7al zaz8al
+FI zaz28al zaz42al zaz26al
+FI zaz33al zaz32al zaz38al
+FI zaz38al zaz39al zaz24al
+FI zaz19al zaz31al zaz28al
+FI zaz21al zaz35al zaz34al
+FI zaz34al zaz37al zaz33al
+L zaz27al zaz42al zaz39al
+L zaz18al zaz31al zaz32al
+L zaz9al zaz19al zaz10al
+L zaz11al zaz21al zaz2al
+
+FOE zaz2afoe zazp zazq
+FOE zaz15afoe zazt zazz
+A zazt zazp zaz16
+A zazz zazq zaz7
+
+FOE zaz2 zazpp zazqq
+FOE zaz15 zaztt zazzz
+A zaztt zazpp zaz16afoe
+A zazzz zazqq zaz7afoe
+
+
+
+
+FOE zaz8afoe zaz18afoe zaz9afoe
+FOE zaz10afoe zaz20afoe zaz11afoe
+FOE zaz24afoe zaz1afoe zaz15afoe
+FOE zaz26afoe zaz30afoe zaz17afoe
+A zaz30afoe zaz16afoe zaz27afoe
+A zaz17afoe zaz7afoe 8afoe
+A zaz36afoe zaz1afoe zaz37afoe
+FI zaz28afoe zaz42afoe zaz26afoe
+FI zaz33afoe zaz32afoe zaz38afoe
+FI zaz38afoe zaz39afoe zaz24afoe
+FI zaz19afoe zaz31afoe zaz28afoe
+FI zaz21afoe zaz35afoe zaz34afoe
+FI zaz34afoe zaz37afoe zaz33afoe
+L zaz27afoe zaz42afoe zaz39afoe
+L zaz18afoe zaz31afoe zaz32afoe
+L zaz9afoe zaz19afoe zaz10afoe
+L zaz20afoe zaz35afoe zaz36afoe
+L zaz11afoe zaz21afoe zaz2afoe
+
+
+FOE zaz7afoe2 zazp2 zazq2
+FOE zaz17afoe2 zazt2 zazz2
+A zazt2 zazp2 zaz18
+A zazz2 zazq2 zaz9
+
+FOE zaz7 zazpp2 zazqq2
+FOE zaz17 zaztt2 zazzz2
+A zaztt2 zazpp2 zaz18afoe2
+A zazzz2 zazqq2 zaz9afoe2
+
+FOE zaz6afoe2 zaz16afoe2 zaz7afoe2
+A zaz15afoe2 zaz2afoe2 zaz6afoe2
+L zaz20afoe2 zaz35afoe2 zaz36afoe2
+A zaz36afoe2 zaz1afoe2 zaz37afoe2
+FI zaz28afoe2 zaz42afoe2 zaz26afoe2
+FOE zaz26afoe2 zaz30afoe2 zaz17afoe2
+FI zaz38afoe2 zaz39afoe2 zaz24afoe2
+FOE zaz24afoe2 zaz1afoe2 zaz15afoe2
+L zaz9afoe2 zaz19afoe2 zaz10afoe2
+FOE zaz10afoe2 zaz20afoe2 zaz11afoe2
+A zaz30afoe2 zaz16afoe2 zaz27afoe2
+FI zaz33afoe2 zaz32afoe2 zaz38afoe2
+FI zaz19afoe2 zaz31afoe2 zaz28afoe2
+FI zaz21afoe2 zaz35afoe2 zaz34afoe2
+FI zaz34afoe2 zaz37afoe2 zaz33afoe2
+L zaz27afoe2 zaz42afoe2 zaz39afoe2
+L zaz18afoe2 zaz31afoe2 zaz32afoe2
+L zaz11afoe2 zaz21afoe2 zaz2afoe2
+
+
+FOE zaz9lfoe zazql zazpl
+FI zaztl zazzl zaz19
+L zazpl zaztl zaz11lfoe
+L zazql zazzl zaz20
+
+FOE zaz9 zazqql zazppl
+FI zazttl zazzzl zaz19lfoe
+L zazppl zazttl zaz11
+L zazqql zazzzl zaz20lfoe
+
+
+
+FOE zaz6lfoe zaz16lfoe zaz7lfoe
+A zaz15lfoe zaz2lfoe zaz6lfoe
+L zaz20lfoe zaz35lfoe zaz36lfoe
+A zaz36lfoe zaz1lfoe zaz37lfoe
+FOE zaz8lfoe zaz18lfoe zaz9lfoe
+A zaz17lfoe zaz7lfoe zaz8lfoe
+FI zaz28lfoe zaz42lfoe zaz26lfoe
+FOE zaz26lfoe zaz30lfoe zaz17lfoe
+FI zaz38lfoe zaz39lfoe zaz24lfoe
+FOE zaz24lfoe zaz1lfoe zaz15lfoe
+A zaz30lfoe zaz16lfoe zaz27lfoe
+FI zaz33lfoe zaz32lfoe zaz38lfoe
+FI zaz19lfoe zaz31lfoe zaz28lfoe
+FI zaz21lfoe zaz35lfoe zaz34lfoe
+FI zaz34lfoe zaz37lfoe zaz33lfoe
+L zaz27lfoe zaz42lfoe zaz39lfoe
+L zaz18lfoe zaz31lfoe zaz32lfoe
+L zaz11lfoe zaz21lfoe zaz2lfoe
+
+
+
+
+
+
+FOE zbz24 zbz1 zbz15
+FOE zbz26 zbz30 zbz17
+A zbz30 zbz16 zbz27
+FI zbz28 zbz42 zaz26
+FI zbz33 zbz32 zbz38
+FI zbz38 zbz39 zbz24
+FI zbz19 zbz31 zbz28
+FI zbz21 zbz35 zbz34
+FI zbz34 zbz37 zbz33
+L zbz27 zbz42 zbz39
+L zbz18 zbz31 zbz32
+L zbz11 zbz21 zbz2
+
+Arrow zbz1al zbz35
+Arrow zbz1 zbz35al
+
+Arrow zbz20al zbz37
+Arrow zbz20 zbz37al
+
+
+FOE zbz6al zbz16al zbz7al
+FOE zbz8al zbz18al zbz9al
+FOE zbz10al zbz20al zbz11al
+FOE zbz24al zbz1al zbz15al
+FOE zbz26al zbz30al zbz17al
+A zbz15al zbz2al zbz6al
+A zbz30al zbz16al zbz27al
+A zbz17al zbz7al zbz8al
+FI zbz28al zbz42al zbz26al
+FI zbz33al zbz32al zbz38al
+FI zbz38al zbz39al zbz24al
+FI zbz19al zbz31al zbz28al
+FI zbz21al zbz35al zbz34al
+FI zbz34al zbz37al zbz33al
+L zbz27al zbz42al zbz39al
+L zbz18al zbz31al zbz32al
+L zbz9al zbz19al zbz10al
+L zbz11al zbz21al zbz2al
+
+FOE zbz2afoe zbzp zbzq
+FOE zbz15afoe zbzt zbzz
+A zbzt zbzp zbz16
+A zbzz zbzq zbz7
+
+FOE zbz2 zbzpp zbzqq
+FOE zbz15 zbztt zbzzz
+A zbztt zbzpp zbz16afoe
+A zbzzz zbzqq zbz7afoe
+
+
+
+
+FOE zbz8afoe zbz18afoe zbz9afoe
+FOE zbz10afoe zbz20afoe zbz11afoe
+FOE zbz24afoe zbz1afoe zbz15afoe
+FOE zbz26afoe zbz30afoe zbz17afoe
+A zbz30afoe zbz16afoe zbz27afoe
+A zbz17afoe zbz7afoe zbz8afoe
+A zbz36afoe zbz1afoe zbz37afoe
+FI zbz28afoe zbz42afoe zbz26afoe
+FI zbz33afoe zbz32afoe zbz38afoe
+FI zbz38afoe zbz39afoe zbz24afoe
+FI zbz19afoe zbz31afoe zbz28afoe
+FI zbz21afoe zbz35afoe zbz34afoe
+FI zbz34afoe zbz37afoe zbz33afoe
+L zbz27afoe zbz42afoe zbz39afoe
+L zbz18afoe zbz31afoe zbz32afoe
+L zbz9afoe zbz19afoe zbz10afoe
+L zbz20afoe zbz35afoe zbz36afoe
+L zbz11afoe zbz21afoe zbz2afoe
+
+
+FOE zbz7afoe2 zbzp2 zbzq2
+FOE zbz17afoe2 zbzt2 zbzz2
+A zbzt2 zbzp2 zbz18
+A zbzz2 zbzq2 zbz9
+
+FOE zbz7 zbzpp2 zbzqq2
+FOE zbz17 zbztt2 zbzzz2
+A zbztt2 zbzpp2 zbz18afoe2
+A zbzzz2 zbzqq2 zbz9afoe2
+
+FOE zbz6afoe2 zbz16afoe2 zbz7afoe2
+A zbz15afoe2 zbz2afoe2 zbz6afoe2
+L zbz20afoe2 zbz35afoe2 zbz36afoe2
+A zbz36afoe2 zbz1afoe2 zbz37afoe2
+FI zbz28afoe2 zbz42afoe2 zbz26afoe2
+FOE zbz26afoe2 zbz30afoe2 zbz17afoe2
+FI zbz38afoe2 zbz39afoe2 zbz24afoe2
+FOE zbz24afoe2 zbz1afoe2 zbz15afoe2
+L zbz9afoe2 zbz19afoe2 zbz10afoe2
+FOE zbz10afoe2 zbz20afoe2 zbz11afoe2
+A zbz30afoe2 zbz16afoe2 zbz27afoe2
+FI zbz33afoe2 zbz32afoe2 zbz38afoe2
+FI zbz19afoe2 zbz31afoe2 zbz28afoe2
+FI zbz21afoe2 zbz35afoe2 zbz34afoe2
+FI zbz34afoe2 zbz37afoe2 zbz33afoe2
+L zbz27afoe2 zbz42afoe2 zbz39afoe2
+L zbz18afoe2 zbz31afoe2 zbz32afoe2
+L zbz11afoe2 zbz21afoe2 zbz2afoe2
+
+
+FOE zbz9lfoe zbzql zbzpl
+FI zbztl zbzzl zbz19
+L zbzpl zbztl zbz11lfoe
+L zbzql zbzzl zbz20
+
+FOE zbz9 zbzqql zbzppl
+FI zbzttl zbzzzl zbz19lfoe
+L zbzppl zbzttl zbz11
+L zbzqql zbzzzl zbz20lfoe
+
+
+
+FOE zbz6lfoe zbz16lfoe zbz7lfoe
+A zbz15lfoe zbz2lfoe zbz6lfoe
+L zbz20lfoe zbz35lfoe zbz36lfoe
+A zbz36lfoe zbz1lfoe zbz37lfoe
+FOE zbz8lfoe zbz18lfoe zbz9lfoe
+A zbz17lfoe zbz7lfoe zbz8lfoe
+FI zbz28lfoe zbz42lfoe zbz26lfoe
+FOE zbz26lfoe zbz30lfoe zbz17lfoe
+FI zbz38lfoe zbz39lfoe zbz24lfoe
+FOE zbz24lfoe zbz1lfoe zbz15lfoe
+A zbz30lfoe zbz16lfoe zbz27lfoe
+FI zbz33lfoe zbz32lfoe zbz38lfoe
+FI zbz19lfoe zbz31lfoe zbz28lfoe
+FI zbz21lfoe zbz35lfoe zbz34lfoe
+FI zbz34lfoe zbz37lfoe zbz33lfoe
+L zbz27lfoe zbz42lfoe zbz39lfoe
+L zbz18lfoe zbz31lfoe zbz32lfoe
+L zbz11lfoe zbz21lfoe zbz2lfoe
+

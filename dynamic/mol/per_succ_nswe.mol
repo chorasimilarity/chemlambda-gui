@@ -1,0 +1,124 @@
+A nsinter nsunu nsoutt
+A nsnum nssucc nsinter
+
+
+
+
+L ns0p nslp nssucc
+L ns3s nslfs ns0p
+L ns2s ns3in ns3s
+L ns1s ns2in ns2s
+L ns0s ns1in ns1s
+L ns0i ns0in ns0s
+A ns1i ns0out ns0i
+A ns2i ns1out ns1i
+A ns3i ns2out ns2i
+A ns0f ns3out ns3i
+A nslp nslfs ns0f
+
+
+L ns3sunu nslfsunu nsunu
+L ns2sunu ns3unu ns3sunu
+L ns1sunu ns2unu ns2sunu
+L ns0sunu ns1unu ns1sunu
+L ns0iunu ns0unu ns0sunu
+A ns1iunu ns0unu ns0iunu
+A ns2iunu ns1unu ns1iunu
+A ns3iunu ns2unu ns2iunu
+A nslfsunu ns3unu ns3iunu
+
+
+A ns3in we3in we3out
+A ns2in we2in we2out
+A ns1in we1in we1out
+A ns0in we0in we0out
+L a4 a3 ns0out
+L a3 a2 ns1out
+L a2 a1 ns2out
+L a1 a4 ns3out
+
+
+L ns1num nsfnum nsnum
+L ns2num nsxnum ns1num
+
+FO nsfnum nsm1num nsle1num
+A nsm1num nsri1num ns2num
+
+FO nsle1num nsm2num nsle2num
+A nsm2num nsri2num nsri1num
+
+FO nsle2num nsm3num nsle3num
+A nsm3num nsri3num nsri2num
+
+FO nsle3num nsm4num nsle4num
+A nsm4num nsri4num nsri3num
+
+FO nsle4num nsm5num nsle5num
+A nsm5num nsri5num nsri4num
+
+FO nsle5num nsm6num nsm7num
+A nsm6num nsri6num nsri5num
+
+A nsm7num nsxnum nsri6num
+
+
+
+
+
+
+
+
+
+A weinter weunu weoutt
+A wenum wesucc weinter
+
+
+
+
+L we0p welp wesucc
+L we3s welfs we0p
+L we2s we3in we3s
+L we1s we2in we2s
+L we0s we1in we1s
+L we0i we0in we0s
+A we1i we0out we0i
+A we2i we1out we1i
+A we3i we2out we2i
+A we0f we3out we3i
+A welp welfs we0f
+
+L we3sunu welfsunu weunu
+L we2sunu we3unu we3sunu
+L we1sunu we2unu we2sunu
+L we0sunu we1unu we1sunu
+L we0iunu we0unu we0sunu
+A we1iunu we0unu we0iunu
+A we2iunu we1unu we1iunu
+A we3iunu we2unu we2iunu
+A welfsunu we3unu we3iunu
+
+
+
+L we1num wefnum wenum
+L we2num wexnum we1num
+
+FO wefnum wem1num wele1num
+A wem1num weri1num we2num
+
+FO wele1num wem2num wele2num
+A wem2num weri2num weri1num
+
+FO wele2num wem3num wele3num
+A wem3num weri3num weri2num
+
+FO wele3num wem4num wele4num
+A wem4num weri4num weri3num
+
+FO wele4num wem5num wele5num
+A wem5num weri5num weri4num
+
+FO wele5num wem6num wem7num
+A wem6num weri6num weri5num
+
+A wem7num wexnum weri6num
+

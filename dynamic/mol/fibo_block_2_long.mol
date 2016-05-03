@@ -1,0 +1,66 @@
+L 7 u 5
+L 8 v 6
+
+FO v 9 7
+
+A 9 succ 10
+A 10 u 8
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+
+FO 5 5a 5m1
+FO 5m1 5b 5m2
+FO 5m2 5c 5m3
+FO 5m3 5d 5m4
+FO 5m4 5e 5m5
+FO 5m5 5f 5m6
+FO 5m6 5g 5h
+
+A 5a coco1a 1out
+A 5b coco2a coco1a
+A 5c coco3a coco2a
+A 5d coco4a coco3a
+A 5e coco5a coco4a
+A 5f coco6a coco5a
+A 5g coco7a coco6a
+A 5h c1 coco7a
+
+
+
+
+FO 6 6a 6m1
+FO 6m1 6b 6m2
+FO 6m2 6c 6m3
+FO 6m3 6d 6m4
+FO 6m4 6e 6m5
+FO 6m5 6f 6m6
+FO 6m6 6g 6h
+
+
+
+
+A 6a coco1b 2out
+A 6b coco2b coco1b
+A 6c coco3b coco2b
+A 6d coco4b coco3b
+A 6e coco5b coco4b
+A 6f coco6b coco5b
+A 6g coco7b coco6b
+A 6h c2 coco7b
+
+
+
+L 1c1 2c1 c1
+L 4c1 3c1 1c1
+A 2c1 3c1 4c1
+
+L 1c2 2c2 c2
+L 4c2 3c2 1c2
+A 2c2 3c2 4c2
+

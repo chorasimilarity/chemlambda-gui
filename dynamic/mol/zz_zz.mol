@@ -1,0 +1,67 @@
+L ba1 bay ba0
+A ba2 bay ba1
+A ba3 ba4 ba2
+FO ba5 ba3 ba4
+L ba6 bax ba5
+A baf ba7 ba6
+L ba8 bay1 ba7
+A ba9 bay1 ba8
+A ba10 ba11 ba9
+FO bax ba10 ba11
+
+FO ba0 ba01 ba02
+
+A ba01 02 baf
+
+
+
+
+L b1 by b0
+A b2 by b1
+A b3 b4 b2
+FO b5 b3 b4
+L b6 bx b5
+A bf b7 b6
+L b8 by1 b7
+A b9 by1 b8
+A b10 b11 b9
+FO bx b10 b11
+
+FO b0 b01 b02
+
+A b01 ba02 bf
+
+
+L a1 ay a0
+A a2 ay a1
+A a3 a4 a2
+FO a5 a3 a4
+L a6 ax a5
+A af a7 a6
+L a8 ay1 a7
+A a9 ay1 a8
+A a10 a11 a9
+FO ax a10 a11
+
+FO a0 a01 b02
+
+A a01 b02 af
+
+
+
+
+L 1 y 0
+A 2 y 1
+A 3 4 2
+FO 5 3 4
+L 6 x 5
+A f 7 6
+L 8 y1 7
+A 9 y1 8
+A 10 11 9
+FO x 10 11
+
+FO 0 01 02
+
+A 01 a02 f
+

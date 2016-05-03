@@ -1,0 +1,1016 @@
+ 
+FI i28a i29a o29a
+L i2a o2a o1a
+FI i3a i4a o3a
+L i5a o5a o4a
+FOE i6a o7a o6a
+A i30a i31a o30a
+L i7a o9a o8a
+A i32a i33a o31a
+FOE i8a o11a o10a
+A i34a i35a o32a
+L i9a o13a o12a
+A i56a i57a o43a
+L i58a o45a o44a
+L i59a o47a o46a
+L i60a o49a o48a
+L i61a o51a o50a
+L i62a o53a o52a
+L i63a o55a o54a
+FI i10a i11a o14a
+L i64a o57a o56a
+FI i12a i13a o15a
+L i65a o59a o58a
+L i14a o17a o16a
+A i15a i16a o18a
+FOE i17a o20a o19a
+A i18a i19a o21a
+FOE i20a o23a o22a
+FOE i21a o25a o24a
+A i22a i23a o26a
+A i36a i37a o33a
+A i38a i39a o34a
+A i40a i41a o35a
+A i42a i43a o36a
+A i44a i45a o37a
+A i46a i47a o38a
+A i48a i49a o39a
+A i50a i51a o40a
+A i52a i53a o41a
+A i54a i55a o42a
+L i66a o61a o60a
+L i67a o63a o62a
+L i68a o65a o64a
+L i69a o67a o66a
+L i70a o69a o68a
+L i71a o71a o70a
+FI i24a i25a o27a
+FI i26a i27a o28a
+A i0a i1a o0a
+Arrow i59 i59a
+Arrow i22 i22a
+Arrow i2 i2a
+Arrow i23 i23a
+Arrow i3 i3a
+Arrow i24 i24a
+Arrow i4 i4a
+Arrow i70 i70a
+Arrow i25 i25a
+Arrow i5 i5a
+Arrow i71 i71a
+Arrow i26 i26a
+Arrow i6 i6a
+Arrow i27 i27a
+Arrow i7 i7a
+Arrow i28 i28a
+Arrow i8 i8a
+Arrow i29 i29a
+Arrow i9 i9a
+Arrow i40 bi40a
+Arrow i41 gi41a
+Arrow i42 i42a
+Arrow i43 i43a
+Arrow i44 i44a
+Arrow i45 i45a
+Arrow i46 i46a
+Arrow i47 i47a
+Arrow i10 bi10a
+Arrow i48 i48a
+Arrow i11 gi11a
+Arrow i49 i49a
+Arrow i12 i12a
+Arrow i13 i13a
+Arrow i14 i14a
+Arrow i60 i60a
+Arrow i15 i15a
+Arrow i61 i61a
+Arrow i16 i16a
+Arrow i62 i62a
+Arrow i17 i17a
+Arrow i63 i63a
+Arrow i18 i18a
+Arrow i64 i64a
+Arrow i19 i19a
+Arrow i65 i65a
+Arrow i66 i66a
+Arrow i67 i67a
+Arrow i30 i30a
+Arrow i68 i68a
+Arrow i31 i31a
+Arrow i69 i69a
+Arrow i32 i32a
+Arrow i33 i33a
+Arrow i34 i34a
+Arrow i35 i35a
+Arrow i36 i36a
+Arrow i37 i37a
+Arrow i38 i38a
+Arrow i39 i39a
+Arrow i50 i50a
+Arrow i51 i51a
+Arrow i52 i52a
+Arrow i53 i53a
+Arrow i54 i54a
+Arrow i55 i55a
+Arrow i56 i56a
+Arrow i57 i57a
+Arrow i20 i20a
+Arrow i0 i0a
+Arrow i58 i58a
+Arrow i21 i21a
+Arrow i1 i1a
+Arrow o59a o59
+Arrow o22a o22
+Arrow o2a o2
+Arrow o23a o23
+Arrow o3a o3
+Arrow o24a o24
+Arrow o4a o4
+Arrow o70a o70
+Arrow o25a o25
+Arrow o5a o5
+Arrow o71a o71
+Arrow o26a o26
+Arrow o6a o6
+Arrow o27a o27
+Arrow o7a o7
+Arrow o28a o28
+Arrow o8a o8
+Arrow o29a o29
+Arrow o9a o9
+Arrow o40a o40
+Arrow o41a o41
+Arrow o42a o42
+Arrow o43a o43
+Arrow o44a o44
+Arrow o45a o45
+Arrow o46a o46
+Arrow o47a o47
+Arrow o10a o10
+Arrow o48a o48
+Arrow o11a o11
+Arrow o49a o49
+Arrow o12a o12
+Arrow o13a o13
+Arrow o14a o14
+Arrow o60a o60
+Arrow o15a o15
+Arrow o61a o61
+Arrow o16a o16
+Arrow o62a o62
+Arrow o17a o17
+Arrow o63a o63
+Arrow o18a o18
+Arrow o64a o64
+Arrow o19a o19
+Arrow o65a o65
+Arrow o66a o66
+Arrow o67a o67
+Arrow o30a o30
+Arrow o68a o68
+Arrow o31a o31
+Arrow o69a o69
+Arrow o32a o32
+Arrow o33a o33
+Arrow o34a o34
+Arrow o35a o35
+Arrow o36a o36
+Arrow o37a o37
+Arrow o38a o38
+Arrow o39a o39
+Arrow o50a o50
+Arrow o51a o51
+Arrow o52a o52
+Arrow o53a o53
+Arrow o54a o54
+Arrow o55a o55
+Arrow o56a o56
+Arrow o57a o57
+Arrow o20a o20
+Arrow o0a o0
+Arrow o58a o58
+Arrow o21a o21
+Arrow o1a o1
+FI a1 o1 mix1
+FOE mix1 a1 i1
+FI a71 o71 mix71
+FOE mix71 a21 i71
+FI a9 o9 mix9
+FOE mix9 a35 i9
+FI a44 o44 mix44
+FOE mix44 a30 i44
+FI a57 o57 mix57
+FOE mix57 a20 i57
+FI a53 o53 mix53
+FOE mix53 a17 i53
+FI a19 o19 mix19
+FOE mix19 a19 i19
+FI a18 o18 mix18
+FOE mix18 a14 i18
+FI a6 o6 mix6
+FOE mix6 a31 i6
+FI a14 o14 mix14
+FOE mix14 a12 i14
+FI a55 o55 mix55
+FOE mix55 a8 i55
+FI a10 o10 mix10
+FOE mix10 a7 i10
+FI a12 o12 mix12
+FOE mix12 a53 i12
+FI a29 o29 mix29
+FOE mix29 a57 i29
+FI a39 o39 mix39
+FOE mix39 a50 i39
+FI a40 o40 mix40
+FOE mix40 a52 i40
+FI a17 o17 mix17
+FOE mix17 a13 i17
+FI a41 o41 mix41
+FOE mix41 a54 i41
+FI a42 o42 mix42
+FOE mix42 a56 i42
+FI a43 o43 mix43
+FOE mix43 a71 i43
+FI a47 o47 mix47
+FOE mix47 a6 i47
+FI a45 o45 mix45
+FOE mix45 a2 i45
+FI a3 o3 mix3
+FOE mix3 a51 i3
+FI a15 o15 mix15
+FOE mix15 a43 i15
+FI a0 o0 mix0
+FOE mix0 a39 i0
+FI a61 o61 mix61
+FOE mix61 a0 i61
+FI a30 o30 mix30
+FOE mix30 a32 i30
+FI a20 o20 mix20
+FOE mix20 a16 i20
+FI a31 o31 mix31
+FOE mix31 a34 i31
+FI a22 o22 mix22
+FOE mix22 a18 i22
+FI a8 o8 mix8
+FOE mix8 a33 i8
+FI a32 o32 mix32
+FOE mix32 a36 i32
+FI a16 o16 mix16
+FOE mix16 a55 i16
+FI a11 o11 mix11
+FOE mix11 a9 i11
+FI a33 o33 mix33
+FOE mix33 a38 i33
+FI a49 o49 mix49
+FOE mix49 a10 i49
+FI a34 o34 mix34
+FOE mix34 a40 i34
+FI a13 o13 mix13
+FOE mix13 a37 i13
+FI a64 o64 mix64
+FOE mix64 a67 i64
+FI a35 o35 mix35
+FOE mix35 a42 i35
+FI a66 o66 mix66
+FOE mix66 a68 i66
+FI a36 o36 mix36
+FOE mix36 a44 i36
+FI a24 o24 mix24
+FOE mix24 a47 i24
+FI a59 o59 mix59
+FOE mix59 a15 i59
+FI a68 o68 mix68
+FOE mix68 a69 i68
+FI a46 o46 mix46
+FOE mix46 a58 i46
+FI a37 o37 mix37
+FOE mix37 a46 i37
+FI a51 o51 mix51
+FOE mix51 a11 i51
+FI a70 o70 mix70
+FOE mix70 a70 i70
+FI a48 o48 mix48
+FOE mix48 a59 i48
+FI a38 o38 mix38
+FOE mix38 a48 i38
+FI a67 o67 mix67
+FOE mix67 a27 i67
+FI a50 o50 mix50
+FOE mix50 a60 i50
+FI a27 o27 mix27
+FOE mix27 a26 i27
+FI a4 o4 mix4
+FOE mix4 a49 i4
+FI a52 o52 mix52
+FOE mix52 a61 i52
+FI a65 o65 mix65
+FOE mix65 a24 i65
+FI a21 o21 mix21
+FOE mix21 a41 i21
+FI a54 o54 mix54
+FOE mix54 a62 i54
+FI a5 o5 mix5
+FOE mix5 a4 i5
+FI a56 o56 mix56
+FOE mix56 a63 i56
+FI a63 o63 mix63
+FOE mix63 a22 i63
+FI a58 o58 mix58
+FOE mix58 a64 i58
+FI a26 o26 mix26
+FOE mix26 a25 i26
+FI a60 o60 mix60
+FOE mix60 a65 i60
+FI a28 o28 mix28
+FOE mix28 a28 i28
+FI a62 o62 mix62
+FOE mix62 a66 i62
+FI a69 o69 mix69
+FOE mix69 a29 i69
+FI a23 o23 mix23
+FOE mix23 a45 i23
+FI a7 o7 mix7
+FOE mix7 a5 i7
+FI a25 o25 mix25
+FOE mix25 a23 i25
+FI a2 o2 mix2
+FOE mix2 a3 i2
+
+
+
+
+FI bi28a bi29a bo29a
+L bi2a bo2a bo1a
+FI bi3a bi4a bo3a
+L bi5a bo5a bo4a
+FOE bi6a bo7a bo6a
+A bi30a bi31a bo30a
+L bi7a bo9a bo8a
+A bi32a bi33a bo31a
+FOE bi8a bo11a bo10a
+A bi34a bi35a bo32a
+L bi9a bo13a bo12a
+A bi56a bi57a bo43a
+L bi58a bo45a bo44a
+L bi59a bo47a bo46a
+L bi60a bo49a bo48a
+L bi61a bo51a bo50a
+L bi62a bo53a bo52a
+L bi63a bo55a bo54a
+FI bi10a bi11a bo14a
+L bi64a bo57a bo56a
+FI bi12a bi13a bo15a
+L bi65a bo59a bo58a
+L bi14a bo17a bo16a
+A bi15a bi16a bo18a
+FOE bi17a bo20a bo19a
+A bi18a bi19a bo21a
+FOE bi20a bo23a bo22a
+FOE bi21a bo25a bo24a
+A bi22a bi23a bo26a
+A bi36a bi37a bo33a
+A bi38a bi39a bo34a
+A bi40a bi41a bo35a
+A bi42a bi43a bo36a
+A bi44a bi45a bo37a
+A bi46a bi47a bo38a
+A bi48a bi49a bo39a
+A bi50a bi51a bo40a
+A bi52a bi53a bo41a
+A bi54a bi55a bo42a
+L bi66a bo61a bo60a
+L bi67a bo63a bo62a
+L bi68a bo65a bo64a
+L bi69a bo67a bo66a
+L bi70a bo69a bo68a
+L bi71a bo71a bo70a
+FI bi24a bi25a bo27a
+FI bi26a bi27a bo28a
+A bi0a bi1a bo0a
+Arrow bi59 bi59a
+Arrow bi22 bi22a
+Arrow bi2 bi2a
+Arrow bi23 bi23a
+Arrow bi3 bi3a
+Arrow bi24 bi24a
+Arrow bi4 bi4a
+Arrow bi70 bi70a
+Arrow bi25 bi25a
+Arrow bi5 bi5a
+Arrow bi71 bi71a
+Arrow bi26 bi26a
+Arrow bi6 bi6a
+Arrow bi27 bi27a
+Arrow bi7 bi7a
+Arrow bi28 bi28a
+Arrow bi8 bi8a
+Arrow bi29 bi29a
+Arrow bi9 bi9a
+Arrow bi40 i40a
+Arrow bi41 bi41a
+Arrow bi42 bi42a
+Arrow bi43 bi43a
+Arrow bi44 bi44a
+Arrow bi45 bi45a
+Arrow bi46 bi46a
+Arrow bi47 bi47a
+Arrow bi10 i10a
+Arrow bi48 bi48a
+Arrow bi11 bi11a
+Arrow bi49 bi49a
+Arrow bi12 bi12a
+Arrow bi13 bi13a
+Arrow bi14 bi14a
+Arrow bi60 bi60a
+Arrow bi15 bi15a
+Arrow bi61 bi61a
+Arrow bi16 bi16a
+Arrow bi62 bi62a
+Arrow bi17 bi17a
+Arrow bi63 bi63a
+Arrow bi18 bi18a
+Arrow bi64 bi64a
+Arrow bi19 bi19a
+Arrow bi65 bi65a
+Arrow bi66 bi66a
+Arrow bi67 bi67a
+Arrow bi30 bi30a
+Arrow bi68 bi68a
+Arrow bi31 bi31a
+Arrow bi69 bi69a
+Arrow bi32 bi32a
+Arrow bi33 bi33a
+Arrow bi34 bi34a
+Arrow bi35 bi35a
+Arrow bi36 bi36a
+Arrow bi37 bi37a
+Arrow bi38 bi38a
+Arrow bi39 bi39a
+Arrow bi50 bi50a
+Arrow bi51 bi51a
+Arrow bi52 bi52a
+Arrow bi53 bi53a
+Arrow bi54 bi54a
+Arrow bi55 bi55a
+Arrow bi56 bi56a
+Arrow bi57 bi57a
+Arrow bi20 bi20a
+Arrow bi0 bi0a
+Arrow bi58 bi58a
+Arrow bi21 bi21a
+Arrow bi1 bi1a
+Arrow bo59a bo59
+Arrow bo22a bo22
+Arrow bo2a bo2
+Arrow bo23a bo23
+Arrow bo3a bo3
+Arrow bo24a bo24
+Arrow bo4a bo4
+Arrow bo70a bo70
+Arrow bo25a bo25
+Arrow bo5a bo5
+Arrow bo71a bo71
+Arrow bo26a bo26
+Arrow bo6a bo6
+Arrow bo27a bo27
+Arrow bo7a bo7
+Arrow bo28a bo28
+Arrow bo8a bo8
+Arrow bo29a bo29
+Arrow bo9a bo9
+Arrow bo40a bo40
+Arrow bo41a bo41
+Arrow bo42a bo42
+Arrow bo43a bo43
+Arrow bo44a bo44
+Arrow bo45a bo45
+Arrow bo46a bo46
+Arrow bo47a bo47
+Arrow bo10a bo10
+Arrow bo48a bo48
+Arrow bo11a bo11
+Arrow bo49a bo49
+Arrow bo12a bo12
+Arrow bo13a bo13
+Arrow bo14a bo14
+Arrow bo60a bo60
+Arrow bo15a bo15
+Arrow bo61a bo61
+Arrow bo16a bo16
+Arrow bo62a bo62
+Arrow bo17a bo17
+Arrow bo63a bo63
+Arrow bo18a bo18
+Arrow bo64a bo64
+Arrow bo19a bo19
+Arrow bo65a bo65
+Arrow bo66a bo66
+Arrow bo67a bo67
+Arrow bo30a bo30
+Arrow bo68a bo68
+Arrow bo31a bo31
+Arrow bo69a bo69
+Arrow bo32a bo32
+Arrow bo33a bo33
+Arrow bo34a bo34
+Arrow bo35a bo35
+Arrow bo36a bo36
+Arrow bo37a bo37
+Arrow bo38a bo38
+Arrow bo39a bo39
+Arrow bo50a bo50
+Arrow bo51a bo51
+Arrow bo52a bo52
+Arrow bo53a bo53
+Arrow bo54a bo54
+Arrow bo55a bo55
+Arrow bo56a bo56
+Arrow bo57a bo57
+Arrow bo20a bo20
+Arrow bo0a bo0
+Arrow bo58a bo58
+Arrow bo21a bo21
+Arrow bo1a bo1
+FI ba1 bo1 bmix1
+FOE bmix1 ba1 bi1
+FI ba71 bo71 bmix71
+FOE bmix71 ba21 bi71
+FI ba9 bo9 bmix9
+FOE bmix9 ba35 bi9
+FI ba44 bo44 bmix44
+FOE bmix44 ba30 bi44
+FI ba57 bo57 bmix57
+FOE bmix57 ba20 bi57
+FI ba53 bo53 bmix53
+FOE bmix53 ba17 bi53
+FI ba19 bo19 bmix19
+FOE bmix19 ba19 bi19
+FI ba18 bo18 bmix18
+FOE bmix18 ba14 bi18
+FI ba6 bo6 bmix6
+FOE bmix6 ba31 bi6
+FI ba14 bo14 bmix14
+FOE bmix14 ba12 bi14
+FI ba55 bo55 bmix55
+FOE bmix55 ba8 bi55
+FI ba10 bo10 bmix10
+FOE bmix10 ba7 bi10
+FI ba12 bo12 bmix12
+FOE bmix12 ba53 bi12
+FI ba29 bo29 bmix29
+FOE bmix29 ba57 bi29
+FI ba39 bo39 bmix39
+FOE bmix39 ba50 bi39
+FI ba40 bo40 bmix40
+FOE bmix40 ba52 bi40
+FI ba17 bo17 bmix17
+FOE bmix17 ba13 bi17
+FI ba41 bo41 bmix41
+FOE bmix41 ba54 bi41
+FI ba42 bo42 bmix42
+FOE bmix42 ba56 bi42
+FI ba43 bo43 bmix43
+FOE bmix43 ba71 bi43
+FI ba47 bo47 bmix47
+FOE bmix47 ba6 bi47
+FI ba45 bo45 bmix45
+FOE bmix45 ba2 bi45
+FI ba3 bo3 bmix3
+FOE bmix3 ba51 bi3
+FI ba15 bo15 bmix15
+FOE bmix15 ba43 bi15
+FI ba0 bo0 bmix0
+FOE bmix0 ba39 bi0
+FI ba61 bo61 bmix61
+FOE bmix61 ba0 bi61
+FI ba30 bo30 bmix30
+FOE bmix30 ba32 bi30
+FI ba20 bo20 bmix20
+FOE bmix20 ba16 bi20
+FI ba31 bo31 bmix31
+FOE bmix31 ba34 bi31
+FI ba22 bo22 bmix22
+FOE bmix22 ba18 bi22
+FI ba8 bo8 bmix8
+FOE bmix8 ba33 bi8
+FI ba32 bo32 bmix32
+FOE bmix32 ba36 bi32
+FI ba16 bo16 bmix16
+FOE bmix16 ba55 bi16
+FI ba11 bo11 bmix11
+FOE bmix11 ba9 bi11
+FI ba33 bo33 bmix33
+FOE bmix33 ba38 bi33
+FI ba49 bo49 bmix49
+FOE bmix49 ba10 bi49
+FI ba34 bo34 bmix34
+FOE bmix34 ba40 bi34
+FI ba13 bo13 bmix13
+FOE bmix13 ba37 bi13
+FI ba64 bo64 bmix64
+FOE bmix64 ba67 bi64
+FI ba35 bo35 bmix35
+FOE bmix35 ba42 bi35
+FI ba66 bo66 bmix66
+FOE bmix66 ba68 bi66
+FI ba36 bo36 bmix36
+FOE bmix36 ba44 bi36
+FI ba24 bo24 bmix24
+FOE bmix24 ba47 bi24
+FI ba59 bo59 bmix59
+FOE bmix59 ba15 bi59
+FI ba68 bo68 bmix68
+FOE bmix68 ba69 bi68
+FI ba46 bo46 bmix46
+FOE bmix46 ba58 bi46
+FI ba37 bo37 bmix37
+FOE bmix37 ba46 bi37
+FI ba51 bo51 bmix51
+FOE bmix51 ba11 bi51
+FI ba70 bo70 bmix70
+FOE bmix70 ba70 bi70
+FI ba48 bo48 bmix48
+FOE bmix48 ba59 bi48
+FI ba38 bo38 bmix38
+FOE bmix38 ba48 bi38
+FI ba67 bo67 bmix67
+FOE bmix67 ba27 bi67
+FI ba50 bo50 bmix50
+FOE bmix50 ba60 bi50
+FI ba27 bo27 bmix27
+FOE bmix27 ba26 bi27
+FI ba4 bo4 bmix4
+FOE bmix4 ba49 bi4
+FI ba52 bo52 bmix52
+FOE bmix52 ba61 bi52
+FI ba65 bo65 bmix65
+FOE bmix65 ba24 bi65
+FI ba21 bo21 bmix21
+FOE bmix21 ba41 bi21
+FI ba54 bo54 bmix54
+FOE bmix54 ba62 bi54
+FI ba5 bo5 bmix5
+FOE bmix5 ba4 bi5
+FI ba56 bo56 bmix56
+FOE bmix56 ba63 bi56
+FI ba63 bo63 bmix63
+FOE bmix63 ba22 bi63
+FI ba58 bo58 bmix58
+FOE bmix58 ba64 bi58
+FI ba26 bo26 bmix26
+FOE bmix26 ba25 bi26
+FI ba60 bo60 bmix60
+FOE bmix60 ba65 bi60
+FI ba28 bo28 bmix28
+FOE bmix28 ba28 bi28
+FI ba62 bo62 bmix62
+FOE bmix62 ba66 bi62
+FI ba69 bo69 bmix69
+FOE bmix69 ba29 bi69
+FI ba23 bo23 bmix23
+FOE bmix23 ba45 bi23
+FI ba7 bo7 bmix7
+FOE bmix7 ba5 bi7
+FI ba25 bo25 bmix25
+FOE bmix25 ba23 bi25
+FI ba2 bo2 bmix2
+FOE bmix2 ba3 bi2
+
+
+FI gi28a gi29a go29a
+L gi2a go2a go1a
+FI gi3a gi4a go3a
+L gi5a go5a go4a
+FOE gi6a go7a go6a
+A gi30a gi31a go30a
+L gi7a go9a go8a
+A gi32a gi33a go31a
+FOE gi8a go11a go10a
+A gi34a gi35a go32a
+L gi9a go13a go12a
+A gi56a gi57a go43a
+L gi58a go45a go44a
+L gi59a go47a go46a
+L gi60a go49a go48a
+L gi61a go51a go50a
+L gi62a go53a go52a
+L gi63a go55a go54a
+FI gi10a gi11a go14a
+L gi64a go57a go56a
+FI gi12a gi13a go15a
+L gi65a go59a go58a
+L gi14a go17a go16a
+A gi15a gi16a go18a
+FOE gi17a go20a go19a
+A gi18a gi19a go21a
+FOE gi20a go23a go22a
+FOE gi21a go25a go24a
+A gi22a gi23a go26a
+A gi36a gi37a go33a
+A gi38a gi39a go34a
+A gi40a gi41a go35a
+A gi42a gi43a go36a
+A gi44a gi45a go37a
+A gi46a gi47a go38a
+A gi48a gi49a go39a
+A gi50a gi51a go40a
+A gi52a gi53a go41a
+A gi54a gi55a go42a
+L gi66a go61a go60a
+L gi67a go63a go62a
+L gi68a go65a go64a
+L gi69a go67a go66a
+L gi70a go69a go68a
+L gi71a go71a go70a
+FI gi24a gi25a go27a
+FI gi26a gi27a go28a
+A gi0a gi1a go0a
+Arrow gi59 gi59a
+Arrow gi22 gi22a
+Arrow gi2 gi2a
+Arrow gi23 gi23a
+Arrow gi3 gi3a
+Arrow gi24 gi24a
+Arrow gi4 gi4a
+Arrow gi70 gi70a
+Arrow gi25 gi25a
+Arrow gi5 gi5a
+Arrow gi71 gi71a
+Arrow gi26 gi26a
+Arrow gi6 gi6a
+Arrow gi27 gi27a
+Arrow gi7 gi7a
+Arrow gi28 gi28a
+Arrow gi8 gi8a
+Arrow gi29 gi29a
+Arrow gi9 gi9a
+Arrow gi40 gi40a
+Arrow gi41 i41a
+Arrow gi42 gi42a
+Arrow gi43 gi43a
+Arrow gi44 gi44a
+Arrow gi45 gi45a
+Arrow gi46 gi46a
+Arrow gi47 gi47a
+Arrow gi10 gi10a
+Arrow gi48 gi48a
+Arrow gi11 i11a
+Arrow gi49 gi49a
+Arrow gi12 gi12a
+Arrow gi13 gi13a
+Arrow gi14 gi14a
+Arrow gi60 gi60a
+Arrow gi15 gi15a
+Arrow gi61 gi61a
+Arrow gi16 gi16a
+Arrow gi62 gi62a
+Arrow gi17 gi17a
+Arrow gi63 gi63a
+Arrow gi18 gi18a
+Arrow gi64 gi64a
+Arrow gi19 gi19a
+Arrow gi65 gi65a
+Arrow gi66 gi66a
+Arrow gi67 gi67a
+Arrow gi30 gi30a
+Arrow gi68 gi68a
+Arrow gi31 gi31a
+Arrow gi69 gi69a
+Arrow gi32 gi32a
+Arrow gi33 gi33a
+Arrow gi34 gi34a
+Arrow gi35 gi35a
+Arrow gi36 gi36a
+Arrow gi37 gi37a
+Arrow gi38 gi38a
+Arrow gi39 gi39a
+Arrow gi50 gi50a
+Arrow gi51 gi51a
+Arrow gi52 gi52a
+Arrow gi53 gi53a
+Arrow gi54 gi54a
+Arrow gi55 gi55a
+Arrow gi56 gi56a
+Arrow gi57 gi57a
+Arrow gi20 gi20a
+Arrow gi0 gi0a
+Arrow gi58 gi58a
+Arrow gi21 gi21a
+Arrow gi1 gi1a
+Arrow go59a go59
+Arrow go22a go22
+Arrow go2a go2
+Arrow go23a go23
+Arrow go3a go3
+Arrow go24a go24
+Arrow go4a go4
+Arrow go70a go70
+Arrow go25a go25
+Arrow go5a go5
+Arrow go71a go71
+Arrow go26a go26
+Arrow go6a go6
+Arrow go27a go27
+Arrow go7a go7
+Arrow go28a go28
+Arrow go8a go8
+Arrow go29a go29
+Arrow go9a go9
+Arrow go40a go40
+Arrow go41a go41
+Arrow go42a go42
+Arrow go43a go43
+Arrow go44a go44
+Arrow go45a go45
+Arrow go46a go46
+Arrow go47a go47
+Arrow go10a go10
+Arrow go48a go48
+Arrow go11a go11
+Arrow go49a go49
+Arrow go12a go12
+Arrow go13a go13
+Arrow go14a go14
+Arrow go60a go60
+Arrow go15a go15
+Arrow go61a go61
+Arrow go16a go16
+Arrow go62a go62
+Arrow go17a go17
+Arrow go63a go63
+Arrow go18a go18
+Arrow go64a go64
+Arrow go19a go19
+Arrow go65a go65
+Arrow go66a go66
+Arrow go67a go67
+Arrow go30a go30
+Arrow go68a go68
+Arrow go31a go31
+Arrow go69a go69
+Arrow go32a go32
+Arrow go33a go33
+Arrow go34a go34
+Arrow go35a go35
+Arrow go36a go36
+Arrow go37a go37
+Arrow go38a go38
+Arrow go39a go39
+Arrow go50a go50
+Arrow go51a go51
+Arrow go52a go52
+Arrow go53a go53
+Arrow go54a go54
+Arrow go55a go55
+Arrow go56a go56
+Arrow go57a go57
+Arrow go20a go20
+Arrow go0a go0
+Arrow go58a go58
+Arrow go21a go21
+Arrow go1a go1
+FI ga1 go1 gmix1
+FOE gmix1 ga1 gi1
+FI ga71 go71 gmix71
+FOE gmix71 ga21 gi71
+FI ga9 go9 gmix9
+FOE gmix9 ga35 gi9
+FI ga44 go44 gmix44
+FOE gmix44 ga30 gi44
+FI ga57 go57 gmix57
+FOE gmix57 ga20 gi57
+FI ga53 go53 gmix53
+FOE gmix53 ga17 gi53
+FI ga19 go19 gmix19
+FOE gmix19 ga19 gi19
+FI ga18 go18 gmix18
+FOE gmix18 ga14 gi18
+FI ga6 go6 gmix6
+FOE gmix6 ga31 gi6
+FI ga14 go14 gmix14
+FOE gmix14 ga12 gi14
+FI ga55 go55 gmix55
+FOE gmix55 ga8 gi55
+FI ga10 go10 gmix10
+FOE gmix10 ga7 gi10
+FI ga12 go12 gmix12
+FOE gmix12 ga53 gi12
+FI ga29 go29 gmix29
+FOE gmix29 ga57 gi29
+FI ga39 go39 gmix39
+FOE gmix39 ga50 gi39
+FI ga40 go40 gmix40
+FOE gmix40 ga52 gi40
+FI ga17 go17 gmix17
+FOE gmix17 ga13 gi17
+FI ga41 go41 gmix41
+FOE gmix41 ga54 gi41
+FI ga42 go42 gmix42
+FOE gmix42 ga56 gi42
+FI ga43 go43 gmix43
+FOE gmix43 ga71 gi43
+FI ga47 go47 gmix47
+FOE gmix47 ga6 gi47
+FI ga45 go45 gmix45
+FOE gmix45 ga2 gi45
+FI ga3 go3 gmix3
+FOE gmix3 ga51 gi3
+FI ga15 go15 gmix15
+FOE gmix15 ga43 gi15
+FI ga0 go0 gmix0
+FOE gmix0 ga39 gi0
+FI ga61 go61 gmix61
+FOE gmix61 ga0 gi61
+FI ga30 go30 gmix30
+FOE gmix30 ga32 gi30
+FI ga20 go20 gmix20
+FOE gmix20 ga16 gi20
+FI ga31 go31 gmix31
+FOE gmix31 ga34 gi31
+FI ga22 go22 gmix22
+FOE gmix22 ga18 gi22
+FI ga8 go8 gmix8
+FOE gmix8 ga33 gi8
+FI ga32 go32 gmix32
+FOE gmix32 ga36 gi32
+FI ga16 go16 gmix16
+FOE gmix16 ga55 gi16
+FI ga11 go11 gmix11
+FOE gmix11 ga9 gi11
+FI ga33 go33 gmix33
+FOE gmix33 ga38 gi33
+FI ga49 go49 gmix49
+FOE gmix49 ga10 gi49
+FI ga34 go34 gmix34
+FOE gmix34 ga40 gi34
+FI ga13 go13 gmix13
+FOE gmix13 ga37 gi13
+FI ga64 go64 gmix64
+FOE gmix64 ga67 gi64
+FI ga35 go35 gmix35
+FOE gmix35 ga42 gi35
+FI ga66 go66 gmix66
+FOE gmix66 ga68 gi66
+FI ga36 go36 gmix36
+FOE gmix36 ga44 gi36
+FI ga24 go24 gmix24
+FOE gmix24 ga47 gi24
+FI ga59 go59 gmix59
+FOE gmix59 ga15 gi59
+FI ga68 go68 gmix68
+FOE gmix68 ga69 gi68
+FI ga46 go46 gmix46
+FOE gmix46 ga58 gi46
+FI ga37 go37 gmix37
+FOE gmix37 ga46 gi37
+FI ga51 go51 gmix51
+FOE gmix51 ga11 gi51
+FI ga70 go70 gmix70
+FOE gmix70 ga70 gi70
+FI ga48 go48 gmix48
+FOE gmix48 ga59 gi48
+FI ga38 go38 gmix38
+FOE gmix38 ga48 gi38
+FI ga67 go67 gmix67
+FOE gmix67 ga27 gi67
+FI ga50 go50 gmix50
+FOE gmix50 ga60 gi50
+FI ga27 go27 gmix27
+FOE gmix27 ga26 gi27
+FI ga4 go4 gmix4
+FOE gmix4 ga49 gi4
+FI ga52 go52 gmix52
+FOE gmix52 ga61 gi52
+FI ga65 go65 gmix65
+FOE gmix65 ga24 gi65
+FI ga21 go21 gmix21
+FOE gmix21 ga41 gi21
+FI ga54 go54 gmix54
+FOE gmix54 ga62 gi54
+FI ga5 go5 gmix5
+FOE gmix5 ga4 gi5
+FI ga56 go56 gmix56
+FOE gmix56 ga63 gi56
+FI ga63 go63 gmix63
+FOE gmix63 ga22 gi63
+FI ga58 go58 gmix58
+FOE gmix58 ga64 gi58
+FI ga26 go26 gmix26
+FOE gmix26 ga25 gi26
+FI ga60 go60 gmix60
+FOE gmix60 ga65 gi60
+FI ga28 go28 gmix28
+FOE gmix28 ga28 gi28
+FI ga62 go62 gmix62
+FOE gmix62 ga66 gi62
+FI ga69 go69 gmix69
+FOE gmix69 ga29 gi69
+FI ga23 go23 gmix23
+FOE gmix23 ga45 gi23
+FI ga7 go7 gmix7
+FOE gmix7 ga5 gi7
+FI ga25 go25 gmix25
+FOE gmix25 ga23 gi25
+FI ga2 go2 gmix2
+FOE gmix2 ga3 gi2
+

@@ -1,0 +1,197 @@
+ 
+A i27a i28a o27a
+A i12a i13a o12a
+FI i1a i2a o2a
+FOE i3a o4a o3a
+L i32a o32a o31a
+L i14a o14a o13a
+FI i4a i5a o5a
+A i6a i7a o6a
+A i33a i34a o33a
+A i21a i22a o21a
+A i39a i40a o39a
+L i23a o23a o22a
+FO i8a o8a o7a
+A i9a i10a o9a
+L i41a o41a o40a
+L i11a o11a o10a
+L i29a o29a o28a
+A i30a i31a o30a
+A i15a i16a o15a
+FO i17a o17a o16a
+FO i35a o35a o34a
+A i18a i19a o18a
+A i36a i37a o36a
+L i20a o20a o19a
+L i38a o38a o37a
+A i24a i25a o24a
+FO i26a o26a o25a
+FOE i0a o1a o0a
+Arrow i22 i22a
+Arrow i2 i2a
+Arrow i23 i23a
+Arrow i3 i3a
+Arrow i24 i24a
+Arrow i4 i4a
+Arrow i25 i25a
+Arrow i5 i5a
+Arrow i26 i26a
+Arrow i6 i6a
+Arrow i27 i27a
+Arrow i7 i7a
+Arrow i28 i28a
+Arrow i8 i8a
+Arrow i29 i29a
+Arrow i9 i9a
+Arrow i40 i40a
+Arrow i41 i41a
+Arrow i10 i10a
+Arrow i11 i11a
+Arrow i12 i12a
+Arrow i13 i13a
+Arrow i14 i14a
+Arrow i15 i15a
+Arrow i16 i16a
+Arrow i17 i17a
+Arrow i18 i18a
+Arrow i19 i19a
+Arrow i30 i30a
+Arrow i31 i31a
+Arrow i32 i32a
+Arrow i33 i33a
+Arrow i34 i34a
+Arrow i35 i35a
+Arrow i36 i36a
+Arrow i37 i37a
+Arrow i38 i38a
+Arrow i39 i39a
+Arrow i20 i20a
+Arrow i0 i0a
+Arrow i21 i21a
+Arrow i1 i1a
+Arrow o22a o22
+Arrow o2a o2
+Arrow o23a o23
+Arrow o3a o3
+Arrow o24a o24
+Arrow o4a o4
+Arrow o25a o25
+Arrow o5a o5
+Arrow o26a o26
+Arrow o6a o6
+Arrow o27a o27
+Arrow o7a o7
+Arrow o28a o28
+Arrow o8a o8
+Arrow o29a o29
+Arrow o9a o9
+Arrow o40a o40
+Arrow o41a o41
+Arrow o10a o10
+Arrow o11a o11
+Arrow o12a o12
+Arrow o13a o13
+Arrow o14a o14
+Arrow o15a o15
+Arrow o16a o16
+Arrow o17a o17
+Arrow o18a o18
+Arrow o19a o19
+Arrow o30a o30
+Arrow o31a o31
+Arrow o32a o32
+Arrow o33a o33
+Arrow o34a o34
+Arrow o35a o35
+Arrow o36a o36
+Arrow o37a o37
+Arrow o38a o38
+Arrow o39a o39
+Arrow o20a o20
+Arrow o0a o0
+Arrow o21a o21
+Arrow o1a o1
+FI a27 o27 mix27
+FOE mix27 a25 i27
+FI a14 o14 mix14
+FOE mix14 a13 i14
+FI a30 o30 mix30
+FOE mix30 a24 i30
+FI a11 o11 mix11
+FOE mix11 a8 i11
+FI a40 o40 mix40
+FOE mix40 a29 i40
+FI a6 o6 mix6
+FOE mix6 a0 i6
+FI a19 o19 mix19
+FOE mix19 a3 i19
+FI a2 o2 mix2
+FOE mix2 a39 i2
+FI a16 o16 mix16
+FOE mix16 a19 i16
+FI a5 o5 mix5
+FOE mix5 a41 i5
+FI a17 o17 mix17
+FOE mix17 a18 i17
+FI a32 o32 mix32
+FOE mix32 a31 i32
+FI a23 o23 mix23
+FOE mix23 a22 i23
+FI a21 o21 mix21
+FOE mix21 a15 i21
+FI a31 o31 mix31
+FOE mix31 a20 i31
+FI a4 o4 mix4
+FOE mix4 a5 i4
+FI a3 o3 mix3
+FOE mix3 a4 i3
+FI a25 o25 mix25
+FOE mix25 a28 i25
+FI a9 o9 mix9
+FOE mix9 a7 i9
+FI a33 o33 mix33
+FOE mix33 a30 i33
+FI a35 o35 mix35
+FOE mix35 a36 i35
+FI a10 o10 mix10
+FOE mix10 a32 i10
+FI a36 o36 mix36
+FOE mix36 a34 i36
+FI a20 o20 mix20
+FOE mix20 a17 i20
+FI a38 o38 mix38
+FOE mix38 a35 i38
+FI a12 o12 mix12
+FOE mix12 a6 i12
+FI a22 o22 mix22
+FOE mix22 a11 i22
+FI a18 o18 mix18
+FOE mix18 a16 i18
+FI a24 o24 mix24
+FOE mix24 a21 i24
+FI a41 o41 mix41
+FOE mix41 a40 i41
+FI a37 o37 mix37
+FOE mix37 a23 i37
+FI a1 o1 mix1
+FOE mix1 a2 i1
+FI a0 o0 mix0
+FOE mix0 a1 i0
+FI a39 o39 mix39
+FOE mix39 a33 i39
+FI a34 o34 mix34
+FOE mix34 a37 i34
+FI a13 o13 mix13
+FOE mix13 a38 i13
+FI a29 o29 mix29
+FOE mix29 a26 i29
+FI a15 o15 mix15
+FOE mix15 a12 i15
+FI a28 o28 mix28
+FOE mix28 a14 i28
+FI a7 o7 mix7
+FOE mix7 a10 i7
+FI a8 o8 mix8
+FOE mix8 a9 i8
+FI a26 o26 mix26
+FOE mix26 a27 i26

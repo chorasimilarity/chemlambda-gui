@@ -1,0 +1,62 @@
+A i1 1 l1
+FO i2 1 r1
+
+A l1 2 l2
+FO r1 2 r2
+
+A l2 3 l3
+FO r2 3 r3
+
+FOE l3 l10 l20
+FOE r3 r10 r20
+
+A l10 11 l11
+FO r10 11 r11
+
+A l11 12 l12
+FO r11 12 r12
+
+FOE l12 l110 l120
+FOE r12 r110 r120
+
+A l110 111 o1
+FO r110 111 o2
+
+A l120 121 o3
+FO r120 121 o4
+
+A l20 21 l21
+FO r20 21 r21
+
+A l21 22 l22
+FO r21 22 r22
+
+FOE l22 l210 l220
+FOE r22 r210 r220
+
+A l210 211 o5
+FO r210 211 o6
+
+A l220 221 o7
+FO r220 221 o8
+
+A 1cNL 1m 1l
+L 1l 1m zizi
+
+FO zizi me1 le2
+A i1in me6 re2
+
+FO le2 me2 le3
+A re2 me5 re3
+
+FO le3 me3 le4
+A re3 me1 re4
+
+FO le4 me4 le5
+A re4 me2 re5
+
+FO le5 me5 le6
+A re5 me3 re6
+
+FO le6 me6 i2
+A re6 me4 i1

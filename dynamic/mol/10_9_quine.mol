@@ -1,0 +1,117 @@
+FI m1 m3 2  4
+L m2 m3 m7 2
+FOE m7 m13 me12 4
+A m13 m9 m8 2
+FOE m8 m9 m10 4
+A m10 m12 m11 2
+
+
+
+
+FI me1 me3 e2 4
+L me2 me3 me7 2
+FOE me7 me13 med12 4
+A me13 me9 me8 2
+FOE me8 me9 me10 4
+A me10 me12 me11 2
+
+
+
+
+FI med1 med3 ed2 4
+L med2 med3 med7 2
+FOE med7 med13 medc12 4
+A med13 med9 med8 2
+FOE med8 med9 med10 4
+A med10 med12 med11 2
+
+
+
+
+FI medc1 medc3 edc2 4
+L medc2 medc3 medc7 2
+FOE medc7 medc13 medcb12 4
+A medc13 medc9 medc8 2
+FOE medc8 medc9 medc10 4
+A medc10 medc12 medc11 2
+
+
+
+
+FI medcb1 medcb3 edcb2 4
+L medcb2 medcb3 medcb7 2
+FOE medcb7 medcb13 medcba12 4
+A medcb13 medcb9 medcb8 2
+FOE medcb8 medcb9 medcb10 4
+A medcb10 medcb12 medcb11 2
+
+
+
+
+FI medcba1 medcba3 edcba2 4
+L medcba2 medcba3 medcba7 2
+FOE medcba7 medcba13 m12 4
+A medcba13 medcba9 medcba8 2
+FOE medcba8 medcba9 medcba10 4
+A medcba10 medcba12 medcba11 2
+
+
+
+FI 1 3 m2 4
+L 2 3 7 2
+FOE 7 13 e12 4
+A 13 9 8 2
+FOE 8 9 10 4
+A 10 12 11 2
+
+
+
+
+FI e1 e3 me2 4
+L e2 e3 e7 2
+FOE e7 e13 ed12 4
+A e13 e9 e8 2
+FOE e8 e9 e10 4
+A e10 e12 e11 2
+
+
+
+
+FI ed1 ed3 med2 4
+L ed2 ed3 ed7 2
+FOE ed7 ed13 edc12 4
+A ed13 ed9 ed8 2
+FOE ed8 ed9 ed10 4
+A ed10 ed12 ed11 2
+
+
+
+
+FI edc1 edc3 medc2 4
+L edc2 edc3 edc7 2
+FOE edc7 edc13 edcb12 4
+A edc13 edc9 edc8 2
+FOE edc8 edc9 edc10 4
+A edc10 edc12 edc11 2
+
+
+
+
+FI edcb1 edcb3 medcb2 4
+L edcb2 edcb3 edcb7 2
+FOE edcb7 edcb13 edcba12 4
+A edcb13 edcb9 edcb8 2
+FOE edcb8 edcb9 edcb10 4
+A edcb10 edcb12 edcb11 2
+
+
+
+
+FI edcba1 edcba3 medcba2 4
+L edcba2 edcba3 edcba7 2
+FOE edcba7 edcba13 12 4
+A edcba13 edcba9 edcba8 2
+FOE edcba8 edcba9 edcba10 4
+A edcba10 edcba12 edcba11 2
+
+

@@ -1,0 +1,31 @@
+FO ain 5sp 6sp
+A 5sp 7sp o2
+A 8sp 2c1c1 7sp
+A zu 6sp 8sp
+L 12c1c1 22c1c1 2c1c1
+L 42c1c1 32c1c1 12c1c1
+A 22c1c1 32c1c1 42c1c1
+L o2 zu o3
+L o3 ain o4
+A num o4 o5
+A o5 succ o6
+A o6 be succ
+
+L 2num 1num num
+L 3num xnum 2num
+
+FO 1num l1num l2num
+A m1num r1num 3num
+FO l1num m1num m2num
+A m2num r2num r1num
+A l2num xnum r2num
+
+
+L 2nume 1nume be
+L 3nume xnume 2nume
+
+FO 1nume l1nume l2nume
+A m1nume r1nume 3nume
+FO l1nume m1nume m2nume
+A m2nume r2nume r1nume
+A l2nume xnume r2nume

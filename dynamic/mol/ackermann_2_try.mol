@@ -1,0 +1,85 @@
+A w1 wcb wcb
+A w2 wca w1
+L w3 wa w2
+L w4 wb w3
+A w5 wb w4
+A w6 wsp1 w5
+A wa wf w6
+L w1s1 wns1 wsp1
+L w2s1 wss1 w1s1
+L w3s1 wzs1 w2s1
+A w4s1 w5s1 w3s1
+A w6s1 wzs1 w5s1
+A wns1 w7s1 w6s1
+FO wss1 w4s1 w7s1
+L w1f wAf wf
+L w2f wbf w1f
+A w3f wcone w2f
+A w4f wAf w3f
+A o wbf w4f
+
+
+L w1s2 wns2 wsp2
+L w2s2 wss2 w1s2
+L w3s2 wzs2 w2s2
+A w4s2 w5s2 w3s2
+A w6s2 wzs2 w5s2
+A wns2 w7s2 w6s2
+FO wss2 w4s2 w7s2
+L w1cone wfcone wcone
+L w2cone wxcone w1cone
+A wfcone wxcone w2cone
+L w1ca wfca wca
+L w2ca wxca w1ca
+A w3ca w5ca w2ca
+FO wfca w3ca w4cas
+A w6ca w8cas w5ca
+
+FO w4cas wfufu w4ca
+A wfufu w8ca w8cas
+
+FO w4ca w6ca w7ca
+A w7ca wxca w8ca
+
+
+A 1 wsp2 o
+A 2 ca 1
+L 3 a 2
+L 4 b 3
+A 5 b 4
+A 6 sp1 5
+A a f 6
+L 1s1 ns1 sp1
+L 2s1 ss1 1s1
+L 3s1 zs1 2s1
+A 4s1 5s1 3s1
+A 6s1 zs1 5s1
+A ns1 7s1 6s1
+FO ss1 4s1 7s1
+L 1f Af f
+L 2f bf 1f
+A 3f cone 2f
+A 4f Af 3f
+A sp2 bf 4f
+
+L 1s2 ns2 sp2
+L 2s2 ss2 1s2
+L 3s2 zs2 2s2
+A 4s2 5s2 3s2
+A 6s2 zs2 5s2
+A ns2 7s2 6s2
+FO ss2 4s2 7s2
+L 1cone fcone cone
+L 2cone xcone 1cone
+A fcone xcone 2cone
+L 1ca fca ca
+L 2ca xca 1ca
+A 3ca 5ca 2ca
+FO fca 3ca 4cas
+A 6ca 8cas 5ca
+
+FO 4cas fufu 4ca
+A fufu 8ca 8cas
+
+FO 4ca 6ca 7ca
+A 7ca xca 8ca

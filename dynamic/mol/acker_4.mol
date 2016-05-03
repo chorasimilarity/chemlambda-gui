@@ -1,0 +1,62 @@
+A 1 cb cb
+A 2 ca 1
+L 3 a 2
+L 4 b 3
+A 5 b 4
+A 6 sp1 5
+A a f 6
+
+
+
+L 1f Af f
+L 2f bf 1f
+A 3f cone 2f
+A 4f Af 3f
+A sp2 bf 4f
+
+L 1s2 ns2 sp2
+L 2s2 ss2 1s2
+L 3s2 zs2 2s2
+A 4s2 5s2 3s2
+A 6s2 zs2 5s2
+A ns2 7s2 6s2
+FO ss2 4s2 7s2
+
+
+L 1cone fcone cone
+L 2cone xcone 1cone
+A fcone xcone 2cone
+
+
+
+L 1cb fcb ca
+L 2cb xcb 1cb
+A 3cb 5cb 2cb
+FO fcb 3cb 4cb
+A 6cb 8cb 5cb
+FO 4cb 6cb 9cb
+A 10cb 11cb 8cb
+FO 9cb 10cb 7cb
+A 7cb xcb 11cb
+
+
+A hhh1 hhhouta sp1
+A hhh1a hhhout hhhouta
+
+L hhh2 hhh3 hhh1
+A hhh4 hhh7 hhh2
+A hhh6 hhh5 hhh4
+FO hhh8 hhh6 hhh7
+
+FO hhh3 hhh9 hhh10
+A hhh9 hhh10 hhh8
+
+L hhh2a hhh3a hhh1a
+A hhh4a hhh7a hhh2a
+A hhh6a hhh5a hhh4a
+FO hhh8a hhh6a hhh7a
+
+FO hhh3a hhh9a hhh10a
+A hhh9a hhh10a hhh8a
+
+

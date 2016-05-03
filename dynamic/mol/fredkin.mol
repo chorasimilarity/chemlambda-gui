@@ -1,0 +1,66 @@
+FOE 1 out1 out2
+
+A 2 3 1
+A 5 false3 3
+A v 7 5
+FI i12 i21 7
+A 4 true1 2
+A 6 true2 4
+A 8 false1 6
+A 9 false2 8
+A u 10 9
+FI i22 i11 10
+FO 11 u v
+FI 12 13 11
+FO 14 12 13
+
+FO c cout 14
+
+L ac bc c
+L cc dc ac
+
+Arrow bc cc
+T dc
+
+FO in1 i11 i12
+
+L ain1 bin1 in1
+L cin1 din1 ain1
+
+Arrow din1 cin1
+Arrow bin1 bin11
+T bin11
+
+
+
+FO in2 i22 i21
+
+L ain2 bin2 in2
+L cin2 din2 ain2
+
+Arrow bin2 cin2
+Arrow din2 din22
+T din22
+
+
+
+L atrue1 btrue1 true1
+L btrue1 ctrue1 atrue1
+T ctrue1
+
+L atrue2 btrue2 true2
+L btrue2 ctrue2 atrue2
+T ctrue2
+
+L afalse1 bfalse1 false1
+L cfalse1 cfalse1 afalse1
+T bfalse1
+
+L afalse2 bfalse2 false2
+L cfalse2 cfalse2 afalse2
+T bfalse2
+
+L afalse3 bfalse3 false3
+L cfalse3 cfalse3 afalse3
+T bfalse3
+

@@ -1,0 +1,101 @@
+L a8 a1 p1
+L a1 a2 p2
+L a2 a3 p3
+L a3 a4 p4
+L a4 a5 p5
+L a5 a6 p6
+L a6 a7 p7
+L a7 a8 p8
+
+L q11 q1y p1out
+A q12 q1y q11
+A q13 q14 q12
+FO q15 q13 q14
+L q16 q1x q15
+A p1 q17 q16
+L q18 q1y q17
+A q19 q1y q18
+A q110 q111 q19
+FO q1x q110 q111
+
+
+L q21 q2y p2out
+A q22 q2y q21
+A q23 q24 q22
+FO q25 q23 q24
+L q26 q2x q25
+A p2 q27 q26
+L q28 q2y q27
+A q29 q2y q28
+A q210 q211 q29
+FO q2x q210 q211
+
+L q31 q3y p3out
+A q32 q3y q31
+A q33 q34 q32
+FO q35 q33 q34
+L q36 q3x q35
+A p3 q37 q36
+L q38 q3y q37
+A q39 q3y q38
+A q310 q311 q39
+FO q3x q310 q311
+
+L q41 q4y p4out
+A q42 q4y q41
+A q43 q44 q42
+FO q45 q43 q44
+L q46 q4x q45
+A p4 q47 q46
+L q48 q4y q47
+A q49 q4y q48
+A q410 q411 q49
+FO q4x q410 q411
+
+L q51 q5y p5out
+A q52 q5y q51
+A q53 q54 q52
+FO q55 q53 q54
+L q56 q5x q55
+A p5 q57 q56
+L q58 q5y q57
+A q59 q5y q58
+A q510 q511 q59
+FO q5x q510 q511
+
+
+
+L q61 q6y p6out
+A q62 q6y q61
+A q63 q64 q62
+FO q65 q63 q64
+L q66 q6x q65
+A p6 q67 q66
+L q68 q6y q67
+A q69 q6y q68
+A q610 q611 q69
+FO q6x q610 q611
+
+L q71 q7y p7out
+A q72 q7y q71
+A q73 q74 q72
+FO q75 q73 q74
+L q76 q7x q75
+A p7 q77 q76
+L q78 q7y q77
+A q79 q7y q78
+A q710 q711 q79
+FO q7x q710 q711
+
+L q81 q8y p8out
+A q82 q8y q81
+A q83 q84 q82
+FO q85 q83 q84
+L q86 q8x q85
+A p8 q87 q86
+L q88 q8y q87
+A q89 q8y q88
+A q810 q811 q89
+FO q8x q810 q811
+
+

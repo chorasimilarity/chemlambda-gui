@@ -1,0 +1,31 @@
+FOE 2afoe p q
+FOE 15afoe t z
+A t p 16
+A z q 7
+
+FOE 2 pp qq
+FOE 15 tt zz
+A tt pp 16afoe
+A zz qq 7afoe
+
+
+
+
+FOE 8afoe 18afoe 9afoe
+FOE 10afoe 20afoe 11afoe
+FOE 24afoe 1afoe 15afoe
+FOE 26afoe 30afoe 17afoe
+A 30afoe 16afoe 27afoe
+A 17afoe 7afoe 8afoe
+A 36afoe 1afoe 37afoe
+FI 28afoe 42afoe 26afoe
+FI 33afoe 32afoe 38afoe
+FI 38afoe 39afoe 24afoe
+FI 19afoe 31afoe 28afoe
+FI 21afoe 35afoe 34afoe
+FI 34afoe 37afoe 33afoe
+L 27afoe 42afoe 39afoe
+L 18afoe 31afoe 32afoe
+L 9afoe 19afoe 10afoe
+L 20afoe 35afoe 36afoe
+L 11afoe 21afoe 2afoe

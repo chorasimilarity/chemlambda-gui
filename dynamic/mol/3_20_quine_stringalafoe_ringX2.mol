@@ -1,0 +1,785 @@
+FOE yhhba6 yhhba16 hhb7
+A yhhba15 yhhba2 yhhba6
+
+FOE yhhba8 yhhba18 hhba9
+A yhhba17 yhhba7 yhhba8
+
+FI yhhba28 yhhba42 yhhba26
+FOE yhhba26 yhhba30 yhhba17
+
+FI yhhba38 yhhba39 yhhba24
+FOE yhhba24 yhhba1 yhhba15
+
+
+L yhhba9 yhhba19 yhhba10
+FOE yhhba10 yhhba20 yhhba11
+
+A yhhba30 yhhba16 yhhba27
+FI yhhba33 yhhba32 yhhba38
+FI yhhba19 yhhba31 yhhba28
+FI yhhba21 yhhba35 yhhba34
+FI yhhba34 yhhba37 yhhba33
+L yhhba27 yhhba42 yhhba39
+L yhhba18 yhhba31 yhhba32
+L yhhba11 yhhba21 yhhba2
+
+Arrow yhhba1al yhhba35
+Arrow yhhba1 yhhba35al
+
+Arrow yhhba20al yhhba37
+Arrow yhhba20 yhhba37al
+
+
+FOE yhhba8al yhhba18al yhhba9al
+FOE yhhba10al yhhba20al yhhba11al
+FOE yhhba24al yhhba1al yhhba15al
+FOE yhhba26al yhhba30al yhhba17al
+
+A yhhba30al yhhba16al yhhba27al
+A yhhba17al yhhba7al yhhba8al
+FI yhhba28al yhhba42al yhhba26al
+FI yhhba33al yhhba32al yhhba38al
+FI yhhba38al yhhba39al yhhba24al
+FI yhhba19al yhhba31al yhhba28al
+FI yhhba21al yhhba35al yhhba34al
+FI yhhba34al yhhba37al yhhba33al
+L yhhba27al yhhba42al yhhba39al
+L yhhba18al yhhba31al yhhba32al
+L yhhba9al yhhba19al yhhba10al
+L yhhba11al yhhba21al yhhba2al
+
+
+
+
+
+FOE yhhba2afoe yhhbap yhhbaq
+FOE yhhba15afoe yhhbat yhhbaz
+A yhhbat yhhbap yhhba16al
+A yhhbaz yhhbaq yhhba7al
+
+FOE yhhba2al yhhbapp yhhbaqq
+FOE yhhba15al yhhbatt yhhbazz
+A yhhbatt yhhbapp yhhba16afoe
+A yhhbazz yhhbaqq yhhba7afoe
+
+
+
+
+FOE yhhba8afoe yhhba18afoe yhhba9afoe
+FOE yhhba10afoe yhhba20afoe yhhba11afoe
+FOE yhhba24afoe yhhba1afoe yhhba15afoe
+FOE yhhba26afoe yhhba30afoe yhhba17afoe
+A yhhba30afoe yhhba16afoe yhhba27afoe
+A yhhba17afoe yhhba7afoe yhhba8afoe
+A yhhba36afoe yhhba1afoe yhhba37afoe
+FI yhhba28afoe yhhba42afoe yhhba26afoe
+FI yhhba33afoe yhhba32afoe yhhba38afoe
+FI yhhba38afoe yhhba39afoe yhhba24afoe
+FI yhhba19afoe yhhba31afoe yhhba28afoe
+FI yhhba21afoe yhhba35afoe yhhba34afoe
+FI yhhba34afoe yhhba37afoe yhhba33afoe
+L yhhba27afoe yhhba42afoe yhhba39afoe
+L yhhba18afoe yhhba31afoe yhhba32afoe
+L yhhba9afoe yhhba19afoe yhhba10afoe
+L yhhba20afoe yhhba35afoe yhhba36afoe
+L yhhba11afoe yhhba21afoe yhhba2afoe
+
+
+FOE yhhb6 yhhb16 yhh7
+A yhhb15 yhhb2 yhhb6
+
+FOE yhhb8 yhhb18 yhhb9
+A yhhb17 yhhb7 yhhb8
+
+FI yhhb28 yhhb42 yhhb26
+FOE yhhb26 yhhb30 yhhb17
+
+FI yhhb38 yhhb39 yhhb24
+FOE yhhb24 yhhb1 yhhb15
+
+
+L yhhb9 yhhb19 yhhb10
+FOE yhhb10 yhhb20 yhhb11
+
+A yhhb30 yhhb16 yhhb27
+FI yhhb33 yhhb32 yhhb38
+FI yhhb19 yhhb31 yhhb28
+FI yhhb21 yhhb35 yhhb34
+FI yhhb34 yhhb37 yhhb33
+L yhhb27 yhhb42 yhhb39
+L yhhb18 yhhb31 yhhb32
+L yhhb11 yhhb21 yhhb2
+
+Arrow yhhb1al yhhb35
+Arrow yhhb1 yhhb35al
+
+Arrow yhhb20al yhhb37
+Arrow yhhb20 yhhb37al
+
+
+FOE yhhb8al yhhb18al yhhb9al
+FOE yhhb10al yhhb20al yhhb11al
+FOE yhhb24al yhhb1al yhhb15al
+FOE yhhb26al yhhb30al yhhb17al
+
+A yhhb30al yhhb16al yhhb27al
+A yhhb17al yhhb7al yhhb8al
+FI yhhb28al yhhb42al yhhb26al
+FI yhhb33al yhhb32al yhhb38al
+FI yhhb38al yhhb39al yhhb24al
+FI yhhb19al yhhb31al yhhb28al
+FI yhhb21al yhhb35al yhhb34al
+FI yhhb34al yhhb37al yhhb33al
+L yhhb27al yhhb42al yhhb39al
+L yhhb18al yhhb31al yhhb32al
+L yhhb9al yhhb19al yhhb10al
+L yhhb11al yhhb21al yhhb2al
+
+
+FOE yhh6 yhh16 yhhba7
+A yhh15 yhh2 yhh6
+
+FOE yhh8 yhh18 yhh9
+A yhh17 yhh7 yhh8
+
+FI yhh28 yhh42 yhh26
+FOE yhh26 yhh30 yhh17
+
+FI yhh38 yhh39 yhh24
+FOE yhh24 yhh1 y15
+
+
+L yhh9 yhh19 yhh10
+FOE yhh10 yhh20 yhh11
+
+A yhh30 yhh16 yhh27
+FI yhh33 yhh32 yhh38
+FI yhh19 yhh31 yhh28
+FI yhh21 yhh35 yhh34
+FI yhh34 yhh37 yhh33
+L yhh27 yhh42 yhh39
+L yhh18 yhh31 yhh32
+L yhh11 yhh21 yhh2
+
+Arrow yhh1al yhh35
+Arrow yhh1 yhh35al
+
+Arrow yhh20al yhh37
+Arrow yhh20 yhh37al
+
+
+FOE yhh8al yhh18al yhh9al
+FOE yhh10al yhh20al yhh11al
+FOE yhh24al yhh1al yhh15al
+FOE yhh26al yhh30al yhh17al
+
+A yhh30al yhh16al yhh27al
+A yhh17al yhh7al yhh8al
+FI yhh28al yhh42al yhh26al
+FI yhh33al yhh32al yhh38al
+FI yhh38al yhh39al yhh24al
+FI yhh19al yhh31al yhh28al
+FI yhh21al yhh35al yhh34al
+FI yhh34al yhh37al yhh33al
+L yhh27al yhh42al yhh39al
+L yhh18al yhh31al yhh32al
+L yhh9al yhh19al yhh10al
+L yhh11al yhh21al yhh2al
+
+
+
+
+FOE yba6 yba16 yb7
+A yba15 yba2 yba6
+
+FOE yba8 yba18 yba9
+A yba17 yba7 yba8
+
+FI yba28 yba42 yba26
+FOE yba26 yba30 yba17
+
+FI yba38 yba39 yba24
+FOE yba24 yba1 yba15
+
+
+L yba9 yba19 yba10
+FOE yba10 yba20 yba11
+
+A yba30 yba16 yba27
+FI yba33 yba32 yba38
+FI yba19 yba31 yba28
+FI yba21 yba35 yba34
+FI yba34 yba37 yba33
+L yba27 yba42 yba39
+L yba18 yba31 yba32
+L yba11 yba21 yba2
+
+Arrow yba1al yba35
+Arrow yba1 yba35al
+
+Arrow yba20al yba37
+Arrow yba20 yba37al
+
+
+FOE yba8al yba18al yba9al
+FOE yba10al yba20al yba11al
+FOE yba24al yba1al yba15al
+FOE yba26al yba30al yba17al
+
+A yba30al yba16al yba27al
+A yba17al yba7al yba8al
+FI yba28al yba42al yba26al
+FI yba33al yba32al yba38al
+FI yba38al yba39al yba24al
+FI yba19al yba31al yba28al
+FI yba21al yba35al yba34al
+FI yba34al yba37al yba33al
+L yba27al yba42al yba39al
+L yba18al yba31al yba32al
+L yba9al yba19al yba10al
+L yba11al yba21al yba2al
+
+
+
+
+
+FOE yba2afoe ybap ybaq
+FOE yba15afoe ybat ybaz
+A ybat ybap yba16al
+A ybaz ybaq yba7al
+
+FOE yba2al ybapp ybaqq
+FOE yba15al ybatt ybazz
+A ybatt ybapp yba16afoe
+A ybazz ybaqq yba7afoe
+
+
+
+
+FOE yba8afoe yba18afoe yba9afoe
+FOE yba10afoe yba20afoe yba11afoe
+FOE yba24afoe yba1afoe yba15afoe
+FOE yba26afoe yba30afoe yba17afoe
+A yba30afoe yba16afoe yba27afoe
+A yba17afoe yba7afoe yba8afoe
+A yba36afoe yba1afoe yba37afoe
+FI yba28afoe yba42afoe yba26afoe
+FI yba33afoe yba32afoe yba38afoe
+FI yba38afoe yba39afoe yba24afoe
+FI yba19afoe yba31afoe yba28afoe
+FI yba21afoe yba35afoe yba34afoe
+FI yba34afoe yba37afoe yba33afoe
+L yba27afoe yba42afoe yba39afoe
+L yba18afoe yba31afoe yba32afoe
+L yba9afoe yba19afoe yba10afoe
+L yba20afoe yba35afoe yba36afoe
+L yba11afoe yba21afoe yba2afoe
+
+
+FOE yb6 yb16 y7
+A yb15 yb2 yb6
+
+FOE yb8 yb18 yb9
+A yb17 yb7 yb8
+
+FI yb28 yb42 yb26
+FOE yb26 yb30 yb17
+
+FI yb38 yb39 yb24
+FOE yb24 yb1 yb15
+
+
+L yb9 yb19 yb10
+FOE yb10 yb20 yb11
+
+A yb30 yb16 yb27
+FI yb33 yb32 yb38
+FI yb19 yb31 yb28
+FI yb21 yb35 yb34
+FI yb34 yb37 yb33
+L yb27 yb42 yb39
+L yb18 yb31 yb32
+L yb11 yb21 yb2
+
+Arrow yb1al yb35
+Arrow yb1 yb35al
+
+Arrow yb20al yb37
+Arrow yb20 yb37al
+
+
+FOE yb8al yb18al b9al
+FOE yb10al yb20al yb11al
+FOE yb24al yb1al yb15al
+FOE yb26al yb30al b17al
+
+A yb30al yb16al yb27al
+A yb17al yb7al yb8al
+FI yb28al yb42al yb26al
+FI yb33al yb32al yb38al
+FI yb38al yb39al yb24al
+FI yb19al yb31al yb28al
+FI yb21al yb35al yb34al
+FI yb34al yb37al yb33al
+L yb27al yb42al yb39al
+L yb18al yb31al yb32al
+L yb9al yb19al yb10al
+L yb11al yb21al yb2al
+
+
+FOE y6 y16 yba7
+A y15 y2 y6
+
+FOE y8 y18 y9
+A y17 y7 y8
+
+FI y28 y42 y26
+FOE y26 y30 y17
+
+FI y38 y39 y24
+FOE y24 y1 yhh15
+
+
+L y9 y19 y10
+FOE y10 y20 y11
+
+A y30 y16 y27
+FI y33 y32 y38
+FI y19 y31 y28
+FI y21 y35 y34
+FI y34 y37 y33
+L y27 y42 y39
+L y18 y31 y32
+L y11 y21 y2
+
+Arrow y1al y35
+Arrow y1 y35al
+
+Arrow y20al y37
+Arrow y20 y37al
+
+
+FOE y8al y18al 9al
+FOE y10al y20al y11al
+FOE y24al y1al y15al
+FOE y26al y30al 17al
+
+A y30al y16al y27al
+A y17al y7al y8al
+FI y28al y42al y26al
+FI y33al y32al y38al
+FI y38al y39al y24al
+FI y19al y31al y28al
+FI y21al y35al y34al
+FI y34al y37al y33al
+L y27al y42al y39al
+L y18al y31al y32al
+L y9al y19al y10al
+L y11al y21al y2al
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE hhba6 hhba16 yhhb7
+A hhba15 hhba2 hhba6
+
+FOE hhba8 hhba18 yhhba9
+A hhba17 hhba7 hhba8
+
+FI hhba28 hhba42 hhba26
+FOE hhba26 hhba30 hhba17
+
+FI hhba38 hhba39 hhba24
+FOE hhba24 hhba1 hhba15
+
+
+L hhba9 hhba19 hhba10
+FOE hhba10 hhba20 hhba11
+
+A hhba30 hhba16 hhba27
+FI hhba33 hhba32 hhba38
+FI hhba19 hhba31 hhba28
+FI hhba21 hhba35 hhba34
+FI hhba34 hhba37 hhba33
+L hhba27 hhba42 hhba39
+L hhba18 hhba31 hhba32
+L hhba11 hhba21 hhba2
+
+Arrow hhba1al hhba35
+Arrow hhba1 hhba35al
+
+Arrow hhba20al hhba37
+Arrow hhba20 hhba37al
+
+
+FOE hhba8al hhba18al hhba9al
+FOE hhba10al hhba20al hhba11al
+FOE hhba24al hhba1al hhba15al
+FOE hhba26al hhba30al hhba17al
+
+A hhba30al hhba16al hhba27al
+A hhba17al hhba7al hhba8al
+FI hhba28al hhba42al hhba26al
+FI hhba33al hhba32al hhba38al
+FI hhba38al hhba39al hhba24al
+FI hhba19al hhba31al hhba28al
+FI hhba21al hhba35al hhba34al
+FI hhba34al hhba37al hhba33al
+L hhba27al hhba42al hhba39al
+L hhba18al hhba31al hhba32al
+L hhba9al hhba19al hhba10al
+L hhba11al hhba21al hhba2al
+
+
+
+
+
+FOE hhba2afoe hhbap hhbaq
+FOE hhba15afoe hhbat hhbaz
+A hhbat hhbap hhba16al
+A hhbaz hhbaq hhba7al
+
+FOE hhba2al hhbapp hhbaqq
+FOE hhba15al hhbatt hhbazz
+A hhbatt hhbapp hhba16afoe
+A hhbazz hhbaqq hhba7afoe
+
+
+
+
+FOE hhba8afoe hhba18afoe hhba9afoe
+FOE hhba10afoe hhba20afoe hhba11afoe
+FOE hhba24afoe hhba1afoe hhba15afoe
+FOE hhba26afoe hhba30afoe hhba17afoe
+A hhba30afoe hhba16afoe hhba27afoe
+A hhba17afoe hhba7afoe hhba8afoe
+A hhba36afoe hhba1afoe hhba37afoe
+FI hhba28afoe hhba42afoe hhba26afoe
+FI hhba33afoe hhba32afoe hhba38afoe
+FI hhba38afoe hhba39afoe hhba24afoe
+FI hhba19afoe hhba31afoe hhba28afoe
+FI hhba21afoe hhba35afoe hhba34afoe
+FI hhba34afoe hhba37afoe hhba33afoe
+L hhba27afoe hhba42afoe hhba39afoe
+L hhba18afoe hhba31afoe hhba32afoe
+L hhba9afoe hhba19afoe hhba10afoe
+L hhba20afoe hhba35afoe hhba36afoe
+L hhba11afoe hhba21afoe hhba2afoe
+
+
+FOE hhb6 hhb16 hh7
+A hhb15 hhb2 hhb6
+
+FOE hhb8 hhb18 hhb9
+A hhb17 hhb7 hhb8
+
+FI hhb28 hhb42 hhb26
+FOE hhb26 hhb30 hhb17
+
+FI hhb38 hhb39 hhb24
+FOE hhb24 hhb1 hhb15
+
+
+L hhb9 hhb19 hhb10
+FOE hhb10 hhb20 hhb11
+
+A hhb30 hhb16 hhb27
+FI hhb33 hhb32 hhb38
+FI hhb19 hhb31 hhb28
+FI hhb21 hhb35 hhb34
+FI hhb34 hhb37 hhb33
+L hhb27 hhb42 hhb39
+L hhb18 hhb31 hhb32
+L hhb11 hhb21 hhb2
+
+Arrow hhb1al hhb35
+Arrow hhb1 hhb35al
+
+Arrow hhb20al hhb37
+Arrow hhb20 hhb37al
+
+
+FOE hhb8al hhb18al hhb9al
+FOE hhb10al hhb20al hhb11al
+FOE hhb24al hhb1al hhb15al
+FOE hhb26al hhb30al hhb17al
+
+A hhb30al hhb16al hhb27al
+A hhb17al hhb7al hhb8al
+FI hhb28al hhb42al hhb26al
+FI hhb33al hhb32al hhb38al
+FI hhb38al hhb39al hhb24al
+FI hhb19al hhb31al hhb28al
+FI hhb21al hhb35al hhb34al
+FI hhb34al hhb37al hhb33al
+L hhb27al hhb42al hhb39al
+L hhb18al hhb31al hhb32al
+L hhb9al hhb19al hhb10al
+L hhb11al hhb21al hhb2al
+
+
+FOE hh6 hh16 hhba7
+A hh15 hh2 hh6
+
+FOE hh8 hh18 hh9
+A hh17 hh7 hh8
+
+FI hh28 hh42 hh26
+FOE hh26 hh30 hh17
+
+FI hh38 hh39 hh24
+FOE hh24 hh1 15
+
+
+L hh9 hh19 hh10
+FOE hh10 hh20 hh11
+
+A hh30 hh16 hh27
+FI hh33 hh32 hh38
+FI hh19 hh31 hh28
+FI hh21 hh35 hh34
+FI hh34 hh37 hh33
+L hh27 hh42 hh39
+L hh18 hh31 hh32
+L hh11 hh21 hh2
+
+Arrow hh1al hh35
+Arrow hh1 hh35al
+
+Arrow hh20al hh37
+Arrow hh20 hh37al
+
+
+FOE hh8al hh18al hh9al
+FOE hh10al hh20al hh11al
+FOE hh24al hh1al hh15al
+FOE hh26al hh30al hh17al
+
+A hh30al hh16al hh27al
+A hh17al hh7al hh8al
+FI hh28al hh42al hh26al
+FI hh33al hh32al hh38al
+FI hh38al hh39al hh24al
+FI hh19al hh31al hh28al
+FI hh21al hh35al hh34al
+FI hh34al hh37al hh33al
+L hh27al hh42al hh39al
+L hh18al hh31al hh32al
+L hh9al hh19al hh10al
+L hh11al hh21al hh2al
+
+
+
+
+FOE ba6 ba16 b7
+A ba15 ba2 ba6
+
+FOE ba8 ba18 ba9
+A ba17 ba7 ba8
+
+FI ba28 ba42 ba26
+FOE ba26 ba30 ba17
+
+FI ba38 ba39 ba24
+FOE ba24 ba1 ba15
+
+
+L ba9 ba19 ba10
+FOE ba10 ba20 ba11
+
+A ba30 ba16 ba27
+FI ba33 ba32 ba38
+FI ba19 ba31 ba28
+FI ba21 ba35 ba34
+FI ba34 ba37 ba33
+L ba27 ba42 ba39
+L ba18 ba31 ba32
+L ba11 ba21 ba2
+
+Arrow ba1al ba35
+Arrow ba1 ba35al
+
+Arrow ba20al ba37
+Arrow ba20 ba37al
+
+
+FOE ba8al ba18al ba9al
+FOE ba10al ba20al ba11al
+FOE ba24al ba1al ba15al
+FOE ba26al ba30al ba17al
+
+A ba30al ba16al ba27al
+A ba17al ba7al ba8al
+FI ba28al ba42al ba26al
+FI ba33al ba32al ba38al
+FI ba38al ba39al ba24al
+FI ba19al ba31al ba28al
+FI ba21al ba35al ba34al
+FI ba34al ba37al ba33al
+L ba27al ba42al ba39al
+L ba18al ba31al ba32al
+L ba9al ba19al ba10al
+L ba11al ba21al ba2al
+
+
+
+
+
+FOE ba2afoe bap baq
+FOE ba15afoe bat baz
+A bat bap ba16al
+A baz baq ba7al
+
+FOE ba2al bapp baqq
+FOE ba15al batt bazz
+A batt bapp ba16afoe
+A bazz baqq ba7afoe
+
+
+
+
+FOE ba8afoe ba18afoe ba9afoe
+FOE ba10afoe ba20afoe ba11afoe
+FOE ba24afoe ba1afoe ba15afoe
+FOE ba26afoe ba30afoe ba17afoe
+A ba30afoe ba16afoe ba27afoe
+A ba17afoe ba7afoe ba8afoe
+A ba36afoe ba1afoe ba37afoe
+FI ba28afoe ba42afoe ba26afoe
+FI ba33afoe ba32afoe ba38afoe
+FI ba38afoe ba39afoe ba24afoe
+FI ba19afoe ba31afoe ba28afoe
+FI ba21afoe ba35afoe ba34afoe
+FI ba34afoe ba37afoe ba33afoe
+L ba27afoe ba42afoe ba39afoe
+L ba18afoe ba31afoe ba32afoe
+L ba9afoe ba19afoe ba10afoe
+L ba20afoe ba35afoe ba36afoe
+L ba11afoe ba21afoe ba2afoe
+
+
+FOE b6 b16 7
+A b15 b2 b6
+
+FOE b8 b18 b9
+A b17 b7 b8
+
+FI b28 b42 b26
+FOE b26 b30 b17
+
+FI b38 b39 b24
+FOE b24 b1 b15
+
+
+L b9 b19 b10
+FOE b10 b20 b11
+
+A b30 b16 b27
+FI b33 b32 b38
+FI b19 b31 b28
+FI b21 b35 b34
+FI b34 b37 b33
+L b27 b42 b39
+L b18 b31 b32
+L b11 b21 b2
+
+Arrow b1al b35
+Arrow b1 b35al
+
+Arrow b20al b37
+Arrow b20 b37al
+
+
+FOE b8al b18al yb9al
+FOE b10al b20al b11al
+FOE b24al b1al b15al
+FOE b26al b30al yb17al
+
+A b30al b16al b27al
+A b17al b7al b8al
+FI b28al b42al b26al
+FI b33al b32al b38al
+FI b38al b39al b24al
+FI b19al b31al b28al
+FI b21al b35al b34al
+FI b34al b37al b33al
+L b27al b42al b39al
+L b18al b31al b32al
+L b9al b19al b10al
+L b11al b21al b2al
+
+
+FOE 6 16 ba7
+A 15 2 6
+
+FOE 8 18 9
+A 17 7 8
+
+FI 28 42 26
+FOE 26 30 17
+
+FI 38 39 24
+FOE 24 1 hh15
+
+
+L 9 19 10
+FOE 10 20 11
+
+A 30 16 27
+FI 33 32 38
+FI 19 31 28
+FI 21 35 34
+FI 34 37 33
+L 27 42 39
+L 18 31 32
+L 11 21 2
+
+Arrow 1al 35
+Arrow 1 35al
+
+Arrow 20al 37
+Arrow 20 37al
+
+
+FOE 8al 18al y9al
+FOE 10al 20al 11al
+FOE 24al 1al 15al
+FOE 26al 30al y17al
+
+A 30al 16al 27al
+A 17al 7al 8al
+FI 28al 42al 26al
+FI 33al 32al 38al
+FI 38al 39al 24al
+FI 19al 31al 28al
+FI 21al 35al 34al
+FI 34al 37al 33al
+L 27al 42al 39al
+L 18al 31al 32al
+L 9al 19al 10al
+L 11al 21al 2al

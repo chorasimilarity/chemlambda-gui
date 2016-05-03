@@ -1,0 +1,139 @@
+
+
+
+
+FOE q13 q6 5
+FOE q14 4 q3
+
+A q23 q12 q13
+FO q12p qb13 qb12
+A qb13 qb12 q12
+L q24 q12p q14
+A q33 q22 q23
+L q34 q22 q24
+A q43 q32 q33
+FO q32p qb33 qb32
+A qb33 qb32 q32
+L q44 q32p q34
+A q1 q42 q43
+L q2 q42 q44
+
+A q23o q12o q1
+FO q12po qb13o qb12o
+A qb13o qb12o q12o
+L q24o q12po q2
+A q33o q22o q23o
+L q34o q22o q24o
+A q43o q32o q33o
+FO q32po qb33o qb32o
+A qb33o qb32o q32o
+L q44o q32po q34o
+A qzz13 q42o q43o
+L qzz14 q42o q44o
+
+
+A qzz23 qzz12 qzz13
+FO qzz12p qzzb13 qzzb12
+A qzzb13 qzzb12 qzz12
+L qzz24 qzz12p qzz14
+A qzz33 qzz22 qzz23
+L qzz34 qzz22 qzz24
+A qzz43 qzz32 qzz33
+FO qzz32p qzzb33 qzzb32
+A qzzb33 qzzb32 qzz32
+L qzz44 qzz32p qzz34
+A qzz1 qzz42 qzz43
+L qzz2 qzz42 qzz44
+
+A qzz23o qzz12o qzz1
+FO qzz12po qzzb13o qzzb12o
+A qzzb13o qzzb12o qzz12o
+L qzz24o qzz12po qzz2
+A qzz33o qzz22o qzz23o
+L qzz34o qzz22o qzz24o
+A qzz43o qzz32o qzz33o
+FO qzz32po qzzb33o qzzb32o
+A qzzb33o qzzb32o qzz32o
+L qzz44o qzz32po qzz34o
+A q1o qzz42o qzz43o
+L q2o qzz42o qzz44o
+
+
+Arrow 4 q1a
+Arrow q6 q2a
+
+Arrow q5 q1b
+Arrow q3 q2b
+
+
+FI q1a q1b q1o
+FI q2a q2b q2o
+
+
+
+FOE 13 6 q5
+FOE 14 q4 3
+
+A 23 12 13
+FO 12p b13 b12
+A b13 b12 12
+L 24 12p 14
+A 33 22 23
+L 34 22 24
+A 43 32 33
+FO 32p b33 b32
+A b33 b32 32
+L 44 32p 34
+A 1 42 43
+L 2 42 44
+
+A 23o 12o 1
+FO 12po b13o b12o
+A b13o b12o 12o
+L 24o 12po 2
+A 33o 22o 23o
+L 34o 22o 24o
+A 43o 32o 33o
+FO 32po b33o b32o
+A b33o b32o 32o
+L 44o 32po 34o
+A zz13 42o 43o
+L zz14 42o 44o
+
+
+A zz23 zz12 zz13
+FO zz12p zzb13 zzb12
+A zzb13 zzb12 zz12
+L zz24 zz12p zz14
+A zz33 zz22 zz23
+L zz34 zz22 zz24
+A zz43 zz32 zz33
+FO zz32p zzb33 zzb32
+A zzb33 zzb32 zz32
+L zz44 zz32p zz34
+A zz1 zz42 zz43
+L zz2 zz42 zz44
+
+A zz23o zz12o zz1
+FO zz12po zzb13o zzb12o
+A zzb13o zzb12o zz12o
+L zz24o zz12po zz2
+A zz33o zz22o zz23o
+L zz34o zz22o zz24o
+A zz43o zz32o zz33o
+FO zz32po zzb33o zzb32o
+A zzb33o zzb32o zz32o
+L zz44o zz32po zz34o
+A 1o zz42o zz43o
+L 2o zz42o zz44o
+
+
+Arrow q4 1a
+Arrow 6 2a
+
+Arrow 5 1b
+Arrow 3 2b
+
+
+FI 1a 1b 1o
+FI 2a 2b 2o

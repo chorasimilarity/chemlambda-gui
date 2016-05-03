@@ -1,0 +1,16 @@
+L q1 o1 c
+A c i1 s2
+
+L q2 o2 q1
+L q3 o3 q2
+L q4 o4 q3
+L q5 o5 q4
+L q6 o6 q5
+L q7 o7 q6
+
+A s2 i2 s3
+A s3 i3 s4
+A s4 i4 s5
+A s5 i5 s6
+A s6 i6 s7
+A s7 i7 s8

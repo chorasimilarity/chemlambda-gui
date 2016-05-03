@@ -1,0 +1,68 @@
+L 14c1c1 24c1c1 c0
+L 44c1c1 34c1c1 14c1c1
+A 24c1c1 34c1c1 44c1c1
+
+L 2num 1num v
+L 3num xnum 2num
+FO 1num m1num l1pnum
+A m1num r1pnum 3num
+
+FO l1pnum m1pnum l1ppnum
+A m1pnum r1ppnum r1pnum
+
+FO l1ppnum m1ppnum l1num
+A m1ppnum r1num r1ppnum
+
+FO l1num m2num l2num
+A m2num r2num r1num
+A l2num xnum r2num
+
+L 2num1 1num1 u
+L 3num1 xnum1 2num1
+FO 1num1 m1num1 l1pnum1
+A m1num1 r1pnum1 3num1
+
+FO l1pnum1 m1pnum1 l1ppnum1
+A m1pnum1 r1ppnum1 r1pnum1
+
+FO l1ppnum1 m1ppnum1 l1num1
+A m1ppnum1 r1num1 r1ppnum1
+
+FO l1num1 m2num1 l2num1
+A m2num1 r2num1 r1num1
+A l2num1 xnum1 r2num1
+
+
+
+A 1tms c0 tms
+A v 2tms 1tms
+A plus u 2tms
+L 3tms 4tms plus
+L 5tms 6tms 3tms
+A 7tms 4tms 5tms
+A 6tms succ 7tms
+
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+
+
+A tms tape oout
+
+L oub inb tape
+B0 inb t1
+B0 t1 t2
+BA t2 t3
+B0 t3 t5
+B0 t5 t6
+B0 t6 t7
+BA t7 t8
+B0 t8 t9
+B0 t9 t10
+B0 t10 oub
+

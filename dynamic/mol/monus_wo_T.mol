@@ -1,0 +1,193 @@
+A numb pred coco
+A coco numa out
+
+FOE outfin out1a out1b
+
+A out succ dudu
+A dudu c0 outfin
+
+
+
+
+L 1c0 2c0 c0
+L 3c0 3c0 1c0
+
+
+
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+
+
+
+
+
+
+
+L 1numa fnuma numa
+L 2numa xnuma 1numa
+
+A l19numa xnuma r19numa
+
+FO fnuma m1numa l1numa
+A m1numa r1numa 2numa
+
+
+
+
+FO l1numa m2numa l2numa
+A m2numa r2numa r1numa
+
+FO l2numa m3numa l3numa
+A m3numa r3numa r2numa
+
+FO l3numa m4numa l4numa
+A m4numa r4numa r3numa
+
+FO l4numa m5numa l5numa
+A m5numa r5numa r4numa
+
+FO l5numa m6numa l6numa
+A m6numa r6numa r5numa
+
+FO l6numa m7numa l7numa
+A m7numa r7numa r6numa 
+
+FO l7numa m8numa l8numa
+A m8numa r8numa r7numa
+
+FO l8numa m9numa l9numa
+A m9numa r9numa r8numa
+
+FO l9numa m10numa l10numa
+A m10numa r10numa r9numa
+
+FO l10numa m11numa l11numa
+A m11numa r11numa r10numa
+
+FO l11numa m12numa l12numa
+A m12numa r12numa r11numa
+
+FO l12numa m13numa l13numa
+A m13numa r13numa r12numa
+
+FO l13numa m14numa l14numa
+A m14numa r14numa r13numa
+
+FO l14numa m15numa l15numa
+A m15numa r15numa r14numa
+
+FO l15numa m16numa l17numa
+A m16numa r17numa r15numa
+
+
+FO l17numa m18numa l18numa
+A m18numa r18numa r17numa
+
+FO l18numa m19numa l19numa
+A m19numa r19numa r18numa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L 1numb fnumb numb
+L 2numb xnumb 1numb
+
+A l19numb xnumb r19numb
+
+FO fnumb m1numb l1numb
+A m1numb r1numb 2numb
+
+
+
+FO l1numb m2numb l2numb
+A m2numb r2numb r1numb
+
+FO l2numb m3numb l3numb
+A m3numb r3numb r2numb
+
+FO l3numb m4numb l4numb
+A m4numb r4numb r3numb
+
+FO l4numb m5numb l5numb
+A m5numb r5numb r4numb
+
+FO l5numb m6numb l6numb
+A m6numb r6numb r5numb
+
+FO l6numb m7numb l7numb
+A m7numb r7numb r6numb 
+
+FO l7numb m8numb l8numb
+A m8numb r8numb r7numb
+
+FO l8numb m9numb l9numb
+A m9numb r9numb r8numb
+
+FO l9numb m10numb l10numb
+A m10numb r10numb r9numb
+
+FO l10numb m11numb l11numb
+A m11numb r11numb r10numb
+
+FO l11numb m12numb l12numb
+A m12numb r12numb r11numb
+
+FO l12numb m13numb l13numb
+A m13numb r13numb r12numb
+
+FO l13numb m14numb l14numb
+A m14numb r14numb r13numb
+
+FO l14numb m15numb l15numb
+A m15numb r15numb r14numb
+
+FO l15numb m16numb l16numb
+A m16numb r16numb r15numb
+
+FO l16numb m17numb l17numb
+A m17numb r17numb r16numb
+
+FO l17numb m18numb l18numb
+A m18numb r18numb r17numb
+
+FO l18numb m19numb l19numb
+A m19numb r19numb r18numb
+
+
+L 1pred npred pred
+L 2pred fpred 1pred
+L 3pred xpred 2pred
+A 6pred 4pred 3pred
+L 5pred 5pred 4pred
+A 7pred 8pred 6pred
+L xpred 9pred 8pred
+A npred 10pred 7pred
+L 11pred gpred 10pred
+L 12pred hpred 11pred
+A hpred 13pred 12pred
+A gpred fpred 13pred

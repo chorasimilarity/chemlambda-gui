@@ -1,0 +1,12 @@
+A 1 2 cono
+FO ini 1 2
+FI 11 22 ino
+L coni 11 22
+
+
+
+FOE cono cona conb
+FI conb cona coni
+
+FOE ino ina inb
+FI inb ina ini

@@ -1,0 +1,66 @@
+A p1 p1b p1a
+FOE p1a p1out p1b
+
+A p2 p2b p2a
+FOE p2a p2out p2b
+
+A p3 p3b p3a
+FOE p3a p3out p3b
+
+A p4 p4b p4a
+FOE p4a p4out p4b
+
+A p5 p5b p5a
+FOE p5a p5out p5b
+
+A p6 p6b p6a
+FOE p6a p6out p6b
+
+A p7 p7b p7a
+FOE p7a p7out p7b
+
+A p8 p8b p8a
+FOE p8a p8out p8b
+
+L a8 a1y p1
+L a1 a2 p2
+L a2 a3 p3
+L a3 a4 p4
+L a4 a5 p5
+L a5 a6 p6
+L a6 a7 p7
+L a7 a8 p8
+
+
+A p1y p1by p1ay
+FOE p1ay p1outy p1by
+
+A p2y p2by p2ay
+FOE p2ay p2outy p2by
+
+A p3y p3by p3ay
+FOE p3ay p3outy p3by
+
+A p4y p4by p4ay
+FOE p4ay p4outy p4by
+
+A p5y p5by p5ay
+FOE p5ay p5outy p5by
+
+A p6y p6by p6ay
+FOE p6ay p6outy p6by
+
+A p7y p7by p7ay
+FOE p7ay p7outy p7by
+
+A p8y p8by p8ay
+FOE p8ay p8outy p8by
+
+L a8y a1 p1y
+L a1y a2y p2y
+L a2y a3y p3y
+L a3y a4y p4y
+L a4y a5y p5y
+L a5y a6y p6y
+L a6y a7y p7y
+L a7y a8y p8y

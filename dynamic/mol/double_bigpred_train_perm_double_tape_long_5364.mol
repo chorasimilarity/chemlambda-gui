@@ -1,0 +1,1410 @@
+FOE yb2 yb12 yb3a
+A yb12 yb22a yb1
+
+
+FOE yb3a ybna1i yb3o1
+A ybna1o yb22a1 yb22a
+
+FOE yb3o1 ybna2i yb3o2
+A ybna2o yb22a2 yb22a1
+
+FOE yb3o2 ybna3i yb3o3
+A ybna3o yb22a3 yb22a2
+
+FOE yb3o3 ybna4i yb3o4
+A ybna4o yb22a4 yb22a3
+
+FOE yb3o4 ybna5i yb3o5
+A ybna5o yb22a5 yb22a4
+
+FOE yb3o5 ybna6i yb3o6
+A ybna6o yb22a6 yb22a5
+
+FOE yb3o6 ybna7i yb3o7
+A ybna7o yb22a7 yb22a6
+
+FOE yb3o7 ybna8i yb3o8
+A ybna8o yb22a8 yb22a7
+
+FOE yb3o8 ybna9i yb3o9
+A ybna9o yb22a9 yb22a8
+
+FOE yb3o9 ybna10i yb3o10
+A ybna10o yb22a10 yb22a9
+
+FOE yb3o10 ybna11i yb3o11
+A ybna11o yb22a11 yb22a10
+
+FOE yb3o11 ybna12i yb3o12
+A ybna12o yb22a12 yb22a11
+
+FOE yb3o12 ybna13i yb3o13
+A ybna13o yb22a13 yb22a12
+
+FOE yb3o13 ybna14i yb3o14
+A ybna14o yb22a14 yb22a13
+
+FOE yb3o14 ybna15i yb3o15
+A ybna15o yb22a15 yb22a14
+
+FOE yb3o15 ybna16i yb3o16
+A ybna16o yb22a16 yb22a15
+
+FOE yb3o16 ybna17i yb3o17
+A ybna17o yb22a17 yb22a16
+
+FOE yb3o17 ybna18i yb3o18
+A ybna18o yb22a18 yb22a17
+
+FOE yb3o18 ybna19i yb3o19
+A ybna19o yb22a19 yb22a18
+
+FOE yb3o19 ybna20i yb3o20
+A ybna20o yb22a20 yb22a19
+
+FOE yb3o20 ybna21i yb3o21
+A ybna21o yb22a21 yb22a20
+
+FOE yb3o21 ybna22i yb3o22
+A ybna22o yb22a22 yb22a21
+
+FOE yb3o22 ybna23i yb3o23
+A ybna23o yb22a23 yb22a22
+
+FOE yb3o23 ybna24i yb3o24
+A ybna24o yb22a24 yb22a23
+
+FOE yb3o24 ybna25i yb3o25
+A ybna25o yb22a25 yb22a24
+
+FOE yb3o25 ybna26i yb3o26
+A ybna26o yb22a26 yb22a25
+
+FOE yb3o26 ybna27i yb3o27
+A ybna27o yb22a27 yb22a26
+
+FOE yb3o27 ybna28i yb3o28
+A ybna28o yb22a28 yb22a27
+
+FOE yb3o28 ybna29i yb3o29
+A ybna29o yb22a29 yb22a28
+
+FOE yb3o29 ybna30i yb3o30
+A ybna30o yb22a30 yb22a29
+
+FOE yb3o30 ybna31 yb3o31
+A ybna31 yb22a31 yb22a30
+
+FOE yb3o31 ybna32 yb3out
+A ybna32 yb22in yb22a31
+
+Arrow yb22out ybz22
+Arrow ybz1 yb22in
+
+Arrow ybz3 yb3in
+Arrow yb3out ybz2
+
+FOE yb3in yb13 b4
+FOE yb4 yb14 b5
+FOE yb6 yb16 yb7
+FOE yb8 yb18 yb9
+FOE yb10 yb20 yb11
+FOE yb24 yb29 yb15
+FOE yb26 yb30 yb17
+
+
+A yb23 yb13 yb22out
+A yb41 yb25 yb40
+A yb15 yb5 yb6
+A yb29 yb14 yb25
+A yb30 yb16 yb27
+A yb17 yb7 yb8
+A yb36 yb1 yb37
+
+FI yb28 yb42 yb26
+FI yb33 yb32 yb38
+FI yb38 yb39 yb24
+FI yb19 yb31 yb28
+FI yb21 yb35 yb34
+FI yb34 yb37 yb33
+
+L yb40 yb41 yb23
+L yb27 yb42 yb39
+L yb18 yb31 yb32
+L yb9 yb19 yb10
+L yb20 yb35 yb36
+L yb11 yb21 yb2
+
+
+FI yba1 ybna1i ybmix1
+FOE ybmix1 ya9 ybna1o
+
+FI yba2 ybna2i ybmix2
+FOE ybmix2 ya11 ybna2o
+
+FI yba3 ybna3i ybmix3
+FOE ybmix3 ya27 ybna3o
+
+FI yba4 ybna4i ybmix4
+FOE ybmix4 yba28 ybna4o
+
+FI yba5 ybna5i ybmix5
+FOE ybmix5 yba29 ybna5o
+
+FI yba6 ybna6i ybmix6
+FOE ybmix6 yba30 ybna6o
+
+FI yba7 ybna7i ybmix7
+FOE ybmix7 yba13 ybna7o
+
+FI yba8 ybna8i ybmix8
+FOE ybmix8 yba6 ybna8o
+
+FI yba9 ybna9i ybmix9
+FOE ybmix9 yba8 ybna9o
+
+FI yba10 ybna10i ybmix10
+FOE ybmix10 yba10 ybna10o
+
+FI yba11 ybna11i ybmix11
+FOE ybmix11 yba1 ybna11o
+
+FI yba12 ybna12i ybmix12
+FOE ybmix12 yba26 ybna12o
+
+FI yba13 ybna13i ybmix13
+FOE ybmix13 yba2 ybna13o
+
+FI yba14 ybna14i ybmix14
+FOE ybmix14 yba25 ybna14o
+
+FI yba15 ybna15i ybmix15
+FOE ybmix15 yba5 ybna15o
+
+FI yba16 ybna16i ybmix16
+FOE ybmix16 yba18 ybna16o
+
+FI yba17 ybna17i ybmix17
+FOE ybmix17 yba4 ybna17o
+
+FI yba18 ybna18i ybmix18
+FOE ybmix18 yba14 ybna18o
+
+FI yba19 ybna19i ybmix19
+FOE ybmix19 yba24 ybna19o
+
+FI yba20 ybna20i ybmix20
+FOE ybmix20 yba16 ybna20o
+
+FI yba21 ybna21i ybmix21
+FOE ybmix21 yba15 ybna21o
+
+FI yba22 ybna22i ybmix22
+FOE ybmix22 yba19 ybna22o
+
+FI yba23 ybna23i ybmix23
+FOE ybmix23 yba21 ybna23o
+
+FI yba24 ybna24i ybmix24
+FOE ybmix24 yba17 ybna24o
+
+FI yba25 ybna25i ybmix25
+FOE ybmix25 yba20 ybna25o
+
+FI yba26 ybna26i ybmix26
+FOE ybmix26 yba3 ybna26o
+
+FI yba27 ybna27i ybmix27
+FOE ybmix27 yba23 ybna27o
+
+FI yba28 ybna28i ybmix28
+FOE ybmix28 yba12 ybna28o
+
+FI yba29 ybna29i ybmix29
+FOE ybmix29 yba22 ybna29o
+
+FI yba30 ybna30i ybmix30
+FOE ybmix30 yba7 ybna30o
+
+
+
+
+
+FOE ybz2 ybz12 ybz3a
+A ybz12 ybz22a ybz1
+
+
+FOE ybz3a ybzna1 ybz3o1
+A ybzna1 ybz22a1 ybz22a
+
+FOE ybz3o1 ybzna2 ybz3o2
+A ybzna2 ybz22a2 ybz22a1
+
+FOE ybz3o2 ybzna3 ybz3o3
+A ybzna3 ybz22a3 ybz22a2
+
+FOE ybz3o3 ybzna4 ybz3o4
+A ybzna4 ybz22a4 ybz22a3
+
+FOE ybz3o4 ybzna5 ybz3o5
+A ybzna5 ybz22a5 ybz22a4
+
+FOE ybz3o5 ybzna6 ybz3o6
+A ybzna6 ybz22a6 ybz22a5
+
+FOE ybz3o6 ybzna7 ybz3o7
+A ybzna7 ybz22a7 ybz22a6
+
+FOE ybz3o7 ybzna8 ybz3o8
+A ybzna8 ybz22a8 ybz22a7
+
+FOE ybz3o8 ybzna9 ybz3o9
+A ybzna9 ybz22a9 ybz22a8
+
+FOE ybz3o9 ybzna10 ybz3o10
+A ybzna10 ybz22a10 ybz22a9
+
+FOE ybz3o10 ybzna11 ybz3o11
+A ybzna11 ybz22a11 ybz22a10
+
+FOE ybz3o11 ybzna12 ybz3o12
+A ybzna12 ybz22a12 ybz22a11
+
+FOE ybz3o12 ybzna13 ybz3o13
+A ybzna13 ybz22a13 ybz22a12
+
+FOE ybz3o13 ybzna14 ybz3o14
+A ybzna14 ybz22a14 ybz22a13
+
+FOE ybz3o14 ybzna15 ybz3o15
+A ybzna15 ybz22a15 ybz22a14
+
+FOE ybz3o15 ybzna16 ybz3o16
+A ybzna16 ybz22a16 ybz22a15
+
+FOE ybz3o16 ybzna17 ybz3o17
+A ybzna17 ybz22a17 ybz22a16
+
+FOE ybz3o17 ybzna18 ybz3o18
+A ybzna18 ybz22a18 ybz22a17
+
+FOE ybz3o18 ybzna19 ybz3o19
+A ybzna19 ybz22a19 ybz22a18
+
+FOE ybz3o19 ybzna20 ybz3o20
+A ybzna20 ybz22a20 ybz22a19
+
+FOE ybz3o20 ybzna21 ybz3o21
+A ybzna21 ybz22a21 ybz22a20
+
+FOE ybz3o21 ybzna22 ybz3o22
+A ybzna22 ybz22a22 ybz22a21
+
+FOE ybz3o22 ybzna23 ybz3o23
+A ybzna23 ybz22a23 ybz22a22
+
+FOE ybz3o23 ybzna24 ybz3o24
+A ybzna24 ybz22a24 ybz22a23
+
+FOE ybz3o24 ybzna25 ybz3o25
+A ybzna25 ybz22a25 ybz22a24
+
+FOE ybz3o25 ybzna26 ybz3o26
+A ybzna26 ybz22a26 ybz22a25
+
+FOE ybz3o26 ybzna27 ybz3o27
+A ybzna27 ybz22a27 ybz22a26
+
+FOE ybz3o27 ybzna28 ybz3o28
+A ybzna28 ybz22a28 ybz22a27
+
+FOE ybz3o28 ybzna29 ybz3o29
+A ybzna29 ybz22a29 ybz22a28
+
+FOE ybz3o29 ybzna30 ybz3o30
+A ybzna30 ybz22a30 ybz22a29
+
+FOE ybz3o30 ybzna31 ybz3o31
+A ybzna31 ybz22a31 ybz22a30
+
+FOE ybz3o31 ybzna32 ybz3
+A ybzna32 ybz22 ybz22a31
+
+
+
+FOE y2 y12 y3a
+A y12 y22a y1
+
+
+FOE y3a yna1i y3o1
+A yna1o y22a1 y22a
+
+FOE y3o1 yna2i y3o2
+A yna2o y22a2 y22a1
+
+FOE y3o2 yna3i y3o3
+A yna3o y22a3 y22a2
+
+FOE y3o3 yna4i y3o4
+A yna4o y22a4 y22a3
+
+FOE y3o4 yna5i y3o5
+A yna5o y22a5 y22a4
+
+FOE y3o5 yna6i y3o6
+A yna6o y22a6 y22a5
+
+FOE y3o6 yna7i y3o7
+A yna7o y22a7 y22a6
+
+FOE y3o7 yna8i y3o8
+A yna8o y22a8 y22a7
+
+FOE y3o8 yna9i y3o9
+A yna9o y22a9 y22a8
+
+FOE y3o9 yna10i y3o10
+A yna10o y22a10 y22a9
+
+FOE y3o10 yna11i y3o11
+A yna11o y22a11 y22a10
+
+FOE y3o11 yna12i y3o12
+A yna12o y22a12 y22a11
+
+FOE y3o12 yna13i y3o13
+A yna13o y22a13 y22a12
+
+FOE y3o13 yna14i y3o14
+A yna14o y22a14 y22a13
+
+FOE y3o14 yna15i y3o15
+A yna15o y22a15 y22a14
+
+FOE y3o15 yna16i y3o16
+A yna16o y22a16 y22a15
+
+FOE y3o16 yna17i y3o17
+A yna17o y22a17 y22a16
+
+FOE y3o17 yna18i y3o18
+A yna18o y22a18 y22a17
+
+FOE y3o18 yna19i y3o19
+A yna19o y22a19 y22a18
+
+FOE y3o19 yna20i y3o20
+A yna20o y22a20 y22a19
+
+FOE y3o20 yna21i y3o21
+A yna21o y22a21 y22a20
+
+FOE y3o21 yna22i y3o22
+A yna22o y22a22 y22a21
+
+FOE y3o22 yna23i y3o23
+A yna23o y22a23 y22a22
+
+FOE y3o23 yna24i y3o24
+A yna24o y22a24 y22a23
+
+FOE y3o24 yna25i y3o25
+A yna25o y22a25 y22a24
+
+FOE y3o25 yna26i y3o26
+A yna26o y22a26 y22a25
+
+FOE y3o26 yna27i y3o27
+A yna27o y22a27 y22a26
+
+FOE y3o27 yna28i y3o28
+A yna28o y22a28 y22a27
+
+FOE y3o28 yna29i y3o29
+A yna29o y22a29 y22a28
+
+FOE y3o29 yna30i y3o30
+A yna30o y22a30 y22a29
+
+FOE y3o30 yna31 y3o31
+A yna31 y22a31 y22a30
+
+FOE y3o31 yna32 y3out
+A yna32 y22in y22a31
+
+Arrow y22out yz22
+Arrow yz1 y22in
+
+Arrow yz3 y3in
+Arrow y3out yz2
+
+FOE y3in y13 y4
+FOE y4 y14 y5
+FOE y6 y16 y7
+FOE y8 y18 y9
+FOE y10 y20 y11
+FOE y24 y29 y15
+FOE y26 y30 y17
+
+
+A y23 y13 y22out
+A y41 y25 y40
+A y15 y5 y6
+A y29 y14 y25
+A y30 y16 y27
+A y17 y7 y8
+A y36 y1 y37
+
+FI y28 y42 y26
+FI y33 y32 y38
+FI y38 y39 y24
+FI y19 y31 y28
+FI y21 y35 y34
+FI y34 y37 y33
+
+L y40 y41 y23
+L y27 y42 y39
+L y18 y31 y32
+L y9 y19 y10
+L y20 y35 y36
+L y11 y21 y2
+
+
+FI ya1 yna1i ymix1
+FOE ymix1 yba9 yna1o
+
+FI ya2 yna2i ymix2
+FOE ymix2 yba11 yna2o
+
+FI ya3 yna3i ymix3
+FOE ymix3 yba27 yna3o
+
+FI ya4 yna4i ymix4
+FOE ymix4 ya28 yna4o
+
+FI ya5 yna5i ymix5
+FOE ymix5 ya29 yna5o
+
+FI ya6 yna6i ymix6
+FOE ymix6 ya30 yna6o
+
+FI ya7 yna7i ymix7
+FOE ymix7 ya13 yna7o
+
+FI ya8 yna8i ymix8
+FOE ymix8 ya6 yna8o
+
+FI ya9 yna9i ymix9
+FOE ymix9 ya8 yna9o
+
+FI ya10 yna10i ymix10
+FOE ymix10 ya10 yna10o
+
+FI ya11 yna11i ymix11
+FOE ymix11 ya1 yna11o
+
+FI ya12 yna12i ymix12
+FOE ymix12 ya26 yna12o
+
+FI ya13 yna13i ymix13
+FOE ymix13 ya2 yna13o
+
+FI ya14 yna14i ymix14
+FOE ymix14 ya25 yna14o
+
+FI ya15 yna15i ymix15
+FOE ymix15 ya5 yna15o
+
+FI ya16 yna16i ymix16
+FOE ymix16 ya18 yna16o
+
+FI ya17 yna17i ymix17
+FOE ymix17 ya4 yna17o
+
+FI ya18 yna18i ymix18
+FOE ymix18 ya14 yna18o
+
+FI ya19 yna19i ymix19
+FOE ymix19 ya24 yna19o
+
+FI ya20 yna20i ymix20
+FOE ymix20 ya16 yna20o
+
+FI ya21 yna21i ymix21
+FOE ymix21 ya15 yna21o
+
+FI ya22 yna22i ymix22
+FOE ymix22 ya19 yna22o
+
+FI ya23 yna23i ymix23
+FOE ymix23 ya21 yna23o
+
+FI ya24 yna24i ymix24
+FOE ymix24 ya17 yna24o
+
+FI ya25 yna25i ymix25
+FOE ymix25 ya20 yna25o
+
+FI ya26 yna26i ymix26
+FOE ymix26 ya3 yna26o
+
+FI ya27 yna27i ymix27
+FOE ymix27 ya23 yna27o
+
+FI ya28 yna28i ymix28
+FOE ymix28 ya12 yna28o
+
+FI ya29 yna29i ymix29
+FOE ymix29 ya22 yna29o
+
+FI ya30 yna30i ymix30
+FOE ymix30 ya7 yna30o
+
+
+
+
+
+FOE yz2 yz12 yz3a
+A yz12 yz22a yz1
+
+
+FOE yz3a yzna1 yz3o1
+A yzna1 yz22a1 yz22a
+
+FOE yz3o1 yzna2 yz3o2
+A yzna2 yz22a2 yz22a1
+
+FOE yz3o2 yzna3 yz3o3
+A yzna3 yz22a3 yz22a2
+
+FOE yz3o3 yzna4 yz3o4
+A yzna4 yz22a4 yz22a3
+
+FOE yz3o4 yzna5 yz3o5
+A yzna5 yz22a5 yz22a4
+
+FOE yz3o5 yzna6 yz3o6
+A yzna6 yz22a6 yz22a5
+
+FOE yz3o6 yzna7 yz3o7
+A yzna7 yz22a7 yz22a6
+
+FOE yz3o7 yzna8 yz3o8
+A yzna8 yz22a8 yz22a7
+
+FOE yz3o8 yzna9 yz3o9
+A yzna9 yz22a9 yz22a8
+
+FOE yz3o9 yzna10 yz3o10
+A yzna10 yz22a10 yz22a9
+
+FOE yz3o10 yzna11 yz3o11
+A yzna11 yz22a11 yz22a10
+
+FOE yz3o11 yzna12 yz3o12
+A yzna12 yz22a12 yz22a11
+
+FOE yz3o12 yzna13 yz3o13
+A yzna13 yz22a13 yz22a12
+
+FOE yz3o13 yzna14 yz3o14
+A yzna14 yz22a14 yz22a13
+
+FOE yz3o14 yzna15 yz3o15
+A yzna15 yz22a15 yz22a14
+
+FOE yz3o15 yzna16 yz3o16
+A yzna16 yz22a16 yz22a15
+
+FOE yz3o16 yzna17 yz3o17
+A yzna17 yz22a17 yz22a16
+
+FOE yz3o17 yzna18 yz3o18
+A yzna18 yz22a18 yz22a17
+
+FOE yz3o18 yzna19 yz3o19
+A yzna19 yz22a19 yz22a18
+
+FOE yz3o19 yzna20 yz3o20
+A yzna20 yz22a20 yz22a19
+
+FOE yz3o20 yzna21 yz3o21
+A yzna21 yz22a21 yz22a20
+
+FOE yz3o21 yzna22 yz3o22
+A yzna22 yz22a22 yz22a21
+
+FOE yz3o22 yzna23 yz3o23
+A yzna23 yz22a23 yz22a22
+
+FOE yz3o23 yzna24 yz3o24
+A yzna24 yz22a24 yz22a23
+
+FOE yz3o24 yzna25 yz3o25
+A yzna25 yz22a25 yz22a24
+
+FOE yz3o25 yzna26 yz3o26
+A yzna26 yz22a26 yz22a25
+
+FOE yz3o26 yzna27 yz3o27
+A yzna27 yz22a27 yz22a26
+
+FOE yz3o27 yzna28 yz3o28
+A yzna28 yz22a28 yz22a27
+
+FOE yz3o28 yzna29 yz3o29
+A yzna29 yz22a29 yz22a28
+
+FOE yz3o29 yzna30 yz3o30
+A yzna30 yz22a30 yz22a29
+
+FOE yz3o30 yzna31 yz3o31
+A yzna31 yz22a31 yz22a30
+
+FOE yz3o31 yzna32 yz3
+A yzna32 yz22 yz22a31
+
+
+
+
+
+
+
+
+
+
+
+FOE b2 b12 b3a
+A b12 b22a b1
+
+
+FOE b3a bna1i b3o1
+A bna1o b22a1 b22a
+
+FOE b3o1 bna2i b3o2
+A bna2o b22a2 b22a1
+
+FOE b3o2 bna3i b3o3
+A bna3o b22a3 b22a2
+
+FOE b3o3 bna4i b3o4
+A bna4o b22a4 b22a3
+
+FOE b3o4 bna5i b3o5
+A bna5o b22a5 b22a4
+
+FOE b3o5 bna6i b3o6
+A bna6o b22a6 b22a5
+
+FOE b3o6 bna7i b3o7
+A bna7o b22a7 b22a6
+
+FOE b3o7 bna8i b3o8
+A bna8o b22a8 b22a7
+
+FOE b3o8 bna9i b3o9
+A bna9o b22a9 b22a8
+
+FOE b3o9 bna10i b3o10
+A bna10o b22a10 b22a9
+
+FOE b3o10 bna11i b3o11
+A bna11o b22a11 b22a10
+
+FOE b3o11 bna12i b3o12
+A bna12o b22a12 b22a11
+
+FOE b3o12 bna13i b3o13
+A bna13o b22a13 b22a12
+
+FOE b3o13 bna14i b3o14
+A bna14o b22a14 b22a13
+
+FOE b3o14 bna15i b3o15
+A bna15o b22a15 b22a14
+
+FOE b3o15 bna16i b3o16
+A bna16o b22a16 b22a15
+
+FOE b3o16 bna17i b3o17
+A bna17o b22a17 b22a16
+
+FOE b3o17 bna18i b3o18
+A bna18o b22a18 b22a17
+
+FOE b3o18 bna19i b3o19
+A bna19o b22a19 b22a18
+
+FOE b3o19 bna20i b3o20
+A bna20o b22a20 b22a19
+
+FOE b3o20 bna21i b3o21
+A bna21o b22a21 b22a20
+
+FOE b3o21 bna22i b3o22
+A bna22o b22a22 b22a21
+
+FOE b3o22 bna23i b3o23
+A bna23o b22a23 b22a22
+
+FOE b3o23 bna24i b3o24
+A bna24o b22a24 b22a23
+
+FOE b3o24 bna25i b3o25
+A bna25o b22a25 b22a24
+
+FOE b3o25 bna26i b3o26
+A bna26o b22a26 b22a25
+
+FOE b3o26 bna27i b3o27
+A bna27o b22a27 b22a26
+
+FOE b3o27 bna28i b3o28
+A bna28o b22a28 b22a27
+
+FOE b3o28 bna29i b3o29
+A bna29o b22a29 b22a28
+
+FOE b3o29 bna30i b3o30
+A bna30o b22a30 b22a29
+
+FOE b3o30 bna31 b3o31
+A bna31 b22a31 b22a30
+
+FOE b3o31 bna32 b3out
+A bna32 b22in b22a31
+
+Arrow b22out bz22
+Arrow bz1 b22in
+
+Arrow bz3 b3in
+Arrow b3out bz2
+
+FOE b3in b13 yb4
+FOE b4 b14 yb5
+FOE b6 b16 b7
+FOE b8 b18 b9
+FOE b10 b20 b11
+FOE b24 b29 b15
+FOE b26 b30 b17
+
+
+A b23 b13 b22out
+A b41 b25 b40
+A b15 b5 b6
+A b29 b14 b25
+A b30 b16 b27
+A b17 b7 b8
+A b36 b1 b37
+
+FI b28 b42 b26
+FI b33 b32 b38
+FI b38 b39 b24
+FI b19 b31 b28
+FI b21 b35 b34
+FI b34 b37 b33
+
+L b40 b41 b23
+L b27 b42 b39
+L b18 b31 b32
+L b9 b19 b10
+L b20 b35 b36
+L b11 b21 b2
+
+
+FI ba1 bna1i bmix1
+FOE bmix1 a9 bna1o
+
+FI ba2 bna2i bmix2
+FOE bmix2 a11 bna2o
+
+FI ba3 bna3i bmix3
+FOE bmix3 a27 bna3o
+
+FI ba4 bna4i bmix4
+FOE bmix4 ba28 bna4o
+
+FI ba5 bna5i bmix5
+FOE bmix5 ba29 bna5o
+
+FI ba6 bna6i bmix6
+FOE bmix6 ba30 bna6o
+
+FI ba7 bna7i bmix7
+FOE bmix7 ba13 bna7o
+
+FI ba8 bna8i bmix8
+FOE bmix8 ba6 bna8o
+
+FI ba9 bna9i bmix9
+FOE bmix9 ba8 bna9o
+
+FI ba10 bna10i bmix10
+FOE bmix10 ba10 bna10o
+
+FI ba11 bna11i bmix11
+FOE bmix11 ba1 bna11o
+
+FI ba12 bna12i bmix12
+FOE bmix12 ba26 bna12o
+
+FI ba13 bna13i bmix13
+FOE bmix13 ba2 bna13o
+
+FI ba14 bna14i bmix14
+FOE bmix14 ba25 bna14o
+
+FI ba15 bna15i bmix15
+FOE bmix15 ba5 bna15o
+
+FI ba16 bna16i bmix16
+FOE bmix16 ba18 bna16o
+
+FI ba17 bna17i bmix17
+FOE bmix17 ba4 bna17o
+
+FI ba18 bna18i bmix18
+FOE bmix18 ba14 bna18o
+
+FI ba19 bna19i bmix19
+FOE bmix19 ba24 bna19o
+
+FI ba20 bna20i bmix20
+FOE bmix20 ba16 bna20o
+
+FI ba21 bna21i bmix21
+FOE bmix21 ba15 bna21o
+
+FI ba22 bna22i bmix22
+FOE bmix22 ba19 bna22o
+
+FI ba23 bna23i bmix23
+FOE bmix23 ba21 bna23o
+
+FI ba24 bna24i bmix24
+FOE bmix24 ba17 bna24o
+
+FI ba25 bna25i bmix25
+FOE bmix25 ba20 bna25o
+
+FI ba26 bna26i bmix26
+FOE bmix26 ba3 bna26o
+
+FI ba27 bna27i bmix27
+FOE bmix27 ba23 bna27o
+
+FI ba28 bna28i bmix28
+FOE bmix28 ba12 bna28o
+
+FI ba29 bna29i bmix29
+FOE bmix29 ba22 bna29o
+
+FI ba30 bna30i bmix30
+FOE bmix30 ba7 bna30o
+
+
+
+
+
+FOE bz2 bz12 bz3a
+A bz12 bz22a bz1
+
+
+FOE bz3a bzna1 bz3o1
+A bzna1 bz22a1 bz22a
+
+FOE bz3o1 bzna2 bz3o2
+A bzna2 bz22a2 bz22a1
+
+FOE bz3o2 bzna3 bz3o3
+A bzna3 bz22a3 bz22a2
+
+FOE bz3o3 bzna4 bz3o4
+A bzna4 bz22a4 bz22a3
+
+FOE bz3o4 bzna5 bz3o5
+A bzna5 bz22a5 bz22a4
+
+FOE bz3o5 bzna6 bz3o6
+A bzna6 bz22a6 bz22a5
+
+FOE bz3o6 bzna7 bz3o7
+A bzna7 bz22a7 bz22a6
+
+FOE bz3o7 bzna8 bz3o8
+A bzna8 bz22a8 bz22a7
+
+FOE bz3o8 bzna9 bz3o9
+A bzna9 bz22a9 bz22a8
+
+FOE bz3o9 bzna10 bz3o10
+A bzna10 bz22a10 bz22a9
+
+FOE bz3o10 bzna11 bz3o11
+A bzna11 bz22a11 bz22a10
+
+FOE bz3o11 bzna12 bz3o12
+A bzna12 bz22a12 bz22a11
+
+FOE bz3o12 bzna13 bz3o13
+A bzna13 bz22a13 bz22a12
+
+FOE bz3o13 bzna14 bz3o14
+A bzna14 bz22a14 bz22a13
+
+FOE bz3o14 bzna15 bz3o15
+A bzna15 bz22a15 bz22a14
+
+FOE bz3o15 bzna16 bz3o16
+A bzna16 bz22a16 bz22a15
+
+FOE bz3o16 bzna17 bz3o17
+A bzna17 bz22a17 bz22a16
+
+FOE bz3o17 bzna18 bz3o18
+A bzna18 bz22a18 bz22a17
+
+FOE bz3o18 bzna19 bz3o19
+A bzna19 bz22a19 bz22a18
+
+FOE bz3o19 bzna20 bz3o20
+A bzna20 bz22a20 bz22a19
+
+FOE bz3o20 bzna21 bz3o21
+A bzna21 bz22a21 bz22a20
+
+FOE bz3o21 bzna22 bz3o22
+A bzna22 bz22a22 bz22a21
+
+FOE bz3o22 bzna23 bz3o23
+A bzna23 bz22a23 bz22a22
+
+FOE bz3o23 bzna24 bz3o24
+A bzna24 bz22a24 bz22a23
+
+FOE bz3o24 bzna25 bz3o25
+A bzna25 bz22a25 bz22a24
+
+FOE bz3o25 bzna26 bz3o26
+A bzna26 bz22a26 bz22a25
+
+FOE bz3o26 bzna27 bz3o27
+A bzna27 bz22a27 bz22a26
+
+FOE bz3o27 bzna28 bz3o28
+A bzna28 bz22a28 bz22a27
+
+FOE bz3o28 bzna29 bz3o29
+A bzna29 bz22a29 bz22a28
+
+FOE bz3o29 bzna30 bz3o30
+A bzna30 bz22a30 bz22a29
+
+FOE bz3o30 bzna31 bz3o31
+A bzna31 bz22a31 bz22a30
+
+FOE bz3o31 bzna32 bz3
+A bzna32 bz22 bz22a31
+
+
+
+FOE 2 12 3a
+A 12 22a 1
+
+
+FOE 3a na1i 3o1
+A na1o 22a1 22a
+
+FOE 3o1 na2i 3o2
+A na2o 22a2 22a1
+
+FOE 3o2 na3i 3o3
+A na3o 22a3 22a2
+
+FOE 3o3 na4i 3o4
+A na4o 22a4 22a3
+
+FOE 3o4 na5i z3o5
+A na5o 22a5 22a4
+
+FOE 3o5 na6i 3o6
+A na6o 22a6 22a5
+
+FOE 3o6 na7i 3o7
+A na7o 22a7 22a6
+
+FOE 3o7 na8i 3o8
+A na8o 22a8 22a7
+
+FOE 3o8 na9i 3o9
+A na9o 22a9 22a8
+
+FOE 3o9 na10i z3o10
+A na10o 22a10 22a9
+
+FOE 3o10 na11i 3o11
+A na11o 22a11 22a10
+
+FOE 3o11 na12i 3o12
+A na12o 22a12 22a11
+
+FOE 3o12 na13i 3o13
+A na13o 22a13 22a12
+
+FOE 3o13 na14i z3o14
+A na14o 22a14 22a13
+
+FOE 3o14 na15i 3o15
+A na15o 22a15 22a14
+
+FOE 3o15 na16i 3o16
+A na16o 22a16 22a15
+
+FOE 3o16 na17i 3o17
+A na17o 22a17 22a16
+
+FOE 3o17 na18i 3o18
+A na18o 22a18 22a17
+
+FOE 3o18 na19i 3o19
+A na19o 22a19 22a18
+
+FOE 3o19 na20i 3o20
+A na20o 22a20 22a19
+
+FOE 3o20 na21i 3o21
+A na21o 22a21 22a20
+
+FOE 3o21 na22i 3o22
+A na22o 22a22 22a21
+
+FOE 3o22 na23i 3o23
+A na23o 22a23 22a22
+
+FOE 3o23 na24i 3o24
+A na24o 22a24 22a23
+
+FOE 3o24 na25i 3o25
+A na25o 22a25 22a24
+
+FOE 3o25 na26i 3o26
+A na26o 22a26 22a25
+
+FOE 3o26 na27i 3o27
+A na27o 22a27 22a26
+
+FOE 3o27 na28i 3o28
+A na28o 22a28 22a27
+
+FOE 3o28 na29i 3o29
+A na29o 22a29 22a28
+
+FOE 3o29 na30i 3o30
+A na30o 22a30 22a29
+
+FOE 3o30 na31 3o31
+A na31 22a31 22a30
+
+FOE 3o31 na32 3out
+A na32 22in 22a31
+
+Arrow 22out z22
+Arrow z1 22in
+
+Arrow z3 3in
+Arrow 3out z2
+
+FOE 3in 13 4
+FOE 4 14 5
+FOE 6 16 7
+FOE 8 18 9
+FOE 10 20 11
+FOE 24 29 15
+FOE 26 30 17
+
+
+A 23 13 22out
+A 41 25 40
+A 15 5 6
+A 29 14 25
+A 30 16 27
+A 17 7 8
+A 36 1 37
+
+FI 28 42 26
+FI 33 32 38
+FI 38 39 24
+FI 19 31 28
+FI 21 35 34
+FI 34 37 33
+
+L 40 41 23
+L 27 42 39
+L 18 31 32
+L 9 19 10
+L 20 35 36
+L 11 21 2
+
+
+FI a1 na1i mix1
+FOE mix1 ba9 na1o
+
+FI a2 na2i mix2
+FOE mix2 ba11 na2o
+
+FI a3 na3i mix3
+FOE mix3 ba27 na3o
+
+FI a4 na4i mix4
+FOE mix4 a28 na4o
+
+FI a5 na5i mix5
+FOE mix5 a29 na5o
+
+FI a6 na6i mix6
+FOE mix6 a30 na6o
+
+FI a7 na7i mix7
+FOE mix7 a13 na7o
+
+FI a8 na8i mix8
+FOE mix8 a6 na8o
+
+FI a9 na9i mix9
+FOE mix9 a8 na9o
+
+FI a10 na10i mix10
+FOE mix10 a10 na10o
+
+FI a11 na11i mix11
+FOE mix11 a1 na11o
+
+FI a12 na12i mix12
+FOE mix12 a26 na12o
+
+FI a13 na13i mix13
+FOE mix13 a2 na13o
+
+FI a14 na14i mix14
+FOE mix14 a25 na14o
+
+FI a15 na15i mix15
+FOE mix15 a5 na15o
+
+FI a16 na16i mix16
+FOE mix16 a18 na16o
+
+FI a17 na17i mix17
+FOE mix17 a4 na17o
+
+FI a18 na18i mix18
+FOE mix18 a14 na18o
+
+FI a19 na19i mix19
+FOE mix19 a24 na19o
+
+FI a20 na20i mix20
+FOE mix20 a16 na20o
+
+FI a21 na21i mix21
+FOE mix21 a15 na21o
+
+FI a22 na22i mix22
+FOE mix22 a19 na22o
+
+FI a23 na23i mix23
+FOE mix23 a21 na23o
+
+FI a24 na24i mix24
+FOE mix24 a17 na24o
+
+FI a25 na25i mix25
+FOE mix25 a20 na25o
+
+FI a26 na26i mix26
+FOE mix26 a3 na26o
+
+FI a27 na27i mix27
+FOE mix27 a23 na27o
+
+FI a28 na28i mix28
+FOE mix28 a12 na28o
+
+FI a29 na29i mix29
+FOE mix29 a22 na29o
+
+FI a30 na30i mix30
+FOE mix30 a7 na30o
+
+
+
+
+
+FOE z2 z12 z3a
+A z12 z22a z1
+
+
+FOE z3a zna1 z3o1
+A zna1 z22a1 z22a
+
+FOE z3o1 zna2 z3o2
+A zna2 z22a2 z22a1
+
+FOE z3o2 zna3 z3o3
+A zna3 z22a3 z22a2
+
+FOE z3o3 zna4 z3o4
+A zna4 z22a4 z22a3
+
+FOE z3o4 zna5 3o5
+A zna5 z22a5 z22a4
+
+FOE z3o5 zna6 z3o6
+A zna6 z22a6 z22a5
+
+FOE z3o6 zna7 z3o7
+A zna7 z22a7 z22a6
+
+FOE z3o7 zna8 z3o8
+A zna8 z22a8 z22a7
+
+FOE z3o8 zna9 z3o9
+A zna9 z22a9 z22a8
+
+FOE z3o9 zna10 3o10
+A zna10 z22a10 z22a9
+
+FOE z3o10 zna11 z3o11
+A zna11 z22a11 z22a10
+
+FOE z3o11 zna12 z3o12
+A zna12 z22a12 z22a11
+
+FOE z3o12 zna13 z3o13
+A zna13 z22a13 z22a12
+
+FOE z3o13 zna14 3o14
+A zna14 z22a14 z22a13
+
+FOE z3o14 zna15 z3o15
+A zna15 z22a15 z22a14
+
+FOE z3o15 zna16 z3o16
+A zna16 z22a16 z22a15
+
+FOE z3o16 zna17 z3o17
+A zna17 z22a17 z22a16
+
+FOE z3o17 zna18 z3o18
+A zna18 z22a18 z22a17
+
+FOE z3o18 zna19 z3o19
+A zna19 z22a19 z22a18
+
+FOE z3o19 zna20 z3o20
+A zna20 z22a20 z22a19
+
+FOE z3o20 zna21 z3o21
+A zna21 z22a21 z22a20
+
+FOE z3o21 zna22 z3o22
+A zna22 z22a22 z22a21
+
+FOE z3o22 zna23 z3o23
+A zna23 z22a23 z22a22
+
+FOE z3o23 zna24 z3o24
+A zna24 z22a24 z22a23
+
+FOE z3o24 zna25 z3o25
+A zna25 z22a25 z22a24
+
+FOE z3o25 zna26 z3o26
+A zna26 z22a26 z22a25
+
+FOE z3o26 zna27 z3o27
+A zna27 z22a27 z22a26
+
+FOE z3o27 zna28 z3o28
+A zna28 z22a28 z22a27
+
+FOE z3o28 zna29 z3o29
+A zna29 z22a29 z22a28
+
+FOE z3o29 zna30 z3o30
+A zna30 z22a30 z22a29
+
+FOE z3o30 zna31 z3o31
+A zna31 z22a31 z22a30
+
+FOE z3o31 zna32 z3
+A zna32 z22 pb12
+
+
+FOE p13 p6 p5
+FOE p14 p4 p3
+
+A p23 p12 p13
+FO p12p pb13 z22a31
+A pb13 pb12 p12
+L p24 p12p p14
+A p33 p22 p23
+L p34 p22 p24
+A p43 p32 p33
+FO p32p pb33 pb32
+A pb33 pb32 p32
+L p44 p32p p34
+A p1 p42 p43
+L p2 p42 p44
+
+A p23o p12o p1
+FO p12po pb13o pb12o
+A pb13o pb12o p12o
+L p24o p12po p2
+A p33o p22o p23o
+L p34o p22o p24o
+A p43o p32o p33o
+FO p32po pb33o pb32o
+A pb33o pb32o p32o
+L p44o p32po p34o
+A pzz13 p42o p43o
+L pzz14 p42o p44o
+
+
+A pzz23 pzz12 pzz13
+FO pzz12p pzzb13 pzzb12
+A pzzb13 pzzb12 pzz12
+L pzz24 pzz12p pzz14
+A pzz33 pzz22 pzz23
+L pzz34 pzz22 pzz24
+A pzz43 pzz32 pzz33
+FO pzz32p pzzb33 pzzb32
+A pzzb33 pzzb32 pzz32
+L pzz44 pzz32p pzz34
+A pzz1 pzz42 pzz43
+L pzz2 pzz42 pzz44
+
+A pzz23o pzz12o pzz1
+FO pzz12po pzzb13o pzzb12o
+A pzzb13o pzzb12o pzz12o
+L pzz24o pzz12po pzz2
+A pzz33o pzz22o pzz23o
+L pzz34o pzz22o pzz24o
+A pzz43o pzz32o pzz33o
+FO pzz32po pzzb33o pzzb32o
+A pzzb33o pzzb32o pzz32o
+L pzz44o pzz32po pzz34o
+A p1o pzz42o pzz43o
+L p2o pzz42o pzz44o
+
+
+Arrow p5 p1a
+Arrow p3 p2a
+
+Arrow p6 p1b
+Arrow p4 p2b
+
+
+FI p1a p1b p1o
+FI p2a p2b p2o
+

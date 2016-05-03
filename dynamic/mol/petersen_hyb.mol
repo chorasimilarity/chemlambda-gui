@@ -1,0 +1,44 @@
+L 5a 1a 6
+L 1a 2a 7a
+L 2a 3a 8a
+L 3a 4a 9a
+L 4a 5a 10a
+A 10a 15a 13b
+A 6a 11a 12a
+A 7a 13a 14a
+A 8a 12a 15a
+A 9a 14a 11a
+
+L 5b 1b 6c
+L 1b 2b 7b
+L 2b 3b 8b
+L 3b 4b 9b
+L 4b 5b 10b
+A 10b 15b 13c
+A 6b 11b 12b
+A 7b 13b 14b
+A 8b 12b 15b
+A 9b 14b 11b
+
+L 5c 1c 6d
+L 1c 2c 7c
+L 2c 3c 8c
+L 3c 4c 9c
+L 4c 5c 10c
+A 10c 15c 13
+A 6c 11c 12c
+A 7c 13c 14c
+A 8c 12c 15c
+A 9c 14c 11c
+
+L 5d 1d 6a
+L 1d 2d 7d
+L 2d 3d 8d
+L 3d 4d 9d
+L 4d 5d 10d
+A 10d 15d 13a
+A 6d 11d 12d
+A 7d 13d 14d
+A 8d 12d 15d
+A 9d 14d 11d
+

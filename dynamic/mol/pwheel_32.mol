@@ -1,0 +1,335 @@
+A fewp1 fewp1b fewp1a
+FOE fewp1a fewp1out fewp1b
+
+A fewp2 fewp2b fewp2a
+FOE fewp2a fewp2out fewp2b
+
+A fewp3 fewp3b fewp3a
+FOE fewp3a fewp3out fewp3b
+
+A fewp4 fewp4b fewp4a
+FOE fewp4a fewp4out fewp4b
+
+A fewp5 fewp5b fewp5a
+FOE fewp5a fewp5out fewp5b
+
+A fewp6 fewp6b fewp6a
+FOE fewp6a fewp6out fewp6b
+
+A fewp7 fewp7b fewp7a
+FOE fewp7a fewp7out fewp7b
+
+A fewp8 fewp8b fewp8a
+FOE fewp8a fewp8out fewp8b
+
+L a8 fewa1 fewp1
+L fewa1 fewa2 fewp2
+L fewa2 fewa3 fewp3
+L fewa3 fewa4 fewp4
+L fewa4 fewa5 fewp5
+L fewa5 fewa6 fewp6
+L fewa6 fewa7 fewp7
+L fewa7 fewa8 fewp8
+
+
+
+
+
+
+
+
+A fep1 fep1b fep1a
+FOE fep1a fep1out fep1b
+
+A fep2 fep2b fep2a
+FOE fep2a fep2out fep2b
+
+A fep3 fep3b fep3a
+FOE fep3a fep3out fep3b
+
+A fep4 fep4b fep4a
+FOE fep4a fep4out fep4b
+
+A fep5 fep5b fep5a
+FOE fep5a fep5out fep5b
+
+A fep6 fep6b fep6a
+FOE fep6a fep6out fep6b
+
+A fep7 fep7b fep7a
+FOE fep7a fep7out fep7b
+
+A fep8 fep8b fep8a
+FOE fep8a fep8out fep8b
+
+L fewa8 fea1 fep1
+L fea1 fea2 fep2
+L fea2 fea3 fep3
+L fea3 fea4 fep4
+L fea4 fea5 fep5
+L fea5 fea6 fep6
+L fea6 fea7 fep7
+L fea7 fea8 fep8
+
+
+
+
+
+
+
+
+
+
+
+
+
+A fwp1 fwp1b fwp1a
+FOE fwp1a fwp1out fwp1b
+
+A fwp2 fwp2b fwp2a
+FOE fwp2a fwp2out fwp2b
+
+A fwp3 fwp3b fwp3a
+FOE fwp3a fwp3out fwp3b
+
+A fwp4 fwp4b fwp4a
+FOE fwp4a fwp4out fwp4b
+
+A fwp5 fwp5b fwp5a
+FOE fwp5a fwp5out fwp5b
+
+A fwp6 fwp6b fwp6a
+FOE fwp6a fwp6out fwp6b
+
+A fwp7 fwp7b fwp7a
+FOE fwp7a fwp7out fwp7b
+
+A fwp8 fwp8b fwp8a
+FOE fwp8a fwp8out fwp8b
+
+L fea8 fwa1 fwp1
+L fwa1 fwa2 fwp2
+L fwa2 fwa3 fwp3
+L fwa3 fwa4 fwp4
+L fwa4 fwa5 fwp5
+L fwa5 fwa6 fwp6
+L fwa6 fwa7 fwp7
+L fwa7 fwa8 fwp8
+
+
+
+
+
+
+
+
+A fp1 fp1b fp1a
+FOE fp1a fp1out fp1b
+
+A fp2 fp2b fp2a
+FOE fp2a fp2out fp2b
+
+A fp3 fp3b fp3a
+FOE fp3a fp3out fp3b
+
+A fp4 fp4b fp4a
+FOE fp4a fp4out fp4b
+
+A fp5 fp5b fp5a
+FOE fp5a fp5out fp5b
+
+A fp6 fp6b fp6a
+FOE fp6a fp6out fp6b
+
+A fp7 fp7b fp7a
+FOE fp7a fp7out fp7b
+
+A fp8 fp8b fp8a
+FOE fp8a fp8out fp8b
+
+L fwa8 fa1 fp1
+L fa1 fa2 fp2
+L fa2 fa3 fp3
+L fa3 fa4 fp4
+L fa4 fa5 fp5
+L fa5 fa6 fp6
+L fa6 fa7 fp7
+L fa7 fa8 fp8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A ewp1 ewp1b ewp1a
+FOE ewp1a ewp1out ewp1b
+
+A ewp2 ewp2b ewp2a
+FOE ewp2a ewp2out ewp2b
+
+A ewp3 ewp3b ewp3a
+FOE ewp3a ewp3out ewp3b
+
+A ewp4 ewp4b ewp4a
+FOE ewp4a ewp4out ewp4b
+
+A ewp5 ewp5b ewp5a
+FOE ewp5a ewp5out ewp5b
+
+A ewp6 ewp6b ewp6a
+FOE ewp6a ewp6out ewp6b
+
+A ewp7 ewp7b ewp7a
+FOE ewp7a ewp7out ewp7b
+
+A ewp8 ewp8b ewp8a
+FOE ewp8a ewp8out ewp8b
+
+L fa8 ewa1 ewp1
+L ewa1 ewa2 ewp2
+L ewa2 ewa3 ewp3
+L ewa3 ewa4 ewp4
+L ewa4 ewa5 ewp5
+L ewa5 ewa6 ewp6
+L ewa6 ewa7 ewp7
+L ewa7 ewa8 ewp8
+
+
+
+
+
+
+
+
+A ep1 ep1b ep1a
+FOE ep1a ep1out ep1b
+
+A ep2 ep2b ep2a
+FOE ep2a ep2out ep2b
+
+A ep3 ep3b ep3a
+FOE ep3a ep3out ep3b
+
+A ep4 ep4b ep4a
+FOE ep4a ep4out ep4b
+
+A ep5 ep5b ep5a
+FOE ep5a ep5out ep5b
+
+A ep6 ep6b ep6a
+FOE ep6a ep6out ep6b
+
+A ep7 ep7b ep7a
+FOE ep7a ep7out ep7b
+
+A ep8 ep8b ep8a
+FOE ep8a ep8out ep8b
+
+L ewa8 ea1 ep1
+L ea1 ea2 ep2
+L ea2 ea3 ep3
+L ea3 ea4 ep4
+L ea4 ea5 ep5
+L ea5 ea6 ep6
+L ea6 ea7 ep7
+L ea7 ea8 ep8
+
+
+
+
+
+
+
+
+
+
+
+
+
+A wp1 wp1b wp1a
+FOE wp1a wp1out wp1b
+
+A wp2 wp2b wp2a
+FOE wp2a wp2out wp2b
+
+A wp3 wp3b wp3a
+FOE wp3a wp3out wp3b
+
+A wp4 wp4b wp4a
+FOE wp4a wp4out wp4b
+
+A wp5 wp5b wp5a
+FOE wp5a wp5out wp5b
+
+A wp6 wp6b wp6a
+FOE wp6a wp6out wp6b
+
+A wp7 wp7b wp7a
+FOE wp7a wp7out wp7b
+
+A wp8 wp8b wp8a
+FOE wp8a wp8out wp8b
+
+L ea8 wa1 wp1
+L wa1 wa2 wp2
+L wa2 wa3 wp3
+L wa3 wa4 wp4
+L wa4 wa5 wp5
+L wa5 wa6 wp6
+L wa6 wa7 wp7
+L wa7 wa8 wp8
+
+
+
+
+
+
+
+
+A p1 p1b p1a
+FOE p1a p1out p1b
+
+A p2 p2b p2a
+FOE p2a p2out p2b
+
+A p3 p3b p3a
+FOE p3a p3out p3b
+
+A p4 p4b p4a
+FOE p4a p4out p4b
+
+A p5 p5b p5a
+FOE p5a p5out p5b
+
+A p6 p6b p6a
+FOE p6a p6out p6b
+
+A p7 p7b p7a
+FOE p7a p7out p7b
+
+A p8 p8b p8a
+FOE p8a p8out p8b
+
+L wa8 a1 p1
+L a1 a2 p2
+L a2 a3 p3
+L a3 a4 p4
+L a4 a5 p5
+L a5 a6 p6
+L a6 a7 p7
+L a7 a8 p8

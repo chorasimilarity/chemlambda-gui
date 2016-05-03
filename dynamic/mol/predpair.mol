@@ -1,0 +1,64 @@
+A prd num out
+
+L 1 m prd
+A fst 2 1
+A 3 zz 2
+A m ss 3
+
+A pairzz c0zz 1zz
+A 1zz c1 zz
+
+L 1ss pss ss
+FO pss 2ss 3ss
+A 5ss 4ss 1ss
+A pairss 7ss 5ss
+A snd1ss 3ss 7ss
+A scc 6ss 4ss
+A snd2ss 2ss 6ss
+FO snd snd1ss snd2ss
+
+L 1fst pfst fst
+A pfst tru 1fst
+
+L 1tru ttru tru
+L ttru ftru 1tru
+T ftru
+
+FO pair pairzz pairss
+
+L 1pair fpair pair
+L 2pair spair 1pair
+L 3pair bpair 2pair
+A 4pair spair 3pair
+A bpair fpair 4pair
+
+L 1snd psnd snd
+A psnd c0snd 1snd
+
+FO c0 c0zz c0snd
+
+L 1c0 sc0 c0
+L 2c0 2c0 1c0
+T sc0
+
+L 1c1 sc1 c1
+L 2c1 zc1 1c1
+A sc1 zc1 2c1
+
+L 1scc nscc scc
+L 2scc sscc 1scc
+L 3scc zscc 2scc
+A 4scc 5scc 3scc
+FO sscc 4scc 6scc
+A 7scc zscc 5scc
+A nscc 6scc 7scc
+
+L 1num fnum num
+L 2num xnum 1num
+FO fnum m1num l1num
+FO l1num m2num l2num
+FO l2num m10num l10num
+A m1num r1num 2num
+A m2num r2num r1num
+A m10num r10num r2num
+A l10num xnum r10num

@@ -1,0 +1,221 @@
+FOE 10x 10xai 10xbi
+FI 10xb 10xa 0x
+
+FOE 10xai 10xaiai 10xaibi
+FI 10xaib 10xaia 10xa
+
+
+FOE 10xaiai 10xaiaa 10xaiab
+FI 10xaiab 10xaiaa 10xaia
+
+FOE 10xaibi 10xaiba 10xaibb
+FI 10xaibb 10xaiba 10xaib
+
+FOE 10xbi 10xbiai 10xbibi
+FI 10xbib 10xbia 10xb
+
+
+
+FOE 10xbiai 10xbiaa 10xbiab
+FI 10xbiab 10xbiaa 10xbia
+
+FOE 10xbibi 10xbiba 10xbibb
+FI 10xbibb 10xbiba 10xbib
+
+
+
+
+FOE 10y 10yai 10ybi
+FI 10yb 10ya 0y
+
+FOE 10yai 10yaiai 10yaibi
+FI 10yaib 10yaia 10ya
+
+
+FOE 10yaiai 10yaiaa 10yaiab
+FI 10yaiab 10yaiaa 10yaia
+
+FOE 10yaibi 10yaiba 10yaibb
+FI 10yaibb 10yaiba 10yaib
+
+
+
+FOE 10ybi 10ybiai 10ybibi
+FI 10ybib 10ybia 10yb
+
+
+FOE 10ybiai 10ybiaa 10ybiab
+FI 10ybiab 10ybiaa 10ybia
+
+FOE 10ybibi 10ybiba 10ybibb
+FI 10ybibb 10ybiba 10ybib
+
+
+
+
+FOE 1ky 1kyai 1kybi
+FI 1kyb 1kya 1y
+
+FOE 1kybi 1kybiai 1kybibi
+FI 1kybib 1kybia 1kyb
+
+
+FOE 1kybiai 1kybiaa 1kybiab
+FI 1kybiab 1kybiaa 1kybia
+
+FOE 1kybibi 1kybiba 1kybibb
+FI 1kybibb 1kybiba 1kybib
+
+
+
+
+
+FOE 1kyai 1kyaiai 1kyaibi
+FI 1kyaib 1kyaia 1kya
+
+
+FOE 1kyaiai 1kyaiaa 1kyaiab
+FI 1kyaiab 1kyaiaa 1kyaia
+
+FOE 1kyaibi 1kyaiba 1kyaibb
+FI 1kyaibb 1kyaiba 1kyaib
+
+
+A 9x 12ad 10x
+
+
+L 9y 12ad 1ky
+
+
+
+
+
+
+A 8x 22ad 9x
+
+
+L 8y 22ad 10y
+
+
+
+
+
+
+
+
+
+A 7x 12 8x
+
+
+
+
+L 7y 12 9y
+
+
+
+
+
+
+A 6x 22 7x
+
+
+L 6y 22 8y
+
+
+
+
+
+
+
+A 5x 32 6x
+
+
+
+L 5y 32 7y
+
+
+
+
+
+
+
+A 4x 42 5x
+
+L 4y 42 6y
+
+
+
+
+
+
+
+A 3x 12o 4x
+
+
+
+L 3y 12o 5y
+
+
+
+
+
+
+A 2x 22o 3x
+
+L 2y 22o 4y
+
+
+
+
+
+
+
+
+A 1x 32o 2x
+
+
+
+L 1y 32o 3y
+
+
+
+
+
+
+
+
+A 0x 42o 1x
+
+
+
+L 0y 42o 2y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

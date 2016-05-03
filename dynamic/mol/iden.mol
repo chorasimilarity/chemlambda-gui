@@ -1,0 +1,13 @@
+FO 0 a b
+
+FOE a a1 a2
+FOE a1 a3 a4
+FOE a3 a5 a6
+FOE a5 a7 a8
+FOE a7 a9 a10
+
+FOE b b1 b2
+FOE b1 b3 b4
+FOE b3 b5 b6
+FOE b5 b7 b8
+FOE b7 b9 b10

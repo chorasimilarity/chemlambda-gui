@@ -1,0 +1,147 @@
+FI dba3 dba1 dba15
+FOE dba15 dba4 db2
+L dba4 dba1 dba5
+L dba2 dba3 dba12
+FOE dba5 dba6 eba8
+FOE dba12 dba7 dba9
+A dba6 dba7 dba14
+A dba8 dba9 dba11
+FO dba10 dba17 dba20
+FO dba16 dba19 dba18
+FI dba17 dba19 dba16
+FI dba20 dba18 dba13
+A dba13 dba11 dba10
+
+
+FI db3 db1 db15
+FOE db15 db4 d2
+L db4 db1 db5
+L db2 db3 db12
+FOE db5 db6 db8
+FOE db12 db7 db9
+A db6 db7 db14
+A db8 db9 db11
+FO db10 db17 db20
+FO db16 db19 db18
+FI db17 db19 db16
+FI db20 db18 db13
+A db13 db11 db10
+
+FI d3 d1 d15
+FOE d15 d4 dba2
+L d4 d1 d5
+L d2 d3 d12
+FOE d5 d6 d8
+FOE d12 d7 e9
+A d6 d7 d14
+A d8 d9 d11
+FO d10 d17 d20
+FO d16 d19 d18
+FI d17 d19 d16
+FI d20 d18 d13
+A d13 d11 d10
+
+
+
+
+
+
+
+
+FI eba3 eba1 eba15
+FOE eba15 eba4 eb2
+L eba4 eba1 eba5
+L eba2 eba3 eba12
+FOE eba5 eba6 cba8
+FOE eba12 eba7 eba9
+A eba6 eba7 eba14
+A eba8 eba9 eba11
+FO eba10 eba17 eba20
+FO eba16 eba19 eba18
+FI eba17 eba19 eba16
+FI eba20 eba18 eba13
+A eba13 eba11 eba10
+
+
+FI eb3 eb1 eb15
+FOE eb15 eb4 e2
+L eb4 eb1 eb5
+L eb2 eb3 eb12
+FOE eb5 eb6 eb8
+FOE eb12 eb7 eb9
+A eb6 eb7 eb14
+A eb8 eb9 eb11
+FO eb10 eb17 eb20
+FO eb16 eb19 eb18
+FI eb17 eb19 eb16
+FI eb20 eb18 eb13
+A eb13 eb11 eb10
+
+FI e3 e1 e15
+FOE e15 e4 eba2
+L e4 e1 e5
+L e2 e3 e12
+FOE e5 e6 e8
+FOE e12 e7 c9
+A e6 e7 e14
+A e8 e9 e11
+FO e10 e17 e20
+FO e16 e19 e18
+FI e17 e19 e16
+FI e20 e18 e13
+A e13 e11 e10
+
+
+
+
+
+
+
+
+FI cba3 cba1 cba15
+FOE cba15 cba4 cb2
+L cba4 cba1 cba5
+L cba2 cba3 cba12
+FOE cba5 cba6 dba8
+FOE cba12 cba7 cba9
+A cba6 cba7 cba14
+A cba8 cba9 cba11
+FO cba10 cba17 cba20
+FO cba16 cba19 cba18
+FI cba17 cba19 cba16
+FI cba20 cba18 cba13
+A cba13 cba11 cba10
+
+
+FI cb3 cb1 cb15
+FOE cb15 cb4 c2
+L cb4 cb1 cb5
+L cb2 cb3 cb12
+FOE cb5 cb6 cb8
+FOE cb12 cb7 cb9
+A cb6 cb7 cb14
+A cb8 cb9 cb11
+FO cb10 cb17 cb20
+FO cb16 cb19 cb18
+FI cb17 cb19 cb16
+FI cb20 cb18 cb13
+A cb13 cb11 cb10
+
+FI c3 c1 c15
+FOE c15 c4 cba2
+L c4 c1 c5
+L c2 c3 c12
+FOE c5 c6 c8
+FOE c12 c7 d9
+A c6 c7 c14
+A c8 c9 c11
+FO c10 c17 c20
+FO c16 c19 c18
+FI c17 c19 c16
+FI c20 c18 c13
+A c13 c11 c10
+
+
+
+
+

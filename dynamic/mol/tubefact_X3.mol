@@ -1,0 +1,277 @@
+L wq0p wqlp wqoutsuc
+L wq1s wqlfs wq0p
+L wq0s wq1in wq1s
+L wq0i wq0in wq0s
+
+A wq1i wq0out wq0i
+A wq0f wq1out wq1i
+A wqlp wqlfs wq0f
+
+
+
+FO wq1in wqa b
+A wqsucc wqa wq1out
+A wqtms wqb wqc
+A wqc wq0in wq0out
+
+L wq1succ wqnsucc wqsucc
+L wq2succ wqssucc wq1succ
+L wq3succ wqzsucc wq2succ
+A wq4succ wq6succ wq3succ
+FO wqssucc wq4succ wq5succ
+A wq7succ wqzsucc wq6succ
+A wqnsucc wq5succ wq7succ
+
+
+L wq1tms wqmtms wqtms
+L wq2tms wqntms wq1tms
+L wq3tms wqftms wq2tms
+A wqmtms wq4tms wq3tms
+A wqntms wqftms wq4tms
+
+
+
+A wqinter wqoutunu wqout
+A wqnum wqoutsuc wqinter
+
+
+L wqp1s wqplfs wqoutunu
+L wqp0s wqp1in wqp1s
+L wqp0i wqp0in wqp0s
+A wqplfs wqp1in wqp1i
+A wqp1i wqp0in wqp0i
+
+
+A wqout wq1numb wqnumbers
+A wqnumbers wq1nums wq2numb
+A wq2numb wq2nums wqoutfinal
+
+
+
+L wq11nums wqf1nums wq1nums
+L wq21nums wqx1nums wq11nums
+A wqf1nums wqx1nums wq21nums
+
+
+L wq12nums wqf2nums wq2nums
+L wq22nums wqx2nums wq12nums
+A wqf2nums wqx2nums wq22nums
+
+
+L wq1num wqfnum wqnum
+L wq2num wqxnum wq1num
+
+FO wqfnum wqm1num wqle1num
+A wqm1num wqri1num wq2num
+
+FO wqle1num wqm2num wqle2num
+A wqm2num wqri2num wqri1num
+
+FO wqle2num wqm3num wqle4num
+A wqm3num wqri4num wqri2num
+
+
+FO wqle4num wqm5num wqm6num
+A wqm5num wqri5num wqri4num
+
+A wqm6num wqxnum wqri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L w0p wlp woutsuc
+L w1s wlfs w0p
+L w0s w1in w1s
+L w0i w0in w0s
+
+A w1i w0out w0i
+A w0f w1out w1i
+A wlp wlfs w0f
+
+
+
+FO w1in wa wqb
+A wsucc wa w1out
+A wtms wb wc
+A wc w0in w0out
+
+L w1succ wnsucc wsucc
+L w2succ wssucc w1succ
+L w3succ wzsucc w2succ
+A w4succ w6succ w3succ
+FO wssucc w4succ w5succ
+A w7succ wzsucc w6succ
+A wnsucc w5succ w7succ
+
+
+L w1tms wmtms wtms
+L w2tms wntms w1tms
+L w3tms wftms w2tms
+A wmtms w4tms w3tms
+A wntms wftms w4tms
+
+
+
+A winter woutunu wout
+A wnum woutsuc winter
+
+
+L wp1s wplfs woutunu
+L wp0s wp1in wp1s
+L wp0i wp0in wp0s
+A wplfs wp1in wp1i
+A wp1i wp0in wp0i
+
+
+A wout w1numb wnumbers
+A wnumbers w1nums w2numb
+A w2numb w2nums woutfinal
+
+
+
+L w11nums wf1nums w1nums
+L w21nums wx1nums w11nums
+A wf1nums wx1nums w21nums
+
+
+L w12nums wf2nums w2nums
+L w22nums wx2nums w12nums
+A wf2nums wx2nums w22nums
+
+
+L w1num wfnum wnum
+L w2num wxnum w1num
+
+FO wfnum wm1num wle1num
+A wm1num wri1num w2num
+
+FO wle1num wm2num wle2num
+A wm2num wri2num wri1num
+
+FO wle2num wm3num wle4num
+A wm3num wri4num wri2num
+
+
+FO wle4num wm5num wm6num
+A wm5num wri5num wri4num
+
+A wm6num wxnum wri5num
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L 0p lp outsuc
+L 1s lfs 0p
+L 0s 1in 1s
+L 0i 0in 0s
+
+A 1i 0out 0i
+A 0f 1out 1i
+A lp lfs 0f
+
+
+
+FO 1in a wb
+A succ a 1out
+A tms b c
+A c 0in 0out
+
+L 1succ nsucc succ
+L 2succ ssucc 1succ
+L 3succ zsucc 2succ
+A 4succ 6succ 3succ
+FO ssucc 4succ 5succ
+A 7succ zsucc 6succ
+A nsucc 5succ 7succ
+
+
+L 1tms mtms tms
+L 2tms ntms 1tms
+L 3tms ftms 2tms
+A mtms 4tms 3tms
+A ntms ftms 4tms
+
+
+
+A inter outunu out
+A num outsuc inter
+
+
+L p1s plfs outunu
+L p0s p1in p1s
+L p0i p0in p0s
+A plfs p1in p1i
+A p1i p0in p0i
+
+
+A out 1numb numbers
+A numbers 1nums 2numb
+A 2numb 2nums outfinal
+
+
+
+L 11nums f1nums 1nums
+L 21nums x1nums 11nums
+A f1nums x1nums 21nums
+
+
+L 12nums f2nums 2nums
+L 22nums x2nums 12nums
+A f2nums x2nums 22nums
+
+
+L 1num fnum num
+L 2num xnum 1num
+
+FO fnum m1num le1num
+A m1num ri1num 2num
+
+FO le1num m2num le2num
+A m2num ri2num ri1num
+
+FO le2num m3num le4num
+A m3num ri4num ri2num
+
+
+FO le4num m5num m6num
+A m5num ri5num ri4num
+
+A m6num xnum ri5num
+

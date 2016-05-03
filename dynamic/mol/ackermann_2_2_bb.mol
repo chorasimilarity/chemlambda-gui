@@ -1,0 +1,50 @@
+A 1 cb o
+A 2 ca 1
+L 3 a 2
+L 4 b 3
+A 5 b 4
+A 6 sp1 5
+A a f 6
+L bb6 bb1 sp1
+B0 bb1 bb2
+B0 bb2 bb3
+BA bb3 bb4
+B0 bb4 bb5
+B0 bb5 bb6
+
+
+
+L 1f Af f
+L 2f bf 1f
+A 3f cone 2f
+A 4f Af 3f
+A sp2 bf 4f
+L 1s2 ns2 sp2
+L 2s2 ss2 1s2
+L 3s2 zs2 2s2
+A 4s2 5s2 3s2
+A 6s2 zs2 5s2
+A ns2 7s2 6s2
+FO ss2 4s2 7s2
+
+L bcb6 bcb1 cone
+B0 bcb1 bcb2
+B0 bcb2 bcb3
+BA bcb3 bcb4
+B0 bcb4 bcb5
+B0 bcb5 bcb6
+
+
+
+L 1ca fca ca
+L 2ca xca 1ca
+A 3ca 5ca 2ca
+FO fca 3ca 4ca
+A 6ca 8ca 5ca
+FO 4ca 6ca 7ca
+A 7ca xca 8ca
+L 1cb fcb cb
+L 2cb xcb 1cb
+A 3cb 4cb 2cb
+A 5cb xcb 4cb
+FO fcb 3cb 5cb
