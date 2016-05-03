@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>M. Buliga, Molecular computers</title>
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/d3.min.js" charset="utf-8"></script>
+    <script src="http://chorasimilarity.github.io/chemlambda-gui/dynamic/jquery.min.js"></script>
     
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -82,17 +82,17 @@
    <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
     
- <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > Individual molecules  encode data and programs in the chemical composition. Computations are not encoded in the numbers of species in a soup (multi set) of more or less arbitrarily chosen molecules.This is different than models of computation like the Chemical abstract machine, or those based on Chemical reaction networks.  
- </ul>   
+ 
     
 <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > In brief, molecular computer is  a model of computation based on individual molecules in a random environment. The model proposed here satisfies the following requirements: (a) is Turing universal (thus in principle to allow to compute anything), (b) based on a minimal set of chemical reactions which happen randomly.  </ul>   
+    margin:35px 0 36px;      > The notion of a molecular computer presented here is  a model of computation based on individual molecules in a random environment. The model proposed here satisfies the following requirements: (a) is Turing universal (thus in principle to allow to compute anything), (b) based on a minimal set of well chosen chemical reactions which happen randomly.  </ul>   
     
   <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
     
-    
+<ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > Individual molecules  encode data and programs in the chemical composition. Computations are not encoded in the numbers of species in a soup (multi set) of more or less arbitrarily chosen molecules.This is different than models of computation like the chemical abstract machine, or those based on chemical reaction networks.  
+ </ul>   
    
     
     
@@ -110,14 +110,14 @@
     
  <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >     <li   padding:30px 0 36px 35px;
-    margin:35px 0 36px;   >  <h3>step 1: virtual molecular computers are possible.</h3> Based on a made up, very simple artificial chemistry called <a href="http://chorasimilarity.github.io/chemlambda-gui/index.html">chemlambda</a>, this  is proved theoretically [1], [2], [3]. It is shown that chemlambda is Turing universal, that we can use chemlambda molecules to encode lambda calculus terms (but there exist many other molecules which do not encode lambda terms), that the reduction rules of the pure, untyped, lambda beta calculus can be realized by the chemlambda graph rewrites (but the graph rewrites apply as well to molecules which don't represent lambda terms and they work in a more general sense than only as representations of untyped lambda beta reduction rules). </ul>
+    margin:35px 0 36px;   >  <h3>step 1: virtual molecular computers are possible.</h3> Based on a made up, very simple artificial chemistry called <a href="http://chorasimilarity.github.io/chemlambda-gui/index.html">chemlambda</a>, this  is proved theoretically [1], [2], [3]. It is shown that chemlambda is Turing universal, that we can use some of the chemlambda molecules to encode untyped lambda beta calculus terms (but there exist many other molecules which do not encode lambda terms), that the reduction rules of the pure, untyped, lambda beta calculus can be realized by the chemlambda graph rewrites (but the graph rewrites apply as well to molecules which don't represent lambda terms and they work in a more general sense than only as representations of untyped lambda beta reduction rules). </ul>
     
     
  <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      >     Chemlambda works with molecules which are graphs made by elementary constituents ("atoms") and links ("bonds") which enter in chemical reactions modeled as local graph rewrites and interpreted as chemical reactions of the molecule with a set of invisible "enzymes", one enzyme per type of graph rewrite. Moreover, chemlambda does not use variables and does rely on evaluations of terms. Instead of passing variables and evaluations, chemlambda uses a different strategy which is akin to <a href="http://en.wikipedia.org/wiki/Signal_transduction">signal transduction</a></li>.  </ul>
+    margin:35px 0 36px;      >     Chemlambda works with molecules which are graphs made by elementary constituents ("atoms") and links ("bonds") which enter in chemical reactions seen as local graph rewrites and interpreted as chemical reactions of the molecule with a set of invisible "enzymes", one enzyme per type of graph rewrite. Moreover, chemlambda does not use variables and does not rely on evaluations of terms. Instead of passing variables and evaluations, chemlambda uses a different strategy which is akin to <a href="http://en.wikipedia.org/wiki/Signal_transduction">signal transduction</a></li>.  </ul>
     
     <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      >     To obtain a full model of computation one needs an algorithm concerning the application of graph rewrites. The algorithm is random and uses the fact that the graph rewrites are local (i.e. they involve only patterns with a small number of atoms and bonds, without any concern about the global structure of the graph-molecule). </ul>
+    margin:35px 0 36px;      >     To obtain a full model of computation one needs an algorithm concerning the application of graph rewrites. The algorithm is random and uses the fact that the graph rewrites are local (i.e. they involve only patterns with a small number of atoms and bonds, without any concern about the global structure of the graph-molecule). Chemlambda is therefore an asynchronous graph-rewriting automaton.</ul>
     
    <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
@@ -127,12 +127,12 @@
 
    <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >     There is a <a href="https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic">github repository</a> where this model is implemented and various  <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/demos.html"><span style="color: #6ecae5;">demos</span></a> are available, which show some features of the model: 
-    <ul><li>classical examples of computation  like the  the <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/random_ackermann_2_2.html">Ackermann function</a>,  or the <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/lisfact_2_mod.html">factorial</a></li> 
-    <li> demos about <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/A_L_eggshell.html">self-reproduction and more generally artificial life forms</a></li> 
-    <li>the building of <a href="http://chorasimilarity.github.io/chemlambda-gui/dynamic/newfact_zero.html">amazing structures</a> at a molecular level.  </li></ul></ul>
+    <ul><li>classical examples of  lambda calculus computations</li> 
+    <li> demos  about  artificial life forms called "chemlambda quines"</a></li> 
+    </ul></ul>
   
   <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > (How to use the repository). Clone the repository and run this script with the command: bash moving_random_metabo.sh . The sh script gives you the list of initial molecules (in the form file.mol) and waits for you to type the name of one of the mol files. Then it executes the main program and produces the file.html, which can be seen in the browser. Look at the header of file.html to comment (or uncomment) the pieces which call for jquery and d3 js scripts, depending wether you have them locally or not. Open with a text editor the main script  check_1_mov2_rand_metabo.awk and modify the parameters from the beginning (there are short explanations about their meaning).</ul>
+    margin:35px 0 36px;      > (How to use the repository). The active branch of the repository is available at <a href="https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic"><span style="color: #6ecae5;">this link</span></a>. Follow the instruction from  the <a href="https://github.com/chorasimilarity/chemlambda-gui/blob/gh-pages/dynamic/README.md"><span style="color: #6ecae5;">README.md</span></a>. </ul>
 
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
@@ -155,7 +155,7 @@
 
 
    <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > As an example, this animation is obtained by running bash moving_random_metabo.sh, with the choice sheet_copy.mol.  It is an example of a computation which is not about lambda calculus, but nevertheless it leads to a structure which is programmed in the initial simpler one. You can move the atoms by click and drag.</ul>
+    margin:35px 0 36px;      > As an example, this javascript animation is the output of the computation which uses the molecule  sheet_copy.mol. It is produced by the scripts from the repository and you use the browser to see it.  It's an example of a computation which is not about lambda calculus, but nevertheless it leads to a structure which is programmed in the initial simpler one. You can move the atoms by click and drag.</ul>
 
   <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      > &nbsp; </ul>
@@ -204,7 +204,7 @@
               <li   padding:30px 0 36px 35px;
      margin:35px 0 36px;   >  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> left.out</span> <span style="color: #6ecae5;"> right.out</span> , has no correspondent in lambda calculus, name means "extra fan-out". </li>
      <li   padding:30px 0 36px 35px;
-     margin:35px 0 36px;   >  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> middle.out</span> , has no correspondent in lambda calculus, is a simple solution for application of some of the moves. Is inspired from Louis Kauffman proposal to use commutative polynomials for the graphical elements (where the variables of the polynomials play the roles of the ports). Louis used on July 3rd 2014  the Mathematica symbolic reduction  for polynomial commutative algebra in order to reduce the fixed point combinator in graphic lambda calculus, thus making the first visualisation. </li>
+     margin:35px 0 36px;   >  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> middle.out</span> , has no correspondent in lambda calculus, is a simple solution for application of some of the moves. Is inspired from Louis Kauffman proposal to use commutative polynomials for the graphical elements (where the variables of the polynomials play the roles of the ports). Louis Kauffman used on July 3rd 2014  the Mathematica symbolic reduction  for polynomial commutative algebra in order to reduce the fixed point combinator in graphic lambda calculus, thus making the first visualisation. </li>
     <li   padding:30px 0 36px 35px;
      margin:35px 0 36px;   >  <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> middle.in</span> , called "termination" node, is used  in relation to lambda calculus in place of variables x appearing in terms Lx.A, where A does not contain x. </li>
       <li   padding:30px 0 36px 35px;
