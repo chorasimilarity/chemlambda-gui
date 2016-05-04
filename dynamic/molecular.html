@@ -188,11 +188,14 @@
  The colour of the main atoms comes  from the type of the atom (A,L, FI, ...) and the colour of the ports encode the type "in" or "out". </ul>
 
 <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      >  Therefore there is a one-to-one correspondence between the mol notation and what you see. Everything in the visualizations  is coded by color, radius of the circle and, for links, there are inner (thicker) and outer links. 
+    margin:35px 0 36px;      >  Therefore there is a one-to-one correspondence between the mol notation and what you see. Everything in the visualizations  is coded by color, radius of the circle and, for links, there are inner (thicker) and outer links. For reading convenience I shall use (a given pallete of) these colours in the explanations.    </ul>   
+
+ <ul     padding:30px 0 36px 35px;
+    margin:35px 0 36px;      > 
     The colours are:  "<span style="color: #f6cf84;"> in_col</span>", "<span style="color: #6ecae5;"> out_col</span>", "<span style="color: #be66dd;"> red_col</span>" (yes, I know), "<span style="color: #ade747;"> green_col</span>",  "<span style="color: #f0bf26;"> arrow_col</span>" and "<span style="color: #222;"> term_col</span>".  The colour palette does not really matter, of course, for the chemistry (see <a href="http://imar.ro/~mbuliga/chemlambda_story.html">this older introduction about the molecules</a> with a different palette).   </ul>
 
 <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > Here is the list of nodes with the types of their ports, and the way they are written in the mol file.  The colours are as in the visualisations convention. The mol file notation does not need colours, these are only for visualization purposes.
+    margin:35px 0 36px;      > Here is the list of nodes with the types of their ports, and the way they are written in the mol file.  The colours are as in the visualisations convention. Recall that the mol file notation does not need colours, these are only for visualization purposes.
     <li   padding:30px 0 36px 35px;
     margin:35px 0 36px;   >  <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> left.out</span> <span style="color: #6ecae5;"> right.out</span> , is inspired from the lambda abstraction. </li>
      <li   padding:30px 0 36px 35px;
@@ -202,9 +205,9 @@
          <li   padding:30px 0 36px 35px;
      margin:35px 0 36px;   >  <span style="color: #ade747;"> FO </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> left.out</span> <span style="color: #6ecae5;"> right.out</span> , has no correspondent in lambda calculus, name means "fan-out". </li>
               <li   padding:30px 0 36px 35px;
-     margin:35px 0 36px;   >  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> left.out</span> <span style="color: #6ecae5;"> right.out</span> , has no correspondent in lambda calculus, name means "extra fan-out". </li>
+     margin:35px 0 36px;   >  <span style="color: #f6cf84;"> FOE </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> left.out</span> <span style="color: #6ecae5;"> right.out</span> , has no correspondent in lambda calculus, name means "extra fan-out".  Mind that in chamlambda there are two kinds of fan-out nodes!</li>
      <li   padding:30px 0 36px 35px;
-     margin:35px 0 36px;   >  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> middle.out</span> , has no correspondent in lambda calculus, is a simple solution for application of some of the moves. Is inspired from Louis Kauffman proposal to use commutative polynomials for the graphical elements (where the variables of the polynomials play the roles of the ports). Louis Kauffman used on July 3rd 2014  the Mathematica symbolic reduction  for polynomial commutative algebra in order to reduce the fixed point combinator in graphic lambda calculus, thus making the first visualisation. </li>
+     margin:35px 0 36px;   >  <span style="color: #f0bf26;"> Arrow </span>  <span style="color: #f6cf84;"> middle.in</span> <span style="color: #6ecae5;"> middle.out</span> , has no correspondent in lambda calculus, is a simple solution for application of some of the moves. Is inspired from Louis Kauffman proposal to use commutative polynomials for the graphical elements (where the variables of the polynomials play the roles of the ports). Louis Kauffman used on July 3rd 2014  the Mathematica symbolic reduction  for polynomial commutative algebra in order to try to reduce the fixed point combinator in graphic lambda calculus, thus making the first attempt of a visualisation program for chemlambda. </li>
     <li   padding:30px 0 36px 35px;
      margin:35px 0 36px;   >  <span style="color: #222;"> T </span>  <span style="color: #f6cf84;"> middle.in</span> , called "termination" node, is used  in relation to lambda calculus in place of variables x appearing in terms Lx.A, where A does not contain x. </li>
       <li   padding:30px 0 36px 35px;
@@ -216,7 +219,7 @@
      </ul>
 
 <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      > Remark that the colours and the relative size of the circles are enough to encode all the information. For example the colours of nodes and ports allows to discern which is <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> and which is <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 2 </span>  <span style="color: #6ecae5;"> 3 </span>.  </ul>
+    margin:35px 0 36px;      > Remark that the colours and the relative size of the circles are enough to encode all the information needed in the formalism. For example the colours of nodes and ports allows to discern which is <span style="color: #be66dd;"> L </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #6ecae5;"> 2 </span> <span style="color: #6ecae5;"> 3 </span> and which is <span style="color: #be66dd;"> FI </span>  <span style="color: #f6cf84;"> 1 </span> <span style="color: #f6cf84;"> 2 </span>  <span style="color: #6ecae5;"> 3 </span>.  </ul>
 
 
 <ul     padding:30px 0 36px 35px;
@@ -514,21 +517,21 @@
 <li   padding:30px 0 36px 35px;
     margin:35px 0 36px;   > geometrical (the result of the algorithm is the same regardless of the internal numbering, ordering or naming of the variables from the input)</li>
 <li   padding:30px 0 36px 35px;
-    margin:35px 0 36px;   > if it is distributed, then it has to be asynchronous (because of locality in time as well) and decentralized, in the sense that the "local" constraint applies also in space, so the algorithm running in one place has to be able to solve moves and conflicts on its piece of graph based on an a priori bounded number N of graph nodes, links and messages exchanged with other places. </li></ul>
+    margin:35px 0 36px;   >  it has to be asynchronous (because of locality in time as well) and decentralized, in the sense that the "local" constraint applies also in space, so the algorithm running in one place has to be able to solve moves and conflicts on its piece of graph based on an a priori bounded number N of graph nodes, links and messages exchanged with other places. </li></ul>
 
 
 <ul     padding:30px 0 36px 35px;
-    margin:35px 0 36px;      >In the demos there is used the most simple algorithm, called for this reason the "stupid" one, in order to show that even so the results are interesting. This algorithm may turn out to be less stupid than I thought, in particular because it may lead to molecular computers [7]. </ul>
+    margin:35px 0 36px;      >In the demos there is used the most simple algorithm, called for this reason the "stupid" one, in order to show that even so the results are interesting. This algorithm may turn out to be less stupid than I thought, in particular because it led to this proposal of a  molecular computer. </ul>
     
     
 <ul     padding:30px 0 36px 35px;
     margin:35px 0 36px;      >The algorithm takes as input an initial graph, then there is a cycle where, at each step (deterministically or randomly):
 <li   padding:30px 0 36px 35px;
-    margin:35px 0 36px;   > are identified the pieces of graph where moves apply</li>
+    margin:35px 0 36px;   > are identified the pieces of graph where the moves apply</li>
 <li   padding:30px 0 36px 35px;
-    margin:35px 0 36px;   > according to a priority of moves (i.e. in this case first identify the patterns for the move FO-FOE, then block the nodes which involve that move, then look further for the other moves DIST which involve free nodes, then block the nodes involved, then look for the BETA and FAN-IN moves, block the nodes, then look for PRUNING moves, block the nodes)</li>
+    margin:35px 0 36px;   > in the deterministic version, according to a priority of moves (i.e. in this case first identify the patterns for the move FO-FOE, then block the nodes which involve that move, then look further for the other moves DIST which involve free nodes, then block the nodes involved, then look for the BETA and FAN-IN moves, block the nodes, then look for PRUNING moves, block the nodes)</li>
 <li    padding:30px 0 36px 35px;
-    margin:35px 0 36px;   > in the random case each move has an asociated random coin flip, with an weight. the coin is flipped for each proposed move and the move is applied or not, accordingly,</li>
+    margin:35px 0 36px;   > in the random version each move has an asociated random coin flip, with an weight. The coin is flipped for each proposed move and the move is applied or not, accordingly,</li>
 <li    padding:30px 0 36px 35px;
     margin:35px 0 36px;   > moves are applied</li>
 <li   padding:30px 0 36px 35px;
