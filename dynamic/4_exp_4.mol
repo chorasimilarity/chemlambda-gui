@@ -1,0 +1,36 @@
+L a1num afnum anum
+L a2num axnum a1num
+
+FO afnum am1num ale2num
+A am1num ari1num a2num
+
+FO ale2num am3num ale4num
+A am3num ari4num ari1num
+
+
+FO ale4num am5num am6num
+A am5num ari5num ari4num
+
+A am6num axnum ari5num
+
+
+
+
+
+L 1num fnum num
+L 2num xnum 1num
+
+FO fnum m1num le2num
+A m1num ri1num 2num
+
+
+FO le2num m3num le4num
+A m3num ri4num ri1num
+
+
+FO le4num m5num m6num
+A m5num ri5num ri4num
+
+A m6num xnum ri5num
+
+A num anum out
