@@ -24,33 +24,33 @@ BEGIN {
 
 ######### number of cycles
 
-      cycounter=1000;
+      cycounter=5000;
       
 ######## time between graph updates, in the visualisation html file. It appear that firefox can hardly support time_val<=25, but safari and chromium can deal with time_val=5. 
 
-     time_val=15;      
+     time_val=4;      
       
 ######## params for the weight of moves    (if you want to eliminate randomness then take everything = 0, the usual choice is to take all=1)
 
-    wei_L3T=1;
+    wei_L3T=0;
     
-    wei_A3TFI3T=1;
+    wei_A3TFI3T=0;
     
-    wei_FO3T=1;
+    wei_FO3T=0;
     
-    wei_FO2TFOET=1;
+    wei_FO2TFOET=0;
 
-    wei_FOFOE=1;
+    wei_FOFOE=0;
     
-    wei_LFOELFO=1;
+    wei_LFOELFO=0;
     
-    wei_AFOAFOE=1;
+    wei_AFOAFOE=0;
 
-    wei_FIFO=1;
+    wei_FIFO=0;
 
-    wei_FIFOE=1;
+    wei_FIFOE=0;
 
-    wei_AL=1;      
+    wei_AL=0;      
     
     
     
@@ -73,7 +73,7 @@ BEGIN {
 #######  colours and radii. Attention, never choose left=right, it messes with some moves definitions. If you want to give ports the same mportance as nodes then choose something like main_const=4 (for the main nodes)  left=4 (for left ports) and right=3, middle=3 (for the other ports)
 
     
-      main_const=3;
+      main_const=4;
 
       left=2;
 
@@ -997,6 +997,16 @@ counter=0;
 growfact=2;
 diefact=2;
 
+ con_tot=0;
+
+######################
+
+   rororo="wei_L3T=" wei_L3T ",  wei_A3TFI3T=" wei_A3TFI3T ",  wei_FO3T=" wei_FO3T ",  wei_FO2TFOET=" wei_FO2TFOET ",   wei_FOFOE=" wei_FOFOE ",  wei_LFOELFO=" wei_LFOELFO ",  wei_AFOAFOE=" wei_AFOAFOE ",  wei_FIFO=" wei_FIFO ",  wei_FIFOE=" wei_FIFOE ",  wei_AL=" wei_AL "\n \n";      
+
+  printf(rororo) > "sta.txt";
+
+#######################
+
 
 while (counter<cycounter) {
 
@@ -1009,6 +1019,33 @@ coact=0;
 growcont=0;
 diecont=0;
  
+ 
+#######################
+###
+###  counters for rewrites
+
+    con_L3T=0;
+    
+    con_A3TFI3T=0;
+    
+    con_FO3T=0;
+    
+    con_FO2TFOET=0;
+
+    con_FOFOE=0;
+    
+    con_LFOELFO=0;
+    
+    con_AFOAFOE=0;
+
+    con_FIFO=0;
+
+    con_FIFOE=0;
+
+    con_AL=0;
+    
+    con_total=0;      
+
 
 ###############
 
@@ -1052,13 +1089,13 @@ diecont=0;
  
 #   parame=0;
     
-    if ( parame==0) {
+    if ( parame==0) {  
 
     diecont++;
 
     if (bubu=="12") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
     
-
+    con_L3T++; 
 
       junu=jmax+1;
 
@@ -1179,11 +1216,11 @@ diecont=0;
   
  parame=int(wei_A3TFI3T*diefact * rand());
     
-    if ( parame==0) {
+    if ( parame==0) {  
 
    diecont++;
 
-    if (bubu=="22") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
+    if (bubu=="22") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {  con_A3TFI3T++;
     
 sourcetype=all_node_atom[sourc];
 
@@ -1305,7 +1342,7 @@ sourcetype=all_node_atom[sourc];
 
 #    parame=1;
     
-    if ( parame==0) {
+    if ( parame==0) { 
 
     diecont++;
 
@@ -1314,7 +1351,7 @@ sourcetype=all_node_atom[sourc];
 
 
  
-
+        con_FO3T++;
 
 
        node_block[targe]++;
@@ -1448,13 +1485,13 @@ sourcetype=all_node_atom[sourc];
     
 #    if (sourc=="FOE") {parame=1;}
     
-    if ( parame==0) {
+    if ( parame==0) {  
 
     diecont++;
 
     if (bubu=="42") {  if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
     
-
+    con_FO2TFOET++;
 
 
        node_block[targe]++;
@@ -1706,7 +1743,7 @@ sourcetype=all_node_atom[sourc];
     
        parame=int(wei_FOFOE*growfact * rand());
     
-    if ( parame==0) {
+    if ( parame==0) { 
     
     growcont++;
     
@@ -1723,7 +1760,7 @@ sourcetype=all_node_atom[sourc];
     
     bubu=all_node_atom[sour] all_node_atom[targ];
     
-    if ( bubu=="33" ) { 
+    if ( bubu=="33" ) {  con_FOFOE++;
 
        node_block[targe]++;
        node_block[sourc]++;
@@ -2112,11 +2149,11 @@ sourcetype=all_node_atom[sourc];
   
    parame=int(wei_LFOELFO*growfact * rand());
     
-    if ( parame==0) {
+    if ( parame==0) {  
 
   growcont++;
   
-    if ( bubu=="13" || bubu=="14" ) { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
+    if ( bubu=="13" || bubu=="14" ) { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {  con_LFOELFO++;
 
        node_block[targe]++;
        node_block[sourc]++;
@@ -2480,11 +2517,11 @@ sourcetype=all_node_atom[sourc];
 
  parame=int(wei_AFOAFOE*growfact * rand());
     
-    if ( parame==0) {
+    if ( parame==0) {  
 
   growcont++;
 
-   if (sourcetype=="A") {if ( bubu=="23" || bubu=="24" ) { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
+   if (sourcetype=="A") {if ( bubu=="23" || bubu=="24" ) { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {  con_AFOAFOE++; 
 
        node_block[targe]++;
        node_block[sourc]++;
@@ -2856,13 +2893,13 @@ sourcetype=all_node_atom[sourc];
 
 # FIFO
 
- parame=int(wei_FIFO*growcont * rand());
+ parame=int(wei_FIFO*growfact * rand());
     
-    if ( parame==0) {
+    if ( parame==0) { 
 
   growfact++;
 
-   if (sourcetype=="FI") {if ( bubu=="24") { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
+   if (sourcetype=="FI") {if ( bubu=="24") { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {    con_FIFO++;
 
        node_block[targe]++;
        node_block[sourc]++;
@@ -3268,7 +3305,7 @@ sourcetype=all_node_atom[sourc];
 
    diecont++;
 
-   if (sourcetype=="FI") { if ( bubu=="23" ) { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
+   if (sourcetype=="FI") { if ( bubu=="23" ) { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else { con_FIFOE++; 
 
        node_block[targe]++;
        node_block[sourc]++;
@@ -3465,7 +3502,7 @@ sourcetype=all_node_atom[sourc];
 
    diecont++;
 
-  if ( bubu=="15" ) { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {
+  if ( bubu=="15" ) { if ( targe in node_block || sourc in node_block ) {zuzuzu=0;} else {  con_AL++;  
 
        node_block[targe]++;
        node_block[sourc]++;
@@ -3665,20 +3702,23 @@ sourcetype=all_node_atom[sourc];
 
 
 
+######################
 
+  con_step=con_L3T+con_A3TFI3T+con_FO3T+con_FO2TFOET+con_FOFOE+con_LFOELFO+con_AFOAFOE+con_FIFO+con_FIFOE+con_AL;  
+  
+  con_tot=con_step+con_tot;
 
-#COMB moves 
+   rerere="       " con_L3T "               " con_A3TFI3T "            " con_FO3T "                " con_FO2TFOET "              " con_FOFOE "               " con_LFOELFO "              " con_AFOAFOE "            " con_FIFO "             " con_FIFOE "           " con_AL ;      
+   
+   rerere="step= " counter " l " rerere " l " con_step  " l " con_tot "\n";
 
+  printf "%-6s"	"%-6s"	"%-6s"	"%-6s"	"%-6s"	"%-6s"	"%-6s"	"%-6s"	"%-6s"	"%-6s"	"%-6s"	"%-6s"	"%-6s \n", counter, con_L3T, con_A3TFI3T, con_FO3T,  con_FO2TFOET, con_FOFOE, con_LFOELFO, con_AFOAFOE, con_FIFO, con_FIFOE, con_AL, con_step, con_tot >> "sta.txt";
 
-
-
-
-#end COMB
-
+#######################
 
 #update 
 
-if ( coact==1 ) {
+if ( con_step!=0 ) {      counter++;
 
 for (nodus in proposed_remove_node ) {
 
@@ -3950,7 +3990,7 @@ nodcshift=nodc+shiftmetabo;
 
    for (nof in proposed_remove_node_candi) { delete proposed_remove_node_candi[nof];}
 
-     counter++;
+
      
 # COMB cycle
 
@@ -4279,9 +4319,9 @@ for (nodc in proposed_all_node_atom) {
 
 #end COMB cycle     
 
-} else {   gugu++;  
+} else {        counter=cycounter;
 
-if (gugu==1000) {counter=cycounter;}}
+}
 
  difcont=growcont-diecont;
  
@@ -4313,9 +4353,7 @@ if (growfact<mingrowfact) {growfact=2;}
  
                                  }
  
-#counter++;
 
-#counter=200;
 
 #end while
    }
