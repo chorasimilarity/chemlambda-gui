@@ -1,0 +1,478 @@
+FOE n13 n6 n5
+FOE n14 n4 n3
+
+A n23 n12 n13
+FO n12p nb13 nb12
+A nb13 nb12 n12
+L n24 n12p n14
+A n33 n22 n23
+L n34 n22 n24
+A n43 n32 n33
+FO n32p nb33 nb32
+A nb33 nb32 n32
+L n44 n32p n34
+A n1 n42 n43
+L n2 n42 n44
+
+A n23o n12o n1
+FO n12po nb13o nb12o
+A nb13o nb12o n12o
+L n24o n12po n2
+A n33o n22o n23o
+L n34o n22o n24o
+A n43o n32o n33o
+FO n32po nb33o nb32o
+A nb33o nb32o n32o
+L n44o n32po n34o
+A nzz13 n42o n43o
+L nzz14 n42o n44o
+
+
+A nzz23 nzz12 nzz13
+FO nzz12p nzzb13 nzzb12
+A nzzb13 nzzb12 nzz12
+L nzz24 nzz12p nzz14
+A nzz33 nzz22 nzz23
+L nzz34 nzz22 nzz24
+A nzz43 nzz32 nzz33
+FO nzz32p nzzb33 nzzb32
+A nzzb33 nzzb32 nzz32
+L nzz44 nzz32p nzz34
+A nzz1 nzz42 nzz43
+L nzz2 nzz42 nzz44
+
+A nzz23o nzz12o nzz1
+FO nzz12po nzzb13o nzzb12o
+A nzzb13o nzzb12o nzz12o
+L nzz24o nzz12po nzz2
+A nzz33o nzz22o nzz23o
+L nzz34o nzz22o nzz24o
+A nzz43o nzz32o nzz33o
+FO nzz32po nzzb33o nzzb32o
+A nzzb33o nzzb32o nzz32o
+L nzz44o nzz32po nzz34o
+A n1o nzz42o nzz43o
+L n2o nzz42o nzz44o
+
+
+Arrow np5 n1a
+Arrow 3 n2a
+
+Arrow ng6 n1b
+Arrow 4 n2b
+
+
+FI n1a n1b n1o
+FI n2a n2b n2o
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE np13 np6 np5
+FOE np14 np4 np3
+
+A np23 np12 np13
+FO np12p npb13 npb12
+A npb13 npb12 np12
+L np24 np12p np14
+A np33 np22 np23
+L np34 np22 np24
+A np43 np32 np33
+FO np32p npb33 npb32
+A npb33 npb32 np32
+L np44 np32p np34
+A np1 np42 np43
+L np2 np42 np44
+
+A np23o np12o np1
+FO np12po npb13o npb12o
+A npb13o npb12o np12o
+L np24o np12po np2
+A np33o np22o np23o
+L np34o np22o np24o
+A np43o np32o np33o
+FO np32po npb33o npb32o
+A npb33o npb32o np32o
+L np44o np32po np34o
+A npzz13 np42o np43o
+L npzz14 np42o np44o
+
+
+A npzz23 npzz12 npzz13
+FO npzz12p npzzb13 npzzb12
+A npzzb13 npzzb12 npzz12
+L npzz24 npzz12p npzz14
+A npzz33 npzz22 npzz23
+L npzz34 npzz22 npzz24
+A npzz43 npzz32 npzz33
+FO npzz32p npzzb33 npzzb32
+A npzzb33 npzzb32 npzz32
+L npzz44 npzz32p npzz34
+A npzz1 npzz42 npzz43
+L npzz2 npzz42 npzz44
+
+A npzz23o npzz12o npzz1
+FO npzz12po npzzb13o npzzb12o
+A npzzb13o npzzb12o npzz12o
+L npzz24o npzz12po npzz2
+A npzz33o npzz22o npzz23o
+L npzz34o npzz22o npzz24o
+A npzz43o npzz32o npzz33o
+FO npzz32po npzzb33o npzzb32o
+A npzzb33o npzzb32o npzz32o
+L npzz44o npzz32po npzz34o
+A np1o npzz42o npzz43o
+L np2o npzz42o npzz44o
+
+
+Arrow ng5 np1a
+Arrow np3 np2a
+
+Arrow 6 np1b
+Arrow np4 np2b
+
+
+FI np1a np1b np1o
+FI np2a np2b np2o
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE ng13 ng6 ng5
+FOE ng14 ng4 ng3
+
+A ng23 ng12 ng13
+FO ng12p ngb13 ngb12
+A ngb13 ngb12 ng12
+L ng24 ng12p ng14
+A ng33 ng22 ng23
+L ng34 ng22 ng24
+A ng43 ng32 ng33
+FO ng32p ngb33 ngb32
+A ngb33 ngb32 ng32
+L ng44 ng32p ng34
+A ng1 ng42 ng43
+L ng2 ng42 ng44
+
+A ng23o ng12o ng1
+FO ng12po ngb13o ngb12o
+A ngb13o ngb12o ng12o
+L ng24o ng12po ng2
+A ng33o ng22o ng23o
+L ng34o ng22o ng24o
+A ng43o ng32o ng33o
+FO ng32po ngb33o ngb32o
+A ngb33o ngb32o ng32o
+L ng44o ng32po ng34o
+A ngzz13 ng42o ng43o
+L ngzz14 ng42o ng44o
+
+
+A ngzz23 ngzz12 ngzz13
+FO ngzz12p ngzzb13 ngzzb12
+A ngzzb13 ngzzb12 ngzz12
+L ngzz24 ngzz12p ngzz14
+A ngzz33 ngzz22 ngzz23
+L ngzz34 ngzz22 ngzz24
+A ngzz43 ngzz32 ngzz33
+FO ngzz32p ngzzb33 ngzzb32
+A ngzzb33 ngzzb32 ngzz32
+L ngzz44 ngzz32p ngzz34
+A ngzz1 ngzz42 ngzz43
+L ngzz2 ngzz42 ngzz44
+
+A ngzz23o ngzz12o ngzz1
+FO ngzz12po ngzzb13o ngzzb12o
+A ngzzb13o ngzzb12o ngzz12o
+L ngzz24o ngzz12po ngzz2
+A ngzz33o ngzz22o ngzz23o
+L ngzz34o ngzz22o ngzz24o
+A ngzz43o ngzz32o ngzz33o
+FO ngzz32po ngzzb33o ngzzb32o
+A ngzzb33o ngzzb32o ngzz32o
+L ngzz44o ngzz32po ngzz34o
+A ng1o ngzz42o ngzz43o
+L ng2o ngzz42o ngzz44o
+
+
+Arrow 5 ng1a
+Arrow ng3 ng2a
+
+Arrow np6 ng1b
+Arrow ng4 ng2b
+
+
+FI ng1a ng1b ng1o
+FI ng2a ng2b ng2o
+
+
+
+
+
+
+
+
+FOE 13 6 5
+FOE 14 4 3
+
+A 23 12 13
+FO 12p b13 b12
+A b13 b12 12
+L 24 12p 14
+A 33 22 23
+L 34 22 24
+A 43 32 33
+FO 32p b33 b32
+A b33 b32 32
+L 44 32p 34
+A 1 42 43
+L 2 42 44
+
+A 23o 12o 1
+FO 12po b13o b12o
+A b13o b12o 12o
+L 24o 12po 2
+A 33o 22o 23o
+L 34o 22o 24o
+A 43o 32o 33o
+FO 32po b33o b32o
+A b33o b32o 32o
+L 44o 32po 34o
+A zz13 42o 43o
+L zz14 42o 44o
+
+
+A zz23 zz12 zz13
+FO zz12p zzb13 zzb12
+A zzb13 zzb12 zz12
+L zz24 zz12p zz14
+A zz33 zz22 zz23
+L zz34 zz22 zz24
+A zz43 zz32 zz33
+FO zz32p zzb33 zzb32
+A zzb33 zzb32 zz32
+L zz44 zz32p zz34
+A zz1 zz42 zz43
+L zz2 zz42 zz44
+
+A zz23o zz12o zz1
+FO zz12po zzb13o zzb12o
+A zzb13o zzb12o zz12o
+L zz24o zz12po zz2
+A zz33o zz22o zz23o
+L zz34o zz22o zz24o
+A zz43o zz32o zz33o
+FO zz32po zzb33o zzb32o
+A zzb33o zzb32o zz32o
+L zz44o zz32po zz34o
+A 1o zz42o zz43o
+L 2o zz42o zz44o
+
+
+Arrow p5 1a
+Arrow n3 2a
+
+Arrow g6 1b
+Arrow n4 2b
+
+
+FI 1a 1b 1o
+FI 2a 2b 2o
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE p13 p6 p5
+FOE p14 p4 p3
+
+A p23 p12 p13
+FO p12p pb13 pb12
+A pb13 pb12 p12
+L p24 p12p p14
+A p33 p22 p23
+L p34 p22 p24
+A p43 p32 p33
+FO p32p pb33 pb32
+A pb33 pb32 p32
+L p44 p32p p34
+A p1 p42 p43
+L p2 p42 p44
+
+A p23o p12o p1
+FO p12po pb13o pb12o
+A pb13o pb12o p12o
+L p24o p12po p2
+A p33o p22o p23o
+L p34o p22o p24o
+A p43o p32o p33o
+FO p32po pb33o pb32o
+A pb33o pb32o p32o
+L p44o p32po p34o
+A pzz13 p42o p43o
+L pzz14 p42o p44o
+
+
+A pzz23 pzz12 pzz13
+FO pzz12p pzzb13 pzzb12
+A pzzb13 pzzb12 pzz12
+L pzz24 pzz12p pzz14
+A pzz33 pzz22 pzz23
+L pzz34 pzz22 pzz24
+A pzz43 pzz32 pzz33
+FO pzz32p pzzb33 pzzb32
+A pzzb33 pzzb32 pzz32
+L pzz44 pzz32p pzz34
+A pzz1 pzz42 pzz43
+L pzz2 pzz42 pzz44
+
+A pzz23o pzz12o pzz1
+FO pzz12po pzzb13o pzzb12o
+A pzzb13o pzzb12o pzz12o
+L pzz24o pzz12po pzz2
+A pzz33o pzz22o pzz23o
+L pzz34o pzz22o pzz24o
+A pzz43o pzz32o pzz33o
+FO pzz32po pzzb33o pzzb32o
+A pzzb33o pzzb32o pzz32o
+L pzz44o pzz32po pzz34o
+A p1o pzz42o pzz43o
+L p2o pzz42o pzz44o
+
+
+Arrow g5 p1a
+Arrow p3 p2a
+
+Arrow n6 p1b
+Arrow p4 p2b
+
+
+FI p1a p1b p1o
+FI p2a p2b p2o
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOE g13 g6 g5
+FOE g14 g4 g3
+
+A g23 g12 g13
+FO g12p gb13 gb12
+A gb13 gb12 g12
+L g24 g12p g14
+A g33 g22 g23
+L g34 g22 g24
+A g43 g32 g33
+FO g32p gb33 gb32
+A gb33 gb32 g32
+L g44 g32p g34
+A g1 g42 g43
+L g2 g42 g44
+
+A g23o g12o g1
+FO g12po gb13o gb12o
+A gb13o gb12o g12o
+L g24o g12po g2
+A g33o g22o g23o
+L g34o g22o g24o
+A g43o g32o g33o
+FO g32po gb33o gb32o
+A gb33o gb32o g32o
+L g44o g32po g34o
+A gzz13 g42o g43o
+L gzz14 g42o g44o
+
+
+A gzz23 gzz12 gzz13
+FO gzz12p gzzb13 gzzb12
+A gzzb13 gzzb12 gzz12
+L gzz24 gzz12p gzz14
+A gzz33 gzz22 gzz23
+L gzz34 gzz22 gzz24
+A gzz43 gzz32 gzz33
+FO gzz32p gzzb33 gzzb32
+A gzzb33 gzzb32 gzz32
+L gzz44 gzz32p gzz34
+A gzz1 gzz42 gzz43
+L gzz2 gzz42 gzz44
+
+A gzz23o gzz12o gzz1
+FO gzz12po gzzb13o gzzb12o
+A gzzb13o gzzb12o gzz12o
+L gzz24o gzz12po gzz2
+A gzz33o gzz22o gzz23o
+L gzz34o gzz22o gzz24o
+A gzz43o gzz32o gzz33o
+FO gzz32po gzzb33o gzzb32o
+A gzzb33o gzzb32o gzz32o
+L gzz44o gzz32po gzz34o
+A g1o gzz42o gzz43o
+L g2o gzz42o gzz44o
+
+
+Arrow n5 g1a
+Arrow g3 g2a
+
+Arrow p6 g1b
+Arrow g4 g2b
+
+
+FI g1a g1b g1o
+FI g2a g2b g2o
+
+
+
+
+
+
+
+
+
+
