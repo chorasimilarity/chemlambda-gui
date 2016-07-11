@@ -1,12 +1,17 @@
 BEGIN { 
 
-# this variant 28.09.2015
+# this variant 11.07.2015
 #
-# forked 26.09.2015 from quiner_experia_fifrin.awk variant  09.09.2015
+# forked 11.07.2016 from quiner_experia_fifrin.awk variant  26.09.2015
+#
+# because of the growfact-growcont bug in the move FI-FO, that move was inhibited previously, so it was not visible the effect of the move on the colors. Now that seems to be fixed, by choosing for FI-FO that all the 
+# new nodes have the color of the source node (i.e. the color of the FI node)
+#
+# TODO: update the rest of the program to the level of quiner_shuffle.awk
 #
 # repo: https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic
 #
-# called by quiner_link.sh
+# called by quiner_node.sh
 #
 # owner: chorasimilarity (Marius Buliga, http://chorasimilarity.wordpress.com/,  marius.buliga@imar.ro , marius.buliga@gmail.com)
 #
@@ -61,7 +66,7 @@ BEGIN {
     
     wei_LFOELFO=1;
     
-    wei_AFOAFOE=1;
+    wei_AFOAFOE=0.5;
     
      wei_PROP=1;
 
@@ -4722,7 +4727,7 @@ parame=int((wei_turing*diefact * rand())+int(cocoact*rise*rand()));
 
        node_block[targe]++;
        node_block[sourc]++;
-       zeze=all_node_actor[sourc];
+       zeze=all_node_actor[targe];
 
 
 
@@ -4854,7 +4859,7 @@ sourcetype=all_node_atom[sourc];
        node_block[targe]++;
        node_block[sourc]++;
        
-       zeze=all_node_actor[sourc];
+       zeze=all_node_actor[targe];
 
 
 
@@ -6683,8 +6688,11 @@ sourcetype=all_node_atom[sourc];
 
       zaza=all_node_actor[sourc];
       
-      treio=all_edge_target[trei];
-      patro=all_edge_target[patru];
+#      treio=all_edge_target[trei];
+#      patro=all_edge_target[patru];
+
+       treio=sourc;
+       patro=sourc;
       
       zaz2=all_node_actor[treio];
       zaz3=all_node_actor[patro];
@@ -7123,9 +7131,9 @@ sourcetype=all_node_atom[sourc];
       trei=all_edge_out[treii];
       patru=all_edge_out[patruu];
 
-     zazu3=all_edge_target[patru]; 
+     zazu3=all_edge_target[unu]; 
      
-     zazu2=all_edge_target[trei]; 
+     zazu2=all_edge_target[doi]; 
      
      zaz3=all_node_actor[zazu3];
      zaz2=all_node_actor[zazu2];
@@ -7335,7 +7343,7 @@ sourcetype=all_node_atom[sourc];
       trei=all_edge_out[treii];
       patru=all_edge_out[patruu];
 
-     zazu3=all_edge_target[patru]; 
+     zazu3=all_edge_target[unu]; 
      
      zazu2=all_edge_target[doi]; 
      
