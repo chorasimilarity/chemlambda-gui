@@ -6654,7 +6654,7 @@ sourcetype=all_node_atom[sourc];
 
 # FIFO
 
- parame=int((wei_FIFO*growcont * rand())+int(cocoact*rise*rand()));
+ parame=int((wei_FIFO*growfact * rand())+int(cocoact*rise*rand()));
     
     if ( parame==0) {
 
