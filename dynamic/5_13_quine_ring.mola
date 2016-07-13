@@ -1,0 +1,72 @@
+FI dcba3 dcba1 dcba15 1
+FOE dcba15 dcba4 dcb2 1
+L dcba4 dcba1 dcba5 1
+L dcba2 dcba3 dcba12 1
+FOE dcba5 dcba6 dcba8 1
+FOE dcba12 dcba7 dcba9 1
+A dcba6 dcba7 dcba14 1
+A dcba8 dcba9 dcba11 1
+FO dcba10 dcba17 dcba20 1
+FO dcba16 dcba19 dcba18 1
+FI dcba17 dcba19 dcba16 1
+FI dcba20 dcba18 dcba13 1
+A dcba13 dcba11 dcba10 1
+
+
+FI dcb3 dcb1 dcb15 2
+FOE dcb15 dcb4 dc2 2
+L dcb4 dcb1 dcb5 2
+L dcb2 dcb3 dcb12 2
+FOE dcb5 dcb6 dcb8 2
+FOE dcb12 dcb7 dcb9 2
+A dcb6 dcb7 dcb14 2
+A dcb8 dcb9 dcb11 2
+FO dcb10 dcb17 dcb20 2
+FO dcb16 dcb19 dcb18 2
+FI dcb17 dcb19 dcb16 2
+FI dcb20 dcb18 dcb13 2
+A dcb13 dcb11 dcb10 2
+
+FI dc3 dc1 dc15 3
+FOE dc15 dc4 d2 3
+L dc4 dc1 dc5 3
+L dc2 dc3 dc12 3
+FOE dc5 dc6 dc8 3
+FOE dc12 dc7 dc9 3
+A dc6 dc7 dc14 3
+A dc8 dc9 dc11 3
+FO dc10 dc17 dc20 3
+FO dc16 dc19 dc18 3
+FI dc17 dc19 dc16 3
+FI dc20 dc18 dc13 3
+A dc13 dc11 dc10 3
+
+
+FI d3 d1 d15 4
+FOE d15 d4 2 4
+L d4 d1 d5 4
+L d2 d3 d12 4
+FOE d5 d6 d8 4
+FOE d12 d7 d9 4
+A d6 d7 d14 4
+A d8 d9 d11 4
+FO d10 d17 d20 4
+FO d16 d19 d18 4
+FI d17 d19 d16 4
+FI d20 d18 d13 4
+A d13 d11 d10 4
+
+
+FI 3 1 15 5
+FOE 15 4 dcba2 5
+L 4 1 5 5
+L 2 3 12 5
+FOE 5 6 8 5
+FOE 12 7 9 5
+A 6 7 14 5
+A 8 9 11 5
+FO 10 17 20 5
+FO 16 19 18 5
+FI 17 19 16 5
+FI 20 18 13 5
+A 13 11 10 5
