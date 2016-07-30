@@ -21,7 +21,8 @@ Another class of relations concerns chemistry like models of computation. The Al
 
 There are three possible applications of chemlambda: 
 - in real chemistry, for building molecular computers, or for understanding living organisms as molecular computers, see http://chorasimilarity.github.io/chemlambda-gui/dynamic/molecular.html 
-- in decentralized computing, because chemlambda with the random reduction algorithm is an asynchronous graph rewrite automaton. See http://chorasimilarity.github.io/chemlambda-gui/dynamic/vision.html for a sketch of the idea to build chemlambda based 
+- in decentralized computing, because chemlambda with the random reduction algorithm is an asynchronous graph rewrite automaton. 
+- both worlds united: see http://chorasimilarity.github.io/chemlambda-gui/dynamic/vision.html for a sketch of the idea to build chemlambda based chemical computers which work both in the virtual and meat spaces. For achieving this goal we need to solve the previous two applications and to use, perhaps, an (open version of) Digital Biological Converter, o fthe kind Craig Venter has already. 
 
 
 ## Related work
