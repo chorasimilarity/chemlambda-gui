@@ -1,6 +1,6 @@
 This is a collection of scripts and experiments with chemlambda. 
 
-![alt tag](20_20_hyb.gif)
+![alt tag](tape_long_4653_2.gif)
 
 
 The active branch is https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic
