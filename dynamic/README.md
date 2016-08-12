@@ -28,9 +28,11 @@ There are three possible applications of chemlambda:
 ## Related work
 
 
-In no particular order:
-- LPU https://github.com/MaiaVictor/LPU which is interaction netwok biased, but very interesting to develop more. It introduces the idea to convert the asynchronous graph rewrite system into an asynchronous rewrite system, by using the mol-file like list of nodes for the graph, together with supplementary rewrites (using an automaton of choice) for shuffling this list. The graph rewrites are executed only when the nodes of the pattern are close enough in the list. 
-- chemlambda-hask https://github.com/synergistics/chemlambda-hask is a Haskell implementation of chemlambda which is  in development. It has the potential to be a clear and creative product, good for  a stem of a future chemlambda library, for general purpose use.
+
+- chemlambda-hask https://github.com/synergistics/chemlambda-hask is a Haskell API for graph rewrite systems with animplementation of chemlambda. It has the potential to be a clear and creative product, good for  a stem of a future chemlambda library, for general purpose use.
+- chemlambda-yuva https://github.com/YuvaAthur/chemlambda-yuva is a Python implementation of chemlambda adapted from chemlambda-py. I have not checked it yet but I am very intrigued because is related with  this other repository https://github.com/YuvaAthur/nL about experiments in graph rewriting
+- LPU https://github.com/MaiaVictor/LPU which is biased towards  interaction networks style, but very interesting to develop more. It introduces the idea to convert the asynchronous graph rewrite system into an asynchronous rewrite system, by using the mol-file like list of nodes for the graph, together with supplementary rewrites (using an automaton of choice) for shuffling this list. The graph rewrites are executed only when the nodes of the pattern are close enough in the list. 
+
 
 Older: 
 -  chemlambda-py https://github.com/4lhc/chemlambda-py is a Python version of chemlambda, which is unfinished because the rewrite A-L is not well written. Maybe a Python afficionado could make it useful, by comparing it with the Haskell version. 
