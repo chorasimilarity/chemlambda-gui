@@ -1,0 +1,579 @@
+
+A bobin bobr bobo
+L bobo bobr 12nordfoe
+
+A danin danr dano
+L dano danr 21westfoe
+
+
+
+Arrow 12southfoe 22nordfoe
+Arrow 12southa 22norda
+Arrow 22southfoe 32nordfoe
+Arrow 22southa 32norda
+
+Arrow 13southfoe 23nordfoe
+Arrow 13southa 23norda
+Arrow 23southfoe 33nordfoe
+Arrow 23southa 33norda
+
+Arrow 11southfoe 21nordfoe
+Arrow 11southa 21norda
+Arrow 21southfoe 31nordfoe
+Arrow 21southa 31norda
+
+
+
+Arrow 21eastfoe 22westfoe
+Arrow 21easta 22westa
+Arrow 22eastfoe 23westfoe
+Arrow 22easta 23westa
+
+Arrow 31eastfoe 32westfoe
+Arrow 31easta 32westa
+Arrow 32eastfoe 33westfoe
+Arrow 32easta 33westa
+
+Arrow 11eastfoe 12westfoe
+Arrow 11easta 12westa
+Arrow 12eastfoe 13westfoe
+Arrow 12easta 13westa
+
+FOE 11nordfoe 11bobm1 11bobf2
+A 11bobm1 11norda 11boba2
+
+FOE 11alicef2 11alicem2 11southfoe
+A 11alicem2 11alicea2 11southa
+
+FOE 11westfoe 11danm1 11danf2
+A 11danm1 11westa 11dana2
+
+FOE 11clairef2 11clairem2 11eastfoe
+A 11clairem2 11clairea2 11easta
+
+
+
+
+
+
+FOE 11bob 11bob0 11bob1
+FOE 11bob0 11bob00 11bob01
+FOE 11bob1 11bob10 11bob11
+FOE 11bob00 11bob000 11alice
+
+FOE 11dan 11dan0 11dan1
+FOE 11dan0 11dan00 11dan01
+FOE 11dan01 11claire 11dan011
+
+A 11bob01 11eve1 11eve2
+A 11dan1 11eve2 11eve3
+A 11bob10 11eve3 11eve4
+A 11dan00 11eve4 11eve5
+
+A 11bob11 11eve6 11eve7
+A 11dan011 11eve7 11eve8
+A 11bob000 11eve8 11eve9
+
+
+
+
+
+FOE 11bobf2 11bobm2 11bob
+A 11bobm2 11boba2 11eve1
+
+FOE 11alice 11alicem1 11alicef2
+A 11alicem1 11eve5 11alicea2
+
+
+
+
+
+
+FOE 11danf2 11danm2 11dan
+A 11danm2 11dana2 11eve6
+
+FOE 11claire 11clairem1 11clairef2
+A 11clairem1 11eve9 11clairea2
+
+
+
+FOE 12nordfoe 12bobm1 12bobf2
+A 12bobm1 12norda 12boba2
+
+FOE 12alicef2 12alicem2 12southfoe
+A 12alicem2 12alicea2 12southa
+
+FOE 12westfoe 12danm1 12danf2
+A 12danm1 12westa 12dana2
+
+FOE 12clairef2 12clairem2 12eastfoe
+A 12clairem2 12clairea2 12easta
+
+
+
+
+
+
+FOE 12bob 12bob0 12bob1
+FOE 12bob0 12bob00 12bob01
+FOE 12bob1 12bob10 12bob11
+FOE 12bob00 12bob000 12alice
+
+FOE 12dan 12dan0 12dan1
+FOE 12dan0 12dan00 12dan01
+FOE 12dan01 12claire 12dan011
+
+A 12bob01 12eve1 12eve2
+A 12dan1 12eve2 12eve3
+A 12bob10 12eve3 12eve4
+A 12dan00 12eve4 12eve5
+
+A 12bob11 12eve6 12eve7
+A 12dan011 12eve7 12eve8
+A 12bob000 12eve8 12eve9
+
+
+
+
+
+FOE 12bobf2 12bobm2 12bob
+A 12bobm2 12boba2 12eve1
+
+FOE 12alice 12alicem1 12alicef2
+A 12alicem1 12eve5 12alicea2
+
+
+
+
+
+
+FOE 12danf2 12danm2 12dan
+A 12danm2 12dana2 12eve6
+
+FOE 12claire 12clairem1 12clairef2
+A 12clairem1 12eve9 12clairea2
+
+
+FOE 13nordfoe 13bobm1 13bobf2
+A 13bobm1 13norda 13boba2
+
+FOE 13alicef2 13alicem2 13southfoe
+A 13alicem2 13alicea2 13southa
+
+FOE 13westfoe 13danm1 13danf2
+A 13danm1 13westa 13dana2
+
+FOE 13clairef2 13clairem2 13eastfoe
+A 13clairem2 13clairea2 13easta
+
+
+
+
+
+
+FOE 13bob 13bob0 13bob1
+FOE 13bob0 13bob00 13bob01
+FOE 13bob1 13bob10 13bob11
+FOE 13bob00 13bob000 13alice
+
+FOE 13dan 13dan0 13dan1
+FOE 13dan0 13dan00 13dan01
+FOE 13dan01 13claire 13dan011
+
+A 13bob01 13eve1 13eve2
+A 13dan1 13eve2 13eve3
+A 13bob10 13eve3 13eve4
+A 13dan00 13eve4 13eve5
+
+A 13bob11 13eve6 13eve7
+A 13dan011 13eve7 13eve8
+A 13bob000 13eve8 13eve9
+
+
+
+
+
+FOE 13bobf2 13bobm2 13bob
+A 13bobm2 13boba2 13eve1
+
+FOE 13alice 13alicem1 13alicef2
+A 13alicem1 13eve5 13alicea2
+
+
+
+
+
+
+FOE 13danf2 13danm2 13dan
+A 13danm2 13dana2 13eve6
+
+FOE 13claire 13clairem1 13clairef2
+A 13clairem1 13eve9 13clairea2
+
+
+
+FOE 21nordfoe 21bobm1 21bobf2
+A 21bobm1 21norda 21boba2
+
+FOE 21alicef2 21alicem2 21southfoe
+A 21alicem2 21alicea2 21southa
+
+FOE 21westfoe 21danm1 21danf2
+A 21danm1 21westa 21dana2
+
+FOE 21clairef2 21clairem2 21eastfoe
+A 21clairem2 21clairea2 21easta
+
+
+
+
+
+
+FOE 21bob 21bob0 21bob1
+FOE 21bob0 21bob00 21bob01
+FOE 21bob1 21bob10 21bob11
+FOE 21bob00 21bob000 21alice
+
+FOE 21dan 21dan0 21dan1
+FOE 21dan0 21dan00 21dan01
+FOE 21dan01 21claire 21dan011
+
+A 21bob01 21eve1 21eve2
+A 21dan1 21eve2 21eve3
+A 21bob10 21eve3 21eve4
+A 21dan00 21eve4 21eve5
+
+A 21bob11 21eve6 21eve7
+A 21dan011 21eve7 21eve8
+A 21bob000 21eve8 21eve9
+
+
+
+
+
+FOE 21bobf2 21bobm2 21bob
+A 21bobm2 21boba2 21eve1
+
+FOE 21alice 21alicem1 21alicef2
+A 21alicem1 21eve5 21alicea2
+
+
+
+
+
+
+FOE 21danf2 21danm2 21dan
+A 21danm2 21dana2 21eve6
+
+FOE 21claire 21clairem1 21clairef2
+A 21clairem1 21eve9 21clairea2
+
+
+FOE 22nordfoe 22bobm1 22bobf2
+A 22bobm1 22norda 22boba2
+
+FOE 22alicef2 22alicem2 22southfoe
+A 22alicem2 22alicea2 22southa
+
+FOE 22westfoe 22danm1 22danf2
+A 22danm1 22westa 22dana2
+
+FOE 22clairef2 22clairem2 22eastfoe
+A 22clairem2 22clairea2 22easta
+
+
+
+
+
+
+FOE 22bob 22bob0 22bob1
+FOE 22bob0 22bob00 22bob01
+FOE 22bob1 22bob10 22bob11
+FOE 22bob00 22bob000 22alice
+
+FOE 22dan 22dan0 22dan1
+FOE 22dan0 22dan00 22dan01
+FOE 22dan01 22claire 22dan011
+
+A 22bob01 22eve1 22eve2
+A 22dan1 22eve2 22eve3
+A 22bob10 22eve3 22eve4
+A 22dan00 22eve4 22eve5
+
+A 22bob11 22eve6 22eve7
+A 22dan011 22eve7 22eve8
+A 22bob000 22eve8 22eve9
+
+
+
+
+
+FOE 22bobf2 22bobm2 22bob
+A 22bobm2 22boba2 22eve1
+
+FOE 22alice 22alicem1 22alicef2
+A 22alicem1 22eve5 22alicea2
+
+
+
+
+
+
+FOE 22danf2 22danm2 22dan
+A 22danm2 22dana2 22eve6
+
+FOE 22claire 22clairem1 22clairef2
+A 22clairem1 22eve9 22clairea2
+
+
+FOE 23nordfoe 23bobm1 23bobf2
+A 23bobm1 23norda 23boba2
+
+FOE 23alicef2 23alicem2 23southfoe
+A 23alicem2 23alicea2 23southa
+
+FOE 23westfoe 23danm1 23danf2
+A 23danm1 23westa 23dana2
+
+FOE 23clairef2 23clairem2 23eastfoe
+A 23clairem2 23clairea2 23easta
+
+
+
+
+
+
+FOE 23bob 23bob0 23bob1
+FOE 23bob0 23bob00 23bob01
+FOE 23bob1 23bob10 23bob11
+FOE 23bob00 23bob000 23alice
+
+FOE 23dan 23dan0 23dan1
+FOE 23dan0 23dan00 23dan01
+FOE 23dan01 23claire 23dan011
+
+A 23bob01 23eve1 23eve2
+A 23dan1 23eve2 23eve3
+A 23bob10 23eve3 23eve4
+A 23dan00 23eve4 23eve5
+
+A 23bob11 23eve6 23eve7
+A 23dan011 23eve7 23eve8
+A 23bob000 23eve8 23eve9
+
+
+
+
+
+FOE 23bobf2 23bobm2 23bob
+A 23bobm2 23boba2 23eve1
+
+FOE 23alice 23alicem1 23alicef2
+A 23alicem1 23eve5 23alicea2
+
+
+
+
+
+
+FOE 23danf2 23danm2 23dan
+A 23danm2 23dana2 23eve6
+
+FOE 23claire 23clairem1 23clairef2
+A 23clairem1 23eve9 23clairea2
+
+
+FOE 31nordfoe 31bobm1 31bobf2
+A 31bobm1 31norda 31boba2
+
+FOE 31alicef2 31alicem2 31southfoe
+A 31alicem2 31alicea2 31southa
+
+FOE 31westfoe 31danm1 31danf2
+A 31danm1 31westa 31dana2
+
+FOE 31clairef2 31clairem2 31eastfoe
+A 31clairem2 31clairea2 31easta
+
+
+
+
+
+
+FOE 31bob 31bob0 31bob1
+FOE 31bob0 31bob00 31bob01
+FOE 31bob1 31bob10 31bob11
+FOE 31bob00 31bob000 31alice
+
+FOE 31dan 31dan0 31dan1
+FOE 31dan0 31dan00 31dan01
+FOE 31dan01 31claire 31dan011
+
+A 31bob01 31eve1 31eve2
+A 31dan1 31eve2 31eve3
+A 31bob10 31eve3 31eve4
+A 31dan00 31eve4 31eve5
+
+A 31bob11 31eve6 31eve7
+A 31dan011 31eve7 31eve8
+A 31bob000 31eve8 31eve9
+
+
+
+
+
+FOE 31bobf2 31bobm2 31bob
+A 31bobm2 31boba2 31eve1
+
+FOE 31alice 31alicem1 31alicef2
+A 31alicem1 31eve5 31alicea2
+
+
+
+
+
+
+FOE 31danf2 31danm2 31dan
+A 31danm2 31dana2 31eve6
+
+FOE 31claire 31clairem1 31clairef2
+A 31clairem1 31eve9 31clairea2
+
+
+
+
+FOE 32nordfoe 32bobm1 32bobf2
+A 32bobm1 32norda 32boba2
+
+FOE 32alicef2 32alicem2 32southfoe
+A 32alicem2 32alicea2 32southa
+
+FOE 32westfoe 32danm1 32danf2
+A 32danm1 32westa 32dana2
+
+FOE 32clairef2 32clairem2 32eastfoe
+A 32clairem2 32clairea2 32easta
+
+
+
+
+
+
+FOE 32bob 32bob0 32bob1
+FOE 32bob0 32bob00 32bob01
+FOE 32bob1 32bob10 32bob11
+FOE 32bob00 32bob000 32alice
+
+FOE 32dan 32dan0 32dan1
+FOE 32dan0 32dan00 32dan01
+FOE 32dan01 32claire 32dan011
+
+A 32bob01 32eve1 32eve2
+A 32dan1 32eve2 32eve3
+A 32bob10 32eve3 32eve4
+A 32dan00 32eve4 32eve5
+
+A 32bob11 32eve6 32eve7
+A 32dan011 32eve7 32eve8
+A 32bob000 32eve8 32eve9
+
+
+
+
+
+FOE 32bobf2 32bobm2 32bob
+A 32bobm2 32boba2 32eve1
+
+FOE 32alice 32alicem1 32alicef2
+A 32alicem1 32eve5 32alicea2
+
+
+
+
+
+
+FOE 32danf2 32danm2 32dan
+A 32danm2 32dana2 32eve6
+
+FOE 32claire 32clairem1 32clairef2
+A 32clairem1 32eve9 32clairea2
+
+
+FOE 33nordfoe 33bobm1 33bobf2
+A 33bobm1 33norda 33boba2
+
+FOE 33alicef2 33alicem2 33southfoe
+A 33alicem2 33alicea2 33southa
+
+FOE 33westfoe 33danm1 33danf2
+A 33danm1 33westa 33dana2
+
+FOE 33clairef2 33clairem2 33eastfoe
+A 33clairem2 33clairea2 33easta
+
+
+
+
+
+
+FOE 33bob 33bob0 33bob1
+FOE 33bob0 33bob00 33bob01
+FOE 33bob1 33bob10 33bob11
+FOE 33bob00 33bob000 33alice
+
+FOE 33dan 33dan0 33dan1
+FOE 33dan0 33dan00 33dan01
+FOE 33dan01 33claire 33dan011
+
+A 33bob01 33eve1 33eve2
+A 33dan1 33eve2 33eve3
+A 33bob10 33eve3 33eve4
+A 33dan00 33eve4 33eve5
+
+A 33bob11 33eve6 33eve7
+A 33dan011 33eve7 33eve8
+A 33bob000 33eve8 33eve9
+
+
+
+
+
+FOE 33bobf2 33bobm2 33bob
+A 33bobm2 33boba2 33eve1
+
+FOE 33alice 33alicem1 33alicef2
+A 33alicem1 33eve5 33alicea2
+
+
+
+
+
+
+FOE 33danf2 33danm2 33dan
+A 33danm2 33dana2 33eve6
+
+FOE 33claire 33clairem1 33clairef2
+A 33clairem1 33eve9 33clairea2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

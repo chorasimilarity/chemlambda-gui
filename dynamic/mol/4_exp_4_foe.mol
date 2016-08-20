@@ -1,0 +1,21 @@
+L 1num fnum num
+L 2num xnum 1num
+
+FO fnum m1num le2num
+A m1num ri1num 2num
+
+
+FO le2num m3num le4num
+A m3num ri4num ri1num
+
+
+FO le4num m5num m6num
+A m5num ri5num ri4num
+
+A m6num xnum ri5num
+
+FO num anum bnum
+
+A anum bnum out
+
+FOE out outa1 outa2
