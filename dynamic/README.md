@@ -9,20 +9,46 @@ The active branch is https://github.com/chorasimilarity/chemlambda-gui/tree/gh-p
 
 Is an artificial chemistry based on a graph rewrite system and various (random or deterministic) algorithms for applications of rewrites. The graphs in chemlambda are called "molecules" and they are stored as .mol files. Each mol file is a list of nodes, one node/line. Each line is a list of: type of node, port variables. For details see http://chorasimilarity.github.io/chemlambda-gui/dynamic/moves.html 
 
+Chemlambda works at the level of graphs, or molecules, not at the level of decoration of those, be them lambda terms, types, etc. By design chemlambda stays at this graphical level, with the price that there is no global semantics. Any semantics is seen as a collection of rules of local decorations of nodes and arrows. No global semantics means that there is no rejection of graphs which do not admit a global decoration by following a set of local decoration rules. 
+
 ## Relations with other models of computation
 
-Chemlambda is loosely related to interaction nets, as seen from the rewrite rules. However, the particular choice of nodes and rewrites allows chemlambda to be used for reduction of untyped lambda terms,  solely by local rewrites, which is something new. The second difference between interaction nets and chemlambda is that chemlambda uses as central objects the graphs (molecules), not the lambda terms (or other linguistic constructs). For example, when using interaction nets for the reduction of lambda terms there is a function lambda2graphs which converts a lambda term to a graph, then the graph is reduced as an interaction net, then there is a function graphs2lambda which returns a lambda term from a graph. The accent is at the level of lambda terms, not graphs, because lambda2graphs and graphs2lambda are not one the inverse of the other. The third difference, related to the second, is that chemlambda is not a tool for better understanding lambda calculus, as there is nothing special in the chemlambda formalism which restricts it to molecules coming from lambda terms. On the contrary, one of the interesting class of graphs in chemlambda are "quines", molecules which have a periodic evolution under deterministic reduction algorithms. These chemlambda quines are good proposals for living organisms when reduced randomly. There is nothing similar in interaction nets. 
+Chemlambda is loosely related to interaction nets, as seen from the rewrite rules. However, the particular choice of nodes and rewrites allows chemlambda to be used for reduction of untyped lambda terms,  solely by local rewrites, which is something new. 
 
-I am very skeptical about relations to category theory graph rewrites models, because even if the rewrites are common with the interaction nets ones, the class of graphs is more restricted in the category theory approaches. (The short description is that they use graphs with certain embeddings, imposing unnecessary global orders; besides, despite the overwhelming PR, they have not much to say about applications to untyped lambda beta calculus.) 
+Chemlambda it is not especially related to lambda calculus though. The backbone of chemlambda is made by the triple of FI, FO, FOE nodes and their rewrites. Those are not specific to a particular well known model of computation or theory, like lambda calculus. It happens that chemlambda also contains two nodes A (application) and L (lambda), a specific rewrite A-L (akin to BETA reductions) and distributive rewrites for A and L wrt the backbone nodes. Chemlambda can be easily modified to have nothing to do with lambda calculus. For example in the article http://chorasimilarity.github.io/chemlambda-gui/dynamic/turingchem.html we see  a chemlambda version which uses Turing Machines (busy beavers) instead of lambda calculus. Moreover, one can add at will new nodes and mix models of computation (for example TMs with multiple heads and lambda calculus) in the same machine. Several examples are provided which show that we can mix busy beavers and lambda calculus Church numbers. 
 
-Another class of relations concerns chemistry like models of computation. The Alchemy of Fontana and Buss comes to mind, as well as the work of Christoph Flamm http://www.tbi.univie.ac.at/~xtof/papers.html . The Alchemy proposes that a chemical reaction is of the type A + B - - > AB, where A, B are lambda terms and AB is A applied to B. Flamm's models are very close to real chemistry. The chemical reactions are of the type A + B - - > C + D, understood as a rewrite of the unconnected pattern obtained from the union of A and B. In chemlambda the rewrites model a chemical reaction A + Enzyme - - > B  + Enzyme, where Enzyme is associated to the rewrite. 
+The second difference between interaction nets and chemlambda is that chemlambda uses as central objects the graphs (molecules), not the lambda terms (or other linguistic constructs). For example, when using interaction nets for the reduction of lambda terms there is a function lambda2graphs which converts a lambda term to a graph, then the graph is reduced as an interaction net, then there is a function graphs2lambda which returns a lambda term from a graph. The accent is at the level of lambda terms, not graphs, because lambda2graphs and graphs2lambda are not one the inverse of the other. 
+
+The third difference, related to the second, is that chemlambda is not a tool for better understanding lambda calculus, as there is nothing special in the chemlambda formalism which restricts it to molecules coming from lambda terms. On the contrary, one of the interesting class of graphs in chemlambda are "quines", molecules which have a periodic evolution under deterministic reduction algorithms. These chemlambda quines are good proposals for living organisms when reduced randomly. There is nothing similar in interaction nets. 
+
+
+Another class of relations concerns chemistry like models of computation. The Alchemy of Fontana and Buss comes to mind, as well as the work of Christoph Flamm. The Alchemy proposes that a chemical reaction is of the type
+
+ A + B - - > AB
+ 
+ where A, B are lambda terms and AB is A applied to B. 
+ 
+ Flamm's models are very close to real chemistry. The chemical reactions are of the type 
+ 
+ A + B - - > C + D
+ 
+ which can be understood as a rewrite of the unconnected pattern obtained from the union of A and B. I
+ 
+ n chemlambda the rewrites model a chemical reaction 
+ 
+ A + Enzyme - - > B  + Enzyme
+
+where A is the pattern before a rewrite, B is the pattern after a rewrite and Enzyme is associated to the rewrite. In th eoriginal chemlambda Enzymes are invisible, appearing only as probabilities associated to the rewrites. 
+
+ However, see the article Chemlambda strings where it is proposed a verion of chemlambda where the molecules and the enzymes are visible and made of the same ingredients: http://imar.ro/~mbuliga/chemlambda_strains.html 
+ 
 
 ## Applications, long term
 
 There are three possible applications of chemlambda: 
 - in real chemistry, for building molecular computers, or for understanding living organisms as molecular computers, see http://chorasimilarity.github.io/chemlambda-gui/dynamic/molecular.html 
 - in decentralized computing, because chemlambda with the random reduction algorithm is an asynchronous graph rewrite automaton. 
-- both worlds united: see http://chorasimilarity.github.io/chemlambda-gui/dynamic/vision.html for a sketch of the idea to build chemlambda based chemical computers which work both in the virtual and meat spaces. For achieving this goal we need to solve the previous two applications and to use, perhaps, an (open version of) Digital Biological Converter, o fthe kind Craig Venter has already. 
+- both worlds united: see http://chorasimilarity.github.io/chemlambda-gui/dynamic/vision.html for a sketch of the idea to build chemlambda based chemical computers which work both in the virtual and meat spaces. For achieving this goal we need to solve the previous two applications and to use, perhaps, an (open version of) Digital Biological Converter, of the kind Craig Venter has already. Bringing the digital biological converters to the molecular size (i.e. as artificial rybosomes) would open both wonderful and worrying applications, as evoked in https://chorasimilarity.wordpress.com/2017/03/23/pharma-meets-the-internet-of-things/ and https://chorasimilarity.wordpress.com/2015/10/30/after-the-iot-comes-gaia/ and https://chorasimilarity.wordpress.com/2015/06/12/the-internet-can-be-your-pet/
 
 
 ## Related work
@@ -30,12 +56,11 @@ There are three possible applications of chemlambda:
 
 
 - chemlambda-hask https://github.com/synergistics/chemlambda-hask is a Haskell API for graph rewrite systems with animplementation of chemlambda. It has the potential to be a clear and creative product, good for  a stem of a future chemlambda library, for general purpose use.
-- chemlambda-yuva https://github.com/YuvaAthur/chemlambda-yuva is a Python implementation of chemlambda adapted from chemlambda-py. I have not checked it yet but I am very intrigued because is related with  this other repository https://github.com/YuvaAthur/nL about experiments in graph rewriting
+- chemlambda-py https://github.com/4lhc/chemlambda-py is a Python implementation of chemlambda (has a problem concerning the identification of the correct pattern for the A-L rewrite). Maybe a Python afficionado could make it useful, by comparing it with the Haskell version. 
+- chemlambda-yuva https://github.com/YuvaAthur/chemlambda-yuva is a Python implementation of chemlambda adapted from chemlambda-py. It has the same incorrect pattern for the A-L rewrite, namely it applies the rewrite both for the correct (L a b c, A c d e) pattern and the incorrect (L a b c, A d c e) pattern (as they appear written in the mol file convention).
 - LPU https://github.com/MaiaVictor/LPU which is biased towards  interaction networks style, but very interesting to develop more. It introduces the idea to convert the asynchronous graph rewrite system into an asynchronous rewrite system, by using the mol-file like list of nodes for the graph, together with supplementary rewrites (using an automaton of choice) for shuffling this list. The graph rewrites are executed only when the nodes of the pattern are close enough in the list. 
 
 
-Older: 
--  chemlambda-py https://github.com/4lhc/chemlambda-py is a Python version of chemlambda, which is unfinished because the rewrite A-L is not well written. Maybe a Python afficionado could make it useful, by comparing it with the Haskell version. 
 
 ## Fun short term projects
 
@@ -50,7 +75,7 @@ See more at
 - the demos page http://chorasimilarity.github.io/chemlambda-gui/dynamic/demos.html
 - the moves and explanations, references http://chorasimilarity.github.io/chemlambda-gui/dynamic/moves.html
 - the vision page http://chorasimilarity.github.io/chemlambda-gui/dynamic/vision.html
-- the chemlambda collection of more than 250 animated gifs obtained from simulations https://plus.google.com/collection/UjgbX
+- the chemlambda collection of more than 350 animated gifs obtained from simulations https://plus.google.com/collection/UjgbX
 
 ## How to use what's in there
 
