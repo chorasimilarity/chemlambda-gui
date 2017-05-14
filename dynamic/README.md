@@ -75,7 +75,7 @@ See more at
 - the demos page http://chorasimilarity.github.io/chemlambda-gui/dynamic/demos.html
 - the moves and explanations, references http://chorasimilarity.github.io/chemlambda-gui/dynamic/moves.html
 - the vision page http://chorasimilarity.github.io/chemlambda-gui/dynamic/vision.html
-- the chemlambda collection of more than 350 animated gifs obtained from simulations https://plus.google.com/collection/UjgbX
+- the chemlambda collection of more than 350 animated gifs obtained from simulations http://chorasimilarity.github.io/chemlambda-gui/dynamic/rawut.html
 
 ## How to use what's in there
 
