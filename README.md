@@ -3,6 +3,7 @@ chemlambda-gui
 
 The active branch is https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic
 
+UPDATE: see the page of all chemlambda projects: https://chemlambda.github.io/index.html
 
 In this repository you find a collection of scripts and experiments with chemlambda. 
 
@@ -12,7 +13,7 @@ See more at
 - the moves and explanations, references http://chorasimilarity.github.io/chemlambda-gui/dynamic/moves.html
 - the vision page http://chorasimilarity.github.io/chemlambda-gui/dynamic/vision.html
 
-Short posts with animated gifs at the chemlambda collection: https://plus.google.com/collection/UjgbX
+Short posts with animated gifs at the chemlambda collection salvaged from google+ https://chemlambda.github.io/collection.html
 
 How to use what's in there:
 
@@ -32,6 +33,5 @@ http://chorasimilarity.github.io/chemlambda-gui/dynamic/turingchem.html
 
 I use all the time my open notebook https://chorasimilarity.wordpress.com/ for more explanations and details. However, the open notebook contains as well older variants of chemlambda. In any case, the moves page is the one which holds the latest version.
 
-There is an older gallery of examples, explanations and downloads, at the page http://imar.ro/~mbuliga/gallery.html
 
 See also my channel for short videos about chemlambda https://www.youtube.com/channel/UCO2CcqUKORdyXd_CdgEdvVQ/videos
