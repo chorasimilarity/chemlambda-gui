@@ -1,3 +1,13 @@
+The official page of all chemlambda projects is https://chemlambda.github.io/index.html
+
+The repository chemlambda-gui is kept because of the content, otherwise, for new experiments, go to the official page.
+
+The active branch of this repository is https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic
+
+_______
+
+
+
 This is a collection of scripts and experiments with chemlambda.
 
 Everything new happens at the branch https://github.com/chorasimilarity/chemlambda-gui/tree/gh-pages/dynamic
