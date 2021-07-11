@@ -30,7 +30,7 @@ BEGIN {
      term_col="#7F8C8D";
 
      arrow_col="#ECF0F1";
-
+     nop_col="#2E0854";
 
 
        count_lines=0; 
@@ -96,6 +96,45 @@ for ( i in node) {
                   nu_node[i]=j;
                   node_nu[j]=i;
                   s=node_type[i];
+                  if (s == "NOP"){
+
+                      #Creates the noop node          
+		      zu=s node_port_1[i] node_port_2[i] node_port_3[i]; 
+				  a=node_port_1[i];
+				  b=node_port_2[i]; 
+				  c=node_port_3[i];
+                                  used_port_i[a]++;
+                                  used_port_i[b]++;
+                                  used_port_i[c]++;
+                                  used_port[a]++;
+                                  used_port[b]++;
+                                  used_port[c]++;
+                                  all_node_text[j]=s;
+                                  all_node_size[j]=main_const;
+                                  all_node_colour[j]=nop_col;
+                                  all_edge_target[a]=j+1;  all_edge_target[b]=j+2; all_edge_source[c]=j+3;
+                                  x1=zu "port_1"; x2=zu "port_2"; x3=zu "port_3";
+                                  used_port[x1]++; used_port[x2]++; used_port[x3]++;
+                                  all_edge_source[x1]=j;  all_edge_target[x1]=j+1; all_edge_bond[x1]=bond_int;
+                                  all_edge_source[x2]=j;  all_edge_target[x2]=j+2; all_edge_bond[x2]=bond_int;
+                                  all_edge_source[x3]=j;  all_edge_target[x3]=j+3; all_edge_bond[x3]=bond_int;
+                                  used_port[x1]++; used_port[x2]++; used_port[x3]++;
+                                  j++;
+                                  all_node_text[j]="port_1" zu;
+                                  all_node_size[j]=left;
+                                  all_node_colour[j]=in_col;
+                                  j++;
+                                  all_node_text[j]="port_2" zu;
+                                  all_node_size[j]=right;
+                                  all_node_colour[j]=in_col;
+                                  j++;
+                                  all_node_text[j]="port_3" zu;
+                                  all_node_size[j]=middle;
+                                  all_node_colour[j]=out_col;
+                                
+
+                  }
+
                   if (s == "A") { zu=s node_port_1[i] node_port_2[i] node_port_3[i];  a=node_port_1[i]; b=node_port_2[i]; c=node_port_3[i];
                                   used_port_i[a]++;
                                   used_port_i[b]++;
